@@ -1,8 +1,8 @@
-# medcalc-cardio
+# MedikQuantis
 
 Multilingual cardiology clinical calculators with locally validated scoring.
 
-> Nom del producte i domini: **a decidir** (shortlist: `ictus.tools`, `batec.health`, `cor.tools`, `docquantis.com`).
+> Domini: a triar entre `medikquantis.com` / `medikquantis.health` / `medikquantis.es` (els 10 TLDs principals estan lliures al 5 jun 2026). Repo encara a `github.com/laurapiro17/medcalc-cardio` pendent de rename opcional.
 
 ## Question
 
