@@ -1,7 +1,9 @@
 {
   "site": {
     "title": "MedikQuantis",
-    "tagline": "Calculadores clíniques cardiològiques validades en població ibèrica."
+    "tagline": "Calculadores clíniques cardiològiques validades en població ibèrica.",
+    "built_by": "Construït a Barcelona",
+    "open_source": "Codi obert a"
   },
   "home": {
     "heading": "Calculadores",

@@ -1,7 +1,9 @@
 {
   "site": {
     "title": "MedikQuantis",
-    "tagline": "Cardiology clinical calculators validated in Iberian populations."
+    "tagline": "Cardiology clinical calculators validated in Iberian populations.",
+    "built_by": "Built in Barcelona",
+    "open_source": "Open source on"
   },
   "home": {
     "heading": "Calculators",
