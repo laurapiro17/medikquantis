@@ -90,7 +90,7 @@ export default async function LocaleLayout({
                 <span aria-hidden>·</span>{" "}
                 <span>{t("open_source")}</span>{" "}
                 <a
-                  href="https://github.com/laurapiro17/medcalc-cardio"
+                  href="https://github.com/laurapiro17/medikquantis"
                   target="_blank"
                   rel="noreferrer"
                   className="text-trust-600 transition hover:underline dark:text-neon"
