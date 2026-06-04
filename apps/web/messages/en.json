@@ -1,0 +1,89 @@
+{
+  "site": {
+    "title": "MedCalc Cardio",
+    "tagline": "Cardiology clinical calculators validated in Iberian populations."
+  },
+  "home": {
+    "heading": "Calculators",
+    "subheading": "Pick a calculator to get started."
+  },
+  "notfound": {
+    "heading": "Page not found",
+    "body": "The resource you are looking for does not exist or has moved.",
+    "cta": "Back to home"
+  },
+  "common": {
+    "calculate": "Calculate",
+    "reset": "Reset",
+    "result": "Result",
+    "score": "Score",
+    "tier_low": "low risk",
+    "tier_moderate": "moderate risk",
+    "tier_high": "high risk",
+    "annual_risk": "Annual stroke risk",
+    "annual_bleeding_risk": "Annual major bleeding risk",
+    "evidence": "Evidence grade",
+    "references": "References",
+    "mode_clinician": "Clinician",
+    "mode_patient": "Patient",
+    "yes": "Yes",
+    "no": "No",
+    "male": "Male",
+    "female": "Female",
+    "disclaimer": "This calculator is informational and does not replace consultation with a healthcare professional.",
+    "open_source": "Open source on",
+    "built_by": "Built in Barcelona"
+  },
+  "cha2ds2vasc": {
+    "title": "CHA₂DS₂-VASc",
+    "subtitle": "Stroke risk in non-valvular atrial fibrillation",
+    "fields": {
+      "age": "Age",
+      "sex": "Sex",
+      "chf": "Congestive heart failure",
+      "hypertension": "Hypertension",
+      "diabetes": "Diabetes mellitus",
+      "strokeOrTia": "Prior stroke or TIA",
+      "vascularDisease": "Vascular disease (prior MI, PAD, aortic plaque)"
+    },
+    "patient": {
+      "intro": "This calculator estimates the probability that you will have a stroke in the next year given your atrial fibrillation and other risk factors.",
+      "result_low": "Your stroke risk is low. According to European guidelines, anticoagulation is not recommended on this basis alone.",
+      "result_moderate": "Your stroke risk is moderate. It is worth speaking with your cardiologist to assess whether anticoagulation would benefit you.",
+      "result_high": "Your stroke risk is high. Guidelines recommend starting oral anticoagulation to reduce it significantly.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "Which anticoagulant do you recommend for me and why?",
+        "What follow-up tests will I need while on treatment?",
+        "What is my bleeding risk according to the HAS-BLED score?"
+      ]
+    }
+  },
+  "hasbled": {
+    "title": "HAS-BLED",
+    "subtitle": "Bleeding risk in patients with atrial fibrillation on anticoagulation",
+    "fields": {
+      "age": "Age",
+      "uncontrolledHypertension": "Uncontrolled hypertension (SBP > 160 mmHg)",
+      "abnormalRenalFunction": "Abnormal renal function (creatinine ≥ 2.3 mg/dL or dialysis/transplant)",
+      "abnormalLiverFunction": "Abnormal liver function (cirrhosis, bilirubin > 2× normal or transaminases > 3× normal)",
+      "strokeHistory": "Prior stroke",
+      "bleedingHistoryOrPredisposition": "History of bleeding or predisposition",
+      "labileInr": "Labile INR (time in therapeutic range < 60%)",
+      "drugsPredisposingToBleeding": "Drugs predisposing to bleeding (antiplatelets, NSAIDs)",
+      "alcoholExcess": "Excessive alcohol use (≥ 8 units/week)"
+    },
+    "patient": {
+      "intro": "This calculator estimates the probability that you will have a major bleeding event in the next year if you take anticoagulants.",
+      "result_low": "Your bleeding risk is low. This is not a reason to avoid anticoagulation if it is indicated.",
+      "result_moderate": "Your bleeding risk is moderate. Reversible factors should be reviewed and follow-up made more frequent.",
+      "result_high": "Your bleeding risk is high. This does not preclude anticoagulation but requires close follow-up and addressing modifiable factors.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "Which of my risk factors can I reduce (blood pressure, drugs, alcohol)?",
+        "How often should we review my bleeding risk?",
+        "What bleeding warning signs should I watch for?"
+      ]
+    }
+  }
+}

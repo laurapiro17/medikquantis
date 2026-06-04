@@ -1,0 +1,89 @@
+{
+  "site": {
+    "title": "MedCalc Cardio",
+    "tagline": "Calculadores clíniques cardiològiques validades en població ibèrica."
+  },
+  "home": {
+    "heading": "Calculadores",
+    "subheading": "Tria una calculadora per començar."
+  },
+  "notfound": {
+    "heading": "Pàgina no trobada",
+    "body": "El recurs que busques no existeix o ha canviat de lloc.",
+    "cta": "Tornar a l'inici"
+  },
+  "common": {
+    "calculate": "Calcular",
+    "reset": "Reiniciar",
+    "result": "Resultat",
+    "score": "Puntuació",
+    "tier_low": "risc baix",
+    "tier_moderate": "risc moderat",
+    "tier_high": "risc alt",
+    "annual_risk": "Risc anual d'ictus",
+    "annual_bleeding_risk": "Risc anual de sagnat major",
+    "evidence": "Nivell d'evidència",
+    "references": "Referències",
+    "mode_clinician": "Clínic",
+    "mode_patient": "Pacient",
+    "yes": "Sí",
+    "no": "No",
+    "male": "Home",
+    "female": "Dona",
+    "disclaimer": "Aquesta calculadora és informativa i no substitueix la consulta amb un professional sanitari.",
+    "open_source": "Codi obert a",
+    "built_by": "Construït a Barcelona"
+  },
+  "cha2ds2vasc": {
+    "title": "CHA₂DS₂-VASc",
+    "subtitle": "Risc d'ictus en fibril·lació auricular no valvular",
+    "fields": {
+      "age": "Edat",
+      "sex": "Sexe",
+      "chf": "Insuficiència cardíaca congestiva",
+      "hypertension": "Hipertensió arterial",
+      "diabetes": "Diabetis mellitus",
+      "strokeOrTia": "Ictus o AIT previ",
+      "vascularDisease": "Malaltia vascular (IM previ, MAP, placa aòrtica)"
+    },
+    "patient": {
+      "intro": "Aquest càlcul estima la probabilitat que tinguis un ictus en el pròxim any tenint en compte la teva fibril·lació auricular i altres factors de risc.",
+      "result_low": "El teu risc d'ictus és baix. Segons les guies europees, no es recomana iniciar anticoagulació només per aquest motiu.",
+      "result_moderate": "El teu risc d'ictus és moderat. Convé parlar amb el teu cardiòleg per valorar si l'anticoagulació et beneficia.",
+      "result_high": "El teu risc d'ictus és alt. Les guies recomanen iniciar anticoagulació oral per reduir-lo significativament.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Quin tipus d'anticoagulant em recomana i per què?",
+        "Quins controls hauré de fer mentre prengui el tractament?",
+        "Quin és el meu risc de sagnat segons l'escala HAS-BLED?"
+      ]
+    }
+  },
+  "hasbled": {
+    "title": "HAS-BLED",
+    "subtitle": "Risc de sagnat en pacients amb fibril·lació auricular anticoagulats",
+    "fields": {
+      "age": "Edat",
+      "uncontrolledHypertension": "Hipertensió no controlada (TAS > 160 mmHg)",
+      "abnormalRenalFunction": "Funció renal anormal (creatinina ≥ 2.3 mg/dL o diàlisi/trasplantament)",
+      "abnormalLiverFunction": "Funció hepàtica anormal (cirrosi, bilirubina > 2× normal o transaminases > 3× normal)",
+      "strokeHistory": "Ictus previ",
+      "bleedingHistoryOrPredisposition": "Antecedent de sagnat o predisposició",
+      "labileInr": "INR làbil (temps en rang terapèutic < 60%)",
+      "drugsPredisposingToBleeding": "Fàrmacs que afavoreixen el sagnat (antiagregants, AINEs)",
+      "alcoholExcess": "Consum excessiu d'alcohol (≥ 8 unitats/setmana)"
+    },
+    "patient": {
+      "intro": "Aquest càlcul estima la probabilitat que tinguis un sagnat important durant el pròxim any si prens anticoagulants.",
+      "result_low": "El teu risc de sagnat és baix. No és un motiu per evitar l'anticoagulació si està indicada.",
+      "result_moderate": "El teu risc de sagnat és moderat. Cal revisar els factors que es poden corregir i fer controls més freqüents.",
+      "result_high": "El teu risc de sagnat és alt. Això no impedeix l'anticoagulació però sí requereix seguiment estret i corregir els factors modificables.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Quins factors del meu risc puc reduir (tensió, fàrmacs, alcohol)?",
+        "Cada quant hauríem de revisar el meu risc?",
+        "Quins signes de sagnat hauria de vigilar?"
+      ]
+    }
+  }
+}

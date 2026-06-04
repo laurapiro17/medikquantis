@@ -1,0 +1,89 @@
+{
+  "site": {
+    "title": "MedCalc Cardio",
+    "tagline": "Calculadoras clínicas cardiológicas validadas en población ibérica."
+  },
+  "home": {
+    "heading": "Calculadoras",
+    "subheading": "Elige una calculadora para empezar."
+  },
+  "notfound": {
+    "heading": "Página no encontrada",
+    "body": "El recurso que buscas no existe o ha cambiado de ubicación.",
+    "cta": "Volver al inicio"
+  },
+  "common": {
+    "calculate": "Calcular",
+    "reset": "Reiniciar",
+    "result": "Resultado",
+    "score": "Puntuación",
+    "tier_low": "riesgo bajo",
+    "tier_moderate": "riesgo moderado",
+    "tier_high": "riesgo alto",
+    "annual_risk": "Riesgo anual de ictus",
+    "annual_bleeding_risk": "Riesgo anual de sangrado mayor",
+    "evidence": "Nivel de evidencia",
+    "references": "Referencias",
+    "mode_clinician": "Clínico",
+    "mode_patient": "Paciente",
+    "yes": "Sí",
+    "no": "No",
+    "male": "Hombre",
+    "female": "Mujer",
+    "disclaimer": "Esta calculadora es informativa y no sustituye la consulta con un profesional sanitario.",
+    "open_source": "Código abierto en",
+    "built_by": "Hecho en Barcelona"
+  },
+  "cha2ds2vasc": {
+    "title": "CHA₂DS₂-VASc",
+    "subtitle": "Riesgo de ictus en fibrilación auricular no valvular",
+    "fields": {
+      "age": "Edad",
+      "sex": "Sexo",
+      "chf": "Insuficiencia cardíaca congestiva",
+      "hypertension": "Hipertensión arterial",
+      "diabetes": "Diabetes mellitus",
+      "strokeOrTia": "Ictus o AIT previo",
+      "vascularDisease": "Enfermedad vascular (IM previo, EAP, placa aórtica)"
+    },
+    "patient": {
+      "intro": "Este cálculo estima la probabilidad de que sufras un ictus en el próximo año teniendo en cuenta tu fibrilación auricular y otros factores de riesgo.",
+      "result_low": "Tu riesgo de ictus es bajo. Según las guías europeas, no se recomienda iniciar anticoagulación solo por este motivo.",
+      "result_moderate": "Tu riesgo de ictus es moderado. Conviene hablar con tu cardiólogo para valorar si la anticoagulación te beneficia.",
+      "result_high": "Tu riesgo de ictus es alto. Las guías recomiendan iniciar anticoagulación oral para reducirlo significativamente.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Qué tipo de anticoagulante me recomienda y por qué?",
+        "¿Qué controles tendré que hacer mientras tome el tratamiento?",
+        "¿Cuál es mi riesgo de sangrado según la escala HAS-BLED?"
+      ]
+    }
+  },
+  "hasbled": {
+    "title": "HAS-BLED",
+    "subtitle": "Riesgo de sangrado en pacientes con fibrilación auricular anticoagulados",
+    "fields": {
+      "age": "Edad",
+      "uncontrolledHypertension": "Hipertensión no controlada (TAS > 160 mmHg)",
+      "abnormalRenalFunction": "Función renal anormal (creatinina ≥ 2.3 mg/dL o diálisis/trasplante)",
+      "abnormalLiverFunction": "Función hepática anormal (cirrosis, bilirrubina > 2× normal o transaminasas > 3× normal)",
+      "strokeHistory": "Ictus previo",
+      "bleedingHistoryOrPredisposition": "Antecedente de sangrado o predisposición",
+      "labileInr": "INR lábil (tiempo en rango terapéutico < 60%)",
+      "drugsPredisposingToBleeding": "Fármacos que favorecen el sangrado (antiagregantes, AINEs)",
+      "alcoholExcess": "Consumo excesivo de alcohol (≥ 8 unidades/semana)"
+    },
+    "patient": {
+      "intro": "Este cálculo estima la probabilidad de que tengas un sangrado importante durante el próximo año si tomas anticoagulantes.",
+      "result_low": "Tu riesgo de sangrado es bajo. No es motivo para evitar la anticoagulación si está indicada.",
+      "result_moderate": "Tu riesgo de sangrado es moderado. Conviene revisar los factores corregibles y hacer controles más frecuentes.",
+      "result_high": "Tu riesgo de sangrado es alto. Esto no impide la anticoagulación pero requiere seguimiento estrecho y corregir los factores modificables.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Qué factores de mi riesgo puedo reducir (tensión, fármacos, alcohol)?",
+        "¿Con qué frecuencia debemos revisar mi riesgo?",
+        "¿Qué signos de sangrado debería vigilar?"
+      ]
+    }
+  }
+}
