@@ -3,24 +3,90 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    color-scheme: light dark;
+  }
+
   body {
     @apply bg-slate-50 text-slate-900 antialiased;
+    background-image: none;
   }
+
+  .dark body {
+    @apply bg-[#0c0f10] text-slate-100;
+    background-image: radial-gradient(
+      ellipse 80% 60% at 50% -10%,
+      rgba(0, 105, 112, 0.25),
+      transparent 65%
+    );
+    background-attachment: fixed;
+  }
+
   :focus-visible {
     @apply outline-2 outline-offset-2 outline-trust-600;
+  }
+
+  .dark :focus-visible {
+    outline-color: rgb(0 240 255 / 0.8);
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply rounded-xl border border-slate-200 bg-white shadow-sm;
+  }
+  .dark .glass-panel {
+    background-color: rgba(17, 20, 21, 0.55);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+
+  .neon-divider {
+    @apply border-slate-200;
+  }
+  .dark .neon-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .input-underline {
+    @apply block w-full border-0 border-b border-slate-300 bg-transparent px-0 py-2 text-2xl font-medium text-slate-900 outline-none transition-colors;
+    @apply focus:border-trust-600 focus:ring-0;
+  }
+  .dark .input-underline {
+    @apply text-slate-100;
+    border-bottom-color: rgba(255, 255, 255, 0.12);
+  }
+  .dark .input-underline:focus {
+    border-bottom-color: #00f0ff;
+    box-shadow: 0 4px 10px -2px rgba(0, 240, 255, 0.3);
   }
 }
 
 @layer utilities {
   .animate-fade-in {
-    animation: fadeIn 200ms ease-out;
+    animation: fadeIn 220ms ease-out;
+  }
+  .score-glow-light {
+    color: #2563eb;
+  }
+  .score-glow-dark {
+    color: #00f0ff;
+    text-shadow: 0 0 18px rgba(0, 240, 255, 0.55);
+  }
+  .text-neon {
+    color: #00dbe9;
+  }
+  .dark .text-neon {
+    color: #00f0ff;
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.45);
   }
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(4px);
+    transform: translateY(6px);
   }
   to {
     opacity: 1;

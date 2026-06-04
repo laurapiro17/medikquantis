@@ -16,7 +16,7 @@ export function LanguageSwitcher({ currentLocale }: { currentLocale: string }) {
   }
 
   return (
-    <div className="flex gap-1 text-sm">
+    <div className="flex gap-1 text-xs">
       {routing.locales.map((locale) => (
         <button
           key={locale}
@@ -25,8 +25,8 @@ export function LanguageSwitcher({ currentLocale }: { currentLocale: string }) {
           disabled={isPending || locale === currentLocale}
           className={
             locale === currentLocale
-              ? "rounded bg-slate-900 px-2 py-1 font-medium text-white"
-              : "rounded px-2 py-1 text-slate-600 hover:bg-slate-100"
+              ? "rounded-full bg-slate-900 px-2.5 py-1 font-medium text-white dark:bg-neon dark:text-neon-ink dark:shadow-neon-soft"
+              : "rounded-full border border-slate-300 px-2.5 py-1 text-slate-600 transition hover:border-trust-500 hover:text-trust-600 dark:border-white/15 dark:text-slate-300 dark:hover:border-neon dark:hover:text-neon"
           }
         >
           {locale.toUpperCase()}

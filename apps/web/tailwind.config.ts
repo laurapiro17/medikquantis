@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
+  darkMode: "class",
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
@@ -17,6 +18,12 @@ export default {
           600: "#2563eb",
           700: "#1d4ed8",
         },
+        neon: {
+          DEFAULT: "#00f0ff",
+          soft: "#7df4ff",
+          deep: "#006970",
+          ink: "#002022",
+        },
       },
       fontFamily: {
         sans: [
@@ -27,6 +34,21 @@ export default {
           "Roboto",
           "sans-serif",
         ],
+        mono: [
+          "ui-monospace",
+          "SFMono-Regular",
+          "Menlo",
+          "Monaco",
+          "Consolas",
+          "monospace",
+        ],
+      },
+      boxShadow: {
+        neon: "0 0 20px rgba(0, 240, 255, 0.4)",
+        "neon-soft": "0 0 12px rgba(0, 240, 255, 0.25)",
+      },
+      backdropBlur: {
+        glass: "24px",
       },
     },
   },
