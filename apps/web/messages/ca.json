@@ -61,6 +61,39 @@
       ]
     }
   },
+  "grace": {
+    "title": "GRACE",
+    "subtitle": "Risc de mortalitat hospitalària en síndrome coronària aguda",
+    "fields": {
+      "age": "Edat (anys)",
+      "heartRate": "Freqüència cardíaca (bpm)",
+      "systolicBP": "Tensió arterial sistòlica (mmHg)",
+      "creatinine": "Creatinina sèrica (mg/dL)",
+      "killipClass": {
+        "legend": "Classe de Killip a l'arribada",
+        "I": "I — sense signes d'insuficiència cardíaca",
+        "II": "II — crepitants basals o tercer to (S3)",
+        "III": "III — edema agut de pulmó",
+        "IV": "IV — xoc cardiogènic"
+      },
+      "cardiacArrestAtAdmission": "Aturada cardíaca a l'arribada",
+      "stSegmentDeviation": "Desviació del segment ST a l'ECG",
+      "elevatedCardiacEnzymes": "Marcadors cardíacs elevats (troponina/CK-MB)"
+    },
+    "risk_label_inhospital": "Mortalitat hospitalària",
+    "patient": {
+      "intro": "Aquest càlcul estima el risc que tinguis una complicació greu durant aquest ingrés per síndrome coronària aguda. Ajuda l'equip cardiològic a decidir amb quina urgència convé fer-te una coronariografia.",
+      "result_low": "El teu risc és baix. Es pot fer una estratègia conservadora amb seguiment estret i només estudi invasiu si tornen els símptomes.",
+      "result_moderate": "El teu risc és intermedi. Les guies recomanen una estratègia invasiva precoç durant les primeres 24 hores.",
+      "result_high": "El teu risc és alt. Cal una estratègia invasiva urgent (menys de 2 hores) i valoració per cardiologia.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Quan se'm farà la coronariografia i per què en aquest moment?",
+        "Quins tractaments necessitaré després?",
+        "Quan podré tornar a casa i amb quines precaucions?"
+      ]
+    }
+  },
   "heart": {
     "title": "HEART",
     "subtitle": "Estratificació de risc en dolor toràcic a urgències",

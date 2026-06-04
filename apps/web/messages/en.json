@@ -61,6 +61,39 @@
       ]
     }
   },
+  "grace": {
+    "title": "GRACE",
+    "subtitle": "In-hospital mortality risk in acute coronary syndrome",
+    "fields": {
+      "age": "Age (years)",
+      "heartRate": "Heart rate (bpm)",
+      "systolicBP": "Systolic blood pressure (mmHg)",
+      "creatinine": "Serum creatinine (mg/dL)",
+      "killipClass": {
+        "legend": "Killip class on admission",
+        "I": "I — no signs of heart failure",
+        "II": "II — basal crackles or third heart sound (S3)",
+        "III": "III — acute pulmonary oedema",
+        "IV": "IV — cardiogenic shock"
+      },
+      "cardiacArrestAtAdmission": "Cardiac arrest on admission",
+      "stSegmentDeviation": "ST-segment deviation on ECG",
+      "elevatedCardiacEnzymes": "Elevated cardiac biomarkers (troponin / CK-MB)"
+    },
+    "risk_label_inhospital": "In-hospital mortality",
+    "patient": {
+      "intro": "This calculator estimates the risk of a serious complication during this admission for acute coronary syndrome. It helps the cardiology team decide how urgently you need a coronary angiogram.",
+      "result_low": "Your risk is low. A conservative strategy with close monitoring is acceptable, with invasive workup reserved for recurrent symptoms.",
+      "result_moderate": "Your risk is intermediate. Guidelines recommend an early invasive strategy within the first 24 hours.",
+      "result_high": "Your risk is high. An urgent invasive strategy (under 2 hours) and cardiology evaluation are required.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "When will the angiogram be done and why now?",
+        "What treatments will I need afterwards?",
+        "When can I go home and with what precautions?"
+      ]
+    }
+  },
   "heart": {
     "title": "HEART",
     "subtitle": "Risk stratification for chest pain in the emergency department",

@@ -61,6 +61,39 @@
       ]
     }
   },
+  "grace": {
+    "title": "GRACE",
+    "subtitle": "Riesgo de mortalidad hospitalaria en síndrome coronario agudo",
+    "fields": {
+      "age": "Edad (años)",
+      "heartRate": "Frecuencia cardíaca (lpm)",
+      "systolicBP": "Tensión arterial sistólica (mmHg)",
+      "creatinine": "Creatinina sérica (mg/dL)",
+      "killipClass": {
+        "legend": "Clase de Killip al ingreso",
+        "I": "I — sin signos de insuficiencia cardíaca",
+        "II": "II — crepitantes basales o tercer tono (S3)",
+        "III": "III — edema agudo de pulmón",
+        "IV": "IV — shock cardiogénico"
+      },
+      "cardiacArrestAtAdmission": "Parada cardíaca al ingreso",
+      "stSegmentDeviation": "Desviación del segmento ST en el ECG",
+      "elevatedCardiacEnzymes": "Marcadores cardíacos elevados (troponina/CK-MB)"
+    },
+    "risk_label_inhospital": "Mortalidad hospitalaria",
+    "patient": {
+      "intro": "Este cálculo estima el riesgo de que tengas una complicación grave durante este ingreso por síndrome coronario agudo. Ayuda al equipo cardiológico a decidir con qué urgencia conviene hacerte una coronariografía.",
+      "result_low": "Tu riesgo es bajo. Se puede optar por una estrategia conservadora con seguimiento estrecho y solo estudio invasivo si vuelven los síntomas.",
+      "result_moderate": "Tu riesgo es intermedio. Las guías recomiendan una estrategia invasiva precoz en las primeras 24 horas.",
+      "result_high": "Tu riesgo es alto. Hace falta una estrategia invasiva urgente (menos de 2 horas) y valoración por cardiología.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Cuándo se me hará la coronariografía y por qué en este momento?",
+        "¿Qué tratamientos necesitaré después?",
+        "¿Cuándo podré volver a casa y con qué precauciones?"
+      ]
+    }
+  },
   "heart": {
     "title": "HEART",
     "subtitle": "Estratificación de riesgo en dolor torácico en urgencias",
