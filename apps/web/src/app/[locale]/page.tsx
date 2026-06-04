@@ -5,6 +5,7 @@ const calcs = [
   { slug: "cha2ds2vasc", key: "cha2ds2vasc" },
   { slug: "hasbled", key: "hasbled" },
   { slug: "orbit", key: "orbit" },
+  { slug: "ehra", key: "ehra" },
 ] as const;
 
 export default async function HomePage({

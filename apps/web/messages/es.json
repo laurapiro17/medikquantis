@@ -59,6 +59,31 @@
       ]
     }
   },
+  "ehra": {
+    "title": "EHRA",
+    "subtitle": "Clasificación de síntomas en fibrilación auricular",
+    "question": "¿Qué grado de síntomas presenta el paciente?",
+    "classes": {
+      "I": "Sin síntomas",
+      "IIa": "Síntomas leves — la actividad diaria no se ve afectada",
+      "IIb": "Síntomas moderados — la actividad diaria no se ve afectada pero el paciente está molesto por los síntomas",
+      "III": "Síntomas graves — la actividad diaria se ve afectada",
+      "IV": "Síntomas incapacitantes — la actividad diaria se interrumpe"
+    },
+    "result_class": "Clase EHRA",
+    "patient": {
+      "intro": "Esta clasificación mide cuán molestos son los síntomas de la fibrilación auricular en tu vida diaria. Ayuda a tu cardiólogo a decidir si hace falta un tratamiento para el ritmo cardíaco.",
+      "result_low": "Tus síntomas son leves o inexistentes. Probablemente no se requiere un tratamiento específico dirigido a los síntomas; el foco se mantiene en la prevención del ictus.",
+      "result_moderate": "Tus síntomas te molestan, aunque puedes hacer vida normal. Conviene hablar con tu cardiólogo para valorar opciones de control del ritmo o la frecuencia cardíaca.",
+      "result_high": "Tus síntomas afectan tu vida diaria. Las guías recomiendan un tratamiento activo para restaurar el ritmo normal del corazón.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Qué opciones tengo para mejorar estos síntomas?",
+        "¿Me beneficiaría una cardioversión o una ablación?",
+        "¿Cómo puedo reconocer si los síntomas empeoran?"
+      ]
+    }
+  },
   "orbit": {
     "title": "ORBIT",
     "subtitle": "Riesgo de sangrado en fibrilación auricular (validado en la era de los DOAC)",

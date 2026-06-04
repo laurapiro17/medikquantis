@@ -59,6 +59,31 @@
       ]
     }
   },
+  "ehra": {
+    "title": "EHRA",
+    "subtitle": "Classificació de símptomes en fibril·lació auricular",
+    "question": "Quin grau de símptomes presenta el pacient?",
+    "classes": {
+      "I": "Sense símptomes",
+      "IIa": "Símptomes lleus — l'activitat diària no es veu afectada",
+      "IIb": "Símptomes moderats — l'activitat diària no es veu afectada però el pacient està molest pels símptomes",
+      "III": "Símptomes greus — l'activitat diària es veu afectada",
+      "IV": "Símptomes incapacitants — l'activitat diària es discontinua"
+    },
+    "result_class": "Classe EHRA",
+    "patient": {
+      "intro": "Aquesta classificació mesura com de molestos són els símptomes de la fibril·lació auricular en la teva vida diària. Ajuda al teu cardiòleg a decidir si cal un tractament per al ritme cardíac.",
+      "result_low": "Els teus símptomes són lleus o nuls. Probablement no cal un tractament específic dirigit als símptomes; el focus es manté en la prevenció de l'ictus.",
+      "result_moderate": "Els teus símptomes et molesten, encara que pots fer vida normal. Convé parlar amb el teu cardiòleg per valorar opcions de control del ritme o la freqüència cardíaca.",
+      "result_high": "Els teus símptomes afecten la teva vida diària. Les guies recomanen un tractament actiu per restaurar el ritme normal del cor.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Quines opcions tinc per millorar aquests símptomes?",
+        "Em beneficiaria una cardioversió o una ablació?",
+        "Com puc reconèixer si els símptomes empitjoren?"
+      ]
+    }
+  },
   "orbit": {
     "title": "ORBIT",
     "subtitle": "Risc de sagnat en fibril·lació auricular (validat en l'era dels DOAC)",

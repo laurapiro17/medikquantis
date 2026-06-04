@@ -59,6 +59,31 @@
       ]
     }
   },
+  "ehra": {
+    "title": "EHRA",
+    "subtitle": "Symptom classification in atrial fibrillation",
+    "question": "How severe are the patient's symptoms?",
+    "classes": {
+      "I": "No symptoms",
+      "IIa": "Mild symptoms — normal daily activity not affected",
+      "IIb": "Moderate symptoms — normal daily activity not affected but patient troubled by symptoms",
+      "III": "Severe symptoms — normal daily activity affected",
+      "IV": "Disabling symptoms — normal daily activity discontinued"
+    },
+    "result_class": "EHRA class",
+    "patient": {
+      "intro": "This classification measures how bothersome your atrial-fibrillation symptoms are in daily life. It helps your cardiologist decide whether treatment to control your heart rhythm is needed.",
+      "result_low": "Your symptoms are mild or absent. Symptom-directed treatment is probably not required; the focus stays on stroke prevention.",
+      "result_moderate": "Your symptoms bother you, although you can still go about daily life. It is worth discussing rhythm or rate control options with your cardiologist.",
+      "result_high": "Your symptoms affect your daily life. Guidelines recommend active treatment to restore a normal heart rhythm.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "What options do I have to improve these symptoms?",
+        "Would I benefit from cardioversion or ablation?",
+        "How can I recognise if my symptoms get worse?"
+      ]
+    }
+  },
   "orbit": {
     "title": "ORBIT",
     "subtitle": "Bleeding risk in atrial fibrillation (validated in the DOAC era)",
