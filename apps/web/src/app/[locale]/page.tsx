@@ -44,6 +44,19 @@ export default async function HomePage({
             </p>
           </Link>
         </li>
+        <li>
+          <Link
+            href="/orbit"
+            className="block rounded-lg border border-slate-200 bg-white p-5 transition hover:border-trust-500 hover:shadow-md"
+          >
+            <h2 className="text-lg font-semibold text-slate-900">
+              {t("orbit.title")}
+            </h2>
+            <p className="mt-1 text-sm text-slate-600">
+              {t("orbit.subtitle")}
+            </p>
+          </Link>
+        </li>
       </ul>
     </div>
   );

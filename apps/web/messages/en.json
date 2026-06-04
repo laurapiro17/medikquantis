@@ -59,6 +59,29 @@
       ]
     }
   },
+  "orbit": {
+    "title": "ORBIT",
+    "subtitle": "Bleeding risk in atrial fibrillation (validated in the DOAC era)",
+    "fields": {
+      "age": "Age",
+      "reducedHemoglobinOrHematocrit": "Reduced hemoglobin (< 13 g/dL male / < 12 g/dL female) or hematocrit (< 40 % male / < 36 % female)",
+      "bleedingHistory": "Prior bleeding (gastrointestinal, intracranial, or hemorrhagic stroke)",
+      "reducedRenalFunction": "Reduced renal function (eGFR < 60 mL/min/1.73 m²)",
+      "antiplateletTreatment": "Concomitant antiplatelet treatment"
+    },
+    "patient": {
+      "intro": "This calculator estimates the probability of major bleeding in the next year if you take anticoagulation, based on a registry validated in the era of modern anticoagulants (DOACs).",
+      "result_low": "Your bleeding risk is low. This is not a reason to avoid anticoagulation if it is indicated.",
+      "result_moderate": "Your bleeding risk is intermediate. Reversible factors should be reviewed and follow-up made more frequent.",
+      "result_high": "Your bleeding risk is high. This does not preclude anticoagulation but it does require close follow-up.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "Can my antiplatelet be stopped, or is it essential?",
+        "Do I have anaemia? Should it be treated before starting anticoagulation?",
+        "When should we recalculate my bleeding risk?"
+      ]
+    }
+  },
   "hasbled": {
     "title": "HAS-BLED",
     "subtitle": "Bleeding risk in patients with atrial fibrillation on anticoagulation",

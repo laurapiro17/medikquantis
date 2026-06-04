@@ -59,6 +59,29 @@
       ]
     }
   },
+  "orbit": {
+    "title": "ORBIT",
+    "subtitle": "Riesgo de sangrado en fibrilación auricular (validado en la era de los DOAC)",
+    "fields": {
+      "age": "Edad",
+      "reducedHemoglobinOrHematocrit": "Hemoglobina baja (< 13 g/dL hombre / < 12 g/dL mujer) o hematocrito bajo (< 40 % hombre / < 36 % mujer)",
+      "bleedingHistory": "Antecedente de sangrado (gastrointestinal, intracraneal o por ictus hemorrágico)",
+      "reducedRenalFunction": "Función renal reducida (FG estimado < 60 ml/min/1,73 m²)",
+      "antiplateletTreatment": "Tratamiento concomitante con antiagregante plaquetario"
+    },
+    "patient": {
+      "intro": "Este cálculo estima la probabilidad de tener un sangrado mayor el próximo año si tomas anticoagulación, según un registro validado con anticoagulantes modernos (DOAC).",
+      "result_low": "Tu riesgo de sangrado es bajo. No es motivo para evitar la anticoagulación si está indicada.",
+      "result_moderate": "Tu riesgo de sangrado es intermedio. Conviene revisar los factores corregibles y hacer controles más frecuentes.",
+      "result_high": "Tu riesgo de sangrado es alto. Esto no impide la anticoagulación pero sí requiere un seguimiento estrecho.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Puedo dejar el antiagregante o es imprescindible?",
+        "¿Tengo anemia? ¿Debería tratarse antes de empezar el anticoagulante?",
+        "¿Cuándo deberíamos recalcular el riesgo?"
+      ]
+    }
+  },
   "hasbled": {
     "title": "HAS-BLED",
     "subtitle": "Riesgo de sangrado en pacientes con fibrilación auricular anticoagulados",

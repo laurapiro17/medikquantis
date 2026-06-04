@@ -59,6 +59,29 @@
       ]
     }
   },
+  "orbit": {
+    "title": "ORBIT",
+    "subtitle": "Risc de sagnat en fibril·lació auricular (validat en l'era dels DOAC)",
+    "fields": {
+      "age": "Edat",
+      "reducedHemoglobinOrHematocrit": "Hemoglobina baixa (< 13 g/dL home / < 12 g/dL dona) o hematòcrit baix (< 40 % home / < 36 % dona)",
+      "bleedingHistory": "Antecedent de sagnat (gastrointestinal, intracranial o per ictus hemorràgic)",
+      "reducedRenalFunction": "Funció renal reduïda (FG estimat < 60 ml/min/1,73 m²)",
+      "antiplateletTreatment": "Tractament amb antiagregant plaquetari concomitant"
+    },
+    "patient": {
+      "intro": "Aquest càlcul estima la probabilitat de tenir un sagnat major el pròxim any si prens anticoagulació, segons un registre validat amb anticoagulants moderns (DOAC).",
+      "result_low": "El teu risc de sagnat és baix. No és un motiu per evitar l'anticoagulació si està indicada.",
+      "result_moderate": "El teu risc de sagnat és intermedi. Convé revisar els factors corregibles i fer controls més sovint.",
+      "result_high": "El teu risc de sagnat és alt. Això no impedeix l'anticoagulació però sí que requereix seguiment estret.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Em puc baixar l'antiagregant o és imprescindible?",
+        "Tinc anèmia? S'hauria de tractar abans de començar l'anticoagulant?",
+        "Quan hauríem de tornar a calcular el risc?"
+      ]
+    }
+  },
   "hasbled": {
     "title": "HAS-BLED",
     "subtitle": "Risc de sagnat en pacients amb fibril·lació auricular anticoagulats",
