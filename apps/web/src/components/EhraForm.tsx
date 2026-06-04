@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { ehra } from "@medcalc/calculators";
 import { ModeToggle } from "./ResultPanel";
+import { FormActions, RadioGroup } from "./Field";
 
 type EhraClassValue = ehra.EhraClassValue;
 type Mode = "clinician" | "patient";
@@ -46,58 +47,28 @@ export function EhraForm() {
         }}
         className="glass-panel space-y-6 p-6"
       >
-        <fieldset className="space-y-3">
-          <legend className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">
-            {t("ehra.question")}
-          </legend>
-          {classes.map((cls) => (
-            <label
-              key={cls}
-              className={`flex items-start gap-3 rounded-lg border p-3 text-sm transition ${
-                selected === cls
-                  ? "border-trust-600 bg-trust-50 dark:border-neon dark:bg-neon/5"
-                  : "border-slate-200 hover:bg-slate-50 dark:border-white/10 dark:hover:bg-white/5"
-              }`}
-            >
-              <input
-                type="radio"
-                name="ehraClass"
-                value={cls}
-                checked={selected === cls}
-                onChange={() => setSelected(cls)}
-                className="mt-0.5 h-4 w-4 border-slate-300 text-trust-600 focus:ring-trust-600 dark:border-white/20 dark:bg-white/5 dark:text-neon dark:focus:ring-neon"
-              />
-              <span className="flex-1 text-slate-700 dark:text-slate-300">
-                <span className="font-mono font-semibold text-slate-900 dark:text-slate-100">
-                  {cls}
-                </span>
-                <span className="ml-2">{t(`ehra.classes.${cls}` as "ehra.classes.I")}</span>
-              </span>
-            </label>
-          ))}
-        </fieldset>
+        <RadioGroup
+          name="ehraClass"
+          legend={t("ehra.question")}
+          value={selected}
+          onChange={setSelected}
+          layout="cards"
+          options={classes.map((cls) => ({
+            value: cls,
+            badge: cls,
+            label: t(`ehra.classes.${cls}` as "ehra.classes.I"),
+          }))}
+        />
 
-        <div className="flex gap-3 border-t border-slate-200 pt-5 dark:border-white/10">
-          <button
-            type="submit"
-            disabled={!selected}
-            className="rounded-md bg-trust-600 px-5 py-2 text-sm font-medium text-white transition hover:bg-trust-700 disabled:opacity-40 disabled:cursor-not-allowed dark:bg-neon dark:text-neon-ink dark:shadow-neon-soft dark:hover:bg-neon-soft"
-          >
-            {t("common.calculate")}
-          </button>
-          <button
-            type="button"
-            onClick={reset}
-            className="rounded-md border border-slate-300 px-5 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 dark:border-white/15 dark:text-slate-300 dark:hover:bg-white/5"
-          >
-            {t("common.reset")}
-          </button>
-        </div>
+        <FormActions
+          submitLabel={t("common.calculate")}
+          resetLabel={t("common.reset")}
+          onReset={reset}
+          canSubmit={!!selected}
+        />
       </form>
 
-      {submitted && result && (
-        <EhraResultPanel mode={mode} result={result} />
-      )}
+      {submitted && result && <EhraResultPanel mode={mode} result={result} />}
     </div>
   );
 }
@@ -127,9 +98,7 @@ function EhraResultPanel({
           <span className="score-glow-light dark:score-glow-dark font-mono text-6xl font-semibold leading-none">
             {result.classLabel}
           </span>
-          <span
-            className={`ml-auto rounded-full px-3 py-1 text-xs font-medium ring-1 ${tierClass}`}
-          >
+          <span className={`ml-auto rounded-full px-3 py-1 text-xs font-medium ring-1 ${tierClass}`}>
             {t(`common.tier_${result.tier}` as "common.tier_low")}
           </span>
         </div>
