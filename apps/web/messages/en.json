@@ -61,6 +61,32 @@
       ]
     }
   },
+  "timi": {
+    "title": "TIMI",
+    "subtitle": "14-day death / MI / urgent revascularization risk in UA/NSTEMI",
+    "fields": {
+      "ageOver65": "Age ≥ 65 years",
+      "threeOrMoreCadRiskFactors": "≥ 3 CV risk factors (HTN, DM, dyslipidaemia, FHx CAD, smoking)",
+      "knownCoronaryStenosis": "Known coronary stenosis ≥ 50 %",
+      "aspirinInLast7Days": "Aspirin use in the last 7 days",
+      "severeAnginaInLast24h": "≥ 2 episodes of severe angina in last 24 h",
+      "elevatedCardiacMarkers": "Elevated cardiac markers (troponin or CK-MB)",
+      "stDeviationAtLeastHalfMm": "ST-segment deviation ≥ 0.5 mm"
+    },
+    "risk_label_14d": "14-day MACE risk",
+    "patient": {
+      "intro": "This calculator estimates the risk of a serious complication over the next 2 weeks because of your cardiac event. It helps the team decide whether early coronary angiography is appropriate.",
+      "result_low": "Your risk is low. A conservative approach with non-invasive testing if needed is appropriate.",
+      "result_moderate": "Your risk is intermediate. Guidelines recommend considering an early invasive strategy.",
+      "result_high": "Your risk is high. An urgent invasive strategy and cardiology assessment are required.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "When are you planning the angiogram?",
+        "Which medications will I take in the next days, and why?",
+        "How can I recognise if my symptoms get worse?"
+      ]
+    }
+  },
   "grace": {
     "title": "GRACE",
     "subtitle": "In-hospital mortality risk in acute coronary syndrome",

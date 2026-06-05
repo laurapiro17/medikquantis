@@ -8,6 +8,7 @@ const calcs = [
   { slug: "ehra", key: "ehra" },
   { slug: "heart", key: "heart" },
   { slug: "grace", key: "grace" },
+  { slug: "timi", key: "timi" },
 ] as const;
 
 export default async function HomePage({

@@ -61,6 +61,32 @@
       ]
     }
   },
+  "timi": {
+    "title": "TIMI",
+    "subtitle": "Risc de mort/MI/revascularització urgent a 14 dies en UA/NSTEMI",
+    "fields": {
+      "ageOver65": "Edat ≥ 65 anys",
+      "threeOrMoreCadRiskFactors": "≥ 3 factors de risc CV (HTA, DM, dislipèmia, AF de CAD, tabac)",
+      "knownCoronaryStenosis": "Estenosi coronària coneguda ≥ 50 %",
+      "aspirinInLast7Days": "Ús d'AAS els últims 7 dies",
+      "severeAnginaInLast24h": "≥ 2 episodis d'angina greu en les últimes 24 h",
+      "elevatedCardiacMarkers": "Marcadors cardíacs elevats (troponina o CK-MB)",
+      "stDeviationAtLeastHalfMm": "Desviació del segment ST ≥ 0,5 mm"
+    },
+    "risk_label_14d": "Risc MACE a 14 dies",
+    "patient": {
+      "intro": "Aquest càlcul estima el risc que tinguis una complicació greu durant les pròximes 2 setmanes a causa del teu episodi cardíac. Ajuda l'equip a decidir si convé fer una coronariografia precoç.",
+      "result_low": "El teu risc és baix. Es pot fer un seguiment conservador amb proves no invasives si calen.",
+      "result_moderate": "El teu risc és intermedi. Les guies recomanen valorar una estratègia invasiva precoç.",
+      "result_high": "El teu risc és alt. Cal una estratègia invasiva urgent i valoració per cardiologia.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Quin moment es planteja per a la coronariografia?",
+        "Quins fàrmacs prendré els pròxims dies i per a què?",
+        "Com puc reconèixer si els símptomes empitjoren?"
+      ]
+    }
+  },
   "grace": {
     "title": "GRACE",
     "subtitle": "Risc de mortalitat hospitalària en síndrome coronària aguda",

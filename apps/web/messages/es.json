@@ -61,6 +61,32 @@
       ]
     }
   },
+  "timi": {
+    "title": "TIMI",
+    "subtitle": "Riesgo de muerte/IM/revascularización urgente a 14 días en UA/NSTEMI",
+    "fields": {
+      "ageOver65": "Edad ≥ 65 años",
+      "threeOrMoreCadRiskFactors": "≥ 3 factores de riesgo CV (HTA, DM, dislipemia, AF de CAD, tabaco)",
+      "knownCoronaryStenosis": "Estenosis coronaria conocida ≥ 50 %",
+      "aspirinInLast7Days": "Uso de AAS en los últimos 7 días",
+      "severeAnginaInLast24h": "≥ 2 episodios de angina grave en las últimas 24 h",
+      "elevatedCardiacMarkers": "Marcadores cardíacos elevados (troponina o CK-MB)",
+      "stDeviationAtLeastHalfMm": "Desviación del segmento ST ≥ 0,5 mm"
+    },
+    "risk_label_14d": "Riesgo MACE a 14 días",
+    "patient": {
+      "intro": "Este cálculo estima el riesgo de que tengas una complicación grave durante las próximas 2 semanas por tu episodio cardíaco. Ayuda al equipo a decidir si conviene hacer una coronariografía precoz.",
+      "result_low": "Tu riesgo es bajo. Se puede hacer un seguimiento conservador con pruebas no invasivas si hacen falta.",
+      "result_moderate": "Tu riesgo es intermedio. Las guías recomiendan valorar una estrategia invasiva precoz.",
+      "result_high": "Tu riesgo es alto. Hace falta una estrategia invasiva urgente y valoración por cardiología.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Qué momento se plantea para la coronariografía?",
+        "¿Qué fármacos tomaré los próximos días y para qué?",
+        "¿Cómo puedo reconocer si los síntomas empeoran?"
+      ]
+    }
+  },
   "grace": {
     "title": "GRACE",
     "subtitle": "Riesgo de mortalidad hospitalaria en síndrome coronario agudo",
