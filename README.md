@@ -1,5 +1,7 @@
 # MedikQuantis
 
+[![CI](https://github.com/laurapiro17/medikquantis/actions/workflows/ci.yml/badge.svg)](https://github.com/laurapiro17/medikquantis/actions/workflows/ci.yml)
+
 Multilingual cardiology clinical calculators with locally validated scoring.
 
 > Domini: a triar entre `medikquantis.com` / `medikquantis.health` / `medikquantis.es` (els 10 TLDs principals estan lliures al 5 jun 2026). Repo: [github.com/laurapiro17/medikquantis](https://github.com/laurapiro17/medikquantis).
