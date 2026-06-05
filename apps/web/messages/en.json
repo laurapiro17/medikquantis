@@ -61,6 +61,30 @@
       ]
     }
   },
+  "nyha": {
+    "title": "NYHA",
+    "subtitle": "Functional classification of heart failure",
+    "question": "What is the patient's functional limitation?",
+    "classes": {
+      "I": "I — no symptoms with ordinary activity",
+      "II": "II — slight limitation; comfortable at rest but ordinary activity causes symptoms",
+      "III": "III — marked limitation; comfortable at rest but less-than-ordinary activity causes symptoms",
+      "IV": "IV — symptoms at rest; any activity makes them worse"
+    },
+    "result_class": "NYHA class",
+    "patient": {
+      "intro": "This classification measures how much heart failure affects your daily life. It helps your cardiologist choose treatment and decide whether to add a device or refer you to a specialised centre.",
+      "result_low": "Your symptoms are minimal or absent. Continue your background treatment as prescribed.",
+      "result_moderate": "Your symptoms are mild during everyday activity. Medical therapy should be optimised and follow-up kept regular.",
+      "result_high": "Your symptoms are significant and may require advanced therapies or evaluation by a specialised heart-failure centre.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "Am I on the complete four-pillar combination?",
+        "Would I benefit from a device such as a CRT or an ICD?",
+        "Should we consider a referral to a heart-failure unit?"
+      ]
+    }
+  },
   "timi": {
     "title": "TIMI",
     "subtitle": "14-day death / MI / urgent revascularization risk in UA/NSTEMI",

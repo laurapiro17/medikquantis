@@ -61,6 +61,30 @@
       ]
     }
   },
+  "nyha": {
+    "title": "NYHA",
+    "subtitle": "Clasificación funcional de insuficiencia cardíaca",
+    "question": "¿Qué grado de limitación funcional presenta el paciente?",
+    "classes": {
+      "I": "I — sin síntomas con la actividad ordinaria",
+      "II": "II — ligera limitación; cómodo en reposo pero la actividad ordinaria causa síntomas",
+      "III": "III — limitación marcada; cómodo en reposo pero menos de la actividad ordinaria causa síntomas",
+      "IV": "IV — síntomas en reposo; cualquier actividad los empeora"
+    },
+    "result_class": "Clase NYHA",
+    "patient": {
+      "intro": "Esta clasificación mide cuánto te afecta la insuficiencia cardíaca en la vida diaria. Ayuda a tu cardiólogo a elegir el tratamiento y a saber si conviene añadir dispositivos o derivarte a un centro especializado.",
+      "result_low": "Tus síntomas son mínimos o inexistentes. Continúa el tratamiento base según tu médico.",
+      "result_moderate": "Tus síntomas son leves con la actividad habitual. Hay que optimizar el tratamiento farmacológico y mantener un control regular.",
+      "result_high": "Tus síntomas son notables y pueden requerir tratamientos avanzados o evaluación por parte de un centro especializado en insuficiencia cardíaca.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Estoy tomando la combinación completa de fármacos (4 pilares)?",
+        "¿Me beneficiaría un dispositivo como un TRC o un DAI?",
+        "¿Deberíamos plantear una visita a una unidad de insuficiencia cardíaca?"
+      ]
+    }
+  },
   "timi": {
     "title": "TIMI",
     "subtitle": "Riesgo de muerte/IM/revascularización urgente a 14 días en UA/NSTEMI",

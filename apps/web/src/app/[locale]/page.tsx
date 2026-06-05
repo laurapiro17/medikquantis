@@ -9,6 +9,7 @@ const calcs = [
   { slug: "heart", key: "heart" },
   { slug: "grace", key: "grace" },
   { slug: "timi", key: "timi" },
+  { slug: "nyha", key: "nyha" },
 ] as const;
 
 export default async function HomePage({

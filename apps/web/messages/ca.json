@@ -61,6 +61,30 @@
       ]
     }
   },
+  "nyha": {
+    "title": "NYHA",
+    "subtitle": "Classificació funcional d'insuficiència cardíaca",
+    "question": "Quin grau de limitació funcional presenta el pacient?",
+    "classes": {
+      "I": "I — sense símptomes amb activitat ordinària",
+      "II": "II — lleugera limitació; còmode en repòs però l'activitat ordinària causa símptomes",
+      "III": "III — limitació marcada; còmode en repòs però menys de l'activitat ordinària causa símptomes",
+      "IV": "IV — símptomes en repòs; qualsevol activitat els empitjora"
+    },
+    "result_class": "Classe NYHA",
+    "patient": {
+      "intro": "Aquesta classificació mesura quant t'afecta la insuficiència cardíaca a la vida diària. Ajuda al teu cardiòleg a triar el tractament i a saber si convé afegir dispositius o derivar a un centre especialitzat.",
+      "result_low": "Els teus símptomes són mínims o nuls. Continua el tractament base segons el teu metge.",
+      "result_moderate": "Els teus símptomes són lleus amb l'activitat habitual. Cal optimitzar el tractament farmacològic i seguir control regular.",
+      "result_high": "Els teus símptomes són notables i poden requerir tractaments avançats o avaluació per part d'un centre especialitzat en insuficiència cardíaca.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Estic prenent la combinació completa de fàrmacs (4 pilars)?",
+        "Em beneficiaria un dispositiu com un CRT o un DAI?",
+        "Hauríem de plantejar una visita a una unitat d'insuficiència cardíaca?"
+      ]
+    }
+  },
   "timi": {
     "title": "TIMI",
     "subtitle": "Risc de mort/MI/revascularització urgent a 14 dies en UA/NSTEMI",
