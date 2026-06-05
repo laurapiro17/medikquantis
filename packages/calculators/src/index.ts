@@ -7,3 +7,8 @@ export * as heart from "./heart";
 export * as grace from "./grace";
 export * as timi from "./timi";
 export * as nyha from "./nyha";
+export * as ckdEpi2021 from "./ckd-epi-2021";
+export * as wellsPe from "./wells-pe";
+export * as meld3 from "./meld-3";
+export * as perc from "./perc";
+export * as qsofa from "./qsofa";

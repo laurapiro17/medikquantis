@@ -159,6 +159,125 @@
       ]
     }
   },
+  "ckdEpi2021": {
+    "title": "CKD-EPI 2021",
+    "subtitle": "Filtrat glomerular estimat (eGFR) sense factor racial",
+    "fields": {
+      "age": "Edat (anys)",
+      "sex": "Sexe",
+      "creatinine": "Creatinina sèrica (mg/dL)"
+    },
+    "result_label": "eGFR (mL/min/1,73 m²)",
+    "stage_label": "Estadi KDIGO",
+    "patient": {
+      "intro": "Aquest càlcul estima com de bé filtren els teus ronyons (filtrat glomerular). Ajuda el teu metge a saber l'estadi de la teva funció renal i si cal seguiment especialitzat.",
+      "result_low": "El teu filtrat glomerular és normal o lleugerament reduït. Continua el seguiment habitual.",
+      "result_moderate": "El teu filtrat glomerular està moderadament reduït. Cal valorar la causa i possibles complicacions; pot caldre valoració per nefrologia.",
+      "result_high": "El teu filtrat glomerular és greument reduït. Es necessita seguiment per nefrologia i potser tractament substitutiu (diàlisi o trasplantament).",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Quin estadi KDIGO tinc i com em controleu?",
+        "Quins fàrmacs hauria d'evitar o ajustar?",
+        "Cada quant haurem de revisar la funció renal?"
+      ]
+    }
+  },
+  "wellsPe": {
+    "title": "Wells PE",
+    "subtitle": "Probabilitat clínica d'embòlia pulmonar",
+    "fields": {
+      "clinicalSignsOfDvt": "Signes clínics de TVP (edema unilateral, dolor a la palpació)",
+      "peAsLikelyAsAlternative": "EP és el diagnòstic més probable o equivalent a altres",
+      "heartRateOver100": "Freqüència cardíaca > 100 bpm",
+      "immobilizationOrSurgeryLast4Weeks": "Immobilització ≥3 dies o cirurgia en les últimes 4 setmanes",
+      "previousDvtOrPe": "TVP o EP prèvies",
+      "hemoptysis": "Hemoptisi",
+      "activeOrTreatedMalignancy": "Càncer actiu o tractat els últims 6 mesos"
+    },
+    "patient": {
+      "intro": "Aquest càlcul estima la probabilitat que els teus símptomes (dispnea, dolor toràcic) siguin causats per una embòlia pulmonar.",
+      "result_low": "La probabilitat és baixa. Probablement caldrà una anàlisi de sang (dímer-D) per descartar definitivament.",
+      "result_moderate": "La probabilitat és intermèdia. Probablement caldrà una analítica i possiblement una prova d'imatge.",
+      "result_high": "La probabilitat és alta. Cal fer directament una prova d'imatge (angio-TC pulmonar) per confirmar.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Quina prova em faran a continuació?",
+        "Si es confirma l'EP, quin tractament prendré i durant quant?",
+        "Quins signes d'alarma he de vigilar?"
+      ]
+    }
+  },
+  "meld3": {
+    "title": "MELD 3.0",
+    "subtitle": "Severitat de la malaltia hepàtica i prioritat de trasplantament",
+    "fields": {
+      "sex": "Sexe",
+      "creatinine": "Creatinina sèrica (mg/dL)",
+      "bilirubin": "Bilirubina total (mg/dL)",
+      "inr": "INR",
+      "sodium": "Sodi sèric (mEq/L)",
+      "albumin": "Albúmina sèrica (g/dL)",
+      "onDialysisLast7Days": "Diàlisi ≥ 2 vegades en els últims 7 dies"
+    },
+    "patient": {
+      "intro": "Aquest càlcul mesura la severitat de la teva malaltia hepàtica i ajuda a decidir la prioritat per a un trasplantament de fetge.",
+      "result_low": "La severitat és baixa. Seguiment ambulatori amb el teu hepatòleg.",
+      "result_moderate": "La severitat és intermèdia. Cal intensificar el seguiment i valorar candidatura a trasplantament.",
+      "result_high": "La severitat és alta. Cal prioritzar la valoració per trasplantament i atendre les complicacions agudes.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Estic en llista d'espera de trasplantament? Quina prioritat tinc?",
+        "Quines complicacions hem de vigilar?",
+        "Hi ha algun fàrmac que pugui millorar el meu MELD?"
+      ]
+    }
+  },
+  "perc": {
+    "title": "PERC",
+    "subtitle": "Criteris per descartar embòlia pulmonar sense més proves",
+    "fields": {
+      "ageOver50": "Edat ≥ 50 anys",
+      "heartRateOver100": "Freqüència cardíaca ≥ 100 bpm",
+      "oxygenSaturationBelow95": "SatO₂ < 95 % a aire ambient",
+      "hemoptysis": "Hemoptisi",
+      "estrogenUse": "Ús d'estrògens (anticonceptius, teràpia hormonal)",
+      "previousDvtOrPe": "TVP o EP prèvies",
+      "unilateralLegSwelling": "Edema unilateral de cama",
+      "recentSurgeryOrTrauma": "Cirurgia o traumatisme en les últimes 4 setmanes"
+    },
+    "patient": {
+      "intro": "Aquesta regla ajuda al metge d'urgències a decidir si pot descartar amb seguretat una embòlia pulmonar sense fer cap analítica ni prova d'imatge, quan la sospita clínica ja és baixa.",
+      "result_low": "Cap criteri positiu. Amb baixa sospita clínica, es pot descartar l'embòlia pulmonar sense més proves.",
+      "result_high": "Hi ha almenys un criteri positiu. PERC no pot descartar l'EP en aquest cas; cal una analítica (dímer-D) o prova d'imatge.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Què faríeu si tinguéssiu qualsevol dubte?",
+        "Quins signes d'alarma he de tenir presents si me'n vaig a casa?",
+        "Quan he de tornar si torno a tenir símptomes?"
+      ]
+    }
+  },
+  "qsofa": {
+    "title": "qSOFA",
+    "subtitle": "Cribratge ràpid de disfunció orgànica per sèpsia (Sepsis-3)",
+    "fields": {
+      "alteredMentalStatus": "Alteració de l'estat mental (Glasgow < 15)",
+      "respiratoryRateAtLeast22": "Freqüència respiratòria ≥ 22 rpm",
+      "systolicBpAtMost100": "Tensió arterial sistòlica ≤ 100 mmHg"
+    },
+    "patient": {
+      "intro": "Aquesta puntuació ràpida ajuda al personal sanitari a identificar pacients amb sospita d'infecció que poden estar desenvolupant disfunció dels òrgans (sèpsia).",
+      "result_low": "Cap criteri positiu. Risc baix immediat de disfunció orgànica. Es manté l'observació rutinària.",
+      "result_moderate": "Un criteri positiu. Cal reavaluació seriada per detectar qualsevol empitjorament.",
+      "result_high": "Dos o més criteris positius. Alta sospita de sèpsia amb disfunció orgànica. Cal escalada de cures, valoració per a SOFA complet, lactat, hemocultius i antibioteràpia precoç.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Tinc una infecció? On podria estar?",
+        "Cal que faci una analítica completa o cultius?",
+        "Quins signes d'empitjorament hauria de vigilar?"
+      ]
+    }
+  },
   "nyha": {
     "title": "NYHA",
     "subtitle": "Classificació funcional d'insuficiència cardíaca",

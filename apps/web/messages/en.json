@@ -159,6 +159,125 @@
       ]
     }
   },
+  "ckdEpi2021": {
+    "title": "CKD-EPI 2021",
+    "subtitle": "Estimated glomerular filtration rate (eGFR) without race coefficient",
+    "fields": {
+      "age": "Age (years)",
+      "sex": "Sex",
+      "creatinine": "Serum creatinine (mg/dL)"
+    },
+    "result_label": "eGFR (mL/min/1.73 m²)",
+    "stage_label": "KDIGO stage",
+    "patient": {
+      "intro": "This calculation estimates how well your kidneys filter (glomerular filtration rate). It helps your doctor stage your kidney function and decide whether you need specialist follow-up.",
+      "result_low": "Your eGFR is normal or mildly reduced. Continue your usual follow-up.",
+      "result_moderate": "Your eGFR is moderately reduced. The cause and possible complications should be evaluated; nephrology referral may be needed.",
+      "result_high": "Your eGFR is severely reduced. Nephrology follow-up and possibly renal replacement therapy (dialysis or transplant) are needed.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "Which KDIGO stage am I in and how are you monitoring it?",
+        "Which drugs should I avoid or have dose-adjusted?",
+        "How often should we reassess my kidney function?"
+      ]
+    }
+  },
+  "wellsPe": {
+    "title": "Wells PE",
+    "subtitle": "Clinical probability of pulmonary embolism",
+    "fields": {
+      "clinicalSignsOfDvt": "Clinical signs of DVT (unilateral swelling, tenderness)",
+      "peAsLikelyAsAlternative": "PE is the most likely diagnosis or equally likely as alternatives",
+      "heartRateOver100": "Heart rate > 100 bpm",
+      "immobilizationOrSurgeryLast4Weeks": "Immobilisation ≥3 days or surgery in the last 4 weeks",
+      "previousDvtOrPe": "Previous DVT or PE",
+      "hemoptysis": "Haemoptysis",
+      "activeOrTreatedMalignancy": "Active or recently treated cancer (last 6 months)"
+    },
+    "patient": {
+      "intro": "This calculation estimates the probability that your symptoms (shortness of breath, chest pain) are caused by a pulmonary embolism.",
+      "result_low": "The probability is low. A blood test (D-dimer) is probably needed to rule it out definitively.",
+      "result_moderate": "The probability is intermediate. Blood tests and possibly an imaging study will probably be needed.",
+      "result_high": "The probability is high. An imaging study (CT pulmonary angiography) is needed directly to confirm.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "Which test will I have next?",
+        "If PE is confirmed, what treatment will I take and for how long?",
+        "Which warning signs should I watch for?"
+      ]
+    }
+  },
+  "meld3": {
+    "title": "MELD 3.0",
+    "subtitle": "End-stage liver disease severity and transplant priority",
+    "fields": {
+      "sex": "Sex",
+      "creatinine": "Serum creatinine (mg/dL)",
+      "bilirubin": "Total bilirubin (mg/dL)",
+      "inr": "INR",
+      "sodium": "Serum sodium (mEq/L)",
+      "albumin": "Serum albumin (g/dL)",
+      "onDialysisLast7Days": "Dialysis ≥ 2 times in the last 7 days"
+    },
+    "patient": {
+      "intro": "This calculation measures the severity of your liver disease and helps decide priority for a liver transplant.",
+      "result_low": "Severity is low. Outpatient hepatology follow-up.",
+      "result_moderate": "Severity is intermediate. Follow-up should be intensified and transplant candidacy assessed.",
+      "result_high": "Severity is high. Transplant evaluation should be prioritised and acute complications addressed.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "Am I on the transplant waiting list? What is my priority?",
+        "Which complications should we watch for?",
+        "Is there any medication that could improve my MELD?"
+      ]
+    }
+  },
+  "perc": {
+    "title": "PERC",
+    "subtitle": "Criteria to rule out pulmonary embolism without further testing",
+    "fields": {
+      "ageOver50": "Age ≥ 50 years",
+      "heartRateOver100": "Heart rate ≥ 100 bpm",
+      "oxygenSaturationBelow95": "SpO₂ < 95 % on room air",
+      "hemoptysis": "Haemoptysis",
+      "estrogenUse": "Oestrogen use (contraception, hormone therapy)",
+      "previousDvtOrPe": "Previous DVT or PE",
+      "unilateralLegSwelling": "Unilateral leg swelling",
+      "recentSurgeryOrTrauma": "Surgery or trauma in the last 4 weeks"
+    },
+    "patient": {
+      "intro": "This rule helps the emergency doctor decide whether they can safely rule out a pulmonary embolism without any blood test or imaging, when clinical suspicion is already low.",
+      "result_low": "No criterion positive. With low clinical suspicion, pulmonary embolism can be ruled out without further testing.",
+      "result_high": "At least one criterion is positive. PERC cannot rule out PE here; a blood test (D-dimer) or imaging is required.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "What would you do if any doubt remained?",
+        "Which warning signs should I keep in mind if I go home?",
+        "When should I come back if symptoms return?"
+      ]
+    }
+  },
+  "qsofa": {
+    "title": "qSOFA",
+    "subtitle": "Quick screen for sepsis-related organ dysfunction (Sepsis-3)",
+    "fields": {
+      "alteredMentalStatus": "Altered mental status (Glasgow < 15)",
+      "respiratoryRateAtLeast22": "Respiratory rate ≥ 22 breaths/min",
+      "systolicBpAtMost100": "Systolic blood pressure ≤ 100 mmHg"
+    },
+    "patient": {
+      "intro": "This quick score helps healthcare staff identify patients with suspected infection who may be developing organ dysfunction (sepsis).",
+      "result_low": "No criterion positive. Low immediate concern for organ dysfunction. Routine assessment continues.",
+      "result_moderate": "One criterion positive. Serial reassessment to detect any deterioration.",
+      "result_high": "Two or more criteria positive. High suspicion of sepsis with organ dysfunction. Escalation of care, full SOFA assessment, lactate, blood cultures and early antibiotics are required.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "Do I have an infection? Where could it be?",
+        "Do I need a full blood workup or cultures?",
+        "Which warning signs should I watch for?"
+      ]
+    }
+  },
   "nyha": {
     "title": "NYHA",
     "subtitle": "Functional classification of heart failure",

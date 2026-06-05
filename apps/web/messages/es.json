@@ -159,6 +159,125 @@
       ]
     }
   },
+  "ckdEpi2021": {
+    "title": "CKD-EPI 2021",
+    "subtitle": "Filtrado glomerular estimado (eGFR) sin factor racial",
+    "fields": {
+      "age": "Edad (años)",
+      "sex": "Sexo",
+      "creatinine": "Creatinina sérica (mg/dL)"
+    },
+    "result_label": "eGFR (mL/min/1,73 m²)",
+    "stage_label": "Estadio KDIGO",
+    "patient": {
+      "intro": "Este cálculo estima cómo de bien filtran tus riñones (filtrado glomerular). Ayuda a tu médico a saber el estadio de tu función renal y si hace falta seguimiento especializado.",
+      "result_low": "Tu filtrado glomerular es normal o ligeramente reducido. Continúa el seguimiento habitual.",
+      "result_moderate": "Tu filtrado glomerular está moderadamente reducido. Conviene valorar la causa y posibles complicaciones; puede hacer falta valoración por nefrología.",
+      "result_high": "Tu filtrado glomerular está gravemente reducido. Se necesita seguimiento por nefrología y posiblemente tratamiento sustitutivo (diálisis o trasplante).",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Qué estadio KDIGO tengo y cómo me controláis?",
+        "¿Qué fármacos debería evitar o ajustar?",
+        "¿Cada cuánto tendremos que revisar la función renal?"
+      ]
+    }
+  },
+  "wellsPe": {
+    "title": "Wells PE",
+    "subtitle": "Probabilidad clínica de embolia pulmonar",
+    "fields": {
+      "clinicalSignsOfDvt": "Signos clínicos de TVP (edema unilateral, dolor a la palpación)",
+      "peAsLikelyAsAlternative": "EP es el diagnóstico más probable o equivalente a otros",
+      "heartRateOver100": "Frecuencia cardíaca > 100 lpm",
+      "immobilizationOrSurgeryLast4Weeks": "Inmovilización ≥3 días o cirugía en las últimas 4 semanas",
+      "previousDvtOrPe": "TVP o EP previas",
+      "hemoptysis": "Hemoptisis",
+      "activeOrTreatedMalignancy": "Cáncer activo o tratado en los últimos 6 meses"
+    },
+    "patient": {
+      "intro": "Este cálculo estima la probabilidad de que tus síntomas (disnea, dolor torácico) sean causados por una embolia pulmonar.",
+      "result_low": "La probabilidad es baja. Probablemente harán falta análisis de sangre (dímero-D) para descartar definitivamente.",
+      "result_moderate": "La probabilidad es intermedia. Probablemente harán falta analíticas y posiblemente una prueba de imagen.",
+      "result_high": "La probabilidad es alta. Hay que hacer directamente una prueba de imagen (angio-TC pulmonar) para confirmar.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Qué prueba me harán a continuación?",
+        "Si se confirma la EP, ¿qué tratamiento tomaré y durante cuánto?",
+        "¿Qué signos de alarma debo vigilar?"
+      ]
+    }
+  },
+  "meld3": {
+    "title": "MELD 3.0",
+    "subtitle": "Severidad de la enfermedad hepática y prioridad de trasplante",
+    "fields": {
+      "sex": "Sexo",
+      "creatinine": "Creatinina sérica (mg/dL)",
+      "bilirubin": "Bilirrubina total (mg/dL)",
+      "inr": "INR",
+      "sodium": "Sodio sérico (mEq/L)",
+      "albumin": "Albúmina sérica (g/dL)",
+      "onDialysisLast7Days": "Diálisis ≥ 2 veces en los últimos 7 días"
+    },
+    "patient": {
+      "intro": "Este cálculo mide la severidad de tu enfermedad hepática y ayuda a decidir la prioridad para un trasplante de hígado.",
+      "result_low": "La severidad es baja. Seguimiento ambulatorio con tu hepatólogo.",
+      "result_moderate": "La severidad es intermedia. Hay que intensificar el seguimiento y valorar candidatura a trasplante.",
+      "result_high": "La severidad es alta. Hay que priorizar la valoración para trasplante y atender las complicaciones agudas.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Estoy en lista de espera de trasplante? ¿Qué prioridad tengo?",
+        "¿Qué complicaciones tenemos que vigilar?",
+        "¿Hay algún fármaco que pueda mejorar mi MELD?"
+      ]
+    }
+  },
+  "perc": {
+    "title": "PERC",
+    "subtitle": "Criterios para descartar embolia pulmonar sin más pruebas",
+    "fields": {
+      "ageOver50": "Edad ≥ 50 años",
+      "heartRateOver100": "Frecuencia cardíaca ≥ 100 lpm",
+      "oxygenSaturationBelow95": "SatO₂ < 95 % a aire ambiente",
+      "hemoptysis": "Hemoptisis",
+      "estrogenUse": "Uso de estrógenos (anticonceptivos, terapia hormonal)",
+      "previousDvtOrPe": "TVP o EP previas",
+      "unilateralLegSwelling": "Edema unilateral de pierna",
+      "recentSurgeryOrTrauma": "Cirugía o traumatismo en las últimas 4 semanas"
+    },
+    "patient": {
+      "intro": "Esta regla ayuda al médico de urgencias a decidir si puede descartar con seguridad una embolia pulmonar sin hacer ninguna analítica ni prueba de imagen, cuando la sospecha clínica ya es baja.",
+      "result_low": "Ningún criterio positivo. Con baja sospecha clínica, se puede descartar la embolia pulmonar sin más pruebas.",
+      "result_high": "Hay al menos un criterio positivo. PERC no puede descartar la EP en este caso; hace falta una analítica (dímero-D) o prueba de imagen.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Qué haríais si tuvierais cualquier duda?",
+        "¿Qué signos de alarma debo tener presentes si me voy a casa?",
+        "¿Cuándo debo volver si tengo de nuevo síntomas?"
+      ]
+    }
+  },
+  "qsofa": {
+    "title": "qSOFA",
+    "subtitle": "Cribado rápido de disfunción orgánica por sepsis (Sepsis-3)",
+    "fields": {
+      "alteredMentalStatus": "Alteración del estado mental (Glasgow < 15)",
+      "respiratoryRateAtLeast22": "Frecuencia respiratoria ≥ 22 rpm",
+      "systolicBpAtMost100": "Tensión arterial sistólica ≤ 100 mmHg"
+    },
+    "patient": {
+      "intro": "Esta puntuación rápida ayuda al personal sanitario a identificar pacientes con sospecha de infección que pueden estar desarrollando disfunción de los órganos (sepsis).",
+      "result_low": "Ningún criterio positivo. Riesgo bajo inmediato de disfunción orgánica. Se mantiene la observación rutinaria.",
+      "result_moderate": "Un criterio positivo. Hay que reevaluar de forma seriada para detectar cualquier empeoramiento.",
+      "result_high": "Dos o más criterios positivos. Alta sospecha de sepsis con disfunción orgánica. Hay que escalar cuidados, valorar el SOFA completo, lactato, hemocultivos y antibioterapia precoz.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Tengo una infección? ¿Dónde podría estar?",
+        "¿Hace falta una analítica completa o cultivos?",
+        "¿Qué signos de empeoramiento debería vigilar?"
+      ]
+    }
+  },
   "nyha": {
     "title": "NYHA",
     "subtitle": "Clasificación funcional de insuficiencia cardíaca",

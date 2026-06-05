@@ -8,6 +8,11 @@ import {
   grace,
   timi,
   nyha,
+  ckdEpi2021,
+  wellsPe,
+  meld3,
+  perc,
+  qsofa,
 } from "@medcalc/calculators";
 import { Link } from "@/i18n/navigation";
 
@@ -20,6 +25,11 @@ const calcs = [
   { slug: "grace", key: "grace", calc: grace.calculator },
   { slug: "timi", key: "timi", calc: timi.calculator },
   { slug: "nyha", key: "nyha", calc: nyha.calculator },
+  { slug: "ckd-epi-2021", key: "ckdEpi2021", calc: ckdEpi2021.calculator },
+  { slug: "wells-pe", key: "wellsPe", calc: wellsPe.calculator },
+  { slug: "meld-3", key: "meld3", calc: meld3.calculator },
+  { slug: "perc", key: "perc", calc: perc.calculator },
+  { slug: "qsofa", key: "qsofa", calc: qsofa.calculator },
 ] as const;
 
 export default async function HomePage({
