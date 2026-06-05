@@ -1,9 +1,86 @@
 {
   "site": {
     "title": "MedikQuantis",
-    "tagline": "Cardiology clinical calculators validated in Iberian populations.",
+    "tagline": "Cardiology clinical calculators in Catalan, Spanish and English — open source, cited evidence, patient mode.",
     "built_by": "Built in Barcelona",
-    "open_source": "Open source on"
+    "open_source": "Open source on",
+    "disclaimer_banner": "Informational · does not replace consultation with a healthcare professional.",
+    "nav_about": "About",
+    "nav_privacy": "Privacy",
+    "nav_terms": "Terms"
+  },
+  "about": {
+    "heading": "About MedikQuantis",
+    "intro": "MedikQuantis is an open collection of cardiology clinical calculators localised to Catalan and Spanish, with plain-language patient explanations on every calculator and the supporting evidence cited for every score.",
+    "who_heading": "Who is behind it",
+    "who_body": "A project by Laura Piñero Roig, medical student at the University of Barcelona. Open source under the MIT license, maintained as a solo project.",
+    "what_it_is_heading": "What it is",
+    "what_it_is": [
+      "An informational tool for clinicians and medical students.",
+      "Faithful implementation of the original scores, with the PubMed citation on every page.",
+      "Catalan and Spanish localisation written by a medical student, not machine-translated.",
+      "Patient mode with plain language and questions to ask the doctor."
+    ],
+    "what_it_isnt_heading": "What it is NOT",
+    "what_it_isnt": [
+      "NOT a diagnostic tool or a substitute for medical assessment.",
+      "NOT issuing personalised therapeutic recommendations.",
+      "NOT yet validated in local populations; the scores are the originals from the authors.",
+      "NOT collecting user data; everything is computed in your browser."
+    ],
+    "roadmap_heading": "Research roadmap",
+    "roadmap_body": "A series of external-validation papers is in development, applying each score to Iberian-population cohorts using public datasets (MIMIC-IV, UK Biobank). When published, each calculator will display a local-validation badge linked to the corresponding paper.",
+    "contact_heading": "Contact",
+    "contact_body": "For bugs, suggestions or collaborations, open an issue on"
+  },
+  "privacy": {
+    "heading": "Privacy",
+    "updated": "Updated: June 2026",
+    "summary": "MedikQuantis does not collect, store or share any of your personal data. Every calculation runs in your browser and nothing is sent to the server.",
+    "sections": [
+      {
+        "heading": "Clinical data",
+        "body": "When you fill in a calculator, the data (age, sex, risk factors, etc.) is processed exclusively on your device. It is not transmitted anywhere, not stored, not logged."
+      },
+      {
+        "heading": "Cookies and analytics",
+        "body": "This site uses no cookies and no analytics tools (no Google Analytics, no tracking pixels, no third-party cookies). The only piece of data persisted locally is your theme preference (light/dark) in browser localStorage. You can clear it any time."
+      },
+      {
+        "heading": "Server logs",
+        "body": "The site is hosted on Vercel, which may keep anonymous technical logs (IP address, user agent) for a short period for operations and security. These logs are not used for analytics. See Vercel's privacy policy for full detail."
+      },
+      {
+        "heading": "Your rights (GDPR)",
+        "body": "Because we do not collect personal data, there is nothing to access, modify or delete. If you have concerns, contact us via GitHub."
+      }
+    ]
+  },
+  "terms": {
+    "heading": "Terms of use",
+    "updated": "Updated: June 2026",
+    "sections": [
+      {
+        "heading": "Informational nature",
+        "body": "MedikQuantis is an informational tool for healthcare professionals and medical students. It is NOT a medical device, has NOT been approved by any regulatory agency, and does NOT substitute for the clinical judgement of a qualified professional."
+      },
+      {
+        "heading": "No warranty",
+        "body": "The service is provided \"as is\", without any explicit or implied warranty. We do not warrant that the results will always be accurate, complete or appropriate for a specific clinical situation. The user accepts the service at their sole responsibility."
+      },
+      {
+        "heading": "Limitation of liability",
+        "body": "Under no circumstances will the authors or copyright holders be liable for any damage, loss or injury arising from the use or inability to use this service."
+      },
+      {
+        "heading": "License",
+        "body": "Source code is open under the MIT license. You may copy, modify and redistribute it, keeping the copyright notice and the medical disclaimer. See the LICENSE file in the repository for the full text."
+      },
+      {
+        "heading": "Acceptance",
+        "body": "Use of this site implies acceptance of these terms. If you do not agree, do not use it."
+      }
+    ]
   },
   "home": {
     "heading": "Calculators",

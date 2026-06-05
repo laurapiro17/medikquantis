@@ -1,9 +1,86 @@
 {
   "site": {
     "title": "MedikQuantis",
-    "tagline": "Calculadores clíniques cardiològiques validades en població ibèrica.",
+    "tagline": "Calculadores clíniques cardiològiques en català, castellà i anglès — codi obert, evidència citada, mode pacient.",
     "built_by": "Construït a Barcelona",
-    "open_source": "Codi obert a"
+    "open_source": "Codi obert a",
+    "disclaimer_banner": "Informatiu · no substitueix la consulta amb un professional sanitari.",
+    "nav_about": "Sobre",
+    "nav_privacy": "Privacitat",
+    "nav_terms": "Condicions"
+  },
+  "about": {
+    "heading": "Sobre MedikQuantis",
+    "intro": "MedikQuantis és una col·lecció oberta de calculadores clíniques cardiològiques traduïdes al català i al castellà, amb explicacions per a pacients en cada calculadora i evidència citada per a cada puntuació.",
+    "who_heading": "Qui hi ha al darrere",
+    "who_body": "Projecte de Laura Piñero Roig, estudiant de Medicina a la Universitat de Barcelona. Codi obert sota llicència MIT, mantingut individualment.",
+    "what_it_is_heading": "Què és",
+    "what_it_is": [
+      "Una eina informativa per a clínics i estudiants de medicina.",
+      "Implementació fidel de les puntuacions originals, amb la cita PubMed a cada pàgina.",
+      "Localització a català i castellà fetes per una estudiant de medicina, no traducció automàtica.",
+      "Mode pacient amb llenguatge senzill i preguntes per fer al metge."
+    ],
+    "what_it_isnt_heading": "Què NO és",
+    "what_it_isnt": [
+      "NO és una eina de diagnòstic ni un substitut de la valoració mèdica.",
+      "NO emet recomanacions terapèutiques personalitzades.",
+      "NO ha estat validat encara en població local; les puntuacions són les originals dels autors.",
+      "NO recull dades dels usuaris; tot es calcula al teu navegador."
+    ],
+    "roadmap_heading": "Pla d'investigació",
+    "roadmap_body": "Hi ha en desenvolupament una sèrie de papers de validació externa de cada puntuació en poblacions ibèriques, usant datasets públics (MIMIC-IV, UK Biobank). Quan estiguin publicats, cada calculadora exhibirà un segell de validació local enllaçat al paper corresponent.",
+    "contact_heading": "Contacte",
+    "contact_body": "Per a errors, suggeriments o col·laboracions, obre un issue a"
+  },
+  "privacy": {
+    "heading": "Privacitat",
+    "updated": "Actualitzat: juny 2026",
+    "summary": "MedikQuantis no recull, emmagatzema ni comparteix cap dada personal teva. Tots els càlculs es fan al teu navegador i mai s'envien al servidor.",
+    "sections": [
+      {
+        "heading": "Dades clíniques",
+        "body": "Quan omples una calculadora, les dades (edat, sexe, factors de risc, etc.) es processen exclusivament al teu dispositiu. No són enviades enlloc, no són guardades, no són logades."
+      },
+      {
+        "heading": "Cookies i analítica",
+        "body": "Aquest lloc no utilitza cookies ni eines d'analítica (no hi ha Google Analytics, no hi ha píxels de seguiment, no hi ha cookies de tercers). L'única dada guardada localment és la teva preferència de tema (clar/fosc), al localStorage del navegador. Pots esborrar-la en qualsevol moment."
+      },
+      {
+        "heading": "Logs del servidor",
+        "body": "El lloc està allotjat a Vercel, que pot mantenir logs tècnics anònims (adreça IP, user-agent) durant un període curt per a operació i seguretat. Aquests logs no s'utilitzen amb finalitats analítiques. Consulta la política de privacitat de Vercel per a més detall."
+      },
+      {
+        "heading": "Els teus drets (GDPR)",
+        "body": "Com que no recollim dades personals, no n'hi ha res per a accedir, modificar o eliminar. Si tens preocupacions, contacta'ns via GitHub."
+      }
+    ]
+  },
+  "terms": {
+    "heading": "Condicions d'ús",
+    "updated": "Actualitzat: juny 2026",
+    "sections": [
+      {
+        "heading": "Naturalesa informativa",
+        "body": "MedikQuantis és una eina informativa per a professionals sanitaris i estudiants de medicina. NO és un dispositiu mèdic, NO ha estat aprovat per cap agència reguladora, i NO substitueix el judici clínic d'un professional qualificat."
+      },
+      {
+        "heading": "No es garanteix res",
+        "body": "El servei es proporciona \"tal com és\", sense cap garantia explícita ni implícita. No garantim que els resultats siguin sempre precisos, complets o adequats per a una situació clínica concreta. L'usuari accepta usar-lo sota la seva exclusiva responsabilitat."
+      },
+      {
+        "heading": "Limitació de responsabilitat",
+        "body": "En cap cas els autors o titulars del copyright seran responsables de cap dany, pèrdua o lesió derivats de l'ús o impossibilitat d'ús d'aquest servei."
+      },
+      {
+        "heading": "Llicència",
+        "body": "El codi font és obert sota llicència MIT. Pots fer-ne còpies, modificacions i redistribuir-les, mantenint l'avís de copyright i el disclaimer mèdic. Consulta el fitxer LICENSE al repositori per al text complet."
+      },
+      {
+        "heading": "Acceptació",
+        "body": "Usar aquest lloc implica l'acceptació d'aquestes condicions. Si no hi estàs d'acord, no l'utilitzis."
+      }
+    ]
   },
   "home": {
     "heading": "Calculadores",
