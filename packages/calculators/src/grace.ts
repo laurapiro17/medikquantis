@@ -151,6 +151,7 @@ export const calculator: CalcDefinition<typeof GraceInputs> = {
   formula,
   interpret: (score) => interpret(score),
   scoreRange: { min: 0, max: 372 },
+  specialty: "cardiology",
   i18nKey: "grace",
   references: [
     {

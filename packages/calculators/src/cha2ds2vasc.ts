@@ -98,6 +98,7 @@ export const calculator: CalcDefinition<typeof Cha2ds2vascInputs> = {
   formula,
   interpret,
   scoreRange: { min: 0, max: 9 },
+  specialty: "cardiology",
   i18nKey: "cha2ds2vasc",
   references: [
     {

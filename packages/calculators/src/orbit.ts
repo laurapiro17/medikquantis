@@ -71,6 +71,7 @@ export const calculator: CalcDefinition<typeof OrbitInputs> = {
   formula,
   interpret: (score) => interpret(score),
   scoreRange: { min: 0, max: 7 },
+  specialty: "cardiology",
   i18nKey: "orbit",
   references: [
     {

@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "MedikQuantis",
-    "tagline": "Calculadoras clínicas cardiológicas en catalán, castellano e inglés — código abierto, evidencia citada, modo paciente.",
+    "tagline": "Calculadoras clínicas en catalán, castellano e inglés — código abierto, evidencia citada, modo paciente. Empezamos por cardiología.",
     "built_by": "Hecho en Barcelona",
     "open_source": "Código abierto en",
     "disclaimer_banner": "Informativo · no sustituye la consulta con un profesional sanitario.",
@@ -9,9 +9,30 @@
     "nav_privacy": "Privacidad",
     "nav_terms": "Términos"
   },
+  "specialties": {
+    "cardiology": "Cardiología",
+    "nephrology": "Nefrología",
+    "hematology": "Hematología",
+    "pulmonology": "Neumología",
+    "gastroenterology": "Digestivo",
+    "endocrinology": "Endocrinología",
+    "neurology": "Neurología",
+    "emergency": "Urgencias",
+    "internal_medicine": "Medicina interna",
+    "pediatrics": "Pediatría",
+    "obstetrics": "Obstetricia",
+    "surgery": "Cirugía",
+    "psychiatry": "Psiquiatría",
+    "rheumatology": "Reumatología",
+    "dermatology": "Dermatología",
+    "oncology": "Oncología",
+    "infectious_diseases": "Enfermedades infecciosas",
+    "intensive_care": "Cuidados intensivos",
+    "pharmacology": "Farmacología"
+  },
   "about": {
     "heading": "Acerca de MedikQuantis",
-    "intro": "MedikQuantis es una colección abierta de calculadoras clínicas cardiológicas traducidas al catalán y al castellano, con explicaciones para pacientes en cada calculadora y evidencia citada para cada puntuación.",
+    "intro": "MedikQuantis es una colección abierta de calculadoras clínicas traducidas al catalán y al castellano, con explicaciones para pacientes en cada calculadora y evidencia citada para cada puntuación. Actualmente cubrimos cardiología; iremos añadiendo otros ámbitos médicos progresivamente.",
     "who_heading": "Quién hay detrás",
     "who_body": "Proyecto de Laura Piñero Roig, estudiante de Medicina en la Universidad de Barcelona. Código abierto bajo licencia MIT, mantenido individualmente.",
     "what_it_is_heading": "Qué es",

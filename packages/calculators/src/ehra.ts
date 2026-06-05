@@ -85,6 +85,7 @@ export const calculator: CalcDefinition<typeof EhraInputs> = {
   formula,
   interpret: (score, inputs) => interpret(score, inputs),
   scoreRange: { min: 1, max: 5 },
+  specialty: "cardiology",
   i18nKey: "ehra",
   references: [
     {

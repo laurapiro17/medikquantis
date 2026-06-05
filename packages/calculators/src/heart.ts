@@ -119,6 +119,7 @@ export const calculator: CalcDefinition<typeof HeartInputs> = {
   formula,
   interpret: (score) => interpret(score),
   scoreRange: { min: 0, max: 10 },
+  specialty: "cardiology",
   i18nKey: "heart",
   references: [
     {

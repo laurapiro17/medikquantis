@@ -81,6 +81,7 @@ export const calculator: CalcDefinition<typeof NyhaInputs> = {
   formula,
   interpret: (score, inputs) => interpret(score, inputs),
   scoreRange: { min: 1, max: 4 },
+  specialty: "cardiology",
   i18nKey: "nyha",
   references: [
     {

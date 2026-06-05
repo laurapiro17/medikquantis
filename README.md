@@ -3,15 +3,15 @@
 [![CI](https://github.com/laurapiro17/medikquantis/actions/workflows/ci.yml/badge.svg)](https://github.com/laurapiro17/medikquantis/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Cardiology clinical calculators in Catalan, Spanish and English — open source, cited evidence, patient mode.
+Clinical calculators in Catalan, Spanish and English — open source, cited evidence, patient mode. Starting with cardiology.
 
 ## Question
 
-Why do clinicians in Spain still use English-only calculator tools for cardiology decisions, with no patient-facing mode and no transparent path from input to recommendation?
+Why do clinicians in Spain still use English-only calculator tools, with no patient-facing mode and no transparent path from input to recommendation?
 
 ## Background
 
-MDCalc and MedCalc are the global standards for clinical calculators, but neither offers Catalan/Spanish localisation done by a clinician, neither serves a parallel patient-friendly explanation, and neither publishes the calculation logic as open source code. MedikQuantis fills that gap for cardio.
+MDCalc and MedCalc are the global standards for clinical calculators, but neither offers Catalan/Spanish localisation done by a clinician, neither serves a parallel patient-friendly explanation, and neither publishes the calculation logic as open source code. MedikQuantis fills that gap, starting with cardiology and growing across other medical fields.
 
 ## What it is
 

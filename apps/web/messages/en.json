@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "MedikQuantis",
-    "tagline": "Cardiology clinical calculators in Catalan, Spanish and English — open source, cited evidence, patient mode.",
+    "tagline": "Clinical calculators in Catalan, Spanish and English — open source, cited evidence, patient mode. Starting with cardiology.",
     "built_by": "Built in Barcelona",
     "open_source": "Open source on",
     "disclaimer_banner": "Informational · does not replace consultation with a healthcare professional.",
@@ -9,9 +9,30 @@
     "nav_privacy": "Privacy",
     "nav_terms": "Terms"
   },
+  "specialties": {
+    "cardiology": "Cardiology",
+    "nephrology": "Nephrology",
+    "hematology": "Hematology",
+    "pulmonology": "Pulmonology",
+    "gastroenterology": "Gastroenterology",
+    "endocrinology": "Endocrinology",
+    "neurology": "Neurology",
+    "emergency": "Emergency",
+    "internal_medicine": "Internal medicine",
+    "pediatrics": "Pediatrics",
+    "obstetrics": "Obstetrics",
+    "surgery": "Surgery",
+    "psychiatry": "Psychiatry",
+    "rheumatology": "Rheumatology",
+    "dermatology": "Dermatology",
+    "oncology": "Oncology",
+    "infectious_diseases": "Infectious diseases",
+    "intensive_care": "Intensive care",
+    "pharmacology": "Pharmacology"
+  },
   "about": {
     "heading": "About MedikQuantis",
-    "intro": "MedikQuantis is an open collection of cardiology clinical calculators localised to Catalan and Spanish, with plain-language patient explanations on every calculator and the supporting evidence cited for every score.",
+    "intro": "MedikQuantis is an open collection of clinical calculators localised to Catalan and Spanish, with plain-language patient explanations on every calculator and the supporting evidence cited for every score. We currently cover cardiology and will add other medical fields progressively.",
     "who_heading": "Who is behind it",
     "who_body": "A project by Laura Piñero Roig, medical student at the University of Barcelona. Open source under the MIT license, maintained as a solo project.",
     "what_it_is_heading": "What it is",

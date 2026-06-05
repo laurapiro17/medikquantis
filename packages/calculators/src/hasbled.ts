@@ -83,6 +83,7 @@ export const calculator: CalcDefinition<typeof HasBledInputs> = {
   formula,
   interpret: (score) => interpret(score),
   scoreRange: { min: 0, max: 9 },
+  specialty: "cardiology",
   i18nKey: "hasbled",
   references: [
     {

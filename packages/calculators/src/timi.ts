@@ -81,6 +81,7 @@ export const calculator: CalcDefinition<typeof TimiInputs> = {
   formula,
   interpret: (score) => interpret(score),
   scoreRange: { min: 0, max: 7 },
+  specialty: "cardiology",
   i18nKey: "timi",
   references: [
     {
