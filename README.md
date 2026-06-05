@@ -73,4 +73,13 @@ MIT — see [LICENSE](LICENSE). This software is informational only and is not i
 
 ## Citation
 
-To appear once the first validation paper is submitted. Each calculator's reference list is embedded in `packages/calculators/src/<calc>.ts` and surfaced in the page's Reference section.
+If you use MedikQuantis in academic work, see [`docs/CITING.md`](docs/CITING.md)
+for ready-to-paste Methods paragraphs in English, Catalan and Spanish, plus
+a BibTeX entry.
+
+GitHub renders the [`CITATION.cff`](CITATION.cff) file natively — look for
+the "Cite this repository" button on the repo page. Reference managers
+(Zotero, EndNote, BibTeX) import it automatically.
+
+Each released version is archived on Zenodo with its own DOI. Always cite
+the **specific version** you used so your paper remains reproducible.

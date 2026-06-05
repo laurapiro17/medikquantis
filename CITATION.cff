@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use MedikQuantis in your research, please cite it as below."
+title: "MedikQuantis: Multilingual clinical calculators with patient-mode explanations"
+abstract: >-
+  MedikQuantis is an open-source collection of clinical calculators
+  localised to Catalan, Spanish and English. Each calculator implements
+  the original published score with PubMed-cited references, exposes a
+  dual-mode interface (clinician compact view and patient narrative
+  view), and is covered by deterministic unit tests. The MIT-licensed
+  TypeScript implementation runs entirely client-side, with no data
+  collection. Current scope covers cardiology with active expansion
+  into nephrology, emergency medicine, gastroenterology and intensive
+  care.
+type: software
+authors:
+  - family-names: "Piñero Roig"
+    given-names: "Laura"
+    orcid: "https://orcid.org/0009-0008-3390-4029"
+    affiliation: "School of Medicine, University of Barcelona"
+repository-code: "https://github.com/laurapiro17/medikquantis"
+url: "https://medcalc-cardio.vercel.app"
+license: MIT
+version: 1.0.0
+date-released: "2026-06-05"
+keywords:
+  - clinical calculators
+  - medical informatics
+  - decision support
+  - multilingual
+  - open source
+  - cardiology
+  - nephrology
+  - emergency medicine
+  - typescript
