@@ -38,6 +38,9 @@ jobs:
       - name: Typecheck (strict)
         run: pnpm typecheck
 
+      - name: i18n key parity (CA/ES/EN)
+        run: pnpm lint:i18n
+
       - name: Unit tests (Vitest)
         run: pnpm test
 
