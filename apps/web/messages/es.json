@@ -30,7 +30,9 @@
     "oncology": "Oncología",
     "infectious_diseases": "Enfermedades infecciosas",
     "intensive_care": "Cuidados intensivos",
-    "pharmacology": "Farmacología"
+    "pharmacology": "Farmacología",
+    "urology": "Urología",
+    "geriatrics": "Geriatría"
   },
   "about": {
     "heading": "Acerca de MedikQuantis",
@@ -610,6 +612,113 @@
         "¿Qué antibiótico debo tomar, si procede?",
         "¿Cuándo dejaré de ser contagioso?",
         "¿Cuándo debo volver si los síntomas empeoran?"
+      ]
+    }
+  },
+  "calciumCorrected": {
+    "title": "Calcio corregido por albúmina",
+    "subtitle": "Ajusta el calcio sérico total según la albúmina del paciente (Payne 1973).",
+    "result_label": "Calcio corregido",
+    "fields": {
+      "calciumMgDl": "Calcio total medido (mg/dL)",
+      "albuminGDl": "Albúmina sérica (g/dL)"
+    },
+    "categories": {
+      "hypocalcaemia": "Hipocalcemia",
+      "normal": "Normal",
+      "hypercalcaemia": "Hipercalcemia"
+    },
+    "patient": {
+      "intro": "Esta calculadora ajusta el valor del calcio del análisis para tener en cuenta una albúmina baja (una proteína que se une al calcio).",
+      "result_hypocalcaemia": "Tu calcio corregido está por debajo del rango normal. Tu médico buscará causas como déficit de vitamina D, enfermedad renal o baja actividad de las paratiroides.",
+      "result_normal": "Tu calcio corregido está dentro del rango normal.",
+      "result_hypercalcaemia": "Tu calcio corregido está por encima del rango normal. Tu médico investigará la causa (problemas de paratiroides, ciertos tumores, vitamina D, etc.).",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Qué significa este nivel de calcio para mí?",
+        "¿Necesito otras pruebas como hormona paratiroidea o vitamina D?",
+        "¿Alguno de mis medicamentos cambia el calcio?",
+        "¿Debo cambiar mi dieta o suplementos?"
+      ]
+    }
+  },
+  "sodiumCorrected": {
+    "title": "Sodio corregido por hiperglucemia",
+    "subtitle": "Cuál sería el sodio con una glucosa normal (Katz 1973).",
+    "result_label": "Sodio corregido",
+    "fields": {
+      "sodiumMEqL": "Sodio medido (mEq/L)",
+      "glucoseMgDl": "Glucosa (mg/dL)"
+    },
+    "categories": {
+      "hyponatraemia": "Hiponatremia",
+      "normal": "Normal",
+      "hypernatraemia": "Hipernatremia"
+    },
+    "patient": {
+      "intro": "Cuando el azúcar en sangre está muy alto, atrae agua hacia la sangre y hace que el sodio parezca bajo. Esta calculadora da una mejor estimación de tu sodio real.",
+      "result_hyponatraemia": "Incluso tras la corrección, tu sodio está bajo. Tu médico identificará el tipo y la causa antes de tratar.",
+      "result_normal": "Tras la corrección, tu sodio está dentro del rango normal. El valor bajo del análisis se explica por la glucosa alta.",
+      "result_hypernatraemia": "Tras la corrección, tu sodio está alto. Tu médico revisará el balance de líquidos y la causa.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Mi sodio es realmente bajo o solo está diluido por la glucosa?",
+        "¿Qué está causando ahora mi glucosa alta?",
+        "¿Necesito líquidos extra o insulina?",
+        "¿Qué signos de complicación debo vigilar?"
+      ]
+    }
+  },
+  "harrisBenedict": {
+    "title": "Harris-Benedict (Roza 1984)",
+    "subtitle": "Estima la tasa metabólica basal y las necesidades calóricas diarias.",
+    "result_bmr": "Tasa metabólica basal (TMB)",
+    "result_tdee": "Gasto energético diario total (GEDT)",
+    "activity_factor_label": "Factor de actividad",
+    "fields": {
+      "sex": "Sexo",
+      "ageYears": "Edad (años)",
+      "weightKg": "Peso (kg)",
+      "heightCm": "Altura (cm)",
+      "activityLevel": "Nivel de actividad"
+    },
+    "activity": {
+      "sedentary": "Sedentario — poco o nada de ejercicio",
+      "light": "Ligero — 1–3 sesiones/semana",
+      "moderate": "Moderado — 3–5 sesiones/semana",
+      "active": "Activo — 6–7 sesiones/semana",
+      "very_active": "Muy activo — entrenamiento diario intenso o trabajo físico"
+    },
+    "patient": {
+      "intro": "Esta calculadora estima cuántas calorías gasta tu cuerpo en reposo (TMB) y en un día típico (GEDT).",
+      "estimate_intro": "Tu estimación de gasto calórico diario:",
+      "ask_doctor": "Pregunta a tu médico o dietista:",
+      "questions": [
+        "¿Cómo uso esta estimación para planear mi dieta?",
+        "¿Mis enfermedades cambian las calorías que necesito?",
+        "¿Debería mantener, perder o ganar peso?",
+        "¿Cuánta proteína necesito al día?"
+      ]
+    }
+  },
+  "psaDensity": {
+    "title": "Densidad de PSA",
+    "subtitle": "PSA dividido por el volumen prostático; ayuda a interpretar el PSA en zona gris (4–10 ng/mL).",
+    "fields": {
+      "psaNgMl": "PSA total (ng/mL)",
+      "prostateVolumeMl": "Volumen prostático (mL)"
+    },
+    "patient": {
+      "intro": "Combinar el análisis de PSA con el tamaño de la próstata ayuda a distinguir si un resultado dudoso se debe más a un crecimiento benigno o a un posible cáncer.",
+      "result_low": "Tu densidad de PSA está en 0,15 o por debajo. La elevación del PSA es más probable por crecimiento benigno de la próstata.",
+      "result_high": "Tu densidad de PSA está por encima de 0,15. Tu urólogo puede recomendar una biopsia, sobre todo si el PSA está entre 4 y 10 ng/mL.",
+      "result_moderate": "Tu densidad de PSA está en el umbral. Tu urólogo valorará otros datos antes de decidir el siguiente paso.",
+      "ask_doctor": "Pregunta a tu urólogo:",
+      "questions": [
+        "¿Necesito una biopsia prostática o una RM primero?",
+        "¿Qué otras pruebas pueden evitar la biopsia?",
+        "¿Cada cuánto debemos repetir el PSA?",
+        "¿Qué factores de estilo de vida afectan a la próstata?"
       ]
     }
   }

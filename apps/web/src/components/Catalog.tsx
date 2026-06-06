@@ -29,6 +29,14 @@ const SPECIALTY_CHIP: Record<string, string> = {
     "bg-amber-50 text-amber-800 dark:bg-amber-500/10 dark:text-amber-300",
   intensive_care:
     "bg-violet-50 text-violet-700 dark:bg-violet-500/10 dark:text-violet-300",
+  pulmonology:
+    "bg-cyan-50 text-cyan-700 dark:bg-cyan-500/10 dark:text-cyan-300",
+  neurology:
+    "bg-indigo-50 text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-300",
+  endocrinology:
+    "bg-teal-50 text-teal-700 dark:bg-teal-500/10 dark:text-teal-300",
+  urology:
+    "bg-fuchsia-50 text-fuchsia-700 dark:bg-fuchsia-500/10 dark:text-fuchsia-300",
 };
 
 const DEFAULT_CHIP =

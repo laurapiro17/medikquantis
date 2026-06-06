@@ -30,7 +30,9 @@
     "oncology": "Oncology",
     "infectious_diseases": "Infectious diseases",
     "intensive_care": "Intensive care",
-    "pharmacology": "Pharmacology"
+    "pharmacology": "Pharmacology",
+    "urology": "Urology",
+    "geriatrics": "Geriatrics"
   },
   "about": {
     "heading": "About MedikQuantis",
@@ -610,6 +612,113 @@
         "Which antibiotic should I take, if any?",
         "How long until I am no longer contagious?",
         "When should I return if symptoms worsen?"
+      ]
+    }
+  },
+  "calciumCorrected": {
+    "title": "Albumin-corrected calcium",
+    "subtitle": "Adjust total serum calcium for the patient's albumin level (Payne 1973).",
+    "result_label": "Corrected calcium",
+    "fields": {
+      "calciumMgDl": "Measured total calcium (mg/dL)",
+      "albuminGDl": "Serum albumin (g/dL)"
+    },
+    "categories": {
+      "hypocalcaemia": "Hypocalcaemia",
+      "normal": "Normal",
+      "hypercalcaemia": "Hypercalcaemia"
+    },
+    "patient": {
+      "intro": "This calculator adjusts the calcium value in a blood test to take into account low albumin (a protein that binds calcium).",
+      "result_hypocalcaemia": "Your corrected calcium is below the normal range. Your doctor will look for causes such as low vitamin D, kidney disease or low parathyroid activity.",
+      "result_normal": "Your corrected calcium is within the normal range.",
+      "result_hypercalcaemia": "Your corrected calcium is above the normal range. Your doctor will investigate the cause (parathyroid problems, certain cancers, vitamin D, etc.).",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "What does this calcium level mean for me?",
+        "Do I need any further tests, like parathyroid hormone or vitamin D?",
+        "Do any of my medicines change calcium levels?",
+        "Should I change my diet or supplements?"
+      ]
+    }
+  },
+  "sodiumCorrected": {
+    "title": "Hyperglycaemia-corrected sodium",
+    "subtitle": "What the sodium would be at a normal glucose level (Katz 1973).",
+    "result_label": "Corrected sodium",
+    "fields": {
+      "sodiumMEqL": "Measured sodium (mEq/L)",
+      "glucoseMgDl": "Glucose (mg/dL)"
+    },
+    "categories": {
+      "hyponatraemia": "Hyponatraemia",
+      "normal": "Normal",
+      "hypernatraemia": "Hypernatraemia"
+    },
+    "patient": {
+      "intro": "When blood sugar is very high, it pulls water into the blood and makes sodium look low. This calculator gives a better estimate of your true sodium.",
+      "result_hyponatraemia": "Even after correction, your sodium is low. Your doctor will identify the type and cause before treating.",
+      "result_normal": "After correction, your sodium is within the normal range. The low value seen on the test is fully explained by the high glucose.",
+      "result_hypernatraemia": "After correction, your sodium is high. Your doctor will look at fluid balance and the cause.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "Is my sodium truly low, or just diluted by glucose?",
+        "What is causing my high glucose right now?",
+        "Do I need extra fluids or insulin?",
+        "What signs of complications should I watch for?"
+      ]
+    }
+  },
+  "harrisBenedict": {
+    "title": "Harris-Benedict (Roza 1984)",
+    "subtitle": "Estimated basal metabolic rate and daily energy needs.",
+    "result_bmr": "Basal metabolic rate (BMR)",
+    "result_tdee": "Total daily energy expenditure (TDEE)",
+    "activity_factor_label": "Activity factor",
+    "fields": {
+      "sex": "Sex",
+      "ageYears": "Age (years)",
+      "weightKg": "Weight (kg)",
+      "heightCm": "Height (cm)",
+      "activityLevel": "Activity level"
+    },
+    "activity": {
+      "sedentary": "Sedentary — little or no exercise",
+      "light": "Light — 1–3 sessions/week",
+      "moderate": "Moderate — 3–5 sessions/week",
+      "active": "Active — 6–7 sessions/week",
+      "very_active": "Very active — daily intense training or physical job"
+    },
+    "patient": {
+      "intro": "This calculator estimates how many calories your body uses at rest (BMR) and in a typical day (TDEE).",
+      "estimate_intro": "Your estimated daily calorie use:",
+      "ask_doctor": "Ask your doctor or dietitian:",
+      "questions": [
+        "How should I use this estimate to plan my diet?",
+        "Do my medical conditions change how many calories I need?",
+        "Should I aim to maintain, lose or gain weight?",
+        "How much protein should I get each day?"
+      ]
+    }
+  },
+  "psaDensity": {
+    "title": "PSA density",
+    "subtitle": "PSA divided by prostate volume; helps interpret the grey-zone PSA (4–10 ng/mL).",
+    "fields": {
+      "psaNgMl": "Total PSA (ng/mL)",
+      "prostateVolumeMl": "Prostate volume (mL)"
+    },
+    "patient": {
+      "intro": "Combining the PSA blood test with your prostate size helps tell whether a borderline result is more likely to be benign enlargement or cancer.",
+      "result_low": "Your PSA density is at or below 0.15. The PSA elevation is more likely to be from benign prostate enlargement.",
+      "result_high": "Your PSA density is above 0.15. Your urologist may recommend a biopsy, especially if your PSA is in the 4–10 ng/mL range.",
+      "result_moderate": "Your PSA density is at the threshold. Your urologist will weigh other findings before deciding next steps.",
+      "ask_doctor": "Ask your urologist:",
+      "questions": [
+        "Do I need a prostate biopsy or an MRI first?",
+        "What other tests can help avoid a biopsy?",
+        "How often should we repeat the PSA?",
+        "What lifestyle factors affect my prostate health?"
       ]
     }
   }

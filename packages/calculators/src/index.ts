@@ -16,3 +16,7 @@ export * as qsofa from "./qsofa";
 export * as curb65 from "./curb65";
 export * as gcs from "./gcs";
 export * as centor from "./centor";
+export * as calciumCorrected from "./calcium-corrected";
+export * as sodiumCorrected from "./sodium-corrected";
+export * as harrisBenedict from "./harris-benedict";
+export * as psaDensity from "./psa-density";

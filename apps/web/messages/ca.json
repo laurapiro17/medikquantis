@@ -30,7 +30,9 @@
     "oncology": "Oncologia",
     "infectious_diseases": "Malalties infeccioses",
     "intensive_care": "Cures intensives",
-    "pharmacology": "Farmacologia"
+    "pharmacology": "Farmacologia",
+    "urology": "Urologia",
+    "geriatrics": "Geriatria"
   },
   "about": {
     "heading": "Sobre MedikQuantis",
@@ -610,6 +612,113 @@
         "Quin antibiòtic he de prendre, si escau?",
         "Quan deixaré de ser contagiós?",
         "Quan he de tornar si els símptomes empitjoren?"
+      ]
+    }
+  },
+  "calciumCorrected": {
+    "title": "Calci corregit per albúmina",
+    "subtitle": "Ajusta el calci sèric total segons l'albúmina del pacient (Payne 1973).",
+    "result_label": "Calci corregit",
+    "fields": {
+      "calciumMgDl": "Calci total mesurat (mg/dL)",
+      "albuminGDl": "Albúmina sèrica (g/dL)"
+    },
+    "categories": {
+      "hypocalcaemia": "Hipocalcèmia",
+      "normal": "Normal",
+      "hypercalcaemia": "Hipercalcèmia"
+    },
+    "patient": {
+      "intro": "Aquesta calculadora ajusta el valor del calci de l'analítica per tenir en compte una albúmina baixa (una proteïna que s'uneix al calci).",
+      "result_hypocalcaemia": "El teu calci corregit està per sota del rang normal. El metge buscarà causes com dèficit de vitamina D, malaltia renal o baixa activitat paratiroïdal.",
+      "result_normal": "El teu calci corregit està dins del rang normal.",
+      "result_hypercalcaemia": "El teu calci corregit està per sobre del rang normal. El metge investigarà la causa (problemes de paratiroides, certs tumors, vitamina D, etc.).",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Què significa aquest nivell de calci per a mi?",
+        "Necessito altres proves com hormona paratiroidal o vitamina D?",
+        "Algun dels meus medicaments altera el calci?",
+        "He de canviar la dieta o els suplements?"
+      ]
+    }
+  },
+  "sodiumCorrected": {
+    "title": "Sodi corregit per hiperglucèmia",
+    "subtitle": "Quin seria el sodi amb una glucosa normal (Katz 1973).",
+    "result_label": "Sodi corregit",
+    "fields": {
+      "sodiumMEqL": "Sodi mesurat (mEq/L)",
+      "glucoseMgDl": "Glucosa (mg/dL)"
+    },
+    "categories": {
+      "hyponatraemia": "Hiponatrèmia",
+      "normal": "Normal",
+      "hypernatraemia": "Hipernatrèmia"
+    },
+    "patient": {
+      "intro": "Quan el sucre en sang és molt alt, atrau aigua a la sang i fa que el sodi sembli baix. Aquesta calculadora dona una millor estimació del teu sodi real.",
+      "result_hyponatraemia": "Fins i tot després de la correcció, el sodi és baix. El metge identificarà el tipus i la causa abans de tractar.",
+      "result_normal": "Després de la correcció, el sodi està dins del rang normal. El valor baix de l'analítica s'explica per la glucosa alta.",
+      "result_hypernatraemia": "Després de la correcció, el sodi és alt. El metge revisarà el balanç de líquids i la causa.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "El meu sodi és realment baix o només diluït per la glucosa?",
+        "Què causa ara la meva glucosa alta?",
+        "Necessito líquids extra o insulina?",
+        "Quins signes de complicació he de vigilar?"
+      ]
+    }
+  },
+  "harrisBenedict": {
+    "title": "Harris-Benedict (Roza 1984)",
+    "subtitle": "Estima la taxa metabòlica basal i les necessitats calòriques diàries.",
+    "result_bmr": "Taxa metabòlica basal (TMB)",
+    "result_tdee": "Despesa energètica diària total (GEDT)",
+    "activity_factor_label": "Factor d'activitat",
+    "fields": {
+      "sex": "Sexe",
+      "ageYears": "Edat (anys)",
+      "weightKg": "Pes (kg)",
+      "heightCm": "Alçada (cm)",
+      "activityLevel": "Nivell d'activitat"
+    },
+    "activity": {
+      "sedentary": "Sedentari — poc o gens d'exercici",
+      "light": "Lleuger — 1–3 sessions/setmana",
+      "moderate": "Moderat — 3–5 sessions/setmana",
+      "active": "Actiu — 6–7 sessions/setmana",
+      "very_active": "Molt actiu — entrenament diari intens o feina física"
+    },
+    "patient": {
+      "intro": "Aquesta calculadora estima quantes calories gasta el teu cos en repòs (TMB) i en un dia típic (GEDT).",
+      "estimate_intro": "La teva estimació de despesa calòrica diària:",
+      "ask_doctor": "Pregunta al teu metge o dietista:",
+      "questions": [
+        "Com puc fer servir aquesta estimació per planificar la meva dieta?",
+        "Les meves malalties canvien les calories que necessito?",
+        "He de mantenir, perdre o guanyar pes?",
+        "Quanta proteïna necessito al dia?"
+      ]
+    }
+  },
+  "psaDensity": {
+    "title": "Densitat de PSA",
+    "subtitle": "PSA dividit pel volum prostàtic; ajuda a interpretar el PSA en zona grisa (4–10 ng/mL).",
+    "fields": {
+      "psaNgMl": "PSA total (ng/mL)",
+      "prostateVolumeMl": "Volum prostàtic (mL)"
+    },
+    "patient": {
+      "intro": "Combinar l'anàlisi de PSA amb la mida de la pròstata ajuda a distingir si un resultat dubtós es deu més a un creixement benigne o a un possible càncer.",
+      "result_low": "La teva densitat de PSA està en 0,15 o per sota. L'elevació del PSA és més probable per creixement benigne de la pròstata.",
+      "result_high": "La teva densitat de PSA està per sobre de 0,15. El teu uròleg pot recomanar una biòpsia, sobretot si el PSA està entre 4 i 10 ng/mL.",
+      "result_moderate": "La teva densitat de PSA està al llindar. El teu uròleg valorarà altres dades abans de decidir el següent pas.",
+      "ask_doctor": "Pregunta al teu uròleg:",
+      "questions": [
+        "Necessito una biòpsia prostàtica o una RM primer?",
+        "Quines altres proves poden evitar la biòpsia?",
+        "Cada quant hem de repetir el PSA?",
+        "Quins factors d'estil de vida afecten la pròstata?"
       ]
     }
   }

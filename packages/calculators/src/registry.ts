@@ -16,6 +16,10 @@ import { calculator as qsofa } from "./qsofa";
 import { calculator as curb65 } from "./curb65";
 import { calculator as gcs } from "./gcs";
 import { calculator as centor } from "./centor";
+import { calculator as calciumCorrected } from "./calcium-corrected";
+import { calculator as sodiumCorrected } from "./sodium-corrected";
+import { calculator as harrisBenedict } from "./harris-benedict";
+import { calculator as psaDensity } from "./psa-density";
 
 // `any` here is intentional: CalcDefinition is contravariant in its Schema
 // generic (the formula/interpret functions accept inputs typed by Schema),
@@ -41,6 +45,10 @@ const registry: Record<string, AnyCalc> = {
   "curb-65": curb65,
   gcs,
   centor,
+  "calcium-corrected": calciumCorrected,
+  "sodium-corrected": sodiumCorrected,
+  "harris-benedict": harrisBenedict,
+  "psa-density": psaDensity,
 };
 
 export function getCalc(id: string): AnyCalc | undefined {

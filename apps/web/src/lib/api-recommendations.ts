@@ -250,6 +250,60 @@ const recommendations: Record<string, Translations> = {
     es: "Sin criterios qSOFA; baja preocupación inmediata por disfunción orgánica. Continúe con la evaluación rutinaria.",
     ca: "Sense criteris qSOFA; baixa preocupació immediata per disfunció orgànica. Continueu amb l'avaluació rutinària.",
   },
+
+  // Calcium corrected (Payne)
+  CA_CORR_HYPO: {
+    en: "Corrected calcium below normal range; evaluate symptoms (Chvostek, Trousseau, tetany) and consider replacement.",
+    es: "Calcio corregido por debajo del rango normal; evalúe síntomas (Chvostek, Trousseau, tetania) y considere la reposición.",
+    ca: "Calci corregit per sota del rang normal; avalueu símptomes (Chvostek, Trousseau, tetània) i considereu la reposició.",
+  },
+  CA_CORR_NORMAL: {
+    en: "Corrected calcium within reference range (8.5–10.5 mg/dL).",
+    es: "Calcio corregido dentro del rango de referencia (8,5–10,5 mg/dL).",
+    ca: "Calci corregit dins del rang de referència (8,5–10,5 mg/dL).",
+  },
+  CA_CORR_HYPER: {
+    en: "Corrected calcium above normal range; investigate causes (PTH, malignancy, vitamin D) and severity.",
+    es: "Calcio corregido por encima del rango normal; investigue causas (PTH, malignidad, vitamina D) y gravedad.",
+    ca: "Calci corregit per sobre del rang normal; investigueu causes (PTH, malignitat, vitamina D) i gravetat.",
+  },
+
+  // Sodium corrected (Katz)
+  NA_CORR_HYPO: {
+    en: "Corrected sodium suggests true hyponatraemia; classify by tonicity and volume status before treating.",
+    es: "El sodio corregido sugiere hiponatremia verdadera; clasifíquela por tonicidad y estado de volumen antes de tratar.",
+    ca: "El sodi corregit suggereix hiponatrèmia veritable; classifiqueu-la per tonicitat i estat de volum abans de tractar.",
+  },
+  NA_CORR_NORMAL: {
+    en: "Corrected sodium within reference range; observed hyponatraemia is fully explained by hyperglycaemia.",
+    es: "Sodio corregido dentro del rango de referencia; la hiponatremia observada se explica completamente por la hiperglucemia.",
+    ca: "Sodi corregit dins del rang de referència; la hiponatrèmia observada s'explica completament per la hiperglucèmia.",
+  },
+  NA_CORR_HYPER: {
+    en: "Corrected sodium suggests hypernatraemia; assess water deficit and free-water replacement plan.",
+    es: "El sodio corregido sugiere hipernatremia; evalúe el déficit de agua y el plan de reposición de agua libre.",
+    ca: "El sodi corregit suggereix hipernatrèmia; avalueu el dèficit d'aigua i el pla de reposició d'aigua lliure.",
+  },
+
+  // Harris-Benedict
+  HB_TDEE_INFO: {
+    en: "Estimated basal metabolic rate and total daily energy expenditure at the chosen activity level.",
+    es: "Tasa metabólica basal estimada y gasto energético diario total al nivel de actividad elegido.",
+    ca: "Taxa metabòlica basal estimada i despesa energètica diària total al nivell d'activitat triat.",
+  },
+
+  // PSA density (Benson)
+  PSA_DENS_ELEVATED: {
+    en: "PSA density above the 0.15 ng/mL/cc threshold; biopsy is more strongly supported, especially in the 4-10 ng/mL grey zone.",
+    es: "Densidad de PSA por encima del umbral de 0,15 ng/mL/cc; la biopsia se apoya con más fuerza, sobre todo en la zona gris de 4–10 ng/mL.",
+    ca: "Densitat de PSA per sobre del llindar de 0,15 ng/mL/cc; la biòpsia es recolza amb més força, sobretot a la zona grisa de 4–10 ng/mL.",
+  },
+  PSA_DENS_LOW: {
+    en: "PSA density at or below 0.15 ng/mL/cc; PSA elevation more likely explained by benign prostatic enlargement.",
+    es: "Densidad de PSA igual o inferior a 0,15 ng/mL/cc; la elevación del PSA se explica más probablemente por hiperplasia benigna.",
+    ca: "Densitat de PSA igual o inferior a 0,15 ng/mL/cc; l'elevació del PSA s'explica més probablement per hiperplàsia benigna.",
+  },
+
 };
 
 /**
