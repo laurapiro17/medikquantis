@@ -1343,6 +1343,8 @@
     "popular_heading": "Populares",
     "browse_by_specialty": "Explorar por especialidad",
     "toggle_label": "Abrir menú de calculadoras",
-    "close_label": "Cerrar menú de calculadoras"
+    "close_label": "Cerrar menú de calculadoras",
+    "collapse_label": "Replegar menú",
+    "expand_label": "Desplegar menú"
   }
 }

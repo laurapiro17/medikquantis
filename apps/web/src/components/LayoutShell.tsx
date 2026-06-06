@@ -20,6 +20,8 @@ interface LayoutShellProps {
   children: ReactNode;
 }
 
+const COLLAPSE_KEY = "medikquantis-sidebar-collapsed";
+
 export function LayoutShell({
   calcs,
   popularIds,
@@ -30,8 +32,36 @@ export function LayoutShell({
 }: LayoutShellProps) {
   const t = useTranslations();
   const [drawerOpen, setDrawerOpen] = useState(false);
+  // Desktop collapsed preference. Hydration-safe: first render mirrors the
+  // server (sidebar visible). A post-mount effect reads localStorage and
+  // sets the actual preference, so users with a saved collapsed state see
+  // the sidebar fold away once on first paint.
+  const [collapsed, setCollapsed] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   const close = useCallback(() => setDrawerOpen(false), []);
+
+  useEffect(() => {
+    try {
+      const stored = window.localStorage.getItem(COLLAPSE_KEY);
+      if (stored === "1") setCollapsed(true);
+    } catch {
+      // Storage blocked (private mode, etc.) — fall back to default.
+    }
+    setMounted(true);
+  }, []);
+
+  const toggleCollapsed = useCallback(() => {
+    setCollapsed((prev) => {
+      const next = !prev;
+      try {
+        window.localStorage.setItem(COLLAPSE_KEY, next ? "1" : "0");
+      } catch {
+        // Storage blocked — preference simply won't persist.
+      }
+      return next;
+    });
+  }, []);
 
   // Esc closes the drawer; body scroll locked while open so the drawer
   // itself remains the only scrollable region.
@@ -49,16 +79,33 @@ export function LayoutShell({
     };
   }, [drawerOpen, close]);
 
+  // Grid template responds to the desktop collapse state. We only switch
+  // away from the 2-column layout once mounted, otherwise the SSR markup
+  // and first client render would disagree.
+  const gridClass =
+    mounted && collapsed
+      ? "lg:grid lg:grid-cols-[0_minmax(0,1fr)]"
+      : "lg:grid lg:grid-cols-[264px_minmax(0,1fr)]";
+
   return (
     <>
-      <div className="lg:grid lg:grid-cols-[264px_minmax(0,1fr)]">
+      <div className={gridClass}>
         {/* Sticky desktop sidebar */}
-        <aside className="sticky top-0 hidden h-screen border-r border-slate-200 bg-white/70 backdrop-blur-md lg:block dark:border-white/10 dark:bg-[#0c0f10]/70">
-          <Sidebar calcs={calcs} popularIds={popularIds} />
+        <aside
+          className={`sticky top-0 hidden h-screen overflow-hidden border-r border-slate-200 bg-white/70 backdrop-blur-md transition-[width] duration-200 lg:block dark:border-white/10 dark:bg-[#0c0f10]/70 ${
+            mounted && collapsed ? "w-0 border-r-0" : "w-[264px]"
+          }`}
+          aria-hidden={mounted && collapsed}
+        >
+          <Sidebar
+            calcs={calcs}
+            popularIds={popularIds}
+            onCollapse={toggleCollapsed}
+          />
         </aside>
 
         <div className="flex min-h-screen flex-col">
-          {/* Header with hamburger (mobile only) */}
+          {/* Header: hamburger (mobile) + reveal button (desktop, when collapsed) */}
           <div className="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur-md dark:border-white/10 dark:bg-[#111415]/60">
             <div className="mx-auto flex max-w-4xl items-center gap-3 px-4 py-4">
               <button
@@ -69,20 +116,18 @@ export function LayoutShell({
                 aria-expanded={drawerOpen}
                 aria-controls="medikquantis-drawer"
               >
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden
-                >
-                  <path d="M3 6h18M3 12h18M3 18h18" />
-                </svg>
+                <HamburgerIcon />
               </button>
+              {mounted && collapsed && (
+                <button
+                  type="button"
+                  onClick={toggleCollapsed}
+                  className="hidden rounded-md border border-slate-300 p-2 text-slate-600 transition hover:border-trust-500 hover:text-trust-700 lg:block dark:border-white/15 dark:text-slate-300 dark:hover:border-neon/50 dark:hover:text-neon"
+                  aria-label={t("sidebar.expand_label")}
+                >
+                  <ChevronRightIcon />
+                </button>
+              )}
               <div className="flex flex-1 items-center justify-between gap-2">
                 {header}
               </div>
@@ -120,5 +165,41 @@ export function LayoutShell({
         </div>
       )}
     </>
+  );
+}
+
+function HamburgerIcon() {
+  return (
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <path d="M3 6h18M3 12h18M3 18h18" />
+    </svg>
+  );
+}
+
+function ChevronRightIcon() {
+  return (
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <path d="M9 6l6 6-6 6" />
+    </svg>
   );
 }

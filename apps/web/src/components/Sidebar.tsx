@@ -16,12 +16,13 @@ interface SidebarProps {
   calcs: readonly SidebarEntry[];
   popularIds: readonly string[];
   onNavigate?: () => void; // Closes the mobile drawer after a link click.
+  onCollapse?: () => void; // Desktop only — collapse the sidebar.
 }
 
 const DOI = "10.5281/zenodo.20562618";
 const REPO_URL = "https://github.com/laurapiro17/medikquantis";
 
-export function Sidebar({ calcs, popularIds, onNavigate }: SidebarProps) {
+export function Sidebar({ calcs, popularIds, onNavigate, onCollapse }: SidebarProps) {
   const t = useTranslations();
   const pathname = usePathname() ?? "";
   const [query, setQuery] = useState("");
@@ -67,17 +68,40 @@ export function Sidebar({ calcs, popularIds, onNavigate }: SidebarProps) {
   return (
     <nav
       aria-label={t("sidebar.label")}
-      className="flex h-full flex-col gap-5 overflow-y-auto px-4 py-5 text-sm"
+      className="flex h-full w-[264px] flex-col gap-5 overflow-y-auto px-4 py-5 text-sm"
     >
-      <div>
+      <div className="flex items-center gap-2">
         <input
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder={t("home.search_placeholder")}
-          className="w-full rounded-md border border-slate-300 bg-white px-3 py-1.5 text-xs text-slate-900 placeholder:text-slate-400 focus:border-trust-500 focus:outline-none focus:ring-1 focus:ring-trust-500 dark:border-white/10 dark:bg-white/5 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-neon/60 dark:focus:ring-neon/30"
+          className="min-w-0 flex-1 rounded-md border border-slate-300 bg-white px-3 py-1.5 text-xs text-slate-900 placeholder:text-slate-400 focus:border-trust-500 focus:outline-none focus:ring-1 focus:ring-trust-500 dark:border-white/10 dark:bg-white/5 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-neon/60 dark:focus:ring-neon/30"
           aria-label={t("home.search_placeholder")}
         />
+        {onCollapse && (
+          <button
+            type="button"
+            onClick={onCollapse}
+            className="hidden shrink-0 rounded-md border border-slate-300 p-1.5 text-slate-500 transition hover:border-trust-500 hover:text-trust-700 lg:block dark:border-white/15 dark:text-slate-400 dark:hover:border-neon/50 dark:hover:text-neon"
+            aria-label={t("sidebar.collapse_label")}
+            title={t("sidebar.collapse_label")}
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden
+            >
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+          </button>
+        )}
       </div>
 
       {popularItems.length > 0 && (
