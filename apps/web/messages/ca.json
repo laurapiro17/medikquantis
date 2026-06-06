@@ -1178,5 +1178,162 @@
         "Quines complicacions hem de vigilar?"
       ]
     }
+  },
+  "das28": {
+    "title": "DAS28",
+    "subtitle": "Disease Activity Score sobre 28 articulacions en artritis reumatoide (Prevoo 1995).",
+    "fields": {
+      "markerType": "Reactant de fase aguda",
+      "markerValueESR": "VSG (mm/h)",
+      "markerValueCRP": "PCR (mg/L)",
+      "tenderJointCount28": "Articulacions doloroses (de 28)",
+      "swollenJointCount28": "Articulacions inflamades (de 28)",
+      "patientGlobalAssessment": "Valoració global del pacient (EVA 0–100 mm)"
+    },
+    "marker": {
+      "ESR": "VSG",
+      "CRP": "PCR"
+    },
+    "categories": {
+      "remission": "Remissió",
+      "low": "Activitat baixa",
+      "moderate": "Activitat moderada",
+      "high": "Activitat alta"
+    },
+    "patient": {
+      "intro": "DAS28 estima com d'activa està la teva artritis reumatoide ara mateix i ajuda l'equip a decidir si ajustar el tractament.",
+      "result_remission": "La teva malaltia està en remissió. Continua amb el tractament actual i revisa en 3–6 mesos.",
+      "result_low": "L'activitat és baixa. Continua el tractament; l'equip pot buscar la remissió completa.",
+      "result_moderate": "La teva malaltia està moderadament activa. Pot caldre ajustar el tractament.",
+      "result_high": "La teva malaltia està molt activa. Sol recomanar-se escalada del tractament, sovint incloent teràpia biològica.",
+      "ask_doctor": "Pregunta al teu reumatòleg:",
+      "questions": [
+        "Quin és el DAS28 objectiu per a mi?",
+        "Hem d'ajustar o canviar la medicació?",
+        "Seria apropiada una teràpia biològica o sintètica dirigida?",
+        "Quan es reavaluarà?"
+      ]
+    }
+  },
+  "pasi": {
+    "title": "PASI",
+    "subtitle": "Psoriasis Area and Severity Index (Fredriksson 1978).",
+    "scale_legend": "Per cada regió: àrea 0–6 (0=0%, 6=90–100%); eritema, infiltració i descamació cada un 0–4.",
+    "regions": {
+      "head": "Cap i coll (×0,1)",
+      "upperLimbs": "Extremitats superiors (×0,2)",
+      "trunk": "Tronc (×0,3)",
+      "lowerLimbs": "Extremitats inferiors (×0,4)"
+    },
+    "features": {
+      "area": "Àrea (0–6)",
+      "erythema": "Eritema (0–4)",
+      "induration": "Infiltració (0–4)",
+      "desquamation": "Descamació (0–4)"
+    },
+    "patient": {
+      "intro": "PASI mesura quanta pell està afectada per la psoriasi i com de greus són les lesions.",
+      "result_low": "El teu PASI és lleu. Solen bastar les cremes tòpiques i mesures d'estil de vida.",
+      "result_moderate": "El teu PASI és moderat. Es pot considerar fototeràpia o tractaments sistèmics orals.",
+      "result_high": "El teu PASI és greu. Generalment està indicada la teràpia sistèmica; els biològics són freqüents.",
+      "ask_doctor": "Pregunta al teu dermatòleg:",
+      "questions": [
+        "Quin és l'objectiu de tractament per a mi — PASI 75, 90 o 100?",
+        "Quines opcions sistèmiques hi ha disponibles?",
+        "Quins efectes secundaris cal vigilar?",
+        "Cada quant reavaluarem?"
+      ]
+    }
+  },
+  "scorad": {
+    "title": "SCORAD",
+    "subtitle": "Scoring Atopic Dermatitis (European Task Force 1993).",
+    "section_a": "A — Extensió de l'afectació",
+    "section_b": "B — Intensitat (cada ítem 0–3)",
+    "section_c": "C — Símptomes subjectius (últims 3 dies)",
+    "intensity_legend": "0 absent · 1 lleu · 2 moderat · 3 greu",
+    "fields": {
+      "extentPercent": "Superfície corporal afectada (%)",
+      "erythema": "Eritema",
+      "edemaPapules": "Edema / pàpules",
+      "exudateCrusts": "Exsudat / crostes",
+      "excoriations": "Excoriacions",
+      "lichenification": "Liquenificació",
+      "dryness": "Sequedat (pell no afectada)",
+      "pruritus": "Pruïja (EVA 0–10)",
+      "sleepLoss": "Pèrdua de son (EVA 0–10)"
+    },
+    "patient": {
+      "intro": "SCORAD combina quanta pell està afectada, com de greu és l'èczema i quant et molesta per estimar la gravetat global.",
+      "result_low": "La teva dermatitis atòpica és lleu. Solen bastar emol·lients i corticoides tòpics suaus als brots.",
+      "result_moderate": "La teva dermatitis atòpica és moderada. Se solen utilitzar corticoides tòpics potents o inhibidors de la calcineurina.",
+      "result_high": "La teva dermatitis atòpica és greu. Poden ser necessaris tractaments sistèmics o biològics moderns.",
+      "ask_doctor": "Pregunta al teu dermatòleg:",
+      "questions": [
+        "Quina teràpia és més apropiada per al meu SCORAD actual?",
+        "Com tractem els brots vs. el manteniment?",
+        "Hem de considerar un biològic com dupilumab?",
+        "Quins factors d'estil de vida agreugen l'èczema?"
+      ]
+    }
+  },
+  "dukeEndocarditis": {
+    "title": "Criteris de Duke modificats",
+    "subtitle": "Criteris diagnòstics d'endocarditis infecciosa (Li 2000).",
+    "major_heading": "Criteris majors (2)",
+    "minor_heading": "Criteris menors (5)",
+    "diagnosis_label": "Diagnòstic",
+    "fields": {
+      "majorBloodCultures": "Microorganisme típic en 2 hemocultius separats, hemocultius persistentment positius, o un únic cultiu positiu per Coxiella burnetii / IgG antifase I > 1:800",
+      "majorEndocardialInvolvement": "Evidència ecocardiogràfica d'afectació endocàrdica (vegetació, abscés, dehiscència parcial nova o insuficiència valvular nova)",
+      "minorPredisposition": "Cardiopatia predisposant o ús de drogues IV",
+      "minorFever": "Febre ≥ 38 °C",
+      "minorVascularPhenomena": "Fenòmens vasculars (èmbols arterials, infarts pulmonars sèptics, aneurisma micòtic, HIC, hemorràgia conjuntival, lesions de Janeway)",
+      "minorImmunologicPhenomena": "Fenòmens immunològics (glomerulonefritis, nòduls d'Osler, taques de Roth, factor reumatoide)",
+      "minorMicrobiologicEvidence": "Evidència microbiològica (hemocultiu positiu que no compleix criteris majors o evidència serològica d'infecció activa)"
+    },
+    "categories": {
+      "definite": "Endocarditis definida",
+      "possible": "Endocarditis possible",
+      "rejected": "Endocarditis rebutjada"
+    },
+    "patient": {
+      "intro": "Els criteris de Duke ajuden els metges a decidir si els teus símptomes es deuen probablement a una infecció d'una vàlvula del cor (endocarditis).",
+      "result_definite": "Els teus resultats compleixen criteris d'endocarditis. L'equip iniciarà el tractament i continuarà amb les proves.",
+      "result_possible": "L'endocarditis és possible. Calen més proves, especialment hemocultius i ecocardiograma.",
+      "result_rejected": "L'endocarditis és improbable amb les troballes actuals. L'equip buscarà altres causes dels símptomes.",
+      "ask_doctor": "Pregunta a l'equip:",
+      "questions": [
+        "Quant de temps necessitaré antibiòtics?",
+        "Caldrà un ecocardiograma transesofàgic?",
+        "Podem identificar i tractar l'origen de la infecció?",
+        "Quines complicacions cal vigilar?"
+      ]
+    }
+  },
+  "hinchey": {
+    "title": "Hinchey",
+    "subtitle": "Classificació anatòmica de la diverticulitis aguda complicada (Hinchey 1978).",
+    "question": "Selecciona la classe de Hinchey segons els resultats d'imatge o quirúrgics:",
+    "result_class": "Classe de Hinchey",
+    "classes": {
+      "I": "I — Abscés pericòlic",
+      "II": "II — Abscés pèlvic, retroperitoneal o a distància",
+      "III": "III — Peritonitis purulenta generalitzada",
+      "IV": "IV — Peritonitis fecal generalitzada"
+    },
+    "patient": {
+      "intro": "La classificació de Hinchey descriu com de greu i extensa és una perforació del còlon en una diverticulitis aguda. Guia la decisió entre antibiòtics, drenatge i cirurgia.",
+      "result_low": "Classe I — col·lecció localitzada. Solen bastar antibiòtics i possible drenatge.",
+      "result_moderate": "Classe II — col·lecció més gran que sovint necessita drenatge i antibiòtics.",
+      "result_high": "Classe III o IV — infecció generalitzada a l'abdomen. Cal cirurgia urgent.",
+      "ask_doctor": "Pregunta al teu cirurgià:",
+      "questions": [
+        "Necessitaré cirurgia ara o es pot esperar?",
+        "Podria necessitar una colostomia?",
+        "Quina recuperació he d'esperar després de l'operació?",
+        "Com es poden prevenir nous episodis?"
+      ]
+    }
   }
 }

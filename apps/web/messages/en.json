@@ -1178,5 +1178,162 @@
         "What complications should we monitor for?"
       ]
     }
+  },
+  "das28": {
+    "title": "DAS28",
+    "subtitle": "Disease Activity Score on 28 joints for rheumatoid arthritis (Prevoo 1995).",
+    "fields": {
+      "markerType": "Acute-phase reactant",
+      "markerValueESR": "ESR (mm/h)",
+      "markerValueCRP": "CRP (mg/L)",
+      "tenderJointCount28": "Tender joints (out of 28)",
+      "swollenJointCount28": "Swollen joints (out of 28)",
+      "patientGlobalAssessment": "Patient global assessment (0–100 mm VAS)"
+    },
+    "marker": {
+      "ESR": "ESR",
+      "CRP": "CRP"
+    },
+    "categories": {
+      "remission": "Remission",
+      "low": "Low activity",
+      "moderate": "Moderate activity",
+      "high": "High activity"
+    },
+    "patient": {
+      "intro": "DAS28 estimates how active your rheumatoid arthritis is right now and helps the team decide whether to adjust your treatment.",
+      "result_remission": "Your disease is in remission. Continue your current treatment and review in 3–6 months.",
+      "result_low": "Your disease activity is low. Continue treatment; the team may aim for full remission.",
+      "result_moderate": "Your disease is moderately active. Your treatment may need adjustment to bring activity down.",
+      "result_high": "Your disease is highly active. Prompt treatment escalation is generally recommended, often including biological therapy.",
+      "ask_doctor": "Ask your rheumatologist:",
+      "questions": [
+        "What is the target DAS28 for me?",
+        "Should we adjust or change my medication?",
+        "Would a biological or targeted-synthetic therapy be appropriate?",
+        "When will we reassess?"
+      ]
+    }
+  },
+  "pasi": {
+    "title": "PASI",
+    "subtitle": "Psoriasis Area and Severity Index (Fredriksson 1978).",
+    "scale_legend": "For each body region: area 0–6 (0=0%, 6=90–100%); erythema, induration and desquamation each 0–4.",
+    "regions": {
+      "head": "Head and neck (×0.1)",
+      "upperLimbs": "Upper limbs (×0.2)",
+      "trunk": "Trunk (×0.3)",
+      "lowerLimbs": "Lower limbs (×0.4)"
+    },
+    "features": {
+      "area": "Area (0–6)",
+      "erythema": "Erythema (0–4)",
+      "induration": "Induration (0–4)",
+      "desquamation": "Desquamation (0–4)"
+    },
+    "patient": {
+      "intro": "PASI measures how much of your skin is affected by psoriasis and how severe the lesions are.",
+      "result_low": "Your PASI score is mild. Topical creams and lifestyle measures usually suffice.",
+      "result_moderate": "Your PASI score is moderate. Phototherapy or oral systemic medications may be considered.",
+      "result_high": "Your PASI score is severe. Systemic therapy is generally indicated; biological drugs are commonly used.",
+      "ask_doctor": "Ask your dermatologist:",
+      "questions": [
+        "What is the goal of treatment for me — PASI 75? 90? 100?",
+        "Which systemic options are available?",
+        "What are the side effects to watch for?",
+        "How often will we reassess?"
+      ]
+    }
+  },
+  "scorad": {
+    "title": "SCORAD",
+    "subtitle": "Scoring Atopic Dermatitis (European Task Force 1993).",
+    "section_a": "A — Extent of involvement",
+    "section_b": "B — Intensity (each 0–3)",
+    "section_c": "C — Subjective symptoms (last 3 days)",
+    "intensity_legend": "0 absent · 1 mild · 2 moderate · 3 severe",
+    "fields": {
+      "extentPercent": "Body surface area affected (%)",
+      "erythema": "Erythema",
+      "edemaPapules": "Oedema / papules",
+      "exudateCrusts": "Exudate / crusting",
+      "excoriations": "Excoriations",
+      "lichenification": "Lichenification",
+      "dryness": "Dryness (non-involved skin)",
+      "pruritus": "Pruritus (VAS 0–10)",
+      "sleepLoss": "Sleep loss (VAS 0–10)"
+    },
+    "patient": {
+      "intro": "SCORAD combines how much skin is involved, how severe the eczema is and how much it bothers you to estimate overall severity.",
+      "result_low": "Your atopic dermatitis is mild. Emollients and low-strength topical steroids during flares usually suffice.",
+      "result_moderate": "Your atopic dermatitis is moderate. Mid- or high-strength topical steroids or calcineurin inhibitors are often used.",
+      "result_high": "Your atopic dermatitis is severe. Systemic therapy or modern biologics may be needed.",
+      "ask_doctor": "Ask your dermatologist:",
+      "questions": [
+        "Which therapy is most appropriate for my current SCORAD?",
+        "How do we treat flares vs. maintenance?",
+        "Should we consider a biologic like dupilumab?",
+        "What lifestyle factors aggravate the eczema?"
+      ]
+    }
+  },
+  "dukeEndocarditis": {
+    "title": "Modified Duke criteria",
+    "subtitle": "Diagnostic criteria for infective endocarditis (Li 2000).",
+    "major_heading": "Major criteria (2)",
+    "minor_heading": "Minor criteria (5)",
+    "diagnosis_label": "Diagnosis",
+    "fields": {
+      "majorBloodCultures": "Typical organism in 2 separate blood cultures, persistently positive cultures, or single positive for Coxiella burnetii / anti-phase I IgG > 1:800",
+      "majorEndocardialInvolvement": "Echocardiographic evidence of endocardial involvement (vegetation, abscess, new partial valve dehiscence, or new valvular regurgitation)",
+      "minorPredisposition": "Predisposing heart condition or IV drug use",
+      "minorFever": "Fever ≥ 38 °C",
+      "minorVascularPhenomena": "Vascular phenomena (arterial emboli, septic pulmonary infarcts, mycotic aneurysm, ICH, conjunctival haemorrhage, Janeway lesions)",
+      "minorImmunologicPhenomena": "Immunologic phenomena (glomerulonephritis, Osler nodes, Roth spots, rheumatoid factor)",
+      "minorMicrobiologicEvidence": "Microbiologic evidence (positive blood culture not meeting major or serological evidence of active infection)"
+    },
+    "categories": {
+      "definite": "Definite endocarditis",
+      "possible": "Possible endocarditis",
+      "rejected": "Endocarditis rejected"
+    },
+    "patient": {
+      "intro": "The Duke criteria help doctors decide whether your symptoms are likely due to an infection on a heart valve (endocarditis).",
+      "result_definite": "Your findings meet the criteria for endocarditis. The team will start treatment and continue investigations.",
+      "result_possible": "Endocarditis is possible. More tests, especially blood cultures and an echocardiogram, are needed.",
+      "result_rejected": "Endocarditis is unlikely based on current findings. The team will look for other causes of your symptoms.",
+      "ask_doctor": "Ask the team:",
+      "questions": [
+        "How long will antibiotics be needed?",
+        "Will I need a transoesophageal echocardiogram?",
+        "Could the source of infection be identified and treated?",
+        "What complications should be watched for?"
+      ]
+    }
+  },
+  "hinchey": {
+    "title": "Hinchey",
+    "subtitle": "Anatomical classification of acute complicated diverticulitis (Hinchey 1978).",
+    "question": "Select the Hinchey class based on imaging or operative findings:",
+    "result_class": "Hinchey class",
+    "classes": {
+      "I": "I — Pericolic abscess",
+      "II": "II — Pelvic, retroperitoneal or distant abscess",
+      "III": "III — Generalised purulent peritonitis",
+      "IV": "IV — Generalised faecal peritonitis"
+    },
+    "patient": {
+      "intro": "The Hinchey classification describes how severe and widespread a perforation of the colon is in acute diverticulitis. It guides the choice between antibiotics, drainage and surgery.",
+      "result_low": "Class I — a localised collection. Antibiotics and possible drainage are usually enough.",
+      "result_moderate": "Class II — a larger collection that often needs drainage and antibiotics.",
+      "result_high": "Class III or IV — generalised infection inside the abdomen. Emergency surgery is required.",
+      "ask_doctor": "Ask your surgeon:",
+      "questions": [
+        "Will I need surgery now or can it be delayed?",
+        "Could a stoma be needed?",
+        "What recovery should I expect after the operation?",
+        "How can future episodes be prevented?"
+      ]
+    }
   }
 }

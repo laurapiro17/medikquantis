@@ -7,7 +7,7 @@ import {
   type ZodTypeAny,
 } from "zod";
 
-export interface JsonSchemaProperty {
+export interface JsonSchemaPrimitive {
   type: "number" | "integer" | "boolean" | "string";
   enum?: readonly string[];
   minimum?: number;
@@ -16,10 +16,12 @@ export interface JsonSchemaProperty {
 
 export interface JsonSchemaObject {
   type: "object";
-  properties: Record<string, JsonSchemaProperty>;
+  properties: Record<string, JsonSchemaPrimitive | JsonSchemaObject>;
   required: string[];
   additionalProperties: false;
 }
+
+export type JsonSchemaProperty = JsonSchemaPrimitive | JsonSchemaObject;
 
 export function zodObjectToJsonSchema(schema: ZodTypeAny): JsonSchemaObject {
   if (!(schema instanceof ZodObject)) {
@@ -62,6 +64,11 @@ function fieldToJsonSchema(field: ZodTypeAny): JsonSchemaProperty {
       type: "string",
       enum: (field as z.ZodEnum<[string, ...string[]]>).options,
     };
+  }
+  // Recurse for nested objects — PASI groups its inputs by body region,
+  // each region being a sub-object with its own primitive fields.
+  if (field instanceof ZodObject) {
+    return zodObjectToJsonSchema(field);
   }
   throw new Error(`Unsupported Zod type at field: ${field.constructor.name}`);
 }

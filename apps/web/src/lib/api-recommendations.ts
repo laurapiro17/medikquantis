@@ -528,6 +528,102 @@ const recommendations: Record<string, Translations> = {
     ca: "BASDAI ≥7: activitat molt alta. Escaleu el tractament amb rapidesa i reviseu complicacions extraarticulars.",
   },
 
+
+  // DAS28
+  DAS28_REMISSION: {
+    en: "DAS28 <2.6: remission. Maintain current therapy and reassess in 3–6 months.",
+    es: "DAS28 <2.6: remisión. Mantenga el tratamiento actual y reevalúe en 3–6 meses.",
+    ca: "DAS28 <2.6: remissió. Mantingueu el tractament actual i reavalueu en 3–6 mesos.",
+  },
+  DAS28_LOW: {
+    en: "DAS28 2.6–3.2: low disease activity. Continue current therapy; consider treat-to-target adjustments if a remission goal is set.",
+    es: "DAS28 2.6–3.2: actividad baja. Continúe la terapia actual; considere ajustes de tratar-por-objetivo si se busca remisión.",
+    ca: "DAS28 2.6–3.2: activitat baixa. Continueu la teràpia actual; considereu ajustos de tractar-per-objectiu si es busca remissió.",
+  },
+  DAS28_MODERATE: {
+    en: "DAS28 3.2–5.1: moderate disease activity. Reassess current DMARDs and consider escalation per treat-to-target.",
+    es: "DAS28 3.2–5.1: actividad moderada. Reevalúe los FAME actuales y considere escalada según tratar-por-objetivo.",
+    ca: "DAS28 3.2–5.1: activitat moderada. Reavalueu els FAME actuals i considereu escalada segons tractar-per-objectiu.",
+  },
+  DAS28_HIGH: {
+    en: "DAS28 >5.1: high disease activity. Escalate therapy promptly; biologic or targeted-synthetic DMARDs typically indicated.",
+    es: "DAS28 >5.1: actividad alta. Escale la terapia con rapidez; FAME biológicos o sintéticos dirigidos suelen estar indicados.",
+    ca: "DAS28 >5.1: activitat alta. Escaleu la teràpia amb rapidesa; FAME biològics o sintètics dirigits solen estar indicats.",
+  },
+
+  // PASI
+  PASI_MILD: {
+    en: "Mild psoriasis (PASI <5). Topical therapy with vitamin-D analogues + corticosteroids usually suffices.",
+    es: "Psoriasis leve (PASI <5). Suele bastar la terapia tópica con análogos de vitamina D y corticoides.",
+    ca: "Psoriasi lleu (PASI <5). Sol bastar la teràpia tòpica amb anàlegs de vitamina D i corticoides.",
+  },
+  PASI_MODERATE: {
+    en: "Moderate psoriasis (PASI 5–10). Consider phototherapy or conventional systemics if topical therapy is insufficient.",
+    es: "Psoriasis moderada (PASI 5–10). Considere fototerapia o sistémicos convencionales si la terapia tópica es insuficiente.",
+    ca: "Psoriasi moderada (PASI 5–10). Considereu fototeràpia o sistèmics convencionals si la teràpia tòpica és insuficient.",
+  },
+  PASI_SEVERE: {
+    en: "Severe psoriasis (PASI ≥10). Systemic therapy is generally indicated; biologics qualify per EMA criteria.",
+    es: "Psoriasis grave (PASI ≥10). La terapia sistémica suele estar indicada; los biológicos cumplen criterios EMA.",
+    ca: "Psoriasi greu (PASI ≥10). La teràpia sistèmica sol estar indicada; els biològics compleixen criteris EMA.",
+  },
+
+  // SCORAD
+  SCORAD_MILD: {
+    en: "Mild atopic dermatitis. Emollients plus low-potency topical steroids during flares usually suffice.",
+    es: "Dermatitis atópica leve. Suelen bastar emolientes y corticoides tópicos de baja potencia durante los brotes.",
+    ca: "Dermatitis atòpica lleu. Solen bastar emol·lients i corticoides tòpics de baixa potència durant els brots.",
+  },
+  SCORAD_MODERATE: {
+    en: "Moderate atopic dermatitis. Use mid- to high-potency topical steroids or calcineurin inhibitors; consider proactive maintenance.",
+    es: "Dermatitis atópica moderada. Use corticoides tópicos de potencia media a alta o inhibidores de la calcineurina; considere mantenimiento proactivo.",
+    ca: "Dermatitis atòpica moderada. Useu corticoides tòpics de potència mitjana a alta o inhibidors de la calcineurina; considereu manteniment proactiu.",
+  },
+  SCORAD_SEVERE: {
+    en: "Severe atopic dermatitis. Consider systemic therapy (phototherapy, ciclosporin) or biologics (dupilumab, JAK inhibitors).",
+    es: "Dermatitis atópica grave. Considere terapia sistémica (fototerapia, ciclosporina) o biológicos (dupilumab, inhibidores JAK).",
+    ca: "Dermatitis atòpica greu. Considereu teràpia sistèmica (fototeràpia, ciclosporina) o biològics (dupilumab, inhibidors JAK).",
+  },
+
+  // Duke
+  DUKE_DEFINITE: {
+    en: "Definite endocarditis: admit, obtain repeat blood cultures, transoesophageal echo if not yet done, and start empirical antibiotics per local protocol.",
+    es: "Endocarditis definida: ingrese, obtenga hemocultivos seriados, ecocardiograma transesofágico si aún no se ha hecho y comience antibióticos empíricos según protocolo local.",
+    ca: "Endocarditis definida: ingresseu, obteniu hemocultius seriats, ecocardiograma transesofàgic si encara no s'ha fet i comenceu antibiòtics empírics segons protocol local.",
+  },
+  DUKE_POSSIBLE: {
+    en: "Possible endocarditis: do not rule out — continue work-up with serial blood cultures, transoesophageal echo and ID input.",
+    es: "Endocarditis posible: no la descarte — continúe el estudio con hemocultivos seriados, ecocardiograma transesofágico e interconsulta a infecciosos.",
+    ca: "Endocarditis possible: no la descarteu — continueu l'estudi amb hemocultius seriats, ecocardiograma transesofàgic i interconsulta a infecciosos.",
+  },
+  DUKE_REJECTED: {
+    en: "Endocarditis rejected by criteria: pursue alternative diagnoses; re-evaluate if clinical course evolves.",
+    es: "Endocarditis rechazada por criterios: explore diagnósticos alternativos; reevalúe si el curso clínico evoluciona.",
+    ca: "Endocarditis rebutjada per criteris: exploreu diagnòstics alternatius; reavalueu si el curs clínic evoluciona.",
+  },
+
+  // Hinchey
+  HINCHEY_I: {
+    en: "Hinchey I: pericolic abscess. Intravenous antibiotics; percutaneous drainage if abscess >4 cm.",
+    es: "Hinchey I: absceso pericólico. Antibióticos intravenosos; drenaje percutáneo si el absceso es > 4 cm.",
+    ca: "Hinchey I: abscés pericòlic. Antibiòtics intravenosos; drenatge percutani si l'abscés és > 4 cm.",
+  },
+  HINCHEY_II: {
+    en: "Hinchey II: pelvic, retroperitoneal or distant abscess. Image-guided drainage plus antibiotics; surgical option if drainage fails.",
+    es: "Hinchey II: absceso pélvico, retroperitoneal o a distancia. Drenaje guiado por imagen y antibióticos; opción quirúrgica si el drenaje falla.",
+    ca: "Hinchey II: abscés pèlvic, retroperitoneal o a distància. Drenatge guiat per imatge i antibiòtics; opció quirúrgica si el drenatge falla.",
+  },
+  HINCHEY_III: {
+    en: "Hinchey III: generalised purulent peritonitis. Emergency surgery (laparoscopic lavage or resection); ICU input.",
+    es: "Hinchey III: peritonitis purulenta generalizada. Cirugía urgente (lavado laparoscópico o resección); participación de UCI.",
+    ca: "Hinchey III: peritonitis purulenta generalitzada. Cirurgia urgent (rentat laparoscòpic o resecció); participació d'UCI.",
+  },
+  HINCHEY_IV: {
+    en: "Hinchey IV: generalised faecal peritonitis. Emergency Hartmann's procedure with broad-spectrum antibiotics and resuscitation.",
+    es: "Hinchey IV: peritonitis fecal generalizada. Procedimiento de Hartmann urgente con antibióticos de amplio espectro y reanimación.",
+    ca: "Hinchey IV: peritonitis fecal generalitzada. Procediment de Hartmann urgent amb antibiòtics d'ampli espectre i reanimació.",
+  },
+
 };
 
 /**

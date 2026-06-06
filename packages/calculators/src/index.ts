@@ -31,3 +31,8 @@ export * as barthel from "./barthel";
 export * as findrisc from "./findrisc";
 export * as ipss from "./ipss";
 export * as basdai from "./basdai";
+export * as das28 from "./das28";
+export * as pasi from "./pasi";
+export * as scorad from "./scorad";
+export * as dukeEndocarditis from "./duke-endocarditis";
+export * as hinchey from "./hinchey";
