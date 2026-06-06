@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { nyha } from "@medcalc/calculators";
 import { ModeToggle } from "./ResultPanel";
+import { ShareActions } from "./ShareActions";
 import { FormActions, RadioGroup } from "./Field";
 
 type NyhaClassValue = nyha.NyhaClassValue;
@@ -68,7 +69,14 @@ export function NyhaForm() {
         />
       </form>
 
-      {submitted && result && <NyhaResultPanel mode={mode} result={result} />}
+      {submitted && result && (
+        <>
+          <NyhaResultPanel mode={mode} result={result} />
+          <div className="glass-panel p-4">
+            <ShareActions shareableInputs={{ nyhaClass: selected }} />
+          </div>
+        </>
+      )}
     </div>
   );
 }

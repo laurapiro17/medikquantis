@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { timi } from "@medcalc/calculators";
 import { ModeToggle } from "./ResultPanel";
+import { ShareActions } from "./ShareActions";
 import { BooleanList, FormActions } from "./Field";
 
 type TimiInput = timi.TimiInput;
@@ -82,7 +83,8 @@ export function TimiForm() {
       </form>
 
       {submitted && (
-        <TimiResultPanel
+        <>
+          <TimiResultPanel
           mode={mode}
           score={score}
           tier={result.tier}
@@ -90,6 +92,10 @@ export function TimiForm() {
           evidenceGrade={result.evidenceGrade}
           mace14d={result.annualRiskPercent}
         />
+          <div className="glass-panel p-4">
+            <ShareActions shareableInputs={inputs} />
+          </div>
+        </>
       )}
     </div>
   );

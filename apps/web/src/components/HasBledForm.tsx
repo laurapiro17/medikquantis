@@ -97,6 +97,7 @@ export function HasBledForm() {
           annualRiskPercent={result.annualRiskPercent}
           riskLabelKey="common.annual_bleeding_risk"
           i18nNamespace="hasbled"
+          shareableInputs={inputs}
         />
       )}
     </div>

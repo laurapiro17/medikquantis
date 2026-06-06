@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { ehra } from "@medcalc/calculators";
 import { ModeToggle } from "./ResultPanel";
+import { ShareActions } from "./ShareActions";
 import { FormActions, RadioGroup } from "./Field";
 
 type EhraClassValue = ehra.EhraClassValue;
@@ -68,7 +69,14 @@ export function EhraForm() {
         />
       </form>
 
-      {submitted && result && <EhraResultPanel mode={mode} result={result} />}
+      {submitted && result && (
+        <>
+          <EhraResultPanel mode={mode} result={result} />
+          <div className="glass-panel p-4">
+            <ShareActions shareableInputs={{ ehraClass: selected }} />
+          </div>
+        </>
+      )}
     </div>
   );
 }

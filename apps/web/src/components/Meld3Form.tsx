@@ -124,6 +124,7 @@ export function Meld3Form() {
           annualRiskPercent={result.annualRiskPercent}
           riskLabelKey="common.annual_risk"
           i18nNamespace="meld3"
+          shareableInputs={inputs}
         />
       )}
     </div>

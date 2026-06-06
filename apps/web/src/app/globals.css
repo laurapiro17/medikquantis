@@ -93,3 +93,43 @@
     transform: translateY(0);
   }
 }
+
+/* Print layout: keep only the calculator page header (calc name + subtitle)
+ * and the result panel. Hide site chrome, the input form, mode toggle, and
+ * any element explicitly opted out via data-no-print. Force light styles so
+ * the printout is readable on paper regardless of the active theme. */
+@media print {
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  header, footer, nav, form, [data-no-print] {
+    display: none !important;
+  }
+  /* The disclaimer banner uses an amber background; reset it for print. */
+  .border-amber-200, .border-amber-400\/20 {
+    border-color: #cbd5e1 !important;
+    background: transparent !important;
+    color: #475569 !important;
+  }
+  main {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+  .glass-panel {
+    border: 1px solid #cbd5e1 !important;
+    background: #ffffff !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+  }
+  a {
+    color: #000000 !important;
+    text-decoration: none !important;
+  }
+  /* Show the URL after external references so the printout is self-describing. */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+    color: #475569;
+  }
+}

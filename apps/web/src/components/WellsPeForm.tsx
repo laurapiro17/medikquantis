@@ -84,6 +84,7 @@ export function WellsPeForm() {
           annualRiskPercent={result.annualRiskPercent}
           riskLabelKey="common.annual_risk"
           i18nNamespace="wellsPe"
+          shareableInputs={inputs}
         />
       )}
     </div>

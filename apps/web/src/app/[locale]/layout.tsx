@@ -28,6 +28,9 @@ const themeBootstrapScript = `
 })();
 `;
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://medikquantis.vercel.app";
+
 export async function generateMetadata({
   params,
 }: {
@@ -36,9 +39,33 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!isSupportedLocale(locale)) return {};
   const t = await getTranslations({ locale, namespace: "site" });
+  const title = t("title");
+  const description = t("tagline");
+  const url = `${BASE_URL}/${locale}`;
+
   return {
-    title: t("title"),
-    description: t("tagline"),
+    metadataBase: new URL(BASE_URL),
+    title,
+    description,
+    alternates: {
+      canonical: url,
+      languages: Object.fromEntries(
+        routing.locales.map((l) => [l, `${BASE_URL}/${l}`]),
+      ),
+    },
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: title,
+      type: "website",
+      locale,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
   };
 }
 
@@ -104,6 +131,18 @@ export default async function LocaleLayout({
                 </p>
               </div>
               <nav className="flex flex-wrap gap-x-4 gap-y-1 text-xs">
+                <Link
+                  href="/compare"
+                  className="hover:text-trust-600 dark:hover:text-neon"
+                >
+                  {t("nav_compare")}
+                </Link>
+                <a
+                  href="/api/v1/docs"
+                  className="hover:text-trust-600 dark:hover:text-neon"
+                >
+                  {t("nav_api")}
+                </a>
                 <Link
                   href="/about"
                   className="hover:text-trust-600 dark:hover:text-neon"

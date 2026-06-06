@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { ShareActions } from "./ShareActions";
 
 type Mode = "clinician" | "patient";
 type Tier = "low" | "moderate" | "high";
@@ -21,6 +22,7 @@ interface ResultPanelProps {
   annualRiskPercent?: number;
   riskLabelKey: "common.annual_risk" | "common.annual_bleeding_risk";
   i18nNamespace: string;
+  shareableInputs?: Record<string, unknown>;
 }
 
 export function ResultPanel({
@@ -32,6 +34,7 @@ export function ResultPanel({
   annualRiskPercent,
   riskLabelKey,
   i18nNamespace,
+  shareableInputs,
 }: ResultPanelProps) {
   const t = useTranslations();
 
@@ -74,6 +77,8 @@ export function ResultPanel({
             </dd>
           </div>
         </dl>
+
+        <ShareActions shareableInputs={shareableInputs} />
       </div>
     );
   }
@@ -113,6 +118,8 @@ export function ResultPanel({
       <p className="border-t border-slate-200 pt-4 text-xs text-slate-500 dark:border-white/10 dark:text-slate-400">
         {t("common.disclaimer")}
       </p>
+
+      <ShareActions shareableInputs={shareableInputs} />
     </div>
   );
 }

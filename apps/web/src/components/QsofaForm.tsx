@@ -76,6 +76,7 @@ export function QsofaForm() {
           annualRiskPercent={result.annualRiskPercent}
           riskLabelKey="common.annual_risk"
           i18nNamespace="qsofa"
+          shareableInputs={inputs}
         />
       )}
     </div>

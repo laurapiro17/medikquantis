@@ -7,7 +7,9 @@
     "disclaimer_banner": "Informational · does not replace consultation with a healthcare professional.",
     "nav_about": "About",
     "nav_privacy": "Privacy",
-    "nav_terms": "Terms"
+    "nav_terms": "Terms",
+    "nav_api": "API",
+    "nav_compare": "Compare"
   },
   "specialties": {
     "cardiology": "Cardiology",
@@ -105,7 +107,26 @@
   },
   "home": {
     "heading": "Calculators",
-    "subheading": "Pick a calculator to get started."
+    "subheading": "Pick a calculator to get started.",
+    "hero_eyebrow": "Open clinical calculators",
+    "hero_heading": "Multilingual scores. Cited evidence. Free API.",
+    "hero_subheading": "Thirteen peer-reviewed clinical scores in Catalan, Spanish and English, with a public REST API and a permanent DOI. Built by a medical student, open under MIT.",
+    "hero_cta_calcs": "Browse calculators",
+    "hero_cta_api": "Use the API",
+    "value_1_title": "Native multilingual",
+    "value_1_body": "Catalan, Spanish and English written by a medical student — not machine-translated.",
+    "value_2_title": "Cited evidence",
+    "value_2_body": "Every score links its original PMID and the current ESC, ACC or KDIGO guideline.",
+    "value_3_title": "Citable & open",
+    "value_3_body": "MIT licensed code, permanent Zenodo DOI, free REST API, no tracking.",
+    "catalog_heading": "Catalog",
+    "catalog_subheading": "Thirteen calculators across five specialties.",
+    "doi_label": "Cite this work",
+    "api_callout_heading": "Programmatic access",
+    "api_callout_body": "All thirteen calculators are exposed as a REST API with an OpenAPI 3.1 spec and live Swagger UI. CORS open, no auth, language switchable.",
+    "api_callout_cta": "Open API docs",
+    "search_placeholder": "Search calculators…",
+    "search_empty": "No calculators match your search."
   },
   "notfound": {
     "heading": "Page not found",
@@ -132,7 +153,10 @@
     "female": "Female",
     "disclaimer": "This calculator is informational and does not replace consultation with a healthcare professional.",
     "open_source": "Open source on",
-    "built_by": "Built in Barcelona"
+    "built_by": "Built in Barcelona",
+    "share_copy": "Copy link",
+    "share_copied": "Copied!",
+    "share_print": "Print"
   },
   "cha2ds2vasc": {
     "title": "CHA₂DS₂-VASc",
@@ -484,5 +508,13 @@
         "What bleeding warning signs should I watch for?"
       ]
     }
+  },
+  "compare": {
+    "title": "Compare: stroke vs bleeding",
+    "subtitle": "Side-by-side CHA₂DS₂-VASc and HAS-BLED — the standard AFiB anticoagulation decision.",
+    "intro": "In atrial fibrillation, the decision to start oral anticoagulation balances stroke risk (CHA₂DS₂-VASc) against bleeding risk (HAS-BLED). A high HAS-BLED score is rarely a reason to withhold anticoagulation; it's a flag for closer monitoring and reversible-factor review.",
+    "stroke_heading": "Stroke risk · CHA₂DS₂-VASc",
+    "bleeding_heading": "Bleeding risk · HAS-BLED",
+    "footer_note": "Both scores are computed in your browser. Reference: 2024 ESC AFiB Guidelines (PMID 39210723)."
   }
 }

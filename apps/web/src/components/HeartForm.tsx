@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { heart } from "@medcalc/calculators";
 import { ModeToggle } from "./ResultPanel";
+import { ShareActions } from "./ShareActions";
 import { FormActions, RadioGroup } from "./Field";
 
 type HeartInput = heart.HeartInput;
@@ -104,7 +105,8 @@ export function HeartForm() {
       </form>
 
       {submitted && result !== null && score !== null && (
-        <HeartResultPanel
+        <>
+          <HeartResultPanel
           mode={mode}
           score={score}
           tier={result.tier}
@@ -112,6 +114,10 @@ export function HeartForm() {
           evidenceGrade={result.evidenceGrade}
           mace6w={result.annualRiskPercent}
         />
+          <div className="glass-panel p-4">
+            <ShareActions shareableInputs={inputs as Record<string, unknown>} />
+          </div>
+        </>
       )}
     </div>
   );

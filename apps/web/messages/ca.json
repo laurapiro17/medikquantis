@@ -7,7 +7,9 @@
     "disclaimer_banner": "Informatiu · no substitueix la consulta amb un professional sanitari.",
     "nav_about": "Sobre",
     "nav_privacy": "Privacitat",
-    "nav_terms": "Condicions"
+    "nav_terms": "Condicions",
+    "nav_api": "API",
+    "nav_compare": "Compara"
   },
   "specialties": {
     "cardiology": "Cardiologia",
@@ -105,7 +107,26 @@
   },
   "home": {
     "heading": "Calculadores",
-    "subheading": "Tria una calculadora per començar."
+    "subheading": "Tria una calculadora per començar.",
+    "hero_eyebrow": "Calculadores clíniques obertes",
+    "hero_heading": "Scores multilingües. Evidència citada. API gratuïta.",
+    "hero_subheading": "Tretze scores clínics validats en català, castellà i anglès, amb una API REST pública i un DOI permanent. Fet per una estudiant de medicina, obert sota MIT.",
+    "hero_cta_calcs": "Veure calculadores",
+    "hero_cta_api": "Fer servir l'API",
+    "value_1_title": "Multilingüe natiu",
+    "value_1_body": "Català, castellà i anglès escrits per una estudiant de medicina — sense traducció automàtica.",
+    "value_2_title": "Evidència citada",
+    "value_2_body": "Cada score enllaça el seu PMID original i la guia ESC, ACC o KDIGO vigent.",
+    "value_3_title": "Citable i obert",
+    "value_3_body": "Codi sota llicència MIT, DOI permanent a Zenodo, API REST gratuïta, sense tracking.",
+    "catalog_heading": "Catàleg",
+    "catalog_subheading": "Tretze calculadores en cinc especialitats.",
+    "doi_label": "Cita aquest treball",
+    "api_callout_heading": "Accés programàtic",
+    "api_callout_body": "Les tretze calculadores s'exposen com a API REST amb especificació OpenAPI 3.1 i Swagger UI en viu. CORS obert, sense autenticació, idioma intercanviable.",
+    "api_callout_cta": "Obrir docs de l'API",
+    "search_placeholder": "Cerca calculadores…",
+    "search_empty": "Cap calculadora coincideix amb la teva cerca."
   },
   "notfound": {
     "heading": "Pàgina no trobada",
@@ -132,7 +153,10 @@
     "female": "Dona",
     "disclaimer": "Aquesta calculadora és informativa i no substitueix la consulta amb un professional sanitari.",
     "open_source": "Codi obert a",
-    "built_by": "Construït a Barcelona"
+    "built_by": "Construït a Barcelona",
+    "share_copy": "Copiar enllaç",
+    "share_copied": "Copiat!",
+    "share_print": "Imprimir"
   },
   "cha2ds2vasc": {
     "title": "CHA₂DS₂-VASc",
@@ -484,5 +508,13 @@
         "Quins signes de sagnat hauria de vigilar?"
       ]
     }
+  },
+  "compare": {
+    "title": "Compara: ictus vs sagnat",
+    "subtitle": "CHA₂DS₂-VASc i HAS-BLED costat a costat — la decisió estàndard d'anticoagulació en FA.",
+    "intro": "En la fibril·lació auricular, la decisió d'iniciar anticoagulació oral equilibra el risc d'ictus (CHA₂DS₂-VASc) amb el risc hemorràgic (HAS-BLED). Una puntuació HAS-BLED alta rarament és motiu per retirar l'anticoagulació; és una senyal de monitoritzar de prop i revisar els factors reversibles.",
+    "stroke_heading": "Risc d'ictus · CHA₂DS₂-VASc",
+    "bleeding_heading": "Risc hemorràgic · HAS-BLED",
+    "footer_note": "Totes dues puntuacions es calculen al teu navegador. Referència: Guies ESC FA 2024 (PMID 39210723)."
   }
 }

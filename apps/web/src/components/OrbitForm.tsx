@@ -89,6 +89,7 @@ export function OrbitForm() {
           annualRiskPercent={result.annualRiskPercent}
           riskLabelKey="common.annual_bleeding_risk"
           i18nNamespace="orbit"
+          shareableInputs={inputs}
         />
       )}
     </div>

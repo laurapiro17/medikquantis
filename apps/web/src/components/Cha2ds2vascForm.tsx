@@ -103,6 +103,7 @@ export function Cha2ds2vascForm() {
           annualRiskPercent={result.annualRiskPercent}
           riskLabelKey="common.annual_risk"
           i18nNamespace="cha2ds2vasc"
+          shareableInputs={inputs}
         />
       )}
     </div>

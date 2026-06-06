@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { grace } from "@medcalc/calculators";
 import { ModeToggle } from "./ResultPanel";
+import { ShareActions } from "./ShareActions";
 import { BooleanList, FormActions, NumberInput, RadioGroup } from "./Field";
 
 type GraceInput = grace.GraceInput;
@@ -129,7 +130,8 @@ export function GraceForm() {
       </form>
 
       {submitted && (
-        <GraceResultPanel
+        <>
+          <GraceResultPanel
           mode={mode}
           score={score}
           tier={result.tier}
@@ -137,6 +139,10 @@ export function GraceForm() {
           evidenceGrade={result.evidenceGrade}
           mortality={result.annualRiskPercent}
         />
+          <div className="glass-panel p-4">
+            <ShareActions shareableInputs={inputs} />
+          </div>
+        </>
       )}
     </div>
   );

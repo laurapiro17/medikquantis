@@ -86,6 +86,7 @@ export function PercForm() {
           annualRiskPercent={result.annualRiskPercent}
           riskLabelKey="common.annual_risk"
           i18nNamespace="perc"
+          shareableInputs={inputs}
         />
       )}
     </div>

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { ckdEpi2021 } from "@medcalc/calculators";
 import { ModeToggle } from "./ResultPanel";
+import { ShareActions } from "./ShareActions";
 import { FormActions, NumberInput, RadioGroup } from "./Field";
 
 type CkdEpi2021Input = ckdEpi2021.CkdEpi2021Input;
@@ -86,7 +87,8 @@ export function CkdEpi2021Form() {
       </form>
 
       {submitted && (
-        <CkdEpiResultPanel
+        <>
+          <CkdEpiResultPanel
           mode={mode}
           egfr={egfr}
           stage={result.stage}
@@ -94,6 +96,10 @@ export function CkdEpi2021Form() {
           recommendation={result.recommendation}
           evidenceGrade={result.evidenceGrade}
         />
+          <div className="glass-panel p-4">
+            <ShareActions shareableInputs={inputs} />
+          </div>
+        </>
       )}
     </div>
   );
