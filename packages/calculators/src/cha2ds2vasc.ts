@@ -64,6 +64,7 @@ export function interpret(
     return {
       tier: "low",
       recommendation: "Oral anticoagulation not recommended.",
+      recommendationCode: "CHA2DS2VASC_OAC_NOT_RECOMMENDED",
       evidenceGrade: "A",
       annualRiskPercent,
     };
@@ -79,6 +80,7 @@ export function interpret(
       tier: "moderate",
       recommendation:
         "Oral anticoagulation should be considered (ESC Class IIa).",
+      recommendationCode: "CHA2DS2VASC_OAC_CONSIDERED_IIA",
       evidenceGrade: "B",
       annualRiskPercent,
     };
@@ -87,6 +89,7 @@ export function interpret(
   return {
     tier: "high",
     recommendation: "Oral anticoagulation is recommended (ESC Class I).",
+    recommendationCode: "CHA2DS2VASC_OAC_RECOMMENDED_I",
     evidenceGrade: "A",
     annualRiskPercent,
   };

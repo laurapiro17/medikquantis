@@ -89,6 +89,7 @@ export function interpret(score: number): InterpretResult {
       tier: "low",
       recommendation:
         "Low 6-week MACE risk; discharge with outpatient follow-up is reasonable.",
+      recommendationCode: "HEART_LOW_DISCHARGE",
       evidenceGrade: "A",
       annualRiskPercent,
     };
@@ -99,6 +100,7 @@ export function interpret(score: number): InterpretResult {
       tier: "moderate",
       recommendation:
         "Intermediate risk; admit for observation and serial troponins.",
+      recommendationCode: "HEART_INTERMEDIATE_ADMIT",
       evidenceGrade: "A",
       annualRiskPercent,
     };
@@ -108,6 +110,7 @@ export function interpret(score: number): InterpretResult {
     tier: "high",
     recommendation:
       "High risk; early invasive strategy and cardiology consult recommended.",
+    recommendationCode: "HEART_HIGH_INVASIVE",
     evidenceGrade: "A",
     annualRiskPercent,
   };

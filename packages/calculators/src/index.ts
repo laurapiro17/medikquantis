@@ -1,4 +1,5 @@
 export * from "./types";
+export { getCalc, listCalcs, listCalcIds, type AnyCalc } from "./registry";
 export * as cha2ds2vasc from "./cha2ds2vasc";
 export * as hasbled from "./hasbled";
 export * as orbit from "./orbit";

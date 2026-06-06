@@ -7,6 +7,7 @@ export type EvidenceGrade = "A" | "B" | "C";
 export interface InterpretResult {
   tier: RiskTier;
   recommendation: string;
+  recommendationCode: string;
   evidenceGrade: EvidenceGrade;
   annualRiskPercent?: number;
 }

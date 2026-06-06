@@ -32,6 +32,7 @@ export function interpret(score: number): InterpretResult {
       tier: "high",
       recommendation:
         "qSOFA ≥2: high suspicion of sepsis-related organ dysfunction. Escalate care, consider full SOFA, lactate, blood cultures, antibiotics.",
+      recommendationCode: "QSOFA_HIGH_SEPSIS_SUSPECT",
       evidenceGrade: "A",
     };
   }
@@ -40,6 +41,7 @@ export function interpret(score: number): InterpretResult {
       tier: "moderate",
       recommendation:
         "Single criterion positive; reassess vital signs serially and remain alert for deterioration.",
+      recommendationCode: "QSOFA_MODERATE_VIGILANCE",
       evidenceGrade: "B",
     };
   }
@@ -47,6 +49,7 @@ export function interpret(score: number): InterpretResult {
     tier: "low",
     recommendation:
       "No qSOFA criteria; low immediate concern for organ dysfunction. Continue routine assessment.",
+    recommendationCode: "QSOFA_LOW_ROUTINE",
     evidenceGrade: "A",
   };
 }

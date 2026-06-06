@@ -42,6 +42,7 @@ export function interpret(
       tier: "low",
       recommendation:
         "No symptoms with ordinary activity; continue guideline-directed medical therapy if HFrEF.",
+      recommendationCode: "NYHA_I_NO_SYMPTOMS",
       evidenceGrade: "A",
     };
   }
@@ -52,6 +53,7 @@ export function interpret(
       tier: "moderate",
       recommendation:
         "Slight limitation with ordinary activity; ensure quadruple therapy (ARNI/ACEi + BB + MRA + SGLT2i) if HFrEF.",
+      recommendationCode: "NYHA_II_SLIGHT_LIMITATION",
       evidenceGrade: "A",
     };
   }
@@ -62,6 +64,7 @@ export function interpret(
       tier: "high",
       recommendation:
         "Marked limitation with less-than-ordinary activity; optimize therapy and consider CRT/ICD per LVEF and QRS.",
+      recommendationCode: "NYHA_III_MARKED_LIMITATION",
       evidenceGrade: "A",
     };
   }
@@ -71,6 +74,7 @@ export function interpret(
     tier: "high",
     recommendation:
       "Symptoms at rest; refer for advanced HF therapies (LVAD, transplant evaluation) and palliative care discussion.",
+    recommendationCode: "NYHA_IV_REST_SYMPTOMS",
     evidenceGrade: "A",
   };
 }

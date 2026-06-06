@@ -51,6 +51,7 @@ export function interpret(score: number): InterpretResult {
       tier: "low",
       recommendation:
         "Low 14-day MACE risk; conservative strategy is reasonable.",
+      recommendationCode: "TIMI_LOW_CONSERVATIVE",
       evidenceGrade: "A",
       annualRiskPercent,
     };
@@ -61,6 +62,7 @@ export function interpret(score: number): InterpretResult {
       tier: "moderate",
       recommendation:
         "Intermediate risk; early invasive strategy should be considered.",
+      recommendationCode: "TIMI_INTERMEDIATE_EARLY",
       evidenceGrade: "A",
       annualRiskPercent,
     };
@@ -70,6 +72,7 @@ export function interpret(score: number): InterpretResult {
     tier: "high",
     recommendation:
       "High risk; urgent invasive strategy and cardiology referral.",
+    recommendationCode: "TIMI_HIGH_URGENT",
     evidenceGrade: "A",
     annualRiskPercent,
   };

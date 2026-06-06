@@ -40,6 +40,7 @@ export function interpret(score: number): InterpretResult {
       tier: "low",
       recommendation:
         "PERC-negative: in a low pre-test probability patient (<15%), PE can be ruled out without further testing.",
+      recommendationCode: "PERC_NEGATIVE_RULEOUT",
       evidenceGrade: "A",
     };
   }
@@ -47,6 +48,7 @@ export function interpret(score: number): InterpretResult {
     tier: "high",
     recommendation:
       "PERC-positive: do NOT use PERC to rule out PE. Proceed with D-dimer or imaging depending on pre-test probability.",
+    recommendationCode: "PERC_POSITIVE_FURTHER_WORKUP",
     evidenceGrade: "A",
   };
 }

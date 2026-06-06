@@ -58,6 +58,7 @@ export function interpret(score: number): InterpretResult {
       tier: "low",
       recommendation:
         "Low 3-month mortality; outpatient hepatology follow-up.",
+      recommendationCode: "MELD3_LOW_OUTPATIENT",
       evidenceGrade: "A",
     };
   }
@@ -66,6 +67,7 @@ export function interpret(score: number): InterpretResult {
       tier: "moderate",
       recommendation:
         "Intermediate 3-month mortality; intensify hepatology follow-up, evaluate transplant candidacy.",
+      recommendationCode: "MELD3_INTERMEDIATE_TRANSPLANT_EVAL",
       evidenceGrade: "A",
     };
   }
@@ -73,6 +75,7 @@ export function interpret(score: number): InterpretResult {
     tier: "high",
     recommendation:
       "High 3-month mortality; prioritise transplant evaluation and address acute complications.",
+    recommendationCode: "MELD3_HIGH_TRANSPLANT_PRIORITY",
     evidenceGrade: "A",
   };
 }

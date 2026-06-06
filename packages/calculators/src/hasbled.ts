@@ -51,6 +51,7 @@ export function interpret(score: number): InterpretResult {
     return {
       tier: "low",
       recommendation: "Low bleeding risk; anticoagulation is not precluded.",
+      recommendationCode: "HASBLED_LOW_OAC_OK",
       evidenceGrade: "A",
       annualRiskPercent,
     };
@@ -63,6 +64,7 @@ export function interpret(score: number): InterpretResult {
       tier: "moderate",
       recommendation:
         "Elevated bleeding risk — review reversible factors, monitor closely.",
+      recommendationCode: "HASBLED_ELEVATED_REVIEW",
       evidenceGrade: "B",
       annualRiskPercent,
     };
@@ -72,6 +74,7 @@ export function interpret(score: number): InterpretResult {
     tier: "high",
     recommendation:
       "High bleeding risk — closer follow-up required; reassess reversible factors.",
+    recommendationCode: "HASBLED_HIGH_CLOSE_FOLLOWUP",
     evidenceGrade: "A",
     annualRiskPercent,
   };

@@ -46,6 +46,7 @@ export function interpret(
         cls === "I"
           ? "No symptoms; symptom-directed therapy not required."
           : "Mild symptoms; daily activity not affected. Symptom-directed therapy not generally required.",
+      recommendationCode: cls === "I" ? "EHRA_I_NO_SYMPTOMS" : "EHRA_IIA_MILD",
       evidenceGrade: "B",
     };
   }
@@ -56,6 +57,7 @@ export function interpret(
       tier: "moderate",
       recommendation:
         "Moderate symptoms causing patient distress; consider rate or rhythm control.",
+      recommendationCode: "EHRA_IIB_MODERATE",
       evidenceGrade: "B",
     };
   }
@@ -66,6 +68,7 @@ export function interpret(
       tier: "high",
       recommendation:
         "Severe symptoms affecting daily activity; rhythm control strongly recommended.",
+      recommendationCode: "EHRA_III_SEVERE",
       evidenceGrade: "A",
     };
   }
@@ -75,6 +78,7 @@ export function interpret(
     tier: "high",
     recommendation:
       "Disabling symptoms; daily activity discontinued. Urgent rhythm-control intervention indicated.",
+    recommendationCode: "EHRA_IV_DISABLING",
     evidenceGrade: "A",
   };
 }

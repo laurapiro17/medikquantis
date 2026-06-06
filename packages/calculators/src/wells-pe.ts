@@ -38,6 +38,7 @@ export function interpret(score: number): InterpretResult {
       tier: "low",
       recommendation:
         "PE unlikely; obtain D-dimer. If negative, pulmonary embolism is excluded.",
+      recommendationCode: "WELLSPE_UNLIKELY_DDIMER",
       evidenceGrade: "A",
     };
   }
@@ -45,6 +46,7 @@ export function interpret(score: number): InterpretResult {
     tier: "high",
     recommendation:
       "PE likely; proceed directly to CT pulmonary angiography (no need for D-dimer).",
+    recommendationCode: "WELLSPE_LIKELY_CTPA",
     evidenceGrade: "A",
   };
 }

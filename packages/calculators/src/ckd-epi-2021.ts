@@ -36,6 +36,7 @@ export function interpret(score: number): CkdEpiInterpretResult {
       stage: "G1",
       tier: "low",
       recommendation: "Normal or high eGFR; investigate other CKD markers if persistent abnormalities.",
+      recommendationCode: "CKDEPI_G1_NORMAL",
       evidenceGrade: "A",
     };
   }
@@ -44,6 +45,7 @@ export function interpret(score: number): CkdEpiInterpretResult {
       stage: "G2",
       tier: "low",
       recommendation: "Mildly decreased eGFR; monitor and address risk factors.",
+      recommendationCode: "CKDEPI_G2_MILD",
       evidenceGrade: "A",
     };
   }
@@ -52,6 +54,7 @@ export function interpret(score: number): CkdEpiInterpretResult {
       stage: "G3a",
       tier: "moderate",
       recommendation: "Mildly to moderately decreased eGFR; evaluate cause, complications and progression risk.",
+      recommendationCode: "CKDEPI_G3A_MILD_MODERATE",
       evidenceGrade: "A",
     };
   }
@@ -60,6 +63,7 @@ export function interpret(score: number): CkdEpiInterpretResult {
       stage: "G3b",
       tier: "moderate",
       recommendation: "Moderately to severely decreased eGFR; nephrology referral and management of CKD complications.",
+      recommendationCode: "CKDEPI_G3B_MODERATE_SEVERE",
       evidenceGrade: "A",
     };
   }
@@ -68,6 +72,7 @@ export function interpret(score: number): CkdEpiInterpretResult {
       stage: "G4",
       tier: "high",
       recommendation: "Severely decreased eGFR; nephrology follow-up, prepare for renal replacement therapy.",
+      recommendationCode: "CKDEPI_G4_SEVERE",
       evidenceGrade: "A",
     };
   }
@@ -75,6 +80,7 @@ export function interpret(score: number): CkdEpiInterpretResult {
     stage: "G5",
     tier: "high",
     recommendation: "Kidney failure; renal replacement therapy (dialysis or transplant) indicated.",
+    recommendationCode: "CKDEPI_G5_FAILURE",
     evidenceGrade: "A",
   };
 }

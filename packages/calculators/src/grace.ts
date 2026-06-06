@@ -123,6 +123,7 @@ export function interpret(score: number): InterpretResult & { sixMonthBucket?: s
       tier: "low",
       recommendation:
         "Low in-hospital mortality risk; selective invasive strategy if symptoms recur.",
+      recommendationCode: "GRACE_LOW_SELECTIVE",
       evidenceGrade: "A",
       annualRiskPercent: mortality,
     };
@@ -132,6 +133,7 @@ export function interpret(score: number): InterpretResult & { sixMonthBucket?: s
       tier: "moderate",
       recommendation:
         "Intermediate risk; early invasive strategy recommended (within 24h).",
+      recommendationCode: "GRACE_INTERMEDIATE_EARLY",
       evidenceGrade: "A",
       annualRiskPercent: mortality,
     };
@@ -140,6 +142,7 @@ export function interpret(score: number): InterpretResult & { sixMonthBucket?: s
     tier: "high",
     recommendation:
       "High risk; urgent invasive strategy (<2h) and cardiology referral.",
+    recommendationCode: "GRACE_HIGH_URGENT",
     evidenceGrade: "A",
     annualRiskPercent: mortality,
   };
