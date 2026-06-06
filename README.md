@@ -15,7 +15,7 @@ MDCalc and MedCalc are the global standards for clinical calculators, but neithe
 
 ## What it is
 
-- **Multilingual** clinical calculators (CA/ES/EN), translated by a medical student rather than machine-translated.
+- **Multilingual** clinical calculators (CA/ES/EN), localised by native speakers rather than machine-translated.
 - **Dual-mode UI**: clinician compact view and patient narrative view on every calculator.
 - **Cited**: each calculator embeds its PubMed reference; the result panel surfaces the ESC evidence grade.
 - **Open**: source under MIT, calculations run client-side, no tracking, no cookies (beyond the theme toggle in localStorage).

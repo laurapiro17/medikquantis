@@ -36,13 +36,13 @@
     "heading": "Acerca de MedikQuantis",
     "intro": "MedikQuantis es una colección abierta de calculadoras clínicas traducidas al catalán y al castellano, con explicaciones para pacientes en cada calculadora y evidencia citada para cada puntuación. Actualmente cubrimos cardiología; iremos añadiendo otros ámbitos médicos progresivamente.",
     "who_heading": "Quién hay detrás",
-    "who_body": "Proyecto de Laura Piñero Roig, estudiante de Medicina en la Universidad de Barcelona. Código abierto bajo licencia MIT, mantenido individualmente.",
+    "who_body": "Un proyecto de Laura Piñero Roig en la Universidad de Barcelona. Código abierto bajo licencia MIT, mantenido como un proyecto en solitario.",
     "what_it_is_heading": "Qué es",
     "what_it_is": [
       "Una herramienta informativa para clínicos y estudiantes de medicina.",
-      "Implementación fiel de las puntuaciones originales, con la cita PubMed en cada página.",
-      "Localización al catalán y castellano hechas por una estudiante de medicina, no traducción automática.",
-      "Modo paciente con lenguaje sencillo y preguntas para hacer al médico."
+      "Implementación fiel de las puntuaciones originales, con la cita de PubMed en cada página.",
+      "Localización al catalán y castellano por hablantes nativos, no traducción automática.",
+      "Modo paciente con lenguaje natural y preguntas para el médico."
     ],
     "what_it_isnt_heading": "Qué NO es",
     "what_it_isnt": [
@@ -110,11 +110,11 @@
     "subheading": "Elige una calculadora para empezar.",
     "hero_eyebrow": "Calculadoras clínicas abiertas",
     "hero_heading": "Scores multilingües. Evidencia citada. API gratuita.",
-    "hero_subheading": "Trece scores clínicos validados en catalán, español e inglés, con una API REST pública y un DOI permanente. Hecho por una estudiante de medicina, abierto bajo MIT.",
+    "hero_subheading": "Trece scores clínicos validados en catalán, español e inglés, con una API REST pública y un DOI permanente. Abierto bajo MIT.",
     "hero_cta_calcs": "Ver calculadoras",
     "hero_cta_api": "Usar la API",
     "value_1_title": "Multilingüe nativo",
-    "value_1_body": "Catalán, español e inglés escritos por una estudiante de medicina — sin traducción automática.",
+    "value_1_body": "Catalán, español e inglés por hablantes nativos — sin traducción automática.",
     "value_2_title": "Evidencia citada",
     "value_2_body": "Cada score enlaza su PMID original y la guía ESC, ACC o KDIGO vigente.",
     "value_3_title": "Citable y abierto",
