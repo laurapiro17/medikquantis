@@ -41,6 +41,9 @@ jobs:
       - name: i18n key parity (CA/ES/EN)
         run: pnpm lint:i18n
 
+      - name: Verify PMIDs against PubMed (NCBI EUtils)
+        run: pnpm verify:pmids
+
       - name: Unit tests (Vitest)
         run: pnpm test
 
