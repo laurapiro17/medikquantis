@@ -106,7 +106,7 @@ export function CkdEpi2021Form() {
           evidenceGrade={result.evidenceGrade}
         />
           <div className="glass-panel p-4">
-            <ShareActions shareableInputs={inputs} />
+            <ShareActions shareableInputs={inputs} tier={result.tier} mode={mode} />
           </div>
         </>
       )}

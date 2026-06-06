@@ -66,8 +66,8 @@
         "body": "Cuando rellenas una calculadora, los datos (edad, sexo, factores de riesgo, etc.) se procesan exclusivamente en tu dispositivo. No son enviados a ningún sitio, no son guardados, no son registrados."
       },
       {
-        "heading": "Cookies y analítica",
-        "body": "Este sitio no usa cookies ni herramientas de analítica (no hay Google Analytics, no hay píxeles de seguimiento, no hay cookies de terceros). El único dato guardado localmente es tu preferencia de tema (claro/oscuro), en el localStorage del navegador. Puedes borrarla en cualquier momento."
+        "heading": "Cookies y analíticas",
+        "body": "Usamos Vercel Web Analytics para contar visitas y eventos de uso de forma anónima (qué calculadora se utilizó y en qué idioma). No se establecen cookies, no se recopilan datos personales y no se carga ningún rastreador de terceros. Los datos introducidos en las calculadoras nunca se envían — solo se registran la ruta de la página y cuatro dimensiones anónimas (riesgo, modo, idioma, origen). Los navegadores que envían Do-Not-Track o bloquean scripts de analítica se respetan automáticamente. El único dato persistido localmente es tu preferencia de tema (claro/oscuro) en localStorage; puedes borrarlo cuando quieras."
       },
       {
         "heading": "Logs del servidor",

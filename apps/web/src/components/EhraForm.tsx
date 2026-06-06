@@ -85,7 +85,11 @@ export function EhraForm() {
         <>
           <EhraResultPanel mode={mode} result={result} />
           <div className="glass-panel p-4">
-            <ShareActions shareableInputs={{ ehraClass: selected }} />
+            <ShareActions
+              shareableInputs={{ ehraClass: selected }}
+              tier={result.tier}
+              mode={mode}
+            />
           </div>
         </>
       )}

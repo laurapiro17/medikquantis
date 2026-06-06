@@ -124,7 +124,7 @@ export function HeartForm() {
           mace6w={result.annualRiskPercent}
         />
           <div className="glass-panel p-4">
-            <ShareActions shareableInputs={inputs as Record<string, unknown>} />
+            <ShareActions shareableInputs={inputs as Record<string, unknown>} tier={result.tier} mode={mode} />
           </div>
         </>
       )}

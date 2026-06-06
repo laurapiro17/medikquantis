@@ -85,7 +85,11 @@ export function NyhaForm() {
         <>
           <NyhaResultPanel mode={mode} result={result} />
           <div className="glass-panel p-4">
-            <ShareActions shareableInputs={{ nyhaClass: selected }} />
+            <ShareActions
+              shareableInputs={{ nyhaClass: selected }}
+              tier={result.tier}
+              mode={mode}
+            />
           </div>
         </>
       )}

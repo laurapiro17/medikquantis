@@ -78,7 +78,7 @@ export function ResultPanel({
           </div>
         </dl>
 
-        <ShareActions shareableInputs={shareableInputs} />
+        <ShareActions shareableInputs={shareableInputs} tier={tier} mode={mode} />
       </div>
     );
   }
@@ -119,7 +119,7 @@ export function ResultPanel({
         {t("common.disclaimer")}
       </p>
 
-      <ShareActions shareableInputs={shareableInputs} />
+      <ShareActions shareableInputs={shareableInputs} tier={tier} mode={mode} />
     </div>
   );
 }

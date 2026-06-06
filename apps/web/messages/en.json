@@ -67,7 +67,7 @@
       },
       {
         "heading": "Cookies and analytics",
-        "body": "This site uses no cookies and no analytics tools (no Google Analytics, no tracking pixels, no third-party cookies). The only piece of data persisted locally is your theme preference (light/dark) in browser localStorage. You can clear it any time."
+        "body": "We use Vercel Web Analytics to count anonymous page views and engagement events (which calculator was computed, in which language). No cookies are set, no personal data is collected, and no third-party trackers are loaded. Calculator inputs are never sent — only the page path and four anonymous dimensions (tier, mode, language, source). Browsers that send Do-Not-Track or block analytics scripts are honoured automatically. The only piece of data persisted locally is your theme preference (light/dark) in browser localStorage; you can clear it any time."
       },
       {
         "heading": "Server logs",

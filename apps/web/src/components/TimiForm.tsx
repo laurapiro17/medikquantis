@@ -102,7 +102,7 @@ export function TimiForm() {
           mace14d={result.annualRiskPercent}
         />
           <div className="glass-panel p-4">
-            <ShareActions shareableInputs={inputs} />
+            <ShareActions shareableInputs={inputs} tier={result.tier} mode={mode} />
           </div>
         </>
       )}

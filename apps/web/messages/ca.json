@@ -66,8 +66,8 @@
         "body": "Quan omples una calculadora, les dades (edat, sexe, factors de risc, etc.) es processen exclusivament al teu dispositiu. No són enviades enlloc, no són guardades, no són logades."
       },
       {
-        "heading": "Cookies i analítica",
-        "body": "Aquest lloc no utilitza cookies ni eines d'analítica (no hi ha Google Analytics, no hi ha píxels de seguiment, no hi ha cookies de tercers). L'única dada guardada localment és la teva preferència de tema (clar/fosc), al localStorage del navegador. Pots esborrar-la en qualsevol moment."
+        "heading": "Cookies i analítiques",
+        "body": "Fem servir Vercel Web Analytics per comptar visites i esdeveniments d'ús de manera anònima (quina calculadora s'ha fet servir i en quin idioma). No s'estableixen cookies, no es recullen dades personals i no es carrega cap rastrejador de tercers. Les dades que introdueixes a les calculadores no s'envien mai — només la ruta de la pàgina i quatre dimensions anònimes (risc, mode, idioma, origen). Els navegadors que envien Do-Not-Track o bloquegen scripts d'analítica es respecten automàticament. L'única dada que es guarda localment és la teva preferència de tema (clar/fosc) a localStorage; pots esborrar-la quan vulguis."
       },
       {
         "heading": "Logs del servidor",
