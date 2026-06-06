@@ -39,6 +39,63 @@ function buildSpec(serverUrl: string) {
     },
   };
 
+  paths["/api/v1/health"] = {
+    get: {
+      summary: "Service health",
+      tags: ["Index"],
+      responses: {
+        "200": {
+          description: "Status + version + calculator count",
+          content: { "application/json": { schema: { type: "object" } } },
+        },
+      },
+    },
+  };
+
+  paths["/api/v1/batch"] = {
+    post: {
+      summary: "Compute multiple calculators in one request",
+      tags: ["Index"],
+      description:
+        "Up to 50 calculations per request. Each item may include its own `lang`. " +
+        "Validation errors are returned per-item — the batch never short-circuits.",
+      requestBody: {
+        required: true,
+        content: {
+          "application/json": {
+            schema: {
+              type: "object",
+              properties: {
+                calcs: {
+                  type: "array",
+                  maxItems: 50,
+                  items: {
+                    type: "object",
+                    required: ["id", "inputs"],
+                    properties: {
+                      id: { type: "string", description: "Calculator id" },
+                      inputs: { type: "object" },
+                      lang: { type: "string", enum: ["en", "es", "ca"] },
+                    },
+                  },
+                },
+              },
+              required: ["calcs"],
+            },
+          },
+        },
+      },
+      responses: {
+        "200": {
+          description: "Per-item results (errors are inline, not 4xx)",
+          content: { "application/json": { schema: { type: "object" } } },
+        },
+        "400": { description: "Malformed body" },
+        "413": { description: "Batch size exceeds limit" },
+      },
+    },
+  };
+
   return {
     openapi: "3.1.0",
     info: {

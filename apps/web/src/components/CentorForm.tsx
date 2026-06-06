@@ -3,36 +3,33 @@
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { useUrlInputs } from "./useUrlInputs";
-import { wellsPe } from "@medcalc/calculators";
+import { centor } from "@medcalc/calculators";
 import { ModeToggle, ResultPanel } from "./ResultPanel";
-import { BooleanList, FormActions } from "./Field";
+import { BooleanList, FormActions, RadioGroup } from "./Field";
 
-type WellsPeInput = wellsPe.WellsPeInput;
+type CentorInput = centor.CentorInput;
 type Mode = "clinician" | "patient";
 
-const defaultInputs: WellsPeInput = {
-  clinicalSignsOfDvt: false,
-  peAsLikelyAsAlternative: false,
-  heartRateOver100: false,
-  immobilizationOrSurgeryLast4Weeks: false,
-  previousDvtOrPe: false,
-  hemoptysis: false,
-  activeOrTreatedMalignancy: false,
+const defaultInputs: CentorInput = {
+  tonsillarExudate: false,
+  tenderAnteriorCervicalNodes: false,
+  feverHistory: false,
+  absenceOfCough: false,
+  ageBand: "15_to_44",
 };
 
 const booleanFields = [
-  "clinicalSignsOfDvt",
-  "peAsLikelyAsAlternative",
-  "heartRateOver100",
-  "immobilizationOrSurgeryLast4Weeks",
-  "previousDvtOrPe",
-  "hemoptysis",
-  "activeOrTreatedMalignancy",
+  "tonsillarExudate",
+  "tenderAnteriorCervicalNodes",
+  "feverHistory",
+  "absenceOfCough",
 ] as const;
 
-export function WellsPeForm() {
+const ageBands = ["lt_15", "15_to_44", "gte_45"] as const;
+
+export function CentorForm() {
   const t = useTranslations();
-  const [inputs, setInputs] = useState<WellsPeInput>(defaultInputs);
+  const [inputs, setInputs] = useState<CentorInput>(defaultInputs);
   const [submitted, setSubmitted] = useState(false);
 
   const urlInputs = useUrlInputs();
@@ -44,10 +41,13 @@ export function WellsPeForm() {
 
   const [mode, setMode] = useState<Mode>("clinician");
 
-  const score = wellsPe.formula(inputs);
-  const result = wellsPe.interpret(score);
+  const score = centor.formula(inputs);
+  const result = centor.interpret(score);
 
-  function update<K extends keyof WellsPeInput>(key: K, value: WellsPeInput[K]) {
+  function update<K extends keyof CentorInput>(
+    key: K,
+    value: CentorInput[K],
+  ) {
     setInputs((prev) => ({ ...prev, [key]: value }));
   }
 
@@ -70,9 +70,20 @@ export function WellsPeForm() {
         <BooleanList
           items={booleanFields.map((field) => ({
             key: field,
-            label: t(`wellsPe.fields.${field}` as "wellsPe.fields.hemoptysis"),
+            label: t(`centor.fields.${field}` as "centor.fields.tonsillarExudate"),
             checked: inputs[field],
             onChange: (v) => update(field, v),
+          }))}
+        />
+
+        <RadioGroup
+          name="centor-age"
+          legend={t("centor.fields.ageBand")}
+          value={inputs.ageBand}
+          onChange={(v) => update("ageBand", v)}
+          options={ageBands.map((band) => ({
+            value: band,
+            label: t(`centor.age_options.${band}` as "centor.age_options.lt_15"),
           }))}
         />
 
@@ -92,7 +103,7 @@ export function WellsPeForm() {
           evidenceGrade={result.evidenceGrade}
           annualRiskPercent={result.annualRiskPercent}
           riskLabelKey="common.annual_risk"
-          i18nNamespace="wellsPe"
+          i18nNamespace="centor"
           shareableInputs={inputs}
         />
       )}

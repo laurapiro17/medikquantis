@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
+import { useUrlInputs } from "./useUrlInputs";
 import { ehra } from "@medcalc/calculators";
 import { ModeToggle } from "./ResultPanel";
 import { ShareActions } from "./ShareActions";
@@ -24,6 +25,17 @@ export function EhraForm() {
   const [selected, setSelected] = useState<EhraClassValue | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
+
+  const urlInputs = useUrlInputs();
+  useEffect(() => {
+    if (!urlInputs) return;
+    const cls = urlInputs.ehraClass;
+    if (typeof cls === "string" && (classes as string[]).includes(cls)) {
+      setSelected(cls as EhraClassValue);
+      setSubmitted(true);
+    }
+  }, [urlInputs]);
+
 
   const result =
     selected !== null

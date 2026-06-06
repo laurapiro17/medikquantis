@@ -516,5 +516,101 @@
     "stroke_heading": "Stroke risk · CHA₂DS₂-VASc",
     "bleeding_heading": "Bleeding risk · HAS-BLED",
     "footer_note": "Both scores are computed in your browser. Reference: 2024 ESC AFiB Guidelines (PMID 39210723)."
+  },
+  "curb65": {
+    "title": "CURB-65",
+    "subtitle": "Community-acquired pneumonia severity",
+    "fields": {
+      "confusion": "Confusion (new disorientation in person/place/time)",
+      "ureaOver7": "Urea > 7 mmol/L (BUN > 19 mg/dL)",
+      "respiratoryRateAtLeast30": "Respiratory rate ≥ 30/min",
+      "lowBloodPressure": "Systolic BP < 90 mmHg or diastolic ≤ 60 mmHg",
+      "ageAtLeast65": "Age ≥ 65 years"
+    },
+    "patient": {
+      "intro": "This calculator estimates the severity of community-acquired pneumonia and helps decide where to be treated.",
+      "result_low": "Your pneumonia is at low risk. Outpatient treatment with oral antibiotics is usually appropriate.",
+      "result_moderate": "Your pneumonia is at moderate risk. A short hospital stay for observation is often recommended.",
+      "result_high": "Your pneumonia is at high risk. Hospital admission is needed and intensive care may be considered.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "Is my pneumonia mild, moderate or severe?",
+        "Do I need to be admitted to hospital?",
+        "Which antibiotics should I take and for how long?",
+        "What signs of worsening should I watch for at home?"
+      ]
+    }
+  },
+  "gcs": {
+    "title": "Glasgow Coma Scale",
+    "subtitle": "Consciousness level after head injury",
+    "fields": {
+      "eye": "Eye opening response",
+      "verbal": "Verbal response",
+      "motor": "Best motor response"
+    },
+    "eye_options": {
+      "1": "1 — None",
+      "2": "2 — To pain",
+      "3": "3 — To voice",
+      "4": "4 — Spontaneous"
+    },
+    "verbal_options": {
+      "1": "1 — None",
+      "2": "2 — Incomprehensible sounds",
+      "3": "3 — Inappropriate words",
+      "4": "4 — Confused",
+      "5": "5 — Oriented"
+    },
+    "motor_options": {
+      "1": "1 — None",
+      "2": "2 — Extension to pain",
+      "3": "3 — Abnormal flexion",
+      "4": "4 — Withdrawal from pain",
+      "5": "5 — Localises pain",
+      "6": "6 — Obeys commands"
+    },
+    "patient": {
+      "intro": "The Glasgow Coma Scale grades how awake and responsive a person is after a head injury.",
+      "result_low": "The level of consciousness is mild. Most patients recover well; the doctor will decide whether imaging is needed.",
+      "result_moderate": "The level of consciousness is moderately reduced. Hospital admission and a head scan are usually needed.",
+      "result_high": "The level of consciousness is severely reduced. Emergency care is needed and the airway often has to be protected.",
+      "ask_doctor": "Ask the medical team:",
+      "questions": [
+        "What does this score mean for my relative's recovery?",
+        "Will a head CT or MRI be done?",
+        "What signs of worsening will be monitored?",
+        "When can the family see the patient?"
+      ]
+    }
+  },
+  "centor": {
+    "title": "Centor / McIsaac",
+    "subtitle": "Group A strep pharyngitis probability",
+    "fields": {
+      "tonsillarExudate": "Tonsillar exudate",
+      "tenderAnteriorCervicalNodes": "Tender anterior cervical lymphadenopathy",
+      "feverHistory": "Fever (history of temperature > 38 °C)",
+      "absenceOfCough": "Absence of cough",
+      "ageBand": "Age band"
+    },
+    "age_options": {
+      "lt_15": "Under 15",
+      "15_to_44": "15 to 44",
+      "gte_45": "45 or older"
+    },
+    "patient": {
+      "intro": "This score estimates how likely a sore throat is caused by group A streptococcal bacteria.",
+      "result_low": "Your sore throat is unlikely to be caused by strep. Antibiotics are not needed; rest, fluids and pain relief are usually enough.",
+      "result_moderate": "Your sore throat may be caused by strep. A rapid antigen test can confirm and guide antibiotic decisions.",
+      "result_high": "Your sore throat is likely caused by strep. Your doctor may start antibiotics or confirm with a rapid test first.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "Do I need a strep test?",
+        "Which antibiotic should I take, if any?",
+        "How long until I am no longer contagious?",
+        "When should I return if symptoms worsen?"
+      ]
+    }
   }
 }

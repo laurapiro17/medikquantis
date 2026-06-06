@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
+import { useUrlInputs } from "./useUrlInputs";
 import { ckdEpi2021 } from "@medcalc/calculators";
 import { ModeToggle } from "./ResultPanel";
 import { ShareActions } from "./ShareActions";
@@ -27,6 +28,14 @@ export function CkdEpi2021Form() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<CkdEpi2021Input>(defaultInputs);
   const [submitted, setSubmitted] = useState(false);
+
+  const urlInputs = useUrlInputs();
+  useEffect(() => {
+    if (!urlInputs) return;
+    setInputs((prev) => ({ ...prev, ...urlInputs }));
+    setSubmitted(true);
+  }, [urlInputs]);
+
   const [mode, setMode] = useState<Mode>("clinician");
 
   const egfr = ckdEpi2021.formula(inputs);

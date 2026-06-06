@@ -21,6 +21,8 @@ export function GET(): Response {
     version: "1",
     docs: "/api/v1/docs",
     openapi: "/api/v1/openapi.json",
+    health: "/api/v1/health",
+    batch: "/api/v1/batch",
     license: "MIT",
     citation: "https://doi.org/10.5281/zenodo.20562618",
     calculatorCount: calcs.length,

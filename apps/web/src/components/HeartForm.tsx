@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
+import { useUrlInputs } from "./useUrlInputs";
 import { heart } from "@medcalc/calculators";
 import { ModeToggle } from "./ResultPanel";
 import { ShareActions } from "./ShareActions";
@@ -49,6 +50,14 @@ export function HeartForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<Partial<HeartInput>>({});
   const [submitted, setSubmitted] = useState(false);
+
+  const urlInputs = useUrlInputs();
+  useEffect(() => {
+    if (!urlInputs) return;
+    setInputs((prev) => ({ ...prev, ...urlInputs }));
+    setSubmitted(true);
+  }, [urlInputs]);
+
   const [mode, setMode] = useState<Mode>("clinician");
 
   const allFilled = fields.every((f) => inputs[f.key] !== undefined);

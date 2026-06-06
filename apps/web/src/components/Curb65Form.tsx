@@ -3,36 +3,32 @@
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { useUrlInputs } from "./useUrlInputs";
-import { wellsPe } from "@medcalc/calculators";
+import { curb65 } from "@medcalc/calculators";
 import { ModeToggle, ResultPanel } from "./ResultPanel";
 import { BooleanList, FormActions } from "./Field";
 
-type WellsPeInput = wellsPe.WellsPeInput;
+type Curb65Input = curb65.Curb65Input;
 type Mode = "clinician" | "patient";
 
-const defaultInputs: WellsPeInput = {
-  clinicalSignsOfDvt: false,
-  peAsLikelyAsAlternative: false,
-  heartRateOver100: false,
-  immobilizationOrSurgeryLast4Weeks: false,
-  previousDvtOrPe: false,
-  hemoptysis: false,
-  activeOrTreatedMalignancy: false,
+const defaultInputs: Curb65Input = {
+  confusion: false,
+  ureaOver7: false,
+  respiratoryRateAtLeast30: false,
+  lowBloodPressure: false,
+  ageAtLeast65: false,
 };
 
 const booleanFields = [
-  "clinicalSignsOfDvt",
-  "peAsLikelyAsAlternative",
-  "heartRateOver100",
-  "immobilizationOrSurgeryLast4Weeks",
-  "previousDvtOrPe",
-  "hemoptysis",
-  "activeOrTreatedMalignancy",
+  "confusion",
+  "ureaOver7",
+  "respiratoryRateAtLeast30",
+  "lowBloodPressure",
+  "ageAtLeast65",
 ] as const;
 
-export function WellsPeForm() {
+export function Curb65Form() {
   const t = useTranslations();
-  const [inputs, setInputs] = useState<WellsPeInput>(defaultInputs);
+  const [inputs, setInputs] = useState<Curb65Input>(defaultInputs);
   const [submitted, setSubmitted] = useState(false);
 
   const urlInputs = useUrlInputs();
@@ -44,10 +40,10 @@ export function WellsPeForm() {
 
   const [mode, setMode] = useState<Mode>("clinician");
 
-  const score = wellsPe.formula(inputs);
-  const result = wellsPe.interpret(score);
+  const score = curb65.formula(inputs);
+  const result = curb65.interpret(score);
 
-  function update<K extends keyof WellsPeInput>(key: K, value: WellsPeInput[K]) {
+  function update<K extends keyof Curb65Input>(key: K, value: Curb65Input[K]) {
     setInputs((prev) => ({ ...prev, [key]: value }));
   }
 
@@ -70,7 +66,7 @@ export function WellsPeForm() {
         <BooleanList
           items={booleanFields.map((field) => ({
             key: field,
-            label: t(`wellsPe.fields.${field}` as "wellsPe.fields.hemoptysis"),
+            label: t(`curb65.fields.${field}` as "curb65.fields.confusion"),
             checked: inputs[field],
             onChange: (v) => update(field, v),
           }))}
@@ -92,7 +88,7 @@ export function WellsPeForm() {
           evidenceGrade={result.evidenceGrade}
           annualRiskPercent={result.annualRiskPercent}
           riskLabelKey="common.annual_risk"
-          i18nNamespace="wellsPe"
+          i18nNamespace="curb65"
           shareableInputs={inputs}
         />
       )}

@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
+import { useUrlInputs } from "./useUrlInputs";
 import { timi } from "@medcalc/calculators";
 import { ModeToggle } from "./ResultPanel";
 import { ShareActions } from "./ShareActions";
@@ -41,6 +42,14 @@ export function TimiForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<TimiInput>(defaultInputs);
   const [submitted, setSubmitted] = useState(false);
+
+  const urlInputs = useUrlInputs();
+  useEffect(() => {
+    if (!urlInputs) return;
+    setInputs((prev) => ({ ...prev, ...urlInputs }));
+    setSubmitted(true);
+  }, [urlInputs]);
+
   const [mode, setMode] = useState<Mode>("clinician");
 
   const score = timi.formula(inputs);

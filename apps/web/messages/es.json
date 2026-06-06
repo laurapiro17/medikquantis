@@ -516,5 +516,101 @@
     "stroke_heading": "Riesgo de ictus · CHA₂DS₂-VASc",
     "bleeding_heading": "Riesgo hemorrágico · HAS-BLED",
     "footer_note": "Ambas puntuaciones se calculan en tu navegador. Referencia: Guías ESC FA 2024 (PMID 39210723)."
+  },
+  "curb65": {
+    "title": "CURB-65",
+    "subtitle": "Gravedad de la neumonía adquirida en la comunidad",
+    "fields": {
+      "confusion": "Confusión (desorientación nueva en persona/lugar/tiempo)",
+      "ureaOver7": "Urea > 7 mmol/L (BUN > 19 mg/dL)",
+      "respiratoryRateAtLeast30": "Frecuencia respiratoria ≥ 30/min",
+      "lowBloodPressure": "TAS < 90 mmHg o TAD ≤ 60 mmHg",
+      "ageAtLeast65": "Edad ≥ 65 años"
+    },
+    "patient": {
+      "intro": "Esta calculadora estima la gravedad de la neumonía adquirida en la comunidad y ayuda a decidir dónde tratarte.",
+      "result_low": "Tu neumonía es de bajo riesgo. El tratamiento ambulatorio con antibióticos orales suele ser apropiado.",
+      "result_moderate": "Tu neumonía es de riesgo moderado. Una estancia hospitalaria corta para observación suele ser recomendable.",
+      "result_high": "Tu neumonía es de alto riesgo. Necesitas ingreso hospitalario y puede considerarse cuidados intensivos.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Mi neumonía es leve, moderada o grave?",
+        "¿Necesito ingresar en el hospital?",
+        "¿Qué antibióticos debo tomar y durante cuánto tiempo?",
+        "¿Qué signos de empeoramiento debo vigilar en casa?"
+      ]
+    }
+  },
+  "gcs": {
+    "title": "Escala de Coma de Glasgow",
+    "subtitle": "Nivel de conciencia tras traumatismo craneal",
+    "fields": {
+      "eye": "Respuesta de apertura ocular",
+      "verbal": "Respuesta verbal",
+      "motor": "Mejor respuesta motora"
+    },
+    "eye_options": {
+      "1": "1 — Ninguna",
+      "2": "2 — Al dolor",
+      "3": "3 — A la voz",
+      "4": "4 — Espontánea"
+    },
+    "verbal_options": {
+      "1": "1 — Ninguna",
+      "2": "2 — Sonidos incomprensibles",
+      "3": "3 — Palabras inapropiadas",
+      "4": "4 — Confuso",
+      "5": "5 — Orientado"
+    },
+    "motor_options": {
+      "1": "1 — Ninguna",
+      "2": "2 — Extensión al dolor",
+      "3": "3 — Flexión anormal",
+      "4": "4 — Retira al dolor",
+      "5": "5 — Localiza el dolor",
+      "6": "6 — Obedece órdenes"
+    },
+    "patient": {
+      "intro": "La Escala de Coma de Glasgow valora cuán despierta y reactiva está una persona tras un traumatismo craneal.",
+      "result_low": "El nivel de conciencia es leve. La mayoría de pacientes se recuperan bien; el médico decidirá si se necesita imagen.",
+      "result_moderate": "El nivel de conciencia está moderadamente reducido. Habitualmente se necesita ingreso y un estudio cerebral.",
+      "result_high": "El nivel de conciencia está gravemente reducido. Se necesita atención urgente y, con frecuencia, proteger la vía aérea.",
+      "ask_doctor": "Pregunta al equipo médico:",
+      "questions": [
+        "¿Qué significa esta puntuación para la recuperación de mi familiar?",
+        "¿Se va a realizar una TC o resonancia craneal?",
+        "¿Qué signos de empeoramiento se vigilarán?",
+        "¿Cuándo podrá visitar la familia al paciente?"
+      ]
+    }
+  },
+  "centor": {
+    "title": "Centor / McIsaac",
+    "subtitle": "Probabilidad de faringitis por estreptococo del grupo A",
+    "fields": {
+      "tonsillarExudate": "Exudado amigdalar",
+      "tenderAnteriorCervicalNodes": "Adenopatías cervicales anteriores dolorosas",
+      "feverHistory": "Fiebre (antecedente de temperatura > 38 °C)",
+      "absenceOfCough": "Ausencia de tos",
+      "ageBand": "Tramo de edad"
+    },
+    "age_options": {
+      "lt_15": "Menor de 15",
+      "15_to_44": "Entre 15 y 44",
+      "gte_45": "45 o más"
+    },
+    "patient": {
+      "intro": "Esta puntuación estima la probabilidad de que el dolor de garganta esté causado por estreptococo del grupo A.",
+      "result_low": "Es poco probable que tu dolor de garganta sea por estreptococo. No suelen necesitarse antibióticos; reposo, líquidos y analgesia suelen bastar.",
+      "result_moderate": "Tu dolor de garganta podría ser por estreptococo. Un test rápido de antígeno puede confirmar y guiar el tratamiento antibiótico.",
+      "result_high": "Tu dolor de garganta probablemente esté causado por estreptococo. Tu médico puede iniciar antibióticos o confirmar con un test rápido antes.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Necesito una prueba de estreptococo?",
+        "¿Qué antibiótico debo tomar, si procede?",
+        "¿Cuándo dejaré de ser contagioso?",
+        "¿Cuándo debo volver si los síntomas empeoran?"
+      ]
+    }
   }
 }

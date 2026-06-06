@@ -13,3 +13,6 @@ export * as wellsPe from "./wells-pe";
 export * as meld3 from "./meld-3";
 export * as perc from "./perc";
 export * as qsofa from "./qsofa";
+export * as curb65 from "./curb65";
+export * as gcs from "./gcs";
+export * as centor from "./centor";

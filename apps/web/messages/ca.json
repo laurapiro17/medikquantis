@@ -516,5 +516,101 @@
     "stroke_heading": "Risc d'ictus · CHA₂DS₂-VASc",
     "bleeding_heading": "Risc hemorràgic · HAS-BLED",
     "footer_note": "Totes dues puntuacions es calculen al teu navegador. Referència: Guies ESC FA 2024 (PMID 39210723)."
+  },
+  "curb65": {
+    "title": "CURB-65",
+    "subtitle": "Gravetat de la pneumònia adquirida a la comunitat",
+    "fields": {
+      "confusion": "Confusió (desorientació nova en persona/lloc/temps)",
+      "ureaOver7": "Urea > 7 mmol/L (BUN > 19 mg/dL)",
+      "respiratoryRateAtLeast30": "Freqüència respiratòria ≥ 30/min",
+      "lowBloodPressure": "TAS < 90 mmHg o TAD ≤ 60 mmHg",
+      "ageAtLeast65": "Edat ≥ 65 anys"
+    },
+    "patient": {
+      "intro": "Aquesta calculadora estima la gravetat de la pneumònia adquirida a la comunitat i ajuda a decidir on tractar-te.",
+      "result_low": "La teva pneumònia és de risc baix. El tractament ambulatori amb antibiòtics orals sol ser apropiat.",
+      "result_moderate": "La teva pneumònia és de risc moderat. Una estada hospitalària curta per observació sol ser recomanable.",
+      "result_high": "La teva pneumònia és de risc alt. Cal ingrés hospitalari i es pot considerar cures intensives.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "La meva pneumònia és lleu, moderada o greu?",
+        "Necessito ingressar a l'hospital?",
+        "Quins antibiòtics he de prendre i durant quant de temps?",
+        "Quins signes d'empitjorament he de vigilar a casa?"
+      ]
+    }
+  },
+  "gcs": {
+    "title": "Escala de Coma de Glasgow",
+    "subtitle": "Nivell de consciència després d'un traumatisme cranial",
+    "fields": {
+      "eye": "Resposta d'obertura ocular",
+      "verbal": "Resposta verbal",
+      "motor": "Millor resposta motora"
+    },
+    "eye_options": {
+      "1": "1 — Cap",
+      "2": "2 — Al dolor",
+      "3": "3 — A la veu",
+      "4": "4 — Espontània"
+    },
+    "verbal_options": {
+      "1": "1 — Cap",
+      "2": "2 — Sons incomprensibles",
+      "3": "3 — Paraules inapropiades",
+      "4": "4 — Confús",
+      "5": "5 — Orientat"
+    },
+    "motor_options": {
+      "1": "1 — Cap",
+      "2": "2 — Extensió al dolor",
+      "3": "3 — Flexió anormal",
+      "4": "4 — Retira el dolor",
+      "5": "5 — Localitza el dolor",
+      "6": "6 — Obeeix ordres"
+    },
+    "patient": {
+      "intro": "L'Escala de Coma de Glasgow valora com de desperta i reactiva està una persona després d'un traumatisme cranial.",
+      "result_low": "El nivell de consciència és lleu. La majoria de pacients es recuperen bé; el metge decidirà si cal imatge.",
+      "result_moderate": "El nivell de consciència està moderadament reduït. Habitualment cal ingrés i un estudi cerebral.",
+      "result_high": "El nivell de consciència està greument reduït. Cal atenció urgent i sovint protegir la via aèria.",
+      "ask_doctor": "Pregunta a l'equip mèdic:",
+      "questions": [
+        "Què significa aquesta puntuació per a la recuperació del meu familiar?",
+        "Es farà una TC o ressonància cranial?",
+        "Quins signes d'empitjorament es vigilaran?",
+        "Quan podrà visitar la família el pacient?"
+      ]
+    }
+  },
+  "centor": {
+    "title": "Centor / McIsaac",
+    "subtitle": "Probabilitat de faringitis per estreptococ del grup A",
+    "fields": {
+      "tonsillarExudate": "Exsudat amigdalí",
+      "tenderAnteriorCervicalNodes": "Adenopaties cervicals anteriors doloroses",
+      "feverHistory": "Febre (antecedent de temperatura > 38 °C)",
+      "absenceOfCough": "Absència de tos",
+      "ageBand": "Tram d'edat"
+    },
+    "age_options": {
+      "lt_15": "Menor de 15",
+      "15_to_44": "Entre 15 i 44",
+      "gte_45": "45 o més"
+    },
+    "patient": {
+      "intro": "Aquesta puntuació estima la probabilitat que el mal de coll estigui causat per estreptococ del grup A.",
+      "result_low": "És poc probable que el teu mal de coll sigui per estreptococ. No solen caldre antibiòtics; repòs, líquids i analgèsia solen ser suficients.",
+      "result_moderate": "El teu mal de coll podria ser per estreptococ. Un test ràpid d'antigen pot confirmar i guiar el tractament antibiòtic.",
+      "result_high": "El teu mal de coll probablement està causat per estreptococ. El teu metge pot iniciar antibiòtics o confirmar amb un test ràpid abans.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Necessito una prova d'estreptococ?",
+        "Quin antibiòtic he de prendre, si escau?",
+        "Quan deixaré de ser contagiós?",
+        "Quan he de tornar si els símptomes empitjoren?"
+      ]
+    }
   }
 }

@@ -7,6 +7,8 @@ import {
   OPTIONS as CalcOPTIONS,
 } from "@/app/api/v1/[calc]/route";
 import { GET as OpenApiGET } from "@/app/api/v1/openapi.json/route";
+import { GET as HealthGET } from "@/app/api/v1/health/route";
+import { POST as BatchPOST } from "@/app/api/v1/batch/route";
 
 const validCha = {
   age: 72,
@@ -26,8 +28,8 @@ describe("GET /api/v1", () => {
   it("returns the registry of 13 calculators", async () => {
     const res = IndexGET();
     const body = await res.json();
-    expect(body.calculatorCount).toBe(13);
-    expect(body.calculators).toHaveLength(13);
+    expect(body.calculatorCount).toBe(16);
+    expect(body.calculators).toHaveLength(16);
     expect(body.openapi).toBe("/api/v1/openapi.json");
     expect(res.headers.get("access-control-allow-origin")).toBe("*");
   });
@@ -138,17 +140,102 @@ describe("OPTIONS /api/v1/[calc] (CORS preflight)", () => {
   });
 });
 
+describe("GET /api/v1/health", () => {
+  it("returns ok + version + calc count", async () => {
+    const res = HealthGET();
+    expect(res.status).toBe(200);
+    const body = await res.json();
+    expect(body.status).toBe("ok");
+    expect(body.calculatorCount).toBeGreaterThan(0);
+    expect(body.version).toBe("1.0.0");
+  });
+});
+
+describe("POST /api/v1/batch", () => {
+  const chaInputs = {
+    age: 72,
+    sex: "female" as const,
+    chf: false,
+    hypertension: true,
+    diabetes: false,
+    strokeOrTia: true,
+    vascularDisease: false,
+  };
+
+  it("computes two calcs in one request, with mixed lang", async () => {
+    const req = new Request("https://x.example/api/v1/batch", {
+      method: "POST",
+      body: JSON.stringify({
+        calcs: [
+          { id: "cha2ds2vasc", inputs: chaInputs, lang: "es" },
+          { id: "cha2ds2vasc", inputs: chaInputs, lang: "ca" },
+        ],
+      }),
+    });
+    const res = await BatchPOST(req);
+    expect(res.status).toBe(200);
+    const body = await res.json();
+    expect(body.count).toBe(2);
+    expect(body.results[0].responseLanguage).toBe("es");
+    expect(body.results[1].responseLanguage).toBe("ca");
+    expect(body.results[0].recommendation).toContain("anticoagulación");
+    expect(body.results[1].recommendation).toContain("anticoagulació");
+  });
+
+  it("returns per-item errors without short-circuiting", async () => {
+    const req = new Request("https://x.example/api/v1/batch", {
+      method: "POST",
+      body: JSON.stringify({
+        calcs: [
+          { id: "cha2ds2vasc", inputs: chaInputs },
+          { id: "nope-not-a-calc", inputs: {} },
+        ],
+      }),
+    });
+    const res = await BatchPOST(req);
+    expect(res.status).toBe(200);
+    const body = await res.json();
+    expect(body.count).toBe(2);
+    expect(body.results[0].score).toBeGreaterThan(0);
+    expect(body.results[1].error).toBe("Unknown calculator");
+  });
+
+  it("rejects oversize batch with 413", async () => {
+    const req = new Request("https://x.example/api/v1/batch", {
+      method: "POST",
+      body: JSON.stringify({
+        calcs: Array.from({ length: 51 }, () => ({
+          id: "cha2ds2vasc",
+          inputs: chaInputs,
+        })),
+      }),
+    });
+    const res = await BatchPOST(req);
+    expect(res.status).toBe(413);
+  });
+
+  it("rejects missing `calcs` with 400", async () => {
+    const req = new Request("https://x.example/api/v1/batch", {
+      method: "POST",
+      body: JSON.stringify({ nope: 1 }),
+    });
+    const res = await BatchPOST(req);
+    expect(res.status).toBe(400);
+  });
+});
+
 describe("GET /api/v1/openapi.json", () => {
-  it("returns a valid OpenAPI 3.1 spec with 13 calc paths", () => {
+  it("returns a valid OpenAPI 3.1 spec with one path per calc", () => {
     const req = new Request("https://medikquantis.example/api/v1/openapi.json");
     const res = OpenApiGET(req);
     expect(res.status).toBe(200);
     return res.json().then((spec: { openapi: string; paths: Record<string, unknown> }) => {
       expect(spec.openapi).toBe("3.1.0");
-      const calcPaths = Object.keys(spec.paths).filter((p) =>
-        p.startsWith("/api/v1/") && p !== "/api/v1",
+      const indexPaths = new Set(["/api/v1", "/api/v1/health", "/api/v1/batch"]);
+      const calcPaths = Object.keys(spec.paths).filter(
+        (p) => p.startsWith("/api/v1/") && !indexPaths.has(p),
       );
-      expect(calcPaths).toHaveLength(13);
+      expect(calcPaths).toHaveLength(16);
     });
   });
 });

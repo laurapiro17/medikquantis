@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
+import { useUrlInputs } from "./useUrlInputs";
 import { hasbled } from "@medcalc/calculators";
 import { ModeToggle, ResultPanel } from "./ResultPanel";
 import { BooleanList, FormActions, NumberInput } from "./Field";
@@ -36,6 +37,14 @@ export function HasBledForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<HasBledInput>(defaultInputs);
   const [submitted, setSubmitted] = useState(false);
+
+  const urlInputs = useUrlInputs();
+  useEffect(() => {
+    if (!urlInputs) return;
+    setInputs((prev) => ({ ...prev, ...urlInputs }));
+    setSubmitted(true);
+  }, [urlInputs]);
+
   const [mode, setMode] = useState<Mode>("clinician");
 
   const score = hasbled.formula(inputs);
