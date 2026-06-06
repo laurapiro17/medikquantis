@@ -9,6 +9,7 @@
     "build": "pnpm -r build",
     "typecheck": "pnpm -r typecheck",
     "lint:i18n": "node scripts/check-i18n-parity.mjs",
+    "verify:pmids": "node scripts/verify-pmids.mjs",
     "release": "node scripts/release.mjs"
   },
   "devDependencies": {
