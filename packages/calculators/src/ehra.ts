@@ -93,7 +93,7 @@ export const calculator: CalcDefinition<typeof EhraInputs> = {
   i18nKey: "ehra",
   references: [
     {
-      pmid: "24569029",
+      pmid: "24534264",
       citation:
         "Wynn GJ, Todd DM, Webber M, et al. The European Heart Rhythm Association symptom classification for atrial fibrillation: validation and improvement through a simple modification. Europace. 2014;16(7):965-972.",
     },

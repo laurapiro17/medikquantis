@@ -67,7 +67,7 @@ export const calculator: CalcDefinition<typeof NortonInputs> = {
   i18nKey: "norton",
   references: [
     {
-      pmid: "8126018",
+      pmid: "2775471",
       citation:
         "Norton D. Calculating the risk: reflections on the Norton Scale. Decubitus. 1989;2(3):24-31.",
     },

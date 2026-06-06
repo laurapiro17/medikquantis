@@ -29,7 +29,7 @@ export function formula(inputs: HasBledInput): number {
   return score;
 }
 
-// Bleeding risk per Pisters et al. 2010 derivation cohort (PMID 21111555).
+// Bleeding risk per Pisters et al. 2010 derivation cohort (PMID 20299623).
 // Major-bleeding rate per 100 patient-years.
 const annualRiskByScore: Record<number, number> = {
   0: 1.13,
@@ -90,7 +90,7 @@ export const calculator: CalcDefinition<typeof HasBledInputs> = {
   i18nKey: "hasbled",
   references: [
     {
-      pmid: "21111555",
+      pmid: "20299623",
       citation:
         "Pisters R, Lane DA, Nieuwlaat R, de Vos CB, Crijns HJGM, Lip GYH. A novel user-friendly score (HAS-BLED) to assess 1-year risk of major bleeding in patients with atrial fibrillation: the Euro Heart Survey. Chest. 2010;138(5):1093-1100.",
     },

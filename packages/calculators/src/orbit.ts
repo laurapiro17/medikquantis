@@ -78,7 +78,7 @@ export const calculator: CalcDefinition<typeof OrbitInputs> = {
   i18nKey: "orbit",
   references: [
     {
-      pmid: "26321676",
+      pmid: "26424865",
       citation:
         "O'Brien EC, Simon DN, Thomas LE, et al. The ORBIT bleeding score: a simple bedside score to assess bleeding risk in atrial fibrillation. Eur Heart J. 2015;36(46):3258-3264.",
     },

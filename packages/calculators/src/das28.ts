@@ -24,7 +24,7 @@ export type Das28Input = z.infer<typeof Das28Inputs>;
 // DAS28-ESR: 0.56√TJC + 0.28√SJC + 0.70·ln(ESR) + 0.014·PGA
 // DAS28-CRP: 0.56√TJC + 0.28√SJC + 0.36·ln(CRP+1) + 0.014·PGA + 0.96
 //
-// Per Inoue 2007 (PMID 17576779), DAS28-CRP runs ~0.3 lower than
+// Per Inoue 2007 (PMID 16926186), DAS28-CRP runs ~0.3 lower than
 // DAS28-ESR; the constants in the CRP formula partially correct this,
 // but identical thresholds are still used by EULAR/ACR.
 export function formula(inputs: Das28Input): number {
@@ -103,7 +103,7 @@ export const calculator: CalcDefinition<typeof Das28Inputs> = {
         "Prevoo ML, van 't Hof MA, Kuper HH, van Leeuwen MA, van de Putte LB, van Riel PL. Modified disease activity scores that include twenty-eight-joint counts. Development and validation in a prospective longitudinal study of patients with rheumatoid arthritis. Arthritis Rheum. 1995;38(1):44-48.",
     },
     {
-      pmid: "17576779",
+      pmid: "16926186",
       citation:
         "Inoue E, Yamanaka H, Hara M, Tomatsu T, Kamatani N. Comparison of Disease Activity Score (DAS)28-erythrocyte sedimentation rate and DAS28-C-reactive protein threshold values. Ann Rheum Dis. 2007;66(3):407-409.",
     },

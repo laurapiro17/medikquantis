@@ -27,7 +27,7 @@ export function formula(inputs: Cha2ds2vascInput): number {
 }
 
 // Annual stroke risk per Friberg et al. 2012 (n=90,490 Swedish AFiB cohort,
-// PMID 22717718). Kept as the most widely cited reference table.
+// PMID 22246443). Kept as the most widely cited reference table.
 const annualRiskByScore: Record<number, number> = {
   0: 0.2,
   1: 0.6,
@@ -105,7 +105,7 @@ export const calculator: CalcDefinition<typeof Cha2ds2vascInputs> = {
   i18nKey: "cha2ds2vasc",
   references: [
     {
-      pmid: "20299623",
+      pmid: "19762550",
       citation:
         "Lip GYH, Nieuwlaat R, Pisters R, Lane DA, Crijns HJGM. Refining clinical risk stratification for predicting stroke and thromboembolism in atrial fibrillation using a novel risk factor-based approach: the Euro Heart Survey on atrial fibrillation. Chest. 2010;137(2):263-272.",
     },

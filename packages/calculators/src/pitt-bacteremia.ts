@@ -1,7 +1,7 @@
 import { z } from "zod";
 import type { CalcDefinition, InterpretResult } from "./types";
 
-// Pitt Bacteraemia Score (Hilf M et al. 1989, PMID 2929727; widely cited
+// Pitt Bacteraemia Score (Hilf M et al. 1989, PMID 2816969; widely cited
 // via Paterson DL 2004). Five clinical criteria scored 0–14 at the time of
 // blood culture positivity. Predicts mortality in Gram-negative
 // bacteraemia and gates many infectious-disease decision rules
@@ -95,12 +95,12 @@ export const calculator: CalcDefinition<typeof PittBacteremiaInputs> = {
   i18nKey: "pittBacteremia",
   references: [
     {
-      pmid: "2929727",
+      pmid: "2816969",
       citation:
         "Hilf M, Yu VL, Sharp J, Zuravleff JJ, Korvick JA, Muder RR. Antibiotic therapy for Pseudomonas aeruginosa bacteremia: outcome correlations in a prospective study of 200 patients. Am J Med. 1989;87(5):540-546.",
     },
     {
-      pmid: "15356812",
+      pmid: "14706969",
       citation:
         "Paterson DL, Ko WC, Von Gottberg A, et al. International prospective study of Klebsiella pneumoniae bacteremia: implications of extended-spectrum β-lactamase production in nosocomial infections. Ann Intern Med. 2004;140(1):26-32.",
     },

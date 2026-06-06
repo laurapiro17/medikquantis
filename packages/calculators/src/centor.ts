@@ -86,12 +86,12 @@ export const calculator: CalcDefinition<typeof CentorInputs> = {
   i18nKey: "centor",
   references: [
     {
-      pmid: "6452404",
+      pmid: "6763125",
       citation:
         "Centor RM, Witherspoon JM, Dalton HP, Brody CE, Link K. The diagnosis of strep throat in adults in the emergency room. Med Decis Making. 1981;1(3):239-246.",
     },
     {
-      pmid: "9457881",
+      pmid: "9475915",
       citation:
         "McIsaac WJ, White D, Tannenbaum D, Low DE. A clinical score to reduce unnecessary antibiotic use in patients with sore throat. CMAJ. 1998;158(1):75-83.",
     },

@@ -2,7 +2,7 @@ import { z } from "zod";
 import type { CalcDefinition, InterpretResult } from "./types";
 
 // PASI — Psoriasis Area and Severity Index (Fredriksson T, Pettersson U
-// 1978, PMID 4426953). Sums across four body regions with fixed weights:
+// 1978, PMID 357213). Sums across four body regions with fixed weights:
 // head 0.1, upper limbs 0.2, trunk 0.3, lower limbs 0.4. For each region:
 //   PASI_region = (erythema + induration + desquamation) × area × weight
 // where each intensity item is 0–4 and area is graded 0 (0%) to 6 (90–100%).
@@ -88,7 +88,7 @@ export const calculator: CalcDefinition<typeof PasiInputs> = {
   i18nKey: "pasi",
   references: [
     {
-      pmid: "4426953",
+      pmid: "357213",
       citation:
         "Fredriksson T, Pettersson U. Severe psoriasis—oral therapy with a new retinoid. Dermatologica. 1978;157(4):238-244.",
     },

@@ -126,7 +126,7 @@ export const calculator: CalcDefinition<typeof HeartInputs> = {
   i18nKey: "heart",
   references: [
     {
-      pmid: "18949301",
+      pmid: "18665203",
       citation:
         "Six AJ, Backus BE, Kelder JC. Chest pain in the emergency room: value of the HEART score. Neth Heart J. 2008;16(6):191-196.",
     },

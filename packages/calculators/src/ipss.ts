@@ -63,7 +63,7 @@ export const calculator: CalcDefinition<typeof IpssInputs> = {
   i18nKey: "ipss",
   references: [
     {
-      pmid: "1379630",
+      pmid: "1279218",
       citation:
         "Barry MJ, Fowler FJ Jr, O'Leary MP, et al. The American Urological Association symptom index for benign prostatic hyperplasia. J Urol. 1992;148(5):1549-1557.",
     },

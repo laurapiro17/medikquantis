@@ -1,7 +1,7 @@
 import { z } from "zod";
 import type { CalcDefinition, InterpretResult } from "./types";
 
-// Albumin-corrected calcium (Payne BR et al. 1973, BMJ 4:643, PMID 4758844).
+// Albumin-corrected calcium (Payne RB et al. 1973, BMJ 4:643, PMID 4758544).
 // Corrects measured total calcium for the patient's albumin level, which
 // determines how much calcium is protein-bound vs. ionised/free.
 // Returns the corrected calcium in mg/dL.
@@ -67,7 +67,7 @@ export const calculator: CalcDefinition<typeof CalciumCorrectedInputs> = {
   i18nKey: "calciumCorrected",
   references: [
     {
-      pmid: "4758844",
+      pmid: "4758544",
       citation:
         "Payne RB, Little AJ, Williams RB, Milner JR. Interpretation of serum calcium in patients with abnormal serum proteins. BMJ. 1973;4(5893):643-646.",
     },

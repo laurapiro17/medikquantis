@@ -3,7 +3,7 @@ import type { CalcDefinition, InterpretResult } from "./types";
 
 // NYHA functional classification for heart failure (NYHA 1964,
 // Diseases of the Heart and Blood Vessels, 6th ed.). Universally
-// cited by every modern HF guideline (ESC HF 2021, PMID 34491061;
+// cited by every modern HF guideline (ESC HF 2021, PMID 34447992;
 // ACC/AHA/HFSA HF 2022, PMID 35379503).
 
 export const NyhaClass = z.enum(["I", "II", "III", "IV"]);
@@ -89,7 +89,7 @@ export const calculator: CalcDefinition<typeof NyhaInputs> = {
   i18nKey: "nyha",
   references: [
     {
-      pmid: "34491061",
+      pmid: "34447992",
       citation:
         "McDonagh TA, Metra M, Adamo M, et al. 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure. Eur Heart J. 2021;42(36):3599-3726.",
     },
