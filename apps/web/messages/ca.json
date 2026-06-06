@@ -990,5 +990,193 @@
         "Quins signes precoços de lesió cutània hem de vigilar?"
       ]
     }
+  },
+  "barthel": {
+    "title": "Índex de Barthel",
+    "subtitle": "Avaluació de 10 ítems de les activitats bàsiques de la vida diària (Mahoney i Barthel 1965).",
+    "fields": {
+      "feeding": "Alimentació",
+      "bathing": "Bany",
+      "grooming": "Arranjament personal",
+      "dressing": "Vestit",
+      "bowels": "Continència fecal",
+      "bladder": "Continència urinària",
+      "toiletUse": "Ús del WC",
+      "transfers": "Transferències (llit ↔ cadira)",
+      "mobility": "Deambulació (superfície plana)",
+      "stairs": "Escales"
+    },
+    "feeding_options": {
+      "0": "0 — Dependent",
+      "5": "5 — Necessita ajuda per tallar",
+      "10": "10 — Independent"
+    },
+    "bathing_options": {
+      "0": "0 — Dependent",
+      "5": "5 — Independent a la dutxa/banyera"
+    },
+    "grooming_options": {
+      "0": "0 — Necessita ajuda",
+      "5": "5 — Independent (cara, dents, afaitat)"
+    },
+    "dressing_options": {
+      "0": "0 — Dependent",
+      "5": "5 — Necessita ajuda, fa la meitat",
+      "10": "10 — Independent (botons, cremalleres)"
+    },
+    "bowels_options": {
+      "0": "0 — Incontinent (o necessita ènemes)",
+      "5": "5 — Accident ocasional",
+      "10": "10 — Continent"
+    },
+    "bladder_options": {
+      "0": "0 — Incontinent / sondat",
+      "5": "5 — Accident ocasional",
+      "10": "10 — Continent"
+    },
+    "toiletUse_options": {
+      "0": "0 — Dependent",
+      "5": "5 — Necessita una mica d'ajuda",
+      "10": "10 — Independent"
+    },
+    "transfers_options": {
+      "0": "0 — No pot, sense equilibri",
+      "5": "5 — Ajuda important (1–2 persones), s'asseu",
+      "10": "10 — Ajuda menor (verbal o física)",
+      "15": "15 — Independent"
+    },
+    "mobility_options": {
+      "0": "0 — Immòbil",
+      "5": "5 — Independent en cadira de rodes",
+      "10": "10 — Camina amb ajuda (verbal o física)",
+      "15": "15 — Independent (pot usar suport)"
+    },
+    "stairs_options": {
+      "0": "0 — No pot",
+      "5": "5 — Necessita ajuda (verbal, física o suport)",
+      "10": "10 — Independent"
+    },
+    "patient": {
+      "intro": "Aquest índex mesura com d'independent ets en les activitats quotidianes. Es fa servir per planificar rehabilitació i suport a casa.",
+      "result_low": "Ets independent o només lleugerament dependent. Habitualment no necessites ajuda addicional a casa.",
+      "result_moderate": "Tens dependència moderada i et beneficies d'ajuda diària amb tasques i rehabilitació.",
+      "result_high": "Tens dependència greu o total i necessites suport estructurat de cuidadors, sovint amb un pla de cures i adaptació de l'entorn.",
+      "ask_doctor": "Pregunta a l'equip:",
+      "questions": [
+        "Quin tipus d'ajuda es pot organitzar a casa?",
+        "Hi ha un programa de rehabilitació que pugui millorar la meva independència?",
+        "Quines ajudes tècniques (caminar, vestir-me, menjar) em serien més útils?",
+        "Amb quina freqüència es reavaluarà el meu nivell d'independència?"
+      ]
+    }
+  },
+  "findrisc": {
+    "title": "FINDRISC",
+    "subtitle": "Risc a 10 anys de desenvolupar diabetis tipus 2 (Lindström 2003).",
+    "fields": {
+      "ageBand": "Edat",
+      "bmiBand": "Índex de massa corporal (kg/m²)",
+      "waistBand": "Perímetre abdominal",
+      "dailyPhysicalActivity30Min": "≥ 30 min d'activitat física gairebé cada dia",
+      "dailyFruitsOrVegetables": "Fruites o verdures cada dia",
+      "antihypertensiveMedication": "En tractament antihipertensiu",
+      "historyOfHighBloodGlucose": "Episodi previ de glucosa elevada",
+      "familyHistoryOfDiabetes": "Antecedent familiar de diabetis"
+    },
+    "age_options": {
+      "lt_45": "Menys de 45",
+      "45_to_54": "45 a 54",
+      "55_to_64": "55 a 64",
+      "gte_65": "65 o més"
+    },
+    "bmi_options": {
+      "lt_25": "< 25",
+      "25_to_30": "25 a 30",
+      "gt_30": "> 30"
+    },
+    "waist_options": {
+      "low": "Baix (homes < 94 / dones < 80 cm)",
+      "moderate": "Moderat (homes 94–102 / dones 80–88 cm)",
+      "high": "Alt (homes > 102 / dones > 88 cm)"
+    },
+    "family_options": {
+      "none": "Cap",
+      "distant": "Avi/àvia, tiet o cosí",
+      "close": "Pare, germà o fill propi"
+    },
+    "patient": {
+      "intro": "Aquest qüestionari estima la teva probabilitat de desenvolupar diabetis tipus 2 en els pròxims 10 anys. És una eina de cribratge, no un diagnòstic.",
+      "result_low": "El teu risc a 10 anys és baix. Mantén un estil de vida saludable i revisa-ho d'aquí uns anys.",
+      "result_moderate": "El teu risc a 10 anys és moderat. Una anàlisi de glucosa pot ser útil, i petits canvis d'estil de vida marquen una gran diferència.",
+      "result_high": "El teu risc a 10 anys és alt. El metge pot demanar glucosa o HbA1c i comentar un programa estructurat de prevenció.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Cal mesurar-me la glucosa o la HbA1c?",
+        "Quins canvis d'estil de vida tenen més impacte?",
+        "Hi ha un programa de prevenció estructurat?",
+        "Quan hauríem de reavaluar el meu risc?"
+      ]
+    }
+  },
+  "ipss": {
+    "title": "IPSS",
+    "subtitle": "International Prostate Symptom Score per a HBP (Barry 1992).",
+    "scale_legend": "Cada pregunta es puntua de 0 (mai) a 5 (gairebé sempre).",
+    "fields": {
+      "incompleteEmptying": "Sensació de buidatge incomplet",
+      "frequency": "Necessitat d'orinar < 2 h després d'acabar",
+      "intermittency": "Pauses en orinar",
+      "urgency": "Dificultat per aguantar",
+      "weakStream": "Raig dèbil",
+      "straining": "Necessitat de fer força per començar",
+      "nocturia": "Vegades que t'aixeques a orinar a la nit"
+    },
+    "frequency_options": {
+      "0": "0 — Mai",
+      "1": "1 — Menys d'1 de cada 5 vegades",
+      "2": "2 — Menys de la meitat de les vegades",
+      "3": "3 — Aproximadament la meitat",
+      "4": "4 — Més de la meitat de les vegades",
+      "5": "5 — Gairebé sempre"
+    },
+    "patient": {
+      "intro": "Aquest qüestionari mesura quant et molesten els símptomes urinaris típics d'un creixement de la pròstata, i ajuda l'equip a triar entre vigilància, medicació i cirurgia.",
+      "result_low": "Els teus símptomes són lleus. Sol bastar amb vigilància i consells d'estil de vida.",
+      "result_moderate": "Els teus símptomes són moderats. Es pot plantejar medicació o decisió compartida sobre estudis addicionals.",
+      "result_high": "Els teus símptomes són greus. Es recomana derivació a urologia i poden discutir-se opcions quirúrgiques si la medicació no és suficient.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Quins canvis d'estil de vida poden ajudar?",
+        "M'ajudarà la medicació i quins efectes secundaris cal esperar?",
+        "Necessito proves d'imatge?",
+        "Quan es plantejaria la cirurgia?"
+      ]
+    }
+  },
+  "basdai": {
+    "title": "BASDAI",
+    "subtitle": "Bath Ankylosing Spondylitis Disease Activity Index (Garrett 1994).",
+    "scale_legend": "Valora cada pregunta de 0 (cap) a 10 (molt intens).",
+    "fields": {
+      "fatigue": "Fatiga general",
+      "spineNeckHipPain": "Dolor de coll, esquena o maluc",
+      "jointPainSwelling": "Dolor o inflamació d'altres articulacions",
+      "tendernessOnTouch": "Dolor en tocar o pressionar",
+      "morningStiffnessSeverity": "Intensitat de la rigidesa matinal",
+      "morningStiffnessDuration": "Durada de la rigidesa matinal (0 = cap, 10 ≥ 2 h)"
+    },
+    "patient": {
+      "intro": "BASDAI mesura quina activitat ha tingut la teva espondilitis anquilosant l'última setmana. Guia decisions de tractament, incloent iniciar o canviar teràpia biològica.",
+      "result_low": "El teu BASDAI està per sota de 4 — l'activitat és baixa. Continua amb el tractament actual i avisa si els símptomes augmenten.",
+      "result_moderate": "El teu BASDAI és 4 o més — la malaltia està activa. Reumatologia pot ajustar el tractament, incloent considerar teràpia biològica.",
+      "result_high": "El teu BASDAI és 7 o més — activitat molt alta. Sol indicar-se escalada del tractament i cribratge de complicacions.",
+      "ask_doctor": "Pregunta al teu reumatòleg:",
+      "questions": [
+        "Què significa aquest resultat per al meu pròxim pas de tractament?",
+        "Convé considerar una teràpia biològica?",
+        "Quins exercicis o fisioteràpia poden ajudar?",
+        "Quines complicacions hem de vigilar?"
+      ]
+    }
   }
 }

@@ -439,6 +439,95 @@ const recommendations: Record<string, Translations> = {
     ca: "Braden ≤9: risc molt alt. Paquet màxim de prevenció; derivació a infermeria de ferides cròniques.",
   },
 
+
+  // Barthel
+  BARTHEL_INDEPENDENT: {
+    en: "Independent in activities of daily living. No specific support required.",
+    es: "Independiente en las actividades de la vida diaria. No requiere apoyo específico.",
+    ca: "Independent en les activitats de la vida diària. No requereix suport específic.",
+  },
+  BARTHEL_MILD: {
+    en: "Mild dependence; usually able to live alone with minor help.",
+    es: "Dependencia leve; habitualmente puede vivir solo con ayuda menor.",
+    ca: "Dependència lleu; habitualment pot viure sol amb ajuda menor.",
+  },
+  BARTHEL_MODERATE: {
+    en: "Moderate dependence; benefits from daily personal assistance and rehabilitation.",
+    es: "Dependencia moderada; se beneficia de asistencia diaria y rehabilitación.",
+    ca: "Dependència moderada; es beneficia d'assistència diària i rehabilitació.",
+  },
+  BARTHEL_SEVERE: {
+    en: "Severe dependence; structured caregiver support and adapted environment required.",
+    es: "Dependencia grave; requiere apoyo estructurado de cuidadores y entorno adaptado.",
+    ca: "Dependència greu; requereix suport estructurat de cuidadors i entorn adaptat.",
+  },
+  BARTHEL_TOTAL: {
+    en: "Total dependence; full-time care plan and continuing-care planning indicated.",
+    es: "Dependencia total; está indicado un plan de cuidados a tiempo completo y planificación de cuidados continuados.",
+    ca: "Dependència total; cal un pla de cures a temps complet i planificació de cures continuades.",
+  },
+
+  // FINDRISC
+  FINDRISC_LOW: {
+    en: "Low 10-year diabetes risk. Maintain a healthy lifestyle and reassess in a few years.",
+    es: "Riesgo bajo de diabetes a 10 años. Mantenga un estilo de vida saludable y reevalúe en unos años.",
+    ca: "Risc baix de diabetis a 10 anys. Mantingueu un estil de vida saludable i reavalueu d'aquí uns anys.",
+  },
+  FINDRISC_SLIGHTLY_ELEVATED: {
+    en: "Slightly elevated 10-year diabetes risk. Reinforce diet, physical activity and weight control.",
+    es: "Riesgo de diabetes a 10 años ligeramente elevado. Refuerce dieta, actividad física y control del peso.",
+    ca: "Risc de diabetis a 10 anys lleugerament elevat. Reforceu dieta, activitat física i control del pes.",
+  },
+  FINDRISC_MODERATE: {
+    en: "Moderate 10-year diabetes risk. Consider fasting glucose or HbA1c testing and lifestyle counselling.",
+    es: "Riesgo moderado de diabetes a 10 años. Considere glucosa en ayunas o HbA1c y consejo sobre estilo de vida.",
+    ca: "Risc moderat de diabetis a 10 anys. Considereu glucosa en dejú o HbA1c i consell sobre estil de vida.",
+  },
+  FINDRISC_HIGH: {
+    en: "High 10-year diabetes risk. Order glucose / HbA1c, consider an oral glucose tolerance test and structured lifestyle intervention.",
+    es: "Riesgo alto de diabetes a 10 años. Solicite glucosa / HbA1c, considere un test de tolerancia oral a la glucosa e intervención estructurada del estilo de vida.",
+    ca: "Risc alt de diabetis a 10 anys. Sol·liciteu glucosa / HbA1c, considereu un test de tolerància oral a la glucosa i intervenció estructurada de l'estil de vida.",
+  },
+  FINDRISC_VERY_HIGH: {
+    en: "Very high 10-year diabetes risk (about 1 in 2). Diagnostic testing and intensive lifestyle / pharmacological intervention are warranted.",
+    es: "Riesgo muy alto de diabetes a 10 años (aprox. 1 de cada 2). Están justificadas pruebas diagnósticas e intervención intensiva en estilo de vida o farmacológica.",
+    ca: "Risc molt alt de diabetis a 10 anys (aprox. 1 de cada 2). Estan justificades proves diagnòstiques i intervenció intensiva en estil de vida o farmacològica.",
+  },
+
+  // IPSS
+  IPSS_MILD: {
+    en: "Mild lower urinary tract symptoms. Watchful waiting and behavioural advice are usually appropriate.",
+    es: "Síntomas urinarios bajos leves. Suelen ser apropiadas la observación y los consejos de comportamiento.",
+    ca: "Símptomes urinaris baixos lleus. Solen ser apropiades l'observació i els consells de comportament.",
+  },
+  IPSS_MODERATE: {
+    en: "Moderate symptoms. Consider medical therapy (alpha-blockers, 5-ARI) and shared decision-making about further evaluation.",
+    es: "Síntomas moderados. Considere tratamiento médico (alfabloqueantes, 5-ARI) y decisión compartida sobre estudios adicionales.",
+    ca: "Símptomes moderats. Considereu tractament mèdic (alfabloquejants, 5-ARI) i decisió compartida sobre estudis addicionals.",
+  },
+  IPSS_SEVERE: {
+    en: "Severe symptoms. Refer to urology; consider surgical options if medical therapy fails or complications develop.",
+    es: "Síntomas graves. Derive a urología; considere opciones quirúrgicas si el tratamiento médico falla o aparecen complicaciones.",
+    ca: "Símptomes greus. Deriveu a urologia; considereu opcions quirúrgiques si el tractament mèdic falla o apareixen complicacions.",
+  },
+
+  // BASDAI
+  BASDAI_LOW: {
+    en: "BASDAI <4: low disease activity. Continue current therapy and monitor for changes.",
+    es: "BASDAI <4: actividad baja de la enfermedad. Continúe el tratamiento actual y vigile cambios.",
+    ca: "BASDAI <4: activitat baixa de la malaltia. Continueu el tractament actual i vigileu canvis.",
+  },
+  BASDAI_ACTIVE: {
+    en: "BASDAI ≥4: active disease. Reassess therapy — typical threshold for advancing to a biologic if NSAID response is inadequate.",
+    es: "BASDAI ≥4: enfermedad activa. Reevalúe la terapia — umbral típico para avanzar a un biológico si la respuesta a AINE es insuficiente.",
+    ca: "BASDAI ≥4: malaltia activa. Reavalueu la teràpia — llindar típic per avançar a un biològic si la resposta a AINE és insuficient.",
+  },
+  BASDAI_VERY_HIGH: {
+    en: "BASDAI ≥7: very high disease activity. Escalate therapy promptly and check for extra-articular complications.",
+    es: "BASDAI ≥7: actividad muy alta. Escale el tratamiento con rapidez y revise complicaciones extraarticulares.",
+    ca: "BASDAI ≥7: activitat molt alta. Escaleu el tractament amb rapidesa i reviseu complicacions extraarticulars.",
+  },
+
 };
 
 /**

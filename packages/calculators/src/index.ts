@@ -27,3 +27,7 @@ export * as pittBacteremia from "./pitt-bacteremia";
 export * as rcri from "./rcri";
 export * as norton from "./norton";
 export * as braden from "./braden";
+export * as barthel from "./barthel";
+export * as findrisc from "./findrisc";
+export * as ipss from "./ipss";
+export * as basdai from "./basdai";

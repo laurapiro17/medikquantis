@@ -990,5 +990,193 @@
         "¿Qué signos precoces de lesión cutánea debemos vigilar?"
       ]
     }
+  },
+  "barthel": {
+    "title": "Índice de Barthel",
+    "subtitle": "Evaluación de 10 ítems de las actividades básicas de la vida diaria (Mahoney y Barthel 1965).",
+    "fields": {
+      "feeding": "Alimentación",
+      "bathing": "Baño",
+      "grooming": "Arreglo personal",
+      "dressing": "Vestido",
+      "bowels": "Continencia fecal",
+      "bladder": "Continencia urinaria",
+      "toiletUse": "Uso del WC",
+      "transfers": "Traslados (cama ↔ silla)",
+      "mobility": "Deambulación (en superficie llana)",
+      "stairs": "Escaleras"
+    },
+    "feeding_options": {
+      "0": "0 — Dependiente",
+      "5": "5 — Necesita ayuda para cortar",
+      "10": "10 — Independiente"
+    },
+    "bathing_options": {
+      "0": "0 — Dependiente",
+      "5": "5 — Independiente en ducha/baño"
+    },
+    "grooming_options": {
+      "0": "0 — Necesita ayuda",
+      "5": "5 — Independiente (cara, dientes, afeitado)"
+    },
+    "dressing_options": {
+      "0": "0 — Dependiente",
+      "5": "5 — Necesita ayuda, hace la mitad",
+      "10": "10 — Independiente (botones, cremalleras)"
+    },
+    "bowels_options": {
+      "0": "0 — Incontinente (o necesita enemas)",
+      "5": "5 — Accidente ocasional",
+      "10": "10 — Continente"
+    },
+    "bladder_options": {
+      "0": "0 — Incontinente / sondado",
+      "5": "5 — Accidente ocasional",
+      "10": "10 — Continente"
+    },
+    "toiletUse_options": {
+      "0": "0 — Dependiente",
+      "5": "5 — Necesita algo de ayuda",
+      "10": "10 — Independiente"
+    },
+    "transfers_options": {
+      "0": "0 — No puede, sin equilibrio",
+      "5": "5 — Ayuda importante (1–2 personas), se sienta",
+      "10": "10 — Ayuda menor (verbal o física)",
+      "15": "15 — Independiente"
+    },
+    "mobility_options": {
+      "0": "0 — Inmóvil",
+      "5": "5 — Independiente en silla de ruedas",
+      "10": "10 — Camina con ayuda (verbal o física)",
+      "15": "15 — Independiente (puede usar ayuda)"
+    },
+    "stairs_options": {
+      "0": "0 — No puede",
+      "5": "5 — Necesita ayuda (verbal, física o medio)",
+      "10": "10 — Independiente"
+    },
+    "patient": {
+      "intro": "Este índice mide cuán independiente eres en las actividades cotidianas. Se usa para planificar rehabilitación y apoyo en casa.",
+      "result_low": "Eres independiente o solo levemente dependiente. Habitualmente no necesitas ayuda adicional en casa.",
+      "result_moderate": "Tienes dependencia moderada y te beneficias de ayuda diaria con tareas y rehabilitación.",
+      "result_high": "Tienes dependencia grave o total y necesitas apoyo estructurado de cuidadores, a menudo con plan de cuidados y adaptación del entorno.",
+      "ask_doctor": "Pregunta al equipo:",
+      "questions": [
+        "¿Qué ayuda puede organizarse en casa?",
+        "¿Hay un programa de rehabilitación que pueda mejorar mi independencia?",
+        "¿Qué ayudas técnicas (caminar, vestirme, comer) me serían más útiles?",
+        "¿Con qué frecuencia se reevaluará mi nivel de independencia?"
+      ]
+    }
+  },
+  "findrisc": {
+    "title": "FINDRISC",
+    "subtitle": "Riesgo a 10 años de desarrollar diabetes tipo 2 (Lindström 2003).",
+    "fields": {
+      "ageBand": "Edad",
+      "bmiBand": "Índice de masa corporal (kg/m²)",
+      "waistBand": "Perímetro abdominal",
+      "dailyPhysicalActivity30Min": "≥ 30 min de actividad física casi cada día",
+      "dailyFruitsOrVegetables": "Frutas o verduras a diario",
+      "antihypertensiveMedication": "En tratamiento antihipertensivo",
+      "historyOfHighBloodGlucose": "Episodio previo de glucosa elevada",
+      "familyHistoryOfDiabetes": "Antecedente familiar de diabetes"
+    },
+    "age_options": {
+      "lt_45": "Menos de 45",
+      "45_to_54": "45 a 54",
+      "55_to_64": "55 a 64",
+      "gte_65": "65 o más"
+    },
+    "bmi_options": {
+      "lt_25": "< 25",
+      "25_to_30": "25 a 30",
+      "gt_30": "> 30"
+    },
+    "waist_options": {
+      "low": "Bajo (hombres < 94 / mujeres < 80 cm)",
+      "moderate": "Moderado (hombres 94–102 / mujeres 80–88 cm)",
+      "high": "Alto (hombres > 102 / mujeres > 88 cm)"
+    },
+    "family_options": {
+      "none": "Ninguno",
+      "distant": "Abuelo, tío o primo",
+      "close": "Padre, hermano o hijo propio"
+    },
+    "patient": {
+      "intro": "Este cuestionario estima tu probabilidad de desarrollar diabetes tipo 2 en los próximos 10 años. Es una herramienta de cribado, no un diagnóstico.",
+      "result_low": "Tu riesgo a 10 años es bajo. Mantén un estilo de vida saludable y revísalo en unos años.",
+      "result_moderate": "Tu riesgo a 10 años es moderado. Un análisis de glucosa puede ser útil, y pequeños cambios de estilo de vida marcan una gran diferencia.",
+      "result_high": "Tu riesgo a 10 años es alto. El médico puede pedir glucosa o HbA1c y comentar un programa estructurado de prevención.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Debo medirme la glucosa o la HbA1c?",
+        "¿Qué cambios de estilo de vida tienen mayor impacto?",
+        "¿Hay un programa de prevención estructurado?",
+        "¿Cuándo deberíamos reevaluar mi riesgo?"
+      ]
+    }
+  },
+  "ipss": {
+    "title": "IPSS",
+    "subtitle": "International Prostate Symptom Score para HBP (Barry 1992).",
+    "scale_legend": "Cada pregunta se puntúa de 0 (nunca) a 5 (casi siempre).",
+    "fields": {
+      "incompleteEmptying": "Sensación de vaciado incompleto",
+      "frequency": "Necesidad de orinar < 2 h tras terminar",
+      "intermittency": "Pausas al orinar",
+      "urgency": "Dificultad para retener",
+      "weakStream": "Chorro débil",
+      "straining": "Necesidad de hacer fuerza para iniciar",
+      "nocturia": "Veces que se levanta a orinar por la noche"
+    },
+    "frequency_options": {
+      "0": "0 — Nunca",
+      "1": "1 — Menos de 1 de cada 5 veces",
+      "2": "2 — Menos de la mitad de las veces",
+      "3": "3 — Aproximadamente la mitad",
+      "4": "4 — Más de la mitad de las veces",
+      "5": "5 — Casi siempre"
+    },
+    "patient": {
+      "intro": "Este cuestionario mide cuánto te molestan los síntomas urinarios típicos de un agrandamiento de próstata, y ayuda al equipo a elegir entre vigilancia, medicación y cirugía.",
+      "result_low": "Tus síntomas son leves. Suele bastar con vigilancia y consejos de estilo de vida.",
+      "result_moderate": "Tus síntomas son moderados. Puede plantearse medicación o decisión compartida sobre estudios adicionales.",
+      "result_high": "Tus síntomas son graves. Se recomienda derivación a urología y pueden discutirse opciones quirúrgicas si la medicación no es suficiente.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Qué cambios de estilo de vida pueden ayudar?",
+        "¿Me ayudará la medicación y qué efectos secundarios esperar?",
+        "¿Necesito pruebas de imagen?",
+        "¿Cuándo se plantearía la cirugía?"
+      ]
+    }
+  },
+  "basdai": {
+    "title": "BASDAI",
+    "subtitle": "Bath Ankylosing Spondylitis Disease Activity Index (Garrett 1994).",
+    "scale_legend": "Valora cada pregunta de 0 (ninguno) a 10 (muy intenso).",
+    "fields": {
+      "fatigue": "Fatiga general",
+      "spineNeckHipPain": "Dolor de cuello, espalda o cadera",
+      "jointPainSwelling": "Dolor o hinchazón de otras articulaciones",
+      "tendernessOnTouch": "Dolor al tocar o presionar",
+      "morningStiffnessSeverity": "Intensidad de la rigidez matutina",
+      "morningStiffnessDuration": "Duración de la rigidez matutina (0 = ninguna, 10 ≥ 2 h)"
+    },
+    "patient": {
+      "intro": "BASDAI mide cuán activa ha estado tu espondilitis anquilosante en la última semana. Guía decisiones de tratamiento, incluyendo iniciar o cambiar terapia biológica.",
+      "result_low": "Tu BASDAI está por debajo de 4 — la actividad es baja. Sigue con tu tratamiento actual y avisa si los síntomas aumentan.",
+      "result_moderate": "Tu BASDAI es 4 o más — la enfermedad está activa. Reumatología puede ajustar el tratamiento, incluyendo considerar terapia biológica.",
+      "result_high": "Tu BASDAI es 7 o más — actividad muy alta. Suele indicarse escalada del tratamiento y cribado de complicaciones.",
+      "ask_doctor": "Pregunta a tu reumatólogo:",
+      "questions": [
+        "¿Qué significa este resultado para mi próximo paso de tratamiento?",
+        "¿Conviene considerar una terapia biológica?",
+        "¿Qué ejercicios o fisioterapia pueden ayudar?",
+        "¿Qué complicaciones debemos vigilar?"
+      ]
+    }
   }
 }

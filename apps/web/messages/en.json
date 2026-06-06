@@ -990,5 +990,193 @@
         "What early signs of skin damage should we watch for?"
       ]
     }
+  },
+  "barthel": {
+    "title": "Barthel Index",
+    "subtitle": "10-item assessment of activities of daily living (Mahoney & Barthel 1965).",
+    "fields": {
+      "feeding": "Feeding",
+      "bathing": "Bathing",
+      "grooming": "Grooming",
+      "dressing": "Dressing",
+      "bowels": "Bowels",
+      "bladder": "Bladder",
+      "toiletUse": "Toilet use",
+      "transfers": "Transfers (bed ↔ chair)",
+      "mobility": "Mobility (on level surfaces)",
+      "stairs": "Stairs"
+    },
+    "feeding_options": {
+      "0": "0 — Dependent",
+      "5": "5 — Needs help cutting / spreading",
+      "10": "10 — Independent"
+    },
+    "bathing_options": {
+      "0": "0 — Dependent",
+      "5": "5 — Independent in shower / bath"
+    },
+    "grooming_options": {
+      "0": "0 — Needs help",
+      "5": "5 — Independent (face, teeth, shaving)"
+    },
+    "dressing_options": {
+      "0": "0 — Dependent",
+      "5": "5 — Needs help, can do about half",
+      "10": "10 — Independent (incl. buttons, zips)"
+    },
+    "bowels_options": {
+      "0": "0 — Incontinent (or needs enemas)",
+      "5": "5 — Occasional accident",
+      "10": "10 — Continent"
+    },
+    "bladder_options": {
+      "0": "0 — Incontinent / catheterised",
+      "5": "5 — Occasional accident",
+      "10": "10 — Continent"
+    },
+    "toiletUse_options": {
+      "0": "0 — Dependent",
+      "5": "5 — Needs some help",
+      "10": "10 — Independent"
+    },
+    "transfers_options": {
+      "0": "0 — Unable, no sitting balance",
+      "5": "5 — Major help (1–2 people), can sit",
+      "10": "10 — Minor help (verbal or physical)",
+      "15": "15 — Independent"
+    },
+    "mobility_options": {
+      "0": "0 — Immobile",
+      "5": "5 — Wheelchair independent (incl. corners)",
+      "10": "10 — Walks with help (verbal or physical)",
+      "15": "15 — Independent (may use aid)"
+    },
+    "stairs_options": {
+      "0": "0 — Unable",
+      "5": "5 — Needs help (verbal, physical or aid)",
+      "10": "10 — Independent"
+    },
+    "patient": {
+      "intro": "This index measures how independent you are in everyday activities. It is used to plan rehabilitation and home support.",
+      "result_low": "You are independent or only mildly dependent. You usually do not need additional help at home.",
+      "result_moderate": "You have moderate dependence and benefit from regular help with daily tasks and rehabilitation.",
+      "result_high": "You have severe or total dependence and need structured caregiver support, often with a care plan and adapted environment.",
+      "ask_doctor": "Ask the team:",
+      "questions": [
+        "What kind of help can be arranged at home?",
+        "Is there a rehabilitation programme that could improve my independence?",
+        "What aids (walking, dressing, eating) would help me most?",
+        "How often will my level of independence be reassessed?"
+      ]
+    }
+  },
+  "findrisc": {
+    "title": "FINDRISC",
+    "subtitle": "10-year risk of developing type 2 diabetes (Lindström 2003).",
+    "fields": {
+      "ageBand": "Age",
+      "bmiBand": "Body mass index (kg/m²)",
+      "waistBand": "Waist circumference",
+      "dailyPhysicalActivity30Min": "≥ 30 min of physical activity most days",
+      "dailyFruitsOrVegetables": "Fruits or vegetables every day",
+      "antihypertensiveMedication": "On medication for hypertension",
+      "historyOfHighBloodGlucose": "Prior episode of high blood glucose",
+      "familyHistoryOfDiabetes": "Family history of diabetes"
+    },
+    "age_options": {
+      "lt_45": "Under 45",
+      "45_to_54": "45 to 54",
+      "55_to_64": "55 to 64",
+      "gte_65": "65 or older"
+    },
+    "bmi_options": {
+      "lt_25": "< 25",
+      "25_to_30": "25 to 30",
+      "gt_30": "> 30"
+    },
+    "waist_options": {
+      "low": "Low (men < 94 cm / women < 80 cm)",
+      "moderate": "Moderate (men 94–102 / women 80–88 cm)",
+      "high": "High (men > 102 cm / women > 88 cm)"
+    },
+    "family_options": {
+      "none": "None",
+      "distant": "Grandparent, uncle/aunt or cousin",
+      "close": "Parent, sibling or own child"
+    },
+    "patient": {
+      "intro": "This questionnaire estimates your chance of developing type 2 diabetes in the next 10 years. It is a screening tool, not a diagnosis.",
+      "result_low": "Your 10-year risk of diabetes is low. Keep up a healthy lifestyle and recheck in a few years.",
+      "result_moderate": "Your 10-year risk is moderate. A blood-sugar test may be useful, and small lifestyle changes can make a big difference.",
+      "result_high": "Your 10-year risk is high. The doctor may order a glucose or HbA1c test and discuss a structured prevention programme.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "Should I have my blood glucose or HbA1c checked?",
+        "What lifestyle changes have the biggest impact?",
+        "Is a structured prevention programme available?",
+        "When should we reassess my risk?"
+      ]
+    }
+  },
+  "ipss": {
+    "title": "IPSS",
+    "subtitle": "International Prostate Symptom Score for benign prostatic hyperplasia (Barry 1992).",
+    "scale_legend": "Each question is scored from 0 (never) to 5 (almost always).",
+    "fields": {
+      "incompleteEmptying": "Sensation of incomplete emptying after voiding",
+      "frequency": "Voiding again < 2 h after finishing",
+      "intermittency": "Stopping and starting during urination",
+      "urgency": "Difficulty postponing urination",
+      "weakStream": "Weak urinary stream",
+      "straining": "Having to push or strain to start",
+      "nocturia": "Nightly times waking to urinate"
+    },
+    "frequency_options": {
+      "0": "0 — Never",
+      "1": "1 — Less than 1 in 5 times",
+      "2": "2 — Less than half the time",
+      "3": "3 — About half the time",
+      "4": "4 — More than half the time",
+      "5": "5 — Almost always"
+    },
+    "patient": {
+      "intro": "This questionnaire measures how bothered you are by urinary symptoms typical of prostate enlargement, and helps the team choose between watchful waiting, medication and surgery.",
+      "result_low": "Your symptoms are mild. Watchful waiting and lifestyle advice are usually sufficient.",
+      "result_moderate": "Your symptoms are moderate. Medication or shared decision-making about further evaluation may be suggested.",
+      "result_high": "Your symptoms are severe. Referral to urology is recommended, and surgical options may be discussed if medication does not help enough.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "Which lifestyle changes can help my symptoms?",
+        "Would medication help and what side effects should I expect?",
+        "Do I need any imaging tests?",
+        "When would surgery be considered?"
+      ]
+    }
+  },
+  "basdai": {
+    "title": "BASDAI",
+    "subtitle": "Bath Ankylosing Spondylitis Disease Activity Index (Garrett 1994).",
+    "scale_legend": "Rate each question from 0 (none) to 10 (very severe).",
+    "fields": {
+      "fatigue": "Overall fatigue",
+      "spineNeckHipPain": "Neck, back or hip pain",
+      "jointPainSwelling": "Pain / swelling of other joints",
+      "tendernessOnTouch": "Tenderness to touch / pressure",
+      "morningStiffnessSeverity": "Severity of morning stiffness",
+      "morningStiffnessDuration": "Duration of morning stiffness (0 = none, 10 ≥ 2 h)"
+    },
+    "patient": {
+      "intro": "BASDAI measures how active your ankylosing spondylitis has been over the past week. It guides treatment decisions, including whether to start or change biological therapy.",
+      "result_low": "Your BASDAI score is below 4 — disease activity is low. Continue your current treatment and report back if symptoms increase.",
+      "result_moderate": "Your BASDAI score is 4 or higher — disease is active. The rheumatology team may adjust your treatment, including considering biological therapy.",
+      "result_high": "Your BASDAI score is 7 or higher — very high activity. Prompt treatment escalation and screening for complications are usually indicated.",
+      "ask_doctor": "Ask your rheumatologist:",
+      "questions": [
+        "What does this score mean for my next treatment step?",
+        "Should we consider a biological therapy?",
+        "What exercises or physiotherapy can help?",
+        "What complications should we monitor for?"
+      ]
+    }
   }
 }
