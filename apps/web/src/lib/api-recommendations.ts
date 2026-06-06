@@ -304,6 +304,141 @@ const recommendations: Record<string, Translations> = {
     ca: "Densitat de PSA igual o inferior a 0,15 ng/mL/cc; l'elevació del PSA s'explica més probablement per hiperplàsia benigna.",
   },
 
+
+  // Charlson
+  CHARLSON_LOW: {
+    en: "Low comorbidity burden; expected 10-year survival above 90%.",
+    es: "Carga de comorbilidad baja; supervivencia esperada a 10 años superior al 90%.",
+    ca: "Càrrega de comorbiditat baixa; supervivència esperada a 10 anys superior al 90%.",
+  },
+  CHARLSON_MODERATE: {
+    en: "Moderate comorbidity burden; meaningful impact on 10-year survival.",
+    es: "Carga de comorbilidad moderada; impacto significativo en la supervivencia a 10 años.",
+    ca: "Càrrega de comorbiditat moderada; impacte significatiu en la supervivència a 10 anys.",
+  },
+  CHARLSON_HIGH: {
+    en: "High comorbidity burden; substantially reduced 10-year survival — weigh aggressive treatments against expected life years.",
+    es: "Carga de comorbilidad alta; supervivencia a 10 años sustancialmente reducida — pondere tratamientos agresivos frente a los años esperados.",
+    ca: "Càrrega de comorbiditat alta; supervivència a 10 anys substancialment reduïda — pondereu tractaments agressius enfront dels anys esperats.",
+  },
+
+  // Alvarado
+  ALVARADO_LOW: {
+    en: "Appendicitis unlikely; consider discharge with safety-net advice and alternative diagnoses.",
+    es: "Apendicitis improbable; considere el alta con instrucciones de seguridad y diagnósticos alternativos.",
+    ca: "Apendicitis improbable; considereu l'alta amb instruccions de seguretat i diagnòstics alternatius.",
+  },
+  ALVARADO_POSSIBLE: {
+    en: "Possible appendicitis; admit for observation, serial exams and consider cross-sectional imaging.",
+    es: "Apendicitis posible; ingrese para observación, exploraciones seriadas y considere imagen.",
+    ca: "Apendicitis possible; ingresseu per observació, exploracions seriades i considereu imatge.",
+  },
+  ALVARADO_PROBABLE: {
+    en: "Probable to very probable appendicitis; surgical consultation and definitive management indicated.",
+    es: "Apendicitis probable o muy probable; está indicada interconsulta quirúrgica y manejo definitivo.",
+    ca: "Apendicitis probable o molt probable; cal interconsulta quirúrgica i maneig definitiu.",
+  },
+
+  // LRINEC
+  LRINEC_LOW: {
+    en: "Low LRINEC; necrotising fasciitis less likely but NOT ruled out. Clinical assessment overrides the score — proceed to surgical exploration if suspicion is high.",
+    es: "LRINEC bajo; la fascitis necrotizante es menos probable pero NO se descarta. El juicio clínico prevalece sobre la puntuación — proceda a exploración quirúrgica si la sospecha es alta.",
+    ca: "LRINEC baix; la fascitis necrotitzant és menys probable però NO es descarta. El judici clínic preval sobre la puntuació — procediu a exploració quirúrgica si la sospita és alta.",
+  },
+  LRINEC_INTERMEDIATE: {
+    en: "Intermediate LRINEC; high suspicion for necrotising fasciitis. Urgent surgical consultation and imaging consideration.",
+    es: "LRINEC intermedio; alta sospecha de fascitis necrotizante. Interconsulta quirúrgica urgente y considerar imagen.",
+    ca: "LRINEC intermedi; alta sospita de fascitis necrotitzant. Interconsulta quirúrgica urgent i considerar imatge.",
+  },
+  LRINEC_HIGH: {
+    en: "High LRINEC; strong suspicion for necrotising fasciitis. Immediate broad-spectrum antibiotics and surgical exploration without delay.",
+    es: "LRINEC alto; fuerte sospecha de fascitis necrotizante. Antibióticos de amplio espectro inmediatos y exploración quirúrgica sin demora.",
+    ca: "LRINEC alt; forta sospita de fascitis necrotitzant. Antibiòtics d'ampli espectre immediats i exploració quirúrgica sense demora.",
+  },
+
+  // Pitt Bacteraemia
+  PITT_LOW: {
+    en: "Low Pitt score; mortality risk close to baseline. Standard empirical antibiotic therapy is usually appropriate.",
+    es: "Pitt bajo; riesgo de mortalidad cercano al basal. La pauta antibiótica empírica estándar suele ser apropiada.",
+    ca: "Pitt baix; risc de mortalitat proper al basal. La pauta antibiòtica empírica estàndard sol ser apropiada.",
+  },
+  PITT_INTERMEDIATE: {
+    en: "Intermediate Pitt score; moderately elevated mortality. Consider infectious-disease consultation and prompt source control.",
+    es: "Pitt intermedio; mortalidad moderadamente elevada. Considere interconsulta a infecciosos y control precoz del foco.",
+    ca: "Pitt intermedi; mortalitat moderadament elevada. Considereu interconsulta a infecciosos i control precoç del focus.",
+  },
+  PITT_HIGH: {
+    en: "High Pitt score (≥4); markedly elevated 30-day mortality. Urgent escalation: broad-spectrum coverage, source control and ID/ICU input.",
+    es: "Pitt alto (≥4); mortalidad a 30 días marcadamente elevada. Escalada urgente: cobertura amplia, control del foco y participación de infecciosos/UCI.",
+    ca: "Pitt alt (≥4); mortalitat a 30 dies marcadament elevada. Escalada urgent: cobertura àmplia, control del focus i participació d'infecciosos/UCI.",
+  },
+
+  // RCRI
+  RCRI_VERY_LOW: {
+    en: "Very low cardiac risk (~0.4%); no further cardiac testing usually needed before surgery.",
+    es: "Riesgo cardíaco muy bajo (~0,4%); normalmente no se necesitan más pruebas cardíacas antes de la cirugía.",
+    ca: "Risc cardíac molt baix (~0,4%); normalment no calen més proves cardíaques abans de la cirurgia.",
+  },
+  RCRI_LOW: {
+    en: "Low cardiac risk (~0.9%); further testing rarely changes management.",
+    es: "Riesgo cardíaco bajo (~0,9%); pruebas adicionales rara vez cambian el manejo.",
+    ca: "Risc cardíac baix (~0,9%); proves addicionals rarament canvien el maneig.",
+  },
+  RCRI_INTERMEDIATE: {
+    en: "Intermediate cardiac risk (~6.6%); consider functional capacity assessment and selective non-invasive testing if it will change management.",
+    es: "Riesgo cardíaco intermedio (~6,6%); considere valorar la capacidad funcional y pruebas no invasivas selectivas si pueden cambiar el manejo.",
+    ca: "Risc cardíac intermedi (~6,6%); considereu valorar la capacitat funcional i proves no invasives selectives si poden canviar el maneig.",
+  },
+  RCRI_HIGH: {
+    en: "High cardiac risk (≥11%); structured perioperative optimisation, cardiology input and balanced anaesthesia plan indicated.",
+    es: "Riesgo cardíaco alto (≥11%); optimización perioperatoria estructurada, participación de cardiología y plan anestésico equilibrado.",
+    ca: "Risc cardíac alt (≥11%); optimització perioperatòria estructurada, participació de cardiologia i pla anestèsic equilibrat.",
+  },
+
+  // Norton
+  NORTON_LOW: {
+    en: "Norton ≥18: low pressure ulcer risk. Standard skin care and reassessment with clinical changes.",
+    es: "Norton ≥18: riesgo bajo de úlceras por presión. Cuidados estándar de la piel y reevaluación ante cambios clínicos.",
+    ca: "Norton ≥18: risc baix d'úlceres per pressió. Cures estàndard de la pell i reavaluació davant de canvis clínics.",
+  },
+  NORTON_MODERATE: {
+    en: "Norton 14–17: moderate risk. Implement repositioning schedule, support surface and nutrition review.",
+    es: "Norton 14–17: riesgo moderado. Implemente un plan de cambios posturales, superficie de apoyo y revisión nutricional.",
+    ca: "Norton 14–17: risc moderat. Implementeu un pla de canvis posturals, superfície de suport i revisió nutricional.",
+  },
+  NORTON_HIGH: {
+    en: "Norton ≤13: high risk. Pressure-redistribution mattress, ≤2-hour repositioning and daily skin inspection.",
+    es: "Norton ≤13: riesgo alto. Colchón de redistribución de presión, cambios posturales cada ≤2 h e inspección cutánea diaria.",
+    ca: "Norton ≤13: risc alt. Matalàs de redistribució de pressió, canvis posturals cada ≤2 h i inspecció cutània diària.",
+  },
+
+  // Braden
+  BRADEN_NO_RISK: {
+    en: "Braden ≥19: no specific pressure-ulcer prevention needed beyond standard care.",
+    es: "Braden ≥19: no se necesita prevención específica de úlceras por presión más allá de los cuidados estándar.",
+    ca: "Braden ≥19: no cal prevenció específica d'úlceres per pressió més enllà de les cures estàndard.",
+  },
+  BRADEN_MILD: {
+    en: "Braden 15–18: mild risk. Regular repositioning and skin assessment, address moisture and nutrition.",
+    es: "Braden 15–18: riesgo leve. Cambios posturales regulares y valoración cutánea; controle humedad y nutrición.",
+    ca: "Braden 15–18: risc lleu. Canvis posturals regulars i valoració cutània; controleu humitat i nutrició.",
+  },
+  BRADEN_MODERATE: {
+    en: "Braden 13–14: moderate risk. Add pressure-redistribution surface; 30° lateral position rotation.",
+    es: "Braden 13–14: riesgo moderado. Añada superficie de redistribución de presión; rotación lateral 30°.",
+    ca: "Braden 13–14: risc moderat. Afegiu superfície de redistribució de pressió; rotació lateral 30°.",
+  },
+  BRADEN_HIGH: {
+    en: "Braden 10–12: high risk. Specialist mattress, dietetics input, intensify repositioning to ≤2 hours.",
+    es: "Braden 10–12: riesgo alto. Colchón especializado, participación de dietética, intensificar cambios posturales a cada ≤2 h.",
+    ca: "Braden 10–12: risc alt. Matalàs especialitzat, participació de dietètica, intensificar canvis posturals a cada ≤2 h.",
+  },
+  BRADEN_VERY_HIGH: {
+    en: "Braden ≤9: very high risk. Maximum prevention bundle; tissue viability nurse referral.",
+    es: "Braden ≤9: riesgo muy alto. Paquete máximo de prevención; derivación a enfermería de heridas crónicas.",
+    ca: "Braden ≤9: risc molt alt. Paquet màxim de prevenció; derivació a infermeria de ferides cròniques.",
+  },
+
 };
 
 /**

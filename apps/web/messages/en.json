@@ -721,5 +721,274 @@
         "What lifestyle factors affect my prostate health?"
       ]
     }
+  },
+  "alvarado": {
+    "title": "Alvarado",
+    "subtitle": "Score for acute appendicitis (MANTRELS).",
+    "fields": {
+      "migrationOfPain": "Migration of pain to the right lower quadrant",
+      "anorexia": "Anorexia",
+      "nauseaOrVomiting": "Nausea or vomiting",
+      "rightLowerQuadrantTenderness": "Tenderness in right lower quadrant (2 pts)",
+      "reboundTenderness": "Rebound tenderness",
+      "elevatedTemperature": "Temperature ≥ 37.3 °C",
+      "leukocytosis": "Leukocytosis ≥ 10 000/mm³ (2 pts)",
+      "leftShift": "Left shift (> 75% neutrophils)"
+    },
+    "patient": {
+      "intro": "This calculator estimates how likely your symptoms are caused by acute appendicitis.",
+      "result_low": "Appendicitis is unlikely. The doctor will look for other causes and may send you home with advice.",
+      "result_moderate": "Appendicitis is possible. The doctor may keep you under observation, repeat the exam and request imaging.",
+      "result_high": "Appendicitis is probable. Surgical evaluation is needed and you may need an operation.",
+      "ask_doctor": "Ask the doctor:",
+      "questions": [
+        "Do I need imaging like an ultrasound or CT scan?",
+        "What signs of worsening should I watch for?",
+        "When should I come back to the emergency department?",
+        "Can I eat or drink in the meantime?"
+      ]
+    }
+  },
+  "rcri": {
+    "title": "RCRI (Lee)",
+    "subtitle": "Revised Cardiac Risk Index for non-cardiac surgery.",
+    "fields": {
+      "highRiskSurgery": "High-risk surgery (intraperitoneal, intrathoracic, suprainguinal vascular)",
+      "ischemicHeartDisease": "History of ischaemic heart disease",
+      "congestiveHeartFailure": "History of congestive heart failure",
+      "cerebrovascularDisease": "History of cerebrovascular disease (TIA / stroke)",
+      "preoperativeInsulin": "Pre-operative insulin treatment for diabetes",
+      "creatinineOver2": "Pre-operative creatinine > 2 mg/dL (> 177 µmol/L)"
+    },
+    "patient": {
+      "intro": "This calculator estimates your risk of a major cardiac event around non-cardiac surgery.",
+      "result_low": "Your peri-operative cardiac risk is low. No specific cardiac testing is usually needed before surgery.",
+      "result_moderate": "Your cardiac risk is intermediate. Your team may assess your fitness and order targeted tests if it would change the plan.",
+      "result_high": "Your cardiac risk is high. The team will optimise your treatment, involve cardiology and tailor the anaesthetic plan.",
+      "ask_doctor": "Ask the surgical team:",
+      "questions": [
+        "What can I do to lower my cardiac risk before surgery?",
+        "Should I stop or change any medications?",
+        "Do I need a cardiology review?",
+        "What signs of complications should I watch for after surgery?"
+      ]
+    }
+  },
+  "lrinec": {
+    "title": "LRINEC",
+    "subtitle": "Laboratory Risk Indicator for Necrotising Fasciitis (Wong 2004).",
+    "fields": {
+      "crpMgDl": "C-reactive protein (mg/dL)",
+      "wbcPerMm3": "White blood cells (/mm³)",
+      "hemoglobinGDl": "Hemoglobin (g/dL)",
+      "sodiumMEqL": "Sodium (mEq/L)",
+      "creatinineMgDl": "Creatinine (mg/dL)",
+      "glucoseMgDl": "Glucose (mg/dL)"
+    },
+    "patient": {
+      "intro": "This calculator uses routine blood tests to estimate the risk of a severe, deep skin infection called necrotising fasciitis. It does NOT replace clinical judgement.",
+      "result_low": "Your LRINEC score is low. Necrotising fasciitis is less likely but cannot be fully excluded — the doctor will continue to observe you closely.",
+      "result_moderate": "Your LRINEC score is intermediate. The team will urgently consider surgical assessment and imaging.",
+      "result_high": "Your LRINEC score is high. The team will start strong intravenous antibiotics and prepare for an urgent operation.",
+      "ask_doctor": "Ask the medical team:",
+      "questions": [
+        "Do I need an MRI or CT to look at the soft tissues?",
+        "Will antibiotics alone be enough?",
+        "What signs of worsening should I watch for?",
+        "When will the surgical team review me?"
+      ]
+    }
+  },
+  "charlson": {
+    "title": "Charlson Comorbidity Index",
+    "subtitle": "Age-adjusted comorbidity index predicting 10-year mortality.",
+    "group_one_point": "1-point comorbidities",
+    "group_two_points": "2-point comorbidities",
+    "group_three_points": "3-point comorbidities",
+    "group_six_points": "6-point comorbidities",
+    "fields": {
+      "ageYears": "Age (years)",
+      "myocardialInfarction": "Myocardial infarction",
+      "congestiveHeartFailure": "Congestive heart failure",
+      "peripheralVascularDisease": "Peripheral vascular disease",
+      "cerebrovascularDisease": "Cerebrovascular disease (TIA or stroke, no significant sequelae)",
+      "dementia": "Dementia",
+      "chronicPulmonaryDisease": "Chronic pulmonary disease (COPD, asthma)",
+      "connectiveTissueDisease": "Connective tissue disease",
+      "pepticUlcerDisease": "Peptic ulcer disease",
+      "mildLiverDisease": "Mild liver disease (no portal hypertension)",
+      "diabetesUncomplicated": "Diabetes without end-organ damage",
+      "hemiplegia": "Hemiplegia",
+      "moderateSevereRenalDisease": "Moderate-to-severe chronic kidney disease",
+      "diabetesWithEndOrganDamage": "Diabetes with end-organ damage (retinopathy, nephropathy, neuropathy)",
+      "anyTumorPast5Years": "Any solid tumour in past 5 years",
+      "leukemia": "Leukaemia",
+      "lymphoma": "Lymphoma",
+      "moderateSevereLiverDisease": "Moderate-to-severe liver disease (portal hypertension)",
+      "metastaticSolidTumor": "Metastatic solid tumour",
+      "aids": "AIDS"
+    },
+    "patient": {
+      "intro": "This calculator combines your age and chronic conditions to give a general idea of long-term prognosis. It is a planning tool, not a death sentence.",
+      "result_low": "Your overall burden of chronic disease is low; expected 10-year survival is high.",
+      "result_moderate": "Your overall burden of chronic disease is moderate; this should be taken into account when weighing aggressive treatments.",
+      "result_high": "Your overall burden of chronic disease is high; treatment decisions need to balance benefits against expected remaining years.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "How does my comorbidity score affect my treatment options?",
+        "Which of my conditions could be optimised?",
+        "How does this change shared decisions like cancer screening or surgery?",
+        "What is the most important issue to focus on right now?"
+      ]
+    }
+  },
+  "pittBacteremia": {
+    "title": "Pitt Bacteraemia",
+    "subtitle": "Severity score for bloodstream infections.",
+    "fields": {
+      "temperatureBand": "Temperature band",
+      "hypotension": "Hypotension (vasopressors or systolic BP < 90 mmHg)",
+      "mechanicalVentilation": "Mechanical ventilation",
+      "cardiacArrestWithin24h": "Cardiac arrest within 24 h (4 pts)",
+      "mentalStatus": "Mental status"
+    },
+    "temperature": {
+      "normal": "36.1 – 38.9 °C",
+      "mild": "35.1 – 36.0 or 39.0 – 39.9 °C (1 pt)",
+      "severe": "≤ 35.0 or ≥ 40.0 °C (2 pts)"
+    },
+    "mental": {
+      "alert": "Alert (0 pts)",
+      "disoriented": "Disoriented (1 pt)",
+      "stuporous": "Stuporous (2 pts)",
+      "comatose": "Comatose (4 pts)"
+    },
+    "patient": {
+      "intro": "This score helps the medical team estimate how severely a bloodstream infection is affecting the body right now.",
+      "result_low": "Your Pitt score is low. Standard antibiotic treatment is usually appropriate.",
+      "result_moderate": "Your Pitt score is intermediate. The team will look for the source of infection and consult infectious-disease specialists if needed.",
+      "result_high": "Your Pitt score is high. The team will escalate treatment quickly: broad antibiotics, source control and intensive care input.",
+      "ask_doctor": "Ask the medical team:",
+      "questions": [
+        "What is the source of the infection?",
+        "Which antibiotics am I receiving and why?",
+        "How long will I likely need to be in hospital?",
+        "What signs of improvement or worsening should we monitor?"
+      ]
+    }
+  },
+  "norton": {
+    "title": "Norton Scale",
+    "subtitle": "Bedside score for pressure ulcer risk in immobile patients.",
+    "fields": {
+      "physicalCondition": "Physical condition",
+      "mentalCondition": "Mental condition",
+      "activity": "Activity",
+      "mobility": "Mobility",
+      "incontinence": "Incontinence"
+    },
+    "physicalCondition_options": {
+      "1": "1 — Very bad",
+      "2": "2 — Poor",
+      "3": "3 — Fair",
+      "4": "4 — Good"
+    },
+    "mentalCondition_options": {
+      "1": "1 — Stuporous",
+      "2": "2 — Confused",
+      "3": "3 — Apathetic",
+      "4": "4 — Alert"
+    },
+    "activity_options": {
+      "1": "1 — Bedbound",
+      "2": "2 — Chairbound",
+      "3": "3 — Walks with help",
+      "4": "4 — Ambulant"
+    },
+    "mobility_options": {
+      "1": "1 — Immobile",
+      "2": "2 — Very limited",
+      "3": "3 — Slightly limited",
+      "4": "4 — Full"
+    },
+    "incontinence_options": {
+      "1": "1 — Urinary + faecal",
+      "2": "2 — Usually urinary",
+      "3": "3 — Occasional",
+      "4": "4 — None"
+    },
+    "patient": {
+      "intro": "This scale estimates the risk of developing a pressure ulcer (bedsore) in people who spend long periods in bed or in a chair.",
+      "result_low": "Your risk of pressure ulcers is low; standard skin care and regular checks are usually enough.",
+      "result_moderate": "Your risk of pressure ulcers is moderate; the team will plan repositioning and check the skin frequently.",
+      "result_high": "Your risk of pressure ulcers is high; you will need a special mattress and frequent position changes day and night.",
+      "ask_doctor": "Ask the care team:",
+      "questions": [
+        "How often should I be repositioned?",
+        "What kind of mattress is best for me?",
+        "What signs of skin damage should we watch for?",
+        "Can my nutrition be improved to help my skin?"
+      ]
+    }
+  },
+  "braden": {
+    "title": "Braden Scale",
+    "subtitle": "Standardised score for pressure ulcer risk in acute care.",
+    "fields": {
+      "sensoryPerception": "Sensory perception",
+      "moisture": "Moisture",
+      "activity": "Activity",
+      "mobility": "Mobility",
+      "nutrition": "Nutrition",
+      "frictionAndShear": "Friction and shear"
+    },
+    "sensoryPerception_options": {
+      "1": "1 — Completely limited",
+      "2": "2 — Very limited",
+      "3": "3 — Slightly limited",
+      "4": "4 — No impairment"
+    },
+    "moisture_options": {
+      "1": "1 — Constantly moist",
+      "2": "2 — Often moist",
+      "3": "3 — Occasionally moist",
+      "4": "4 — Rarely moist"
+    },
+    "activity_options": {
+      "1": "1 — Bedfast",
+      "2": "2 — Chairfast",
+      "3": "3 — Walks occasionally",
+      "4": "4 — Walks frequently"
+    },
+    "mobility_options": {
+      "1": "1 — Completely immobile",
+      "2": "2 — Very limited",
+      "3": "3 — Slightly limited",
+      "4": "4 — No limitation"
+    },
+    "nutrition_options": {
+      "1": "1 — Very poor",
+      "2": "2 — Probably inadequate",
+      "3": "3 — Adequate",
+      "4": "4 — Excellent"
+    },
+    "frictionAndShear_options": {
+      "1": "1 — Problem",
+      "2": "2 — Potential problem",
+      "3": "3 — No apparent problem"
+    },
+    "patient": {
+      "intro": "This scale is used in hospitals to estimate the risk of developing a pressure ulcer and decide what preventive care to provide.",
+      "result_low": "Your risk of pressure ulcers is low and you do not need additional precautions beyond standard care.",
+      "result_moderate": "Your risk of pressure ulcers is moderate; the team will plan a prevention strategy including repositioning, moisture and nutrition.",
+      "result_high": "Your risk of pressure ulcers is high; you will need a special mattress, careful positioning and nutritional review.",
+      "ask_doctor": "Ask the care team:",
+      "questions": [
+        "What kind of mattress is best for me?",
+        "How often should I be repositioned?",
+        "How can my nutrition help my skin?",
+        "What early signs of skin damage should we watch for?"
+      ]
+    }
   }
 }

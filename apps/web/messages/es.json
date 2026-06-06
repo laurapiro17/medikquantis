@@ -721,5 +721,274 @@
         "¿Qué factores de estilo de vida afectan a la próstata?"
       ]
     }
+  },
+  "alvarado": {
+    "title": "Alvarado",
+    "subtitle": "Puntuación para apendicitis aguda (MANTRELS).",
+    "fields": {
+      "migrationOfPain": "Migración del dolor a la fosa ilíaca derecha",
+      "anorexia": "Anorexia",
+      "nauseaOrVomiting": "Náuseas o vómitos",
+      "rightLowerQuadrantTenderness": "Dolor a la palpación en fosa ilíaca derecha (2 pts)",
+      "reboundTenderness": "Signo de rebote",
+      "elevatedTemperature": "Temperatura ≥ 37,3 °C",
+      "leukocytosis": "Leucocitosis ≥ 10 000/mm³ (2 pts)",
+      "leftShift": "Desviación izquierda (> 75% neutrófilos)"
+    },
+    "patient": {
+      "intro": "Esta calculadora estima la probabilidad de que tus síntomas se deban a apendicitis aguda.",
+      "result_low": "La apendicitis es poco probable. El médico buscará otras causas y puede darte el alta con recomendaciones.",
+      "result_moderate": "La apendicitis es posible. El médico puede mantenerte en observación, repetir la exploración y pedir una prueba de imagen.",
+      "result_high": "La apendicitis es probable. Necesitas valoración quirúrgica y posiblemente una intervención.",
+      "ask_doctor": "Pregunta al médico:",
+      "questions": [
+        "¿Necesito una ecografía o un TC?",
+        "¿Qué signos de empeoramiento debo vigilar?",
+        "¿Cuándo debo volver a urgencias?",
+        "¿Puedo comer o beber mientras tanto?"
+      ]
+    }
+  },
+  "rcri": {
+    "title": "RCRI (Lee)",
+    "subtitle": "Índice de riesgo cardíaco revisado en cirugía no cardíaca.",
+    "fields": {
+      "highRiskSurgery": "Cirugía de alto riesgo (intraperitoneal, intratorácica, vascular suprainguinal)",
+      "ischemicHeartDisease": "Antecedente de cardiopatía isquémica",
+      "congestiveHeartFailure": "Antecedente de insuficiencia cardíaca",
+      "cerebrovascularDisease": "Antecedente de enfermedad cerebrovascular (AIT / ictus)",
+      "preoperativeInsulin": "Tratamiento preoperatorio con insulina por diabetes",
+      "creatinineOver2": "Creatinina preoperatoria > 2 mg/dL (> 177 µmol/L)"
+    },
+    "patient": {
+      "intro": "Esta calculadora estima tu riesgo de un evento cardíaco grave alrededor de una cirugía no cardíaca.",
+      "result_low": "Tu riesgo cardíaco perioperatorio es bajo. Normalmente no se necesitan pruebas cardíacas específicas antes de la cirugía.",
+      "result_moderate": "Tu riesgo cardíaco es intermedio. El equipo puede valorar tu condición y pedir pruebas dirigidas si pueden cambiar el plan.",
+      "result_high": "Tu riesgo cardíaco es alto. El equipo optimizará el tratamiento, contará con cardiología y adaptará la anestesia.",
+      "ask_doctor": "Pregunta al equipo quirúrgico:",
+      "questions": [
+        "¿Qué puedo hacer para bajar mi riesgo cardíaco antes de la cirugía?",
+        "¿Debo parar o cambiar algún medicamento?",
+        "¿Necesito valoración por cardiología?",
+        "¿Qué signos de complicación debo vigilar después de la cirugía?"
+      ]
+    }
+  },
+  "lrinec": {
+    "title": "LRINEC",
+    "subtitle": "Indicador de laboratorio para fascitis necrotizante (Wong 2004).",
+    "fields": {
+      "crpMgDl": "Proteína C reactiva (mg/dL)",
+      "wbcPerMm3": "Leucocitos (/mm³)",
+      "hemoglobinGDl": "Hemoglobina (g/dL)",
+      "sodiumMEqL": "Sodio (mEq/L)",
+      "creatinineMgDl": "Creatinina (mg/dL)",
+      "glucoseMgDl": "Glucosa (mg/dL)"
+    },
+    "patient": {
+      "intro": "Esta calculadora usa análisis rutinarios para estimar el riesgo de una infección profunda y grave de la piel llamada fascitis necrotizante. NO sustituye al criterio clínico.",
+      "result_low": "Tu puntuación LRINEC es baja. La fascitis necrotizante es menos probable, pero no se descarta del todo — el médico te seguirá vigilando estrechamente.",
+      "result_moderate": "Tu puntuación LRINEC es intermedia. El equipo considerará valoración quirúrgica e imagen de forma urgente.",
+      "result_high": "Tu puntuación LRINEC es alta. El equipo iniciará antibióticos intravenosos potentes y preparará una intervención urgente.",
+      "ask_doctor": "Pregunta al equipo médico:",
+      "questions": [
+        "¿Necesito una RM o un TC para ver los tejidos blandos?",
+        "¿Bastarán los antibióticos solos?",
+        "¿Qué signos de empeoramiento debo vigilar?",
+        "¿Cuándo me valorará el equipo quirúrgico?"
+      ]
+    }
+  },
+  "charlson": {
+    "title": "Índice de Comorbilidad de Charlson",
+    "subtitle": "Índice de comorbilidad ajustado por edad que predice mortalidad a 10 años.",
+    "group_one_point": "Comorbilidades de 1 punto",
+    "group_two_points": "Comorbilidades de 2 puntos",
+    "group_three_points": "Comorbilidades de 3 puntos",
+    "group_six_points": "Comorbilidades de 6 puntos",
+    "fields": {
+      "ageYears": "Edad (años)",
+      "myocardialInfarction": "Infarto de miocardio",
+      "congestiveHeartFailure": "Insuficiencia cardíaca congestiva",
+      "peripheralVascularDisease": "Enfermedad vascular periférica",
+      "cerebrovascularDisease": "Enfermedad cerebrovascular (AIT o ictus sin secuelas importantes)",
+      "dementia": "Demencia",
+      "chronicPulmonaryDisease": "Enfermedad pulmonar crónica (EPOC, asma)",
+      "connectiveTissueDisease": "Enfermedad del tejido conectivo",
+      "pepticUlcerDisease": "Enfermedad ulcerosa péptica",
+      "mildLiverDisease": "Hepatopatía leve (sin hipertensión portal)",
+      "diabetesUncomplicated": "Diabetes sin daño de órgano diana",
+      "hemiplegia": "Hemiplejía",
+      "moderateSevereRenalDisease": "Insuficiencia renal crónica moderada-grave",
+      "diabetesWithEndOrganDamage": "Diabetes con daño de órgano diana (retinopatía, nefropatía, neuropatía)",
+      "anyTumorPast5Years": "Cualquier tumor sólido en los últimos 5 años",
+      "leukemia": "Leucemia",
+      "lymphoma": "Linfoma",
+      "moderateSevereLiverDisease": "Hepatopatía moderada-grave (hipertensión portal)",
+      "metastaticSolidTumor": "Tumor sólido metastásico",
+      "aids": "SIDA"
+    },
+    "patient": {
+      "intro": "Esta calculadora combina tu edad y tus enfermedades crónicas para dar una idea general del pronóstico a largo plazo. Es una herramienta de planificación, no una sentencia.",
+      "result_low": "Tu carga global de enfermedad crónica es baja; la supervivencia esperada a 10 años es alta.",
+      "result_moderate": "Tu carga global de enfermedad crónica es moderada; se debe tener en cuenta al valorar tratamientos agresivos.",
+      "result_high": "Tu carga global de enfermedad crónica es alta; las decisiones de tratamiento deben equilibrar los beneficios con los años esperados.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Cómo afecta mi puntuación de comorbilidad a mis opciones de tratamiento?",
+        "¿Cuál de mis enfermedades podría optimizarse?",
+        "¿Cómo cambia esto decisiones compartidas como el cribado de cáncer o la cirugía?",
+        "¿Cuál es la prioridad más importante ahora?"
+      ]
+    }
+  },
+  "pittBacteremia": {
+    "title": "Pitt Bacteriemia",
+    "subtitle": "Puntuación de gravedad para bacteriemia.",
+    "fields": {
+      "temperatureBand": "Banda de temperatura",
+      "hypotension": "Hipotensión (vasopresores o TAS < 90 mmHg)",
+      "mechanicalVentilation": "Ventilación mecánica",
+      "cardiacArrestWithin24h": "Parada cardíaca en últimas 24 h (4 pts)",
+      "mentalStatus": "Estado mental"
+    },
+    "temperature": {
+      "normal": "36,1 – 38,9 °C",
+      "mild": "35,1 – 36,0 o 39,0 – 39,9 °C (1 pt)",
+      "severe": "≤ 35,0 o ≥ 40,0 °C (2 pts)"
+    },
+    "mental": {
+      "alert": "Alerta (0 pts)",
+      "disoriented": "Desorientado (1 pt)",
+      "stuporous": "Estuporoso (2 pts)",
+      "comatose": "Comatoso (4 pts)"
+    },
+    "patient": {
+      "intro": "Esta puntuación ayuda al equipo médico a estimar lo grave que es ahora mismo una infección en sangre.",
+      "result_low": "Tu puntuación Pitt es baja. El tratamiento antibiótico estándar suele ser apropiado.",
+      "result_moderate": "Tu puntuación Pitt es intermedia. El equipo buscará el foco de la infección y consultará con infecciosos si lo necesita.",
+      "result_high": "Tu puntuación Pitt es alta. El equipo intensificará el tratamiento rápidamente: antibióticos amplios, control del foco e ingreso en UCI.",
+      "ask_doctor": "Pregunta al equipo médico:",
+      "questions": [
+        "¿Cuál es el foco de la infección?",
+        "¿Qué antibióticos estoy recibiendo y por qué?",
+        "¿Cuánto tiempo necesitaré estar en el hospital?",
+        "¿Qué signos de mejora o empeoramiento monitorizaréis?"
+      ]
+    }
+  },
+  "norton": {
+    "title": "Escala de Norton",
+    "subtitle": "Escala junto a la cama para el riesgo de úlceras por presión en pacientes inmóviles.",
+    "fields": {
+      "physicalCondition": "Condición física",
+      "mentalCondition": "Estado mental",
+      "activity": "Actividad",
+      "mobility": "Movilidad",
+      "incontinence": "Incontinencia"
+    },
+    "physicalCondition_options": {
+      "1": "1 — Muy mala",
+      "2": "2 — Mala",
+      "3": "3 — Regular",
+      "4": "4 — Buena"
+    },
+    "mentalCondition_options": {
+      "1": "1 — Estuporoso",
+      "2": "2 — Confuso",
+      "3": "3 — Apático",
+      "4": "4 — Alerta"
+    },
+    "activity_options": {
+      "1": "1 — Encamado",
+      "2": "2 — En silla",
+      "3": "3 — Camina con ayuda",
+      "4": "4 — Deambula"
+    },
+    "mobility_options": {
+      "1": "1 — Inmóvil",
+      "2": "2 — Muy limitada",
+      "3": "3 — Algo limitada",
+      "4": "4 — Completa"
+    },
+    "incontinence_options": {
+      "1": "1 — Urinaria y fecal",
+      "2": "2 — Habitualmente urinaria",
+      "3": "3 — Ocasional",
+      "4": "4 — Continente"
+    },
+    "patient": {
+      "intro": "Esta escala estima el riesgo de desarrollar una úlcera por presión (úlcera de decúbito) en personas que pasan mucho tiempo en la cama o sentadas.",
+      "result_low": "Tu riesgo de úlceras por presión es bajo; los cuidados estándar y revisiones regulares suelen bastar.",
+      "result_moderate": "Tu riesgo de úlceras por presión es moderado; el equipo planificará cambios de postura y revisará la piel con frecuencia.",
+      "result_high": "Tu riesgo de úlceras por presión es alto; necesitarás un colchón especial y cambios frecuentes de postura día y noche.",
+      "ask_doctor": "Pregunta al equipo:",
+      "questions": [
+        "¿Cada cuánto debo cambiar de postura?",
+        "¿Qué tipo de colchón es mejor para mí?",
+        "¿Qué signos de lesión cutánea debemos vigilar?",
+        "¿Puedo mejorar mi alimentación para cuidar la piel?"
+      ]
+    }
+  },
+  "braden": {
+    "title": "Escala de Braden",
+    "subtitle": "Escala estandarizada para riesgo de úlceras por presión en hospitalización aguda.",
+    "fields": {
+      "sensoryPerception": "Percepción sensorial",
+      "moisture": "Humedad",
+      "activity": "Actividad",
+      "mobility": "Movilidad",
+      "nutrition": "Nutrición",
+      "frictionAndShear": "Fricción y cizallamiento"
+    },
+    "sensoryPerception_options": {
+      "1": "1 — Completamente limitada",
+      "2": "2 — Muy limitada",
+      "3": "3 — Ligeramente limitada",
+      "4": "4 — Sin alteración"
+    },
+    "moisture_options": {
+      "1": "1 — Constantemente húmeda",
+      "2": "2 — A menudo húmeda",
+      "3": "3 — Ocasionalmente húmeda",
+      "4": "4 — Raramente húmeda"
+    },
+    "activity_options": {
+      "1": "1 — Encamado",
+      "2": "2 — En silla",
+      "3": "3 — Camina ocasionalmente",
+      "4": "4 — Camina con frecuencia"
+    },
+    "mobility_options": {
+      "1": "1 — Completamente inmóvil",
+      "2": "2 — Muy limitada",
+      "3": "3 — Ligeramente limitada",
+      "4": "4 — Sin limitación"
+    },
+    "nutrition_options": {
+      "1": "1 — Muy pobre",
+      "2": "2 — Probablemente inadecuada",
+      "3": "3 — Adecuada",
+      "4": "4 — Excelente"
+    },
+    "frictionAndShear_options": {
+      "1": "1 — Problema",
+      "2": "2 — Problema potencial",
+      "3": "3 — Sin problema aparente"
+    },
+    "patient": {
+      "intro": "Esta escala se usa en hospitales para estimar el riesgo de úlceras por presión y decidir qué medidas preventivas aplicar.",
+      "result_low": "Tu riesgo de úlceras por presión es bajo y no necesitas precauciones adicionales a los cuidados estándar.",
+      "result_moderate": "Tu riesgo de úlceras por presión es moderado; el equipo planificará una estrategia preventiva con cambios de postura, control de humedad y nutrición.",
+      "result_high": "Tu riesgo de úlceras por presión es alto; necesitarás un colchón especial, postura cuidadosa y revisión nutricional.",
+      "ask_doctor": "Pregunta al equipo:",
+      "questions": [
+        "¿Qué tipo de colchón es mejor para mí?",
+        "¿Cada cuánto debo cambiar de postura?",
+        "¿Cómo puede ayudar mi alimentación a la piel?",
+        "¿Qué signos precoces de lesión cutánea debemos vigilar?"
+      ]
+    }
   }
 }

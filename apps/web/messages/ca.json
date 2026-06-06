@@ -721,5 +721,274 @@
         "Quins factors d'estil de vida afecten la pròstata?"
       ]
     }
+  },
+  "alvarado": {
+    "title": "Alvarado",
+    "subtitle": "Puntuació per apendicitis aguda (MANTRELS).",
+    "fields": {
+      "migrationOfPain": "Migració del dolor a la fossa ilíaca dreta",
+      "anorexia": "Anorèxia",
+      "nauseaOrVomiting": "Nàusees o vòmits",
+      "rightLowerQuadrantTenderness": "Dolor a la palpació a fossa ilíaca dreta (2 pts)",
+      "reboundTenderness": "Signe de rebot",
+      "elevatedTemperature": "Temperatura ≥ 37,3 °C",
+      "leukocytosis": "Leucocitosi ≥ 10 000/mm³ (2 pts)",
+      "leftShift": "Desviació esquerra (> 75% neutròfils)"
+    },
+    "patient": {
+      "intro": "Aquesta calculadora estima la probabilitat que els teus símptomes siguin per apendicitis aguda.",
+      "result_low": "L'apendicitis és poc probable. El metge buscarà altres causes i potser et donarà l'alta amb recomanacions.",
+      "result_moderate": "L'apendicitis és possible. El metge pot mantenir-te en observació, repetir l'exploració i demanar una prova d'imatge.",
+      "result_high": "L'apendicitis és probable. Necessites valoració quirúrgica i possiblement una intervenció.",
+      "ask_doctor": "Pregunta al metge:",
+      "questions": [
+        "Necessito una ecografia o un TC?",
+        "Quins signes d'empitjorament he de vigilar?",
+        "Quan he de tornar a urgències?",
+        "Puc menjar o beure mentrestant?"
+      ]
+    }
+  },
+  "rcri": {
+    "title": "RCRI (Lee)",
+    "subtitle": "Índex de risc cardíac revisat per a cirurgia no cardíaca.",
+    "fields": {
+      "highRiskSurgery": "Cirurgia d'alt risc (intraperitoneal, intratoràcica, vascular suprainguinal)",
+      "ischemicHeartDisease": "Antecedent de cardiopatia isquèmica",
+      "congestiveHeartFailure": "Antecedent d'insuficiència cardíaca",
+      "cerebrovascularDisease": "Antecedent de malaltia cerebrovascular (AIT / ictus)",
+      "preoperativeInsulin": "Tractament preoperatori amb insulina per diabetis",
+      "creatinineOver2": "Creatinina preoperatòria > 2 mg/dL (> 177 µmol/L)"
+    },
+    "patient": {
+      "intro": "Aquesta calculadora estima el teu risc d'un esdeveniment cardíac greu al voltant d'una cirurgia no cardíaca.",
+      "result_low": "El teu risc cardíac perioperatori és baix. Normalment no calen proves cardíaques específiques abans de la cirurgia.",
+      "result_moderate": "El teu risc cardíac és intermedi. L'equip pot valorar la teva condició i demanar proves dirigides si poden canviar el pla.",
+      "result_high": "El teu risc cardíac és alt. L'equip optimitzarà el tractament, comptarà amb cardiologia i adaptarà l'anestèsia.",
+      "ask_doctor": "Pregunta a l'equip quirúrgic:",
+      "questions": [
+        "Què puc fer per baixar el meu risc cardíac abans de la cirurgia?",
+        "He d'aturar o canviar algun medicament?",
+        "Necessito valoració per cardiologia?",
+        "Quins signes de complicació he de vigilar després de la cirurgia?"
+      ]
+    }
+  },
+  "lrinec": {
+    "title": "LRINEC",
+    "subtitle": "Indicador de laboratori per fascitis necrotitzant (Wong 2004).",
+    "fields": {
+      "crpMgDl": "Proteïna C reactiva (mg/dL)",
+      "wbcPerMm3": "Leucòcits (/mm³)",
+      "hemoglobinGDl": "Hemoglobina (g/dL)",
+      "sodiumMEqL": "Sodi (mEq/L)",
+      "creatinineMgDl": "Creatinina (mg/dL)",
+      "glucoseMgDl": "Glucosa (mg/dL)"
+    },
+    "patient": {
+      "intro": "Aquesta calculadora utilitza anàlisis rutinàries per estimar el risc d'una infecció profunda i greu de la pell anomenada fascitis necrotitzant. NO substitueix el criteri clínic.",
+      "result_low": "La teva puntuació LRINEC és baixa. La fascitis necrotitzant és menys probable, però no es pot descartar del tot — el metge et seguirà vigilant de prop.",
+      "result_moderate": "La teva puntuació LRINEC és intermèdia. L'equip considerarà valoració quirúrgica i imatge de manera urgent.",
+      "result_high": "La teva puntuació LRINEC és alta. L'equip iniciarà antibiòtics intravenosos potents i preparà una intervenció urgent.",
+      "ask_doctor": "Pregunta a l'equip mèdic:",
+      "questions": [
+        "Necessito una RM o un TC per veure els teixits tous?",
+        "Hi haurà prou amb els antibiòtics?",
+        "Quins signes d'empitjorament he de vigilar?",
+        "Quan em valorarà l'equip quirúrgic?"
+      ]
+    }
+  },
+  "charlson": {
+    "title": "Índex de Comorbiditat de Charlson",
+    "subtitle": "Índex de comorbiditat ajustat per edat que prediu mortalitat a 10 anys.",
+    "group_one_point": "Comorbiditats d'1 punt",
+    "group_two_points": "Comorbiditats de 2 punts",
+    "group_three_points": "Comorbiditats de 3 punts",
+    "group_six_points": "Comorbiditats de 6 punts",
+    "fields": {
+      "ageYears": "Edat (anys)",
+      "myocardialInfarction": "Infart de miocardi",
+      "congestiveHeartFailure": "Insuficiència cardíaca congestiva",
+      "peripheralVascularDisease": "Malaltia vascular perifèrica",
+      "cerebrovascularDisease": "Malaltia cerebrovascular (AIT o ictus sense seqüeles importants)",
+      "dementia": "Demència",
+      "chronicPulmonaryDisease": "Malaltia pulmonar crònica (MPOC, asma)",
+      "connectiveTissueDisease": "Malaltia del teixit connectiu",
+      "pepticUlcerDisease": "Malaltia ulcerosa pèptica",
+      "mildLiverDisease": "Hepatopatia lleu (sense hipertensió portal)",
+      "diabetesUncomplicated": "Diabetis sense dany d'òrgan diana",
+      "hemiplegia": "Hemiplegia",
+      "moderateSevereRenalDisease": "Insuficiència renal crònica moderada-greu",
+      "diabetesWithEndOrganDamage": "Diabetis amb dany d'òrgan diana (retinopatia, nefropatia, neuropatia)",
+      "anyTumorPast5Years": "Qualsevol tumor sòlid en els últims 5 anys",
+      "leukemia": "Leucèmia",
+      "lymphoma": "Limfoma",
+      "moderateSevereLiverDisease": "Hepatopatia moderada-greu (hipertensió portal)",
+      "metastaticSolidTumor": "Tumor sòlid metastàtic",
+      "aids": "SIDA"
+    },
+    "patient": {
+      "intro": "Aquesta calculadora combina la teva edat i les teves malalties cròniques per donar una idea general del pronòstic a llarg termini. És una eina de planificació, no una sentència.",
+      "result_low": "La teva càrrega global de malaltia crònica és baixa; la supervivència esperada a 10 anys és alta.",
+      "result_moderate": "La teva càrrega global de malaltia crònica és moderada; cal tenir-ho en compte en valorar tractaments agressius.",
+      "result_high": "La teva càrrega global de malaltia crònica és alta; les decisions de tractament han d'equilibrar els beneficis amb els anys esperats.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Com afecta la meva puntuació de comorbiditat a les meves opcions de tractament?",
+        "Quina de les meves malalties podria optimitzar-se?",
+        "Com canvia això decisions compartides com el cribratge de càncer o la cirurgia?",
+        "Quina és la prioritat més important ara?"
+      ]
+    }
+  },
+  "pittBacteremia": {
+    "title": "Pitt Bacterièmia",
+    "subtitle": "Puntuació de gravetat per a bacterièmia.",
+    "fields": {
+      "temperatureBand": "Banda de temperatura",
+      "hypotension": "Hipotensió (vasopressors o TAS < 90 mmHg)",
+      "mechanicalVentilation": "Ventilació mecànica",
+      "cardiacArrestWithin24h": "Aturada cardíaca en les últimes 24 h (4 pts)",
+      "mentalStatus": "Estat mental"
+    },
+    "temperature": {
+      "normal": "36,1 – 38,9 °C",
+      "mild": "35,1 – 36,0 o 39,0 – 39,9 °C (1 pt)",
+      "severe": "≤ 35,0 o ≥ 40,0 °C (2 pts)"
+    },
+    "mental": {
+      "alert": "Alerta (0 pts)",
+      "disoriented": "Desorientat (1 pt)",
+      "stuporous": "Estuporós (2 pts)",
+      "comatose": "Comatós (4 pts)"
+    },
+    "patient": {
+      "intro": "Aquesta puntuació ajuda l'equip mèdic a estimar com de greu és ara mateix una infecció a la sang.",
+      "result_low": "La teva puntuació Pitt és baixa. El tractament antibiòtic estàndard sol ser apropiat.",
+      "result_moderate": "La teva puntuació Pitt és intermèdia. L'equip buscarà el focus de la infecció i consultarà infecciosos si cal.",
+      "result_high": "La teva puntuació Pitt és alta. L'equip intensificarà el tractament ràpidament: antibiòtics amplis, control del focus i ingrés a UCI.",
+      "ask_doctor": "Pregunta a l'equip mèdic:",
+      "questions": [
+        "Quin és el focus de la infecció?",
+        "Quins antibiòtics estic rebent i per què?",
+        "Quant de temps hauré d'estar a l'hospital?",
+        "Quins signes de millora o empitjorament monitoritzareu?"
+      ]
+    }
+  },
+  "norton": {
+    "title": "Escala de Norton",
+    "subtitle": "Escala vora el llit per al risc d'úlceres per pressió en pacients immòbils.",
+    "fields": {
+      "physicalCondition": "Condició física",
+      "mentalCondition": "Estat mental",
+      "activity": "Activitat",
+      "mobility": "Mobilitat",
+      "incontinence": "Incontinència"
+    },
+    "physicalCondition_options": {
+      "1": "1 — Molt dolenta",
+      "2": "2 — Dolenta",
+      "3": "3 — Regular",
+      "4": "4 — Bona"
+    },
+    "mentalCondition_options": {
+      "1": "1 — Estuporós",
+      "2": "2 — Confús",
+      "3": "3 — Apàtic",
+      "4": "4 — Alerta"
+    },
+    "activity_options": {
+      "1": "1 — Encamat",
+      "2": "2 — En cadira",
+      "3": "3 — Camina amb ajuda",
+      "4": "4 — Deambula"
+    },
+    "mobility_options": {
+      "1": "1 — Immòbil",
+      "2": "2 — Molt limitada",
+      "3": "3 — Una mica limitada",
+      "4": "4 — Completa"
+    },
+    "incontinence_options": {
+      "1": "1 — Urinària i fecal",
+      "2": "2 — Habitualment urinària",
+      "3": "3 — Ocasional",
+      "4": "4 — Continent"
+    },
+    "patient": {
+      "intro": "Aquesta escala estima el risc de desenvolupar una úlcera per pressió (úlcera de decúbit) en persones que passen molt de temps al llit o assegudes.",
+      "result_low": "El teu risc d'úlceres per pressió és baix; les cures estàndard i les revisions regulars solen ser suficients.",
+      "result_moderate": "El teu risc d'úlceres per pressió és moderat; l'equip planificarà canvis de postura i revisarà la pell freqüentment.",
+      "result_high": "El teu risc d'úlceres per pressió és alt; necessitaràs un matalàs especial i canvis freqüents de postura dia i nit.",
+      "ask_doctor": "Pregunta a l'equip:",
+      "questions": [
+        "Cada quant he de canviar de postura?",
+        "Quin tipus de matalàs és millor per a mi?",
+        "Quins signes de lesió cutània hem de vigilar?",
+        "Puc millorar la meva alimentació per cuidar la pell?"
+      ]
+    }
+  },
+  "braden": {
+    "title": "Escala de Braden",
+    "subtitle": "Escala estandarditzada per al risc d'úlceres per pressió a hospitalització aguda.",
+    "fields": {
+      "sensoryPerception": "Percepció sensorial",
+      "moisture": "Humitat",
+      "activity": "Activitat",
+      "mobility": "Mobilitat",
+      "nutrition": "Nutrició",
+      "frictionAndShear": "Fricció i cisallament"
+    },
+    "sensoryPerception_options": {
+      "1": "1 — Completament limitada",
+      "2": "2 — Molt limitada",
+      "3": "3 — Lleugerament limitada",
+      "4": "4 — Sense alteració"
+    },
+    "moisture_options": {
+      "1": "1 — Constantment humida",
+      "2": "2 — Sovint humida",
+      "3": "3 — Ocasionalment humida",
+      "4": "4 — Rarament humida"
+    },
+    "activity_options": {
+      "1": "1 — Encamat",
+      "2": "2 — En cadira",
+      "3": "3 — Camina ocasionalment",
+      "4": "4 — Camina freqüentment"
+    },
+    "mobility_options": {
+      "1": "1 — Completament immòbil",
+      "2": "2 — Molt limitada",
+      "3": "3 — Lleugerament limitada",
+      "4": "4 — Sense limitació"
+    },
+    "nutrition_options": {
+      "1": "1 — Molt pobra",
+      "2": "2 — Probablement inadequada",
+      "3": "3 — Adequada",
+      "4": "4 — Excel·lent"
+    },
+    "frictionAndShear_options": {
+      "1": "1 — Problema",
+      "2": "2 — Problema potencial",
+      "3": "3 — Sense problema aparent"
+    },
+    "patient": {
+      "intro": "Aquesta escala s'utilitza als hospitals per estimar el risc d'úlceres per pressió i decidir quines mesures preventives aplicar.",
+      "result_low": "El teu risc d'úlceres per pressió és baix i no necessites precaucions addicionals a les cures estàndard.",
+      "result_moderate": "El teu risc d'úlceres per pressió és moderat; l'equip planificarà una estratègia preventiva amb canvis de postura, control d'humitat i nutrició.",
+      "result_high": "El teu risc d'úlceres per pressió és alt; necessitaràs un matalàs especial, postura curosa i revisió nutricional.",
+      "ask_doctor": "Pregunta a l'equip:",
+      "questions": [
+        "Quin tipus de matalàs és millor per a mi?",
+        "Cada quant he de canviar de postura?",
+        "Com pot ajudar la meva alimentació a la pell?",
+        "Quins signes precoços de lesió cutània hem de vigilar?"
+      ]
+    }
   }
 }
