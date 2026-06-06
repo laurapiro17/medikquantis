@@ -140,7 +140,7 @@ describe("OPTIONS /api/v1/[calc] (CORS preflight)", () => {
 
 describe("GET /api/v1/openapi.json", () => {
   it("returns a valid OpenAPI 3.1 spec with 13 calc paths", () => {
-    const req = new Request("https://medcalc-cardio.vercel.app/api/v1/openapi.json");
+    const req = new Request("https://medikquantis.example/api/v1/openapi.json");
     const res = OpenApiGET(req);
     expect(res.status).toBe(200);
     return res.json().then((spec: { openapi: string; paths: Record<string, unknown> }) => {
