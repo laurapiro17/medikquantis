@@ -128,7 +128,9 @@
     "api_callout_body": "Las trece calculadoras se exponen como API REST con especificación OpenAPI 3.1 y Swagger UI en vivo. CORS abierto, sin autenticación, idioma intercambiable.",
     "api_callout_cta": "Abrir docs de la API",
     "search_placeholder": "Buscar calculadoras…",
-    "search_empty": "Ninguna calculadora coincide con tu búsqueda."
+    "search_empty": "Ninguna calculadora coincide con tu búsqueda.",
+    "popular_heading": "Populares",
+    "popular_subheading": "Ocho calculadoras de uso diario en distintas rotaciones."
   },
   "notfound": {
     "heading": "Página no encontrada",
@@ -1335,5 +1337,12 @@
         "¿Cómo se pueden prevenir nuevos episodios?"
       ]
     }
+  },
+  "sidebar": {
+    "label": "Navegación de calculadoras",
+    "popular_heading": "Populares",
+    "browse_by_specialty": "Explorar por especialidad",
+    "toggle_label": "Abrir menú de calculadoras",
+    "close_label": "Cerrar menú de calculadoras"
   }
 }

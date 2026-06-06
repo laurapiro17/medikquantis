@@ -3,10 +3,12 @@ import { NextIntlClientProvider } from "next-intl";
 import { setRequestLocale, getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Analytics } from "@vercel/analytics/next";
+import { listCalcs, POPULAR_CALC_IDS } from "@medcalc/calculators";
 import { routing, type Locale } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { LayoutShell } from "@/components/LayoutShell";
 
 function isSupportedLocale(value: string): value is Locale {
   return (routing.locales as readonly string[]).includes(value);
@@ -88,6 +90,73 @@ export default async function LocaleLayout({
   const messages = await getMessages();
   const t = await getTranslations({ locale, namespace: "site" });
 
+  const sidebarCalcs = listCalcs().map((c) => ({
+    id: c.id,
+    i18nKey: c.i18nKey,
+    specialty: c.specialty,
+    isPopular: (POPULAR_CALC_IDS as readonly string[]).includes(c.id),
+  }));
+
+  const header = (
+    <>
+      <Link
+        href="/"
+        className="font-semibold tracking-tight text-slate-900 transition hover:text-trust-600 dark:text-slate-100 dark:hover:text-neon"
+      >
+        {t("title")}
+      </Link>
+      <div className="flex items-center gap-2">
+        <LanguageSwitcher currentLocale={locale} />
+        <ThemeToggle />
+      </div>
+    </>
+  );
+
+  const disclaimer = (
+    <div className="border-b border-amber-200 bg-amber-50/80 px-4 py-2 text-center text-xs text-amber-900 dark:border-amber-400/20 dark:bg-amber-400/5 dark:text-amber-200">
+      {t("disclaimer_banner")}
+    </div>
+  );
+
+  const footer = (
+    <footer className="mt-auto border-t border-slate-200 bg-white/70 backdrop-blur-md dark:border-white/10 dark:bg-[#0c0f10]/60">
+      <div className="mx-auto flex max-w-4xl flex-col gap-4 px-4 py-6 text-sm text-slate-500 dark:text-slate-400 sm:flex-row sm:items-start sm:justify-between">
+        <div className="space-y-2">
+          <p>{t("tagline")}</p>
+          <p className="text-xs">
+            <span>{t("built_by")}</span> <span aria-hidden>·</span>{" "}
+            <span>{t("open_source")}</span>{" "}
+            <a
+              href="https://github.com/laurapiro17/medikquantis"
+              target="_blank"
+              rel="noreferrer"
+              className="text-trust-600 transition hover:underline dark:text-neon"
+            >
+              GitHub
+            </a>
+          </p>
+        </div>
+        <nav className="flex flex-wrap gap-x-4 gap-y-1 text-xs">
+          <Link href="/compare" className="hover:text-trust-600 dark:hover:text-neon">
+            {t("nav_compare")}
+          </Link>
+          <a href="/api/v1/docs" className="hover:text-trust-600 dark:hover:text-neon">
+            {t("nav_api")}
+          </a>
+          <Link href="/about" className="hover:text-trust-600 dark:hover:text-neon">
+            {t("nav_about")}
+          </Link>
+          <Link href="/privacy" className="hover:text-trust-600 dark:hover:text-neon">
+            {t("nav_privacy")}
+          </Link>
+          <Link href="/terms" className="hover:text-trust-600 dark:hover:text-neon">
+            {t("nav_terms")}
+          </Link>
+        </nav>
+      </div>
+    </footer>
+  );
+
   return (
     <html lang={locale}>
       <head>
@@ -95,76 +164,15 @@ export default async function LocaleLayout({
       </head>
       <body className="font-sans">
         <NextIntlClientProvider messages={messages}>
-          <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur-md dark:border-white/10 dark:bg-[#111415]/60">
-            <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-4">
-              <Link
-                href="/"
-                className="font-semibold tracking-tight text-slate-900 transition hover:text-trust-600 dark:text-slate-100 dark:hover:text-neon"
-              >
-                {t("title")}
-              </Link>
-              <div className="flex items-center gap-2">
-                <LanguageSwitcher currentLocale={locale} />
-                <ThemeToggle />
-              </div>
-            </div>
-          </header>
-          <div className="border-b border-amber-200 bg-amber-50/80 px-4 py-2 text-center text-xs text-amber-900 dark:border-amber-400/20 dark:bg-amber-400/5 dark:text-amber-200">
-            {t("disclaimer_banner")}
-          </div>
-          <main className="mx-auto max-w-4xl px-4 py-10">{children}</main>
-          <footer className="mt-auto border-t border-slate-200 bg-white/70 backdrop-blur-md dark:border-white/10 dark:bg-[#0c0f10]/60">
-            <div className="mx-auto flex max-w-4xl flex-col gap-4 px-4 py-6 text-sm text-slate-500 dark:text-slate-400 sm:flex-row sm:items-start sm:justify-between">
-              <div className="space-y-2">
-                <p>{t("tagline")}</p>
-                <p className="text-xs">
-                  <span>{t("built_by")}</span>{" "}
-                  <span aria-hidden>·</span>{" "}
-                  <span>{t("open_source")}</span>{" "}
-                  <a
-                    href="https://github.com/laurapiro17/medikquantis"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-trust-600 transition hover:underline dark:text-neon"
-                  >
-                    GitHub
-                  </a>
-                </p>
-              </div>
-              <nav className="flex flex-wrap gap-x-4 gap-y-1 text-xs">
-                <Link
-                  href="/compare"
-                  className="hover:text-trust-600 dark:hover:text-neon"
-                >
-                  {t("nav_compare")}
-                </Link>
-                <a
-                  href="/api/v1/docs"
-                  className="hover:text-trust-600 dark:hover:text-neon"
-                >
-                  {t("nav_api")}
-                </a>
-                <Link
-                  href="/about"
-                  className="hover:text-trust-600 dark:hover:text-neon"
-                >
-                  {t("nav_about")}
-                </Link>
-                <Link
-                  href="/privacy"
-                  className="hover:text-trust-600 dark:hover:text-neon"
-                >
-                  {t("nav_privacy")}
-                </Link>
-                <Link
-                  href="/terms"
-                  className="hover:text-trust-600 dark:hover:text-neon"
-                >
-                  {t("nav_terms")}
-                </Link>
-              </nav>
-            </div>
-          </footer>
+          <LayoutShell
+            calcs={sidebarCalcs}
+            popularIds={POPULAR_CALC_IDS}
+            header={header}
+            disclaimer={disclaimer}
+            footer={footer}
+          >
+            {children}
+          </LayoutShell>
         </NextIntlClientProvider>
         <Analytics />
       </body>

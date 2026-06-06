@@ -1,5 +1,5 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { listCalcs } from "@medcalc/calculators";
+import { getCalc, listCalcs, POPULAR_CALC_IDS } from "@medcalc/calculators";
 import { Link } from "@/i18n/navigation";
 import { Catalog } from "@/components/Catalog";
 
@@ -123,6 +123,42 @@ export default async function HomePage({
         >
           {t("home.api_callout_cta")} →
         </a>
+      </section>
+
+      <section id="popular" className="space-y-6 scroll-mt-24">
+        <div className="flex items-baseline justify-between gap-3">
+          <div>
+            <h2 className="flex items-center gap-2 text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-50">
+              <span aria-hidden className="text-trust-600 dark:text-neon">★</span>
+              {t("home.popular_heading")}
+            </h2>
+            <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
+              {t("home.popular_subheading")}
+            </p>
+          </div>
+        </div>
+
+        <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {POPULAR_CALC_IDS.map((id) => {
+            const calc = getCalc(id);
+            if (!calc) return null;
+            return (
+              <li key={id}>
+                <Link
+                  href={`/${id}`}
+                  className="glass-panel block h-full p-4 transition hover:border-trust-500 hover:shadow-md dark:hover:border-neon/50 dark:hover:shadow-neon-soft"
+                >
+                  <h3 className="font-mono text-[10px] uppercase tracking-widest text-trust-600 dark:text-neon">
+                    {t(`${calc.i18nKey}.title` as "cha2ds2vasc.title")}
+                  </h3>
+                  <p className="mt-2 text-sm text-slate-900 dark:text-slate-100">
+                    {t(`${calc.i18nKey}.subtitle` as "cha2ds2vasc.subtitle")}
+                  </p>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
       </section>
 
       <section id="catalog" className="space-y-6 scroll-mt-24">

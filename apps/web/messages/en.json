@@ -128,7 +128,9 @@
     "api_callout_body": "All thirteen calculators are exposed as a REST API with an OpenAPI 3.1 spec and live Swagger UI. CORS open, no auth, language switchable.",
     "api_callout_cta": "Open API docs",
     "search_placeholder": "Search calculators…",
-    "search_empty": "No calculators match your search."
+    "search_empty": "No calculators match your search.",
+    "popular_heading": "Popular",
+    "popular_subheading": "Eight calculators used daily across rotations."
   },
   "notfound": {
     "heading": "Page not found",
@@ -1335,5 +1337,12 @@
         "How can future episodes be prevented?"
       ]
     }
+  },
+  "sidebar": {
+    "label": "Calculator navigation",
+    "popular_heading": "Popular",
+    "browse_by_specialty": "Browse by specialty",
+    "toggle_label": "Open calculator menu",
+    "close_label": "Close calculator menu"
   }
 }
