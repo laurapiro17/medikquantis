@@ -1,7 +1,7 @@
 import { z } from "zod";
 import type { CalcDefinition, InterpretResult } from "./types";
 
-// Anion gap (Emmett M, Narins RG 1977, PMID 401755). Difference between
+// Anion gap (Emmett M, Narins RG 1977, PMID 401925). Difference between
 // measured cations and anions:
 //   AG = Na − (Cl + HCO3)
 // Normal reference (modern assays) ≈ 6–12 mEq/L. An elevated AG suggests
@@ -11,7 +11,7 @@ import type { CalcDefinition, InterpretResult } from "./types";
 //
 // Albumin is the dominant unmeasured anion; severe hypoalbuminaemia
 // (frequent in ICU) lowers the AG independent of acidaemia. Optional
-// Figge 1998 correction (PMID 9620140) shifts AG by 2.5 × (4 − albumin
+// Figge 1998 correction (PMID 9824071) shifts AG by 2.5 × (4 − albumin
 // g/dL) to keep the reference range comparable.
 
 export const AnionGapInputs = z.object({
@@ -79,12 +79,12 @@ export const calculator: CalcDefinition<typeof AnionGapInputs> = {
   i18nKey: "anionGap",
   references: [
     {
-      pmid: "401755",
+      pmid: "401925",
       citation:
         "Emmett M, Narins RG. Clinical use of the anion gap. Medicine (Baltimore). 1977;56(1):38-54.",
     },
     {
-      pmid: "9620140",
+      pmid: "9824071",
       citation:
         "Figge J, Jabor A, Kazda A, Fencl V. Anion gap and hypoalbuminemia. Crit Care Med. 1998;26(11):1807-1810.",
     },
