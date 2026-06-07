@@ -1634,5 +1634,64 @@
         "Quins signes de re-sagnat he de vigilar a casa?"
       ]
     }
+  },
+  "score2": {
+    "title": "SCORE2 / SCORE2-OP",
+    "subtitle": "Risc cardiovascular a 10 anys (ESC 2021, regió de baix risc).",
+    "region_note": "Regió de baix risc (Espanya, nord i oest d'Europa). Per regions de més risc, adapteu les constants de recalibració al codi font.",
+    "result_label": "Risc CV a 10 anys",
+    "fields": {
+      "sex": "Sexe",
+      "age": "Edat (anys)",
+      "smoker": "Fumador actual",
+      "systolicBpMmHg": "TAS (mmHg)",
+      "totalCholesterolMmolL": "Colesterol total (mmol/L)",
+      "hdlMmolL": "Colesterol HDL (mmol/L)"
+    },
+    "patient": {
+      "intro": "SCORE2 estima el teu risc d'infart o ictus en els pròxims 10 anys utilitzant només edat, pressió arterial, colesterol i tabaquisme.",
+      "result_low": "Risc cardiovascular baix a 10 anys. Mantén hàbits saludables i revisa'l periòdicament.",
+      "result_moderate": "Risc cardiovascular moderat a 10 anys. Aborda els factors modificables (tabaquisme, tensió, colesterol) — petits canvis ajuden.",
+      "result_high": "Risc cardiovascular alt a 10 anys. El teu metge probablement tractarà tensió i colesterol i pot plantejar una estatina.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Quin és el factor de risc més important per a mi?",
+        "He d'iniciar una estatina?",
+        "Quines xifres de tensió arterial he de perseguir?",
+        "Quan hauríem de reavaluar?"
+      ]
+    }
+  },
+  "ascvd": {
+    "title": "ASCVD (Pooled Cohort)",
+    "subtitle": "Risc aterosclerotic CV a 10 anys (2013 ACC/AHA).",
+    "fields": {
+      "sex": "Sexe",
+      "race": "Raça",
+      "age": "Edat (anys)",
+      "totalCholesterolMgDl": "Colesterol total (mg/dL)",
+      "hdlMgDl": "Colesterol HDL (mg/dL)",
+      "systolicBpMmHg": "TAS (mmHg)",
+      "treatedForHypertension": "En tractament antihipertensiu",
+      "diabetes": "Diabetis",
+      "smoker": "Fumador actual"
+    },
+    "race_options": {
+      "white_or_other": "Blanca o altres",
+      "african_american": "Afroamericana"
+    },
+    "patient": {
+      "intro": "Aquesta puntuació estima el teu risc d'infart, malaltia coronària mortal o ictus en els pròxims 10 anys.",
+      "result_low": "Risc ASCVD baix. Sol bastar amb canvis d'estil de vida; l'estatina no s'indica de rutina.",
+      "result_moderate": "Risc ASCVD intermedi. Pot plantejar-se una estatina d'intensitat moderada a alta.",
+      "result_high": "Risc ASCVD alt. Sol indicar-se estatina d'alta intensitat; també control estricte de la tensió i estil de vida.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Una estatina reduiria significativament el meu risc?",
+        "Quin és el meu objectiu d'LDL?",
+        "Quins canvis d'estil de vida són més eficaços?",
+        "Cada quant revisar el risc?"
+      ]
+    }
   }
 }

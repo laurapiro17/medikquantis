@@ -43,6 +43,8 @@ import { calculator as caprini } from "./caprini";
 import { calculator as wellsDvt } from "./wells-dvt";
 import { calculator as childPugh } from "./child-pugh";
 import { calculator as glasgowBlatchford } from "./glasgow-blatchford";
+import { calculator as score2 } from "./score2";
+import { calculator as ascvd } from "./ascvd";
 
 // `any` here is intentional: CalcDefinition is contravariant in its Schema
 // generic (the formula/interpret functions accept inputs typed by Schema),
@@ -95,6 +97,8 @@ const registry: Record<string, AnyCalc> = {
   "wells-dvt": wellsDvt,
   "child-pugh": childPugh,
   "glasgow-blatchford": glasgowBlatchford,
+  score2,
+  ascvd,
 };
 
 export function getCalc(id: string): AnyCalc | undefined {

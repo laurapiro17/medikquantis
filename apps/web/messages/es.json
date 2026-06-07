@@ -1634,5 +1634,64 @@
         "¿Qué signos de re-sangrado debo vigilar en casa?"
       ]
     }
+  },
+  "score2": {
+    "title": "SCORE2 / SCORE2-OP",
+    "subtitle": "Riesgo cardiovascular a 10 años (ESC 2021, región de bajo riesgo).",
+    "region_note": "Región de bajo riesgo (España, norte y oeste de Europa). Para regiones de mayor riesgo, adapte las constantes de recalibración en el código fuente.",
+    "result_label": "Riesgo CV a 10 años",
+    "fields": {
+      "sex": "Sexo",
+      "age": "Edad (años)",
+      "smoker": "Fumador actual",
+      "systolicBpMmHg": "TAS (mmHg)",
+      "totalCholesterolMmolL": "Colesterol total (mmol/L)",
+      "hdlMmolL": "Colesterol HDL (mmol/L)"
+    },
+    "patient": {
+      "intro": "SCORE2 estima tu riesgo de infarto o ictus en los próximos 10 años usando solo edad, presión arterial, colesterol y tabaquismo.",
+      "result_low": "Riesgo cardiovascular bajo a 10 años. Mantén hábitos saludables y revísalo periódicamente.",
+      "result_moderate": "Riesgo cardiovascular moderado a 10 años. Aborda los factores modificables (tabaquismo, tensión, colesterol) — pequeños cambios ayudan.",
+      "result_high": "Riesgo cardiovascular alto a 10 años. Tu médico probablemente tratará tensión y colesterol y puede plantear una estatina.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Cuál es el factor de riesgo más importante para mí?",
+        "¿Debo iniciar una estatina?",
+        "¿Qué cifras de tensión arterial debo perseguir?",
+        "¿Cuándo deberíamos reevaluar?"
+      ]
+    }
+  },
+  "ascvd": {
+    "title": "ASCVD (Pooled Cohort)",
+    "subtitle": "Riesgo aterosclerótico CV a 10 años (2013 ACC/AHA).",
+    "fields": {
+      "sex": "Sexo",
+      "race": "Raza",
+      "age": "Edad (años)",
+      "totalCholesterolMgDl": "Colesterol total (mg/dL)",
+      "hdlMgDl": "Colesterol HDL (mg/dL)",
+      "systolicBpMmHg": "TAS (mmHg)",
+      "treatedForHypertension": "En tratamiento antihipertensivo",
+      "diabetes": "Diabetes",
+      "smoker": "Fumador actual"
+    },
+    "race_options": {
+      "white_or_other": "Blanca u otra",
+      "african_american": "Afroamericana"
+    },
+    "patient": {
+      "intro": "Esta puntuación estima tu riesgo de infarto, enfermedad coronaria mortal o ictus en los próximos 10 años.",
+      "result_low": "Riesgo ASCVD bajo. Suele bastar con cambios de estilo de vida; la estatina no se indica de rutina.",
+      "result_moderate": "Riesgo ASCVD intermedio. Puede plantearse una estatina de intensidad moderada a alta.",
+      "result_high": "Riesgo ASCVD alto. Suele indicarse estatina de alta intensidad; también control estricto de la tensión y estilo de vida.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Una estatina reduciría significativamente mi riesgo?",
+        "¿Cuál es mi objetivo de LDL?",
+        "¿Qué cambios de estilo de vida son más eficaces?",
+        "¿Cada cuánto revisar el riesgo?"
+      ]
+    }
   }
 }

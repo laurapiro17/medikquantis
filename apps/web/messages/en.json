@@ -1634,5 +1634,64 @@
         "What signs of re-bleeding should I watch for at home?"
       ]
     }
+  },
+  "score2": {
+    "title": "SCORE2 / SCORE2-OP",
+    "subtitle": "ESC 2021 10-year fatal + non-fatal CV event risk (low-risk region).",
+    "region_note": "Low-risk region (Spain, most northern/western Europe). For higher-risk regions adapt the recalibration constants in the source.",
+    "result_label": "10-year CV risk",
+    "fields": {
+      "sex": "Sex",
+      "age": "Age (years)",
+      "smoker": "Current smoker",
+      "systolicBpMmHg": "Systolic BP (mmHg)",
+      "totalCholesterolMmolL": "Total cholesterol (mmol/L)",
+      "hdlMmolL": "HDL cholesterol (mmol/L)"
+    },
+    "patient": {
+      "intro": "SCORE2 estimates your risk of a heart attack or stroke over the next 10 years using only age, blood pressure, cholesterol and smoking.",
+      "result_low": "Low 10-year cardiovascular risk. Keep up healthy habits and check again periodically.",
+      "result_moderate": "Moderate 10-year cardiovascular risk. Address modifiable risk factors (smoking, blood pressure, cholesterol) — even small changes help.",
+      "result_high": "High 10-year cardiovascular risk. Your doctor will likely treat blood pressure and cholesterol, and may discuss starting a statin.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "What is the most important risk factor for me to change?",
+        "Should I start a statin?",
+        "How tight should my blood pressure be?",
+        "When should we reassess?"
+      ]
+    }
+  },
+  "ascvd": {
+    "title": "ASCVD (Pooled Cohort)",
+    "subtitle": "2013 ACC/AHA 10-year atherosclerotic cardiovascular disease risk.",
+    "fields": {
+      "sex": "Sex",
+      "race": "Race",
+      "age": "Age (years)",
+      "totalCholesterolMgDl": "Total cholesterol (mg/dL)",
+      "hdlMgDl": "HDL cholesterol (mg/dL)",
+      "systolicBpMmHg": "Systolic BP (mmHg)",
+      "treatedForHypertension": "On antihypertensive therapy",
+      "diabetes": "Diabetes",
+      "smoker": "Current smoker"
+    },
+    "race_options": {
+      "white_or_other": "White or other",
+      "african_american": "African-American"
+    },
+    "patient": {
+      "intro": "This score estimates your risk of a heart attack, fatal coronary disease or stroke over the next 10 years.",
+      "result_low": "Low ASCVD risk. Lifestyle alone is usually enough; statin not routinely indicated.",
+      "result_moderate": "Borderline or intermediate ASCVD risk. A moderate-to-high-intensity statin may be recommended.",
+      "result_high": "High ASCVD risk. A high-intensity statin is generally indicated; tight BP and lifestyle changes too.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "Would a statin meaningfully reduce my risk?",
+        "What is my LDL-C target?",
+        "Which lifestyle changes will help the most?",
+        "How often should we recheck?"
+      ]
+    }
   }
 }

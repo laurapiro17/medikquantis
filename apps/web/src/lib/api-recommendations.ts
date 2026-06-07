@@ -760,6 +760,46 @@ const recommendations: Record<string, Translations> = {
     ca: "Risc alt d'intervenció. Reanimeu i sol·liciteu endoscòpia urgent.",
   },
 
+
+  // SCORE2 / SCORE2-OP
+  SCORE2_LOW: {
+    en: "Low 10-year CV risk. Reinforce healthy lifestyle and reassess periodically.",
+    es: "Riesgo CV a 10 años bajo. Refuerce hábitos saludables y reevalúe periódicamente.",
+    ca: "Risc CV a 10 anys baix. Reforceu hàbits saludables i reavalueu periòdicament.",
+  },
+  SCORE2_MODERATE: {
+    en: "Moderate 10-year CV risk. Lifestyle intervention plus consideration of risk-factor treatment if risk modifiers present.",
+    es: "Riesgo CV a 10 años moderado. Intervención de estilo de vida y considerar tratamiento de factores de riesgo si hay modificadores.",
+    ca: "Risc CV a 10 anys moderat. Intervenció d'estil de vida i considerar tractament de factors de risc si hi ha modificadors.",
+  },
+  SCORE2_HIGH: {
+    en: "High to very high 10-year CV risk. Optimise blood pressure and lipid management; statin therapy generally indicated.",
+    es: "Riesgo CV a 10 años alto o muy alto. Optimice tensión y lípidos; la estatina suele estar indicada.",
+    ca: "Risc CV a 10 anys alt o molt alt. Optimitzeu tensió i lípids; l'estatina sol estar indicada.",
+  },
+
+  // ASCVD
+  ASCVD_LOW: {
+    en: "Low 10-year ASCVD risk. Lifestyle counselling; statin not routinely indicated.",
+    es: "Riesgo ASCVD a 10 años bajo. Consejo de estilo de vida; la estatina no se indica de rutina.",
+    ca: "Risc ASCVD a 10 anys baix. Consell d'estil de vida; l'estatina no s'indica de rutina.",
+  },
+  ASCVD_BORDERLINE: {
+    en: "Borderline risk (5-7.4%). Discuss risk-enhancing factors; consider moderate-intensity statin in selected patients.",
+    es: "Riesgo limítrofe (5-7,4 %). Comente factores potenciadores; considere estatina de intensidad moderada en pacientes seleccionados.",
+    ca: "Risc límit (5-7,4 %). Comenteu factors potenciadors; considereu estatina d'intensitat moderada en pacients seleccionats.",
+  },
+  ASCVD_INTERMEDIATE: {
+    en: "Intermediate risk (7.5-19.9%). Moderate- to high-intensity statin generally indicated alongside lifestyle changes.",
+    es: "Riesgo intermedio (7,5-19,9 %). Estatina de intensidad moderada-alta suele estar indicada junto a cambios de estilo de vida.",
+    ca: "Risc intermedi (7,5-19,9 %). Estatina d'intensitat moderada-alta sol estar indicada juntament amb canvis d'estil de vida.",
+  },
+  ASCVD_HIGH: {
+    en: "High risk (≥ 20%). High-intensity statin indicated; consider non-statin add-ons to reach LDL-C goal.",
+    es: "Riesgo alto (≥ 20 %). Estatina de alta intensidad indicada; considere asociar otros hipolipemiantes para alcanzar el objetivo de LDL-C.",
+    ca: "Risc alt (≥ 20 %). Estatina d'alta intensitat indicada; considereu associar altres hipolipidemiants per assolir l'objectiu de LDL-C.",
+  },
+
 };
 
 /**

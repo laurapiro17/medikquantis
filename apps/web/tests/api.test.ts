@@ -28,8 +28,8 @@ describe("GET /api/v1", () => {
   it("returns the registry of 13 calculators", async () => {
     const res = IndexGET();
     const body = await res.json();
-    expect(body.calculatorCount).toBe(43);
-    expect(body.calculators).toHaveLength(43);
+    expect(body.calculatorCount).toBe(45);
+    expect(body.calculators).toHaveLength(45);
     expect(body.openapi).toBe("/api/v1/openapi.json");
     expect(res.headers.get("access-control-allow-origin")).toBe("*");
   });
@@ -235,7 +235,7 @@ describe("GET /api/v1/openapi.json", () => {
       const calcPaths = Object.keys(spec.paths).filter(
         (p) => p.startsWith("/api/v1/") && !indexPaths.has(p),
       );
-      expect(calcPaths).toHaveLength(43);
+      expect(calcPaths).toHaveLength(45);
     });
   });
 });

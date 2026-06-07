@@ -48,3 +48,5 @@ export * as caprini from "./caprini";
 export * as wellsDvt from "./wells-dvt";
 export * as childPugh from "./child-pugh";
 export * as glasgowBlatchford from "./glasgow-blatchford";
+export * as score2 from "./score2";
+export * as ascvd from "./ascvd";
