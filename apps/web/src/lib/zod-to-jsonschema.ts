@@ -4,6 +4,7 @@ import {
   ZodEnum,
   ZodNumber,
   ZodObject,
+  ZodOptional,
   type ZodTypeAny,
 } from "zod";
 
@@ -45,6 +46,12 @@ export function zodObjectToJsonSchema(schema: ZodTypeAny): JsonSchemaObject {
 }
 
 function fieldToJsonSchema(field: ZodTypeAny): JsonSchemaProperty {
+  // Unwrap optional fields — the `required` list at the parent level
+  // already records whether the field is mandatory; the JSON Schema for
+  // the value itself is just the inner type.
+  if (field instanceof ZodOptional) {
+    return fieldToJsonSchema((field as z.ZodOptional<ZodTypeAny>).unwrap());
+  }
   if (field instanceof ZodNumber) {
     const checks = (field as z.ZodNumber)._def.checks ?? [];
     const isInt = checks.some((c) => c.kind === "int");
