@@ -43,3 +43,8 @@ export * as dukeEndocarditis from "./duke-endocarditis";
 export * as hinchey from "./hinchey";
 export * as anionGap from "./anion-gap";
 export * as fena from "./fena";
+export * as asaPs from "./asa-ps";
+export * as caprini from "./caprini";
+export * as wellsDvt from "./wells-dvt";
+export * as childPugh from "./child-pugh";
+export * as glasgowBlatchford from "./glasgow-blatchford";

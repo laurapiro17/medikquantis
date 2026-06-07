@@ -32,7 +32,8 @@
     "intensive_care": "Intensive care",
     "pharmacology": "Pharmacology",
     "urology": "Urology",
-    "geriatrics": "Geriatrics"
+    "geriatrics": "Geriatrics",
+    "anesthesiology": "Anesthesiology"
   },
   "about": {
     "heading": "About MedikQuantis",
@@ -1442,5 +1443,196 @@
     "delete": "Delete",
     "confirm_delete": "Delete this suggestion?",
     "invalid_key": "Invalid key."
+  },
+  "asaPs": {
+    "title": "ASA Physical Status",
+    "subtitle": "American Society of Anesthesiologists pre-operative classification (Hurwitz 2017 update).",
+    "question": "Pick the patient's ASA class:",
+    "fields": {
+      "emergency": "Emergency surgery (adds \"E\" suffix)"
+    },
+    "classes": {
+      "I": "I — Normal healthy patient",
+      "II": "II — Mild systemic disease",
+      "III": "III — Severe systemic disease (substantive functional limitation)",
+      "IV": "IV — Severe systemic disease that is a constant threat to life",
+      "V": "V — Moribund patient not expected to survive without operation",
+      "VI": "VI — Declared brain-dead patient (organ donor)"
+    },
+    "patient": {
+      "intro": "The ASA Physical Status describes how healthy a patient is before surgery. It helps the team plan the anaesthetic and prepare for any complications.",
+      "result_low": "ASA I-II: routine pre-operative work-up; no specific anaesthetic concerns beyond the usual.",
+      "result_moderate": "ASA III: the team will optimise your medical conditions and may involve other specialists before surgery.",
+      "result_high": "ASA IV-VI: high-risk anaesthetic. Multidisciplinary planning and an ICU bed are typically arranged.",
+      "ask_doctor": "Ask the anaesthetist:",
+      "questions": [
+        "How does my ASA class affect my anaesthetic plan?",
+        "What can I do to optimise my health before surgery?",
+        "Will I need an intensive care bed after the operation?",
+        "What are the most likely complications for my ASA class?"
+      ]
+    }
+  },
+  "caprini": {
+    "title": "Caprini",
+    "subtitle": "Venous thromboembolism risk in surgical and medical inpatients (Caprini 2010).",
+    "group_one_point": "1-point items",
+    "group_two_points": "2-point items",
+    "group_three_points": "3-point items",
+    "group_five_points": "5-point items",
+    "fields": {
+      "age41To60": "Age 41-60",
+      "minorSurgery": "Minor surgery planned",
+      "bmiOver25": "BMI > 25",
+      "swollenLegs": "Swollen legs",
+      "varicoseVeins": "Varicose veins",
+      "sepsisLast1Month": "Sepsis within last 1 month",
+      "seriousLungDisease": "Serious lung disease (incl. pneumonia)",
+      "oralContraceptivesOrHrt": "Oral contraceptives or HRT",
+      "pregnancyOrPostpartum": "Pregnancy or postpartum < 1 month",
+      "historyOfUnexplainedStillbirth": "History of unexplained stillbirth",
+      "copd": "COPD",
+      "amiLast1Month": "Acute MI within last 1 month",
+      "chf": "Congestive heart failure (decompensated)",
+      "inflammatoryBowelDisease": "Inflammatory bowel disease",
+      "medicalPatientOnBedrest": "Medical patient on bed rest",
+      "age61To74": "Age 61-74",
+      "arthroscopicSurgery": "Arthroscopic surgery",
+      "majorOpenSurgeryOver45Min": "Major open surgery > 45 min",
+      "laparoscopicSurgeryOver45Min": "Laparoscopic surgery > 45 min",
+      "malignancy": "Malignancy (present or previous)",
+      "confinedToBedOver72h": "Confined to bed > 72 h",
+      "immobilizingPlasterCast": "Immobilising plaster cast",
+      "centralVenousAccess": "Central venous access",
+      "ageOver75": "Age ≥ 75",
+      "historyDvtOrPe": "History of DVT or PE",
+      "familyHistoryOfThrombosis": "Family history of thrombosis",
+      "thrombophilia": "Congenital or acquired thrombophilia",
+      "hit": "Heparin-induced thrombocytopenia",
+      "strokeLast1Month": "Stroke within last 1 month",
+      "electiveMajorLowerExtremityArthroplasty": "Elective major lower extremity arthroplasty",
+      "hipPelvisOrLegFracture": "Hip, pelvis or leg fracture",
+      "acuteSpinalCordInjuryLast1Month": "Acute spinal cord injury within last 1 month",
+      "multipleTraumaLast1Month": "Multiple trauma within last 1 month"
+    },
+    "patient": {
+      "intro": "Caprini estimates your risk of forming blood clots after surgery or during hospital stay, so the team can choose the right preventive measures.",
+      "result_low": "Your VTE risk is low. Early walking and getting up may be enough.",
+      "result_moderate": "Your VTE risk is moderate. The team usually adds a small daily injection or compression devices.",
+      "result_high": "Your VTE risk is high. The team will combine medication with mechanical prevention and may extend treatment after discharge.",
+      "ask_doctor": "Ask the team:",
+      "questions": [
+        "What prevention is best for me — pills, injections or compression?",
+        "How long should I keep using the prevention after discharge?",
+        "Are there signs of clots I should watch for at home?",
+        "Will the prevention interact with my other medications?"
+      ]
+    }
+  },
+  "wellsDvt": {
+    "title": "Wells DVT",
+    "subtitle": "Pre-test probability of deep-vein thrombosis (Wells 2003).",
+    "fields": {
+      "activeCancer": "Active cancer (treatment within last 6 months or palliative)",
+      "bedridden3DaysOrSurgery12Weeks": "Bedridden ≥ 3 days or major surgery within 12 weeks",
+      "paralysisOrPlasterImmobilisation": "Paralysis, paresis or plaster immobilisation of the lower extremity",
+      "localisedTendernessAlongVeins": "Localised tenderness along the deep venous system",
+      "entireLegSwollen": "Entire leg swollen",
+      "calfSwellingOver3cm": "Calf swelling > 3 cm vs asymptomatic leg",
+      "pittingOedemaSymptomaticLeg": "Pitting oedema confined to the symptomatic leg",
+      "collateralSuperficialVeins": "Collateral superficial veins (non-varicose)",
+      "previouslyDocumentedDvt": "Previously documented DVT",
+      "alternativeDiagnosisAtLeastAsLikely": "Alternative diagnosis at least as likely (−2)"
+    },
+    "patient": {
+      "intro": "This score helps decide whether your leg symptoms could be a deep-vein thrombosis (a blood clot in a vein).",
+      "result_low": "DVT is unlikely. A blood test (D-dimer) is usually enough to rule it out.",
+      "result_high": "DVT is more likely. An ultrasound of the leg veins will be arranged; treatment may start before the result.",
+      "ask_doctor": "Ask the doctor:",
+      "questions": [
+        "How quickly will the ultrasound be done?",
+        "Are there reasons to start treatment empirically?",
+        "What signs of pulmonary embolism should I watch for?",
+        "How long will I need treatment if DVT is confirmed?"
+      ]
+    }
+  },
+  "childPugh": {
+    "title": "Child-Pugh",
+    "subtitle": "Cirrhosis severity and 1-year survival (Pugh 1973).",
+    "result_label": "Score",
+    "fields": {
+      "bilirubin": "Total bilirubin",
+      "albumin": "Serum albumin",
+      "inr": "INR (or prothrombin prolongation)",
+      "ascites": "Ascites",
+      "encephalopathy": "Hepatic encephalopathy"
+    },
+    "bilirubin_options": {
+      "1": "1 — < 2 mg/dL (< 34 µmol/L)",
+      "2": "2 — 2-3 mg/dL",
+      "3": "3 — > 3 mg/dL"
+    },
+    "albumin_options": {
+      "1": "1 — > 3.5 g/dL",
+      "2": "2 — 2.8-3.5 g/dL",
+      "3": "3 — < 2.8 g/dL"
+    },
+    "inr_options": {
+      "1": "1 — < 1.7",
+      "2": "2 — 1.7-2.3",
+      "3": "3 — > 2.3"
+    },
+    "ascites_options": {
+      "1": "1 — None",
+      "2": "2 — Mild / diuretic-controlled",
+      "3": "3 — Refractory"
+    },
+    "encephalopathy_options": {
+      "1": "1 — None",
+      "2": "2 — Grade I-II (or medically controlled)",
+      "3": "3 — Grade III-IV"
+    },
+    "patient": {
+      "intro": "The Child-Pugh score summarises how well your liver is working and helps plan treatment and follow-up.",
+      "result_low": "Class A (well-compensated cirrhosis). Long-term outlook is good and most operations are safe.",
+      "result_moderate": "Class B (some compromise). The team will assess transplant candidacy and avoid elective surgery if possible.",
+      "result_high": "Class C (decompensated). Transplant evaluation is the priority; elective surgery is typically avoided.",
+      "ask_doctor": "Ask your hepatologist:",
+      "questions": [
+        "What does my score mean for transplant assessment?",
+        "Which medications should I avoid?",
+        "What follow-up tests will I need?",
+        "Are there lifestyle changes that can improve my score?"
+      ]
+    }
+  },
+  "glasgowBlatchford": {
+    "title": "Glasgow-Blatchford",
+    "subtitle": "Pre-endoscopy triage in upper-GI bleeding (Blatchford 2000).",
+    "fields": {
+      "sex": "Sex",
+      "bunMgDl": "Blood urea nitrogen (mg/dL)",
+      "hemoglobinGDl": "Haemoglobin (g/dL)",
+      "systolicBpMmHg": "Systolic blood pressure (mmHg)",
+      "heartRateOver100": "Heart rate ≥ 100/min",
+      "melaena": "Melaena present",
+      "syncope": "Recent syncope",
+      "hepaticDisease": "Known hepatic disease",
+      "cardiacFailure": "Heart failure"
+    },
+    "patient": {
+      "intro": "This score helps decide whether a person with bleeding from the stomach or upper bowel can safely be managed as an outpatient.",
+      "result_low": "Very low risk. With prompt outpatient endoscopy this is usually managed safely from home.",
+      "result_moderate": "Moderate risk. You will be admitted briefly and have an endoscopy within 24 hours.",
+      "result_high": "High risk. Resuscitation will be started and an endoscopy arranged urgently.",
+      "ask_doctor": "Ask the team:",
+      "questions": [
+        "What is causing the bleeding?",
+        "Will I need a blood transfusion?",
+        "When will the endoscopy be done?",
+        "What signs of re-bleeding should I watch for at home?"
+      ]
+    }
   }
 }

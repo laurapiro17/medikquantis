@@ -659,6 +659,107 @@ const recommendations: Record<string, Translations> = {
     ca: "FENa > 2 % suggereix IRA intrínseca (el més habitual NTA). Cerqueu insult isquèmic o nefrotòxic.",
   },
 
+
+  // ASA Physical Status
+  ASA_I: {
+    en: "ASA I: healthy patient. Routine anaesthetic risk; standard preoperative work-up.",
+    es: "ASA I: paciente sano. Riesgo anestésico habitual; estudio preoperatorio estándar.",
+    ca: "ASA I: pacient sa. Risc anestèsic habitual; estudi preoperatori estàndard.",
+  },
+  ASA_II: {
+    en: "ASA II: mild systemic disease without substantive functional limitation.",
+    es: "ASA II: enfermedad sistémica leve sin limitación funcional importante.",
+    ca: "ASA II: malaltia sistèmica lleu sense limitació funcional important.",
+  },
+  ASA_III: {
+    en: "ASA III: severe systemic disease with substantive functional limitation. Optimise comorbidities; consider specialist input pre-op.",
+    es: "ASA III: enfermedad sistémica grave con limitación funcional importante. Optimice las comorbilidades; considere interconsulta especializada antes de la cirugía.",
+    ca: "ASA III: malaltia sistèmica greu amb limitació funcional important. Optimitzeu les comorbiditats; considereu interconsulta especialitzada abans de la cirurgia.",
+  },
+  ASA_IV: {
+    en: "ASA IV: severe systemic disease that is a constant threat to life. Multidisciplinary anaesthetic planning.",
+    es: "ASA IV: enfermedad sistémica grave que constituye una amenaza constante para la vida. Planificación anestésica multidisciplinar.",
+    ca: "ASA IV: malaltia sistèmica greu que constitueix una amenaça constant per a la vida. Planificació anestèsica multidisciplinar.",
+  },
+  ASA_V: {
+    en: "ASA V: moribund patient not expected to survive without the operation. Discuss goals of care; ICU bed required.",
+    es: "ASA V: paciente moribundo que no se espera que sobreviva sin la operación. Discuta los objetivos de cuidado; se requiere cama de UCI.",
+    ca: "ASA V: pacient moribund que no s'espera que sobrevisqui sense la operació. Discutiu els objectius d'atenció; cal llit d'UCI.",
+  },
+  ASA_VI: {
+    en: "ASA VI: declared brain-dead patient whose organs are being removed for donor purposes.",
+    es: "ASA VI: paciente con muerte cerebral declarada cuyos órganos se extraen para donación.",
+    ca: "ASA VI: pacient amb mort cerebral declarada del qual s'extreuen els òrgans per a donació.",
+  },
+
+  // Caprini
+  CAPRINI_VERY_LOW: {
+    en: "Very low VTE risk. Early ambulation alone is usually sufficient.",
+    es: "Riesgo de TVP/TEP muy bajo. La deambulación precoz suele ser suficiente.",
+    ca: "Risc de TVP/TEP molt baix. La deambulació precoç sol ser suficient.",
+  },
+  CAPRINI_LOW: {
+    en: "Low VTE risk. Mechanical prophylaxis (intermittent pneumatic compression) is usually sufficient.",
+    es: "Riesgo bajo. La profilaxis mecánica (compresión neumática intermitente) suele ser suficiente.",
+    ca: "Risc baix. La profilaxi mecànica (compressió pneumàtica intermitent) sol ser suficient.",
+  },
+  CAPRINI_MODERATE: {
+    en: "Moderate VTE risk. Pharmacological prophylaxis (LMWH or low-dose UFH) is recommended unless bleeding risk is prohibitive.",
+    es: "Riesgo moderado. Se recomienda profilaxis farmacológica (HBPM o HNF a dosis baja) salvo riesgo hemorrágico prohibitivo.",
+    ca: "Risc moderat. Es recomana profilaxi farmacològica (HBPM o HNF a dosi baixa) excepte risc hemorràgic prohibitiu.",
+  },
+  CAPRINI_HIGH: {
+    en: "High VTE risk. Pharmacological + mechanical prophylaxis; consider extended-duration prophylaxis in selected surgical patients.",
+    es: "Riesgo alto. Profilaxis farmacológica + mecánica; considere profilaxis prolongada en pacientes quirúrgicos seleccionados.",
+    ca: "Risc alt. Profilaxi farmacològica + mecànica; considereu profilaxi prolongada en pacients quirúrgics seleccionats.",
+  },
+
+  // Wells DVT
+  WELLSDVT_UNLIKELY: {
+    en: "DVT unlikely. Obtain a high-sensitivity D-dimer; if negative, DVT can be excluded.",
+    es: "TVP improbable. Solicite dímero D de alta sensibilidad; si es negativo, se descarta TVP.",
+    ca: "TVP improbable. Sol·liciteu dímer D d'alta sensibilitat; si és negatiu, es descarta TVP.",
+  },
+  WELLSDVT_LIKELY: {
+    en: "DVT likely. Proceed directly to proximal-leg compression ultrasound; treat empirically if imaging will be delayed.",
+    es: "TVP probable. Realice directamente ecografía de compresión de la pierna proximal; trate empíricamente si la imagen se retrasa.",
+    ca: "TVP probable. Realitzeu directament ecografia de compressió de la cama proximal; tracteu empíricament si la imatge es retarda.",
+  },
+
+  // Child-Pugh
+  CHILD_PUGH_A: {
+    en: "Class A (well-compensated cirrhosis). ~100% 1-year survival; non-hepatic surgery generally safe.",
+    es: "Clase A (cirrosis bien compensada). ~100% de supervivencia a 1 año; la cirugía no hepática suele ser segura.",
+    ca: "Classe A (cirrosi ben compensada). ~100% de supervivència a 1 any; la cirurgia no hepàtica sol ser segura.",
+  },
+  CHILD_PUGH_B: {
+    en: "Class B (significant functional compromise). ~80% 1-year survival; assess transplant candidacy; defer elective surgery if possible.",
+    es: "Clase B (compromiso funcional significativo). ~80% de supervivencia a 1 año; valore candidatura a trasplante; difiera la cirugía electiva si es posible.",
+    ca: "Classe B (compromís funcional significatiu). ~80% de supervivència a 1 any; valoreu candidatura a trasplantament; difereixiu la cirurgia electiva si és possible.",
+  },
+  CHILD_PUGH_C: {
+    en: "Class C (decompensated cirrhosis). ~45% 1-year survival; transplant evaluation; avoid elective surgery.",
+    es: "Clase C (cirrosis descompensada). ~45% de supervivencia a 1 año; evaluación para trasplante; evite cirugía electiva.",
+    ca: "Classe C (cirrosi descompensada). ~45% de supervivència a 1 any; avaluació per a trasplantament; eviteu cirurgia electiva.",
+  },
+
+  // Glasgow-Blatchford
+  GBS_SAFE_DISCHARGE: {
+    en: "Glasgow-Blatchford = 0: very low risk. Outpatient management with early endoscopy is appropriate per NICE / BSG.",
+    es: "Glasgow-Blatchford = 0: riesgo muy bajo. El manejo ambulatorio con endoscopia precoz es apropiado según NICE / BSG.",
+    ca: "Glasgow-Blatchford = 0: risc molt baix. El maneig ambulatori amb endoscòpia precoç és apropiat segons NICE / BSG.",
+  },
+  GBS_LOW_MOD: {
+    en: "Low-to-moderate risk. Admit for observation; endoscopy within 24 hours.",
+    es: "Riesgo bajo-moderado. Ingrese para observación; endoscopia en 24 horas.",
+    ca: "Risc baix-moderat. Ingresseu per observació; endoscòpia en 24 hores.",
+  },
+  GBS_HIGH: {
+    en: "High risk for intervention. Resuscitate and arrange urgent endoscopy.",
+    es: "Riesgo alto de intervención. Reanime y solicite endoscopia urgente.",
+    ca: "Risc alt d'intervenció. Reanimeu i sol·liciteu endoscòpia urgent.",
+  },
+
 };
 
 /**

@@ -32,7 +32,8 @@
     "intensive_care": "Cuidados intensivos",
     "pharmacology": "Farmacología",
     "urology": "Urología",
-    "geriatrics": "Geriatría"
+    "geriatrics": "Geriatría",
+    "anesthesiology": "Anestesiología"
   },
   "about": {
     "heading": "Acerca de MedikQuantis",
@@ -1442,5 +1443,196 @@
     "delete": "Borrar",
     "confirm_delete": "¿Borrar esta sugerencia?",
     "invalid_key": "Clave incorrecta."
+  },
+  "asaPs": {
+    "title": "ASA — Estado Físico",
+    "subtitle": "Clasificación pre-operatoria de la ASA (actualización Hurwitz 2017).",
+    "question": "Elige la clase ASA del paciente:",
+    "fields": {
+      "emergency": "Cirugía urgente (añade sufijo «E»)"
+    },
+    "classes": {
+      "I": "I — Paciente sano",
+      "II": "II — Enfermedad sistémica leve",
+      "III": "III — Enfermedad sistémica grave (con limitación funcional)",
+      "IV": "IV — Enfermedad sistémica grave que amenaza constantemente la vida",
+      "V": "V — Paciente moribundo que no se espera que sobreviva sin la operación",
+      "VI": "VI — Paciente con muerte cerebral (donante)"
+    },
+    "patient": {
+      "intro": "El Estado Físico ASA describe lo sano que está un paciente antes de una cirugía. Ayuda al equipo a planificar la anestesia y prepararse ante posibles complicaciones.",
+      "result_low": "ASA I-II: estudio preoperatorio rutinario; sin preocupaciones anestésicas específicas.",
+      "result_moderate": "ASA III: el equipo optimizará tus condiciones médicas y puede pedir otras especialidades antes de la cirugía.",
+      "result_high": "ASA IV-VI: anestesia de alto riesgo. Se hace planificación multidisciplinar y se reserva cama de UCI.",
+      "ask_doctor": "Pregunta al anestesista:",
+      "questions": [
+        "¿Cómo afecta mi clase ASA al plan anestésico?",
+        "¿Qué puedo hacer para optimizar mi salud antes de la cirugía?",
+        "¿Necesitaré una cama de UCI después de la operación?",
+        "¿Cuáles son las complicaciones más probables para mi clase ASA?"
+      ]
+    }
+  },
+  "caprini": {
+    "title": "Caprini",
+    "subtitle": "Riesgo de tromboembolismo venoso en pacientes hospitalizados (Caprini 2010).",
+    "group_one_point": "Ítems de 1 punto",
+    "group_two_points": "Ítems de 2 puntos",
+    "group_three_points": "Ítems de 3 puntos",
+    "group_five_points": "Ítems de 5 puntos",
+    "fields": {
+      "age41To60": "Edad 41-60",
+      "minorSurgery": "Cirugía menor prevista",
+      "bmiOver25": "IMC > 25",
+      "swollenLegs": "Piernas hinchadas",
+      "varicoseVeins": "Varices",
+      "sepsisLast1Month": "Sepsis en el último mes",
+      "seriousLungDisease": "Enfermedad pulmonar grave (incl. neumonía)",
+      "oralContraceptivesOrHrt": "Anticonceptivos orales o THS",
+      "pregnancyOrPostpartum": "Embarazo o posparto < 1 mes",
+      "historyOfUnexplainedStillbirth": "Antecedente de muerte fetal sin explicación",
+      "copd": "EPOC",
+      "amiLast1Month": "Infarto agudo de miocardio en el último mes",
+      "chf": "Insuficiencia cardíaca (descompensada)",
+      "inflammatoryBowelDisease": "Enfermedad inflamatoria intestinal",
+      "medicalPatientOnBedrest": "Paciente médico encamado",
+      "age61To74": "Edad 61-74",
+      "arthroscopicSurgery": "Cirugía artroscópica",
+      "majorOpenSurgeryOver45Min": "Cirugía abierta mayor > 45 min",
+      "laparoscopicSurgeryOver45Min": "Cirugía laparoscópica > 45 min",
+      "malignancy": "Neoplasia maligna (activa o previa)",
+      "confinedToBedOver72h": "Encamado > 72 h",
+      "immobilizingPlasterCast": "Yeso inmovilizador",
+      "centralVenousAccess": "Acceso venoso central",
+      "ageOver75": "Edad ≥ 75",
+      "historyDvtOrPe": "Antecedente de TVP o TEP",
+      "familyHistoryOfThrombosis": "Antecedente familiar de trombosis",
+      "thrombophilia": "Trombofilia congénita o adquirida",
+      "hit": "Trombocitopenia inducida por heparina",
+      "strokeLast1Month": "Ictus en el último mes",
+      "electiveMajorLowerExtremityArthroplasty": "Artroplastia electiva mayor de miembro inferior",
+      "hipPelvisOrLegFracture": "Fractura de cadera, pelvis o pierna",
+      "acuteSpinalCordInjuryLast1Month": "Lesión medular aguda en el último mes",
+      "multipleTraumaLast1Month": "Politraumatismo en el último mes"
+    },
+    "patient": {
+      "intro": "Caprini estima tu riesgo de formar coágulos tras una cirugía o durante un ingreso, para que el equipo elija las medidas preventivas adecuadas.",
+      "result_low": "Tu riesgo de TVP/TEP es bajo. Bastará con levantarte y caminar pronto.",
+      "result_moderate": "Tu riesgo es moderado. El equipo suele añadir una inyección diaria o dispositivos de compresión.",
+      "result_high": "Tu riesgo es alto. El equipo combinará medicación y prevención mecánica y puede prolongar el tratamiento tras el alta.",
+      "ask_doctor": "Pregunta al equipo:",
+      "questions": [
+        "¿Qué prevención es mejor para mí — pastillas, inyecciones o compresión?",
+        "¿Durante cuánto tiempo debo seguir la prevención tras el alta?",
+        "¿Qué signos de trombosis debo vigilar en casa?",
+        "¿La prevención interactúa con mis otros medicamentos?"
+      ]
+    }
+  },
+  "wellsDvt": {
+    "title": "Wells TVP",
+    "subtitle": "Probabilidad pretest de trombosis venosa profunda (Wells 2003).",
+    "fields": {
+      "activeCancer": "Neoplasia activa (tratamiento últimos 6 meses o paliativa)",
+      "bedridden3DaysOrSurgery12Weeks": "Encamado ≥ 3 días o cirugía mayor en las últimas 12 semanas",
+      "paralysisOrPlasterImmobilisation": "Parálisis, paresia o inmovilización con yeso de la extremidad inferior",
+      "localisedTendernessAlongVeins": "Dolor localizado a lo largo del sistema venoso profundo",
+      "entireLegSwollen": "Toda la pierna hinchada",
+      "calfSwellingOver3cm": "Edema de pantorrilla > 3 cm vs pierna sana",
+      "pittingOedemaSymptomaticLeg": "Edema con fóvea limitado a la pierna sintomática",
+      "collateralSuperficialVeins": "Venas superficiales colaterales (no varicosas)",
+      "previouslyDocumentedDvt": "TVP documentada previamente",
+      "alternativeDiagnosisAtLeastAsLikely": "Diagnóstico alternativo al menos tan probable (−2)"
+    },
+    "patient": {
+      "intro": "Esta puntuación ayuda a decidir si los síntomas de la pierna podrían deberse a una trombosis venosa profunda (un coágulo en una vena).",
+      "result_low": "TVP poco probable. Suele bastar un análisis de sangre (dímero D) para descartarla.",
+      "result_high": "TVP probable. Se realizará una ecografía de las venas y puede iniciarse tratamiento antes del resultado.",
+      "ask_doctor": "Pregunta al médico:",
+      "questions": [
+        "¿Cuándo se hará la ecografía?",
+        "¿Hay motivo para iniciar tratamiento empírico?",
+        "¿Qué signos de embolia pulmonar debo vigilar?",
+        "¿Cuánto tiempo necesitaré tratamiento si se confirma la TVP?"
+      ]
+    }
+  },
+  "childPugh": {
+    "title": "Child-Pugh",
+    "subtitle": "Gravedad de la cirrosis y supervivencia a 1 año (Pugh 1973).",
+    "result_label": "Puntuación",
+    "fields": {
+      "bilirubin": "Bilirrubina total",
+      "albumin": "Albúmina sérica",
+      "inr": "INR (o prolongación del TP)",
+      "ascites": "Ascitis",
+      "encephalopathy": "Encefalopatía hepática"
+    },
+    "bilirubin_options": {
+      "1": "1 — < 2 mg/dL (< 34 µmol/L)",
+      "2": "2 — 2-3 mg/dL",
+      "3": "3 — > 3 mg/dL"
+    },
+    "albumin_options": {
+      "1": "1 — > 3,5 g/dL",
+      "2": "2 — 2,8-3,5 g/dL",
+      "3": "3 — < 2,8 g/dL"
+    },
+    "inr_options": {
+      "1": "1 — < 1,7",
+      "2": "2 — 1,7-2,3",
+      "3": "3 — > 2,3"
+    },
+    "ascites_options": {
+      "1": "1 — Ausente",
+      "2": "2 — Leve / controlada con diuréticos",
+      "3": "3 — Refractaria"
+    },
+    "encephalopathy_options": {
+      "1": "1 — Ausente",
+      "2": "2 — Grado I-II (o controlada médicamente)",
+      "3": "3 — Grado III-IV"
+    },
+    "patient": {
+      "intro": "La puntuación Child-Pugh resume cómo está funcionando tu hígado y ayuda a planificar tratamiento y seguimiento.",
+      "result_low": "Clase A (cirrosis bien compensada). El pronóstico a largo plazo es bueno y la mayoría de cirugías son seguras.",
+      "result_moderate": "Clase B (cierto compromiso). El equipo valorará la candidatura a trasplante y evitará cirugías electivas si es posible.",
+      "result_high": "Clase C (descompensada). La evaluación para trasplante es prioritaria; las cirugías electivas se evitan.",
+      "ask_doctor": "Pregunta a tu hepatólogo:",
+      "questions": [
+        "¿Qué significa mi puntuación para una posible evaluación de trasplante?",
+        "¿Qué medicamentos debo evitar?",
+        "¿Qué pruebas de seguimiento necesitaré?",
+        "¿Hay cambios de estilo de vida que puedan mejorar mi puntuación?"
+      ]
+    }
+  },
+  "glasgowBlatchford": {
+    "title": "Glasgow-Blatchford",
+    "subtitle": "Triaje pre-endoscópico en hemorragia digestiva alta (Blatchford 2000).",
+    "fields": {
+      "sex": "Sexo",
+      "bunMgDl": "Nitrógeno ureico (mg/dL)",
+      "hemoglobinGDl": "Hemoglobina (g/dL)",
+      "systolicBpMmHg": "Tensión arterial sistólica (mmHg)",
+      "heartRateOver100": "Frecuencia cardíaca ≥ 100/min",
+      "melaena": "Melenas",
+      "syncope": "Síncope reciente",
+      "hepaticDisease": "Hepatopatía conocida",
+      "cardiacFailure": "Insuficiencia cardíaca"
+    },
+    "patient": {
+      "intro": "Esta puntuación ayuda a decidir si una persona con sangrado digestivo puede manejarse de forma segura de modo ambulatorio.",
+      "result_low": "Riesgo muy bajo. Con endoscopia ambulatoria precoz suele manejarse con seguridad desde casa.",
+      "result_moderate": "Riesgo moderado. Quedarás ingresado un breve periodo y tendrás endoscopia en 24 h.",
+      "result_high": "Riesgo alto. Se iniciará reanimación y se solicitará endoscopia urgente.",
+      "ask_doctor": "Pregunta al equipo:",
+      "questions": [
+        "¿Cuál es la causa del sangrado?",
+        "¿Necesitaré transfusión?",
+        "¿Cuándo se realizará la endoscopia?",
+        "¿Qué signos de re-sangrado debo vigilar en casa?"
+      ]
+    }
   }
 }

@@ -32,7 +32,8 @@
     "intensive_care": "Cures intensives",
     "pharmacology": "Farmacologia",
     "urology": "Urologia",
-    "geriatrics": "Geriatria"
+    "geriatrics": "Geriatria",
+    "anesthesiology": "Anestesiologia"
   },
   "about": {
     "heading": "Sobre MedikQuantis",
@@ -1442,5 +1443,196 @@
     "delete": "Esborrar",
     "confirm_delete": "Esborrar aquest suggeriment?",
     "invalid_key": "Clau incorrecta."
+  },
+  "asaPs": {
+    "title": "ASA — Estat Físic",
+    "subtitle": "Classificació pre-operatòria de l'ASA (actualització Hurwitz 2017).",
+    "question": "Tria la classe ASA del pacient:",
+    "fields": {
+      "emergency": "Cirurgia urgent (afegeix sufix «E»)"
+    },
+    "classes": {
+      "I": "I — Pacient sa",
+      "II": "II — Malaltia sistèmica lleu",
+      "III": "III — Malaltia sistèmica greu (amb limitació funcional)",
+      "IV": "IV — Malaltia sistèmica greu que amenaça constantment la vida",
+      "V": "V — Pacient moribund que no s'espera que sobrevisqui sense la operació",
+      "VI": "VI — Pacient amb mort cerebral (donant)"
+    },
+    "patient": {
+      "intro": "L'Estat Físic ASA descriu com de sa està un pacient abans d'una cirurgia. Ajuda l'equip a planificar l'anestèsia i preparar-se davant possibles complicacions.",
+      "result_low": "ASA I-II: estudi preoperatori rutinari; sense preocupacions anestèsiques específiques.",
+      "result_moderate": "ASA III: l'equip optimitzarà les teves condicions mèdiques i pot demanar altres especialitats abans de la cirurgia.",
+      "result_high": "ASA IV-VI: anestèsia d'alt risc. Es fa planificació multidisciplinar i es reserva llit d'UCI.",
+      "ask_doctor": "Pregunta a l'anestesista:",
+      "questions": [
+        "Com afecta la meva classe ASA al pla anestèsic?",
+        "Què puc fer per optimitzar la meva salut abans de la cirurgia?",
+        "Necessitaré un llit d'UCI després de l'operació?",
+        "Quines són les complicacions més probables per a la meva classe ASA?"
+      ]
+    }
+  },
+  "caprini": {
+    "title": "Caprini",
+    "subtitle": "Risc de tromboembolisme venós en pacients hospitalitzats (Caprini 2010).",
+    "group_one_point": "Ítems d'1 punt",
+    "group_two_points": "Ítems de 2 punts",
+    "group_three_points": "Ítems de 3 punts",
+    "group_five_points": "Ítems de 5 punts",
+    "fields": {
+      "age41To60": "Edat 41-60",
+      "minorSurgery": "Cirurgia menor prevista",
+      "bmiOver25": "IMC > 25",
+      "swollenLegs": "Cames inflades",
+      "varicoseVeins": "Varices",
+      "sepsisLast1Month": "Sèpsia en l'últim mes",
+      "seriousLungDisease": "Malaltia pulmonar greu (incl. pneumònia)",
+      "oralContraceptivesOrHrt": "Anticonceptius orals o THS",
+      "pregnancyOrPostpartum": "Embaràs o postpart < 1 mes",
+      "historyOfUnexplainedStillbirth": "Antecedent de mort fetal sense explicació",
+      "copd": "MPOC",
+      "amiLast1Month": "Infart agut de miocardi en l'últim mes",
+      "chf": "Insuficiència cardíaca (descompensada)",
+      "inflammatoryBowelDisease": "Malaltia inflamatòria intestinal",
+      "medicalPatientOnBedrest": "Pacient mèdic encamat",
+      "age61To74": "Edat 61-74",
+      "arthroscopicSurgery": "Cirurgia artroscòpica",
+      "majorOpenSurgeryOver45Min": "Cirurgia oberta major > 45 min",
+      "laparoscopicSurgeryOver45Min": "Cirurgia laparoscòpica > 45 min",
+      "malignancy": "Neoplàsia maligna (activa o prèvia)",
+      "confinedToBedOver72h": "Encamat > 72 h",
+      "immobilizingPlasterCast": "Guix immobilitzador",
+      "centralVenousAccess": "Accés venós central",
+      "ageOver75": "Edat ≥ 75",
+      "historyDvtOrPe": "Antecedent de TVP o TEP",
+      "familyHistoryOfThrombosis": "Antecedent familiar de trombosi",
+      "thrombophilia": "Trombofília congènita o adquirida",
+      "hit": "Trombocitopènia induïda per heparina",
+      "strokeLast1Month": "Ictus en l'últim mes",
+      "electiveMajorLowerExtremityArthroplasty": "Artroplàstia electiva major de membre inferior",
+      "hipPelvisOrLegFracture": "Fractura de maluc, pelvis o cama",
+      "acuteSpinalCordInjuryLast1Month": "Lesió medul·lar aguda en l'últim mes",
+      "multipleTraumaLast1Month": "Politraumatisme en l'últim mes"
+    },
+    "patient": {
+      "intro": "Caprini estima el teu risc de formar coàguls després d'una cirurgia o durant un ingrés, perquè l'equip triï les mesures preventives adequades.",
+      "result_low": "El teu risc de TVP/TEP és baix. N'hi haurà prou de aixecar-te i caminar aviat.",
+      "result_moderate": "El teu risc és moderat. L'equip sol afegir una injecció diària o dispositius de compressió.",
+      "result_high": "El teu risc és alt. L'equip combinarà medicació i prevenció mecànica i pot allargar el tractament després de l'alta.",
+      "ask_doctor": "Pregunta a l'equip:",
+      "questions": [
+        "Quina prevenció és millor per a mi — pastilles, injeccions o compressió?",
+        "Durant quant de temps he de seguir la prevenció després de l'alta?",
+        "Quins signes de trombosi he de vigilar a casa?",
+        "La prevenció interactua amb els meus altres medicaments?"
+      ]
+    }
+  },
+  "wellsDvt": {
+    "title": "Wells TVP",
+    "subtitle": "Probabilitat pretest de trombosi venosa profunda (Wells 2003).",
+    "fields": {
+      "activeCancer": "Neoplàsia activa (tractament últims 6 mesos o pal·liativa)",
+      "bedridden3DaysOrSurgery12Weeks": "Encamat ≥ 3 dies o cirurgia major en les últimes 12 setmanes",
+      "paralysisOrPlasterImmobilisation": "Paràlisi, paresi o immobilització amb guix de l'extremitat inferior",
+      "localisedTendernessAlongVeins": "Dolor localitzat al llarg del sistema venós profund",
+      "entireLegSwollen": "Tota la cama inflada",
+      "calfSwellingOver3cm": "Edema de panxell > 3 cm vs cama sana",
+      "pittingOedemaSymptomaticLeg": "Edema amb fòvea limitat a la cama simptomàtica",
+      "collateralSuperficialVeins": "Venes superficials col·laterals (no varicoses)",
+      "previouslyDocumentedDvt": "TVP documentada prèviament",
+      "alternativeDiagnosisAtLeastAsLikely": "Diagnòstic alternatiu almenys tan probable (−2)"
+    },
+    "patient": {
+      "intro": "Aquesta puntuació ajuda a decidir si els símptomes de la cama podrien ser una trombosi venosa profunda (un coàgul en una vena).",
+      "result_low": "TVP poc probable. Sol bastar una anàlisi de sang (dímer D) per descartar-la.",
+      "result_high": "TVP probable. Es farà una ecografia de les venes i pot iniciar-se tractament abans del resultat.",
+      "ask_doctor": "Pregunta al metge:",
+      "questions": [
+        "Quan es farà l'ecografia?",
+        "Hi ha motiu per iniciar tractament empíric?",
+        "Quins signes d'embòlia pulmonar he de vigilar?",
+        "Quant de temps necessitaré tractament si es confirma la TVP?"
+      ]
+    }
+  },
+  "childPugh": {
+    "title": "Child-Pugh",
+    "subtitle": "Gravetat de la cirrosi i supervivència a 1 any (Pugh 1973).",
+    "result_label": "Puntuació",
+    "fields": {
+      "bilirubin": "Bilirubina total",
+      "albumin": "Albúmina sèrica",
+      "inr": "INR (o perllongació del TP)",
+      "ascites": "Ascites",
+      "encephalopathy": "Encefalopatia hepàtica"
+    },
+    "bilirubin_options": {
+      "1": "1 — < 2 mg/dL (< 34 µmol/L)",
+      "2": "2 — 2-3 mg/dL",
+      "3": "3 — > 3 mg/dL"
+    },
+    "albumin_options": {
+      "1": "1 — > 3,5 g/dL",
+      "2": "2 — 2,8-3,5 g/dL",
+      "3": "3 — < 2,8 g/dL"
+    },
+    "inr_options": {
+      "1": "1 — < 1,7",
+      "2": "2 — 1,7-2,3",
+      "3": "3 — > 2,3"
+    },
+    "ascites_options": {
+      "1": "1 — Absent",
+      "2": "2 — Lleu / controlada amb diürètics",
+      "3": "3 — Refractària"
+    },
+    "encephalopathy_options": {
+      "1": "1 — Absent",
+      "2": "2 — Grau I-II (o controlada mèdicament)",
+      "3": "3 — Grau III-IV"
+    },
+    "patient": {
+      "intro": "La puntuació Child-Pugh resumeix com està funcionant el teu fetge i ajuda a planificar el tractament i seguiment.",
+      "result_low": "Classe A (cirrosi ben compensada). El pronòstic a llarg termini és bo i la majoria de cirurgies són segures.",
+      "result_moderate": "Classe B (cert compromís). L'equip valorarà la candidatura a trasplantament i evitarà cirurgies electives si és possible.",
+      "result_high": "Classe C (descompensada). L'avaluació per a trasplantament és prioritària; les cirurgies electives s'eviten.",
+      "ask_doctor": "Pregunta al teu hepatòleg:",
+      "questions": [
+        "Què significa la meva puntuació per a una possible avaluació de trasplantament?",
+        "Quins medicaments he d'evitar?",
+        "Quines proves de seguiment necessitaré?",
+        "Hi ha canvis d'estil de vida que puguin millorar la meva puntuació?"
+      ]
+    }
+  },
+  "glasgowBlatchford": {
+    "title": "Glasgow-Blatchford",
+    "subtitle": "Triatge pre-endoscòpic en hemorràgia digestiva alta (Blatchford 2000).",
+    "fields": {
+      "sex": "Sexe",
+      "bunMgDl": "Nitrogen uretic (mg/dL)",
+      "hemoglobinGDl": "Hemoglobina (g/dL)",
+      "systolicBpMmHg": "Tensió arterial sistòlica (mmHg)",
+      "heartRateOver100": "Freqüència cardíaca ≥ 100/min",
+      "melaena": "Melenes",
+      "syncope": "Síncope recent",
+      "hepaticDisease": "Hepatopatia coneguda",
+      "cardiacFailure": "Insuficiència cardíaca"
+    },
+    "patient": {
+      "intro": "Aquesta puntuació ajuda a decidir si una persona amb sagnat digestiu es pot manejar de forma segura ambulatòriament.",
+      "result_low": "Risc molt baix. Amb endoscòpia ambulatòria precoç sol manejar-se amb seguretat des de casa.",
+      "result_moderate": "Risc moderat. Quedaràs ingressat un breu període i tindràs endoscòpia en 24 h.",
+      "result_high": "Risc alt. S'iniciarà reanimació i es sol·licitarà endoscòpia urgent.",
+      "ask_doctor": "Pregunta a l'equip:",
+      "questions": [
+        "Quina és la causa del sagnat?",
+        "Necessitaré transfusió?",
+        "Quan es farà l'endoscòpia?",
+        "Quins signes de re-sagnat he de vigilar a casa?"
+      ]
+    }
   }
 }

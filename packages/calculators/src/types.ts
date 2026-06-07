@@ -45,6 +45,7 @@ export type Specialty =
   | "pharmacology"
   | "urology"
   | "geriatrics"
+  | "anesthesiology"
   | (string & {});
 
 export interface CalcDefinition<Schema extends ZodTypeAny> {
