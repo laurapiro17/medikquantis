@@ -183,6 +183,13 @@ export function Sidebar({ calcs, popularIds, onNavigate, onCollapse }: SidebarPr
         >
           {t("site.nav_api")}
         </a>
+        <Link
+          href="/suggest"
+          onClick={onNavigate}
+          className="block hover:text-trust-600 dark:hover:text-neon"
+        >
+          {t("suggest.eyebrow")}
+        </Link>
         <a
           href={REPO_URL}
           target="_blank"

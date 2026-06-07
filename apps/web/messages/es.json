@@ -1404,5 +1404,43 @@
         "¿Qué signos de empeoramiento debemos vigilar?"
       ]
     }
+  },
+  "suggest": {
+    "eyebrow": "Sugerencias",
+    "heading": "Sugiere una calculadora",
+    "intro": "¿Hay alguna escala clínica que uses en planta y que MedikQuantis aún no tenga? Dime cuál añadir. Las sugerencias las revisa una persona real (yo).",
+    "fields": {
+      "calcName": "Nombre de la calculadora",
+      "specialty": "Especialidad",
+      "context": "Por qué sería útil",
+      "contactEmail": "Tu email (opcional)"
+    },
+    "specialty_placeholder": "p. ej. Endocrinología, Urgencias, UCI",
+    "context_placeholder": "Una breve explicación de cómo se usa la escala, enlaces al paper original, cualquier cosa que ayude a implementarla.",
+    "email_placeholder": "nombre@ejemplo.com",
+    "email_hint": "Solo se usa para contestarte. Nunca se publica.",
+    "turnstile_hint": "Usamos un desafío invisible de Cloudflare para mantener los bots fuera.",
+    "submit": "Enviar sugerencia",
+    "submitting": "Enviando…",
+    "error_prefix": "No se pudo enviar",
+    "success_heading": "¡Gracias!",
+    "success_body": "Tu sugerencia está en la cola. Las reviso a mano y te respondo si dejaste email.",
+    "success_again": "Enviar otra"
+  },
+  "admin": {
+    "eyebrow": "Admin",
+    "heading": "Sugerencias de calculadoras",
+    "subheading": "Bandeja de entrada de sugerencias. Protegida por ADMIN_KEY.",
+    "prompt": "Introduce la clave de admin para ver las sugerencias.",
+    "key_placeholder": "ADMIN_KEY",
+    "continue": "Continuar",
+    "loading": "Cargando…",
+    "refresh": "Refrescar",
+    "empty": "Aún no hay sugerencias.",
+    "count": "{count} sugerencia(s)",
+    "specialty": "Especialidad",
+    "delete": "Borrar",
+    "confirm_delete": "¿Borrar esta sugerencia?",
+    "invalid_key": "Clave incorrecta."
   }
 }

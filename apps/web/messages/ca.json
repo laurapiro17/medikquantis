@@ -1404,5 +1404,43 @@
         "Quins signes d'empitjorament hem de vigilar?"
       ]
     }
+  },
+  "suggest": {
+    "eyebrow": "Suggeriments",
+    "heading": "Suggereix una calculadora",
+    "intro": "Hi ha alguna escala clínica que facis servir a planta i que MedikQuantis encara no tingui? Digue'm quina afegir. Les suggerències les revisa una persona real (jo).",
+    "fields": {
+      "calcName": "Nom de la calculadora",
+      "specialty": "Especialitat",
+      "context": "Per què seria útil",
+      "contactEmail": "El teu email (opcional)"
+    },
+    "specialty_placeholder": "p. ex. Endocrinologia, Urgències, UCI",
+    "context_placeholder": "Una breu explicació de com es fa servir l'escala, enllaços al paper original, qualsevol cosa que ajudi a implementar-la.",
+    "email_placeholder": "nom@exemple.com",
+    "email_hint": "Només es fa servir per contestar-te. Mai es publica.",
+    "turnstile_hint": "Fem servir un desafiament invisible de Cloudflare per mantenir els bots fora.",
+    "submit": "Enviar suggeriment",
+    "submitting": "Enviant…",
+    "error_prefix": "No s'ha pogut enviar",
+    "success_heading": "Gràcies!",
+    "success_body": "El teu suggeriment està a la cua. Els reviso a mà i et responc si has deixat email.",
+    "success_again": "Envia'n un altre"
+  },
+  "admin": {
+    "eyebrow": "Admin",
+    "heading": "Suggeriments de calculadores",
+    "subheading": "Safata d'entrada de suggeriments. Protegida per ADMIN_KEY.",
+    "prompt": "Introdueix la clau d'admin per veure els suggeriments.",
+    "key_placeholder": "ADMIN_KEY",
+    "continue": "Continuar",
+    "loading": "Carregant…",
+    "refresh": "Refrescar",
+    "empty": "Encara no hi ha suggeriments.",
+    "count": "{count} suggeriment(s)",
+    "specialty": "Especialitat",
+    "delete": "Esborrar",
+    "confirm_delete": "Esborrar aquest suggeriment?",
+    "invalid_key": "Clau incorrecta."
   }
 }

@@ -1404,5 +1404,43 @@
         "What signs of worsening should we watch for?"
       ]
     }
+  },
+  "suggest": {
+    "eyebrow": "Suggestions",
+    "heading": "Suggest a calculator",
+    "intro": "Is there a clinical score you reach for on the ward that MedikQuantis does not yet have? Tell me what to add. Suggestions are reviewed by a real human (me).",
+    "fields": {
+      "calcName": "Calculator name",
+      "specialty": "Specialty",
+      "context": "Why it would help",
+      "contactEmail": "Your email (optional)"
+    },
+    "specialty_placeholder": "e.g. Endocrinology, Emergency, ICU",
+    "context_placeholder": "A short explanation of how the score is used, links to the original paper, anything that speeds up implementation.",
+    "email_placeholder": "name@example.com",
+    "email_hint": "Only used to reply to you. Never published.",
+    "turnstile_hint": "We use a Cloudflare invisible challenge to keep bots away.",
+    "submit": "Send suggestion",
+    "submitting": "Sending…",
+    "error_prefix": "Could not send",
+    "success_heading": "Thanks!",
+    "success_body": "Your suggestion is in the queue. I review them by hand and reply if you left an email.",
+    "success_again": "Send another"
+  },
+  "admin": {
+    "eyebrow": "Admin",
+    "heading": "Calculator suggestions",
+    "subheading": "Inbox of incoming suggestions. Protected by ADMIN_KEY.",
+    "prompt": "Enter the admin key to view suggestions.",
+    "key_placeholder": "ADMIN_KEY",
+    "continue": "Continue",
+    "loading": "Loading…",
+    "refresh": "Refresh",
+    "empty": "No suggestions yet.",
+    "count": "{count} suggestion(s)",
+    "specialty": "Specialty",
+    "delete": "Delete",
+    "confirm_delete": "Delete this suggestion?",
+    "invalid_key": "Invalid key."
   }
 }
