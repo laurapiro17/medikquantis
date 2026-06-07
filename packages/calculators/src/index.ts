@@ -50,3 +50,6 @@ export * as childPugh from "./child-pugh";
 export * as glasgowBlatchford from "./glasgow-blatchford";
 export * as score2 from "./score2";
 export * as ascvd from "./ascvd";
+export * as sofa from "./sofa";
+export * as apache2 from "./apache2";
+export * as nihss from "./nihss";

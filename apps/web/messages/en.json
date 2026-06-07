@@ -1693,5 +1693,102 @@
         "How often should we recheck?"
       ]
     }
+  },
+  "sofa": {
+    "title": "SOFA",
+    "subtitle": "Sequential Organ Failure Assessment (Vincent 1996). Sepsis-3 operational definition.",
+    "scale_legend": "Enter each organ subscore (0-4) directly. The bedside ICU chart usually pre-computes these against the Vincent 1996 cut-offs.",
+    "fields": {
+      "respiration": "Respiration (PaO₂/FiO₂)",
+      "coagulation": "Coagulation (platelets)",
+      "liver": "Liver (bilirubin)",
+      "cardiovascular": "Cardiovascular (MAP / vasopressors)",
+      "cns": "CNS (Glasgow Coma Scale)",
+      "renal": "Renal (creatinine or urine output)"
+    },
+    "patient": {
+      "intro": "SOFA measures how well six body systems are working in a critically ill patient. An increase of 2 points or more is the modern definition of suspected sepsis.",
+      "result_low": "SOFA ≤ 6: relatively preserved organ function. Continue supportive care and re-check tomorrow.",
+      "result_moderate": "SOFA 7-9: meaningful organ dysfunction. Mortality around 22%; the team will monitor closely and may escalate support.",
+      "result_high": "SOFA 10-12: severe organ dysfunction. Mortality around 50%; multidisciplinary input and goals-of-care conversation.",
+      "ask_doctor": "Ask the medical team:",
+      "questions": [
+        "Which organs are failing right now?",
+        "Is the patient improving or worsening compared with yesterday?",
+        "Are we changing treatment based on the trend?",
+        "When should we discuss goals of care?"
+      ]
+    }
+  },
+  "apache2": {
+    "title": "APACHE II",
+    "subtitle": "Acute Physiology and Chronic Health Evaluation II (Knaus 1985). ICU severity / mortality.",
+    "scale_legend": "Each Acute Physiology subscore is entered directly (0-4 each). The score combines APS + age points (0-6) + chronic health points (0-5).",
+    "section_aps": "Acute Physiology subscores (each 0-4)",
+    "section_age_chronic": "Age + chronic health",
+    "fields": {
+      "temperature": "Temperature",
+      "meanArterialPressure": "Mean arterial pressure",
+      "heartRate": "Heart rate",
+      "respiratoryRate": "Respiratory rate",
+      "oxygenation": "Oxygenation (A-aDO₂ or PaO₂)",
+      "arterialPh": "Arterial pH",
+      "sodium": "Sodium",
+      "potassium": "Potassium",
+      "creatinine": "Creatinine",
+      "hematocrit": "Haematocrit",
+      "whiteCellCount": "White cell count",
+      "glasgowComaScore": "Glasgow Coma Score points (15 − GCS, 0-12)",
+      "agePoints": "Age points (0-6)",
+      "chronicHealthPoints": "Chronic health points (0-5)"
+    },
+    "patient": {
+      "intro": "APACHE II estimates how severely ill someone is on the day they enter intensive care. It guides what level of support is needed and the likely chance of leaving hospital.",
+      "result_low": "Low APACHE II. Hospital mortality around 4-8%; routine ICU support is appropriate.",
+      "result_moderate": "Moderate APACHE II. Hospital mortality around 15-25%; full ICU support with serial monitoring.",
+      "result_high": "High APACHE II. Hospital mortality 40-85%; multidisciplinary care and shared goals-of-care discussion.",
+      "ask_doctor": "Ask the medical team:",
+      "questions": [
+        "What is driving the high APACHE II right now?",
+        "Are we still moving in the right direction?",
+        "What are realistic goals for this admission?",
+        "When should we reassess?"
+      ]
+    }
+  },
+  "nihss": {
+    "title": "NIHSS",
+    "subtitle": "National Institutes of Health Stroke Scale (Brott 1989). Acute stroke severity.",
+    "scale_legend": "Score each item from 0 (normal) to its maximum. Untestable items are scored 0 by convention.",
+    "fields": {
+      "locResponsiveness": "1a — Level of consciousness (0-3)",
+      "locQuestions": "1b — LOC questions (0-2)",
+      "locCommands": "1c — LOC commands (0-2)",
+      "bestGaze": "2 — Best gaze (0-2)",
+      "visualFields": "3 — Visual fields (0-3)",
+      "facialPalsy": "4 — Facial palsy (0-3)",
+      "motorArmLeft": "5a — Motor arm — left (0-4)",
+      "motorArmRight": "5b — Motor arm — right (0-4)",
+      "motorLegLeft": "6a — Motor leg — left (0-4)",
+      "motorLegRight": "6b — Motor leg — right (0-4)",
+      "limbAtaxia": "7 — Limb ataxia (0-2)",
+      "sensory": "8 — Sensory (0-2)",
+      "bestLanguage": "9 — Best language (0-3)",
+      "dysarthria": "10 — Dysarthria (0-2)",
+      "extinctionInattention": "11 — Extinction / inattention (0-2)"
+    },
+    "patient": {
+      "intro": "NIHSS measures how severely a stroke has affected the brain. It guides decisions about clot-busting drugs, mechanical clot retrieval, and what kind of rehabilitation will help.",
+      "result_low": "Minor stroke (NIHSS ≤ 4). Most patients recover well; the team will discuss whether clot-busting medication is worth the small bleed risk.",
+      "result_moderate": "Moderate stroke (NIHSS 5-15). Clot-busting medication and a brain scan are usually indicated; thrombectomy may help if a large vessel is blocked.",
+      "result_high": "Severe stroke (NIHSS ≥ 16). Urgent imaging to look for a large-vessel clot; mechanical thrombectomy and stroke-unit care are the priority.",
+      "ask_doctor": "Ask the stroke team:",
+      "questions": [
+        "Will I be a candidate for clot-busting medication?",
+        "Could a mechanical thrombectomy help?",
+        "What is the expected recovery for this severity?",
+        "How long should I expect to stay in the stroke unit?"
+      ]
+    }
   }
 }

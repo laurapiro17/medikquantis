@@ -26,8 +26,16 @@ export const Score2Inputs = z.object({
 
 export type Score2Input = z.infer<typeof Score2Inputs>;
 
-// Centering points used by Hageman 2021.
-const CENTRE = { age: 60, sbp: 120, chol: 6, hdl: 1.3 };
+// Centering points (Hageman 2021). NOTE: SCORE2 coefficients are
+// reported PER UNIT step where the unit is:
+//   age   per 5 years,  SBP per 20 mmHg, chol per 1 mmol/L, HDL per 0.5 mmol/L
+// SCORE2-OP uses a DIFFERENT centering (age 73, SBP 150, HDL 1.4) and
+// per-1-year / per-1-mmHg / per-1-mmol/L coefficients. Mix them up and
+// you get clinically wrong risk in either direction (silent: relative
+// monotonicity still holds, absolute values are off by orders of
+// magnitude).
+const CENTRE_SCORE2 = { age: 60, sbp: 120, chol: 6, hdl: 1.3 };
+const CENTRE_SCORE2_OP = { age: 73, sbp: 150, chol: 6, hdl: 1.4 };
 
 // SCORE2 (40-69) beta coefficients, baseline survival and recalibration
 // parameters for the low-risk region.
@@ -73,13 +81,14 @@ export function formula(inputs: Score2Input): number {
   const isOp = age >= 70;
   const c = isOp ? SCORE2_OP[sex] : SCORE2[sex];
 
-  // Centered inputs (units as the paper: age in years, SBP in mmHg,
-  // chol/HDL in mmol/L). For SCORE2-OP `bAge` already encodes a per-year
-  // step, no rescaling needed.
-  const cAge = age - CENTRE.age;
-  const cSBP = inputs.systolicBpMmHg - CENTRE.sbp;
-  const cChol = inputs.totalCholesterolMmolL - CENTRE.chol;
-  const cHDL = inputs.hdlMmolL - CENTRE.hdl;
+  // Centered + unit-scaled inputs. SCORE2 scales age/5, SBP/20, HDL/0.5
+  // because the published betas are per those increments. SCORE2-OP uses
+  // raw per-year / per-mmHg / per-mmol-L scaling.
+  const centre = isOp ? CENTRE_SCORE2_OP : CENTRE_SCORE2;
+  const cAge = isOp ? age - centre.age : (age - centre.age) / 5;
+  const cSBP = isOp ? inputs.systolicBpMmHg - centre.sbp : (inputs.systolicBpMmHg - centre.sbp) / 20;
+  const cChol = inputs.totalCholesterolMmolL - centre.chol;
+  const cHDL = isOp ? inputs.hdlMmolL - centre.hdl : (inputs.hdlMmolL - centre.hdl) / 0.5;
   const smk = inputs.smoker ? 1 : 0;
 
   const lp =

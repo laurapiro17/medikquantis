@@ -800,6 +800,78 @@ const recommendations: Record<string, Translations> = {
     ca: "Risc alt (≥ 20 %). Estatina d'alta intensitat indicada; considereu associar altres hipolipidemiants per assolir l'objectiu de LDL-C.",
   },
 
+
+  // SOFA
+  SOFA_LOW: {
+    en: "Low organ dysfunction (SOFA ≤ 6). Continue supportive care; reassess every 24-48 h.",
+    es: "Disfunción orgánica baja (SOFA ≤ 6). Continúe cuidados de soporte; reevalúe cada 24-48 h.",
+    ca: "Disfunció orgànica baixa (SOFA ≤ 6). Continueu cures de suport; reavalueu cada 24-48 h.",
+  },
+  SOFA_MODERATE: {
+    en: "Moderate organ dysfunction (SOFA 7-9). Intensive monitoring; trend serial SOFAs and consider escalation of organ support.",
+    es: "Disfunción orgánica moderada (SOFA 7-9). Monitorización intensiva; siga SOFA seriado y considere escalar el soporte orgánico.",
+    ca: "Disfunció orgànica moderada (SOFA 7-9). Monitorització intensiva; seguiu SOFA seriat i considereu escalar el suport orgànic.",
+  },
+  SOFA_SEVERE: {
+    en: "Severe organ dysfunction (SOFA 10-12). High mortality; multidisciplinary ICU input and goals-of-care conversation.",
+    es: "Disfunción orgánica grave (SOFA 10-12). Mortalidad alta; participación multidisciplinar de UCI y discusión de objetivos de cuidados.",
+    ca: "Disfunció orgànica greu (SOFA 10-12). Mortalitat alta; participació multidisciplinar d'UCI i discussió d'objectius de cures.",
+  },
+  SOFA_VERY_HIGH: {
+    en: "Very high organ dysfunction (SOFA ≥ 13). Mortality ≥ 80%; consider limitation of life-sustaining treatment in shared decision-making.",
+    es: "Disfunción orgánica muy alta (SOFA ≥ 13). Mortalidad ≥ 80%; considere limitación del tratamiento de soporte vital en decisión compartida.",
+    ca: "Disfunció orgànica molt alta (SOFA ≥ 13). Mortalitat ≥ 80%; considereu limitació del tractament de suport vital en decisió compartida.",
+  },
+
+  // APACHE II
+  APACHE2_LOW: {
+    en: "Low APACHE II (≤ 9). Routine ICU monitoring; reassess every 24 h.",
+    es: "APACHE II bajo (≤ 9). Monitorización rutinaria en UCI; reevalúe cada 24 h.",
+    ca: "APACHE II baix (≤ 9). Monitorització rutinària a UCI; reavalueu cada 24 h.",
+  },
+  APACHE2_MODERATE: {
+    en: "Moderate APACHE II (10-19). Hospital mortality ~15-25%; full ICU support and serial APACHE trend.",
+    es: "APACHE II moderado (10-19). Mortalidad hospitalaria ~15-25%; soporte completo de UCI y seguimiento seriado.",
+    ca: "APACHE II moderat (10-19). Mortalitat hospitalària ~15-25%; suport complet d'UCI i seguiment seriat.",
+  },
+  APACHE2_HIGH: {
+    en: "High APACHE II (20-29). Mortality 40-55%; multidisciplinary input and goals-of-care discussion.",
+    es: "APACHE II alto (20-29). Mortalidad 40-55%; participación multidisciplinar y discusión de objetivos de cuidados.",
+    ca: "APACHE II alt (20-29). Mortalitat 40-55%; participació multidisciplinar i discussió d'objectius de cures.",
+  },
+  APACHE2_VERY_HIGH: {
+    en: "Very high APACHE II (≥ 30). Mortality ≥ 75%; consider limitation of life-sustaining treatment within shared decision-making.",
+    es: "APACHE II muy alto (≥ 30). Mortalidad ≥ 75%; considere limitación de tratamiento de soporte vital en decisión compartida.",
+    ca: "APACHE II molt alt (≥ 30). Mortalitat ≥ 75%; considereu limitació del tractament de suport vital en decisió compartida.",
+  },
+
+  // NIHSS
+  NIHSS_NONE: {
+    en: "No clinically detectable stroke symptoms.",
+    es: "Sin síntomas de ictus clínicamente detectables.",
+    ca: "Sense símptomes d'ictus clínicament detectables.",
+  },
+  NIHSS_MINOR: {
+    en: "Minor stroke (NIHSS 1-4). Discuss IV thrombolysis individually; benefit may not outweigh bleed risk for very mild deficits.",
+    es: "Ictus leve (NIHSS 1-4). Discuta trombólisis IV individualmente; el beneficio puede no superar el riesgo de sangrado en déficit muy leves.",
+    ca: "Ictus lleu (NIHSS 1-4). Discutiu tromboèlisi IV individualment; el benefici pot no superar el risc de sagnat en dèficits molt lleus.",
+  },
+  NIHSS_MODERATE: {
+    en: "Moderate stroke (NIHSS 5-15). IV thrombolysis if within window; consider endovascular therapy if large-vessel occlusion (LVO).",
+    es: "Ictus moderado (NIHSS 5-15). Trombólisis IV si está en ventana; considere terapia endovascular si hay oclusión de vaso grande (LVO).",
+    ca: "Ictus moderat (NIHSS 5-15). Tromboèlisi IV si està en finestra; considereu teràpia endovascular si hi ha oclusió de vas gran (LVO).",
+  },
+  NIHSS_MODERATE_SEVERE: {
+    en: "Moderate to severe stroke (NIHSS 16-20). LVO highly likely — image immediately for endovascular thrombectomy candidacy.",
+    es: "Ictus moderado a grave (NIHSS 16-20). LVO muy probable — solicite imagen inmediata para valorar trombectomía endovascular.",
+    ca: "Ictus moderat a greu (NIHSS 16-20). LVO molt probable — sol·liciteu imatge immediata per valorar trombectomia endovascular.",
+  },
+  NIHSS_SEVERE: {
+    en: "Severe stroke (NIHSS ≥ 21). LVO almost certain; thrombectomy if anatomically eligible and within time window.",
+    es: "Ictus grave (NIHSS ≥ 21). LVO casi seguro; trombectomía si es anatómicamente elegible y dentro de ventana.",
+    ca: "Ictus greu (NIHSS ≥ 21). LVO gairebé segur; trombectomia si és anatòmicament elegible i dins de finestra.",
+  },
+
 };
 
 /**

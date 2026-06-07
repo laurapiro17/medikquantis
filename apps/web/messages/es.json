@@ -1693,5 +1693,102 @@
         "¿Cada cuánto revisar el riesgo?"
       ]
     }
+  },
+  "sofa": {
+    "title": "SOFA",
+    "subtitle": "Sequential Organ Failure Assessment (Vincent 1996). Definición operativa de Sepsis-3.",
+    "scale_legend": "Introduce cada subescala (0-4) directamente. La gráfica de UCI suele pre-calcularlas según los puntos de corte de Vincent 1996.",
+    "fields": {
+      "respiration": "Respiración (PaO₂/FiO₂)",
+      "coagulation": "Coagulación (plaquetas)",
+      "liver": "Hígado (bilirrubina)",
+      "cardiovascular": "Cardiovascular (TAM / vasopresores)",
+      "cns": "SNC (Escala de Coma de Glasgow)",
+      "renal": "Renal (creatinina o diuresis)"
+    },
+    "patient": {
+      "intro": "SOFA mide cómo están funcionando seis sistemas del cuerpo en un paciente crítico. Un aumento de 2 puntos o más es la definición moderna de sospecha de sepsis.",
+      "result_low": "SOFA ≤ 6: función orgánica relativamente preservada. Cuidados de soporte y reevaluar mañana.",
+      "result_moderate": "SOFA 7-9: disfunción orgánica significativa. Mortalidad ~22%; el equipo monitorizará de cerca y puede escalar el soporte.",
+      "result_high": "SOFA 10-12: disfunción orgánica grave. Mortalidad ~50%; participación multidisciplinar y discusión de objetivos de cuidados.",
+      "ask_doctor": "Pregunta al equipo:",
+      "questions": [
+        "¿Qué órganos están fallando ahora?",
+        "¿Está mejorando o empeorando respecto a ayer?",
+        "¿Vamos a cambiar el tratamiento según la tendencia?",
+        "¿Cuándo deberíamos hablar de objetivos de cuidados?"
+      ]
+    }
+  },
+  "apache2": {
+    "title": "APACHE II",
+    "subtitle": "Acute Physiology and Chronic Health Evaluation II (Knaus 1985). Gravedad / mortalidad en UCI.",
+    "scale_legend": "Cada subescala de Fisiología Aguda se introduce directamente (0-4). La puntuación combina APS + puntos de edad (0-6) + puntos de salud crónica (0-5).",
+    "section_aps": "Subescalas de Fisiología Aguda (cada una 0-4)",
+    "section_age_chronic": "Edad + salud crónica",
+    "fields": {
+      "temperature": "Temperatura",
+      "meanArterialPressure": "Tensión arterial media",
+      "heartRate": "Frecuencia cardíaca",
+      "respiratoryRate": "Frecuencia respiratoria",
+      "oxygenation": "Oxigenación (A-aDO₂ o PaO₂)",
+      "arterialPh": "pH arterial",
+      "sodium": "Sodio",
+      "potassium": "Potasio",
+      "creatinine": "Creatinina",
+      "hematocrit": "Hematocrito",
+      "whiteCellCount": "Leucocitos",
+      "glasgowComaScore": "Puntos de Glasgow (15 − GCS, 0-12)",
+      "agePoints": "Puntos de edad (0-6)",
+      "chronicHealthPoints": "Puntos de salud crónica (0-5)"
+    },
+    "patient": {
+      "intro": "APACHE II estima la gravedad de un paciente el día que entra en UCI. Orienta el nivel de soporte y la probabilidad de salir del hospital.",
+      "result_low": "APACHE II bajo. Mortalidad hospitalaria ~4-8%; soporte de UCI rutinario.",
+      "result_moderate": "APACHE II moderado. Mortalidad hospitalaria ~15-25%; soporte de UCI completo con monitorización seriada.",
+      "result_high": "APACHE II alto. Mortalidad hospitalaria 40-85%; atención multidisciplinar y discusión compartida de objetivos.",
+      "ask_doctor": "Pregunta al equipo:",
+      "questions": [
+        "¿Qué está haciendo subir tanto el APACHE II?",
+        "¿Vamos en buena dirección?",
+        "¿Cuáles son los objetivos realistas de este ingreso?",
+        "¿Cuándo deberíamos reevaluar?"
+      ]
+    }
+  },
+  "nihss": {
+    "title": "NIHSS",
+    "subtitle": "National Institutes of Health Stroke Scale (Brott 1989). Gravedad del ictus agudo.",
+    "scale_legend": "Puntúa cada ítem desde 0 (normal) hasta su máximo. Los ítems no evaluables se puntúan 0 por convención.",
+    "fields": {
+      "locResponsiveness": "1a — Nivel de conciencia (0-3)",
+      "locQuestions": "1b — Preguntas LOC (0-2)",
+      "locCommands": "1c — Órdenes LOC (0-2)",
+      "bestGaze": "2 — Mejor mirada (0-2)",
+      "visualFields": "3 — Campos visuales (0-3)",
+      "facialPalsy": "4 — Parálisis facial (0-3)",
+      "motorArmLeft": "5a — Motor brazo — izquierdo (0-4)",
+      "motorArmRight": "5b — Motor brazo — derecho (0-4)",
+      "motorLegLeft": "6a — Motor pierna — izquierda (0-4)",
+      "motorLegRight": "6b — Motor pierna — derecha (0-4)",
+      "limbAtaxia": "7 — Ataxia de extremidades (0-2)",
+      "sensory": "8 — Sensibilidad (0-2)",
+      "bestLanguage": "9 — Mejor lenguaje (0-3)",
+      "dysarthria": "10 — Disartria (0-2)",
+      "extinctionInattention": "11 — Extinción / inatención (0-2)"
+    },
+    "patient": {
+      "intro": "NIHSS mide cuán gravemente el ictus ha afectado al cerebro. Orienta decisiones sobre fármacos trombolíticos, trombectomía mecánica y qué rehabilitación ayudará.",
+      "result_low": "Ictus leve (NIHSS ≤ 4). La mayoría de pacientes se recupera bien; el equipo valorará si la trombólisis compensa el riesgo de sangrado.",
+      "result_moderate": "Ictus moderado (NIHSS 5-15). Trombólisis e imagen suelen estar indicadas; la trombectomía puede ayudar si hay oclusión de vaso grande.",
+      "result_high": "Ictus grave (NIHSS ≥ 16). Imagen urgente para buscar trombo de gran vaso; trombectomía mecánica y unidad de ictus son la prioridad.",
+      "ask_doctor": "Pregunta al equipo de ictus:",
+      "questions": [
+        "¿Soy candidato a fármaco trombolítico?",
+        "¿Una trombectomía mecánica podría ayudarme?",
+        "¿Qué recuperación se espera con esta gravedad?",
+        "¿Cuánto tiempo se espera que esté en la unidad de ictus?"
+      ]
+    }
   }
 }

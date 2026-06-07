@@ -1693,5 +1693,102 @@
         "Cada quant revisar el risc?"
       ]
     }
+  },
+  "sofa": {
+    "title": "SOFA",
+    "subtitle": "Sequential Organ Failure Assessment (Vincent 1996). Definició operativa de Sepsis-3.",
+    "scale_legend": "Introduïu cada subescala (0-4) directament. La gràfica d'UCI sol pre-calcular-les segons els punts de tall de Vincent 1996.",
+    "fields": {
+      "respiration": "Respiració (PaO₂/FiO₂)",
+      "coagulation": "Coagulació (plaquetes)",
+      "liver": "Fetge (bilirubina)",
+      "cardiovascular": "Cardiovascular (TAM / vasopressors)",
+      "cns": "SNC (Escala de Coma de Glasgow)",
+      "renal": "Renal (creatinina o diüresi)"
+    },
+    "patient": {
+      "intro": "SOFA mesura com estan funcionant sis sistemes del cos en un pacient crític. Un augment de 2 punts o més és la definició moderna de sospita de sèpsia.",
+      "result_low": "SOFA ≤ 6: funció orgànica relativament preservada. Cures de suport i reavaluar demà.",
+      "result_moderate": "SOFA 7-9: disfunció orgànica significativa. Mortalitat ~22%; l'equip monitoritzarà de prop i pot escalar el suport.",
+      "result_high": "SOFA 10-12: disfunció orgànica greu. Mortalitat ~50%; participació multidisciplinar i discussió d'objectius de cures.",
+      "ask_doctor": "Pregunta a l'equip:",
+      "questions": [
+        "Quins òrgans estan fallant ara?",
+        "Està millorant o empitjorant respecte a ahir?",
+        "Canviarem el tractament segons la tendència?",
+        "Quan hauríem de parlar d'objectius de cures?"
+      ]
+    }
+  },
+  "apache2": {
+    "title": "APACHE II",
+    "subtitle": "Acute Physiology and Chronic Health Evaluation II (Knaus 1985). Gravetat / mortalitat a UCI.",
+    "scale_legend": "Cada subescala de Fisiologia Aguda s'introdueix directament (0-4). La puntuació combina APS + punts d'edat (0-6) + punts de salut crònica (0-5).",
+    "section_aps": "Subescales de Fisiologia Aguda (cada una 0-4)",
+    "section_age_chronic": "Edat + salut crònica",
+    "fields": {
+      "temperature": "Temperatura",
+      "meanArterialPressure": "Tensió arterial mitjana",
+      "heartRate": "Freqüència cardíaca",
+      "respiratoryRate": "Freqüència respiratòria",
+      "oxygenation": "Oxigenació (A-aDO₂ o PaO₂)",
+      "arterialPh": "pH arterial",
+      "sodium": "Sodi",
+      "potassium": "Potassi",
+      "creatinine": "Creatinina",
+      "hematocrit": "Hematòcrit",
+      "whiteCellCount": "Leucòcits",
+      "glasgowComaScore": "Punts de Glasgow (15 − GCS, 0-12)",
+      "agePoints": "Punts d'edat (0-6)",
+      "chronicHealthPoints": "Punts de salut crònica (0-5)"
+    },
+    "patient": {
+      "intro": "APACHE II estima la gravetat d'un pacient el dia que entra a UCI. Orienta el nivell de suport i la probabilitat de sortir de l'hospital.",
+      "result_low": "APACHE II baix. Mortalitat hospitalària ~4-8%; suport d'UCI rutinari.",
+      "result_moderate": "APACHE II moderat. Mortalitat hospitalària ~15-25%; suport d'UCI complet amb monitorització seriada.",
+      "result_high": "APACHE II alt. Mortalitat hospitalària 40-85%; atenció multidisciplinar i discussió compartida d'objectius.",
+      "ask_doctor": "Pregunta a l'equip:",
+      "questions": [
+        "Què està fent pujar tant l'APACHE II?",
+        "Anem en bona direcció?",
+        "Quins són els objectius realistes d'aquest ingrés?",
+        "Quan hauríem de reavaluar?"
+      ]
+    }
+  },
+  "nihss": {
+    "title": "NIHSS",
+    "subtitle": "National Institutes of Health Stroke Scale (Brott 1989). Gravetat de l'ictus agut.",
+    "scale_legend": "Puntua cada ítem des de 0 (normal) fins al seu màxim. Els ítems no avaluables es puntuen 0 per convenció.",
+    "fields": {
+      "locResponsiveness": "1a — Nivell de consciència (0-3)",
+      "locQuestions": "1b — Preguntes LOC (0-2)",
+      "locCommands": "1c — Ordres LOC (0-2)",
+      "bestGaze": "2 — Millor mirada (0-2)",
+      "visualFields": "3 — Camps visuals (0-3)",
+      "facialPalsy": "4 — Paràlisi facial (0-3)",
+      "motorArmLeft": "5a — Motor braç — esquerre (0-4)",
+      "motorArmRight": "5b — Motor braç — dret (0-4)",
+      "motorLegLeft": "6a — Motor cama — esquerra (0-4)",
+      "motorLegRight": "6b — Motor cama — dreta (0-4)",
+      "limbAtaxia": "7 — Atàxia d'extremitats (0-2)",
+      "sensory": "8 — Sensibilitat (0-2)",
+      "bestLanguage": "9 — Millor llenguatge (0-3)",
+      "dysarthria": "10 — Disàrtria (0-2)",
+      "extinctionInattention": "11 — Extinció / inatenció (0-2)"
+    },
+    "patient": {
+      "intro": "NIHSS mesura com de greu ha afectat l'ictus al cervell. Orienta decisions sobre fàrmacs trombolítics, trombectomia mecànica i quina rehabilitació ajudarà.",
+      "result_low": "Ictus lleu (NIHSS ≤ 4). La majoria de pacients es recupera bé; l'equip valorarà si la tromboèlisi compensa el risc de sagnat.",
+      "result_moderate": "Ictus moderat (NIHSS 5-15). Tromboèlisi i imatge solen estar indicats; la trombectomia pot ajudar si hi ha oclusió de vas gran.",
+      "result_high": "Ictus greu (NIHSS ≥ 16). Imatge urgent per buscar trombe de gran vas; trombectomia mecànica i unitat d'ictus són la prioritat.",
+      "ask_doctor": "Pregunta a l'equip d'ictus:",
+      "questions": [
+        "Soc candidat a fàrmac trombolític?",
+        "Una trombectomia mecànica em podria ajudar?",
+        "Quina recuperació s'espera amb aquesta gravetat?",
+        "Quant de temps s'espera que estigui a la unitat d'ictus?"
+      ]
+    }
   }
 }
