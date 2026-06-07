@@ -1346,5 +1346,63 @@
     "close_label": "Cerrar menú de calculadoras",
     "collapse_label": "Replegar menú",
     "expand_label": "Desplegar menú"
+  },
+  "anionGap": {
+    "title": "Brecha aniónica",
+    "subtitle": "Na − (Cl + HCO₃) — detecta acidosis metabólica con brecha aniónica elevada (MUDPILES).",
+    "result_label": "Brecha aniónica",
+    "use_albumin_correction": "Aplicar corrección de Figge por albúmina (+2,5 × (4 − albúmina) mEq/L)",
+    "fields": {
+      "sodiumMEqL": "Sodio (mEq/L)",
+      "chlorideMEqL": "Cloro (mEq/L)",
+      "bicarbonateMEqL": "Bicarbonato (mEq/L)",
+      "albuminGDl": "Albúmina (g/dL)"
+    },
+    "categories": {
+      "low": "Baja",
+      "normal": "Normal",
+      "elevated": "Elevada"
+    },
+    "patient": {
+      "intro": "La brecha aniónica es una forma rápida de comprobar si hay ácidos inusuales en la sangre. Es una herramienta de cribado, no un diagnóstico.",
+      "result_low": "Tu brecha aniónica es baja. Esto suele deberse a una albúmina baja o efectos del laboratorio; rara vez indica una exposición específica.",
+      "result_normal": "Tu brecha aniónica está dentro del rango normal.",
+      "result_elevated": "Tu brecha aniónica está elevada, lo que sugiere ácidos no medidos en la sangre. El equipo buscará causas como diabetes, problemas renales o ciertas intoxicaciones.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Qué significa para mí ahora una brecha aniónica elevada?",
+        "¿Hay que tratar la acidez en sí o la causa subyacente?",
+        "¿Deberíamos medir lactato, cuerpos cetónicos o brecha osmolar?",
+        "¿Cada cuánto repetiremos la gasometría?"
+      ]
+    }
+  },
+  "fena": {
+    "title": "FENa",
+    "subtitle": "Fracción de excreción de sodio — separa el FRA prerrenal del intrínseco.",
+    "fields": {
+      "urineSodiumMEqL": "Sodio en orina (mEq/L)",
+      "plasmaSodiumMEqL": "Sodio plasmático (mEq/L)",
+      "urineCreatinineMgDl": "Creatinina en orina (mg/dL)",
+      "plasmaCreatinineMgDl": "Creatinina plasmática (mg/dL)"
+    },
+    "categories": {
+      "prerenal": "Prerrenal (< 1 %)",
+      "indeterminate": "Indeterminada",
+      "intrinsic": "Intrínseca (> 2 %)"
+    },
+    "patient": {
+      "intro": "Esta prueba ayuda a los médicos a entender por qué los riñones no funcionan como deberían — si los riñones están dañados o si simplemente no reciben suficiente flujo sanguíneo.",
+      "result_prerenal": "Tu FENa es baja. Suele significar que los riñones no están dañados pero no reciben suficiente líquido. El equipo puede administrarte sueros y buscar la causa.",
+      "result_indeterminate": "Tu FENa está en un rango intermedio. El equipo puede añadir más pruebas (como FEUrea, sobre todo si tomas diuréticos) antes de decidir la causa.",
+      "result_intrinsic": "Tu FENa es alta, lo que sugiere que los riñones están inflamados o lesionados. El equipo buscará la causa y puede consultar con nefrología.",
+      "ask_doctor": "Pregunta al equipo:",
+      "questions": [
+        "¿Cuál es la causa probable de mi fallo renal agudo?",
+        "¿Necesitaré sueros, diálisis u otro tratamiento?",
+        "¿Hay algún medicamento que esté afectando a mis riñones?",
+        "¿Qué signos de empeoramiento debemos vigilar?"
+      ]
+    }
   }
 }

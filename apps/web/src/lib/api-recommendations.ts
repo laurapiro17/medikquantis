@@ -624,6 +624,41 @@ const recommendations: Record<string, Translations> = {
     ca: "Hinchey IV: peritonitis fecal generalitzada. Procediment de Hartmann urgent amb antibiòtics d'ampli espectre i reanimació.",
   },
 
+
+  // Anion gap
+  AG_LOW: {
+    en: "Low anion gap. Most often artifactual or due to hypoalbuminaemia; rarely lithium, bromide, multiple myeloma.",
+    es: "Brecha aniónica baja. Suele ser artefactual o por hipoalbuminemia; raramente litio, bromuro, mieloma múltiple.",
+    ca: "Bretxa aniònica baixa. Sol ser artefactual o per hipoalbuminèmia; rarament liti, bromur, mieloma múltiple.",
+  },
+  AG_NORMAL: {
+    en: "Normal anion gap (6–12 mEq/L).",
+    es: "Brecha aniónica normal (6–12 mEq/L).",
+    ca: "Bretxa aniònica normal (6–12 mEq/L).",
+  },
+  AG_ELEVATED: {
+    en: "Elevated anion gap. Work up high-AG metabolic acidosis (MUDPILES).",
+    es: "Brecha aniónica elevada. Estudie acidosis metabólica con brecha aniónica elevada (MUDPILES).",
+    ca: "Bretxa aniònica elevada. Estudieu acidosi metabòlica amb bretxa aniònica elevada (MUDPILES).",
+  },
+
+  // FENa
+  FENA_PRERENAL: {
+    en: "FENa < 1 % suggests prerenal AKI. Restore effective circulating volume; reassess after fluid challenge.",
+    es: "FENa < 1 % sugiere FRA prerrenal. Restablezca el volumen circulante efectivo; reevalúe tras prueba de fluidos.",
+    ca: "FENa < 1 % suggereix IRA prerenal. Restabliu el volum circulant efectiu; reavalueu després de prova de fluids.",
+  },
+  FENA_INDETERMINATE: {
+    en: "FENa 1–2 % is indeterminate. On diuretics, FENa is unreliable — use FEUrea (< 35 % supports prerenal).",
+    es: "FENa 1–2 % es indeterminado. Con diuréticos, FENa es poco fiable — use FEUrea (< 35 % apoya prerrenal).",
+    ca: "FENa 1–2 % és indeterminat. Amb diürètics, FENa és poc fiable — useu FEUrea (< 35 % suport prerenal).",
+  },
+  FENA_INTRINSIC: {
+    en: "FENa > 2 % suggests intrinsic AKI (most commonly acute tubular necrosis). Search for ischaemic or nephrotoxic insult.",
+    es: "FENa > 2 % sugiere FRA intrínseco (lo más habitual NTA). Busque insulto isquémico o nefrotóxico.",
+    ca: "FENa > 2 % suggereix IRA intrínseca (el més habitual NTA). Cerqueu insult isquèmic o nefrotòxic.",
+  },
+
 };
 
 /**

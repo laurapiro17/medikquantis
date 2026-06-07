@@ -1346,5 +1346,63 @@
     "close_label": "Close calculator menu",
     "collapse_label": "Collapse menu",
     "expand_label": "Expand menu"
+  },
+  "anionGap": {
+    "title": "Anion gap",
+    "subtitle": "Na − (Cl + HCO₃) — screens for high-AG metabolic acidosis (MUDPILES).",
+    "result_label": "Anion gap",
+    "use_albumin_correction": "Apply Figge albumin correction (+2.5 × (4 − albumin) mEq/L)",
+    "fields": {
+      "sodiumMEqL": "Sodium (mEq/L)",
+      "chlorideMEqL": "Chloride (mEq/L)",
+      "bicarbonateMEqL": "Bicarbonate (mEq/L)",
+      "albuminGDl": "Albumin (g/dL)"
+    },
+    "categories": {
+      "low": "Low",
+      "normal": "Normal",
+      "elevated": "Elevated"
+    },
+    "patient": {
+      "intro": "The anion gap is a quick way for doctors to check whether there are unusual acids in the blood. It is a screening tool, not a diagnosis.",
+      "result_low": "Your anion gap is low. This is most often due to low albumin or laboratory measurement effects; very rarely it points to a specific exposure.",
+      "result_normal": "Your anion gap is within the normal range.",
+      "result_elevated": "Your anion gap is elevated, which suggests there are unmeasured acids in the blood. The team will look for causes such as diabetes, kidney problems or certain poisonings.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "What does an elevated anion gap mean for me right now?",
+        "Do I need treatment for the acidity itself, or for the underlying cause?",
+        "Should we check lactate, ketones or osmolar gap?",
+        "How often should we recheck the blood gas?"
+      ]
+    }
+  },
+  "fena": {
+    "title": "FENa",
+    "subtitle": "Fractional excretion of sodium — separates prerenal from intrinsic AKI.",
+    "fields": {
+      "urineSodiumMEqL": "Urine sodium (mEq/L)",
+      "plasmaSodiumMEqL": "Plasma sodium (mEq/L)",
+      "urineCreatinineMgDl": "Urine creatinine (mg/dL)",
+      "plasmaCreatinineMgDl": "Plasma creatinine (mg/dL)"
+    },
+    "categories": {
+      "prerenal": "Prerenal (< 1 %)",
+      "indeterminate": "Indeterminate",
+      "intrinsic": "Intrinsic (> 2 %)"
+    },
+    "patient": {
+      "intro": "This test helps doctors figure out why your kidneys are not working as expected — whether the kidneys themselves are damaged, or if they are simply not receiving enough blood flow.",
+      "result_prerenal": "Your FENa is low. This usually means the kidneys are not damaged, but they are not receiving enough fluid. The team may give you fluids and look for the cause.",
+      "result_indeterminate": "Your FENa is in the in-between range. The team may add more tests (such as FEUrea, especially if you take diuretics) before deciding the cause.",
+      "result_intrinsic": "Your FENa is high, suggesting the kidneys themselves are inflamed or injured. The team will look for the cause and may consult nephrology.",
+      "ask_doctor": "Ask the medical team:",
+      "questions": [
+        "What is the likely cause of my acute kidney injury?",
+        "Will I need fluids, dialysis or another treatment?",
+        "Are any of my medications affecting my kidneys?",
+        "What signs of worsening should we watch for?"
+      ]
+    }
   }
 }

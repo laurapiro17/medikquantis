@@ -1346,5 +1346,63 @@
     "close_label": "Tanca el menú de calculadores",
     "collapse_label": "Replegar menú",
     "expand_label": "Desplegar menú"
+  },
+  "anionGap": {
+    "title": "Bretxa aniònica",
+    "subtitle": "Na − (Cl + HCO₃) — detecta acidosi metabòlica amb bretxa aniònica elevada (MUDPILES).",
+    "result_label": "Bretxa aniònica",
+    "use_albumin_correction": "Aplicar correcció de Figge per albúmina (+2,5 × (4 − albúmina) mEq/L)",
+    "fields": {
+      "sodiumMEqL": "Sodi (mEq/L)",
+      "chlorideMEqL": "Clor (mEq/L)",
+      "bicarbonateMEqL": "Bicarbonat (mEq/L)",
+      "albuminGDl": "Albúmina (g/dL)"
+    },
+    "categories": {
+      "low": "Baixa",
+      "normal": "Normal",
+      "elevated": "Elevada"
+    },
+    "patient": {
+      "intro": "La bretxa aniònica és una manera ràpida de comprovar si hi ha àcids inusuals a la sang. És una eina de cribratge, no un diagnòstic.",
+      "result_low": "La teva bretxa aniònica és baixa. Sol ser per albúmina baixa o efectes del laboratori; rarament indica una exposició específica.",
+      "result_normal": "La teva bretxa aniònica està dins del rang normal.",
+      "result_elevated": "La teva bretxa aniònica està elevada, cosa que suggereix àcids no mesurats a la sang. L'equip buscarà causes com diabetis, problemes renals o certes intoxicacions.",
+      "ask_doctor": "Pregunta al teu metge:",
+      "questions": [
+        "Què significa per a mi ara una bretxa aniònica elevada?",
+        "Cal tractar l'acidesa en si o la causa subjacent?",
+        "Hauríem de mesurar lactat, cossos cetònics o bretxa osmolar?",
+        "Cada quant repetirem la gasometria?"
+      ]
+    }
+  },
+  "fena": {
+    "title": "FENa",
+    "subtitle": "Fracció d'excreció de sodi — separa la IRA prerenal de la intrínseca.",
+    "fields": {
+      "urineSodiumMEqL": "Sodi en orina (mEq/L)",
+      "plasmaSodiumMEqL": "Sodi plasmàtic (mEq/L)",
+      "urineCreatinineMgDl": "Creatinina en orina (mg/dL)",
+      "plasmaCreatinineMgDl": "Creatinina plasmàtica (mg/dL)"
+    },
+    "categories": {
+      "prerenal": "Prerenal (< 1 %)",
+      "indeterminate": "Indeterminada",
+      "intrinsic": "Intrínseca (> 2 %)"
+    },
+    "patient": {
+      "intro": "Aquesta prova ajuda els metges a entendre per què els ronyons no funcionen com haurien — si els ronyons estan danyats o si simplement no reben prou flux sanguini.",
+      "result_prerenal": "La teva FENa és baixa. Sol significar que els ronyons no estan danyats però no reben prou líquid. L'equip et pot administrar sèrums i buscar la causa.",
+      "result_indeterminate": "La teva FENa està en un rang intermedi. L'equip pot afegir més proves (com FEUrea, sobretot si prens diürètics) abans de decidir la causa.",
+      "result_intrinsic": "La teva FENa és alta, cosa que suggereix que els ronyons estan inflamats o lesionats. L'equip buscarà la causa i pot consultar amb nefrologia.",
+      "ask_doctor": "Pregunta a l'equip:",
+      "questions": [
+        "Quina és la causa probable del meu fracàs renal agut?",
+        "Necessitaré sèrums, diàlisi o un altre tractament?",
+        "Hi ha algun medicament que estigui afectant els meus ronyons?",
+        "Quins signes d'empitjorament hem de vigilar?"
+      ]
+    }
   }
 }

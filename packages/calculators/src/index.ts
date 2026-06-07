@@ -41,3 +41,5 @@ export * as pasi from "./pasi";
 export * as scorad from "./scorad";
 export * as dukeEndocarditis from "./duke-endocarditis";
 export * as hinchey from "./hinchey";
+export * as anionGap from "./anion-gap";
+export * as fena from "./fena";
