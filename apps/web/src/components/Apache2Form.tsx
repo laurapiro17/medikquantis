@@ -56,7 +56,7 @@ export function Apache2Form() {
         className="glass-panel space-y-6 p-6"
       >
         <fieldset className="space-y-3">
-          <legend className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-neon/80">
+          <legend className="text-xs font-medium text-slate-500 dark:text-slate-400">
             {t("apache2.section_aps")}
           </legend>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -78,7 +78,7 @@ export function Apache2Form() {
           </div>
         </fieldset>
         <fieldset className="space-y-3 border-t border-slate-200 pt-4 dark:border-white/10">
-          <legend className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-neon/80">
+          <legend className="text-xs font-medium text-slate-500 dark:text-slate-400">
             {t("apache2.section_age_chronic")}
           </legend>
           <div className="grid gap-4 sm:grid-cols-2">

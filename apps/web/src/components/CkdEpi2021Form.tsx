@@ -129,7 +129,7 @@ function CkdEpiResultPanel(props: {
     return (
       <div className="glass-panel animate-fade-in p-6">
         <div className="flex items-baseline gap-4">
-          <span className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">
+          <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
             {t("ckdEpi2021.result_label")}
           </span>
           <span className="score-glow-light dark:score-glow-dark font-mono text-5xl font-semibold leading-none tabular-nums">
@@ -144,7 +144,7 @@ function CkdEpiResultPanel(props: {
 
         <dl className="mt-5 grid gap-4 text-sm sm:grid-cols-2">
           <div>
-            <dt className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">
+            <dt className="text-xs font-medium text-slate-500 dark:text-slate-400">
               {t("ckdEpi2021.stage_label")}
             </dt>
             <dd className="mt-1 font-mono text-2xl font-medium text-slate-900 tabular-nums dark:text-slate-100">
@@ -152,7 +152,7 @@ function CkdEpiResultPanel(props: {
             </dd>
           </div>
           <div>
-            <dt className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">
+            <dt className="text-xs font-medium text-slate-500 dark:text-slate-400">
               {t("common.evidence")}
             </dt>
             <dd className="mt-1 font-mono text-2xl font-medium text-slate-900 tabular-nums dark:text-slate-100">

@@ -77,7 +77,7 @@ export function CapriniForm() {
   ) {
     return (
       <div className="space-y-2 border-t border-slate-200 pt-4 dark:border-white/10">
-        <p className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">
+        <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
           {title}
         </p>
         <BooleanList

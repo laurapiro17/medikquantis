@@ -14,7 +14,7 @@ export default async function SofaPage({
   return (
     <div className="space-y-8">
       <div>
-        <p className="font-mono text-xs uppercase tracking-widest text-neon">
+        <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
           {t("sofa.title")}
         </p>
         <h1 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-50">
@@ -25,7 +25,7 @@ export default async function SofaPage({
       <SofaForm />
 
       <details className="glass-panel p-4 text-sm text-slate-600 dark:text-slate-300">
-        <summary className="cursor-pointer font-mono text-xs uppercase tracking-widest text-slate-700 dark:text-slate-300">
+        <summary className="cursor-pointer text-xs font-medium text-slate-500 dark:text-slate-400">
           {t("common.references")}
         </summary>
         <ol className="mt-3 list-decimal space-y-2 pl-5">

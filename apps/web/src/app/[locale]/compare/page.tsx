@@ -14,7 +14,7 @@ export default async function ComparePage({
   return (
     <div className="space-y-8">
       <div className="space-y-3">
-        <p className="font-mono text-xs uppercase tracking-widest text-trust-600 dark:text-neon/80">
+        <p className="text-xs font-medium text-trust-600 dark:text-neon/80">
           {t("compare.title")}
         </p>
         <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-slate-50">
@@ -27,14 +27,14 @@ export default async function ComparePage({
 
       <div className="grid gap-10 lg:grid-cols-2">
         <section className="space-y-4">
-          <h2 className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-neon/80">
+          <h2 className="text-xs font-medium text-slate-500 dark:text-slate-400">
             {t("compare.stroke_heading")}
           </h2>
           <Cha2ds2vascForm />
         </section>
 
         <section className="space-y-4">
-          <h2 className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-neon/80">
+          <h2 className="text-xs font-medium text-slate-500 dark:text-slate-400">
             {t("compare.bleeding_heading")}
           </h2>
           <HasBledForm />

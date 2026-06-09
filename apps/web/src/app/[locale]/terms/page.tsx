@@ -20,7 +20,7 @@ export default async function TermsPage({
   return (
     <article className="space-y-8 max-w-3xl">
       <header>
-        <p className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">
+        <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
           {t("terms.updated")}
         </p>
         <h1 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-50">

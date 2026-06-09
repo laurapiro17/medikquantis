@@ -63,7 +63,7 @@ export function ScoradForm() {
         className="glass-panel space-y-6 p-6"
       >
         <fieldset className="space-y-2">
-          <legend className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-neon/80">
+          <legend className="text-xs font-medium text-slate-500 dark:text-slate-400">
             {t("scorad.section_a")}
           </legend>
           <NumberInput
@@ -76,7 +76,7 @@ export function ScoradForm() {
         </fieldset>
 
         <fieldset className="space-y-2 border-t border-slate-200 pt-4 dark:border-white/10">
-          <legend className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-neon/80">
+          <legend className="text-xs font-medium text-slate-500 dark:text-slate-400">
             {t("scorad.section_b")}
           </legend>
           <p className="text-xs text-slate-500 dark:text-slate-400">
@@ -97,7 +97,7 @@ export function ScoradForm() {
         </fieldset>
 
         <fieldset className="space-y-2 border-t border-slate-200 pt-4 dark:border-white/10">
-          <legend className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-neon/80">
+          <legend className="text-xs font-medium text-slate-500 dark:text-slate-400">
             {t("scorad.section_c")}
           </legend>
           <div className="grid gap-4 sm:grid-cols-2">

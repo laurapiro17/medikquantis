@@ -11,7 +11,7 @@ import type { ReactNode } from "react";
 
 export function FieldLegend({ children }: { children: ReactNode }) {
   return (
-    <span className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">
+    <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
       {children}
     </span>
   );

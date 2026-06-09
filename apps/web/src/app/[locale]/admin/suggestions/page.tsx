@@ -13,7 +13,7 @@ export default async function AdminSuggestionsPage({
   return (
     <div className="space-y-8">
       <div className="space-y-2">
-        <p className="font-mono text-xs uppercase tracking-widest text-trust-600 dark:text-neon/80">
+        <p className="text-xs font-medium text-trust-600 dark:text-neon/80">
           {t("admin.eyebrow")}
         </p>
         <h1 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-50">

@@ -162,7 +162,7 @@ function HarrisBenedictResultPanel({
       <div className="glass-panel animate-fade-in p-6">
         <dl className="grid gap-6 sm:grid-cols-2">
           <div>
-            <dt className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">
+            <dt className="text-xs font-medium text-slate-500 dark:text-slate-400">
               {t("harrisBenedict.result_bmr")}
             </dt>
             <dd className="mt-1 score-glow-light dark:score-glow-dark font-mono text-5xl font-semibold leading-none tabular-nums">
@@ -173,7 +173,7 @@ function HarrisBenedictResultPanel({
             </dd>
           </div>
           <div>
-            <dt className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">
+            <dt className="text-xs font-medium text-slate-500 dark:text-slate-400">
               {t("harrisBenedict.result_tdee")}
             </dt>
             <dd className="mt-1 font-mono text-5xl font-semibold leading-none text-slate-900 tabular-nums dark:text-slate-100">
@@ -189,7 +189,7 @@ function HarrisBenedictResultPanel({
         </p>
         <dl className="mt-5 grid gap-4 text-sm">
           <div>
-            <dt className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">
+            <dt className="text-xs font-medium text-slate-500 dark:text-slate-400">
               {t("common.evidence")}
             </dt>
             <dd className="mt-1 font-mono text-2xl font-medium text-slate-900 dark:text-slate-100">

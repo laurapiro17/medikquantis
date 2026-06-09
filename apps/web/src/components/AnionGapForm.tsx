@@ -166,7 +166,7 @@ function AnionGapResultPanel({
     return (
       <div className="glass-panel animate-fade-in p-6">
         <div className="flex items-baseline gap-4">
-          <span className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">
+          <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
             {t("anionGap.result_label")}
           </span>
           <span className="score-glow-light dark:score-glow-dark font-mono text-5xl font-semibold leading-none tabular-nums">
@@ -185,7 +185,7 @@ function AnionGapResultPanel({
         <p className="mt-5 text-slate-900 dark:text-slate-100">{recommendation}</p>
         <dl className="mt-5 grid gap-4 text-sm">
           <div>
-            <dt className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">
+            <dt className="text-xs font-medium text-slate-500 dark:text-slate-400">
               {t("common.evidence")}
             </dt>
             <dd className="mt-1 font-mono text-2xl font-medium text-slate-900 dark:text-slate-100">

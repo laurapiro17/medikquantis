@@ -125,7 +125,7 @@ function TimiResultPanel(props: {
     return (
       <div className="glass-panel animate-fade-in p-6">
         <div className="flex items-baseline gap-4">
-          <span className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">
+          <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
             {t("common.score")}
           </span>
           <span className="score-glow-light dark:score-glow-dark font-mono text-6xl font-semibold leading-none tabular-nums">
@@ -141,7 +141,7 @@ function TimiResultPanel(props: {
         <dl className="mt-5 grid gap-4 text-sm sm:grid-cols-2">
           {props.mace14d !== undefined && (
             <div>
-              <dt className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">
+              <dt className="text-xs font-medium text-slate-500 dark:text-slate-400">
                 {t("timi.risk_label_14d")}
               </dt>
               <dd className="mt-1 font-mono text-2xl font-medium text-slate-900 tabular-nums dark:text-slate-100">
@@ -150,7 +150,7 @@ function TimiResultPanel(props: {
             </div>
           )}
           <div>
-            <dt className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">
+            <dt className="text-xs font-medium text-slate-500 dark:text-slate-400">
               {t("common.evidence")}
             </dt>
             <dd className="mt-1 font-mono text-2xl font-medium text-slate-900 tabular-nums dark:text-slate-100">
