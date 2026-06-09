@@ -113,7 +113,7 @@
     "subheading": "Pick a calculator to get started.",
     "hero_eyebrow": "Open clinical calculators",
     "hero_heading": "Multilingual scores. Cited evidence. Free API.",
-    "hero_subheading": "Thirteen peer-reviewed clinical scores in Catalan, Spanish and English, with a public REST API and a permanent DOI. Open under MIT.",
+    "hero_subheading": "48 peer-reviewed clinical scores in Catalan, Spanish and English, with a public REST API and a permanent DOI. Open under MIT.",
     "hero_cta_calcs": "Browse calculators",
     "hero_cta_api": "Use the API",
     "value_1_title": "Native multilingual",
@@ -123,15 +123,15 @@
     "value_3_title": "Citable & open",
     "value_3_body": "MIT licensed code, permanent Zenodo DOI, free REST API, no tracking.",
     "catalog_heading": "Catalog",
-    "catalog_subheading": "Thirteen calculators across five specialties.",
+    "catalog_subheading": "48 calculators across 13 specialties.",
     "doi_label": "Cite this work",
     "api_callout_heading": "Programmatic access",
-    "api_callout_body": "All thirteen calculators are exposed as a REST API with an OpenAPI 3.1 spec and live Swagger UI. CORS open, no auth, language switchable.",
+    "api_callout_body": "All 48 calculators are exposed as a REST API with an OpenAPI 3.1 spec and live Swagger UI. CORS open, no auth, language switchable.",
     "api_callout_cta": "Open API docs",
     "search_placeholder": "Search calculators…",
     "search_empty": "No calculators match your search.",
     "popular_heading": "Popular",
-    "popular_subheading": "Eight calculators used daily across rotations."
+    "popular_subheading": "Most-used across ED, ICU, wards and on-call shifts."
   },
   "notfound": {
     "heading": "Page not found",

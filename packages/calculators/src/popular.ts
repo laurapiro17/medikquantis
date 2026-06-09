@@ -8,12 +8,16 @@
 export const POPULAR_CALC_IDS = [
   "cha2ds2vasc",
   "heart",
+  "sofa",
   "wells-pe",
   "curb-65",
+  "nihss",
   "gcs",
+  "apache-2",
   "charlson",
-  "calcium-corrected",
   "ckd-epi-2021",
+  "calcium-corrected",
+  "wells-dvt",
 ] as const;
 
 export type PopularCalcId = (typeof POPULAR_CALC_IDS)[number];
