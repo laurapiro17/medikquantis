@@ -3,7 +3,7 @@ import { getCalc, listCalcs, POPULAR_CALC_IDS } from "@medcalc/calculators";
 import { Link } from "@/i18n/navigation";
 import { Catalog } from "@/components/Catalog";
 
-const DOI = "10.5281/zenodo.20562618";
+const DOI = "10.5281/zenodo.20608408";
 const DOI_URL = `https://doi.org/${DOI}`;
 const REPO_URL = "https://github.com/laurapiro17/medikquantis";
 
@@ -35,7 +35,7 @@ export default async function HomePage({
     url: REPO_URL,
     applicationCategory: "MedicalApplication",
     operatingSystem: "Web",
-    softwareVersion: "1.0.0",
+    softwareVersion: "2.0.0",
     license: "https://opensource.org/licenses/MIT",
     isAccessibleForFree: true,
     inLanguage: ["ca", "es", "en"],

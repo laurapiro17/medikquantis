@@ -97,7 +97,7 @@ export default async function OpenGraphImage({
         >
           <span>13 calculators · 5 specialties · CA · ES · EN</span>
           <span style={{ fontFamily: "monospace", color: "#00f0ff" }}>
-            DOI 10.5281/zenodo.20562618
+            DOI 10.5281/zenodo.20608408
           </span>
         </div>
       </div>
