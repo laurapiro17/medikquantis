@@ -106,7 +106,7 @@ export function Sidebar({ calcs, popularIds, onNavigate, onCollapse }: SidebarPr
 
       {popularItems.length > 0 && (
         <section className="space-y-2">
-          <h2 className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-slate-500 dark:text-neon/80">
+          <h2 className="flex items-center gap-2 text-xs font-semibold text-slate-500 dark:text-slate-400">
             <span aria-hidden>★</span>
             {t("sidebar.popular_heading")}
           </h2>
@@ -131,7 +131,7 @@ export function Sidebar({ calcs, popularIds, onNavigate, onCollapse }: SidebarPr
       )}
 
       <section className="space-y-3">
-        <h2 className="font-mono text-[10px] uppercase tracking-widest text-slate-500 dark:text-slate-400">
+        <h2 className="text-xs font-semibold text-slate-500 dark:text-slate-400">
           {t("sidebar.browse_by_specialty")}
         </h2>
         {filtered.length === 0 ? (
@@ -142,7 +142,7 @@ export function Sidebar({ calcs, popularIds, onNavigate, onCollapse }: SidebarPr
           <div className="space-y-3">
             {Array.from(grouped.entries()).map(([specialty, { label, entries }]) => (
               <div key={specialty} className="space-y-1">
-                <h3 className="px-2 text-[10px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+                <h3 className="px-2 text-[10px] font-semibold text-slate-400 dark:text-slate-500">
                   {label}
                 </h3>
                 <ul className="space-y-0.5">

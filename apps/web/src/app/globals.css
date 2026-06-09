@@ -13,12 +13,8 @@
   }
 
   .dark body {
-    @apply bg-[#0c0f10] text-slate-100;
-    background-image: radial-gradient(
-      ellipse 80% 60% at 50% -10%,
-      rgba(0, 105, 112, 0.25),
-      transparent 65%
-    );
+    @apply bg-[#0d1117] text-slate-100;
+    background-image: none;
     background-attachment: fixed;
   }
 
@@ -27,7 +23,7 @@
   }
 
   .dark :focus-visible {
-    outline-color: rgb(0 240 255 / 0.8);
+    outline-color: rgb(147 197 253 / 0.8);
   }
 }
 
@@ -58,8 +54,8 @@
     border-bottom-color: rgba(255, 255, 255, 0.12);
   }
   .dark .input-underline:focus {
-    border-bottom-color: #00f0ff;
-    box-shadow: 0 4px 10px -2px rgba(0, 240, 255, 0.3);
+    border-bottom-color: #93c5fd;
+    box-shadow: 0 4px 10px -2px rgba(147, 197, 253, 0.2);
   }
 }
 
@@ -71,15 +67,15 @@
     color: #2563eb;
   }
   .score-glow-dark {
-    color: #00f0ff;
-    text-shadow: 0 0 18px rgba(0, 240, 255, 0.55);
+    color: #93c5fd;
+    text-shadow: none;
   }
   .text-neon {
-    color: #00dbe9;
+    color: #2563eb;
   }
   .dark .text-neon {
-    color: #00f0ff;
-    text-shadow: 0 0 8px rgba(0, 240, 255, 0.45);
+    color: #93c5fd;
+    text-shadow: none;
   }
 }
 

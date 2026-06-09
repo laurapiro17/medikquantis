@@ -120,9 +120,9 @@ export function Catalog({ calcs }: CatalogProps) {
           {Array.from(grouped.entries()).map(
             ([specialty, { label, entries }]) => (
               <section key={specialty} className="space-y-3">
-                <h3 className="flex items-baseline justify-between border-b border-slate-200 pb-2 text-xs font-semibold uppercase tracking-widest text-slate-500 dark:border-white/10 dark:text-slate-400">
+                <h3 className="flex items-baseline justify-between border-b border-slate-200 pb-2 text-sm font-semibold text-slate-700 dark:border-white/10 dark:text-slate-300">
                   <span>{label}</span>
-                  <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500">
+                  <span className="text-[10px] text-slate-400 dark:text-slate-500">
                     {entries.length}
                   </span>
                 </h3>
@@ -134,11 +134,11 @@ export function Catalog({ calcs }: CatalogProps) {
                         className="glass-panel block p-5 transition hover:border-trust-500 hover:shadow-md dark:hover:border-neon/50 dark:hover:shadow-neon-soft"
                       >
                         <div className="flex items-start justify-between gap-3">
-                          <h4 className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-neon/80">
+                          <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-200">
                             {item.title}
                           </h4>
                           <span
-                            className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider ${
+                            className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium ${
                               SPECIALTY_CHIP[item.specialty] ?? DEFAULT_CHIP
                             }`}
                           >
