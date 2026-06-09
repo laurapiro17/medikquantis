@@ -5,7 +5,7 @@ export default function NotFound() {
   const t = useTranslations();
   return (
     <div className="mx-auto max-w-md py-16 text-center">
-      <p className="font-mono text-xs uppercase tracking-widest text-trust-600 dark:text-neon">
+      <p className="text-xs font-medium text-trust-600 dark:text-slate-400">
         404
       </p>
       <h1 className="mt-3 text-3xl font-bold text-slate-900 dark:text-slate-50">

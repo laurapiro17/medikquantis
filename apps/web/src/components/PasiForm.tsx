@@ -65,7 +65,7 @@ export function PasiForm() {
       >
         {regions.map((region) => (
           <fieldset key={region} className="space-y-4 border-t border-slate-200 pt-4 first:border-t-0 first:pt-0 dark:border-white/10">
-            <legend className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-neon/80">
+            <legend className="text-xs font-medium text-slate-500 dark:text-slate-400">
               {t(`pasi.regions.${region}` as "pasi.regions.head")}
             </legend>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
