@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { sofa } from "@medcalc/calculators";
 import { SofaForm } from "@/components/SofaForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("sofa", props.params);
+}
 
 export default async function SofaPage({
   params,

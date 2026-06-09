@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { qsofa } from "@medcalc/calculators";
 import { QsofaForm } from "@/components/QsofaForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("qsofa", props.params);
+}
 
 export default async function QsofaPage({
   params,

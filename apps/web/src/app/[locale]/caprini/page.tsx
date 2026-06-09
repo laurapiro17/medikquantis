@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { caprini } from "@medcalc/calculators";
 import { CapriniForm } from "@/components/CapriniForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("caprini", props.params);
+}
 
 export default async function CapriniPage({
   params,

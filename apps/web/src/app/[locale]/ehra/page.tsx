@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { ehra } from "@medcalc/calculators";
 import { EhraForm } from "@/components/EhraForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("ehra", props.params);
+}
 
 export default async function EhraPage({
   params,

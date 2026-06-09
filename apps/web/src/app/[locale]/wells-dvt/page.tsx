@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { wellsDvt } from "@medcalc/calculators";
 import { WellsDvtForm } from "@/components/WellsDvtForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("wells-dvt", props.params);
+}
 
 export default async function WellsDvtPage({
   params,

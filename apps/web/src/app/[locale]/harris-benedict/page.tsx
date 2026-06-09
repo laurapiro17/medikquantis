@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { harrisBenedict } from "@medcalc/calculators";
 import { HarrisBenedictForm } from "@/components/HarrisBenedictForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("harris-benedict", props.params);
+}
 
 export default async function HarrisBenedictPage({
   params,

@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { psaDensity } from "@medcalc/calculators";
 import { PsaDensityForm } from "@/components/PsaDensityForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("psa-density", props.params);
+}
 
 export default async function PsaDensityPage({
   params,

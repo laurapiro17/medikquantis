@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { timi } from "@medcalc/calculators";
 import { TimiForm } from "@/components/TimiForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("timi", props.params);
+}
 
 export default async function TimiPage({
   params,

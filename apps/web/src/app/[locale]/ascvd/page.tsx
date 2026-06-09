@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { ascvd } from "@medcalc/calculators";
 import { AscvdForm } from "@/components/AscvdForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("ascvd", props.params);
+}
 
 export default async function AscvdPage({
   params,

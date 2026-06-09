@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { perc } from "@medcalc/calculators";
 import { PercForm } from "@/components/PercForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("perc", props.params);
+}
 
 export default async function PercPage({
   params,

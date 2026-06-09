@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { score2 } from "@medcalc/calculators";
 import { Score2Form } from "@/components/Score2Form";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("score2", props.params);
+}
 
 export default async function Score2Page({
   params,

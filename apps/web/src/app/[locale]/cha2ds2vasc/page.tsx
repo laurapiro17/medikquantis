@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { cha2ds2vasc } from "@medcalc/calculators";
 import { Cha2ds2vascForm } from "@/components/Cha2ds2vascForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("cha2ds2vasc", props.params);
+}
 
 export default async function Cha2ds2vascPage({
   params,

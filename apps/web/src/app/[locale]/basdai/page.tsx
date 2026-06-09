@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { basdai } from "@medcalc/calculators";
 import { BasdaiForm } from "@/components/BasdaiForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("basdai", props.params);
+}
 
 export default async function BasdaiPage({
   params,

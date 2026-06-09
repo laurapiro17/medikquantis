@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { das28 } from "@medcalc/calculators";
 import { Das28Form } from "@/components/Das28Form";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("das28", props.params);
+}
 
 export default async function Das28Page({
   params,

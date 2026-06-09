@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { hasbled } from "@medcalc/calculators";
 import { HasBledForm } from "@/components/HasBledForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("hasbled", props.params);
+}
 
 export default async function HasBledPage({
   params,

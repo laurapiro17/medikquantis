@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { asaPs } from "@medcalc/calculators";
 import { AsaPsForm } from "@/components/AsaPsForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("asa-ps", props.params);
+}
 
 export default async function AsaPsPage({
   params,
