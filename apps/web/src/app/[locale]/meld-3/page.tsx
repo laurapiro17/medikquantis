@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { meld3 } from "@medcalc/calculators";
 import { Meld3Form } from "@/components/Meld3Form";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("meld-3", props.params);
+}
 
 export default async function Meld3Page({
   params,

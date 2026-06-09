@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { childPugh } from "@medcalc/calculators";
 import { ChildPughForm } from "@/components/ChildPughForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("child-pugh", props.params);
+}
 
 export default async function ChildPughPage({
   params,

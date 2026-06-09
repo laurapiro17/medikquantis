@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { rcri } from "@medcalc/calculators";
 import { RcriForm } from "@/components/RcriForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("rcri", props.params);
+}
 
 export default async function RcriPage({
   params,

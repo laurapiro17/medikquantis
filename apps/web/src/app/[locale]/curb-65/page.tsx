@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { curb65 } from "@medcalc/calculators";
 import { Curb65Form } from "@/components/Curb65Form";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("curb-65", props.params);
+}
 
 export default async function Curb65Page({
   params,

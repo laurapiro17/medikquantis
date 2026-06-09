@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { heart } from "@medcalc/calculators";
 import { HeartForm } from "@/components/HeartForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("heart", props.params);
+}
 
 export default async function HeartPage({
   params,

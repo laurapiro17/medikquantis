@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { wellsPe } from "@medcalc/calculators";
 import { WellsPeForm } from "@/components/WellsPeForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("wells-pe", props.params);
+}
 
 export default async function WellsPePage({
   params,

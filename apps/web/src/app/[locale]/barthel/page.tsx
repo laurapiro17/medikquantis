@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { barthel } from "@medcalc/calculators";
 import { BarthelForm } from "@/components/BarthelForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("barthel", props.params);
+}
 
 export default async function BarthelPage({
   params,

@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { grace } from "@medcalc/calculators";
 import { GraceForm } from "@/components/GraceForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("grace", props.params);
+}
 
 export default async function GracePage({
   params,

@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { nihss } from "@medcalc/calculators";
 import { NihssForm } from "@/components/NihssForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("nihss", props.params);
+}
 
 export default async function NihssPage({
   params,

@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { alvarado } from "@medcalc/calculators";
 import { AlvaradoForm } from "@/components/AlvaradoForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("alvarado", props.params);
+}
 
 export default async function AlvaradoPage({
   params,
