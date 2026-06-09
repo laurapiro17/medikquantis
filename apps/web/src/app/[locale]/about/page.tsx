@@ -26,7 +26,7 @@ export default async function AboutPage({
       </header>
 
       <section>
-        <h2 className="font-mono text-xs uppercase tracking-widest text-neon">
+        <h2 className="text-sm font-semibold text-slate-500 dark:text-slate-400">
           {t("about.who_heading")}
         </h2>
         <p className="mt-2 text-slate-700 dark:text-slate-300">
@@ -36,7 +36,7 @@ export default async function AboutPage({
 
       <section className="grid gap-6 sm:grid-cols-2">
         <div className="glass-panel p-5">
-          <h2 className="font-mono text-xs uppercase tracking-widest text-emerald-700 dark:text-emerald-300">
+          <h2 className="text-sm font-semibold text-slate-700 dark:text-slate-300">
             {t("about.what_it_is_heading")}
           </h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-700 dark:text-slate-300">
@@ -47,7 +47,7 @@ export default async function AboutPage({
         </div>
 
         <div className="glass-panel p-5">
-          <h2 className="font-mono text-xs uppercase tracking-widest text-cardio-700 dark:text-cardio-500">
+          <h2 className="text-sm font-semibold text-slate-700 dark:text-slate-300">
             {t("about.what_it_isnt_heading")}
           </h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-700 dark:text-slate-300">
@@ -59,7 +59,7 @@ export default async function AboutPage({
       </section>
 
       <section>
-        <h2 className="font-mono text-xs uppercase tracking-widest text-neon">
+        <h2 className="text-sm font-semibold text-slate-500 dark:text-slate-400">
           {t("about.roadmap_heading")}
         </h2>
         <p className="mt-2 text-slate-700 dark:text-slate-300">
@@ -68,7 +68,7 @@ export default async function AboutPage({
       </section>
 
       <section>
-        <h2 className="font-mono text-xs uppercase tracking-widest text-neon">
+        <h2 className="text-sm font-semibold text-slate-500 dark:text-slate-400">
           {t("about.contact_heading")}
         </h2>
         <p className="mt-2 text-slate-700 dark:text-slate-300">
