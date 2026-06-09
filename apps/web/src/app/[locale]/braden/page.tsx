@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { braden } from "@medcalc/calculators";
 import { BradenForm } from "@/components/BradenForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("braden", props.params);
+}
 
 export default async function BradenPage({
   params,

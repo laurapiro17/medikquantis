@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { glasgowBlatchford } from "@medcalc/calculators";
 import { GlasgowBlatchfordForm } from "@/components/GlasgowBlatchfordForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("glasgow-blatchford", props.params);
+}
 
 export default async function GlasgowBlatchfordPage({
   params,

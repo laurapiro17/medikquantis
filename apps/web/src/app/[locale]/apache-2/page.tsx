@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { apache2 } from "@medcalc/calculators";
 import { Apache2Form } from "@/components/Apache2Form";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("apache-2", props.params);
+}
 
 export default async function Apache2Page({
   params,

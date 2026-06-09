@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { scorad } from "@medcalc/calculators";
 import { ScoradForm } from "@/components/ScoradForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("scorad", props.params);
+}
 
 export default async function ScoradPage({
   params,

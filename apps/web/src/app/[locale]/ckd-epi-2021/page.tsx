@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { ckdEpi2021 } from "@medcalc/calculators";
 import { CkdEpi2021Form } from "@/components/CkdEpi2021Form";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("ckd-epi-2021", props.params);
+}
 
 export default async function CkdEpi2021Page({
   params,

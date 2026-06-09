@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { sodiumCorrected } from "@medcalc/calculators";
 import { SodiumCorrectedForm } from "@/components/SodiumCorrectedForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("sodium-corrected", props.params);
+}
 
 export default async function SodiumCorrectedPage({
   params,

@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { fena } from "@medcalc/calculators";
 import { FenaForm } from "@/components/FenaForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("fena", props.params);
+}
 
 export default async function FenaPage({
   params,

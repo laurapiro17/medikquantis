@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { norton } from "@medcalc/calculators";
 import { NortonForm } from "@/components/NortonForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("norton", props.params);
+}
 
 export default async function NortonPage({
   params,

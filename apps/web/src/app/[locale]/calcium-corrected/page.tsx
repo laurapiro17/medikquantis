@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { calciumCorrected } from "@medcalc/calculators";
 import { CalciumCorrectedForm } from "@/components/CalciumCorrectedForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("calcium-corrected", props.params);
+}
 
 export default async function CalciumCorrectedPage({
   params,
