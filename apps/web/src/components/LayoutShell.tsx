@@ -92,7 +92,7 @@ export function LayoutShell({
       <div className={gridClass}>
         {/* Sticky desktop sidebar */}
         <aside
-          className={`sticky top-0 hidden h-screen overflow-hidden border-r border-slate-200 bg-white/70 backdrop-blur-md transition-[width] duration-200 lg:block dark:border-white/10 dark:bg-[#0c0f10]/70 ${
+          className={`sticky top-0 hidden h-screen overflow-x-hidden border-r border-slate-200 bg-white/70 backdrop-blur-md transition-[width] duration-200 lg:block dark:border-white/10 dark:bg-[#0c0f10]/70 ${
             mounted && collapsed ? "w-0 border-r-0" : "w-[264px]"
           }`}
           aria-hidden={mounted && collapsed}
