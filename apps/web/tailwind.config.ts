@@ -19,10 +19,10 @@ export default {
           700: "#1d4ed8",
         },
         neon: {
-          DEFAULT: "#00f0ff",
-          soft: "#7df4ff",
-          deep: "#006970",
-          ink: "#002022",
+          DEFAULT: "#93c5fd",
+          soft: "#bfdbfe",
+          deep: "#1e40af",
+          ink: "#0f172a",
         },
       },
       fontFamily: {
@@ -44,8 +44,8 @@ export default {
         ],
       },
       boxShadow: {
-        neon: "0 0 20px rgba(0, 240, 255, 0.4)",
-        "neon-soft": "0 0 12px rgba(0, 240, 255, 0.25)",
+        neon: "0 0 20px rgba(147, 197, 253, 0.3)",
+        "neon-soft": "0 0 12px rgba(147, 197, 253, 0.2)",
       },
       backdropBlur: {
         glass: "24px",

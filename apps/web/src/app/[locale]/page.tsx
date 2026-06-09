@@ -64,7 +64,7 @@ export default async function HomePage({
       />
 
       <section className="space-y-6">
-        <p className="font-mono text-xs uppercase tracking-widest text-trust-600 dark:text-neon/80">
+        <p className="text-xs font-medium text-trust-600 dark:text-neon/80">
           {t("home.hero_eyebrow")}
         </p>
         <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl dark:text-slate-50">
@@ -89,28 +89,27 @@ export default async function HomePage({
         </div>
       </section>
 
-      <section
+      <ul
         aria-label="Value propositions"
-        className="grid gap-4 sm:grid-cols-3"
+        className="max-w-2xl space-y-3 border-l-2 border-slate-200 pl-5 dark:border-white/10"
       >
         {[1, 2, 3].map((n) => (
-          <div key={n} className="glass-panel space-y-2 p-5">
-            <h3 className="font-semibold text-slate-900 dark:text-slate-100">
+          <li key={n} className="text-sm text-slate-700 dark:text-slate-300">
+            <span className="font-semibold text-slate-900 dark:text-slate-100">
               {t(`home.value_${n}_title` as "home.value_1_title")}
-            </h3>
-            <p className="text-sm text-slate-600 dark:text-slate-400">
-              {t(`home.value_${n}_body` as "home.value_1_body")}
-            </p>
-          </div>
+            </span>
+            {" — "}
+            {t(`home.value_${n}_body` as "home.value_1_body")}
+          </li>
         ))}
-      </section>
+      </ul>
 
       <section
         id="api"
         className="glass-panel flex flex-col gap-4 p-6 sm:flex-row sm:items-center sm:justify-between"
       >
         <div className="space-y-1">
-          <h2 className="font-mono text-xs uppercase tracking-widest text-slate-500 dark:text-neon/80">
+          <h2 className="text-xs font-semibold text-slate-500 dark:text-slate-400">
             {t("home.api_callout_heading")}
           </h2>
           <p className="text-sm text-slate-600 dark:text-slate-300 sm:max-w-xl">
@@ -148,7 +147,7 @@ export default async function HomePage({
                   href={`/${id}`}
                   className="glass-panel block h-full p-4 transition hover:border-trust-500 hover:shadow-md dark:hover:border-neon/50 dark:hover:shadow-neon-soft"
                 >
-                  <h3 className="font-mono text-[10px] uppercase tracking-widest text-trust-600 dark:text-neon">
+                  <h3 className="text-xs font-semibold text-trust-600 dark:text-neon">
                     {t(`${calc.i18nKey}.title` as "cha2ds2vasc.title")}
                   </h3>
                   <p className="mt-2 text-sm text-slate-900 dark:text-slate-100">
