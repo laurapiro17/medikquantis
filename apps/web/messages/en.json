@@ -37,7 +37,7 @@
   },
   "about": {
     "heading": "About MedikQuantis",
-    "intro": "MedikQuantis is an open collection of clinical calculators localised to Catalan and Spanish, with plain-language patient explanations on every calculator and the supporting evidence cited for every score. We currently cover cardiology and will add other medical fields progressively.",
+    "intro": "During my hospital rotations I kept reaching for clinical scores that were either hard to find, only available in English, or running on outdated interfaces. I built MedikQuantis to fix that — every calculator links its original paper, and everything works in Catalan, Spanish and English.",
     "who_heading": "Who is behind it",
     "who_body": "A project by Laura Piñero Roig at the University of Barcelona. Open source under the MIT license, maintained as a solo project.",
     "what_it_is_heading": "What it is",
