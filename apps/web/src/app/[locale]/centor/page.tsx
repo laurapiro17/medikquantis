@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { centor } from "@medcalc/calculators";
 import { CentorForm } from "@/components/CentorForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("centor", props.params);
+}
 
 export default async function CentorPage({
   params,

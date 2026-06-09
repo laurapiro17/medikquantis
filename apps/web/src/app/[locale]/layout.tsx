@@ -10,6 +10,7 @@ import { Link } from "@/i18n/navigation";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { LayoutShell } from "@/components/LayoutShell";
+import { BASE_URL } from "@/lib/site";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -38,9 +39,6 @@ const themeBootstrapScript = `
 })();
 `;
 
-const BASE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://medikquantis.vercel.app";
-
 export async function generateMetadata({
   params,
 }: {
@@ -55,13 +53,21 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL(BASE_URL),
-    title,
+    // `default` is used by pages without their own title (e.g. the homepage);
+    // `template` wraps any page that sets a plain string title (the calculators).
+    title: {
+      default: `${title} — ${description}`,
+      template: `%s · ${title}`,
+    },
     description,
     alternates: {
       canonical: url,
-      languages: Object.fromEntries(
-        routing.locales.map((l) => [l, `${BASE_URL}/${l}`]),
-      ),
+      languages: {
+        ...Object.fromEntries(
+          routing.locales.map((l) => [l, `${BASE_URL}/${l}`]),
+        ),
+        "x-default": `${BASE_URL}/${routing.defaultLocale}`,
+      },
     },
     openGraph: {
       title,

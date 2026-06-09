@@ -1,9 +1,7 @@
 import type { MetadataRoute } from "next";
 import { listCalcIds } from "@medcalc/calculators";
 import { routing } from "@/i18n/routing";
-
-const BASE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://medikquantis.vercel.app";
+import { BASE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

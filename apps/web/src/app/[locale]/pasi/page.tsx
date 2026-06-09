@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { pasi } from "@medcalc/calculators";
 import { PasiForm } from "@/components/PasiForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("pasi", props.params);
+}
 
 export default async function PasiPage({
   params,

@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { hinchey } from "@medcalc/calculators";
 import { HincheyForm } from "@/components/HincheyForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("hinchey", props.params);
+}
 
 export default async function HincheyPage({
   params,

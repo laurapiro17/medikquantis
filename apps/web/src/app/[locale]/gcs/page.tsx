@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { gcs } from "@medcalc/calculators";
 import { GcsForm } from "@/components/GcsForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("gcs", props.params);
+}
 
 export default async function GcsPage({
   params,

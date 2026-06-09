@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { dukeEndocarditis } from "@medcalc/calculators";
 import { DukeEndocarditisForm } from "@/components/DukeEndocarditisForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("duke-endocarditis", props.params);
+}
 
 export default async function DukeEndocarditisPage({
   params,

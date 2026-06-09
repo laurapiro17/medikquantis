@@ -1,6 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { orbit } from "@medcalc/calculators";
 import { OrbitForm } from "@/components/OrbitForm";
+import { buildCalcMetadata } from "@/lib/calc-metadata";
+
+export function generateMetadata(props: {
+  params: Promise<{ locale: string }>;
+}) {
+  return buildCalcMetadata("orbit", props.params);
+}
 
 export default async function OrbitPage({
   params,
