@@ -34,25 +34,31 @@ export default async function AboutPage({
         </p>
       </section>
 
-      <section className="grid gap-6 sm:grid-cols-2">
-        <div className="glass-panel p-5">
-          <h2 className="text-sm font-semibold text-slate-700 dark:text-slate-300">
+      <section className="grid gap-8 sm:grid-cols-2">
+        <div>
+          <h2 className="text-sm font-semibold text-slate-500 dark:text-slate-400">
             {t("about.what_it_is_heading")}
           </h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-700 dark:text-slate-300">
+          <ul className="mt-3 space-y-2 text-sm text-slate-700 dark:text-slate-300">
             {whatItIsList.map((item, i) => (
-              <li key={i}>{item}</li>
+              <li key={i} className="flex gap-2">
+                <span className="mt-0.5 shrink-0 text-slate-400">–</span>
+                {item}
+              </li>
             ))}
           </ul>
         </div>
 
-        <div className="glass-panel p-5">
-          <h2 className="text-sm font-semibold text-slate-700 dark:text-slate-300">
+        <div>
+          <h2 className="text-sm font-semibold text-slate-500 dark:text-slate-400">
             {t("about.what_it_isnt_heading")}
           </h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-700 dark:text-slate-300">
+          <ul className="mt-3 space-y-2 text-sm text-slate-700 dark:text-slate-300">
             {whatItIsntList.map((item, i) => (
-              <li key={i}>{item}</li>
+              <li key={i} className="flex gap-2">
+                <span className="mt-0.5 shrink-0 text-slate-400">–</span>
+                {item}
+              </li>
             ))}
           </ul>
         </div>

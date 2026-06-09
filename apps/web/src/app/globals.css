@@ -8,7 +8,7 @@
   }
 
   h1 {
-    font-family: var(--font-serif), Georgia, serif;
+    letter-spacing: -0.025em;
   }
 
   body {
