@@ -37,7 +37,7 @@
   },
   "about": {
     "heading": "Acerca de MedikQuantis",
-    "intro": "MedikQuantis es una colección abierta de calculadoras clínicas traducidas al catalán y al castellano, con explicaciones para pacientes en cada calculadora y evidencia citada para cada puntuación. Actualmente cubrimos cardiología; iremos añadiendo otros ámbitos médicos progresivamente.",
+    "intro": "Durante mis rotaciones hospitalarias me encontraba buscando scores clínicos que o eran difíciles de encontrar, o solo estaban en inglés, o tenían interfaces desfasadas. Creé MedikQuantis para solucionar eso — cada calculadora enlaza el artículo original y todo funciona en catalán, castellano e inglés.",
     "who_heading": "Quién hay detrás",
     "who_body": "Un proyecto de Laura Piñero Roig en la Universidad de Barcelona. Código abierto bajo licencia MIT, mantenido como un proyecto en solitario.",
     "what_it_is_heading": "Qué es",
