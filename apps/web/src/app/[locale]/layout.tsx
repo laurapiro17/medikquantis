@@ -53,6 +53,8 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL(BASE_URL),
+    // Google Search Console verification (URL-prefix property https://medikquantis.me).
+    verification: { google: "rtO-153asYrqiPlrIPB_T1yPW15EYmS3naaaYamrlfc" },
     // `default` is used by pages without their own title (e.g. the homepage);
     // `template` wraps any page that sets a plain string title (the calculators).
     title: {
