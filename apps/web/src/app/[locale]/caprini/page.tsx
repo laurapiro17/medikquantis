@@ -2,6 +2,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { caprini } from "@medcalc/calculators";
 import { CapriniForm } from "@/components/CapriniForm";
 import { buildCalcMetadata } from "@/lib/calc-metadata";
+import { CalcJsonLd } from "@/components/CalcJsonLd";
 
 export function generateMetadata(props: {
   params: Promise<{ locale: string }>;
@@ -20,6 +21,7 @@ export default async function CapriniPage({
 
   return (
     <div className="space-y-8">
+      <CalcJsonLd id="caprini" locale={locale} />
       <div>
         <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
           {t("caprini.title")}

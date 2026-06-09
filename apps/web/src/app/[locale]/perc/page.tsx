@@ -2,6 +2,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { perc } from "@medcalc/calculators";
 import { PercForm } from "@/components/PercForm";
 import { buildCalcMetadata } from "@/lib/calc-metadata";
+import { CalcJsonLd } from "@/components/CalcJsonLd";
 
 export function generateMetadata(props: {
   params: Promise<{ locale: string }>;
@@ -20,6 +21,7 @@ export default async function PercPage({
 
   return (
     <div className="space-y-8">
+      <CalcJsonLd id="perc" locale={locale} />
       <div>
         <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
           {t("perc.title")}

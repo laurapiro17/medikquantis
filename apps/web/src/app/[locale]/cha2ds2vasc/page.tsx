@@ -2,6 +2,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { cha2ds2vasc } from "@medcalc/calculators";
 import { Cha2ds2vascForm } from "@/components/Cha2ds2vascForm";
 import { buildCalcMetadata } from "@/lib/calc-metadata";
+import { CalcJsonLd } from "@/components/CalcJsonLd";
 
 export function generateMetadata(props: {
   params: Promise<{ locale: string }>;
@@ -20,6 +21,7 @@ export default async function Cha2ds2vascPage({
 
   return (
     <div className="space-y-8">
+      <CalcJsonLd id="cha2ds2vasc" locale={locale} />
       <div>
         <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
           {t("cha2ds2vasc.title")}

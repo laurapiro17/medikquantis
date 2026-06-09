@@ -2,6 +2,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { anionGap } from "@medcalc/calculators";
 import { AnionGapForm } from "@/components/AnionGapForm";
 import { buildCalcMetadata } from "@/lib/calc-metadata";
+import { CalcJsonLd } from "@/components/CalcJsonLd";
 
 export function generateMetadata(props: {
   params: Promise<{ locale: string }>;
@@ -20,6 +21,7 @@ export default async function AnionGapPage({
 
   return (
     <div className="space-y-8">
+      <CalcJsonLd id="anion-gap" locale={locale} />
       <div>
         <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
           {t("anionGap.title")}

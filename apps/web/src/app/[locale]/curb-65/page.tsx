@@ -2,6 +2,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { curb65 } from "@medcalc/calculators";
 import { Curb65Form } from "@/components/Curb65Form";
 import { buildCalcMetadata } from "@/lib/calc-metadata";
+import { CalcJsonLd } from "@/components/CalcJsonLd";
 
 export function generateMetadata(props: {
   params: Promise<{ locale: string }>;
@@ -20,6 +21,7 @@ export default async function Curb65Page({
 
   return (
     <div className="space-y-8">
+      <CalcJsonLd id="curb-65" locale={locale} />
       <div>
         <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
           {t("curb65.title")}
