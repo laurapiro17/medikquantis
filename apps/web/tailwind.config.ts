@@ -26,14 +26,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: [
-          "system-ui",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "Segoe UI",
-          "Roboto",
-          "sans-serif",
-        ],
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        serif: ["var(--font-serif)", "Georgia", "serif"],
         mono: [
           "ui-monospace",
           "SFMono-Regular",

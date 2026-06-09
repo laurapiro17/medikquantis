@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { Source_Serif_4, DM_Sans } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { setRequestLocale, getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -9,6 +10,19 @@ import { Link } from "@/i18n/navigation";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { LayoutShell } from "@/components/LayoutShell";
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const sourceSerif = Source_Serif_4({
+  subsets: ["latin"],
+  variable: "--font-serif",
+  weight: ["400", "600"],
+  display: "swap",
+});
 
 function isSupportedLocale(value: string): value is Locale {
   return (routing.locales as readonly string[]).includes(value);
@@ -158,7 +172,7 @@ export default async function LocaleLayout({
   );
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={`${dmSans.variable} ${sourceSerif.variable}`}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeBootstrapScript }} />
       </head>

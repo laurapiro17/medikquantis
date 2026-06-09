@@ -7,6 +7,10 @@
     color-scheme: light dark;
   }
 
+  h1 {
+    font-family: var(--font-serif), Georgia, serif;
+  }
+
   body {
     @apply bg-slate-50 text-slate-900 antialiased;
     background-image: none;
