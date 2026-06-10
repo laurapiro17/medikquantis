@@ -228,6 +228,25 @@
         "Quins fàrmacs hauria d'evitar o ajustar?",
         "Cada quant haurem de revisar la funció renal?"
       ]
+    },
+    "content": {
+      "overview": "L'equació CKD-EPI 2021 (creatinina) estima el filtrat glomerular (eGFR) en mL/min/1,73 m² a partir de la creatinina sèrica, l'edat i el sexe, sense incloure la raça com a variable. És l'eina recomanada per estimar la funció renal i classificar la malaltia renal crònica (MRC). La guia KDIGO 2024 de MRC i les societats americanes de nefrologia (NKF-ASN Task Force) avalen aquesta equació lliure de raça com a estàndard de càlcul de l'eGFR a la pràctica clínica.",
+      "interpretation": "L'eGFR es classifica en categories G de KDIGO: G1 ≥90 (normal o alt), G2 60-89 (lleugerament disminuït), G3a 45-59 (lleu-moderat), G3b 30-44 (moderat-greu), G4 15-29 (greu) i G5 <15 (fallida renal). Un eGFR <60 mantingut ≥3 mesos defineix MRC, igual que la presència de marcadors de dany renal (com albuminúria) amb eGFR ≥60. Cal estadificar conjuntament amb l'albuminúria (categories A1-A3) per estimar el risc complet de progressió i d'esdeveniments cardiovasculars.",
+      "cautions": "Validada en adults; no s'ha d'aplicar a menors de 18 anys (s'usa l'equació CKiD/Schwartz). L'estimació perd fiabilitat en situacions de funció renal no estable (lesió renal aguda), masses musculars extremes (amputació, paraplegia, fisicoculturisme, caquèxia, sarcopènia), embaràs, dietes molt riques o pobres en proteïnes i ingesta de creatina. No avalua l'albuminúria ni el dany tubular, de manera que un eGFR normal aïllat no exclou MRC; sempre s'ha de combinar amb el quocient albúmina/creatinina en orina.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre CKD-EPI 2021 i la versió de 2009?",
+          "a": "La versió de 2021 elimina el coeficient de raça (negre) que tenia la de 2009, de manera que dona el mateix resultat independentment de l'origen ètnic; pot reduir lleugerament l'eGFR estimat en persones prèviament classificades com a negres."
+        },
+        {
+          "q": "Necessito recollir orina de 24 hores per a aquest càlcul?",
+          "a": "No. L'equació només requereix la creatinina sèrica, l'edat i el sexe; no cal recollida d'orina ni pes corporal."
+        },
+        {
+          "q": "Quan s'ha d'usar la variant amb cistatina C en lloc de només creatinina?",
+          "a": "KDIGO recomana confirmar amb l'equació CKD-EPI 2021 creatinina-cistatina C quan l'eGFR per creatinina és incert o quan es necessita una estimació més precisa per a decisions clíniques importants, com la dosificació de fàrmacs o l'avaluació de donants."
+        }
+      ]
     }
   },
   "wellsPe": {
@@ -252,6 +271,25 @@
         "Quina prova em faran a continuació?",
         "Si es confirma l'EP, quin tractament prendré i durant quant?",
         "Quins signes d'alarma he de vigilar?"
+      ]
+    },
+    "content": {
+      "overview": "L'escala de Wells per a embòlia pulmonar estima la probabilitat clínica pretest de tromboembolisme pulmonar en pacients amb sospita de TEP, per orientar l'ús de la determinació de dímer-D i de la prova d'imatge (angio-TC pulmonar). Suma punts per signes clínics de trombosi venosa profunda, diagnòstic alternatiu menys probable que el TEP, freqüència cardíaca superior a 100, immobilització o cirurgia recents, antecedent de TEP o TVP, hemoptisi i càncer actiu. La guia ESC 2019 sobre embòlia pulmonar la reconeix com una de les regles de predicció clínica validades per estratificar la probabilitat pretest.",
+      "interpretation": "Hi ha dues formes d'aplicar-la. En l'esquema de tres nivells: 0-1 punts indica probabilitat baixa, 2-6 punts probabilitat intermèdia i 7 o més punts probabilitat alta. En l'esquema dicotòmic, que és el més utilitzat avui: una puntuació de 4 o menys (TEP improbable) permet descartar el TEP amb un dímer-D negatiu, evitant la imatge; una puntuació superior a 4 (TEP probable) requereix angio-TC pulmonar. En el model simplificat cada ítem val 1 punt i el llindar dicotòmic és 0-1 (improbable) versus 2 o més (probable).",
+      "cautions": "Es va validar en pacients ambulatoris i de servei d'urgències amb sospita de TEP, no en pacients ja hospitalitzats per altres causes ni com a cribratge en asimptomàtics. L'ítem \"diagnòstic alternatiu menys probable que el TEP\" és subjectiu i introdueix variabilitat entre observadors. L'escala estima la probabilitat però no confirma ni descarta el diagnòstic per si sola, ni avalua la gravetat ni el risc de mortalitat del TEP confirmat: per a això cal recórrer a índexs com el PESI i a marcadors de disfunció del ventricle dret. No s'ha d'usar de forma aïllada sense integrar dímer-D i imatge segons l'algoritme.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre l'escala de Wells i els criteris PERC?",
+          "a": "Els criteris PERC s'apliquen només quan la probabilitat clínica ja és baixa per descartar el TEP sense ni tan sols demanar dímer-D; l'escala de Wells, en canvi, serveix per establir aquesta probabilitat pretest i decidir el següent pas diagnòstic."
+        },
+        {
+          "q": "Quin punt de tall de Wells permet descartar embòlia pulmonar amb el dímer-D?",
+          "a": "Amb l'esquema dicotòmic, una puntuació de 4 o menys (TEP improbable) combinada amb un dímer-D negatiu permet excloure el TEP amb seguretat sense necessitat d'angio-TC."
+        },
+        {
+          "q": "Es pot fer servir l'escala de Wells durant l'embaràs?",
+          "a": "No està ben validada en gestants i els algoritmes basats en dímer-D tenen menys rendiment durant l'embaràs; en aquest context s'utilitzen algoritmes específics adaptats com el criteri YEARS adaptat a l'embaràs."
+        }
       ]
     }
   },
@@ -278,6 +316,25 @@
         "Quines complicacions hem de vigilar?",
         "Hi ha algun fàrmac que pugui millorar el meu MELD?"
       ]
+    },
+    "content": {
+      "overview": "El MELD 3.0 és una actualització de l'índex MELD que estima la mortalitat a 90 dies en pacients amb malaltia hepàtica crònica avançada i estableix la prioritat per al trasplantament hepàtic. Integra bilirubina, INR, creatinina, sodi i albúmina, i incorpora el sexe i interaccions entre variables per corregir la infravaloració de la gravetat en dones. Als Estats Units, l'OPTN (gestionat per l'UNOS) el va implementar el 2023 com a criteri oficial d'assignació d'òrgans en candidats de 12 anys o més.",
+      "interpretation": "La puntuació oscil·la entre 6 i 40; com més alta, més gran és la mortalitat estimada a 90 dies i més prioritat per al trasplantament. Valors propers a 6 indiquen malaltia compensada amb risc baix, mentre que puntuacions ≥30 reflecteixen mortalitat elevada i necessitat urgent de trasplantament. En les llistes d'assignació, una puntuació més alta atorga prioritat sobre candidats amb puntuació inferior. El valor s'arrodoneix a l'enter més proper i es topa a un màxim de 40.",
+      "cautions": "Validat en candidats de 12 anys o més amb malaltia hepàtica crònica; en menors de 12 anys s'utilitza el PELD. No prediu la mortalitat en hepatitis aguda fulminant ni en escenaris específics que requereixen excepcions de MELD (per exemple carcinoma hepatocel·lular, síndrome hepatopulmonar). El càlcul perd fiabilitat amb anticoagulació que altera l'INR o amb dèficits nutricionals extrems; en cas de diàlisi (≥2 sessions o 24 h de teràpia contínua en els 7 dies previs) la creatinina s'estableix automàticament en 3,0 mg/dL, i la creatinina es limita a un màxim de 3,0 mg/dL en tots els casos. No avalua complicacions com ascites refractària, encefalopatia ni qualitat de vida, motiu freqüent d'infravaloració clínica.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre MELD-Na i MELD 3.0?",
+          "a": "El MELD 3.0 afegeix l'albúmina i el sexe i incorpora interaccions entre variables, cosa que millora la predicció de mortalitat i corregeix la desavantatge històrica de les dones respecte al MELD-Na."
+        },
+        {
+          "q": "Quin és el MELD 3.0 mínim per entrar en llista de trasplantament?",
+          "a": "No hi ha un llindar únic universal, però sovint es considera la derivació a avaluació a partir d'una puntuació d'aproximadament 15, on el benefici del trasplantament supera el risc de la cirurgia; dades recents amb MELD 3.0 situen aquest benefici fins i tot a partir d'aproximadament 12."
+        },
+        {
+          "q": "El sexe influeix en la puntuació MELD 3.0?",
+          "a": "Sí; el model afegeix punts al sexe femení (aproximadament 1,33) per compensar que la creatinina tendeix a infraestimar la disfunció renal en dones, reduint la inequitat en l'accés al trasplantament."
+        }
+      ]
     }
   },
   "perc": {
@@ -303,6 +360,25 @@
         "Quins signes d'alarma he de tenir presents si me'n vaig a casa?",
         "Quan he de tornar si torno a tenir símptomes?"
       ]
+    },
+    "content": {
+      "overview": "La regla PERC (Pulmonary Embolism Rule-out Criteria) és un conjunt de 8 criteris clínics que, en pacients amb una probabilitat pre-test baixa de tromboembolisme pulmonar (TEP), permet descartar-lo sense necessitat de fer dímer-D ni proves d'imatge. Els 8 criteris són: edat <50 anys, freqüència cardíaca <100/min, SatO₂ ≥95% en aire ambient, absència d'hemoptisi, absència d'ús d'estrògens, absència de cirurgia o traumatisme amb hospitalització en les 4 setmanes prèvies, absència d'antecedent de TVP o TEP, i absència d'edema unilateral de cama. Va ser derivada per Kline et al. (2004) i és recolzada per l'American College of Physicians (ACP) i incorporada per la European Society of Cardiology (ESC) com a opció en pacients amb sospita baixa.",
+      "interpretation": "La regla només s'aplica si el judici clínic ja ha establert una probabilitat pre-test BAIXA de TEP (per exemple, gestalt clínica de baix risc o escala de Wells ≤4, és a dir, «TEP improbable»). Si es compleixen els 8 criteris (PERC negativa), la probabilitat de TEP és prou baixa (<2%) com per descartar-lo sense més proves. Si falta qualsevol dels 8 criteris (PERC positiva), no es pot descartar el TEP i cal continuar amb el dímer-D i, segons el resultat, amb imatge (angio-TC o gammagrafia V/Q). La PERC no es puntua de manera additiva: n'hi ha prou amb un sol criteri present per ser positiva.",
+      "cautions": "La PERC està validada únicament en pacients ambulatoris d'urgències amb probabilitat clínica baixa; no s'ha d'aplicar en poblacions amb prevalença alta de TEP ni en pacients hospitalitzats. No és vàlida com a eina de cribratge universal: aplicar-la a pacients amb probabilitat pre-test intermèdia o alta pot deixar escapar TEP. Atenció a poblacions amb taquicàrdia basal, embarassades (criteri d'estrògens i fisiologia alterada) o pacients amb factors de risc no capturats. La PERC no diagnostica TEP ni en mesura la gravetat; és exclusivament una eina de descart en pacients de baix risc.",
+      "faq": [
+        {
+          "q": "Quan puc fer servir la regla PERC?",
+          "a": "Només quan ja heu valorat que el pacient té una probabilitat clínica baixa de TEP (gestalt de baix risc o escala de Wells ≤4, és a dir «TEP improbable») en un context d'urgències. Si la probabilitat és alta, la PERC no és aplicable."
+        },
+        {
+          "q": "Si la PERC és negativa, necessito demanar el dímer-D?",
+          "a": "No. Si es compleixen els 8 criteris en un pacient de baix risc, la probabilitat de TEP és prou baixa per descartar-lo sense dímer-D ni imatge, evitant proves innecessàries."
+        },
+        {
+          "q": "Quants criteris poden fallar per considerar la PERC positiva?",
+          "a": "Cap. La regla només és negativa si es compleixen els 8 criteris alhora; la presència d'un sol criteri la fa positiva i obliga a continuar l'estudi."
+        }
+      ]
     }
   },
   "qsofa": {
@@ -323,6 +399,25 @@
         "Tinc una infecció? On podria estar?",
         "Cal que faci una analítica completa o cultius?",
         "Quins signes d'empitjorament hauria de vigilar?"
+      ]
+    },
+    "content": {
+      "overview": "La qSOFA (quick Sepsis-related Organ Failure Assessment) és una eina ràpida d'avaluació a la capçalera per identificar pacients amb sospita d'infecció que tenen un risc elevat de mala evolució (mortalitat hospitalària o estada prolongada a l'UCI). Valora tres criteris clínics simples sense necessitat d'analítica: freqüència respiratòria, estat mental i pressió arterial sistòlica. Va ser introduïda per la Tercera Definició Internacional de Consens de Sèpsia i Xoc Sèptic (Sepsis-3, 2016, JAMA), promoguda per la SCCM i la ESICM, com a eina d'alerta fora de l'UCI.",
+      "interpretation": "Es concedeix 1 punt per cadascun dels tres criteris: freqüència respiratòria ≥ 22 respiracions/min, alteració de l'estat mental (Glasgow < 15) i pressió arterial sistòlica ≤ 100 mmHg. La puntuació va de 0 a 3. Una qSOFA ≥ 2 identifica pacients amb sospita d'infecció amb major risc de mortalitat i d'evolució desfavorable, i hauria de motivar l'escalada de la monitorització, la valoració de disfunció orgànica amb el SOFA complet i l'inici precoç del tractament. Una puntuació de 0 o 1 no exclou la sèpsia ni la infecció greu.",
+      "cautions": "Validada en pacients adults amb sospita d'infecció, sobretot fora de l'UCI (urgències i planta). És una eina de cribratge pronòstica, no diagnòstica: no defineix per si sola la sèpsia ni substitueix el judici clínic ni el SOFA complet. Té sensibilitat limitada, de manera que una qSOFA baixa no descarta una infecció greu i no s'ha d'utilitzar per excloure sèpsia ni per retardar el tractament. Les guies Surviving Sepsis Campaign 2021 recomanen no usar la qSOFA com a única eina de cribratge davant d'altres sistemes com el SIRS, el NEWS o el MEWS.",
+      "faq": [
+        {
+          "q": "Què significa una puntuació qSOFA de 2 o més?",
+          "a": "Indica que un pacient amb sospita d'infecció té un risc augmentat de mortalitat hospitalària i d'evolució desfavorable. Cal escalar la monitorització, valorar disfunció orgànica amb el SOFA complet i iniciar tractament precoç."
+        },
+        {
+          "q": "Quina diferència hi ha entre qSOFA i SOFA?",
+          "a": "El SOFA és una puntuació completa de disfunció orgànica de sis sistemes que requereix dades de laboratori, usada sobretot a l'UCI. La qSOFA és una versió ràpida de tres criteris clínics, sense analítica, pensada per a l'alerta a la capçalera fora de l'UCI."
+        },
+        {
+          "q": "Una qSOFA negativa descarta la sèpsia?",
+          "a": "No. La qSOFA té sensibilitat limitada; una puntuació de 0 o 1 no exclou infecció greu ni sèpsia i mai s'ha d'usar per retardar avaluació o tractament si la sospita clínica és alta."
+        }
       ]
     }
   },
@@ -347,6 +442,25 @@
         "Estic prenent la combinació completa de fàrmacs (4 pilars)?",
         "Em beneficiaria un dispositiu com un CRT o un DAI?",
         "Hauríem de plantejar una visita a una unitat d'insuficiència cardíaca?"
+      ]
+    },
+    "content": {
+      "overview": "La classificació funcional de la NYHA (New York Heart Association) gradua la severitat dels símptomes de la insuficiència cardíaca segons la limitació de l'activitat física i l'aparició de dispnea, fatiga o palpitacions. S'assigna de manera clínica, sense necessitat de proves complementàries, i s'utilitza per estratificar pacients, guiar la intensitat del tractament i monitoritzar la resposta terapèutica al llarg del temps. És la classificació de símptomes recomanada per la guia ESC 2021 d'insuficiència cardíaca aguda i crònica i per les guies AHA/ACC/HFSA 2022.",
+      "interpretation": "Classe I: sense limitació de l'activitat física; l'activitat ordinària no provoca símptomes. Classe II: lleugera limitació; el pacient està bé en repòs, però l'activitat física ordinària provoca dispnea, fatiga o palpitacions. Classe III: limitació marcada; bé en repòs, però activitats inferiors a les ordinàries ja provoquen símptomes. Classe IV: incapacitat de fer cap activitat física sense molèsties; els símptomes apareixen en repòs o amb mínima activitat. Una classe més alta s'associa amb pitjor pronòstic i major mortalitat, i moltes indicacions terapèutiques (per exemple, certs dispositius o fàrmacs) es defineixen segons la classe NYHA.",
+      "cautions": "La classificació es va desenvolupar i validar en pacients amb insuficiència cardíaca i no és aplicable com a eina diagnòstica en població asimptomàtica. És una valoració subjectiva, amb variabilitat inter-observador notable i baixa reproductibilitat, i pot fluctuar segons el dia o el moment de la valoració. No mesura la fracció d'ejecció, la funció ventricular, els pèptids natriurètics ni la causa subjacent de la insuficiència cardíaca, i no s'ha de confondre amb l'estadiatge A-D de l'AHA/ACC, que reflecteix la progressió estructural de la malaltia i no és reversible.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre la classe NYHA i els estadis A-D de l'AHA/ACC?",
+          "a": "La classe NYHA descriu els símptomes actuals i pot millorar o empitjorar amb el tractament, mentre que els estadis A-D de l'AHA/ACC reflecteixen la progressió estructural de la malaltia i només avancen, mai retrocedeixen."
+        },
+        {
+          "q": "La classe NYHA es pot revertir amb tractament?",
+          "a": "Sí; a diferència de l'estadiatge estructural, la classe funcional pot millorar amb un tractament òptim de la insuficiència cardíaca i empitjorar amb la descompensació."
+        },
+        {
+          "q": "Cal alguna prova per assignar la classe NYHA?",
+          "a": "No; s'assigna exclusivament a partir de l'anamnesi i l'avaluació clínica de la limitació funcional, sense necessitat d'ecocardiograma ni analítica."
+        }
       ]
     }
   },
@@ -373,6 +487,25 @@
         "Quin moment es planteja per a la coronariografia?",
         "Quins fàrmacs prendré els pròxims dies i per a què?",
         "Com puc reconèixer si els símptomes empitjoren?"
+      ]
+    },
+    "content": {
+      "overview": "La puntuació de risc TIMI per a angina inestable / IAMSEST estima el risc d'esdeveniments adversos a 14 dies en pacients amb síndrome coronària aguda sense elevació del segment ST. Suma 1 punt per cadascun de 7 criteris: edat ≥65 anys, ≥3 factors de risc de malaltia coronària, malaltia coronària coneguda (estenosi ≥50%), ús d'aspirina en els 7 dies previs, ≥2 episodis d'angina en 24 hores, desviació del segment ST ≥0,5 mm i elevació de biomarcadors cardíacs. Va ser derivada dels assaigs TIMI 11B i ESSENCE (Antman et al., 2000) i les guies ESC i ACC/AHA la reconeixen com a eina d'estratificació de risc en SCASEST.",
+      "interpretation": "La puntuació oscil·la de 0 a 7. Estima el risc compost a 14 dies de mort per qualsevol causa, infart de miocardi nou o recurrent, i isquèmia greu recurrent que requereix revascularització urgent. El risc augmenta de manera contínua: 0–2 punts corresponen a risc baix (aproximadament 5–8%), 3–4 punts a risc intermedi (al voltant del 13–20%) i 5–7 punts a risc alt (fins a un 40% amb puntuació 6–7). Una puntuació més alta dóna suport a una estratègia invasiva precoç i a teràpia antitrombòtica més intensiva.",
+      "cautions": "Va ser validada en pacients amb angina inestable o IAMSEST; no s'aplica a l'IAMEST ni al dolor toràcic no diferenciat al servei d'urgències, on són preferibles eines com HEART. És una eina d'estratificació de risc poblacional, no una norma de descart diagnòstic: una puntuació baixa no exclou amb seguretat la síndrome coronària aguda i no ha de substituir el judici clínic, les troponines seriades ni l'ECG. No avalua el risc hemorràgic ni guia per si sola la dosi d'anticoagulació.",
+      "faq": [
+        {
+          "q": "Quines són les 7 variables de la puntuació de risc TIMI per a UA/NSTEMI?",
+          "a": "Edat ≥65 anys, ≥3 factors de risc coronari, malaltia coronària coneguda (estenosi ≥50%), ús d'aspirina en els 7 dies previs, ≥2 episodis d'angina en 24 h, desviació del segment ST ≥0,5 mm i biomarcadors cardíacs positius. Cada criteri val 1 punt."
+        },
+        {
+          "q": "Quina puntuació TIMI es considera d'alt risc?",
+          "a": "Una puntuació de 5 a 7 indica alt risc d'esdeveniments adversos a 14 dies i recolza una estratègia invasiva precoç; 0–2 es considera risc baix i 3–4 risc intermedi."
+        },
+        {
+          "q": "Quina diferència hi ha entre la puntuació TIMI i la GRACE?",
+          "a": "Totes dues estratifiquen el risc en SCASEST, però la GRACE incorpora variables contínues (freqüència cardíaca, pressió arterial, creatinina, classe Killip) i ofereix una discriminació superior per a la mortalitat; la TIMI és més senzilla i ràpida d'aplicar a la capçalera del pacient."
+        }
       ]
     }
   },
@@ -406,6 +539,25 @@
         "Quan se'm farà la coronariografia i per què en aquest moment?",
         "Quins tractaments necessitaré després?",
         "Quan podré tornar a casa i amb quines precaucions?"
+      ]
+    },
+    "content": {
+      "overview": "El GRACE Score (Global Registry of Acute Coronary Events) estima el risc de mortalitat hospitalària i a 6 mesos en pacients amb síndrome coronària aguda (SCA), tant amb elevació com sense elevació del segment ST. Combina vuit variables: edat, freqüència cardíaca, pressió arterial sistòlica, creatinina sèrica, classe de Killip, aturada cardíaca a l'ingrés, desviació del segment ST i elevació de biomarcadors de necrosi miocàrdica. La guia ESC de SCA (2023) el recomana per a l'estratificació del risc i per orientar el moment de l'estratègia invasiva en SCA sense elevació del ST.",
+      "interpretation": "La puntuació es tradueix en categories de risc. Per a la mortalitat hospitalària, un GRACE ≤108 indica risc baix (<1%), 109-140 risc intermedi (1-3%) i >140 risc alt (>3%). Per a la mortalitat a 6 mesos, ≤88 és risc baix (<3%), 89-118 intermedi (3-8%) i >118 alt (>8%). En la SCA sense elevació del ST, un GRACE >140 identifica pacients d'alt risc en qui es recomana una estratègia invasiva precoç (dins de les 24 hores).",
+      "cautions": "Es va derivar i validar en una cohort internacional àmplia de pacients amb SCA confirmada; no està validat per a dolor toràcic indiferenciat ni per descartar SCA a urgències. És un instrument pronòstic de mortalitat, no diagnòstic: no confirma ni exclou infart, no avalua el risc hemorràgic (per a això cal una escala dedicada com CRUSADE) ni decideix per si sol la revascularització. La versió GRACE 2.0 amplia les estimacions fins als 1-3 anys i pot substituir variables com la creatinina o Killip per equivalents quan no es disposen.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre el GRACE Score i el TIMI Score?",
+          "a": "Tots dos estratifiquen el risc en SCA, però el GRACE té millor capacitat discriminativa per a la mortalitat i utilitza variables contínues (edat, freqüència, pressió, creatinina), mentre que el TIMI és més senzill i basat en punts dicotòmics."
+        },
+        {
+          "q": "Un GRACE Score alt vol dir que cal cateterisme urgent?",
+          "a": "Un GRACE >140 en SCA sense elevació del ST afavoreix una estratègia invasiva precoç dins de les 24 hores, però la decisió final s'integra amb la clínica, l'estabilitat hemodinàmica i altres factors de risc."
+        },
+        {
+          "q": "El GRACE Score serveix per a pacients amb infart amb elevació del ST (STEMI)?",
+          "a": "Sí, el GRACE estima la mortalitat tant en SCA amb elevació com sense elevació del ST; en el STEMI aporta informació pronòstica encara que la reperfusió immediata ja estigui indicada per definició."
+        }
       ]
     }
   },
@@ -456,6 +608,25 @@
         "Hauria de tornar si torno a notar dolor?",
         "Quan tornaré a tenir un control?"
       ]
+    },
+    "content": {
+      "overview": "L'escala HEART estima el risc d'esdeveniments cardíacs adversos majors (MACE: infart, revascularització o mort) a 6 setmanes en pacients adults que consulten a urgències per dolor toràcic amb sospita de síndrome coronària aguda. Suma punts (0, 1 o 2 cadascun) per cinc dominis: anamnesi (History), electrocardiograma (ECG), edat (Age), factors de risc (Risk factors) i troponina, amb un rang total de 0 a 10. Va ser desenvolupada per Six i Backus i és una de les eines d'estratificació de risc més validades per a dolor toràcic indiferenciat a urgències.",
+      "interpretation": "La puntuació total estratifica el pacient en tres bandes. Risc baix (0-3 punts): risc de MACE a 6 setmanes aproximadament del 1-2%, compatible amb alta precoç i maneig ambulatori en molts protocols. Risc moderat (4-6 punts): risc intermedi (al voltant del 12-17%), que justifica observació, seriació de troponines i proves addicionals. Risc alt (7-10 punts): risc elevat (al voltant del 50-65%), que orienta cap a maneig invasiu precoç i ingrés. Molts protocols moderns combinen el HEART amb troponines seriades (HEART Pathway) per refinar l'alta segura.",
+      "cautions": "Validada en adults amb dolor toràcic agut no traumàtic a urgències amb sospita de SCA; no s'ha de fer servir en infart amb elevació del ST (STEMI), inestabilitat hemodinàmica o una causa no cardíaca òbvia, situacions que requereixen actuació immediata independentment de la puntuació. No és una eina diagnòstica: no confirma ni exclou per si sola un SCA, no avalua causes no coronàries de dolor toràcic (embòlia pulmonar, dissecció aòrtica, pneumotòrax) i depèn del judici clínic i d'una troponina fiable. Cal aplicar-la amb cautela en població jove amb dolor atípic o quan la troponina d'alta sensibilitat s'interpreta amb llindars específics.",
+      "faq": [
+        {
+          "q": "Què significa una puntuació HEART baixa de 0 a 3?",
+          "a": "Indica un risc de MACE a 6 setmanes baix, aproximadament de l'1-2%, i en molts protocols permet considerar l'alta precoç amb seguiment ambulatori, idealment després de troponines negatives seriades."
+        },
+        {
+          "q": "Quina diferència hi ha entre l'escala HEART i el HEART Pathway?",
+          "a": "L'escala HEART és la puntuació de 0 a 10; el HEART Pathway hi afegeix una segona troponina seriada (p. ex. a 0 i 3 hores) per identificar amb més seguretat els pacients de baix risc candidats a alta."
+        },
+        {
+          "q": "El HEART Score serveix per descartar un infart?",
+          "a": "No per si sol. És una eina d'estratificació de risc, no diagnòstica; una puntuació baixa redueix la probabilitat de MACE però no exclou un SCA, i sempre s'ha de combinar amb troponines i judici clínic."
+        }
+      ]
     }
   },
   "ehra": {
@@ -481,6 +652,25 @@
         "Em beneficiaria una cardioversió o una ablació?",
         "Com puc reconèixer si els símptomes empitjoren?"
       ]
+    },
+    "content": {
+      "overview": "L'escala de símptomes EHRA (European Heart Rhythm Association), en la seva versió modificada (mEHRA), classifica la intensitat dels símptomes relacionats amb la fibril·lació auricular i el seu impacte sobre l'activitat diària del pacient. No estima risc tromboembòlic ni de sagnat, sinó que estandarditza la càrrega simptomàtica per guiar les decisions de control del ritme i monitoritzar la resposta al tractament. És l'eina de quantificació simptomàtica recomanada per la guia ESC de fibril·lació auricular i s'integra dins l'abordatge estructurat de maneig de la FA.",
+      "interpretation": "La puntuació assigna una de quatre classes. EHRA 1: sense símptomes. EHRA 2a: símptomes lleus, l'activitat diària normal no es veu afectada. EHRA 2b: símptomes moderats, l'activitat diària normal no es veu afectada però el pacient es molesta pels símptomes. EHRA 3: símptomes greus, l'activitat diària normal es veu afectada. EHRA 4: símptomes incapacitants, s'interromp l'activitat diària normal. La distinció clau entre 2a i 2b és si els símptomes molesten el pacient; entre 2b i 3, si afecten objectivament l'activitat. Habitualment una classe 2b o superior recolza una estratègia de control del ritme.",
+      "cautions": "L'escala s'ha validat en pacients adults amb fibril·lació auricular i mesura exclusivament símptomes atribuïbles a la FA (palpitacions, dispnea, fatiga, mareig, dolor toràcic). És una valoració subjectiva i dependent de l'entrevista clínica, no un instrument objectiu. Un error freqüent és atribuir a la FA símptomes causats per comorbiditats (insuficiència cardíaca, malaltia pulmonar, anèmia). No avalua el risc d'ictus ni de sagnat ni substitueix CHA₂DS₂-VASc ni HAS-BLED, i no orienta per si sola la decisió d'anticoagular.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre EHRA 2a i 2b?",
+          "a": "En totes dues l'activitat diària normal es manté, però en la 2a els símptomes són lleus i no molesten, mentre que en la 2b són moderats i el pacient se'n queixa."
+        },
+        {
+          "q": "L'escala EHRA serveix per decidir l'anticoagulació?",
+          "a": "No. L'escala EHRA només quantifica símptomes; la decisió d'anticoagular es basa en el risc d'ictus mesurat amb CHA₂DS₂-VASc."
+        },
+        {
+          "q": "Què és la versió modificada mEHRA?",
+          "a": "És la versió actual que desglossa la classe 2 en 2a i 2b segons si els símptomes molesten el pacient, i és la recomanada per la guia ESC."
+        }
+      ]
     }
   },
   "orbit": {
@@ -503,6 +693,25 @@
         "Em puc baixar l'antiagregant o és imprescindible?",
         "Tinc anèmia? S'hauria de tractar abans de començar l'anticoagulant?",
         "Quan hauríem de tornar a calcular el risc?"
+      ]
+    },
+    "content": {
+      "overview": "L'escala ORBIT estima el risc d'hemorràgia major en pacients amb fibril·lació auricular tractats amb anticoagulació oral (antagonistes de la vitamina K o anticoagulants orals d'acció directa). Puntua cinc variables: edat avançada (>74 anys), hemoglobina baixa o anèmia, antecedent d'hemorràgia, insuficiència renal (filtrat glomerular <60 ml/min) i tractament antiagregant concomitant. Es va derivar i validar a la cohort ORBIT-AF i ofereix una calibració més bona que altres escales clàssiques. La guia ESC 2024 de fibril·lació auricular l'esmenta entre les eines de quantificació del risc hemorràgic, amb l'èmfasi posat a identificar i corregir factors de risc modificables més que a desestimar l'anticoagulació.",
+      "interpretation": "La puntuació va de 0 a 7 punts. S'assignen 1 punt a edat >74 anys, 2 punts a hemoglobina baixa/anèmia, 2 punts a antecedent hemorràgic, 1 punt a insuficiència renal (FG <60) i 1 punt a antiagregant concomitant. Es classifica en tres categories: risc baix (0-2 punts), risc intermedi (3 punts) i risc alt (4-7 punts), amb taxes d'hemorràgia major creixents per 100 pacients-any en cada banda. Una puntuació elevada no contraindica anticoagular: ha de motivar la correcció de factors modificables (anèmia, antiagregant innecessari, control de la funció renal) i un seguiment més estret.",
+      "cautions": "Es va validar en pacients amb fibril·lació auricular candidats o ja en tractament anticoagulant; no s'ha d'aplicar a poblacions sense FA ni com a regla absoluta per negar l'anticoagulació. No estima el risc d'ictus ni el benefici net de l'anticoagulació, que cal valorar de manera independent (per exemple amb CHA₂DS₂-VASc). El error d'ús més freqüent és utilitzar un risc hemorràgic alt per evitar anticoagular un pacient amb indicació clara, quan la conducta correcta és corregir els factors modificables i reavaluar periòdicament.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre ORBIT i HAS-BLED?",
+          "a": "Totes dues estimen el risc hemorràgic en FA anticoagulada, però ORBIT incorpora paràmetres analítics objectius (hemoglobina/anèmia i funció renal) i mostra una bona calibració; HAS-BLED inclou variables com l'hipertensió no controlada i l'INR làbil. Es poden fer servir de manera complementària."
+        },
+        {
+          "q": "Una puntuació ORBIT alta vol dir que cal suspendre l'anticoagulant?",
+          "a": "No. Un risc alt no contraindica anticoagular; ha de portar a corregir factors modificables (anèmia, antiagregant innecessari) i a un seguiment més estret, mantenint l'anticoagulació si hi ha indicació per risc d'ictus."
+        },
+        {
+          "q": "Quins valors d'ORBIT defineixen risc alt?",
+          "a": "Una puntuació de 0-2 indica risc baix, 3 risc intermedi i 4-7 risc alt d'hemorràgia major, amb taxes creixents en cada categoria."
+        }
       ]
     }
   },
@@ -530,6 +739,25 @@
         "Quins factors del meu risc puc reduir (tensió, fàrmacs, alcohol)?",
         "Cada quant hauríem de revisar el meu risc?",
         "Quins signes de sagnat hauria de vigilar?"
+      ]
+    },
+    "content": {
+      "overview": "L'escala HAS-BLED estima el risc d'hemorràgia major en pacients amb fibril·lació auricular candidats a anticoagulació oral o que ja la reben. Suma un punt per cadascun dels factors següents: hipertensió no controlada (HAS, pressió sistòlica superior a 160 mmHg), funció renal o hepàtica alterada (Abnormal, un punt cadascuna), ictus previ (Stroke), antecedent o predisposició a sagnat (Bleeding), INR làbil (Labile, només en pacients amb antagonistes de la vitamina K), edat avançada superior a 65 anys (Elderly) i consum de fàrmacs antiplaquetaris o AINE o alcohol (Drugs/alcohol, un punt cadascun). La guia ESC 2024 de fibril·lació auricular recomana avaluar i corregir els factors de risc hemorràgic modificables, però no usar la puntuació de forma aïllada per negar l'anticoagulació.",
+      "interpretation": "La puntuació oscil·la entre 0 i 9 punts. Un valor de 0 a 2 es considera risc hemorràgic baix-moderat, mentre que una puntuació igual o superior a 3 indica risc elevat i identifica pacients que requereixen precaució, seguiment clínic més estret i correcció activa dels factors modificables. Un HAS-BLED alt no és per si mateix una contraindicació per anticoagular: assenyala la necessitat de vigilància, no la suspensió del tractament.",
+      "cautions": "L'escala es va validar en pacients amb fibril·lació auricular i el component d'INR làbil només s'aplica als que reben antagonistes de la vitamina K, no als anticoagulants orals d'acció directa. El seu objectiu és identificar i corregir factors de risc modificables, no excloure l'anticoagulació en pacients amb indicació. L'error més freqüent és usar-la per denegar el tractament; sempre s'ha d'interpretar juntament amb el risc embòlic (CHA₂DS₂-VASc), ja que no avalua el risc d'ictus ni el benefici net de l'anticoagulació.",
+      "faq": [
+        {
+          "q": "Què significa una puntuació HAS-BLED de 3 o més?",
+          "a": "Indica risc hemorràgic elevat. No contraindica l'anticoagulació, però obliga a corregir els factors modificables i a fer un seguiment clínic més estret."
+        },
+        {
+          "q": "El HAS-BLED serveix per decidir si no anticoagular?",
+          "a": "No. Una puntuació alta no és motiu per negar l'anticoagulació; serveix per identificar i corregir factors de risc de sagnat i per intensificar la vigilància."
+        },
+        {
+          "q": "Quina diferència hi ha entre HAS-BLED i CHA₂DS₂-VASc?",
+          "a": "CHA₂DS₂-VASc estima el risc d'ictus i indica si cal anticoagular; HAS-BLED estima el risc de sagnat. Es fan servir de manera complementària, no excloent."
+        }
       ]
     }
   },
@@ -562,6 +790,25 @@
         "Necessito ingressar a l'hospital?",
         "Quins antibiòtics he de prendre i durant quant de temps?",
         "Quins signes d'empitjorament he de vigilar a casa?"
+      ]
+    },
+    "content": {
+      "overview": "L'escala CURB-65 estima la gravetat de la pneumònia adquirida a la comunitat (PAC) i orienta la decisió entre tractament ambulatori, ingrés hospitalari o valoració d'ingrés a cures intensives. Assigna un punt a cadascun de cinc ítems: confusió de nova aparició, urea >7 mmol/L (BUN >19 mg/dL), freqüència respiratòria ≥30/min, pressió arterial baixa (sistòlica <90 mmHg o diastòlica ≤60 mmHg) i edat ≥65 anys. És una eina d'estratificació recomanada per la British Thoracic Society (BTS); la guia ATS/IDSA de PAC, en canvi, prioritza l'índex de gravetat de la pneumònia (PSI) per a la decisió d'ingrés.",
+      "interpretation": "La puntuació va de 0 a 5 i s'associa de manera creixent a la mortalitat a 30 dies. Una puntuació de 0-1 indica risc baix i sol permetre tractament ambulatori. Una puntuació de 2 indica risc intermedi i suggereix valorar ingrés hospitalari o observació estreta. Una puntuació de 3-5 indica risc alt, generalment requereix ingrés i amb 4-5 punts cal valorar atenció en unitat de cures intensives. La variant CRB-65, sense urea, és útil en atenció primària quan no es disposa d'analítica.",
+      "cautions": "Es va validar en adults amb pneumònia adquirida a la comunitat i no és aplicable a pneumònia nosocomial, associada a ventilació ni a pacients immunodeprimits. És una ajuda a la decisió, no un substitut del judici clínic: pot infraestimar el risc en joves sense comorbiditats que ja estan greus i no té en compte la hipoxèmia, l'extensió radiològica, comorbiditats descompensades ni el suport social. No avalua l'oxigenació (SpO₂/PaO₂), motiu pel qual sovint es complementa amb la saturació i criteris addicionals.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre CURB-65 i CRB-65?",
+          "a": "El CRB-65 omet la urea i puntua de 0 a 4; es pensa per a atenció primària o entorns sense analítica immediata. El CURB-65 inclou la urea i és més habitual a urgències hospitalàries."
+        },
+        {
+          "q": "Quina puntuació CURB-65 obliga a ingrés hospitalari?",
+          "a": "Una puntuació de 2 fa valorar l'ingrés o l'observació, i de 3 o més generalment indica ingrés; amb 4-5 punts s'ha de considerar la unitat de cures intensives."
+        },
+        {
+          "q": "Serveix el CURB-65 per decidir l'ingrés a la UCI?",
+          "a": "Ofereix una orientació (puntuacions de 4-5 indiquen risc alt), però no es va dissenyar específicament per a aquesta decisió; per a la UCI s'utilitzen els criteris ATS/IDSA majors i menors."
+        }
       ]
     }
   },
@@ -606,6 +853,25 @@
         "Quins signes d'empitjorament es vigilaran?",
         "Quan podrà visitar la família el pacient?"
       ]
+    },
+    "content": {
+      "overview": "L'escala de coma de Glasgow (GCS) és l'instrument estàndard per quantificar el nivell de consciència en pacients amb afectació neurològica aguda, sobretot després d'un traumatisme cranioencefàlic. Avalua tres components independents —obertura ocular (1-4), resposta verbal (1-5) i resposta motora (1-6)— i en suma la puntuació total, que va de 3 a 15. S'utilitza en l'avaluació inicial i el seguiment seriat a urgències, prehospitalari i unitats de crítics, i és un component central de classificacions de gravetat com l'Advanced Trauma Life Support (ATLS) i les guies de la Brain Trauma Foundation.",
+      "interpretation": "La puntuació total oscil·la entre 3 (coma profund o absència de resposta) i 15 (pacient plenament despert i orientat). Convencionalment, 13-15 indica afectació lleu, 9-12 afectació moderada i ≤8 afectació greu; una puntuació ≤8 sol identificar el pacient en coma i és el llindar clàssic que fa considerar el control definitiu de la via aèria (intubació). Sempre s'ha de documentar la puntuació desglossada per components (per exemple O3V4M5) i no només el total, ja que el mateix total pot correspondre a quadres clínics diferents; els descensos seriats de ≥2 punts indiquen deteriorament neurològic i requereixen reavaluació urgent.",
+      "cautions": "La GCS es va validar en adults amb traumatisme cranioencefàlic; en lactants i nens petits cal la versió pediàtrica adaptada. La fiabilitat disminueix amb sedació, intoxicació, hipoglucèmia, hipoxèmia, paràlisi farmacològica, intubació (que impedeix la resposta verbal), afàsia o lesions perioculars que impedeixen l'obertura ocular; aquests factors s'han de registrar com a no avaluables. No és una eina diagnòstica ni localitzadora de la lesió i no substitueix l'exploració neurològica completa (pupil·les, focalitat, signes de tronc) ni la neuroimatge; un error freqüent és prendre decisions basant-se només en el total sense considerar el context ni els components.",
+      "faq": [
+        {
+          "q": "Quina puntuació de Glasgow indica que cal intubar?",
+          "a": "Una puntuació total ≤8 és el llindar clàssic per considerar la protecció definitiva de la via aèria, però la decisió s'ha d'individualitzar segons la tendència, la capacitat de protegir la via aèria i el context clínic global."
+        },
+        {
+          "q": "Quin és el valor mínim i màxim de l'escala de Glasgow?",
+          "a": "El valor mínim és 3 (cap resposta en cap dels tres components) i el màxim és 15 (pacient plenament despert i orientat). No existeix una puntuació de 0."
+        },
+        {
+          "q": "Com es classifica la gravetat del traumatisme cranioencefàlic segons la GCS?",
+          "a": "Convencionalment, 13-15 es considera lleu, 9-12 moderat i 3-8 greu, sempre interpretat juntament amb la clínica i la neuroimatge."
+        }
+      ]
     }
   },
   "centor": {
@@ -635,6 +901,25 @@
         "Quan deixaré de ser contagiós?",
         "Quan he de tornar si els símptomes empitjoren?"
       ]
+    },
+    "content": {
+      "overview": "L'escala de Centor, en la seva versió modificada per McIsaac, estima la probabilitat que una faringoamigdalitis aguda estigui causada per estreptococ del grup A (Streptococcus pyogenes) i orienta la decisió de fer test diagnòstic o iniciar antibiòtic. Suma punts per absència de tos, exsudat o tumefacció amigdalar, adenopaties cervicals anteriors doloroses, febre superior a 38 °C i edat (el criteri de McIsaac afegeix un ajust per edat). S'utilitza en pacients amb mal de coll agut i és recomanada per guies com la de la IDSA (Infectious Diseases Society of America) com a eina per seleccionar a qui fer prova microbiològica.",
+      "interpretation": "Cada criteri suma 1 punt: absència de tos, exsudat/tumefacció amigdalar, adenopaties cervicals anteriors doloroses i temperatura >38 °C. L'ajust per edat de McIsaac afegeix +1 punt si 3-14 anys, 0 punts si 15-44 anys i −1 punt si ≥45 anys, amb un rang total de −1 a 5. Una puntuació baixa (0-1) indica risc molt baix d'infecció estreptocòccica i, en general, no requereix test ni antibiòtic. Una puntuació intermèdia (2-3) justifica fer un test ràpid d'antigen o cultiu i tractar només si és positiu. Una puntuació alta (4-5) s'associa a la probabilitat més elevada d'estreptococ, però segons la IDSA continua sent necessària la confirmació microbiològica (test ràpid o cultiu) abans de tractar; el tractament empíric sense confirmar només l'admeten algunes altres guies en contextos seleccionats.",
+      "cautions": "Validada principalment en pacients amb faringitis aguda, tant adults com nens (l'ajust de McIsaac amplia l'ús pediàtric des dels 3 anys). No s'ha d'aplicar en menors de 3 anys, on l'estreptococ del grup A és poc freqüent i la presentació atípica. L'escala estima probabilitat, no confirma diagnòstic: una puntuació alta no substitueix el test microbiològic per dirigir l'antibiòtic, i no avalua complicacions, altres causes de faringitis (vírica, mononucleosi, gonocòccica) ni l'estat immunitari del pacient. En nens i adolescents amb test ràpid d'antigen negatiu, la IDSA recomana un cultiu de confirmació. Un error freqüent és tractar amb antibiòtic basant-se només en la puntuació sense confirmació.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre l'escala de Centor i la de McIsaac?",
+          "a": "L'escala de Centor original té quatre criteris clínics; la modificació de McIsaac hi afegeix l'ajust per edat (+1 de 3-14 anys, 0 de 15-44 anys, −1 si ≥45 anys), cosa que la fa aplicable també a la població pediàtrica."
+        },
+        {
+          "q": "Amb quina puntuació de Centor/McIsaac cal donar antibiòtic?",
+          "a": "L'escala per si sola no indica antibiòtic: amb 0-1 punts no cal ni testar ni tractar, i amb 2 o més punts es recomana fer un test ràpid o cultiu i tractar només els casos confirmats microbiològicament."
+        },
+        {
+          "q": "Serveix l'escala de Centor per diagnosticar faringitis estreptocòccica?",
+          "a": "No: només estima la probabilitat d'infecció per estreptococ del grup A per decidir a qui fer la prova; el diagnòstic de confirmació requereix un test ràpid d'antigen o cultiu faringi."
+        }
+      ]
     }
   },
   "calciumCorrected": {
@@ -662,6 +947,25 @@
         "Algun dels meus medicaments altera el calci?",
         "He de canviar la dieta o els suplements?"
       ]
+    },
+    "content": {
+      "overview": "El calci corregit per albúmina estima la concentració de calci sèric total que tindria un pacient si la seva albúmina fos normal, ja que una part important del calci circula unit a l'albúmina. S'utilitza quan hi ha hipoalbuminèmia (malaltia hepàtica, síndrome nefròtica, malaltia crítica, desnutrició), situació en què el calci total mesurat infraestima el calci real i pot emmascarar una hipo o hipercalcèmia. La fórmula clàssica de Payne aplica una correcció de +0,8 mg/dL de calci per cada 1 g/dL d'albúmina per sota de 4,0 g/dL (equivalent a +0,02 mmol/L per cada 1 g/L per sota de 40 g/L).",
+      "interpretation": "El valor corregit s'interpreta segons els rangs habituals de calci total: normal aproximadament 8,5-10,2 mg/dL (2,12-2,55 mmol/L). Un calci corregit per sota d'aquest rang suggereix hipocalcèmia i per sobre, hipercalcèmia, malgrat un calci total mesurat que pugui semblar normal en presència d'albúmina baixa. La correcció no canvia el llindar diagnòstic, sinó la xifra que s'hi compara; davant de valors clínicament rellevants o discordants, cal confirmar amb calci iònic.",
+      "cautions": "La correcció de Payne es va derivar en poblacions concretes i té fiabilitat limitada en malaltia renal crònica avançada, alteracions del pH (l'acidosi i l'alcalosi modifiquen la fracció ionitzada), hiperfosfatèmia, mieloma o transfusions massives. No substitueix el calci iònic, que és la mesura de referència de la fracció biològicament activa i és preferible en el pacient crític o quan la decisió clínica és crítica. El resultat només ajusta per l'albúmina i no avalua la PTH, la vitamina D ni la causa subjacent del trastorn del calci.",
+      "faq": [
+        {
+          "q": "Quina és la fórmula del calci corregit per albúmina?",
+          "a": "Calci corregit (mg/dL) = calci total mesurat + 0,8 × (4,0 − albúmina en g/dL). En unitats SI: calci (mmol/L) + 0,02 × (40 − albúmina en g/L)."
+        },
+        {
+          "q": "Quan he d'utilitzar el calci corregit en lloc del calci total?",
+          "a": "Quan el pacient té hipoalbuminèmia, ja que el calci total mesurat infraestima el calci real i pot ocultar una hipo o hipercalcèmia veritable."
+        },
+        {
+          "q": "És més fiable el calci iònic que el calci corregit?",
+          "a": "Sí. El calci iònic mesura directament la fracció biològicament activa i és la prova de referència, especialment en pacients crítics, amb alteracions del pH o malaltia renal avançada."
+        }
+      ]
     }
   },
   "sodiumCorrected": {
@@ -688,6 +992,25 @@
         "Què causa ara la meva glucosa alta?",
         "Necessito líquids extra o insulina?",
         "Quins signes de complicació he de vigilar?"
+      ]
+    },
+    "content": {
+      "overview": "El sodi corregit per hiperglucèmia estima quina seria la natrèmia del pacient un cop normalitzada la glucosa. La hiperglucèmia provoca un desplaçament osmòtic d'aigua de l'espai intracel·lular al plasma que dilueix el sodi mesurat; es tracta d'una hiponatrèmia veritable de tipus translocacional (hipertònica), no d'una pseudohiponatrèmia (que és un artefacte de laboratori per hiperlipidèmia o hiperproteïnèmia amb osmolaritat normal). S'aplica típicament en cetoacidosi diabètica, estat hiperosmolar hiperglucèmic i qualsevol hiperglucèmia marcada. La correcció més emprada afegeix 1,6 mEq/L de sodi per cada 100 mg/dL de glucosa per sobre de 100 mg/dL; el factor alternatiu de 2,4 mEq/L (Hillier, 1999) es considera més exacte amb glucèmies molt elevades. És una eina de càlcul fisiològic estàndard, no una escala avalada per una guia específica, però el seu ús està recollit en protocols de maneig de crisis hiperglucèmiques (ADA).",
+      "interpretation": "El resultat és la natrèmia que s'esperaria si la glucosa fos normal. Si el sodi corregit és normal (135-145 mEq/L) o elevat tot i una natrèmia mesurada baixa, la hiponatrèmia és atribuïble al desplaçament osmòtic per la hiperglucèmia i s'espera que es resolgui en corregir la glucèmia, sense necessitat de tractament específic de la hiponatrèmia. Un sodi corregit per sota de 135 mEq/L indica una hiponatrèmia veritable concurrent que cal avaluar i tractar pel seu compte. Un sodi corregit elevat (>145 mEq/L) alerta d'un dèficit d'aigua lliure important. La reanimació inicial de la crisi hiperglucèmica es fa amb sèrum salí isotònic (0,9%); el canvi a salí hipotònic (0,45%) es reserva per a fases posteriors quan el pacient està euvolèmic i el sodi corregit és normal o alt. La tendència del sodi corregit durant el tractament és clínicament més rellevant que un valor aïllat.",
+      "cautions": "La fórmula assumeix una funció renal i un estat de volèmia raonablement estables i s'ha validat sobretot en hiperglucèmia aguda; els factors de correcció (1,6 vs 2,4) deriven d'estudis petits i poden infraestimar o sobreestimar segons el grau de glucèmia. No és aplicable a la pseudohiponatrèmia per hiperlipidèmia o hiperproteïnèmia (artefacte de laboratori diferent) ni substitueix la mesura directa del sodi un cop normalitzada la glucosa. No avalua l'osmolaritat plasmàtica global, l'estat àcid-base ni el dèficit hídric total, i no ha de guiar per si sol la velocitat de correcció de la natrèmia, on cal vigilar el risc de síndrome de desmielinització osmòtica (mielinòlisi pontina) per correcció massa ràpida.",
+      "faq": [
+        {
+          "q": "Quina fórmula s'usa per corregir el sodi en la hiperglucèmia?",
+          "a": "Sodi corregit = sodi mesurat + 1,6 × [(glucosa en mg/dL − 100) / 100]. Molts autors prefereixen el factor de 2,4 (Hillier) quan la glucèmia supera els 400 mg/dL perquè s'ajusta millor a les dades reals."
+        },
+        {
+          "q": "Per què baixa el sodi quan la glucosa està alta?",
+          "a": "La glucosa és osmòticament activa i atrau aigua de les cèl·lules cap al plasma, diluint el sodi. És una hiponatrèmia dilucional veritable (translocacional, hipertònica), no una pèrdua real de sodi ni un artefacte de laboratori, i sol corregir-se en normalitzar la glucèmia."
+        },
+        {
+          "q": "El sodi corregit substitueix la natrèmia mesurada per dosificar el tractament?",
+          "a": "No. El sodi corregit orienta la fluïdoteràpia i ajuda a distingir la hiponatrèmia per hiperglucèmia d'una hiponatrèmia veritable concurrent, però sempre cal confirmar amb mesures directes seriades del sodi a mesura que es corregeix la glucosa."
+        }
       ]
     }
   },
@@ -721,6 +1044,25 @@
         "He de mantenir, perdre o guanyar pes?",
         "Quanta proteïna necessito al dia?"
       ]
+    },
+    "content": {
+      "overview": "L'equació de Harris-Benedict estima la taxa metabòlica basal (TMB), és a dir, l'energia (kcal/dia) que el cos consumeix en repòs absolut per mantenir les funcions vitals. Utilitza el sexe, el pes, l'alçada i l'edat segons les fórmules originals de 1919 o, de manera més habitual, la revisió de Roza i Shizgal (1984). Multiplicant la TMB per un factor d'activitat física s'obté la despesa energètica total diària, base per planificar dietes de manteniment, pèrdua o guany de pes. No és una escala avalada per cap societat clínica concreta, sinó una equació predictiva d'ús nutricional general.",
+      "interpretation": "El resultat és un valor absolut en kcal/dia, no una escala amb bandes de risc. Orientativament, una TMB en adults sol situar-se entre 1.200 i 1.900 kcal/dia segons constitució i sexe (sovint més alta en homes per major massa magra). Per estimar les necessitats totals es multiplica la TMB pel factor d'activitat: sedentari ×1,2; activitat lleugera ×1,375; moderada ×1,55; intensa ×1,725; molt intensa ×1,9. Un dèficit aproximat de 500 kcal/dia respecte a aquesta despesa total s'associa a una pèrdua de pes d'uns 0,5 kg/setmana.",
+      "cautions": "Es va derivar en adults sans de pes relativament normal i tendeix a sobreestimar la TMB en persones amb obesitat i a ser menys precisa en edats extremes; en aquests casos l'equació de Mifflin-St Jeor sol ser preferida. No s'ha validat en nens, embarassades, pacients crítics ni en estats hipermetabòlics (cremats, sèpsia, traumatisme greu), on cal calorimetria indirecta. Només estima la despesa en repòs: no mesura la composició corporal, l'estat nutricional real ni les necessitats de macronutrients, i el factor d'activitat introdueix una variabilitat important.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre Harris-Benedict i Mifflin-St Jeor?",
+          "a": "Totes dues estimen la TMB amb sexe, pes, alçada i edat, però Mifflin-St Jeor (1990) sol ser més exacta en població general i en obesitat, mentre que Harris-Benedict tendeix a sobreestimar lleugerament les calories."
+        },
+        {
+          "q": "Com calculo les calories que necessito al dia amb Harris-Benedict?",
+          "a": "Calcula primer la TMB amb la fórmula i després multiplica-la pel teu factor d'activitat (de 1,2 sedentari a 1,9 molt actiu) per obtenir la despesa energètica total diària."
+        },
+        {
+          "q": "Serveix Harris-Benedict per a nens o embarassades?",
+          "a": "No. L'equació es va validar en adults sans i no és fiable en població pediàtrica, durant l'embaràs ni en pacients crítics, on calen mètodes específics o calorimetria indirecta."
+        }
+      ]
     }
   },
   "psaDensity": {
@@ -741,6 +1083,25 @@
         "Quines altres proves poden evitar la biòpsia?",
         "Cada quant hem de repetir el PSA?",
         "Quins factors d'estil de vida afecten la pròstata?"
+      ]
+    },
+    "content": {
+      "overview": "La densitat de PSA (PSAD) és la concentració sèrica de PSA total dividida pel volum prostàtic mesurat per ecografia (transrectal o transabdominal) o per ressonància magnètica, expressada en ng/mL per cm³. Ajusta el valor de PSA a la mida de la pròstata per millorar la discriminació entre la hiperplàsia benigna i el càncer de pròstata clínicament significatiu, especialment en homes amb PSA en la zona grisa (aproximadament 4–10 ng/mL). S'utilitza com a ajut a la decisió de biòpsia i de seguiment, i la guia de l'EAU (European Association of Urology) la inclou com a paràmetre auxiliar dins l'estratègia diagnòstica del càncer de pròstata.",
+      "interpretation": "La PSAD es calcula dividint el PSA total (ng/mL) pel volum prostàtic (cm³). El llindar més utilitzat és 0,15 ng/mL/cm³: valors iguals o superiors a 0,15 augmenten la probabilitat de càncer clínicament significatiu i reforcen la indicació de biòpsia, mentre que valors inferiors fan el càncer significatiu menys probable. En el context de la RM multiparamètrica, una PSAD baixa (sovint per sota de 0,10–0,15) s'utilitza per donar suport a evitar o ajornar la biòpsia en lesions PI-RADS dubtoses (típicament PI-RADS 3); valors més alts incrementen el risc. Els llindars són orientatius i s'han d'integrar amb l'edat, el tacte rectal, la RM i els antecedents.",
+      "cautions": "Validada principalment en homes amb PSA elevat (sobretot 4–10 ng/mL) avaluats per a biòpsia prostàtica. La fiabilitat depèn críticament d'una mesura precisa del volum prostàtic; la variabilitat interobservador i el mètode d'imatge (ecografia vs RM) poden alterar el resultat. No s'aplica de manera fiable després de manipulació prostàtica recent, prostatitis, retenció urinària o sota inhibidors de la 5-alfa-reductasa (finasterida, dutasterida), que redueixen el PSA aproximadament a la meitat al cap de 6–12 mesos. La PSAD no diagnostica el càncer ni en determina el grau ni l'estadi: només estima el risc i no substitueix la RM, la biòpsia ni l'avaluació histològica.",
+      "faq": [
+        {
+          "q": "Quin és el valor normal de la densitat de PSA?",
+          "a": "El llindar de referència més usat és 0,15 ng/mL/cm³; per sota es considera de menor risc i per sobre augmenta la sospita de càncer clínicament significatiu. És orientatiu i s'ha d'interpretar amb la resta de dades clíniques i d'imatge."
+        },
+        {
+          "q": "Com es calcula la densitat de PSA?",
+          "a": "Es divideix el PSA total en sang (ng/mL) pel volum de la pròstata (cm³) mesurat per ecografia o ressonància magnètica. El resultat s'expressa en ng/mL/cm³."
+        },
+        {
+          "q": "La densitat de PSA pot evitar una biòpsia?",
+          "a": "Pot ajudar-hi: combinada amb la RM multiparamètrica, una PSAD baixa dóna suport a evitar o ajornar la biòpsia en lesions dubtoses, però la decisió sempre és individualitzada i no es basa només en aquest valor."
+        }
       ]
     }
   },
@@ -769,6 +1130,25 @@
         "Quan he de tornar a urgències?",
         "Puc menjar o beure mentrestant?"
       ]
+    },
+    "content": {
+      "overview": "L'escala d'Alvarado és una regla de predicció clínica que estima la probabilitat d'apendicitis aguda en pacients amb dolor abdominal. Suma 10 punts a partir de vuit variables (mnemotècnic MANTRELS): migració del dolor a la fossa ilíaca dreta, anorèxia, nàusees o vòmits, dolor a la palpació de la fossa ilíaca dreta, dolor de rebot, febre ≥37,3 °C, leucocitosi i desviació a l'esquerra del recompte leucocitari. La leucocitosi i el dolor a la palpació valen 2 punts cadascun; la resta, 1 punt. S'utilitza com a eina de cribratge i estratificació del risc en l'avaluació inicial del dolor abdominal sospitós d'apendicitis.",
+      "interpretation": "La puntuació va de 0 a 10. De manera orientativa: 1-4 punts indica baixa probabilitat d'apendicitis (es pot considerar l'alta amb seguiment); 5-6 punts indica probabilitat intermèdia o compatible, on sovint es recomana observació i/o proves d'imatge (ecografia o TC); i 7-10 punts indica alta probabilitat, que justifica valoració quirúrgica o imatge segons el context. El llindar més usat per descartar apendicitis amb seguretat raonable és una puntuació ≤4. El punt de tall i la conducta concreta varien segons el protocol local, l'edat i el sexe.",
+      "cautions": "L'escala es va derivar i validar predominantment en població adulta amb dolor abdominal agut. Té un rendiment més limitat i menys consistent en nens, gent gran, embarassades i dones en edat fèrtil (on el diagnòstic diferencial ginecològic redueix l'especificitat). No és una eina diagnòstica definitiva: una puntuació baixa no exclou completament l'apendicitis ni una d'alta la confirma, i no substitueix el judici clínic ni les proves d'imatge. Un error freqüent és usar-la per indicar directament cirurgia sense imatge en casos intermedis, o aplicar-la fora del context de dolor abdominal agut.",
+      "faq": [
+        {
+          "q": "Quina puntuació d'Alvarado indica apendicitis?",
+          "a": "Una puntuació de 7-10 indica alta probabilitat d'apendicitis i justifica valoració quirúrgica o imatge; 5-6 és intermèdia i sol requerir observació o imatge; 1-4 indica baixa probabilitat."
+        },
+        {
+          "q": "Què significa el mnemotècnic MANTRELS?",
+          "a": "Migració del dolor, Anorèxia, Nàusees/vòmits, Tenderness (dolor) a fossa ilíaca dreta, Rebot, Elevació de la temperatura, Leucocitosi i Shift (desviació a l'esquerra). Són les vuit variables de l'escala."
+        },
+        {
+          "q": "L'escala d'Alvarado serveix per a nens i embarassades?",
+          "a": "Es va validar sobretot en adults; el seu rendiment és menys fiable en nens, embarassades i dones en edat fèrtil, per la qual cosa cal complementar-la amb imatge i criteri clínic."
+        }
+      ]
     }
   },
   "rcri": {
@@ -794,6 +1174,25 @@
         "Necessito valoració per cardiologia?",
         "Quins signes de complicació he de vigilar després de la cirurgia?"
       ]
+    },
+    "content": {
+      "overview": "L'índex de risc cardíac revisat (RCRI), conegut també com a índex de Lee, estima el risc de complicacions cardíaques majors (infart de miocardi, edema pulmonar, fibril·lació ventricular o aturada cardíaca, i bloqueig cardíac complet) associades a cirurgia no cardíaca major. Assigna un punt a cadascun de sis predictors independents: cirurgia d'alt risc (intraperitoneal, intratoràcica o vascular suprainguinal), antecedent de cardiopatia isquèmica, antecedent d'insuficiència cardíaca, antecedent de malaltia cerebrovascular, diabetis tractada amb insulina i creatinina sèrica preoperatòria superior a 2,0 mg/dL. És una de les eines de valoració de risc preoperatori recomanades per les guies de l'ESC i de l'ACC/AHA per a la cirurgia no cardíaca.",
+      "interpretation": "La puntuació va de 0 a 6 punts segons el nombre de factors presents. En la cohort de validació original (Lee 1999), el risc de complicació cardíaca major creix amb el nombre de factors: 0 factors correspon al risc més baix, 1 factor a risc baix, 2 factors a risc intermedi i 3 o més factors al risc més alt, amb taxes estimades aproximades de l'ordre de 0,4%, 0,9%, 7% i 11% respectivament; estimacions agrupades posteriors validades situen els grups de 0, 1, 2 i ≥3 factors al voltant de 3,9%, 6,0%, 10,1% i 15% de complicacions cardiovasculars majors. En la pràctica, una puntuació de 0–1 s'interpreta com a risc baix i una de ≥2 com a risc elevat que pot justificar optimització mèdica o proves addicionals.",
+      "cautions": "El RCRI es va desenvolupar i validar en pacients de 50 anys o més sotmesos a cirurgia no cardíaca electiva major amb ingrés hospitalari; no està validat per a cirurgia urgent o emergent, cirurgia cardíaca, ni per a procediments de baix risc o ambulatoris. No avalua el risc de mortalitat global, complicacions no cardíaques, ni la capacitat funcional, i tendeix a infraestimar el risc en cirurgia vascular. No substitueix l'avaluació clínica ni la valoració de la capacitat funcional (METs) i no s'ha d'utilitzar de forma aïllada per decidir la realització de proves cardíaques preoperatòries.",
+      "faq": [
+        {
+          "q": "Quins són els sis factors de l'índex de Lee (RCRI)?",
+          "a": "Cirurgia d'alt risc, cardiopatia isquèmica, insuficiència cardíaca, malaltia cerebrovascular, diabetis tractada amb insulina i creatinina sèrica superior a 2,0 mg/dL. Cada factor val un punt."
+        },
+        {
+          "q": "Quina puntuació RCRI es considera alt risc?",
+          "a": "Una puntuació de 2 o més punts s'associa a un risc cardíac substancialment elevat i sovint motiva optimització mèdica o valoració addicional; 0–1 punt es considera risc baix."
+        },
+        {
+          "q": "Serveix el RCRI per a cirurgia cardíaca o urgent?",
+          "a": "No. Es va validar en cirurgia no cardíaca electiva en pacients de 50 anys o més, i no està validat per a cirurgia cardíaca, urgent o procediments de baix risc."
+        }
+      ]
     }
   },
   "lrinec": {
@@ -818,6 +1217,25 @@
         "Hi haurà prou amb els antibiòtics?",
         "Quins signes d'empitjorament he de vigilar?",
         "Quan em valorarà l'equip quirúrgic?"
+      ]
+    },
+    "content": {
+      "overview": "El LRINEC (Laboratory Risk Indicator for Necrotizing Fasciitis) és una eina de laboratori que estima la probabilitat que una infecció de teixits tous greu sigui una fàsciitis necrosant més que una cel·lulitis o un abscés. Suma punts a partir de sis variables analítiques disponibles de rutina: proteïna C reactiva, recompte de leucòcits, hemoglobina, sodi, creatinina i glucosa. Es va derivar i validar com a eina d'ajuda diagnòstica (Wong et al., 2004) per augmentar la sospita davant d'una presentació clínica equívoca; no substitueix l'avaluació quirúrgica ni està formalment incorporat com a criteri decisiu en guies de societats com la IDSA.",
+      "interpretation": "La puntuació va de 0 a 13 punts. Habitualment s'estratifica en tres categories: baix risc amb 5 punts o menys (probabilitat de fàsciitis necrosant baixa), risc intermedi amb 6 a 7 punts i risc alt amb 8 punts o més. El punt de tall de 6 es proposa com a llindar d'alerta: un valor igual o superior a 6 hauria d'intensificar la sospita i motivar exploració urgent, i un valor de 8 o més s'associa al risc més elevat. Cap puntuació, per baixa que sigui, descarta la malaltia si la clínica és suggestiva.",
+      "cautions": "Es va derivar en pacients adults amb infeccions de teixits tous; el rendiment és inferior i menys validat en població pediàtrica, immunodeprimits, diabètics i en fàsciitis necrosant de causa no bacteriana o de progressió molt ràpida. La limitació crítica és la baixa sensibilitat: una proporció important de casos confirmats tenen un LRINEC inferior a 6, de manera que una puntuació baixa NO exclou la fàsciitis necrosant. És una eina de suport, no diagnòstica: no valora signes clínics (dolor desproporcionat, butllofes, crepitació, necrosi cutània, inestabilitat hemodinàmica) i no ha de retardar mai la consulta quirúrgica ni l'exploració de la ferida quan hi ha sospita clínica.",
+      "faq": [
+        {
+          "q": "Un LRINEC baix descarta la fàsciitis necrosant?",
+          "a": "No. La sensibilitat és limitada i molts casos confirmats puntuen per sota de 6, per tant una puntuació baixa no exclou el diagnòstic si la clínica és suggestiva."
+        },
+        {
+          "q": "Quin valor de LRINEC es considera d'alarma?",
+          "a": "Una puntuació de 6 o més s'utilitza com a llindar per intensificar la sospita, i de 8 o més indica el grup de risc més alt; tots dos justifiquen avaluació quirúrgica urgent."
+        },
+        {
+          "q": "Quines analítiques necessito per calcular el LRINEC?",
+          "a": "Cal proteïna C reactiva, recompte de leucòcits, hemoglobina, sodi, creatinina i glucosa sèrica, totes proves de laboratori de rutina."
+        }
       ]
     }
   },
@@ -862,6 +1280,25 @@
         "Com canvia això decisions compartides com el cribratge de càncer o la cirurgia?",
         "Quina és la prioritat més important ara?"
       ]
+    },
+    "content": {
+      "overview": "L'Índex de Comorbiditat de Charlson (CCI) és una eina pronòstica que estima la mortalitat a 10 anys d'un pacient en funció de la càrrega de malalties cròniques concomitants. Assigna pesos d'1 a 6 punts a 19 categories de comorbiditat (per exemple infart de miocardi, insuficiència cardíaca, malaltia renal crònica, diabetis amb afectació d'òrgans diana, hepatopatia, neoplàsia i sida), de manera que les afeccions amb major impacte sobre la supervivència sumen més punts. És l'índex de comorbiditat més emprat en recerca clínica i epidemiològica per a l'ajust de risc; la versió combinada amb l'edat (índex edat-comorbiditat de Charlson) afegeix 1 punt per cada dècada a partir dels 50 anys.",
+      "interpretation": "La puntuació total resulta de sumar els pesos de totes les comorbiditats presents (més els punts per edat si s'utilitza la versió edat-ajustada). Una puntuació de 0 indica absència de comorbiditat significativa i la millor supervivència esperada; com més alta és la puntuació, més gran és la càrrega de malaltia i menor la supervivència estimada a 10 anys. Habitualment s'estratifica en categories de baixa (0), intermèdia (1-2), alta (3-4) i molt alta (≥5) comorbiditat. La formulació original de Charlson associava aproximadament una supervivència a 10 anys del voltant del 99% amb 0 punts, que descendeix de manera progressiva amb cada punt addicional; convé utilitzar les taules de supervivència de la cohort de validació corresponent més que memoritzar percentatges aïllats.",
+      "cautions": "El CCI es va desenvolupar i validar originalment en una cohort de pacients ingressats de medicina interna i posteriorment en pacients amb càncer de mama, i s'ha aplicat àmpliament mitjançant codis administratius (CIE-9/CIE-10), cosa que pot infraestimar comorbiditats no codificades. És una mesura de càrrega de malaltia crònica, no de gravetat aguda: no avalua l'estat funcional, la fragilitat, l'estat cognitiu ni la severitat de l'episodi agut actual, i no s'ha de fer servir aïlladament per a decisions individuals de tractament ni com a predictor de mortalitat hospitalària a curt termini. Existeixen diverses versions amb pesos i actualitzacions (Deyo, Quan) que no són intercanviables.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre l'índex de Charlson i la versió edat-ajustada?",
+          "a": "L'índex de Charlson original només suma els pesos de les comorbiditats; la versió edat-ajustada (edat-comorbiditat de Charlson) hi afegeix 1 punt per cada dècada de vida a partir dels 50 anys per millorar la predicció de mortalitat a 10 anys."
+        },
+        {
+          "q": "Quina puntuació de Charlson es considera alta?",
+          "a": "No hi ha un únic punt de tall universal, però en general una puntuació de 0 indica comorbiditat baixa, 1-2 intermèdia, 3-4 alta i ≥5 molt alta, amb un descens progressiu de la supervivència estimada a mesura que augmenta."
+        },
+        {
+          "q": "Serveix l'índex de Charlson per predir la mortalitat a l'UCI o hospitalària a curt termini?",
+          "a": "No està dissenyat per a això; el CCI mesura la càrrega de comorbiditat crònica i la supervivència a llarg termini, no la gravetat aguda. Per a mortalitat a curt termini cal utilitzar escales específiques com APACHE II o SOFA."
+        }
+      ]
     }
   },
   "pittBacteremia": {
@@ -896,6 +1333,25 @@
         "Quins antibiòtics estic rebent i per què?",
         "Quant de temps hauré d'estar a l'hospital?",
         "Quins signes de millora o empitjorament monitoritzareu?"
+      ]
+    },
+    "content": {
+      "overview": "La puntuació de bacterièmia de Pitt (Pitt Bacteremia Score) és una escala de gravetat clínica que estima el risc de mortalitat aguda en pacients amb infecció del torrent sanguini (bacterièmia). Suma punts per temperatura, hipotensió/xoc, ventilació mecànica, parada cardíaca i estat mental, reflectint la inestabilitat fisiològica en el moment de la bacterièmia. És una eina d'investigació i pronòstic àmpliament utilitzada en estudis de bacterièmia i d'organismes multiresistents; no està formalment avalada per una guia d'una societat científica concreta, però s'empra de manera estesa per estratificar la gravetat en infeccions per Gram-negatius i per Staphylococcus aureus.",
+      "interpretation": "La puntuació oscil·la entre 0 i 14 punts: temperatura (1 punt si 35,1-36 °C o 39,0-39,9 °C; 2 punts si ≤35 °C o ≥40 °C), hipotensió o xoc (2 punts), ventilació mecànica (2 punts), parada cardíaca (4 punts) i estat mental (1 punt si desorientat, 2 si estuporós, 4 si comatós). Una puntuació més alta indica major gravetat fisiològica i pitjor pronòstic. El llindar més emprat a la literatura és ≥4 punts, que identifica pacients amb risc substancialment elevat de mortalitat i sovint es fa servir per definir bacterièmia greu; valors de 0-1 indiquen baixa gravetat. No existeix un punt de tall universal únic, per la qual cosa cal interpretar-lo en el context clínic.",
+      "cautions": "Va ser desenvolupada i validada en pacients adults amb bacterièmia confirmada, principalment en cohorts d'infeccions per Gram-negatius i per Staphylococcus aureus; la seva utilitat en població pediàtrica i en infeccions fúngiques està menys establerta. És una mesura de gravetat fisiològica aguda, no un diagnòstic ni una guia de tractament antibiòtic: no indica quin antibiòtic cal triar ni si la teràpia empírica és adequada, i no substitueix el judici clínic ni altres índexs de comorbiditat (com Charlson) o de sèpsia (com SOFA/qSOFA). Un error freqüent és aplicar-la fora del context de bacterièmia o utilitzar-la com a únic criteri per decidir l'ingrés a UCI.",
+      "faq": [
+        {
+          "q": "Què es considera una puntuació de Pitt alta o de risc?",
+          "a": "Una puntuació ≥4 és el llindar més utilitzat per identificar bacterièmia greu amb risc de mortalitat elevat; com més alta la puntuació (màxim 14), pitjor és el pronòstic."
+        },
+        {
+          "q": "Quina diferència hi ha entre la puntuació de Pitt i el SOFA?",
+          "a": "La de Pitt és específica per estratificar la gravetat de la bacterièmia amb cinc variables clíniques senzilles, mentre que el SOFA avalua la disfunció multiorgànica en la sèpsia mitjançant paràmetres analítics i de suport d'òrgans."
+        },
+        {
+          "q": "Es pot calcular la puntuació de Pitt sense proves de laboratori?",
+          "a": "Sí, només requereix dades clíniques a la capçalera del llit (temperatura, tensió arterial, ventilació, parada cardíaca i estat mental), sense necessitat d'analítica."
+        }
       ]
     }
   },
@@ -950,6 +1406,25 @@
         "Quin tipus de matalàs és millor per a mi?",
         "Quins signes de lesió cutània hem de vigilar?",
         "Puc millorar la meva alimentació per cuidar la pell?"
+      ]
+    },
+    "content": {
+      "overview": "L'escala de Norton és una eina de cribratge per estimar el risc de desenvolupar úlceres per pressió en pacients enllitats o amb mobilitat reduïda, especialment en gent gran hospitalitzada o institucionalitzada. Valora cinc paràmetres (estat físic general, estat mental, activitat, mobilitat i incontinència), cadascun puntuat de 1 a 4, amb una puntuació total de 5 a 20. És una de les escales clàssiques d'avaluació del risc; les guies de prevenció de lesions per pressió (EPUAP/NPIAP/PPPIA) recomanen fer una valoració estructurada del risc i la citen, juntament amb Braden i Waterlow, com a exemples d'instruments disponibles.",
+      "interpretation": "La puntuació total oscil·la entre 5 i 20: a menor puntuació, major risc. Tradicionalment una puntuació de 14 o inferior identifica pacients en risc d'úlceres per pressió, i 12 o inferior indica alt risc. Alguns protocols apliquen llindars més conservadors (per exemple ≤16 com a inici de risc). Una puntuació baixa ha de desencadenar mesures preventives: canvis posturals programats, superfícies de redistribució de pressió, cura de la pell i optimització nutricional i de la incontinència.",
+      "cautions": "Validada originalment en gent gran hospitalitzada; el seu rendiment és més limitat en altres poblacions (pediatria, cures intensives, pacients ambulatoris). Tendeix a sobreestimar el risc (alta sensibilitat, baixa especificitat), de manera que pot generar intervencions en pacients que no desenvoluparan úlcera. No substitueix la inspecció directa i regular de la pell ni el judici clínic, i no avalua úlceres ja existents ni en determina l'estadi; tampoc incorpora explícitament la nutrició com a ítem separat (a diferència de Braden).",
+      "faq": [
+        {
+          "q": "Quina puntuació de Norton indica risc d'úlceres per pressió?",
+          "a": "Clàssicament, una puntuació total de 14 o inferior es considera risc, i 12 o inferior alt risc. Com més baixa la puntuació (mínim 5), més gran és el risc."
+        },
+        {
+          "q": "Quina diferència hi ha entre l'escala de Norton i la de Braden?",
+          "a": "Totes dues estimen el risc d'úlceres per pressió, però Braden inclou nutrició i fricció/cisallament com a ítems específics i sol mostrar millor validesa predictiva, mentre que Norton és més senzilla i ràpida d'aplicar."
+        },
+        {
+          "q": "Cada quant s'ha de tornar a aplicar l'escala de Norton?",
+          "a": "Es recomana reavaluar a l'ingrés i de manera periòdica, així com quan canviï l'estat clínic del pacient (per exemple, després d'una cirurgia o un empitjorament de la mobilitat)."
+        }
       ]
     }
   },
@@ -1010,6 +1485,25 @@
         "Cada quant he de canviar de postura?",
         "Com pot ajudar la meva alimentació a la pell?",
         "Quins signes precoços de lesió cutània hem de vigilar?"
+      ]
+    },
+    "content": {
+      "overview": "L'escala de Braden estima el risc de desenvolupar úlceres per pressió en avaluar sis subescales: percepció sensorial, humitat de la pell, activitat, mobilitat, nutrició i fricció/cisallament. Les cinc primeres es puntuen d'1 a 4 i la de fricció/cisallament d'1 a 3, amb una puntuació total entre 6 i 23; com més baixa és la puntuació, més gran és el risc. És una de les eines de cribratge de risc més emprades en infermeria i la recomanen les guies internacionals de prevenció d'úlceres per pressió (EPUAP/NPIAP/PPPIA).",
+      "interpretation": "Una puntuació total més baixa indica més risc. Els punts de tall habituals són: sense risc 19-23; risc lleu 15-18; risc moderat 13-14; risc alt 10-12; risc molt alt 9 o menys. A partir d'un valor de 18 o inferior es recomana iniciar mesures preventives (canvis posturals, superfícies de redistribució de pressió, cura de la pell i optimització nutricional), ajustant la intensitat segons la franja de risc i el judici clínic.",
+      "cautions": "Validada en adults hospitalitzats, en residències i en atenció domiciliària; per a pediatria s'utilitza la versió adaptada Braden Q. La puntuació és una ajuda al cribratge, no substitueix la inspecció directa de la pell ni la valoració clínica global, i pot infraestimar el risc en determinats contextos (per exemple, pell ja amb eritema o pacients amb dispositius mèdics). No avalua la presència ni la gravetat d'úlceres ja existents, no estima risc cardiovascular ni mortalitat, i s'ha de reavaluar periòdicament perquè el risc canvia amb l'estat del pacient.",
+      "faq": [
+        {
+          "q": "Quina puntuació de Braden es considera risc alt?",
+          "a": "Una puntuació de 10 a 12 indica risc alt i 9 o menys risc molt alt; per sota de 18 ja convé iniciar mesures preventives."
+        },
+        {
+          "q": "Cada quan s'ha de repetir l'escala de Braden?",
+          "a": "S'ha de reavaluar a l'ingrés i de forma periòdica segons el context (sovint cada 24-48 h en hospital d'aguts) i sempre que canviï l'estat clínic del pacient."
+        },
+        {
+          "q": "L'escala de Braden serveix per a nens?",
+          "a": "No directament; en pediatria s'utilitza la versió adaptada Braden Q, validada per a aquesta població."
+        }
       ]
     }
   },
@@ -1090,6 +1584,25 @@
         "Quines ajudes tècniques (caminar, vestir-me, menjar) em serien més útils?",
         "Amb quina freqüència es reavaluarà el meu nivell d'independència?"
       ]
+    },
+    "content": {
+      "overview": "L'índex de Barthel és una escala ordinal que mesura el grau d'independència funcional en deu activitats bàsiques de la vida diària: alimentació, bany, arreglament personal, vestir-se, control intestinal, control vesical, ús del lavabo, transferències llit-cadira, deambulació i pujar escales. Es puntua de 0 a 100 (en increments de 5 amb la versió clàssica) i s'utilitza per quantificar la discapacitat, planificar la rehabilitació i monitoritzar l'evolució funcional, sobretot en l'ictus, la gent gran i la malaltia neurològica. És una de les mesures de resultat funcional més emprades en rehabilitació i en les vies assistencials de l'ictus.",
+      "interpretation": "La puntuació total oscil·la entre 0 (dependència total) i 100 (independència completa). Una agrupació orientativa àmpliament utilitzada és: 0-20 dependència total, 21-60 dependència greu, 61-90 dependència moderada, 91-99 dependència lleu i 100 independència. Cal interpretar el canvi en el context clínic; els valors absoluts importen, però l'evolució en el temps i la trajectòria de cada ítem sovint són més informatives que un únic tall.",
+      "cautions": "Validat principalment en pacients amb ictus, gent gran i persones amb discapacitat física en àmbit hospitalari i de rehabilitació. Avalua només activitats bàsiques (autocura i mobilitat) i NO valora les activitats instrumentals (cuinar, gestionar medicació o finances, comprar), la funció cognitiva, l'estat d'ànim, la comunicació ni el dolor. Presenta efecte sostre en pacients amb bona funció física però amb deteriorament cognitiu, que poden puntuar alt malgrat necessitar supervisió. La puntuació reflecteix el que el pacient fa realment, no el que podria fer.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre l'índex de Barthel i l'escala de Lawton?",
+          "a": "El Barthel mesura activitats bàsiques de la vida diària (autocura i mobilitat), mentre que l'escala de Lawton-Brody avalua activitats instrumentals com cuinar, comprar o gestionar la medicació. Sovint s'utilitzen de manera complementària."
+        },
+        {
+          "q": "Què es considera una bona puntuació a l'índex de Barthel?",
+          "a": "Una puntuació de 100 indica independència completa en les activitats bàsiques i valors de 91-99 reflecteixen dependència lleu. Tot i així, 100 no significa que la persona pugui viure sola, ja que no s'hi avaluen les activitats instrumentals ni la cognició."
+        },
+        {
+          "q": "L'índex de Barthel mesura el deteriorament cognitiu?",
+          "a": "No. El Barthel només valora la independència física en l'autocura i la mobilitat. Per avaluar la cognició cal una eina específica com el MMSE o el MoCA."
+        }
+      ]
     }
   },
   "findrisc": {
@@ -1138,6 +1651,25 @@
         "Hi ha un programa de prevenció estructurat?",
         "Quan hauríem de reavaluar el meu risc?"
       ]
+    },
+    "content": {
+      "overview": "El FINDRISC (Finnish Diabetes Risk Score) estima la probabilitat de desenvolupar diabetis tipus 2 en els propers 10 anys mitjançant variables clíniques senzilles, sense necessitat d'analítica de sang. Suma punts per edat, índex de massa corporal, perímetre de cintura, activitat física, consum diari de fruita i verdura, ús de medicació antihipertensiva, antecedent de glucèmia elevada i història familiar de diabetis. És una eina de cribratge poblacional àmpliament validada, recomanada per les guies conjuntes ESC/EASD sobre diabetis, prediabetis i malaltia cardiovascular i adoptada per la International Diabetes Federation per a la detecció precoç.",
+      "interpretation": "La puntuació oscil·la entre 0 i 26 punts i es classifica en categories de risc a 10 anys: <7 punts, risc baix (aproximadament 1%); 7-11, risc lleugerament elevat (al voltant del 4%); 12-14, risc moderat (al voltant del 17%); 15-20, risc alt (aproximadament 33%); i >20 punts, risc molt alt (fins a un 50%). A partir d'una puntuació de 15 o superior es recomana confirmar l'estat glucèmic amb glucèmia en dejú, HbA1c o test de tolerància oral a la glucosa, i iniciar intervenció sobre l'estil de vida.",
+      "cautions": "El FINDRISC es va desenvolupar i validar en població adulta caucàsica europea (cohort finlandesa) i el seu rendiment pot variar en altres ètnies, en embarassades i en menors de 25 anys. És una eina de predicció de risc, no diagnòstica: una puntuació elevada no confirma diabetis ni detecta diabetis ja existent o no diagnosticada, que requereix sempre confirmació analítica. Tampoc avalua complicacions, diabetis tipus 1 ni risc cardiovascular global.",
+      "faq": [
+        {
+          "q": "El FINDRISC necessita una anàlisi de sang?",
+          "a": "No. És un qüestionari que només utilitza dades clíniques i antropomètriques (edat, IMC, cintura, hàbits, medicació i antecedents), sense cap determinació analítica."
+        },
+        {
+          "q": "Quina puntuació del FINDRISC es considera alta?",
+          "a": "Una puntuació de 15 o més indica risc alt o molt alt; a partir d'aquest llindar es recomana confirmar la glucèmia i intervenir sobre l'estil de vida."
+        },
+        {
+          "q": "Cada quant s'hauria de repetir el FINDRISC?",
+          "a": "En persones amb risc baix o lleugerament elevat es pot repetir cada pocs anys; si el risc és moderat o superior convé reavaluar abans i acompanyar-ho de proves glucèmiques."
+        }
+      ]
     }
   },
   "ipss": {
@@ -1173,6 +1705,25 @@
         "Necessito proves d'imatge?",
         "Quan es plantejaria la cirurgia?"
       ]
+    },
+    "content": {
+      "overview": "L'IPSS (International Prostate Symptom Score) és un qüestionari autoadministrat que quantifica la gravetat dels símptomes del tracte urinari inferior (LUTS) en homes, habitualment associats a hiperplàsia benigna de pròstata. Consta de 7 preguntes que valoren símptomes (buidatge incomplet, freqüència, intermitència, urgència, raig feble, esforç i nictúria), cadascuna de 0 a 5, sumant un total de 0 a 35; s'hi afegeix una vuitena pregunta separada que valora la qualitat de vida (0 a 6) i que no es compta dins la puntuació de símptomes. És l'instrument recomanat per les guies de l'EAU (European Association of Urology) i l'AUA per a l'avaluació inicial i el seguiment dels LUTS masculins (és idèntic a l'AUA-SI amb la pregunta de qualitat de vida afegida).",
+      "interpretation": "La puntuació de símptomes (0-35) es classifica en tres bandes: 0-7 símptomes lleus, 8-19 símptomes moderats i 20-35 símptomes greus. Els símptomes lleus solen permetre conducta expectant; els moderats i greus orienten cap a tractament mèdic o, segons resposta i complicacions, quirúrgic. La pregunta independent de qualitat de vida (índex de molèstia, 0=encantat a 6=fatal) no se suma al total però és clau per decidir la intensitat del tractament, ja que dos pacients amb la mateixa puntuació poden tolerar els símptomes de manera molt diferent.",
+      "cautions": "Validat en homes amb LUTS/sospita d'hiperplàsia benigna de pròstata. No és diagnòstic ni específic: una puntuació elevada no confirma origen prostàtic, ja que infeccions, bufeta hiperactiva, disfunció vesical neurògena, prostatitis o causes en dones poden donar puntuacions similars. No avalua el càncer de pròstata ni substitueix el PSA, el tacte rectal, la flujometria ni l'ecografia. Requereix alfabetització i comprensió adequades; pot ser poc fiable amb barreres lingüístiques o deteriorament cognitiu. El seu valor principal és el seguiment longitudinal de la resposta al tractament en un mateix pacient.",
+      "faq": [
+        {
+          "q": "Quina puntuació IPSS es considera greu?",
+          "a": "Una puntuació total de símptomes de 20 a 35 es considera greu; 8-19 és moderada i 0-7 és lleu."
+        },
+        {
+          "q": "L'IPSS serveix per diagnosticar càncer de pròstata?",
+          "a": "No. L'IPSS només mesura la gravetat dels símptomes urinaris i no detecta càncer; per al cribratge cal PSA, tacte rectal i valoració urològica."
+        },
+        {
+          "q": "Es compta la pregunta de qualitat de vida en el total de l'IPSS?",
+          "a": "No. La pregunta de qualitat de vida es puntua per separat (0-6) i no se suma al total de 0-35, però ajuda a decidir el tractament."
+        }
+      ]
     }
   },
   "basdai": {
@@ -1198,6 +1749,25 @@
         "Convé considerar una teràpia biològica?",
         "Quins exercicis o fisioteràpia poden ajudar?",
         "Quines complicacions hem de vigilar?"
+      ]
+    },
+    "content": {
+      "overview": "L'índex BASDAI (Bath Ankylosing Spondylitis Disease Activity Index) és un qüestionari autoreferit que mesura l'activitat de la malaltia en l'espondiloartritis axial, incloent-hi l'espondilitis anquilosant. Avalua sis dominis mitjançant escales numèriques de 0 a 10: fatiga, dolor axial (coll, esquena, malucs), dolor i inflor d'articulacions perifèriques, dolor a la pressió (entesitis) i la durada i la intensitat de la rigidesa matinal. S'utilitza en la pràctica clínica i en assaigs per monitoritzar l'activitat simptomàtica i va ser una de les eines de referència recomanades per ASAS (Assessment of SpondyloArthritis international Society) i EULAR, ara complementada per l'ASDAS.",
+      "interpretation": "La puntuació final oscil·la entre 0 i 10; les puntuacions més altes indiquen més activitat de la malaltia. El llindar més establert és BASDAI ≥ 4, que reflecteix una malaltia activa i sovint s'ha utilitzat com a criteri per considerar o avaluar la resposta al tractament biològic. Valors per sota de 4 suggereixen una activitat baixa o controlada. El BASDAI s'interpreta millor de manera longitudinal: una reducció rellevant respecte al valor basal (per exemple, una millora de ≥ 2 punts) indica resposta terapèutica.",
+      "cautions": "El BASDAI està validat en adults amb espondiloartritis axial i espondilitis anquilosant; és una mesura subjectiva basada exclusivament en la percepció del pacient. No avalua l'activitat inflamatòria objectiva (no inclou PCR/VSG ni proves d'imatge) ni el dany estructural o la mobilitat espinal, per a la qual cosa cal el BASFI o el BASMI. Un error freqüent és emprar-lo de manera aïllada per decidir teràpia: les guies recomanen combinar-lo amb paràmetres objectius, i l'ASDAS (que incorpora PCR) ofereix una valoració més completa de l'activitat.",
+      "faq": [
+        {
+          "q": "Quina és la puntuació BASDAI que indica malaltia activa?",
+          "a": "Una puntuació de 4 o més (en l'escala de 0 a 10) es considera indicativa de malaltia activa i s'ha utilitzat habitualment com a llindar per valorar l'inici de tractament biològic."
+        },
+        {
+          "q": "Quina diferència hi ha entre el BASDAI i l'ASDAS?",
+          "a": "El BASDAI es basa només en símptomes referits pel pacient, mentre que l'ASDAS combina ítems del pacient amb un reactant de fase aguda (PCR o VSG), cosa que el fa més objectiu per mesurar l'activitat."
+        },
+        {
+          "q": "Com es calcula la puntuació del BASDAI?",
+          "a": "Es promitgen les dues preguntes sobre rigidesa matinal i s'afegeix aquest valor a les altres quatre respostes; el total es divideix per 5 per obtenir una puntuació final de 0 a 10."
+        }
       ]
     }
   },
@@ -1235,6 +1805,25 @@
         "Seria apropiada una teràpia biològica o sintètica dirigida?",
         "Quan es reavaluarà?"
       ]
+    },
+    "content": {
+      "overview": "El DAS28 (Disease Activity Score en 28 articulacions) és un índex compost que quantifica l'activitat de l'artritis reumatoide combinant el recompte d'articulacions doloroses i inflamades sobre 28 articulacions, un reactant de fase aguda (VSG o PCR) i la valoració global de salut del pacient en una escala visual analògica. S'utilitza per monitoritzar l'activitat de la malaltia al llarg del temps i per guiar l'estratègia de tractament per objectius (treat-to-target). És una de les mesures d'activitat recomanades per EULAR per al seguiment de l'artritis reumatoide.",
+      "interpretation": "Amb la versió basada en VSG (DAS28-VSG), els llindars convencionals són: menys de 2,6 indica remissió; de 2,6 a 3,2 (inclòs) activitat baixa; superior a 3,2 i fins a 5,1 (inclòs) activitat moderada; i superior a 5,1 activitat alta. Una reducció superior a 1,2 punts es considera una resposta clínicament significativa. La versió basada en PCR (DAS28-PCR) tendeix a donar valors lleugerament inferiors, de manera que els mateixos punts de tall no són plenament intercanviables i pot infraestimar l'activitat prop del llindar de remissió.",
+      "cautions": "Validat en adults amb artritis reumatoide establerta; no està pensat per a altres artropaties ni per al diagnòstic. El recompte de 28 articulacions exclou els turmells i els peus, de manera que pot infraestimar l'activitat en pacients amb afectació predominantment podàlica. La valoració global i la valoració articular tenen un component subjectiu, i comorbiditats com la fibromiàlgia o infeccions poden elevar la VSG/PCR o el dolor i distorsionar la puntuació. No avalua el dany estructural radiològic ni la funció física a llarg termini.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre el DAS28-VSG i el DAS28-PCR?",
+          "a": "Utilitzen reactants de fase aguda diferents i fórmules diferents; el DAS28-PCR sol donar valors una mica més baixos, per la qual cosa convé usar sempre la mateixa versió en un mateix pacient per comparar."
+        },
+        {
+          "q": "Quin valor de DAS28 indica remissió?",
+          "a": "Un DAS28-VSG inferior a 2,6 es considera remissió segons els criteris convencionals."
+        },
+        {
+          "q": "Quines articulacions s'inclouen en el recompte de 28?",
+          "a": "Es valoren 28 articulacions, comptant les dues bandes: espatlles (2), colzes (2), canells (2), metacarpofalàngiques (10), interfalàngiques proximals de les mans incloent la interfalàngica del polze (10) i genolls (2); s'exclouen els turmells i els peus."
+        }
+      ]
     }
   },
   "pasi": {
@@ -1264,6 +1853,25 @@
         "Quines opcions sistèmiques hi ha disponibles?",
         "Quins efectes secundaris cal vigilar?",
         "Cada quant reavaluarem?"
+      ]
+    },
+    "content": {
+      "overview": "L'índex PASI (Psoriasis Area and Severity Index) és l'instrument estàndard per quantificar la gravetat de la psoriasi en placa i monitoritzar la resposta al tractament. Combina l'extensió de la superfície afectada amb la intensitat de tres signes clínics —eritema, infiltració (gruix) i descamació— ponderats per quatre regions corporals (cap, tronc, extremitats superiors i inferiors). És la mesura de resultat de referència en assaigs clínics i en guies de psoriasi com les de l'AAD-NPF i l'EuroGuiDerm/EDF per avaluar candidats a teràpia sistèmica i biològica.",
+      "interpretation": "El PASI puntua de 0 a 72; com més alt, més greu. No hi ha llindars universals, però convencionalment una puntuació inferior a 5-10 sol indicar malaltia lleu, de 10 a 20 moderada i superior a 20 greu; un PASI ≥10 és un dels criteris habituals per considerar candidatura a tractament sistèmic. La resposta al tractament s'expressa com a reducció percentual respecte al basal: PASI 75 (reducció ≥75%) ha estat l'objectiu clàssic, mentre que PASI 90 i PASI 100 (aclariment gairebé complet o total) són els objectius actuals amb les teràpies biològiques modernes.",
+      "cautions": "El PASI es va validar per a la psoriasi en placa crònica i és poc fiable en formes pustulosa, eritrodèrmica o guttata. Té sensibilitat limitada en malaltia lleu o molt localitzada i una variabilitat interobservador notable, sobretot en la puntuació de la infiltració. No avalua l'afectació d'àrees especials d'alt impacte (cuir cabellut, ungles, palmells, plantes, genitals) ni la càrrega simptomàtica o la qualitat de vida; per això es complementa amb el BSA, l'IGA i el DLQI. No mesura artritis psoriàsica ni comorbiditats.",
+      "faq": [
+        {
+          "q": "Què vol dir PASI 75?",
+          "a": "PASI 75 significa una reducció de com a mínim el 75% de la puntuació PASI respecte al valor basal abans del tractament. Ha estat l'objectiu terapèutic clàssic en assaigs clínics."
+        },
+        {
+          "q": "Quina puntuació PASI es considera psoriasi greu?",
+          "a": "No hi ha un tall universal, però sovint es considera greu un PASI superior a 20; un PASI ≥10 ja sol justificar valorar tractament sistèmic, especialment combinat amb un DLQI elevat."
+        },
+        {
+          "q": "El PASI serveix per a la psoriasi de cuir cabellut o ungles?",
+          "a": "No de manera adequada. El PASI infravalora les àrees especials; per a cuir cabellut, ungles, palmells, plantes o genitals s'utilitzen índexs específics com el PSSI, NAPSI o ppPASI."
+        }
       ]
     }
   },
@@ -1296,6 +1904,25 @@
         "Com tractem els brots vs. el manteniment?",
         "Hem de considerar un biològic com dupilumab?",
         "Quins factors d'estil de vida agreugen l'èczema?"
+      ]
+    },
+    "content": {
+      "overview": "El SCORAD (SCORing Atopic Dermatitis) és un índex compost que quantifica la gravetat de la dermatitis atòpica combinant tres components: l'extensió de la malaltia (regla del 9 sobre la superfície corporal), la intensitat de sis signes clínics (eritema, edema/pàpules, exsudació/crostes, excoriacions, liquenificació i xerosi) i els símptomes subjectius (prurit i pèrdua de son) valorats pel pacient en escales analògiques visuals. Va ser desenvolupat pel European Task Force on Atopic Dermatitis (ETFAD/EADV) i és una de les eines de referència recomanades per les guies europees (EuroGuiDerm/EADV) per avaluar la gravetat i monitoritzar la resposta al tractament.",
+      "interpretation": "La puntuació total del SCORAD oscil·la entre 0 i 103. Es calcula com A/5 + 7B/2 + C, on A és l'extensió (0-100), B la intensitat (0-18) i C els símptomes subjectius (0-20). En general s'interpreta així: menys de 25 indica malaltia lleu, de 25 a 50 malaltia moderada i més de 50 malaltia greu. Existeix la variant objectiva (oSCORAD), que omet el component subjectiu C i té un màxim de 83, útil quan no es disposa de la valoració del pacient. La reducció relativa respecte al basal (SCORAD-50, SCORAD-75) s'utilitza com a mesura de resposta terapèutica.",
+      "cautions": "El SCORAD està validat per a la dermatitis atòpica en nens i adults; no s'aplica a altres dermatosis eczematoses. És una eina puntual i dependent de l'observador, amb una variabilitat interobservador no menyspreable, especialment en l'estimació de l'extensió i la liquenificació; també presenta limitacions en pells fosques, on l'eritema pot infravalorar-se. No avalua l'impacte sobre la qualitat de vida (per a això calen instruments com el DLQI o el POEM) ni l'evolució crònica de la malaltia, i el component subjectiu requereix col·laboració del pacient, cosa que el fa poc fiable en lactants molt petits.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre SCORAD i oSCORAD?",
+          "a": "El SCORAD inclou els símptomes subjectius (prurit i son) referits pel pacient, mentre que l'oSCORAD (objectiu) els omet. El SCORAD total arriba a 103 i l'oSCORAD a 83."
+        },
+        {
+          "q": "Quin valor de SCORAD es considera dermatitis atòpica greu?",
+          "a": "Una puntuació superior a 50 es considera malaltia greu; entre 25 i 50 moderada, i per sota de 25 lleu."
+        },
+        {
+          "q": "Com es mesura la resposta al tractament amb el SCORAD?",
+          "a": "S'utilitza la reducció percentual respecte al basal, com el SCORAD-50 (millora del 50%) o SCORAD-75, que són desenllaços habituals en assaigs clínics i en la pràctica de seguiment."
+        }
       ]
     }
   },
@@ -1331,6 +1958,25 @@
         "Podem identificar i tractar l'origen de la infecció?",
         "Quines complicacions cal vigilar?"
       ]
+    },
+    "content": {
+      "overview": "Els criteris de Duke modificats classifiquen la probabilitat d'endocarditis infecciosa combinant dades microbiològiques (hemocultius), d'imatge (ecocardiografia, i en les versions actualitzades també TC, PET/TC i RM) i clíniques. S'estructuren en criteris majors i menors i s'utilitzen davant la sospita d'endocarditis sobre vàlvula nativa, protèsica o dispositius cardíacs. Són els criteris diagnòstics recomanats per la guia ESC 2023 d'endocarditis infecciosa (criteris ESC 2023/Duke-ISCVID 2023), una actualització dels criteris de Duke modificats clàssics de 2000.",
+      "interpretation": "El diagnòstic es classifica en tres categories. Endocarditis definida: 2 criteris majors, o 1 major + 3 menors, o 5 menors (o confirmació anatomopatològica/microbiològica del teixit valvular o vegetació). Endocarditis possible: 1 major + 1 menor, o 3 menors. Endocarditis rebutjada: diagnòstic alternatiu ferm, resolució amb 4 dies o menys d'antibiòtic, o no es compleixen els criteris de possible. Una classificació de possible no exclou la malaltia i obliga a reavaluar amb noves proves.",
+      "cautions": "Validats en pacients amb sospita clínica d'endocarditis infecciosa; el rendiment és menor en endocarditis sobre vàlvula protèsica, dispositius intracardíacs i hemocultius negatius, on cal recórrer a imatge avançada i serologies. Són una eina de classificació diagnòstica, no de cribratge poblacional, i no estimen el risc de mortalitat, la indicació quirúrgica ni la durada del tractament. Cap regla substitueix el judici clínic ni la valoració per un equip multidisciplinari (endocarditis team).",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre endocarditis definida i possible segons Duke?",
+          "a": "Definida requereix 2 criteris majors, 1 major més 3 menors o 5 menors (o prova histològica); possible requereix 1 major més 1 menor o 3 menors. Possible indica sospita persistent que cal seguir investigant."
+        },
+        {
+          "q": "Els criteris de Duke modificats inclouen el PET-TC?",
+          "a": "Sí, l'actualització ESC 2023/Duke-ISCVID incorpora la captació anòmala per ¹⁸F-FDG PET/TC sobre vàlvula protèsica o material com a criteri major d'imatge, a més de la TC cardíaca."
+        },
+        {
+          "q": "Es pot diagnosticar endocarditis amb hemocultius negatius?",
+          "a": "Sí; en endocarditis amb hemocultius negatius el diagnòstic es recolza en serologies (per exemple Coxiella burnetii), PCR i imatge, però la sensibilitat dels criteris disminueix i sovint queda en categoria possible."
+        }
+      ]
     }
   },
   "hinchey": {
@@ -1355,6 +2001,25 @@
         "Podria necessitar una colostomia?",
         "Quina recuperació he d'esperar després de l'operació?",
         "Com es poden prevenir nous episodis?"
+      ]
+    },
+    "content": {
+      "overview": "La classificació de Hinchey estadifica la gravetat de la diverticulitis aguda complicada del còlon, sobretot la sigmoide, en funció de la troballa quirúrgica o tomogràfica de l'extensió de la inflamació, l'abscés i la peritonitis. Es fa servir per orientar la decisió terapèutica entre maneig conservador, drenatge percutani i cirurgia urgent. La versió modificada (Wasvary/Kaiser) integra les troballes de la TC i és la referència emprada per les guies de societats com l'ASCRS (American Society of Colon and Rectal Surgeons) i la WSES.",
+      "interpretation": "Estadi I: inflamació pericòlica o flegmó (Ia) o abscés pericòlic confinat (Ib); habitualment maneig mèdic, amb drenatge percutani si l'abscés és gran. Estadi II: abscés pèlvic, intraabdominal a distància o retroperitoneal; sovint candidat a drenatge percutani guiat per imatge més antibiòtics. Estadi III: peritonitis purulenta generalitzada per ruptura d'un abscés sense comunicació lliure amb la llum; requereix cirurgia urgent. Estadi IV: peritonitis fecaloïdal per perforació lliure amb contaminació feculenta; cirurgia urgent amb la mortalitat més alta. En general, com més alt l'estadi, més probabilitat d'intervenció quirúrgica i pitjor pronòstic.",
+      "cautions": "Va ser dissenyada i validada per a la diverticulitis aguda del còlon, originalment com a classificació intraoperatòria i posteriorment adaptada a la TC. No s'aplica a la diverticulitis no complicada ni serveix per decidir l'alta ambulatòria; no avalua sèpsia sistèmica, comorbiditat ni risc anestèsic, de manera que la decisió quirúrgica s'ha d'individualitzar amb l'estat clínic global. Un error freqüent és estadificar només per imatge sense correlació clínica o aplicar-la a episodis recurrents/crònics, per als quals no està pensada.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre Hinchey I i II?",
+          "a": "L'estadi I és un abscés o flegmó pericòlic confinat prop del còlon, mentre que l'estadi II és un abscés a distància (pèlvic, intraabdominal o retroperitoneal). L'estadi II sol requerir drenatge percutani, a diferència del I petit que sovint es tracta només amb antibiòtics."
+        },
+        {
+          "q": "Quins estadis de Hinchey necessiten cirurgia urgent?",
+          "a": "Els estadis III (peritonitis purulenta generalitzada) i IV (peritonitis fecaloïdal) requereixen cirurgia urgent. Els estadis I i II es manegen habitualment amb antibiòtics i, si cal, drenatge percutani."
+        },
+        {
+          "q": "La classificació de Hinchey es basa en la TC o en la cirurgia?",
+          "a": "La versió original de Hinchey (1978) era una classificació intraoperatòria. La versió modificada de Wasvary/Kaiser incorpora les troballes de la TC i és la que es fa servir actualment a la pràctica clínica."
+        }
       ]
     }
   },
@@ -1395,6 +2060,25 @@
         "Hauríem de mesurar lactat, cossos cetònics o bretxa osmolar?",
         "Cada quant repetirem la gasometria?"
       ]
+    },
+    "content": {
+      "overview": "L'anion gap (forat aniònic) és un càlcul derivat dels electròlits sèrics que estima la diferència entre els cations i els anions mesurats, i serveix per detectar i classificar l'acidosi metabòlica. Es calcula com Na⁺ − (Cl⁻ + HCO₃⁻), amb la variant que inclou el potassi [(Na⁺ + K⁺) − (Cl⁻ + HCO₃⁻)]. Com que l'albúmina és el principal anió no mesurat, en pacients hipoalbuminèmics cal aplicar la correcció d'albúmina (afegir aproximadament 2,5 mEq/L per cada 1 g/dL d'albúmina per sota de 4 g/dL) per evitar infraestimar el gap. És una eina diagnòstica bàsica de l'equilibri àcid-base, no una escala pronòstica d'una societat concreta.",
+      "interpretation": "El rang de referència habitual de l'anion gap sense potassi és d'aproximadament 8–12 mEq/L (uns 12–16 mEq/L si s'inclou el potassi), tot i que varia segons el laboratori i els mètodes de mesura actuals. Un anion gap elevat orienta cap a acidosi metabòlica amb gap augmentat (cetoacidosi, acidosi làctica, insuficiència renal, intoxicacions com metanol, etilenglicol o salicilats). Un gap normal en presència d'acidosi suggereix acidosi hiperclorèmica (diarrea, acidosi tubular renal). Un gap baix és poc freqüent i pot reflectir hipoalbuminèmia, paraproteïnèmia o errors de laboratori. Sempre cal interpretar el valor corregit per albúmina i en el context gasomètric global.",
+      "cautions": "Cal usar valors d'electròlits simultanis i fiables; cada laboratori té el seu propi rang segons la metodologia. La correcció per albúmina és essencial en pacients crítics, hepatòpates o desnutrits, on una hipoalbuminèmia pot emmascarar una acidosi amb gap elevat. El càlcul pot resultar alterat per hiperlipèmia, hiperglobulinèmia, liti, bromur o errors preanalítics. L'anion gap NO és per si sol un diagnòstic ni una mesura del pH o de la gravetat: no substitueix la gasometria arterial ni el càlcul del gap osmolar quan se sospita intoxicació, i no aporta informació pronòstica directa.",
+      "faq": [
+        {
+          "q": "Per què cal corregir l'anion gap per l'albúmina?",
+          "a": "L'albúmina és el principal anió no mesurat; quan està baixa, el gap calculat resulta artificialment baix i pot emmascarar una acidosi amb gap elevat. Es corregeix afegint aproximadament 2,5 mEq/L per cada 1 g/dL d'albúmina per sota de 4 g/dL."
+        },
+        {
+          "q": "Quin és el valor normal de l'anion gap?",
+          "a": "Habitualment és d'uns 8–12 mEq/L quan no s'inclou el potassi, i d'uns 12–16 mEq/L quan sí que s'inclou, però el rang exacte depèn del laboratori i del mètode de mesura."
+        },
+        {
+          "q": "Què significa un anion gap elevat?",
+          "a": "Suggereix una acidosi metabòlica amb gap augmentat, típicament per cetoacidosi, acidosi làctica, insuficiència renal o intoxicacions (metanol, etilenglicol, salicilats). Cal confirmar-ho amb la gasometria i el context clínic."
+        }
+      ]
     }
   },
   "fena": {
@@ -1422,6 +2106,25 @@
         "Necessitaré sèrums, diàlisi o un altre tractament?",
         "Hi ha algun medicament que estigui afectant els meus ronyons?",
         "Quins signes d'empitjorament hem de vigilar?"
+      ]
+    },
+    "content": {
+      "overview": "La fracció d'excreció de sodi (FENa) és un índex que estima el percentatge del sodi filtrat que finalment s'excreta a l'orina, calculat a partir del sodi i la creatinina en plasma i orina. S'utilitza en l'estudi de la lesió renal aguda (LRA) amb oligúria per ajudar a distingir l'azotèmia prerenal (hipoperfusió, amb àvida reabsorció de sodi) de la necrosi tubular aguda (NTA). És una eina de suport diagnòstic clàssica que complementa la classificació KDIGO de la LRA, no una escala formalment avalada per cap societat.",
+      "interpretation": "FENa inferior a l'1% suggereix una causa prerenal, amb túbuls intactes que reabsorbeixen àvidament el sodi per preservar volum (també es veu en estats de baix flux com la síndrome hepatorenal o la insuficiència cardíaca). FENa superior al 2% és típica de la necrosi tubular aguda, on el túbul lesionat no pot conservar el sodi. Els valors entre l'1% i el 2% són indeterminats i requereixen interpretació clínica. Cal interpretar sempre el resultat juntament amb el context, l'examen de l'orina i l'estat de volum.",
+      "cautions": "La FENa es va validar en pacients amb LRA oligúrica i no s'ha de prendre de forma aïllada. Perd fiabilitat amb l'ús de diürètics (que augmenten l'excreció de sodi i poden donar FENa elevada malgrat una causa prerenal); en aquests casos és preferible la fracció d'excreció d'urea. També pot ser inferior a l'1% en quadres no prerenals com nefropatia per contrast, glomerulonefritis aguda, rabdomiòlisi o sèpsia precoç. No avalua la causa exacta de la LRA, no substitueix l'examen del sediment urinari i no és útil en la malaltia renal crònica.",
+      "faq": [
+        {
+          "q": "Com es calcula la FENa?",
+          "a": "FENa (%) = (sodi orina × creatinina plasma) / (sodi plasma × creatinina orina) × 100. Es necessiten valors simultanis de sodi i creatinina en plasma i en orina."
+        },
+        {
+          "q": "Què significa una FENa menor de l'1%?",
+          "a": "Suggereix una causa prerenal de la lesió renal aguda, amb túbuls intactes que reabsorbeixen sodi de manera àvida per la hipoperfusió. També pot aparèixer en la síndrome hepatorenal o la nefropatia per contrast."
+        },
+        {
+          "q": "Per què la FENa no és fiable amb diürètics?",
+          "a": "Els diürètics augmenten l'excreció renal de sodi i poden elevar falsament la FENa fins i tot en una causa prerenal; en pacients amb diürètics es recomana calcular la fracció d'excreció d'urea (FEUrea)."
+        }
       ]
     }
   },
@@ -1490,6 +2193,25 @@
         "Necessitaré un llit d'UCI després de l'operació?",
         "Quines són les complicacions més probables per a la meva classe ASA?"
       ]
+    },
+    "content": {
+      "overview": "La classificació de l'estat físic de l'American Society of Anesthesiologists (ASA-PS) és una escala ordinal de sis categories que descriu l'estat de salut sistèmica preoperatòria d'un pacient abans de l'anestèsia i la cirurgia. No mesura el risc quirúrgic per si sola, sinó la càrrega de comorbiditat sistèmica del pacient, i s'utilitza de manera rutinària com a part de l'avaluació preanestèsica per comunicar el risc i orientar la planificació perioperatòria. És un sistema definit i mantingut per l'American Society of Anesthesiologists (ASA), amb exemples aprovats l'any 2014 i actualitzats el 2020.",
+      "interpretation": "Hi ha sis classes. ASA I: pacient sa, sense malaltia sistèmica. ASA II: malaltia sistèmica lleu i ben controlada, sense limitació funcional substancial (per exemple, fumador, embaràs, obesitat amb IMC 30-40, hipertensió o diabetis ben controlades). ASA III: malaltia sistèmica greu amb limitació funcional substancial (per exemple, diabetis o hipertensió mal controlades, MPOC, IMC ≥40, infart o ictus de més de 3 mesos, malaltia renal terminal en diàlisi regular). ASA IV: malaltia sistèmica greu que és una amenaça constant per a la vida (per exemple, infart, ictus o stent coronari recents de menys de 3 mesos, isquèmia cardíaca en curs, sèpsia, malaltia renal terminal sense diàlisi regular). ASA V: pacient moribund que no s'espera que sobrevisqui sense la intervenció. ASA VI: pacient amb mort cerebral declarada per a donació d'òrgans. El sufix E s'afegeix a qualsevol classe quan la cirurgia és una emergència. Una classe més alta s'associa amb més morbiditat i mortalitat perioperatòries.",
+      "cautions": "La classe ASA s'assigna mitjançant el judici clínic de l'anestesiòleg i té variabilitat interobservador coneguda; els exemples de l'ASA són orientatius, no exhaustius. No incorpora l'edat, el pes per si sol, ni la complexitat o la naturalesa del procediment quirúrgic, i no és una eina de predicció de risc validada per a un pacient individual. No s'ha de fer servir aïlladament per quantificar el risc operatori: per a una estimació de risc s'haurien d'emprar models específics (per exemple, calculadora de risc de l'ACS NSQIP, RCRI). Tampoc reflecteix la dificultat de la via aèria.",
+      "faq": [
+        {
+          "q": "Què significa ASA III abans d'una operació?",
+          "a": "Indica una malaltia sistèmica greu amb limitació funcional substancial però no immediatament amenaçant per a la vida, com diabetis o hipertensió mal controlades, MPOC o obesitat amb IMC igual o superior a 40."
+        },
+        {
+          "q": "Què vol dir la lletra E a la classificació ASA?",
+          "a": "El sufix E indica que el procediment és una emergència, és a dir, que el retard del tractament augmentaria de manera significativa l'amenaça per a la vida o per a una part del cos. S'afegeix a la classe corresponent, per exemple ASA IIIE."
+        },
+        {
+          "q": "La classe ASA prediu la meva mortalitat quirúrgica?",
+          "a": "S'associa estadísticament amb la morbiditat i mortalitat perioperatòries, però no és una calculadora de risc individual; per estimar el risc d'un pacient concret cal utilitzar models dissenyats amb aquesta finalitat."
+        }
+      ]
     }
   },
   "caprini": {
@@ -1546,6 +2268,25 @@
         "Quins signes de trombosi he de vigilar a casa?",
         "La prevenció interactua amb els meus altres medicaments?"
       ]
+    },
+    "content": {
+      "overview": "L'escala de Caprini (Caprini Risk Assessment Model) estratifica el risc de tromboembolisme venós (TEV) —trombosi venosa profunda i embòlia pulmonar— en pacients hospitalitzats, sobretot quirúrgics, sumant punts ponderats per factors de risc clínics. Inclou edat, tipus i durada de la cirurgia, antecedents de TEV, trombofília, neoplàsia, immobilitat, obesitat, ús d'anticonceptius o teràpia hormonal, embaràs o postpart, i altres comorbiditats. Orienta la indicació i la intensitat de la tromboprofilaxi (mecànica i/o farmacològica). És un dels models de valoració del risc de TEV recomanats per les guies de l'American College of Chest Physicians (ACCP/CHEST) en pacients quirúrgics no ortopèdics.",
+      "interpretation": "La puntuació total agrupa el pacient en bandes de risc. En la versió de cirurgia general/abdominopèlvica, 0 punts indica risc molt baix; 1-2 punts, risc baix; 3-4 punts, risc moderat; i ≥5 punts, risc alt. A major puntuació, major risc de TEV i, en general, més indicació de tromboprofilaxi farmacològica afegida a la mecànica, sempre balancejant el risc hemorràgic individual. Els llindars exactes i la conducta profilàctica poden variar segons la població (p. ex. cirurgia plàstica o ortopèdica) i el protocol institucional, de manera que cal aplicar-los amb la versió validada corresponent.",
+      "cautions": "El model es va desenvolupar i validar principalment en pacients quirúrgics adults (especialment cirurgia general, vascular, urològica i plàstica); la seva aplicació a pacients mèdics, obstètrics o pediàtrics està menys establerta. No avalua el risc hemorràgic, que cal estimar per separat abans de decidir la profilaxi farmacològica, ni substitueix el judici clínic ni les proves diagnòstiques davant la sospita de TEV actiu. Un error freqüent és usar-lo com a eina diagnòstica o aplicar els llindars d'una versió a una població diferent de la validada.",
+      "faq": [
+        {
+          "q": "Quan he d'iniciar tromboprofilaxi farmacològica segons el Caprini?",
+          "a": "En general, els pacients amb puntuació moderada-alta (típicament ≥3-5 punts segons la versió) es beneficien d'afegir profilaxi farmacològica a la mecànica, sempre que el risc hemorràgic sigui acceptable. La decisió final s'individualitza amb el protocol local."
+        },
+        {
+          "q": "El Caprini serveix per a pacients mèdics no quirúrgics?",
+          "a": "Es va validar sobretot en pacients quirúrgics. En pacients mèdics hospitalitzats sovint es prefereixen models específics com el Padua Prediction Score, tot i que algunes institucions adapten el Caprini."
+        },
+        {
+          "q": "Quina diferència hi ha entre el Caprini i la puntuació de Wells?",
+          "a": "El Caprini estima el risc de desenvolupar TEV per orientar la profilaxi, mentre que l'escala de Wells estima la probabilitat que un pacient ja tingui una TVP o EP per guiar el diagnòstic. No són intercanviables."
+        }
+      ]
     }
   },
   "wellsDvt": {
@@ -1573,6 +2314,25 @@
         "Hi ha motiu per iniciar tractament empíric?",
         "Quins signes d'embòlia pulmonar he de vigilar?",
         "Quant de temps necessitaré tractament si es confirma la TVP?"
+      ]
+    },
+    "content": {
+      "overview": "L'escala de Wells per a trombosi venosa profunda (TVP) estima la probabilitat clínica pre-test de TVP en pacients ambulatoris amb sospita de trombosi a les extremitats inferiors. Suma punts per factors de risc i signes clínics (càncer actiu, paràlisi o immobilització recent d'una cama, enllitament o cirurgia major recent, sensibilitat al llarg del sistema venós profund, tumefacció de tota la cama, augment del perímetre del panxell >3 cm, edema amb fòvea, venes col·laterals superficials i antecedent de TVP), i resta 2 punts si hi ha un diagnòstic alternatiu igual o més probable que la TVP. Forma part dels algoritmes diagnòstics de TVP avalats per la guia ESC 2019 de tromboembòlia pulmonar i per l'American College of Chest Physicians (CHEST).",
+      "interpretation": "Amb el model dicotòmic (el més usat), una puntuació ≤1 classifica el pacient com a TVP improbable i una puntuació ≥2 com a TVP probable. En el model original de tres nivells, una puntuació ≤0 indica probabilitat baixa, 1-2 intermèdia i ≥3 alta (la puntuació pot ser negativa perquè es resten punts pel diagnòstic alternatiu). En els pacients amb TVP improbable, un dímer-D negatiu permet excloure la TVP amb seguretat sense necessitat d'ecografia; si el dímer-D és positiu o la TVP és probable, cal fer ecografia de compressió de l'extremitat. L'escala no confirma per si sola el diagnòstic: sempre s'ha de combinar amb dímer-D i/o imatge.",
+      "cautions": "Validada en pacients ambulatoris adults amb sospita de primera TVP de l'extremitat inferior. No s'ha validat de manera fiable en pacients hospitalitzats, embarassades, usuàries d'anticoagulació, sospita de TVP de l'extremitat superior ni TVP recurrent, on el rendiment és menor. No avalua la probabilitat d'embòlia pulmonar (per a això s'utilitza l'escala de Wells per a EP, diferent) ni substitueix el dímer-D ni la imatge. Un error freqüent és aplicar-la de forma aïllada per descartar una TVP sense integrar el dímer-D en els pacients amb risc baix/improbable.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre l'escala de Wells per a TVP i la de embòlia pulmonar?",
+          "a": "Són dues escales diferents amb ítems i punts propis: la de TVP avalua la trombosi a les cames i la de EP la sospita d'embòlia pulmonar. No són intercanviables."
+        },
+        {
+          "q": "Què faig si la puntuació de Wells és baixa o de TVP improbable?",
+          "a": "En un pacient amb TVP improbable (≤1), un dímer-D negatiu exclou la TVP de manera segura i evita l'ecografia; si el dímer-D és positiu, cal fer ecografia de compressió."
+        },
+        {
+          "q": "Cal demanar sempre una ecografia si la Wells és alta?",
+          "a": "Sí; quan la TVP és probable (≥2) el dímer-D no és suficient per excloure-la i s'ha de fer una ecografia de compressió de l'extremitat."
+        }
       ]
     }
   },
@@ -1624,6 +2384,25 @@
         "Quines proves de seguiment necessitaré?",
         "Hi ha canvis d'estil de vida que puguin millorar la meva puntuació?"
       ]
+    },
+    "content": {
+      "overview": "La classificació de Child-Pugh estima la gravetat i el pronòstic de la cirrosi hepàtica i ajuda a estratificar el risc de mortalitat i de complicacions perioperatòries. Combina cinc variables: bilirubina sèrica, albúmina sèrica, INR (o temps de protrombina), ascites i encefalopatia hepàtica. Cada variable puntua d'1 a 3 punts, amb un total de 5 a 15 punts. És una eina històrica àmpliament utilitzada en hepatologia; les guies de l'EASL la reconeixen com a mesura clàssica de funció hepàtica, sovint complementada per l'MELD en l'avaluació per a trasplantament.",
+      "interpretation": "La puntuació total (5–15) es divideix en tres classes. Classe A (5–6 punts): cirrosi ben compensada, supervivència estimada a 1 any al voltant del 95–100%. Classe B (7–9 punts): compromís funcional significatiu, supervivència a 1 any aproximadament del 80%. Classe C (10–15 punts): malaltia descompensada, supervivència a 1 any al voltant del 45%. La classe també orienta el risc quirúrgic i l'ajust de dosi de fàrmacs amb metabolisme hepàtic.",
+      "cautions": "Validada en pacients amb cirrosi crònica. Inclou dos components subjectius (grau d'ascites i d'encefalopatia) que generen variabilitat interobservador, i no contempla la funció renal, factor pronòstic clau que sí recull l'MELD. La bilirubina pot estar artificialment elevada en colèstasi o síndromes com Gilbert, i l'albúmina i l'INR es poden alterar per causes extrahepàtiques (nutrició, anticoagulació). No avalua la presència de varices ni el risc d'hemorràgia per hipertensió portal de manera directa, ni substitueix l'MELD per a la priorització en llista de trasplantament.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre Child-Pugh i MELD?",
+          "a": "El Child-Pugh classifica la cirrosi en tres classes (A, B, C) amb variables clíniques i analítiques, mentre que l'MELD és una puntuació contínua basada en bilirubina, INR i creatinina (i sodi al MELD-Na) que prioritza l'assignació d'òrgans per a trasplantament."
+        },
+        {
+          "q": "Què significa una cirrosi Child-Pugh classe C?",
+          "a": "Indica una cirrosi descompensada amb funció hepàtica greument afectada i pitjor pronòstic, amb una supervivència estimada a 1 any al voltant del 45%; sol motivar valoració per a trasplantament hepàtic."
+        },
+        {
+          "q": "Cal estar en dejú per calcular el Child-Pugh?",
+          "a": "No. Es calcula amb paràmetres analítics (bilirubina, albúmina, INR) i l'avaluació clínica d'ascites i encefalopatia; no requereix dejú específic més enllà del que indiqui el laboratori per a l'extracció."
+        }
+      ]
     }
   },
   "glasgowBlatchford": {
@@ -1652,6 +2431,25 @@
         "Quan es farà l'endoscòpia?",
         "Quins signes de re-sagnat he de vigilar a casa?"
       ]
+    },
+    "content": {
+      "overview": "L'escala de Glasgow-Blatchford (GBS) estratifica el risc en pacients que es presenten amb hemorràgia digestiva alta i identifica els que tenen baix risc de requerir una intervenció clínica (transfusió, endoscòpia terapèutica o cirurgia) o de morir. Es calcula amb dades disponibles a l'admissió, sense necessitat d'endoscòpia: urea, hemoglobina, pressió arterial sistòlica, freqüència cardíaca, melena, síncope, hepatopatia i insuficiència cardíaca. És útil al servei d'urgències per decidir l'alta precoç o la necessitat d'ingrés. Les guies de l'ESGE i del NICE recomanen utilitzar el GBS per a la valoració inicial pre-endoscòpica.",
+      "interpretation": "La puntuació va de 0 a 23: com més alta, més gran el risc d'intervenció o mort. Un valor de 0 (o ≤1 segons alguns protocols) identifica pacients de molt baix risc que poden considerar-se per a maneig ambulatori amb endoscòpia diferida, ja que la probabilitat de necessitar transfusió, hemostàsia o cirurgia és molt baixa. Puntuacions més altes s'associen progressivament a major necessitat d'intervenció i justifiquen ingrés i endoscòpia precoç. No hi ha un únic llindar universal d'alt risc; el valor pràctic principal del GBS és la seva alta sensibilitat per descartar pacients de baix risc.",
+      "cautions": "Validat en adults amb hemorràgia digestiva alta aguda. El GBS és una eina pronòstica per orientar la disposició, no diagnostica la causa de la hemorràgia ni substitueix l'endoscòpia. No s'ha de fer servir en hemorràgia digestiva baixa. La urea pot estar elevada per causes alienes a la hemorràgia (insuficiència renal, deshidratació) i la hemoglobina inicial pot no reflectir encara la pèrdua aguda, fet que pot sobreestimar o infraestimar el risc. Cal mantenir judici clínic: un GBS baix no exclou patologia greu si la presentació és preocupant.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre el Glasgow-Blatchford i el Rockall?",
+          "a": "El Glasgow-Blatchford s'aplica abans de l'endoscòpia i prediu la necessitat d'intervenció, mentre que el Rockall complet incorpora troballes endoscòpiques i s'orienta més a predir mortalitat i resagnat."
+        },
+        {
+          "q": "Quina puntuació de Glasgow-Blatchford permet l'alta des d'urgències?",
+          "a": "Un GBS de 0 (i en alguns protocols ≤1) identifica pacients de molt baix risc candidats a maneig ambulatori amb endoscòpia diferida, sempre amb valoració clínica individual."
+        },
+        {
+          "q": "Quins paràmetres necessito per calcular el Glasgow-Blatchford?",
+          "a": "Urea, hemoglobina, pressió arterial sistòlica i freqüència cardíaca, més la presència de melena, síncope, hepatopatia i insuficiència cardíaca; no requereix endoscòpia."
+        }
+      ]
     }
   },
   "score2": {
@@ -1678,6 +2476,25 @@
         "He d'iniciar una estatina?",
         "Quines xifres de tensió arterial he de perseguir?",
         "Quan hauríem de reavaluar?"
+      ]
+    },
+    "content": {
+      "overview": "SCORE2 i SCORE2-OP estimen el risc als 10 anys d'esdeveniments cardiovasculars ateroscleròtics fatals i no fatals (infart de miocardi i ictus) en persones sense malaltia cardiovascular establerta, diabetis o malaltia renal crònica prèvies. SCORE2 s'aplica a adults de 40 a 69 anys i SCORE2-OP (Older Persons) a partir de 70 anys. Combinen edat, sexe, tabaquisme, pressió arterial sistòlica i colesterol no-HDL, calibrats per regions de risc europees (baix, moderat, alt i molt alt). Són els algoritmes recomanats per la guia ESC 2021 de prevenció cardiovascular.",
+      "interpretation": "El resultat és un percentatge de risc als 10 anys, interpretat segons franges d'edat. En adults <50 anys: <2,5% risc baix-moderat, 2,5-7,5% risc alt, ≥7,5% risc molt alt. En 50-69 anys: <5% baix-moderat, 5-10% alt, ≥10% molt alt. En ≥70 anys (SCORE2-OP): <7,5% baix-moderat, 7,5-15% alt, ≥15% molt alt. La categoria orienta la intensitat del tractament: en risc alt o molt alt es considera tractament hipolipemiant i de la pressió arterial més intensiu, sempre dins d'una decisió compartida amb el pacient.",
+      "cautions": "Validat en població europea de 40 anys o més sense esdeveniments cardiovasculars previs. No s'ha d'aplicar a pacients amb malaltia cardiovascular aterosclerótica establerta, diabetis mellitus, malaltia renal crònica, hipercolesterolèmia familiar o hipertensió secundària, que ja són d'alt o molt alt risc o disposen d'eines específiques. Cal triar la taula de la regió de risc correcta. No estima risc d'insuficiència cardíaca, fibril·lació auricular ni mortalitat global, i pot infraestimar el risc en alguns grups (malaltia inflamatòria crònica, origen ètnic sud-asiàtic, condicionants socioeconòmics).",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre SCORE2 i el SCORE original?",
+          "a": "SCORE2 estima esdeveniments cardiovasculars fatals i NO fatals als 10 anys i fa servir colesterol no-HDL, mentre que el SCORE antic només estimava mortalitat cardiovascular. A més, SCORE2 està recalibrat per regions de risc europees."
+        },
+        {
+          "q": "Quina taula de risc regional he de fer servir a Espanya?",
+          "a": "Espanya està classificada com a regió de risc baix en la calibració de SCORE2; cal seleccionar la taula corresponent a aquesta regió per obtenir una estimació correcta."
+        },
+        {
+          "q": "Puc fer servir SCORE2 en un pacient diabètic?",
+          "a": "No. En diabetis s'han de fer servir eines específiques com SCORE2-Diabetes; SCORE2 i SCORE2-OP estan pensats per a persones sense diabetis, malaltia cardiovascular ni malaltia renal crònica."
+        }
       ]
     }
   },
@@ -1711,6 +2528,25 @@
         "Quins canvis d'estil de vida són més eficaços?",
         "Cada quant revisar el risc?"
       ]
+    },
+    "content": {
+      "overview": "L'ASCVD 10-year Risk (Pooled Cohort Equations) estima la probabilitat a 10 anys d'un primer episodi de malaltia cardiovascular ateroscleròtica (infart de miocardi no fatal, mort coronària o ictus, fatal o no) en adults sense malaltia cardiovascular establerta. Combina edat, sexe, raça, colesterol total i HDL, pressió arterial sistòlica (tractada o no), tabaquisme, diabetis i tractament antihipertensiu. Les equacions van ser derivades per l'ACC/AHA a la guia de 2013 i els seus llindars de decisió es van reafirmar a les guies ACC/AHA de colesterol de 2018 i de prevenció primària de 2019 per orientar l'inici del tractament amb estatines.",
+      "interpretation": "El resultat es classifica en quatre bandes de risc a 10 anys: baix (<5%), limítrof (5% a <7,5%), intermedi (7,5% a <20%) i alt (>=20%). En risc intermedi (7,5% a <20%) es recomana, després de la conversa risc-benefici, una estatina d'intensitat moderada; en risc alt (>=20%) es recomana estatina d'alta intensitat. En la franja limítrof (5% a <7,5%) es valora una estatina de intensitat moderada quan hi ha factors potenciadors de risc. Aquests factors (història familiar prematura, lipoproteïna(a), proteïna C reactiva, índex turmell-braç) i el calci coronari (CAC) ajuden a refinar la decisió i a personalitzar la conversa risc-benefici amb el pacient.",
+      "cautions": "Les equacions estan validades en adults de 40 a 79 anys sense malaltia cardiovascular prèvia, derivades en poblacions blanques i afroamericanes dels EUA; tendeixen a sobreestimar el risc en poblacions contemporànies, europees i d'altres ètnies (asiàtics, hispans). No s'apliquen en prevenció secundària, en LDL >=190 mg/dL, ni substitueixen el judici clínic. No avaluen el risc a curt termini ni el risc de per vida, i no estan validades fora del rang d'edat ni en pacients amb malaltia cardiovascular ja coneguda.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre l'ASCVD i l'SCORE2 europeu?",
+          "a": "Tots dos estimen el risc cardiovascular a 10 anys en prevenció primària, però l'ASCVD és l'eina de l'ACC/AHA derivada en població nord-americana, mentre que l'SCORE2 és l'eina recomanada per la guia ESC i està calibrat per regions de risc europees."
+        },
+        {
+          "q": "A partir de quin percentatge s'ha de començar una estatina?",
+          "a": "La guia ACC/AHA recomana una estatina d'intensitat moderada en risc intermedi (7,5% a <20%) i d'alta intensitat quan el risc és >=20%; entre 5 i <7,5% (risc limítrof) es valora individualment segons els factors potenciadors de risc, sempre dins d'una decisió compartida amb el pacient."
+        },
+        {
+          "q": "Es pot fer servir l'ASCVD si el pacient ja ha tingut un infart?",
+          "a": "No; les Pooled Cohort Equations són només per a prevenció primària. Un pacient amb malaltia cardiovascular establerta ja és d'alt risc i requereix tractament intensiu independentment del càlcul."
+        }
+      ]
     }
   },
   "sofa": {
@@ -1736,6 +2572,25 @@
         "Està millorant o empitjorant respecte a ahir?",
         "Canviarem el tractament segons la tendència?",
         "Quan hauríem de parlar d'objectius de cures?"
+      ]
+    },
+    "content": {
+      "overview": "L'escala SOFA (Sequential Organ Failure Assessment) quantifica la gravetat de la disfunció orgànica en pacients crítics avaluant sis sistemes: respiratori (PaO₂/FiO₂), coagulació (plaquetes), hepàtic (bilirubina), cardiovascular (pressió arterial mitjana o necessitat de vasopressors), neurològic (escala de coma de Glasgow) i renal (creatinina o diüresi). Cada sistema puntua de 0 a 4, amb un total de 0 a 24. S'utilitza per monitoritzar l'evolució de la disfunció orgànica a la UCI i és l'eina central de la definició Sepsis-3 (2016) avalada per SCCM/ESICM per identificar la sèpsis com a disfunció orgànica amenaçant per la vida secundària a infecció.",
+      "interpretation": "La puntuació es calcula sumant els punts de cada òrgan (0-4 per sistema, total 0-24); com més alta, més greu la disfunció i més alta la mortalitat. En el context de Sepsis-3, un increment agut de ≥2 punts respecte al SOFA basal en un pacient amb infecció defineix sèpsis i s'associa a una mortalitat intrahospitalària aproximada del 10% o superior. Puntuacions inicials i màximes més elevades, i sobretot un SOFA que augmenta durant els primers dies d'ingrés, prediuen pitjor pronòstic; un SOFA que disminueix suggereix resposta al tractament. No hi ha un únic llindar dicotòmic universal de supervivència: el valor és sobretot evolutiu i comparatiu.",
+      "cautions": "Validat en pacients adults críticament malalts, principalment en entorns de UCI; existeixen versions pediàtriques i neonatals adaptades (pSOFA, nSOFA) que no s'han d'intercanviar amb la versió adulta. Requereix dades de laboratori i gasometria, de manera que no és adequat per a un cribratge ràpid a peu de llit (per a això s'utilitzava el qSOFA, ara desaconsellat com a eina de cribratge aïllada). El SOFA mesura disfunció orgànica i gravetat, no diagnostica infecció ni sèpsis per si sol ni substitueix el judici clínic; components com el Glasgow poden estar esbiaixats per sedació i la creatinina per malaltia renal crònica prèvia.",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre SOFA i qSOFA?",
+          "a": "El SOFA és una puntuació completa de 0-24 que requereix dades de laboratori per quantificar la disfunció de sis òrgans, mentre que el qSOFA és una eina clínica ràpida de 3 ítems (freqüència respiratòria, alteració mental, tensió arterial sistòlica) pensada per a cribratge fora de la UCI, ara amb un paper més limitat."
+        },
+        {
+          "q": "Què significa un increment de 2 punts al SOFA?",
+          "a": "En un pacient amb sospita o confirmació d'infecció, un augment agut de ≥2 punts sobre el SOFA basal defineix sèpsis segons els criteris Sepsis-3 i identifica un risc de mortalitat clínicament significatiu."
+        },
+        {
+          "q": "Es pot fer servir el SOFA en nens?",
+          "a": "No directament; la versió adulta s'ha validat en adults crítics. Per a població pediàtrica i neonatal existeixen adaptacions específiques (pSOFA i nSOFA) amb llindars propis per edat."
+        }
       ]
     }
   },
@@ -1773,6 +2628,25 @@
         "Quins són els objectius realistes d'aquest ingrés?",
         "Quan hauríem de reavaluar?"
       ]
+    },
+    "content": {
+      "overview": "APACHE II (Acute Physiology and Chronic Health Evaluation II) és un sistema de gradació de gravetat que estima el risc de mortalitat hospitalària en pacients adults ingressats a unitats de cures intensives. Es calcula a partir de 12 variables fisiològiques agudes recollides durant les primeres 24 hores d'ingrés a l'UCI (entre d'altres temperatura, pressió arterial mitjana, freqüència cardíaca i respiratòria, oxigenació, pH arterial, sodi, potassi, creatinina, hematòcrit, leucòcits i escala de coma de Glasgow), juntament amb l'edat i l'estat de salut crònic. La puntuació total va de 0 a 71 punts. És una de les eines de referència descrites a la literatura de medicina intensiva i emprada habitualment per a l'estratificació de gravetat i la comparació de casuística entre UCIs.",
+      "interpretation": "La puntuació total combina el subtotal de fisiologia aguda, els punts per edat (de 0 a 6 segons les franges) i els punts per malaltia crònica greu o immunodepressió (2 punts si l'ingrés és postoperatori electiu, 5 punts si és no quirúrgic o postoperatori d'urgència). A major puntuació, major risc de mort hospitalària: de manera orientativa, puntuacions baixes (aproximadament 0-9) s'associen a una mortalitat estimada per sota del 10%, mentre que puntuacions elevades (per damunt de 25-30) s'associen a mortalitats superiors al 50-75%. La mortalitat predita es deriva d'una equació logística que incorpora la puntuació APACHE II i un coeficient específic del diagnòstic d'ingrés; per tant, el percentatge de mortalitat depèn tant del nombre de punts com de la categoria diagnòstica.",
+      "cautions": "APACHE II es va validar en pacients adults d'UCI i no s'aplica a població pediàtrica, gestants ni a pacients de cremats o postoperatoris cardíacs, on s'utilitzen models específics. La puntuació s'ha de calcular amb els pitjors valors de les primeres 24 hores d'ingrés a l'UCI i no està dissenyada per a càlculs repetits ni per a la monitorització diària de l'evolució. És una eina de predicció poblacional per a estratificació de gravetat i comparació de cohorts, no un instrument per decidir el pronòstic o limitar el tractament d'un pacient individual. No avalua la resposta al tractament al llarg de l'ingrés ni la disfunció orgànica de manera dinàmica com fan altres escales (p. ex., SOFA).",
+      "faq": [
+        {
+          "q": "Quina diferència hi ha entre APACHE II i SOFA?",
+          "a": "APACHE II és un model de predicció de mortalitat calculat un sol cop amb les dades de les primeres 24 hores, mentre que SOFA quantifica i fa el seguiment diari de la disfunció de sis sistemes orgànics al llarg de l'ingrés. Es complementen: APACHE II per a estratificació inicial i SOFA per a l'evolució."
+        },
+        {
+          "q": "Quan s'ha de calcular l'APACHE II?",
+          "a": "S'ha de calcular utilitzant els valors fisiològics més alterats registrats durant les primeres 24 hores de l'ingrés a l'UCI; no es recalcula diàriament."
+        },
+        {
+          "q": "Una puntuació APACHE II alta vol dir que el pacient morirà?",
+          "a": "No. APACHE II estima una probabilitat de mortalitat a escala de població, no un desenllaç individual; pacients amb puntuacions altes poden sobreviure i no s'ha d'usar de manera aïllada per limitar el tractament."
+        }
+      ]
     }
   },
   "nihss": {
@@ -1807,6 +2681,25 @@
         "Una trombectomia mecànica em podria ajudar?",
         "Quina recuperació s'espera amb aquesta gravetat?",
         "Quant de temps s'espera que estigui a la unitat d'ictus?"
+      ]
+    },
+    "content": {
+      "overview": "L'escala NIHSS (National Institutes of Health Stroke Scale) quantifica la gravetat del dèficit neurològic en pacients amb ictus isquèmic agut mitjançant 11 ítems que avaluen nivell de consciència, mirada, camps visuals, paràlisi facial, força dels membres, atàxia, sensibilitat, llenguatge, disàrtria i extinció/inatenció. S'utilitza en l'avaluació inicial, per orientar decisions de trombòlisi i trombectomia, i per monitoritzar l'evolució. És l'escala recomanada per les guies AHA/ASA per al maneig de l'ictus isquèmic agut.",
+      "interpretation": "La puntuació total va de 0 a 42; com més alta, més greu és el dèficit. Una estratificació habitual és: 0 sense símptomes; 1-4 ictus lleu (minor); 5-15 moderat; 16-20 moderat-greu; 21-42 greu. Puntuacions altes s'associen a pitjor pronòstic i a major volum d'infart. Una puntuació elevada (sovint orientativament al voltant de 6 o més) i la presència d'oclusió de gran vas donen suport a la consideració de trombectomia mecànica, sempre integrada amb la neuroimatge i la finestra temporal.",
+      "cautions": "Validada en ictus isquèmic agut en adults; ha de ser administrada per personal entrenat i certificat per garantir la fiabilitat interobservador. Infravalora els ictus de circulació posterior i els hemisferis no dominants, on dèficits clínicament rellevants poden donar puntuacions baixes. No és una eina diagnòstica: no distingeix isquèmia d'hemorràgia (cal neuroimatge) ni avalua causa, ni substitueix l'escala de discapacitat funcional (com el Rankin modificat). La sedació, l'afàsia prèvia, la intubació o el coma poden confondre la puntuació.",
+      "faq": [
+        {
+          "q": "Què es considera un ictus greu segons l'NIHSS?",
+          "a": "En general, puntuacions de 16 o més indiquen un ictus de gravetat alta, i 21-42 es consideren greus, amb pitjor pronòstic funcional."
+        },
+        {
+          "q": "Quina puntuació NIHSS es necessita per a trombectomia?",
+          "a": "No hi ha un llindar absolut, però una NIHSS aproximadament de 6 o més amb oclusió de gran vas demostrada en neuroimatge sol donar suport a la trombectomia, sempre dins de la finestra terapèutica."
+        },
+        {
+          "q": "L'NIHSS detecta tots els ictus?",
+          "a": "No; infravalora especialment els ictus de circulació posterior i de l'hemisferi no dominant, per la qual cosa una puntuació baixa no exclou un ictus rellevant."
+        }
       ]
     }
   }

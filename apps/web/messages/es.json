@@ -228,6 +228,25 @@
         "¿Qué fármacos debería evitar o ajustar?",
         "¿Cada cuánto tendremos que revisar la función renal?"
       ]
+    },
+    "content": {
+      "overview": "La ecuación CKD-EPI 2021 (creatinina) estima el filtrado glomerular (eGFR) en mL/min/1,73 m² a partir de la creatinina sérica, la edad y el sexo, sin incluir la raza como variable. Es la herramienta recomendada para estimar la función renal y clasificar la enfermedad renal crónica (ERC). La guía KDIGO 2024 de ERC y las sociedades americanas de nefrología (grupo de trabajo NKF-ASN) avalan esta ecuación libre de raza como estándar de cálculo del eGFR en la práctica clínica.",
+      "interpretation": "El eGFR se clasifica en categorías G de KDIGO: G1 ≥90 (normal o alto), G2 60-89 (levemente disminuido), G3a 45-59 (leve-moderado), G3b 30-44 (moderado-grave), G4 15-29 (grave) y G5 <15 (fallo renal). Un eGFR <60 mantenido ≥3 meses define ERC, al igual que la presencia de marcadores de daño renal (como albuminuria) con eGFR ≥60. Debe estadificarse junto con la albuminuria (categorías A1-A3) para estimar el riesgo completo de progresión y de eventos cardiovasculares.",
+      "cautions": "Validada en adultos; no debe aplicarse a menores de 18 años (se usa la ecuación CKiD/Schwartz). La estimación pierde fiabilidad en situaciones de función renal no estable (lesión renal aguda), masas musculares extremas (amputación, paraplejia, fisicoculturismo, caquexia, sarcopenia), embarazo, dietas muy ricas o pobres en proteínas e ingesta de creatina. No evalúa la albuminuria ni el daño tubular, por lo que un eGFR normal aislado no excluye ERC; siempre debe combinarse con el cociente albúmina/creatinina en orina.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre CKD-EPI 2021 y la versión de 2009?",
+          "a": "La versión de 2021 elimina el coeficiente de raza (negra) que tenía la de 2009, de modo que da el mismo resultado independientemente del origen étnico; puede reducir ligeramente el eGFR estimado en personas previamente clasificadas como negras."
+        },
+        {
+          "q": "¿Necesito recoger orina de 24 horas para este cálculo?",
+          "a": "No. La ecuación solo requiere la creatinina sérica, la edad y el sexo; no precisa recogida de orina ni peso corporal."
+        },
+        {
+          "q": "¿Cuándo debe usarse la variante con cistatina C en lugar de solo creatinina?",
+          "a": "KDIGO recomienda confirmar con la ecuación CKD-EPI 2021 creatinina-cistatina C cuando el eGFR por creatinina es incierto o cuando se necesita una estimación más precisa para decisiones clínicas importantes, como la dosificación de fármacos o la evaluación de donantes."
+        }
+      ]
     }
   },
   "wellsPe": {
@@ -252,6 +271,25 @@
         "¿Qué prueba me harán a continuación?",
         "Si se confirma la EP, ¿qué tratamiento tomaré y durante cuánto?",
         "¿Qué signos de alarma debo vigilar?"
+      ]
+    },
+    "content": {
+      "overview": "La escala de Wells para embolia pulmonar estima la probabilidad clínica pretest de tromboembolismo pulmonar en pacientes con sospecha de TEP, para orientar el uso de la determinación de dímero-D y de la prueba de imagen (angio-TC pulmonar). Suma puntos por signos clínicos de trombosis venosa profunda, diagnóstico alternativo menos probable que el TEP, frecuencia cardíaca superior a 100, inmovilización o cirugía recientes, antecedente de TEP o TVP, hemoptisis y cáncer activo. La guía ESC 2019 sobre embolia pulmonar la reconoce como una de las reglas de predicción clínica validadas para estratificar la probabilidad pretest.",
+      "interpretation": "Hay dos formas de aplicarla. En el esquema de tres niveles: 0-1 puntos indica probabilidad baja, 2-6 puntos probabilidad intermedia y 7 o más puntos probabilidad alta. En el esquema dicotómico, hoy el más utilizado: una puntuación de 4 o menos (TEP improbable) permite descartar el TEP con un dímero-D negativo, evitando la imagen; una puntuación superior a 4 (TEP probable) requiere angio-TC pulmonar. En el modelo simplificado cada ítem vale 1 punto y el umbral dicotómico es 0-1 (improbable) frente a 2 o más (probable).",
+      "cautions": "Se validó en pacientes ambulatorios y de urgencias con sospecha de TEP, no en pacientes ya hospitalizados por otras causas ni como cribado en asintomáticos. El ítem \"diagnóstico alternativo menos probable que el TEP\" es subjetivo e introduce variabilidad entre observadores. La escala estima la probabilidad pero no confirma ni descarta el diagnóstico por sí sola, ni evalúa la gravedad ni el riesgo de mortalidad del TEP confirmado: para ello hay que recurrir a índices como el PESI y a marcadores de disfunción del ventrículo derecho. No debe usarse de forma aislada sin integrar dímero-D e imagen según el algoritmo.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre la escala de Wells y los criterios PERC?",
+          "a": "Los criterios PERC se aplican solo cuando la probabilidad clínica ya es baja para descartar el TEP sin siquiera pedir dímero-D; la escala de Wells, en cambio, sirve para establecer esa probabilidad pretest y decidir el siguiente paso diagnóstico."
+        },
+        {
+          "q": "¿Qué punto de corte de Wells permite descartar embolia pulmonar con el dímero-D?",
+          "a": "Con el esquema dicotómico, una puntuación de 4 o menos (TEP improbable) combinada con un dímero-D negativo permite excluir el TEP con seguridad sin necesidad de angio-TC."
+        },
+        {
+          "q": "¿Se puede usar la escala de Wells durante el embarazo?",
+          "a": "No está bien validada en gestantes y los algoritmos basados en dímero-D rinden menos durante el embarazo; en este contexto se utilizan algoritmos específicos adaptados como el criterio YEARS adaptado al embarazo."
+        }
       ]
     }
   },
@@ -278,6 +316,25 @@
         "¿Qué complicaciones tenemos que vigilar?",
         "¿Hay algún fármaco que pueda mejorar mi MELD?"
       ]
+    },
+    "content": {
+      "overview": "El MELD 3.0 es una actualización del índice MELD que estima la mortalidad a 90 días en pacientes con enfermedad hepática crónica avanzada y establece la prioridad para el trasplante hepático. Integra bilirrubina, INR, creatinina, sodio y albúmina, e incorpora el sexo e interacciones entre variables para corregir la infravaloración de la gravedad en mujeres. En Estados Unidos, la OPTN (gestionada por la UNOS) lo implementó en 2023 como criterio oficial de asignación de órganos en candidatos de 12 años o más.",
+      "interpretation": "La puntuación oscila entre 6 y 40; cuanto más alta, mayor es la mortalidad estimada a 90 días y mayor prioridad para el trasplante. Valores cercanos a 6 indican enfermedad compensada con riesgo bajo, mientras que puntuaciones ≥30 reflejan mortalidad elevada y necesidad urgente de trasplante. En las listas de asignación, una puntuación más alta otorga prioridad sobre candidatos con puntuación inferior. El valor se redondea al entero más próximo y se limita a un máximo de 40.",
+      "cautions": "Validado en candidatos de 12 años o más con enfermedad hepática crónica; en menores de 12 años se usa el PELD. No predice la mortalidad en hepatitis aguda fulminante ni en escenarios específicos que requieren excepciones de MELD (por ejemplo carcinoma hepatocelular, síndrome hepatopulmonar). El cálculo pierde fiabilidad con anticoagulación que altera el INR o con déficits nutricionales extremos; en caso de diálisis (≥2 sesiones o 24 h de terapia continua en los 7 días previos) la creatinina se establece automáticamente en 3,0 mg/dL, y la creatinina se limita a un máximo de 3,0 mg/dL en todos los casos. No evalúa complicaciones como ascitis refractaria, encefalopatía ni calidad de vida, motivo frecuente de infravaloración clínica.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre MELD-Na y MELD 3.0?",
+          "a": "El MELD 3.0 añade la albúmina y el sexo e incorpora interacciones entre variables, lo que mejora la predicción de mortalidad y corrige la desventaja histórica de las mujeres frente al MELD-Na."
+        },
+        {
+          "q": "¿Cuál es el MELD 3.0 mínimo para entrar en lista de trasplante?",
+          "a": "No existe un umbral único universal, pero suele considerarse la derivación a evaluación a partir de una puntuación de aproximadamente 15, donde el beneficio del trasplante supera el riesgo de la cirugía; datos recientes con MELD 3.0 sitúan ese beneficio incluso a partir de aproximadamente 12."
+        },
+        {
+          "q": "¿El sexo influye en la puntuación MELD 3.0?",
+          "a": "Sí; el modelo añade puntos al sexo femenino (aproximadamente 1,33) para compensar que la creatinina tiende a infraestimar la disfunción renal en mujeres, reduciendo la inequidad en el acceso al trasplante."
+        }
+      ]
     }
   },
   "perc": {
@@ -303,6 +360,25 @@
         "¿Qué signos de alarma debo tener presentes si me voy a casa?",
         "¿Cuándo debo volver si tengo de nuevo síntomas?"
       ]
+    },
+    "content": {
+      "overview": "La regla PERC (Pulmonary Embolism Rule-out Criteria) es un conjunto de 8 criterios clínicos que, en pacientes con una probabilidad pre-test baja de tromboembolismo pulmonar (TEP), permite descartarlo sin necesidad de dímero-D ni pruebas de imagen. Los 8 criterios son: edad <50 años, frecuencia cardíaca <100/min, SatO₂ ≥95% en aire ambiente, ausencia de hemoptisis, ausencia de uso de estrógenos, ausencia de cirugía o traumatismo con hospitalización en las 4 semanas previas, ausencia de antecedente de TVP o TEP, y ausencia de edema unilateral de pierna. Fue derivada por Kline et al. (2004) y está respaldada por el American College of Physicians (ACP) e incorporada por la European Society of Cardiology (ESC) como opción en pacientes con sospecha baja.",
+      "interpretation": "La regla solo se aplica si el juicio clínico ya ha establecido una probabilidad pre-test BAJA de TEP (por ejemplo, gestalt clínica de bajo riesgo o escala de Wells ≤4, es decir, «TEP improbable»). Si se cumplen los 8 criterios (PERC negativa), la probabilidad de TEP es lo bastante baja (<2%) como para descartarlo sin más pruebas. Si falta cualquiera de los 8 criterios (PERC positiva), no se puede descartar el TEP y hay que continuar con el dímero-D y, según el resultado, con imagen (angio-TC o gammagrafía V/Q). La PERC no se puntúa de forma aditiva: basta con un solo criterio presente para que sea positiva.",
+      "cautions": "La PERC está validada únicamente en pacientes ambulatorios de urgencias con probabilidad clínica baja; no debe aplicarse en poblaciones con prevalencia alta de TEP ni en pacientes hospitalizados. No es válida como herramienta de cribado universal: aplicarla a pacientes con probabilidad pre-test intermedia o alta puede dejar escapar TEP. Precaución en poblaciones con taquicardia basal, embarazadas (criterio de estrógenos y fisiología alterada) o pacientes con factores de riesgo no capturados. La PERC no diagnostica TEP ni mide su gravedad; es exclusivamente una herramienta de descarte en pacientes de bajo riesgo.",
+      "faq": [
+        {
+          "q": "¿Cuándo puedo usar la regla PERC?",
+          "a": "Solo cuando ya ha valorado que el paciente tiene una probabilidad clínica baja de TEP (gestalt de bajo riesgo o escala de Wells ≤4, es decir «TEP improbable») en un contexto de urgencias. Si la probabilidad es alta, la PERC no es aplicable."
+        },
+        {
+          "q": "Si la PERC es negativa, ¿necesito pedir el dímero-D?",
+          "a": "No. Si se cumplen los 8 criterios en un paciente de bajo riesgo, la probabilidad de TEP es lo bastante baja para descartarlo sin dímero-D ni imagen, evitando pruebas innecesarias."
+        },
+        {
+          "q": "¿Cuántos criterios pueden fallar para considerar la PERC positiva?",
+          "a": "Ninguno. La regla solo es negativa si se cumplen los 8 criterios a la vez; la presencia de un solo criterio la hace positiva y obliga a continuar el estudio."
+        }
+      ]
     }
   },
   "qsofa": {
@@ -323,6 +399,25 @@
         "¿Tengo una infección? ¿Dónde podría estar?",
         "¿Hace falta una analítica completa o cultivos?",
         "¿Qué signos de empeoramiento debería vigilar?"
+      ]
+    },
+    "content": {
+      "overview": "La qSOFA (quick Sepsis-related Organ Failure Assessment) es una herramienta rápida de evaluación a pie de cama para identificar a pacientes con sospecha de infección que presentan un riesgo elevado de mala evolución (mortalidad hospitalaria o estancia prolongada en UCI). Valora tres criterios clínicos sencillos sin necesidad de analítica: frecuencia respiratoria, estado mental y presión arterial sistólica. Fue introducida por la Tercera Definición Internacional de Consenso de Sepsis y Shock Séptico (Sepsis-3, 2016, JAMA), promovida por la SCCM y la ESICM, como herramienta de alerta fuera de la UCI.",
+      "interpretation": "Se concede 1 punto por cada uno de los tres criterios: frecuencia respiratoria ≥ 22 respiraciones/min, alteración del estado mental (Glasgow < 15) y presión arterial sistólica ≤ 100 mmHg. La puntuación va de 0 a 3. Una qSOFA ≥ 2 identifica a pacientes con sospecha de infección con mayor riesgo de mortalidad y evolución desfavorable, y debe motivar la escalada de la monitorización, la valoración de disfunción orgánica con el SOFA completo y el inicio precoz del tratamiento. Una puntuación de 0 o 1 no excluye la sepsis ni la infección grave.",
+      "cautions": "Validada en pacientes adultos con sospecha de infección, sobre todo fuera de la UCI (urgencias y planta). Es una herramienta de cribado pronóstica, no diagnóstica: no define por sí sola la sepsis ni sustituye el juicio clínico ni el SOFA completo. Tiene sensibilidad limitada, por lo que una qSOFA baja no descarta una infección grave y no debe usarse para excluir sepsis ni para retrasar el tratamiento. Las guías Surviving Sepsis Campaign 2021 recomiendan no usar la qSOFA como única herramienta de cribado frente a otros sistemas como el SIRS, el NEWS o el MEWS.",
+      "faq": [
+        {
+          "q": "¿Qué significa una puntuación qSOFA de 2 o más?",
+          "a": "Indica que un paciente con sospecha de infección tiene un riesgo aumentado de mortalidad hospitalaria y evolución desfavorable. Conviene escalar la monitorización, valorar disfunción orgánica con el SOFA completo e iniciar tratamiento precoz."
+        },
+        {
+          "q": "¿Qué diferencia hay entre qSOFA y SOFA?",
+          "a": "El SOFA es una puntuación completa de disfunción orgánica de seis sistemas que requiere datos de laboratorio, usada sobre todo en UCI. La qSOFA es una versión rápida de tres criterios clínicos, sin analítica, pensada para la alerta a pie de cama fuera de la UCI."
+        },
+        {
+          "q": "¿Una qSOFA negativa descarta la sepsis?",
+          "a": "No. La qSOFA tiene sensibilidad limitada; una puntuación de 0 o 1 no excluye infección grave ni sepsis y nunca debe usarse para retrasar la evaluación o el tratamiento si la sospecha clínica es alta."
+        }
       ]
     }
   },
@@ -347,6 +442,25 @@
         "¿Estoy tomando la combinación completa de fármacos (4 pilares)?",
         "¿Me beneficiaría un dispositivo como un TRC o un DAI?",
         "¿Deberíamos plantear una visita a una unidad de insuficiencia cardíaca?"
+      ]
+    },
+    "content": {
+      "overview": "La clasificación funcional de la NYHA (New York Heart Association) gradúa la severidad de los síntomas de la insuficiencia cardíaca según la limitación de la actividad física y la aparición de disnea, fatiga o palpitaciones. Se asigna de forma clínica, sin necesidad de pruebas complementarias, y se emplea para estratificar pacientes, guiar la intensidad del tratamiento y monitorizar la respuesta terapéutica a lo largo del tiempo. Es la clasificación de síntomas recomendada por la guía ESC 2021 de insuficiencia cardíaca aguda y crónica y por las guías AHA/ACC/HFSA 2022.",
+      "interpretation": "Clase I: sin limitación de la actividad física; la actividad ordinaria no provoca síntomas. Clase II: ligera limitación; el paciente está bien en reposo, pero la actividad física ordinaria provoca disnea, fatiga o palpitaciones. Clase III: limitación marcada; bien en reposo, pero actividades inferiores a las ordinarias ya provocan síntomas. Clase IV: incapacidad de realizar cualquier actividad física sin molestias; los síntomas aparecen en reposo o con mínima actividad. Una clase más alta se asocia con peor pronóstico y mayor mortalidad, y muchas indicaciones terapéuticas (por ejemplo, ciertos dispositivos o fármacos) se definen según la clase NYHA.",
+      "cautions": "La clasificación se desarrolló y validó en pacientes con insuficiencia cardíaca y no es aplicable como herramienta diagnóstica en población asintomática. Es una valoración subjetiva, con notable variabilidad interobservador y baja reproducibilidad, y puede fluctuar según el día o el momento de la evaluación. No mide la fracción de eyección, la función ventricular, los péptidos natriuréticos ni la causa subyacente de la insuficiencia cardíaca, y no debe confundirse con el estadiaje A-D de la AHA/ACC, que refleja la progresión estructural de la enfermedad y no es reversible.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre la clase NYHA y los estadios A-D de la AHA/ACC?",
+          "a": "La clase NYHA describe los síntomas actuales y puede mejorar o empeorar con el tratamiento, mientras que los estadios A-D de la AHA/ACC reflejan la progresión estructural de la enfermedad y solo avanzan, nunca retroceden."
+        },
+        {
+          "q": "¿Se puede revertir la clase NYHA con tratamiento?",
+          "a": "Sí; a diferencia del estadiaje estructural, la clase funcional puede mejorar con un tratamiento óptimo de la insuficiencia cardíaca y empeorar con la descompensación."
+        },
+        {
+          "q": "¿Se necesita alguna prueba para asignar la clase NYHA?",
+          "a": "No; se asigna exclusivamente a partir de la anamnesis y la evaluación clínica de la limitación funcional, sin necesidad de ecocardiograma ni analítica."
+        }
       ]
     }
   },
@@ -373,6 +487,25 @@
         "¿Qué momento se plantea para la coronariografía?",
         "¿Qué fármacos tomaré los próximos días y para qué?",
         "¿Cómo puedo reconocer si los síntomas empeoran?"
+      ]
+    },
+    "content": {
+      "overview": "La puntuación de riesgo TIMI para angina inestable / IAMSEST estima el riesgo de eventos adversos a 14 días en pacientes con síndrome coronario agudo sin elevación del segmento ST. Suma 1 punto por cada uno de 7 criterios: edad ≥65 años, ≥3 factores de riesgo de enfermedad coronaria, enfermedad coronaria conocida (estenosis ≥50%), uso de aspirina en los 7 días previos, ≥2 episodios de angina en 24 horas, desviación del segmento ST ≥0,5 mm y elevación de biomarcadores cardíacos. Fue derivada de los ensayos TIMI 11B y ESSENCE (Antman et al., 2000) y las guías ESC y ACC/AHA la reconocen como herramienta de estratificación de riesgo en SCASEST.",
+      "interpretation": "La puntuación oscila de 0 a 7. Estima el riesgo compuesto a 14 días de muerte por cualquier causa, infarto de miocardio nuevo o recurrente, e isquemia grave recurrente que requiere revascularización urgente. El riesgo aumenta de forma continua: 0–2 puntos corresponden a riesgo bajo (aproximadamente 5–8%), 3–4 puntos a riesgo intermedio (en torno al 13–20%) y 5–7 puntos a riesgo alto (hasta un 40% con puntuación 6–7). Una puntuación más alta respalda una estrategia invasiva precoz y una terapia antitrombótica más intensiva.",
+      "cautions": "Fue validada en pacientes con angina inestable o IAMSEST; no se aplica al IAMCEST ni al dolor torácico no diferenciado en urgencias, donde son preferibles herramientas como HEART. Es una herramienta de estratificación de riesgo poblacional, no una regla de descarte diagnóstico: una puntuación baja no excluye con seguridad el síndrome coronario agudo y no debe sustituir el juicio clínico, las troponinas seriadas ni el ECG. No evalúa el riesgo hemorrágico ni guía por sí sola la dosis de anticoagulación.",
+      "faq": [
+        {
+          "q": "¿Cuáles son las 7 variables de la puntuación de riesgo TIMI para UA/NSTEMI?",
+          "a": "Edad ≥65 años, ≥3 factores de riesgo coronario, enfermedad coronaria conocida (estenosis ≥50%), uso de aspirina en los 7 días previos, ≥2 episodios de angina en 24 h, desviación del segmento ST ≥0,5 mm y biomarcadores cardíacos positivos. Cada criterio vale 1 punto."
+        },
+        {
+          "q": "¿Qué puntuación TIMI se considera de alto riesgo?",
+          "a": "Una puntuación de 5 a 7 indica alto riesgo de eventos adversos a 14 días y respalda una estrategia invasiva precoz; 0–2 se considera riesgo bajo y 3–4 riesgo intermedio."
+        },
+        {
+          "q": "¿Qué diferencia hay entre la puntuación TIMI y la GRACE?",
+          "a": "Ambas estratifican el riesgo en SCASEST, pero la GRACE incorpora variables continuas (frecuencia cardíaca, presión arterial, creatinina, clase Killip) y ofrece una discriminación superior para la mortalidad; la TIMI es más sencilla y rápida de aplicar a la cabecera del paciente."
+        }
       ]
     }
   },
@@ -406,6 +539,25 @@
         "¿Cuándo se me hará la coronariografía y por qué en este momento?",
         "¿Qué tratamientos necesitaré después?",
         "¿Cuándo podré volver a casa y con qué precauciones?"
+      ]
+    },
+    "content": {
+      "overview": "El GRACE Score (Global Registry of Acute Coronary Events) estima el riesgo de mortalidad hospitalaria y a 6 meses en pacientes con síndrome coronario agudo (SCA), tanto con elevación como sin elevación del segmento ST. Combina ocho variables: edad, frecuencia cardiaca, presión arterial sistólica, creatinina sérica, clase de Killip, parada cardiaca al ingreso, desviación del segmento ST y elevación de biomarcadores de necrosis miocárdica. La guía ESC de SCA (2023) lo recomienda para la estratificación del riesgo y para orientar el momento de la estrategia invasiva en el SCA sin elevación del ST.",
+      "interpretation": "La puntuación se traduce en categorías de riesgo. Para la mortalidad hospitalaria, un GRACE ≤108 indica riesgo bajo (<1%), 109-140 riesgo intermedio (1-3%) y >140 riesgo alto (>3%). Para la mortalidad a 6 meses, ≤88 es riesgo bajo (<3%), 89-118 intermedio (3-8%) y >118 alto (>8%). En el SCA sin elevación del ST, un GRACE >140 identifica a pacientes de alto riesgo en quienes se recomienda una estrategia invasiva precoz (dentro de las 24 horas).",
+      "cautions": "Se derivó y validó en una amplia cohorte internacional de pacientes con SCA confirmado; no está validado para dolor torácico indiferenciado ni para descartar SCA en urgencias. Es una herramienta pronóstica de mortalidad, no diagnóstica: no confirma ni excluye infarto, no evalúa el riesgo hemorrágico (para ello se necesita una escala dedicada como CRUSADE) ni decide por sí sola la revascularización. La versión GRACE 2.0 amplía las estimaciones hasta 1-3 años y puede sustituir variables como la creatinina o Killip por equivalentes cuando no están disponibles.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre el GRACE Score y el TIMI Score?",
+          "a": "Ambos estratifican el riesgo en SCA, pero el GRACE tiene mejor capacidad discriminativa para la mortalidad y emplea variables continuas (edad, frecuencia, presión, creatinina), mientras que el TIMI es más simple y basado en puntos dicotómicos."
+        },
+        {
+          "q": "¿Un GRACE Score alto significa que se necesita cateterismo urgente?",
+          "a": "Un GRACE >140 en el SCA sin elevación del ST favorece una estrategia invasiva precoz dentro de las 24 horas, pero la decisión final se integra con la clínica, la estabilidad hemodinámica y otros factores de riesgo."
+        },
+        {
+          "q": "¿El GRACE Score sirve para pacientes con infarto con elevación del ST (STEMI)?",
+          "a": "Sí, el GRACE estima la mortalidad tanto en el SCA con elevación como sin elevación del ST; en el STEMI aporta información pronóstica aunque la reperfusión inmediata ya esté indicada por definición."
+        }
       ]
     }
   },
@@ -456,6 +608,25 @@
         "¿Debería volver si vuelvo a notar dolor?",
         "¿Cuándo tendré un control?"
       ]
+    },
+    "content": {
+      "overview": "La escala HEART estima el riesgo de eventos cardiacos adversos mayores (MACE: infarto, revascularización o muerte) a 6 semanas en pacientes adultos que consultan en urgencias por dolor torácico con sospecha de síndrome coronario agudo. Suma puntos (0, 1 o 2 cada uno) en cinco dominios: anamnesis (History), electrocardiograma (ECG), edad (Age), factores de riesgo (Risk factors) y troponina, con un rango total de 0 a 10. Fue desarrollada por Six y Backus y es una de las herramientas de estratificación de riesgo más validadas para el dolor torácico indiferenciado en urgencias.",
+      "interpretation": "La puntuación total estratifica al paciente en tres bandas. Riesgo bajo (0-3 puntos): riesgo de MACE a 6 semanas de aproximadamente 1-2%, compatible con alta precoz y manejo ambulatorio en muchos protocolos. Riesgo moderado (4-6 puntos): riesgo intermedio (en torno al 12-17%), que justifica observación, seriación de troponinas y pruebas adicionales. Riesgo alto (7-10 puntos): riesgo elevado (en torno al 50-65%), que orienta hacia manejo invasivo precoz e ingreso. Muchos protocolos modernos combinan el HEART con troponinas seriadas (HEART Pathway) para refinar el alta segura.",
+      "cautions": "Validada en adultos con dolor torácico agudo no traumático en urgencias con sospecha de SCA; no debe usarse en infarto con elevación del ST (STEMI), inestabilidad hemodinámica o una causa no cardiaca evidente, situaciones que requieren actuación inmediata independientemente de la puntuación. No es una herramienta diagnóstica: no confirma ni excluye por sí sola un SCA, no evalúa causas no coronarias de dolor torácico (embolia pulmonar, disección aórtica, neumotórax) y depende del juicio clínico y de una troponina fiable. Debe aplicarse con cautela en población joven con dolor atípico o cuando la troponina de alta sensibilidad se interpreta con umbrales específicos.",
+      "faq": [
+        {
+          "q": "¿Qué significa una puntuación HEART baja de 0 a 3?",
+          "a": "Indica un riesgo de MACE a 6 semanas bajo, aproximadamente del 1-2%, y en muchos protocolos permite considerar el alta precoz con seguimiento ambulatorio, idealmente tras troponinas seriadas negativas."
+        },
+        {
+          "q": "¿Qué diferencia hay entre la escala HEART y el HEART Pathway?",
+          "a": "La escala HEART es la puntuación de 0 a 10; el HEART Pathway le añade una segunda troponina seriada (p. ej. a las 0 y 3 horas) para identificar con mayor seguridad a los pacientes de bajo riesgo candidatos al alta."
+        },
+        {
+          "q": "¿Sirve el HEART Score para descartar un infarto?",
+          "a": "No por sí solo. Es una herramienta de estratificación de riesgo, no diagnóstica; una puntuación baja reduce la probabilidad de MACE pero no excluye un SCA, y siempre debe combinarse con troponinas y juicio clínico."
+        }
+      ]
     }
   },
   "ehra": {
@@ -481,6 +652,25 @@
         "¿Me beneficiaría una cardioversión o una ablación?",
         "¿Cómo puedo reconocer si los síntomas empeoran?"
       ]
+    },
+    "content": {
+      "overview": "La escala de síntomas EHRA (European Heart Rhythm Association), en su versión modificada (mEHRA), clasifica la intensidad de los síntomas relacionados con la fibrilación auricular y su impacto sobre la actividad diaria del paciente. No estima el riesgo tromboembólico ni hemorrágico, sino que estandariza la carga sintomática para guiar las decisiones de control del ritmo y monitorizar la respuesta al tratamiento. Es la herramienta de cuantificación sintomática recomendada por la guía ESC de fibrilación auricular y se integra en el abordaje estructurado del manejo de la FA.",
+      "interpretation": "La puntuación asigna una de cuatro clases. EHRA 1: sin síntomas. EHRA 2a: síntomas leves, la actividad diaria normal no se ve afectada. EHRA 2b: síntomas moderados, la actividad diaria normal no se ve afectada pero el paciente se siente molesto por los síntomas. EHRA 3: síntomas graves, la actividad diaria normal se ve afectada. EHRA 4: síntomas incapacitantes, se interrumpe la actividad diaria normal. La distinción clave entre 2a y 2b es si los síntomas molestan al paciente; entre 2b y 3, si afectan objetivamente la actividad. Por lo general, una clase 2b o superior respalda una estrategia de control del ritmo.",
+      "cautions": "La escala se ha validado en pacientes adultos con fibrilación auricular y mide exclusivamente síntomas atribuibles a la FA (palpitaciones, disnea, fatiga, mareo, dolor torácico). Es una valoración subjetiva y dependiente de la entrevista clínica, no un instrumento objetivo. Un error frecuente es atribuir a la FA síntomas causados por comorbilidades (insuficiencia cardíaca, enfermedad pulmonar, anemia). No evalúa el riesgo de ictus ni de sangrado ni sustituye a CHA₂DS₂-VASc ni HAS-BLED, y no orienta por sí sola la decisión de anticoagular.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre EHRA 2a y 2b?",
+          "a": "En ambas se mantiene la actividad diaria normal, pero en la 2a los síntomas son leves y no molestan, mientras que en la 2b son moderados y el paciente se queja de ellos."
+        },
+        {
+          "q": "¿La escala EHRA sirve para decidir la anticoagulación?",
+          "a": "No. La escala EHRA solo cuantifica síntomas; la decisión de anticoagular se basa en el riesgo de ictus medido con CHA₂DS₂-VASc."
+        },
+        {
+          "q": "¿Qué es la versión modificada mEHRA?",
+          "a": "Es la versión actual que desglosa la clase 2 en 2a y 2b según si los síntomas molestan al paciente, y es la recomendada por la guía ESC."
+        }
+      ]
     }
   },
   "orbit": {
@@ -503,6 +693,25 @@
         "¿Puedo dejar el antiagregante o es imprescindible?",
         "¿Tengo anemia? ¿Debería tratarse antes de empezar el anticoagulante?",
         "¿Cuándo deberíamos recalcular el riesgo?"
+      ]
+    },
+    "content": {
+      "overview": "La escala ORBIT estima el riesgo de hemorragia mayor en pacientes con fibrilación auricular tratados con anticoagulación oral (antagonistas de la vitamina K o anticoagulantes orales de acción directa). Puntúa cinco variables: edad avanzada (>74 años), hemoglobina baja o anemia, antecedente de hemorragia, insuficiencia renal (filtrado glomerular <60 ml/min) y tratamiento antiagregante concomitante. Se derivó y validó en la cohorte ORBIT-AF y ofrece una mejor calibración que otras escalas clásicas. La guía ESC 2024 de fibrilación auricular la menciona entre las herramientas de cuantificación del riesgo hemorrágico, con el énfasis puesto en identificar y corregir factores de riesgo modificables más que en desestimar la anticoagulación.",
+      "interpretation": "La puntuación va de 0 a 7 puntos. Se asignan 1 punto a la edad >74 años, 2 puntos a hemoglobina baja/anemia, 2 puntos a antecedente hemorrágico, 1 punto a insuficiencia renal (FG <60) y 1 punto a antiagregante concomitante. Se clasifica en tres categorías: riesgo bajo (0-2 puntos), riesgo intermedio (3 puntos) y riesgo alto (4-7 puntos), con tasas de hemorragia mayor crecientes por 100 pacientes-año en cada banda. Una puntuación elevada no contraindica anticoagular: debe motivar la corrección de factores modificables (anemia, antiagregante innecesario, control de la función renal) y un seguimiento más estrecho.",
+      "cautions": "Se validó en pacientes con fibrilación auricular candidatos o ya en tratamiento anticoagulante; no debe aplicarse a poblaciones sin FA ni como regla absoluta para negar la anticoagulación. No estima el riesgo de ictus ni el beneficio neto de la anticoagulación, que deben valorarse de forma independiente (por ejemplo con CHA₂DS₂-VASc). El error de uso más frecuente es emplear un riesgo hemorrágico alto para evitar anticoagular a un paciente con indicación clara, cuando la conducta correcta es corregir los factores modificables y reevaluar periódicamente.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre ORBIT y HAS-BLED?",
+          "a": "Ambas estiman el riesgo hemorrágico en FA anticoagulada, pero ORBIT incorpora parámetros analíticos objetivos (hemoglobina/anemia y función renal) y muestra una buena calibración; HAS-BLED incluye variables como la hipertensión no controlada y el INR lábil. Pueden usarse de forma complementaria."
+        },
+        {
+          "q": "¿Una puntuación ORBIT alta significa que hay que suspender el anticoagulante?",
+          "a": "No. Un riesgo alto no contraindica anticoagular; debe llevar a corregir factores modificables (anemia, antiagregante innecesario) y a un seguimiento más estrecho, manteniendo la anticoagulación si hay indicación por riesgo de ictus."
+        },
+        {
+          "q": "¿Qué valores de ORBIT definen riesgo alto?",
+          "a": "Una puntuación de 0-2 indica riesgo bajo, 3 riesgo intermedio y 4-7 riesgo alto de hemorragia mayor, con tasas crecientes en cada categoría."
+        }
       ]
     }
   },
@@ -530,6 +739,25 @@
         "¿Qué factores de mi riesgo puedo reducir (tensión, fármacos, alcohol)?",
         "¿Con qué frecuencia debemos revisar mi riesgo?",
         "¿Qué signos de sangrado debería vigilar?"
+      ]
+    },
+    "content": {
+      "overview": "La escala HAS-BLED estima el riesgo de hemorragia mayor en pacientes con fibrilación auricular candidatos a anticoagulación oral o que ya la reciben. Suma un punto por cada uno de los siguientes factores: hipertensión no controlada (HAS, presión sistólica superior a 160 mmHg), función renal o hepática alterada (Abnormal, un punto cada una), ictus previo (Stroke), antecedente o predisposición al sangrado (Bleeding), INR lábil (Labile, solo en pacientes con antagonistas de la vitamina K), edad avanzada mayor de 65 años (Elderly) y consumo de antiagregantes o AINE o alcohol (Drugs/alcohol, un punto cada uno). La guía ESC 2024 de fibrilación auricular recomienda evaluar y corregir los factores de riesgo hemorrágico modificables, pero no usar la puntuación de forma aislada para negar la anticoagulación.",
+      "interpretation": "La puntuación oscila entre 0 y 9 puntos. Un valor de 0 a 2 se considera riesgo hemorrágico bajo-moderado, mientras que una puntuación igual o superior a 3 indica riesgo elevado e identifica a pacientes que requieren precaución, un seguimiento clínico más estrecho y la corrección activa de los factores modificables. Un HAS-BLED alto no es por sí mismo una contraindicación para anticoagular: señala la necesidad de vigilancia, no la suspensión del tratamiento.",
+      "cautions": "La escala se validó en pacientes con fibrilación auricular y el componente de INR lábil solo se aplica a quienes reciben antagonistas de la vitamina K, no a los anticoagulantes orales de acción directa. Su objetivo es identificar y corregir factores de riesgo modificables, no excluir la anticoagulación en pacientes con indicación. El error más frecuente es usarla para denegar el tratamiento; siempre debe interpretarse junto al riesgo embólico (CHA₂DS₂-VASc), ya que no evalúa el riesgo de ictus ni el beneficio neto de la anticoagulación.",
+      "faq": [
+        {
+          "q": "¿Qué significa una puntuación HAS-BLED de 3 o más?",
+          "a": "Indica riesgo hemorrágico elevado. No contraindica la anticoagulación, pero obliga a corregir los factores modificables y a realizar un seguimiento clínico más estrecho."
+        },
+        {
+          "q": "¿Sirve el HAS-BLED para decidir no anticoagular?",
+          "a": "No. Una puntuación alta no es motivo para negar la anticoagulación; sirve para identificar y corregir factores de riesgo de sangrado e intensificar la vigilancia."
+        },
+        {
+          "q": "¿Qué diferencia hay entre HAS-BLED y CHA₂DS₂-VASc?",
+          "a": "CHA₂DS₂-VASc estima el riesgo de ictus e indica si hay que anticoagular; HAS-BLED estima el riesgo de sangrado. Se usan de forma complementaria, no excluyente."
+        }
       ]
     }
   },
@@ -562,6 +790,25 @@
         "¿Necesito ingresar en el hospital?",
         "¿Qué antibióticos debo tomar y durante cuánto tiempo?",
         "¿Qué signos de empeoramiento debo vigilar en casa?"
+      ]
+    },
+    "content": {
+      "overview": "La escala CURB-65 estima la gravedad de la neumonía adquirida en la comunidad (NAC) y orienta la decisión entre tratamiento ambulatorio, ingreso hospitalario o valoración de ingreso en cuidados intensivos. Asigna un punto a cada uno de cinco ítems: confusión de nueva aparición, urea >7 mmol/L (BUN >19 mg/dL), frecuencia respiratoria ≥30/min, presión arterial baja (sistólica <90 mmHg o diastólica ≤60 mmHg) y edad ≥65 años. Es una herramienta de estratificación recomendada por la British Thoracic Society (BTS); la guía ATS/IDSA de NAC, en cambio, prioriza el índice de gravedad de la neumonía (PSI) para la decisión de ingreso.",
+      "interpretation": "La puntuación va de 0 a 5 y se asocia de forma creciente a la mortalidad a 30 días. Una puntuación de 0-1 indica riesgo bajo y suele permitir tratamiento ambulatorio. Una puntuación de 2 indica riesgo intermedio y sugiere valorar ingreso hospitalario u observación estrecha. Una puntuación de 3-5 indica riesgo alto, generalmente requiere ingreso y con 4-5 puntos debe valorarse atención en unidad de cuidados intensivos. La variante CRB-65, sin urea, es útil en atención primaria cuando no se dispone de analítica.",
+      "cautions": "Se validó en adultos con neumonía adquirida en la comunidad y no es aplicable a neumonía nosocomial, asociada a ventilación ni a pacientes inmunodeprimidos. Es una ayuda a la decisión, no un sustituto del juicio clínico: puede infraestimar el riesgo en jóvenes sin comorbilidades que ya están graves y no tiene en cuenta la hipoxemia, la extensión radiológica, comorbilidades descompensadas ni el soporte social. No evalúa la oxigenación (SpO₂/PaO₂), por lo que suele complementarse con la saturación y criterios adicionales.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre CURB-65 y CRB-65?",
+          "a": "El CRB-65 omite la urea y puntúa de 0 a 4; está pensado para atención primaria o entornos sin analítica inmediata. El CURB-65 incluye la urea y es más habitual en urgencias hospitalarias."
+        },
+        {
+          "q": "¿Qué puntuación CURB-65 obliga a ingreso hospitalario?",
+          "a": "Una puntuación de 2 hace valorar el ingreso u observación, y de 3 o más generalmente indica ingreso; con 4-5 puntos debe considerarse la unidad de cuidados intensivos."
+        },
+        {
+          "q": "¿Sirve el CURB-65 para decidir el ingreso en la UCI?",
+          "a": "Ofrece una orientación (puntuaciones de 4-5 indican riesgo alto), pero no se diseñó específicamente para esa decisión; para la UCI se utilizan los criterios mayores y menores de ATS/IDSA."
+        }
       ]
     }
   },
@@ -606,6 +853,25 @@
         "¿Qué signos de empeoramiento se vigilarán?",
         "¿Cuándo podrá visitar la familia al paciente?"
       ]
+    },
+    "content": {
+      "overview": "La escala de coma de Glasgow (GCS) es el instrumento estándar para cuantificar el nivel de consciencia en pacientes con afectación neurológica aguda, sobre todo tras un traumatismo craneoencefálico. Evalúa tres componentes independientes —apertura ocular (1-4), respuesta verbal (1-5) y respuesta motora (1-6)— y suma su puntuación total, que va de 3 a 15. Se utiliza en la valoración inicial y el seguimiento seriado en urgencias, ámbito prehospitalario y unidades de críticos, y es un componente central de clasificaciones de gravedad como el Advanced Trauma Life Support (ATLS) y las guías de la Brain Trauma Foundation.",
+      "interpretation": "La puntuación total oscila entre 3 (coma profundo o ausencia de respuesta) y 15 (paciente plenamente despierto y orientado). Convencionalmente, 13-15 indica afectación leve, 9-12 moderada y ≤8 grave; una puntuación ≤8 suele identificar al paciente en coma y es el umbral clásico para considerar el control definitivo de la vía aérea (intubación). Siempre debe documentarse la puntuación desglosada por componentes (por ejemplo O3V4M5) y no solo el total, ya que un mismo total puede corresponder a cuadros clínicos distintos; los descensos seriados de ≥2 puntos indican deterioro neurológico y obligan a reevaluación urgente.",
+      "cautions": "La GCS se validó en adultos con traumatismo craneoencefálico; en lactantes y niños pequeños debe usarse la versión pediátrica adaptada. La fiabilidad disminuye con sedación, intoxicación, hipoglucemia, hipoxemia, parálisis farmacológica, intubación (que impide la respuesta verbal), afasia o lesiones perioculares que impiden la apertura ocular; estos factores deben registrarse como no evaluables. No es una herramienta diagnóstica ni localizadora de la lesión y no sustituye a la exploración neurológica completa (pupilas, focalidad, signos de tronco) ni a la neuroimagen; un error frecuente es tomar decisiones basándose solo en el total sin considerar el contexto ni los componentes.",
+      "faq": [
+        {
+          "q": "¿Qué puntuación de Glasgow indica que hay que intubar?",
+          "a": "Una puntuación total ≤8 es el umbral clásico para considerar la protección definitiva de la vía aérea, pero la decisión debe individualizarse según la tendencia, la capacidad de proteger la vía aérea y el contexto clínico global."
+        },
+        {
+          "q": "¿Cuál es el valor mínimo y máximo de la escala de Glasgow?",
+          "a": "El valor mínimo es 3 (ninguna respuesta en los tres componentes) y el máximo es 15 (paciente plenamente despierto y orientado). No existe una puntuación de 0."
+        },
+        {
+          "q": "¿Cómo se clasifica la gravedad del traumatismo craneoencefálico según la GCS?",
+          "a": "Convencionalmente, 13-15 se considera leve, 9-12 moderado y 3-8 grave, siempre interpretado junto con la clínica y la neuroimagen."
+        }
+      ]
     }
   },
   "centor": {
@@ -635,6 +901,25 @@
         "¿Cuándo dejaré de ser contagioso?",
         "¿Cuándo debo volver si los síntomas empeoran?"
       ]
+    },
+    "content": {
+      "overview": "La escala de Centor, en su versión modificada por McIsaac, estima la probabilidad de que una faringoamigdalitis aguda esté causada por estreptococo del grupo A (Streptococcus pyogenes) y orienta la decisión de realizar una prueba diagnóstica o iniciar antibiótico. Suma puntos por ausencia de tos, exudado o tumefacción amigdalar, adenopatías cervicales anteriores dolorosas, fiebre superior a 38 °C y edad (el criterio de McIsaac añade un ajuste por edad). Se utiliza en pacientes con dolor de garganta agudo y está recomendada por guías como la de la IDSA (Infectious Diseases Society of America) como herramienta para seleccionar a quién realizar prueba microbiológica.",
+      "interpretation": "Cada criterio suma 1 punto: ausencia de tos, exudado/tumefacción amigdalar, adenopatías cervicales anteriores dolorosas y temperatura >38 °C. El ajuste por edad de McIsaac añade +1 punto si 3-14 años, 0 puntos si 15-44 años y −1 punto si ≥45 años, con un rango total de −1 a 5. Una puntuación baja (0-1) indica un riesgo muy bajo de infección estreptocócica y, en general, no requiere prueba ni antibiótico. Una puntuación intermedia (2-3) justifica realizar un test rápido de antígeno o cultivo y tratar solo si es positivo. Una puntuación alta (4-5) se asocia a la mayor probabilidad de estreptococo, pero según la IDSA sigue siendo necesaria la confirmación microbiológica (test rápido o cultivo) antes de tratar; el tratamiento empírico sin confirmar solo lo admiten algunas otras guías en contextos seleccionados.",
+      "cautions": "Validada principalmente en pacientes con faringitis aguda, tanto adultos como niños (el ajuste de McIsaac amplía el uso pediátrico desde los 3 años). No debe aplicarse en menores de 3 años, donde el estreptococo del grupo A es poco frecuente y la presentación atípica. La escala estima probabilidad, no confirma diagnóstico: una puntuación alta no sustituye la prueba microbiológica para dirigir el antibiótico, y no evalúa complicaciones, otras causas de faringitis (vírica, mononucleosis, gonocócica) ni el estado inmunitario del paciente. En niños y adolescentes con test rápido de antígeno negativo, la IDSA recomienda un cultivo de confirmación. Un error frecuente es tratar con antibiótico basándose solo en la puntuación sin confirmación.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre la escala de Centor y la de McIsaac?",
+          "a": "La escala de Centor original tiene cuatro criterios clínicos; la modificación de McIsaac añade el ajuste por edad (+1 de 3-14 años, 0 de 15-44 años, −1 si ≥45 años), lo que la hace aplicable también a la población pediátrica."
+        },
+        {
+          "q": "¿Con qué puntuación de Centor/McIsaac hay que dar antibiótico?",
+          "a": "La escala por sí sola no indica antibiótico: con 0-1 puntos no es necesario testar ni tratar, y con 2 o más puntos se recomienda realizar un test rápido o cultivo y tratar solo los casos confirmados microbiológicamente."
+        },
+        {
+          "q": "¿Sirve la escala de Centor para diagnosticar faringitis estreptocócica?",
+          "a": "No: solo estima la probabilidad de infección por estreptococo del grupo A para decidir a quién hacer la prueba; el diagnóstico de confirmación requiere un test rápido de antígeno o cultivo faríngeo."
+        }
+      ]
     }
   },
   "calciumCorrected": {
@@ -662,6 +947,25 @@
         "¿Alguno de mis medicamentos cambia el calcio?",
         "¿Debo cambiar mi dieta o suplementos?"
       ]
+    },
+    "content": {
+      "overview": "El calcio corregido por albúmina estima la concentración de calcio sérico total que tendría un paciente si su albúmina fuera normal, ya que una parte importante del calcio circula unida a la albúmina. Se utiliza cuando existe hipoalbuminemia (enfermedad hepática, síndrome nefrótico, enfermedad crítica, desnutrición), situación en la que el calcio total medido infraestima el calcio real y puede enmascarar una hipo o hipercalcemia. La fórmula clásica de Payne aplica una corrección de +0,8 mg/dL de calcio por cada 1 g/dL de albúmina por debajo de 4,0 g/dL (equivalente a +0,02 mmol/L por cada 1 g/L por debajo de 40 g/L).",
+      "interpretation": "El valor corregido se interpreta según los rangos habituales de calcio total: normal aproximadamente 8,5-10,2 mg/dL (2,12-2,55 mmol/L). Un calcio corregido por debajo de ese rango sugiere hipocalcemia y por encima, hipercalcemia, pese a un calcio total medido que pueda parecer normal en presencia de albúmina baja. La corrección no cambia el umbral diagnóstico, sino la cifra que se compara con él; ante valores clínicamente relevantes o discordantes, conviene confirmar con calcio iónico.",
+      "cautions": "La corrección de Payne se derivó en poblaciones concretas y tiene fiabilidad limitada en enfermedad renal crónica avanzada, alteraciones del pH (la acidosis y la alcalosis modifican la fracción ionizada), hiperfosfatemia, mieloma o transfusiones masivas. No sustituye al calcio iónico, que es la medida de referencia de la fracción biológicamente activa y es preferible en el paciente crítico o cuando la decisión clínica es crítica. El resultado solo ajusta por la albúmina y no evalúa la PTH, la vitamina D ni la causa subyacente del trastorno del calcio.",
+      "faq": [
+        {
+          "q": "¿Cuál es la fórmula del calcio corregido por albúmina?",
+          "a": "Calcio corregido (mg/dL) = calcio total medido + 0,8 × (4,0 − albúmina en g/dL). En unidades SI: calcio (mmol/L) + 0,02 × (40 − albúmina en g/L)."
+        },
+        {
+          "q": "¿Cuándo debo usar el calcio corregido en lugar del calcio total?",
+          "a": "Cuando el paciente tiene hipoalbuminemia, ya que el calcio total medido infraestima el calcio real y puede ocultar una hipo o hipercalcemia verdadera."
+        },
+        {
+          "q": "¿Es más fiable el calcio iónico que el calcio corregido?",
+          "a": "Sí. El calcio iónico mide directamente la fracción biológicamente activa y es la prueba de referencia, especialmente en pacientes críticos, con alteraciones del pH o enfermedad renal avanzada."
+        }
+      ]
     }
   },
   "sodiumCorrected": {
@@ -688,6 +992,25 @@
         "¿Qué está causando ahora mi glucosa alta?",
         "¿Necesito líquidos extra o insulina?",
         "¿Qué signos de complicación debo vigilar?"
+      ]
+    },
+    "content": {
+      "overview": "El sodio corregido por hiperglucemia estima cuál sería la natremia del paciente una vez normalizada la glucosa. La hiperglucemia provoca un desplazamiento osmótico de agua desde el espacio intracelular al plasma que diluye el sodio medido; se trata de una hiponatremia verdadera de tipo traslocacional (hipertónica), no de una pseudohiponatremia (que es un artefacto de laboratorio por hiperlipidemia o hiperproteinemia con osmolaridad normal). Se aplica típicamente en cetoacidosis diabética, estado hiperosmolar hiperglucémico y cualquier hiperglucemia marcada. La corrección más usada añade 1,6 mEq/L de sodio por cada 100 mg/dL de glucosa por encima de 100 mg/dL; el factor alternativo de 2,4 mEq/L (Hillier, 1999) se considera más exacto con glucemias muy elevadas. Es una herramienta de cálculo fisiológico estándar, no una escala avalada por una guía específica, pero su uso está recogido en los protocolos de manejo de crisis hiperglucémicas (ADA).",
+      "interpretation": "El resultado es la natremia que cabría esperar si la glucosa fuera normal. Si el sodio corregido es normal (135-145 mEq/L) o elevado a pesar de una natremia medida baja, la hiponatremia es atribuible al desplazamiento osmótico por la hiperglucemia y se espera que se resuelva al corregir la glucemia, sin necesidad de tratamiento específico de la hiponatremia. Un sodio corregido por debajo de 135 mEq/L indica una hiponatremia verdadera concurrente que debe evaluarse y tratarse por separado. Un sodio corregido elevado (>145 mEq/L) alerta de un déficit importante de agua libre. La reanimación inicial de la crisis hiperglucémica se realiza con suero salino isotónico (0,9%); el cambio a salino hipotónico (0,45%) se reserva para fases posteriores cuando el paciente está euvolémico y el sodio corregido es normal o alto. La tendencia del sodio corregido durante el tratamiento es clínicamente más relevante que un valor aislado.",
+      "cautions": "La fórmula asume una función renal y un estado de volemia razonablemente estables y se ha validado sobre todo en hiperglucemia aguda; los factores de corrección (1,6 vs 2,4) derivan de estudios pequeños y pueden infraestimar o sobreestimar según el grado de glucemia. No es aplicable a la pseudohiponatremia por hiperlipidemia o hiperproteinemia (artefacto de laboratorio distinto) ni sustituye la medición directa del sodio una vez normalizada la glucosa. No evalúa la osmolaridad plasmática global, el estado ácido-base ni el déficit hídrico total, y no debe guiar por sí sola la velocidad de corrección de la natremia, donde hay que vigilar el riesgo de síndrome de desmielinización osmótica (mielinólisis pontina) por corrección demasiado rápida.",
+      "faq": [
+        {
+          "q": "¿Qué fórmula se usa para corregir el sodio en la hiperglucemia?",
+          "a": "Sodio corregido = sodio medido + 1,6 × [(glucosa en mg/dL − 100) / 100]. Muchos autores prefieren el factor de 2,4 (Hillier) cuando la glucemia supera los 400 mg/dL porque se ajusta mejor a los datos reales."
+        },
+        {
+          "q": "¿Por qué baja el sodio cuando la glucosa está alta?",
+          "a": "La glucosa es osmóticamente activa y atrae agua desde las células hacia el plasma, diluyendo el sodio. Es una hiponatremia dilucional verdadera (traslocacional, hipertónica), no una pérdida real de sodio ni un artefacto de laboratorio, y suele corregirse al normalizar la glucemia."
+        },
+        {
+          "q": "¿El sodio corregido sustituye a la natremia medida para dosificar el tratamiento?",
+          "a": "No. El sodio corregido orienta la fluidoterapia y ayuda a distinguir la hiponatremia por hiperglucemia de una hiponatremia verdadera concurrente, pero siempre hay que confirmar con mediciones directas seriadas del sodio a medida que se corrige la glucosa."
+        }
       ]
     }
   },
@@ -721,6 +1044,25 @@
         "¿Debería mantener, perder o ganar peso?",
         "¿Cuánta proteína necesito al día?"
       ]
+    },
+    "content": {
+      "overview": "La ecuación de Harris-Benedict estima la tasa metabólica basal (TMB), es decir, la energía (kcal/día) que el cuerpo consume en reposo absoluto para mantener las funciones vitales. Emplea sexo, peso, altura y edad según las fórmulas originales de 1919 o, de forma más habitual, la revisión de Roza y Shizgal (1984). Multiplicando la TMB por un factor de actividad física se obtiene el gasto energético total diario, base para planificar dietas de mantenimiento, pérdida o ganancia de peso. No es una escala avalada por una sociedad clínica concreta, sino una ecuación predictiva de uso nutricional general.",
+      "interpretation": "El resultado es un valor absoluto en kcal/día, no una escala con bandas de riesgo. De forma orientativa, la TMB en adultos suele situarse entre 1.200 y 1.900 kcal/día según constitución y sexo (a menudo mayor en hombres por su mayor masa magra). Para estimar las necesidades totales se multiplica la TMB por el factor de actividad: sedentario ×1,2; actividad ligera ×1,375; moderada ×1,55; intensa ×1,725; muy intensa ×1,9. Un déficit aproximado de 500 kcal/día respecto a ese gasto total se asocia a una pérdida de peso de unos 0,5 kg/semana.",
+      "cautions": "Se derivó en adultos sanos de peso relativamente normal y tiende a sobreestimar la TMB en personas con obesidad, siendo menos precisa en edades extremas; en esos casos suele preferirse la ecuación de Mifflin-St Jeor. No se ha validado en niños, embarazadas, pacientes críticos ni en estados hipermetabólicos (quemados, sepsis, traumatismo grave), donde se requiere calorimetría indirecta. Solo estima el gasto en reposo: no mide la composición corporal, el estado nutricional real ni las necesidades de macronutrientes, y el factor de actividad introduce una variabilidad importante.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre Harris-Benedict y Mifflin-St Jeor?",
+          "a": "Ambas estiman la TMB con sexo, peso, altura y edad, pero Mifflin-St Jeor (1990) suele ser más exacta en población general y en obesidad, mientras que Harris-Benedict tiende a sobreestimar ligeramente las calorías."
+        },
+        {
+          "q": "¿Cómo calculo las calorías que necesito al día con Harris-Benedict?",
+          "a": "Calcula primero la TMB con la fórmula y después multiplícala por tu factor de actividad (de 1,2 sedentario a 1,9 muy activo) para obtener el gasto energético total diario."
+        },
+        {
+          "q": "¿Sirve Harris-Benedict para niños o embarazadas?",
+          "a": "No. La ecuación se validó en adultos sanos y no es fiable en población pediátrica, durante el embarazo ni en pacientes críticos, donde se necesitan métodos específicos o calorimetría indirecta."
+        }
+      ]
     }
   },
   "psaDensity": {
@@ -741,6 +1083,25 @@
         "¿Qué otras pruebas pueden evitar la biopsia?",
         "¿Cada cuánto debemos repetir el PSA?",
         "¿Qué factores de estilo de vida afectan a la próstata?"
+      ]
+    },
+    "content": {
+      "overview": "La densidad de PSA (PSAD) es la concentración sérica de PSA total dividida por el volumen prostático medido por ecografía (transrectal o transabdominal) o por resonancia magnética, expresada en ng/mL por cm³. Ajusta el valor de PSA al tamaño de la próstata para mejorar la discriminación entre la hiperplasia benigna y el cáncer de próstata clínicamente significativo, sobre todo en varones con PSA en la zona gris (aproximadamente 4–10 ng/mL). Se emplea como ayuda a la decisión de biopsia y de seguimiento, y la guía de la EAU (European Association of Urology) la incluye como parámetro auxiliar dentro de la estrategia diagnóstica del cáncer de próstata.",
+      "interpretation": "La PSAD se calcula dividiendo el PSA total (ng/mL) por el volumen prostático (cm³). El umbral más utilizado es 0,15 ng/mL/cm³: valores iguales o superiores a 0,15 aumentan la probabilidad de cáncer clínicamente significativo y refuerzan la indicación de biopsia, mientras que valores inferiores lo hacen menos probable. En el contexto de la RM multiparamétrica, una PSAD baja (a menudo por debajo de 0,10–0,15) se utiliza para apoyar evitar o aplazar la biopsia en lesiones PI-RADS dudosas (típicamente PI-RADS 3); valores más altos incrementan el riesgo. Los umbrales son orientativos y deben integrarse con la edad, el tacto rectal, la RM y los antecedentes.",
+      "cautions": "Validada principalmente en varones con PSA elevado (sobre todo 4–10 ng/mL) evaluados para biopsia prostática. Su fiabilidad depende de forma crítica de una medición precisa del volumen prostático; la variabilidad interobservador y el método de imagen (ecografía vs RM) pueden alterar el resultado. No se aplica de forma fiable tras manipulación prostática reciente, prostatitis, retención urinaria o bajo inhibidores de la 5-alfa-reductasa (finasterida, dutasterida), que reducen el PSA aproximadamente a la mitad a los 6–12 meses. La PSAD no diagnostica el cáncer ni determina su grado ni estadio: solo estima el riesgo y no sustituye a la RM, la biopsia ni la evaluación histológica.",
+      "faq": [
+        {
+          "q": "¿Cuál es el valor normal de la densidad de PSA?",
+          "a": "El umbral de referencia más usado es 0,15 ng/mL/cm³; por debajo se considera de menor riesgo y por encima aumenta la sospecha de cáncer clínicamente significativo. Es orientativo y debe interpretarse junto al resto de datos clínicos y de imagen."
+        },
+        {
+          "q": "¿Cómo se calcula la densidad de PSA?",
+          "a": "Se divide el PSA total en sangre (ng/mL) por el volumen de la próstata (cm³) medido por ecografía o resonancia magnética. El resultado se expresa en ng/mL/cm³."
+        },
+        {
+          "q": "¿La densidad de PSA puede evitar una biopsia?",
+          "a": "Puede ayudar: combinada con la RM multiparamétrica, una PSAD baja apoya evitar o aplazar la biopsia en lesiones dudosas, pero la decisión siempre es individualizada y no se basa solo en este valor."
+        }
       ]
     }
   },
@@ -769,6 +1130,25 @@
         "¿Cuándo debo volver a urgencias?",
         "¿Puedo comer o beber mientras tanto?"
       ]
+    },
+    "content": {
+      "overview": "La escala de Alvarado es una regla de predicción clínica que estima la probabilidad de apendicitis aguda en pacientes con dolor abdominal. Suma 10 puntos a partir de ocho variables (mnemotécnico MANTRELS): migración del dolor a la fosa ilíaca derecha, anorexia, náuseas o vómitos, dolor a la palpación de la fosa ilíaca derecha, dolor de rebote, fiebre ≥37,3 °C, leucocitosis y desviación a la izquierda del recuento leucocitario. La leucocitosis y el dolor a la palpación valen 2 puntos cada uno; el resto, 1 punto. Se utiliza como herramienta de cribado y estratificación del riesgo en la evaluación inicial del dolor abdominal sospechoso de apendicitis.",
+      "interpretation": "La puntuación va de 0 a 10. De forma orientativa: 1-4 puntos indica baja probabilidad de apendicitis (puede considerarse el alta con seguimiento); 5-6 puntos indica probabilidad intermedia o compatible, donde suele recomendarse observación o pruebas de imagen (ecografía o TC); y 7-10 puntos indica alta probabilidad, que justifica valoración quirúrgica o imagen según el contexto. El umbral más usado para descartar apendicitis con seguridad razonable es una puntuación ≤4. El punto de corte y la conducta concreta varían según el protocolo local, la edad y el sexo.",
+      "cautions": "La escala se derivó y validó predominantemente en población adulta con dolor abdominal agudo. Su rendimiento es más limitado y menos consistente en niños, ancianos, embarazadas y mujeres en edad fértil (donde el diagnóstico diferencial ginecológico reduce la especificidad). No es una herramienta diagnóstica definitiva: una puntuación baja no excluye por completo la apendicitis ni una alta la confirma, y no sustituye el juicio clínico ni las pruebas de imagen. Un error frecuente es usarla para indicar directamente cirugía sin imagen en casos intermedios, o aplicarla fuera del contexto de dolor abdominal agudo.",
+      "faq": [
+        {
+          "q": "¿Qué puntuación de Alvarado indica apendicitis?",
+          "a": "Una puntuación de 7-10 indica alta probabilidad de apendicitis y justifica valoración quirúrgica o imagen; 5-6 es intermedia y suele requerir observación o imagen; 1-4 indica baja probabilidad."
+        },
+        {
+          "q": "¿Qué significa el mnemotécnico MANTRELS?",
+          "a": "Migración del dolor, Anorexia, Náuseas/vómitos, Tenderness (dolor) en fosa ilíaca derecha, Rebote, Elevación de la temperatura, Leucocitosis y Shift (desviación a la izquierda). Son las ocho variables de la escala."
+        },
+        {
+          "q": "¿Sirve la escala de Alvarado para niños y embarazadas?",
+          "a": "Se validó sobre todo en adultos; su rendimiento es menos fiable en niños, embarazadas y mujeres en edad fértil, por lo que debe complementarse con imagen y criterio clínico."
+        }
+      ]
     }
   },
   "rcri": {
@@ -794,6 +1174,25 @@
         "¿Necesito valoración por cardiología?",
         "¿Qué signos de complicación debo vigilar después de la cirugía?"
       ]
+    },
+    "content": {
+      "overview": "El índice de riesgo cardíaco revisado (RCRI), también conocido como índice de Lee, estima el riesgo de complicaciones cardíacas mayores (infarto de miocardio, edema pulmonar, fibrilación ventricular o parada cardíaca, y bloqueo cardíaco completo) asociadas a cirugía no cardíaca mayor. Asigna un punto a cada uno de seis predictores independientes: cirugía de alto riesgo (intraperitoneal, intratorácica o vascular suprainguinal), antecedente de cardiopatía isquémica, antecedente de insuficiencia cardíaca, antecedente de enfermedad cerebrovascular, diabetes tratada con insulina y creatinina sérica preoperatoria superior a 2,0 mg/dL. Es una de las herramientas de valoración de riesgo preoperatorio recomendadas por las guías de la ESC y de la ACC/AHA para cirugía no cardíaca.",
+      "interpretation": "La puntuación va de 0 a 6 puntos según el número de factores presentes. En la cohorte de validación original (Lee 1999), el riesgo de complicación cardíaca mayor crece con el número de factores: 0 factores corresponde al riesgo más bajo, 1 factor a riesgo bajo, 2 factores a riesgo intermedio y 3 o más factores al riesgo más alto, con tasas estimadas aproximadas del orden del 0,4%, 0,9%, 7% y 11% respectivamente; estimaciones agrupadas posteriores validadas sitúan los grupos de 0, 1, 2 y ≥3 factores en torno al 3,9%, 6,0%, 10,1% y 15% de complicaciones cardiovasculares mayores. En la práctica, una puntuación de 0–1 se interpreta como riesgo bajo y una de ≥2 como riesgo elevado que puede justificar optimización médica o pruebas adicionales.",
+      "cautions": "El RCRI se desarrolló y validó en pacientes de 50 años o más sometidos a cirugía no cardíaca electiva mayor con ingreso hospitalario; no está validado para cirugía urgente o emergente, cirugía cardíaca, ni para procedimientos de bajo riesgo o ambulatorios. No evalúa el riesgo de mortalidad global, complicaciones no cardíacas ni la capacidad funcional, y tiende a infraestimar el riesgo en cirugía vascular. No sustituye a la evaluación clínica ni a la valoración de la capacidad funcional (METs) y no debe usarse de forma aislada para decidir la realización de pruebas cardíacas preoperatorias.",
+      "faq": [
+        {
+          "q": "¿Cuáles son los seis factores del índice de Lee (RCRI)?",
+          "a": "Cirugía de alto riesgo, cardiopatía isquémica, insuficiencia cardíaca, enfermedad cerebrovascular, diabetes tratada con insulina y creatinina sérica superior a 2,0 mg/dL. Cada factor vale un punto."
+        },
+        {
+          "q": "¿Qué puntuación RCRI se considera de alto riesgo?",
+          "a": "Una puntuación de 2 o más puntos se asocia a un riesgo cardíaco sustancialmente elevado y suele motivar optimización médica o valoración adicional; 0–1 punto se considera riesgo bajo."
+        },
+        {
+          "q": "¿Sirve el RCRI para cirugía cardíaca o urgente?",
+          "a": "No. Se validó en cirugía no cardíaca electiva en pacientes de 50 años o más, y no está validado para cirugía cardíaca, urgente o procedimientos de bajo riesgo."
+        }
+      ]
     }
   },
   "lrinec": {
@@ -818,6 +1217,25 @@
         "¿Bastarán los antibióticos solos?",
         "¿Qué signos de empeoramiento debo vigilar?",
         "¿Cuándo me valorará el equipo quirúrgico?"
+      ]
+    },
+    "content": {
+      "overview": "El LRINEC (Laboratory Risk Indicator for Necrotizing Fasciitis) es una herramienta de laboratorio que estima la probabilidad de que una infección grave de tejidos blandos corresponda a una fascitis necrosante en lugar de una celulitis o un absceso. Suma puntos a partir de seis variables analíticas de uso rutinario: proteína C reactiva, recuento de leucocitos, hemoglobina, sodio, creatinina y glucosa. Se derivó y validó como ayuda diagnóstica (Wong et al., 2004) para aumentar la sospecha ante una presentación clínica equívoca; no sustituye la evaluación quirúrgica ni está formalmente incorporado como criterio decisivo en guías de sociedades como la IDSA.",
+      "interpretation": "La puntuación oscila entre 0 y 13 puntos. Habitualmente se estratifica en tres categorías: bajo riesgo con 5 puntos o menos (probabilidad baja de fascitis necrosante), riesgo intermedio con 6 a 7 puntos y riesgo alto con 8 puntos o más. El punto de corte de 6 se propone como umbral de alerta: un valor igual o superior a 6 debe intensificar la sospecha y motivar exploración urgente, y un valor de 8 o más se asocia al riesgo más elevado. Ninguna puntuación, por baja que sea, descarta la enfermedad si la clínica es sugestiva.",
+      "cautions": "Se derivó en pacientes adultos con infecciones de tejidos blandos; su rendimiento es inferior y está menos validado en población pediátrica, inmunodeprimidos, diabéticos y en fascitis necrosante de causa no bacteriana o de progresión muy rápida. La limitación crítica es su baja sensibilidad: una proporción importante de casos confirmados tiene un LRINEC inferior a 6, por lo que una puntuación baja NO excluye la fascitis necrosante. Es una herramienta de apoyo, no diagnóstica: no valora signos clínicos (dolor desproporcionado, ampollas, crepitación, necrosis cutánea, inestabilidad hemodinámica) y nunca debe retrasar la consulta quirúrgica ni la exploración de la herida cuando hay sospecha clínica.",
+      "faq": [
+        {
+          "q": "¿Un LRINEC bajo descarta la fascitis necrosante?",
+          "a": "No. La sensibilidad es limitada y muchos casos confirmados puntúan por debajo de 6, por lo que una puntuación baja no excluye el diagnóstico si la clínica es sugestiva."
+        },
+        {
+          "q": "¿Qué valor de LRINEC se considera de alarma?",
+          "a": "Una puntuación de 6 o más se usa como umbral para intensificar la sospecha, y de 8 o más indica el grupo de mayor riesgo; ambos justifican evaluación quirúrgica urgente."
+        },
+        {
+          "q": "¿Qué analíticas necesito para calcular el LRINEC?",
+          "a": "Se requieren proteína C reactiva, recuento de leucocitos, hemoglobina, sodio, creatinina y glucosa sérica, todas pruebas de laboratorio rutinarias."
+        }
       ]
     }
   },
@@ -862,6 +1280,25 @@
         "¿Cómo cambia esto decisiones compartidas como el cribado de cáncer o la cirugía?",
         "¿Cuál es la prioridad más importante ahora?"
       ]
+    },
+    "content": {
+      "overview": "El Índice de Comorbilidad de Charlson (CCI) es una herramienta pronóstica que estima la mortalidad a 10 años de un paciente en función de la carga de enfermedades crónicas concomitantes. Asigna pesos de 1 a 6 puntos a 19 categorías de comorbilidad (por ejemplo infarto de miocardio, insuficiencia cardíaca, enfermedad renal crónica, diabetes con afectación de órgano diana, hepatopatía, neoplasia y sida), de modo que las afecciones con mayor impacto sobre la supervivencia suman más puntos. Es el índice de comorbilidad más utilizado en investigación clínica y epidemiológica para el ajuste de riesgo; la versión combinada con la edad (índice edad-comorbilidad de Charlson) añade 1 punto por cada década a partir de los 50 años.",
+      "interpretation": "La puntuación total resulta de sumar los pesos de todas las comorbilidades presentes (más los puntos por edad si se usa la versión ajustada por edad). Una puntuación de 0 indica ausencia de comorbilidad significativa y la mejor supervivencia esperada; cuanto mayor es la puntuación, mayor es la carga de enfermedad y menor la supervivencia estimada a 10 años. Habitualmente se estratifica en categorías de baja (0), intermedia (1-2), alta (3-4) y muy alta (≥5) comorbilidad. La formulación original de Charlson asociaba aproximadamente una supervivencia a 10 años en torno al 99% con 0 puntos, que desciende de forma progresiva con cada punto adicional; conviene utilizar las tablas de supervivencia de la cohorte de validación correspondiente más que memorizar porcentajes aislados.",
+      "cautions": "El CCI se desarrolló y validó originalmente en una cohorte de pacientes ingresados de medicina interna y posteriormente en pacientes con cáncer de mama, y se ha aplicado ampliamente mediante códigos administrativos (CIE-9/CIE-10), lo que puede infraestimar comorbilidades no codificadas. Es una medida de carga de enfermedad crónica, no de gravedad aguda: no evalúa el estado funcional, la fragilidad, el estado cognitivo ni la severidad del episodio agudo actual, y no debe usarse de forma aislada para decisiones individuales de tratamiento ni como predictor de mortalidad hospitalaria a corto plazo. Existen varias versiones con pesos y actualizaciones (Deyo, Quan) que no son intercambiables.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre el índice de Charlson y la versión ajustada por edad?",
+          "a": "El índice de Charlson original solo suma los pesos de las comorbilidades; la versión ajustada por edad (edad-comorbilidad de Charlson) añade 1 punto por cada década de vida a partir de los 50 años para mejorar la predicción de mortalidad a 10 años."
+        },
+        {
+          "q": "¿Qué puntuación de Charlson se considera alta?",
+          "a": "No hay un único punto de corte universal, pero en general una puntuación de 0 indica comorbilidad baja, 1-2 intermedia, 3-4 alta y ≥5 muy alta, con un descenso progresivo de la supervivencia estimada conforme aumenta."
+        },
+        {
+          "q": "¿Sirve el índice de Charlson para predecir la mortalidad en UCI u hospitalaria a corto plazo?",
+          "a": "No está diseñado para eso; el CCI mide la carga de comorbilidad crónica y la supervivencia a largo plazo, no la gravedad aguda. Para mortalidad a corto plazo deben usarse escalas específicas como APACHE II o SOFA."
+        }
+      ]
     }
   },
   "pittBacteremia": {
@@ -896,6 +1333,25 @@
         "¿Qué antibióticos estoy recibiendo y por qué?",
         "¿Cuánto tiempo necesitaré estar en el hospital?",
         "¿Qué signos de mejora o empeoramiento monitorizaréis?"
+      ]
+    },
+    "content": {
+      "overview": "La puntuación de bacteriemia de Pitt (Pitt Bacteremia Score) es una escala de gravedad clínica que estima el riesgo de mortalidad aguda en pacientes con infección del torrente sanguíneo (bacteriemia). Suma puntos por temperatura, hipotensión/shock, ventilación mecánica, parada cardiaca y estado mental, reflejando la inestabilidad fisiológica en el momento de la bacteriemia. Es una herramienta de investigación y pronóstico ampliamente utilizada en estudios de bacteriemia y de organismos multirresistentes; no está formalmente avalada por la guía de una sociedad científica concreta, pero se emplea de forma extendida para estratificar la gravedad en infecciones por gramnegativos y por Staphylococcus aureus.",
+      "interpretation": "La puntuación oscila entre 0 y 14 puntos: temperatura (1 punto si 35,1-36 °C o 39,0-39,9 °C; 2 puntos si ≤35 °C o ≥40 °C), hipotensión o shock (2 puntos), ventilación mecánica (2 puntos), parada cardiaca (4 puntos) y estado mental (1 punto si desorientado, 2 si estuporoso, 4 si comatoso). Una puntuación más alta indica mayor gravedad fisiológica y peor pronóstico. El umbral más empleado en la literatura es ≥4 puntos, que identifica pacientes con riesgo sustancialmente elevado de mortalidad y suele usarse para definir bacteriemia grave; valores de 0-1 indican baja gravedad. No existe un único punto de corte universal, por lo que debe interpretarse en el contexto clínico.",
+      "cautions": "Fue desarrollada y validada en pacientes adultos con bacteriemia confirmada, principalmente en cohortes de infecciones por gramnegativos y por Staphylococcus aureus; su utilidad en población pediátrica y en infecciones fúngicas está menos establecida. Es una medida de gravedad fisiológica aguda, no un diagnóstico ni una guía de tratamiento antibiótico: no indica qué antibiótico elegir ni si la terapia empírica es adecuada, y no sustituye al juicio clínico ni a otros índices de comorbilidad (como Charlson) o de sepsis (como SOFA/qSOFA). Un error frecuente es aplicarla fuera del contexto de bacteriemia o usarla como único criterio para decidir el ingreso en UCI.",
+      "faq": [
+        {
+          "q": "¿Qué se considera una puntuación de Pitt alta o de riesgo?",
+          "a": "Una puntuación ≥4 es el umbral más utilizado para identificar bacteriemia grave con riesgo de mortalidad elevado; cuanto más alta la puntuación (máximo 14), peor es el pronóstico."
+        },
+        {
+          "q": "¿Qué diferencia hay entre la puntuación de Pitt y el SOFA?",
+          "a": "La de Pitt es específica para estratificar la gravedad de la bacteriemia con cinco variables clínicas sencillas, mientras que el SOFA evalúa la disfunción multiorgánica en la sepsis mediante parámetros analíticos y de soporte de órganos."
+        },
+        {
+          "q": "¿Se puede calcular la puntuación de Pitt sin pruebas de laboratorio?",
+          "a": "Sí, solo requiere datos clínicos a pie de cama (temperatura, tensión arterial, ventilación, parada cardiaca y estado mental), sin necesidad de analítica."
+        }
       ]
     }
   },
@@ -950,6 +1406,25 @@
         "¿Qué tipo de colchón es mejor para mí?",
         "¿Qué signos de lesión cutánea debemos vigilar?",
         "¿Puedo mejorar mi alimentación para cuidar la piel?"
+      ]
+    },
+    "content": {
+      "overview": "La escala de Norton es una herramienta de cribado para estimar el riesgo de desarrollar úlceras por presión en pacientes encamados o con movilidad reducida, especialmente en personas mayores hospitalizadas o institucionalizadas. Valora cinco parámetros (estado físico general, estado mental, actividad, movilidad e incontinencia), cada uno puntuado de 1 a 4, con una puntuación total de 5 a 20. Es una de las escalas clásicas de valoración del riesgo; las guías de prevención de lesiones por presión (EPUAP/NPIAP/PPPIA) recomiendan realizar una valoración estructurada del riesgo y la citan, junto con Braden y Waterlow, como ejemplos de instrumentos disponibles.",
+      "interpretation": "La puntuación total oscila entre 5 y 20: a menor puntuación, mayor riesgo. Tradicionalmente una puntuación de 14 o inferior identifica a pacientes en riesgo de úlceras por presión, y 12 o inferior indica alto riesgo. Algunos protocolos aplican umbrales más conservadores (por ejemplo ≤16 como inicio de riesgo). Una puntuación baja debe desencadenar medidas preventivas: cambios posturales programados, superficies de redistribución de la presión, cuidado de la piel y optimización nutricional y de la incontinencia.",
+      "cautions": "Validada originalmente en personas mayores hospitalizadas; su rendimiento es más limitado en otras poblaciones (pediatría, cuidados intensivos, pacientes ambulatorios). Tiende a sobreestimar el riesgo (alta sensibilidad, baja especificidad), por lo que puede generar intervenciones en pacientes que no desarrollarán úlcera. No sustituye la inspección directa y regular de la piel ni el juicio clínico, y no evalúa úlceras ya existentes ni determina su estadio; tampoco incorpora explícitamente la nutrición como ítem separado (a diferencia de Braden).",
+      "faq": [
+        {
+          "q": "¿Qué puntuación de Norton indica riesgo de úlceras por presión?",
+          "a": "Clásicamente, una puntuación total de 14 o inferior se considera riesgo, y 12 o inferior alto riesgo. Cuanto más baja la puntuación (mínimo 5), mayor es el riesgo."
+        },
+        {
+          "q": "¿Qué diferencia hay entre la escala de Norton y la de Braden?",
+          "a": "Ambas estiman el riesgo de úlceras por presión, pero Braden incluye nutrición y fricción/cizallamiento como ítems específicos y suele mostrar mejor validez predictiva, mientras que Norton es más sencilla y rápida de aplicar."
+        },
+        {
+          "q": "¿Cada cuánto se debe volver a aplicar la escala de Norton?",
+          "a": "Se recomienda reevaluar al ingreso y de forma periódica, así como cuando cambie el estado clínico del paciente (por ejemplo, tras una cirugía o un empeoramiento de la movilidad)."
+        }
       ]
     }
   },
@@ -1010,6 +1485,25 @@
         "¿Cada cuánto debo cambiar de postura?",
         "¿Cómo puede ayudar mi alimentación a la piel?",
         "¿Qué signos precoces de lesión cutánea debemos vigilar?"
+      ]
+    },
+    "content": {
+      "overview": "La escala de Braden estima el riesgo de desarrollar úlceras por presión evaluando seis subescalas: percepción sensorial, humedad de la piel, actividad, movilidad, nutrición y fricción/cizallamiento. Las cinco primeras se puntúan de 1 a 4 y la de fricción/cizallamiento de 1 a 3, con una puntuación total entre 6 y 23; cuanto más baja es la puntuación, mayor es el riesgo. Es una de las herramientas de cribado de riesgo más utilizadas en enfermería y la recomiendan las guías internacionales de prevención de úlceras por presión (EPUAP/NPIAP/PPPIA).",
+      "interpretation": "Una puntuación total más baja indica mayor riesgo. Los puntos de corte habituales son: sin riesgo 19-23; riesgo leve 15-18; riesgo moderado 13-14; riesgo alto 10-12; riesgo muy alto 9 o menos. A partir de un valor de 18 o inferior se recomienda iniciar medidas preventivas (cambios posturales, superficies de redistribución de presión, cuidado de la piel y optimización nutricional), ajustando la intensidad según la franja de riesgo y el juicio clínico.",
+      "cautions": "Validada en adultos hospitalizados, en residencias y en atención domiciliaria; para pediatría se utiliza la versión adaptada Braden Q. La puntuación es una ayuda al cribado, no sustituye la inspección directa de la piel ni la valoración clínica global, y puede infraestimar el riesgo en ciertos contextos (por ejemplo, piel ya con eritema o pacientes con dispositivos médicos). No evalúa la presencia ni la gravedad de úlceras ya existentes, no estima riesgo cardiovascular ni mortalidad, y debe reevaluarse periódicamente porque el riesgo cambia con el estado del paciente.",
+      "faq": [
+        {
+          "q": "¿Qué puntuación de Braden se considera riesgo alto?",
+          "a": "Una puntuación de 10 a 12 indica riesgo alto y 9 o menos riesgo muy alto; por debajo de 18 ya conviene iniciar medidas preventivas."
+        },
+        {
+          "q": "¿Cada cuánto debe repetirse la escala de Braden?",
+          "a": "Debe reevaluarse al ingreso y de forma periódica según el contexto (a menudo cada 24-48 h en hospital de agudos) y siempre que cambie el estado clínico del paciente."
+        },
+        {
+          "q": "¿La escala de Braden sirve para niños?",
+          "a": "No directamente; en pediatría se utiliza la versión adaptada Braden Q, validada para esa población."
+        }
       ]
     }
   },
@@ -1090,6 +1584,25 @@
         "¿Qué ayudas técnicas (caminar, vestirme, comer) me serían más útiles?",
         "¿Con qué frecuencia se reevaluará mi nivel de independencia?"
       ]
+    },
+    "content": {
+      "overview": "El índice de Barthel es una escala ordinal que mide el grado de independencia funcional en diez actividades básicas de la vida diaria: alimentación, baño, aseo personal, vestido, control intestinal, control vesical, uso del retrete, transferencias cama-silla, deambulación y subir escaleras. Se puntúa de 0 a 100 (en incrementos de 5 en la versión clásica) y se emplea para cuantificar la discapacidad, planificar la rehabilitación y monitorizar la evolución funcional, sobre todo en el ictus, los ancianos y la enfermedad neurológica. Es una de las medidas de resultado funcional más utilizadas en rehabilitación y en las vías asistenciales del ictus.",
+      "interpretation": "La puntuación total oscila entre 0 (dependencia total) y 100 (independencia completa). Una agrupación orientativa ampliamente usada es: 0-20 dependencia total, 21-60 dependencia grave, 61-90 dependencia moderada, 91-99 dependencia leve y 100 independencia. El cambio debe interpretarse en el contexto clínico; los valores absolutos importan, pero la evolución en el tiempo y la trayectoria de cada ítem suelen ser más informativas que un único punto de corte.",
+      "cautions": "Validado principalmente en pacientes con ictus, ancianos y personas con discapacidad física en el ámbito hospitalario y de rehabilitación. Evalúa solo actividades básicas (autocuidado y movilidad) y NO valora las actividades instrumentales (cocinar, gestionar la medicación o las finanzas, comprar), la función cognitiva, el estado de ánimo, la comunicación ni el dolor. Presenta efecto techo en pacientes con buena función física pero con deterioro cognitivo, que pueden puntuar alto pese a necesitar supervisión. La puntuación refleja lo que el paciente hace realmente, no lo que podría hacer.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre el índice de Barthel y la escala de Lawton?",
+          "a": "El Barthel mide actividades básicas de la vida diaria (autocuidado y movilidad), mientras que la escala de Lawton-Brody evalúa actividades instrumentales como cocinar, comprar o gestionar la medicación. A menudo se usan de forma complementaria."
+        },
+        {
+          "q": "¿Qué se considera una buena puntuación en el índice de Barthel?",
+          "a": "Una puntuación de 100 indica independencia completa en las actividades básicas y valores de 91-99 reflejan dependencia leve. Aun así, 100 no significa que la persona pueda vivir sola, ya que no se evalúan las actividades instrumentales ni la cognición."
+        },
+        {
+          "q": "¿El índice de Barthel mide el deterioro cognitivo?",
+          "a": "No. El Barthel solo valora la independencia física en el autocuidado y la movilidad. Para evaluar la cognición se necesita una herramienta específica como el MMSE o el MoCA."
+        }
+      ]
     }
   },
   "findrisc": {
@@ -1138,6 +1651,25 @@
         "¿Hay un programa de prevención estructurado?",
         "¿Cuándo deberíamos reevaluar mi riesgo?"
       ]
+    },
+    "content": {
+      "overview": "El FINDRISC (Finnish Diabetes Risk Score) estima la probabilidad de desarrollar diabetes tipo 2 en los próximos 10 años mediante variables clínicas sencillas, sin necesidad de analítica de sangre. Suma puntos por edad, índice de masa corporal, perímetro de cintura, actividad física, consumo diario de fruta y verdura, uso de medicación antihipertensiva, antecedente de glucemia elevada e historia familiar de diabetes. Es una herramienta de cribado poblacional ampliamente validada, recomendada por las guías conjuntas ESC/EASD sobre diabetes, prediabetes y enfermedad cardiovascular y adoptada por la International Diabetes Federation para la detección precoz.",
+      "interpretation": "La puntuación oscila entre 0 y 26 puntos y se clasifica en categorías de riesgo a 10 años: <7 puntos, riesgo bajo (aproximadamente 1%); 7-11, riesgo ligeramente elevado (alrededor del 4%); 12-14, riesgo moderado (alrededor del 17%); 15-20, riesgo alto (aproximadamente 33%); y >20 puntos, riesgo muy alto (hasta un 50%). A partir de una puntuación de 15 o superior se recomienda confirmar el estado glucémico con glucemia en ayunas, HbA1c o test de tolerancia oral a la glucosa, e iniciar intervención sobre el estilo de vida.",
+      "cautions": "El FINDRISC se desarrolló y validó en población adulta caucásica europea (cohorte finlandesa) y su rendimiento puede variar en otras etnias, en embarazadas y en menores de 25 años. Es una herramienta de predicción de riesgo, no diagnóstica: una puntuación elevada no confirma diabetes ni detecta diabetes ya existente o no diagnosticada, que requiere siempre confirmación analítica. Tampoco evalúa complicaciones, diabetes tipo 1 ni riesgo cardiovascular global.",
+      "faq": [
+        {
+          "q": "¿El FINDRISC necesita un análisis de sangre?",
+          "a": "No. Es un cuestionario que solo utiliza datos clínicos y antropométricos (edad, IMC, cintura, hábitos, medicación y antecedentes), sin ninguna determinación analítica."
+        },
+        {
+          "q": "¿Qué puntuación del FINDRISC se considera alta?",
+          "a": "Una puntuación de 15 o más indica riesgo alto o muy alto; a partir de ese umbral se recomienda confirmar la glucemia e intervenir sobre el estilo de vida."
+        },
+        {
+          "q": "¿Cada cuánto debería repetirse el FINDRISC?",
+          "a": "En personas con riesgo bajo o ligeramente elevado puede repetirse cada pocos años; si el riesgo es moderado o superior conviene reevaluar antes y acompañarlo de pruebas glucémicas."
+        }
+      ]
     }
   },
   "ipss": {
@@ -1173,6 +1705,25 @@
         "¿Necesito pruebas de imagen?",
         "¿Cuándo se plantearía la cirugía?"
       ]
+    },
+    "content": {
+      "overview": "El IPSS (International Prostate Symptom Score) es un cuestionario autoadministrado que cuantifica la gravedad de los síntomas del tracto urinario inferior (LUTS) en hombres, habitualmente asociados a hiperplasia benigna de próstata. Consta de 7 preguntas que valoran síntomas (vaciado incompleto, frecuencia, intermitencia, urgencia, chorro débil, esfuerzo y nicturia), cada una de 0 a 5, sumando un total de 0 a 35; se añade una octava pregunta separada que valora la calidad de vida (0 a 6) y que no se cuenta dentro de la puntuación de síntomas. Es el instrumento recomendado por las guías de la EAU (European Association of Urology) y la AUA para la evaluación inicial y el seguimiento de los LUTS masculinos (es idéntico al AUA-SI con la pregunta de calidad de vida añadida).",
+      "interpretation": "La puntuación de síntomas (0-35) se clasifica en tres bandas: 0-7 síntomas leves, 8-19 síntomas moderados y 20-35 síntomas graves. Los síntomas leves suelen permitir conducta expectante; los moderados y graves orientan hacia tratamiento médico o, según respuesta y complicaciones, quirúrgico. La pregunta independiente de calidad de vida (índice de molestia, 0=encantado a 6=fatal) no se suma al total pero es clave para decidir la intensidad del tratamiento, ya que dos pacientes con la misma puntuación pueden tolerar los síntomas de forma muy distinta.",
+      "cautions": "Validado en hombres con LUTS/sospecha de hiperplasia benigna de próstata. No es diagnóstico ni específico: una puntuación elevada no confirma origen prostático, ya que infecciones, vejiga hiperactiva, disfunción vesical neurógena, prostatitis o causas en mujeres pueden dar puntuaciones similares. No evalúa el cáncer de próstata ni sustituye al PSA, el tacto rectal, la flujometría ni la ecografía. Requiere alfabetización y comprensión adecuadas; puede ser poco fiable con barreras lingüísticas o deterioro cognitivo. Su valor principal es el seguimiento longitudinal de la respuesta al tratamiento en un mismo paciente.",
+      "faq": [
+        {
+          "q": "¿Qué puntuación IPSS se considera grave?",
+          "a": "Una puntuación total de síntomas de 20 a 35 se considera grave; 8-19 es moderada y 0-7 es leve."
+        },
+        {
+          "q": "¿El IPSS sirve para diagnosticar cáncer de próstata?",
+          "a": "No. El IPSS solo mide la gravedad de los síntomas urinarios y no detecta cáncer; para el cribado se necesitan PSA, tacto rectal y valoración urológica."
+        },
+        {
+          "q": "¿Se cuenta la pregunta de calidad de vida en el total del IPSS?",
+          "a": "No. La pregunta de calidad de vida se puntúa por separado (0-6) y no se suma al total de 0-35, pero ayuda a decidir el tratamiento."
+        }
+      ]
     }
   },
   "basdai": {
@@ -1198,6 +1749,25 @@
         "¿Conviene considerar una terapia biológica?",
         "¿Qué ejercicios o fisioterapia pueden ayudar?",
         "¿Qué complicaciones debemos vigilar?"
+      ]
+    },
+    "content": {
+      "overview": "El índice BASDAI (Bath Ankylosing Spondylitis Disease Activity Index) es un cuestionario autoinformado que mide la actividad de la enfermedad en la espondiloartritis axial, incluida la espondilitis anquilosante. Evalúa seis dominios mediante escalas numéricas de 0 a 10: fatiga, dolor axial (cuello, espalda, caderas), dolor e hinchazón de articulaciones periféricas, dolor a la presión (entesitis) y la duración e intensidad de la rigidez matutina. Se utiliza en la práctica clínica y en ensayos para monitorizar la actividad sintomática y fue una de las herramientas de referencia recomendadas por ASAS (Assessment of SpondyloArthritis international Society) y EULAR, ahora complementada por el ASDAS.",
+      "interpretation": "La puntuación final oscila entre 0 y 10; las puntuaciones más altas indican mayor actividad de la enfermedad. El umbral más establecido es BASDAI ≥ 4, que refleja enfermedad activa y se ha utilizado a menudo como criterio para considerar o evaluar la respuesta al tratamiento biológico. Valores por debajo de 4 sugieren actividad baja o controlada. El BASDAI se interpreta mejor de forma longitudinal: una reducción relevante respecto al valor basal (por ejemplo, una mejora de ≥ 2 puntos) indica respuesta terapéutica.",
+      "cautions": "El BASDAI está validado en adultos con espondiloartritis axial y espondilitis anquilosante; es una medida subjetiva basada exclusivamente en la percepción del paciente. No evalúa la actividad inflamatoria objetiva (no incluye PCR/VSG ni pruebas de imagen) ni el daño estructural o la movilidad espinal, para lo cual se requieren el BASFI o el BASMI. Un error frecuente es emplearlo de forma aislada para decidir el tratamiento: las guías recomiendan combinarlo con parámetros objetivos, y el ASDAS (que incorpora PCR) ofrece una valoración más completa de la actividad.",
+      "faq": [
+        {
+          "q": "¿Qué puntuación BASDAI indica enfermedad activa?",
+          "a": "Una puntuación de 4 o más (en la escala de 0 a 10) se considera indicativa de enfermedad activa y se ha utilizado habitualmente como umbral para valorar el inicio de tratamiento biológico."
+        },
+        {
+          "q": "¿Qué diferencia hay entre el BASDAI y el ASDAS?",
+          "a": "El BASDAI se basa solo en síntomas referidos por el paciente, mientras que el ASDAS combina ítems del paciente con un reactante de fase aguda (PCR o VSG), lo que lo hace más objetivo para medir la actividad."
+        },
+        {
+          "q": "¿Cómo se calcula la puntuación del BASDAI?",
+          "a": "Se promedian las dos preguntas sobre rigidez matutina y ese valor se añade a las otras cuatro respuestas; el total se divide entre 5 para obtener una puntuación final de 0 a 10."
+        }
       ]
     }
   },
@@ -1235,6 +1805,25 @@
         "¿Sería apropiada una terapia biológica o sintética dirigida?",
         "¿Cuándo se reevaluará?"
       ]
+    },
+    "content": {
+      "overview": "El DAS28 (Disease Activity Score en 28 articulaciones) es un índice compuesto que cuantifica la actividad de la artritis reumatoide combinando el recuento de articulaciones dolorosas e inflamadas sobre 28 articulaciones, un reactante de fase aguda (VSG o PCR) y la valoración global de salud del paciente en una escala visual analógica. Se utiliza para monitorizar la actividad de la enfermedad a lo largo del tiempo y para guiar la estrategia de tratamiento por objetivos (treat-to-target). Es una de las medidas de actividad recomendadas por EULAR para el seguimiento de la artritis reumatoide.",
+      "interpretation": "Con la versión basada en VSG (DAS28-VSG), los umbrales convencionales son: menos de 2,6 indica remisión; de 2,6 a 3,2 (inclusive) actividad baja; superior a 3,2 y hasta 5,1 (inclusive) actividad moderada; y superior a 5,1 actividad alta. Una reducción superior a 1,2 puntos se considera una respuesta clínicamente significativa. La versión basada en PCR (DAS28-PCR) tiende a dar valores ligeramente inferiores, por lo que los mismos puntos de corte no son plenamente intercambiables y puede infraestimar la actividad cerca del umbral de remisión.",
+      "cautions": "Validado en adultos con artritis reumatoide establecida; no está concebido para otras artropatías ni para el diagnóstico. El recuento de 28 articulaciones excluye los tobillos y los pies, por lo que puede infraestimar la actividad en pacientes con afectación predominantemente podálica. La valoración global y la articular tienen un componente subjetivo, y comorbilidades como la fibromialgia o infecciones pueden elevar la VSG/PCR o el dolor y distorsionar la puntuación. No evalúa el daño estructural radiológico ni la función física a largo plazo.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre el DAS28-VSG y el DAS28-PCR?",
+          "a": "Usan reactantes de fase aguda diferentes y fórmulas distintas; el DAS28-PCR suele dar valores algo más bajos, por lo que conviene usar siempre la misma versión en un mismo paciente para comparar."
+        },
+        {
+          "q": "¿Qué valor de DAS28 indica remisión?",
+          "a": "Un DAS28-VSG inferior a 2,6 se considera remisión según los criterios convencionales."
+        },
+        {
+          "q": "¿Qué articulaciones se incluyen en el recuento de 28?",
+          "a": "Se valoran 28 articulaciones, contando ambos lados: hombros (2), codos (2), muñecas (2), metacarpofalángicas (10), interfalángicas proximales de las manos incluyendo la interfalángica del pulgar (10) y rodillas (2); se excluyen los tobillos y los pies."
+        }
+      ]
     }
   },
   "pasi": {
@@ -1264,6 +1853,25 @@
         "¿Qué opciones sistémicas hay disponibles?",
         "¿Qué efectos secundarios debo vigilar?",
         "¿Cada cuánto reevaluaremos?"
+      ]
+    },
+    "content": {
+      "overview": "El índice PASI (Psoriasis Area and Severity Index) es el instrumento estándar para cuantificar la gravedad de la psoriasis en placa y monitorizar la respuesta al tratamiento. Combina la extensión de la superficie afectada con la intensidad de tres signos clínicos —eritema, infiltración (grosor) y descamación— ponderados por cuatro regiones corporales (cabeza, tronco, extremidades superiores e inferiores). Es la medida de resultado de referencia en ensayos clínicos y en guías de psoriasis como las de la AAD-NPF y EuroGuiDerm/EDF para evaluar candidatos a terapia sistémica y biológica.",
+      "interpretation": "El PASI puntúa de 0 a 72; cuanto más alto, más grave. No existen umbrales universales, pero convencionalmente una puntuación inferior a 5-10 suele indicar enfermedad leve, de 10 a 20 moderada y superior a 20 grave; un PASI ≥10 es uno de los criterios habituales para considerar la candidatura a tratamiento sistémico. La respuesta al tratamiento se expresa como reducción porcentual respecto al basal: PASI 75 (reducción ≥75%) ha sido el objetivo clásico, mientras que PASI 90 y PASI 100 (aclaramiento casi completo o total) son los objetivos actuales con las terapias biológicas modernas.",
+      "cautions": "El PASI se validó para la psoriasis en placa crónica y es poco fiable en formas pustulosa, eritrodérmica o en gotas. Tiene sensibilidad limitada en enfermedad leve o muy localizada y una variabilidad interobservador notable, sobre todo en la puntuación de la infiltración. No evalúa la afectación de áreas especiales de alto impacto (cuero cabelludo, uñas, palmas, plantas, genitales) ni la carga sintomática o la calidad de vida; por ello se complementa con el BSA, el IGA y el DLQI. No mide artritis psoriásica ni comorbilidades.",
+      "faq": [
+        {
+          "q": "¿Qué significa PASI 75?",
+          "a": "PASI 75 significa una reducción de al menos el 75% de la puntuación PASI respecto al valor basal antes del tratamiento. Ha sido el objetivo terapéutico clásico en ensayos clínicos."
+        },
+        {
+          "q": "¿Qué puntuación PASI se considera psoriasis grave?",
+          "a": "No hay un corte universal, pero a menudo se considera grave un PASI superior a 20; un PASI ≥10 ya suele justificar valorar tratamiento sistémico, especialmente combinado con un DLQI elevado."
+        },
+        {
+          "q": "¿Sirve el PASI para la psoriasis del cuero cabelludo o las uñas?",
+          "a": "No de forma adecuada. El PASI infravalora las áreas especiales; para cuero cabelludo, uñas, palmas, plantas o genitales se usan índices específicos como el PSSI, NAPSI o ppPASI."
+        }
       ]
     }
   },
@@ -1296,6 +1904,25 @@
         "¿Cómo tratamos los brotes vs. el mantenimiento?",
         "¿Debemos considerar un biológico como dupilumab?",
         "¿Qué factores de estilo de vida agravan el eccema?"
+      ]
+    },
+    "content": {
+      "overview": "El SCORAD (SCORing Atopic Dermatitis) es un índice compuesto que cuantifica la gravedad de la dermatitis atópica combinando tres componentes: la extensión de la enfermedad (regla del 9 sobre la superficie corporal), la intensidad de seis signos clínicos (eritema, edema/pápulas, exudación/costras, excoriaciones, liquenificación y xerosis) y los síntomas subjetivos (prurito y pérdida de sueño) valorados por el paciente en escalas analógicas visuales. Fue desarrollado por el European Task Force on Atopic Dermatitis (ETFAD/EADV) y es una de las herramientas de referencia recomendadas por las guías europeas (EuroGuiDerm/EADV) para evaluar la gravedad y monitorizar la respuesta al tratamiento.",
+      "interpretation": "La puntuación total del SCORAD oscila entre 0 y 103. Se calcula como A/5 + 7B/2 + C, donde A es la extensión (0-100), B la intensidad (0-18) y C los síntomas subjetivos (0-20). En general se interpreta así: menos de 25 indica enfermedad leve, de 25 a 50 enfermedad moderada y más de 50 enfermedad grave. Existe la variante objetiva (oSCORAD), que omite el componente subjetivo C y tiene un máximo de 83, útil cuando no se dispone de la valoración del paciente. La reducción relativa respecto al basal (SCORAD-50, SCORAD-75) se emplea como medida de respuesta terapéutica.",
+      "cautions": "El SCORAD está validado para la dermatitis atópica en niños y adultos; no se aplica a otras dermatosis eccematosas. Es una herramienta puntual y dependiente del observador, con una variabilidad interobservador no despreciable, especialmente en la estimación de la extensión y la liquenificación; también presenta limitaciones en pieles oscuras, donde el eritema puede infravalorarse. No evalúa el impacto sobre la calidad de vida (para ello se requieren instrumentos como el DLQI o el POEM) ni la evolución crónica de la enfermedad, y el componente subjetivo requiere colaboración del paciente, lo que lo hace poco fiable en lactantes muy pequeños.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre SCORAD y oSCORAD?",
+          "a": "El SCORAD incluye los síntomas subjetivos (prurito y sueño) referidos por el paciente, mientras que el oSCORAD (objetivo) los omite. El SCORAD total llega a 103 y el oSCORAD a 83."
+        },
+        {
+          "q": "¿Qué valor de SCORAD se considera dermatitis atópica grave?",
+          "a": "Una puntuación superior a 50 se considera enfermedad grave; entre 25 y 50 moderada, y por debajo de 25 leve."
+        },
+        {
+          "q": "¿Cómo se mide la respuesta al tratamiento con el SCORAD?",
+          "a": "Se utiliza la reducción porcentual respecto al basal, como el SCORAD-50 (mejoría del 50%) o SCORAD-75, que son desenlaces habituales en ensayos clínicos y en la práctica de seguimiento."
+        }
       ]
     }
   },
@@ -1331,6 +1958,25 @@
         "¿Podemos identificar y tratar el origen de la infección?",
         "¿Qué complicaciones hay que vigilar?"
       ]
+    },
+    "content": {
+      "overview": "Los criterios de Duke modificados clasifican la probabilidad de endocarditis infecciosa combinando datos microbiológicos (hemocultivos), de imagen (ecocardiografía y, en las versiones actualizadas, también TC, PET/TC y RM) y clínicos. Se estructuran en criterios mayores y menores y se aplican ante la sospecha de endocarditis sobre válvula nativa, protésica o dispositivos cardiacos. Son los criterios diagnósticos recomendados por la guía ESC 2023 de endocarditis infecciosa (criterios ESC 2023/Duke-ISCVID 2023), una actualización de los criterios de Duke modificados clásicos de 2000.",
+      "interpretation": "El diagnóstico se clasifica en tres categorías. Endocarditis definida: 2 criterios mayores, o 1 mayor + 3 menores, o 5 menores (o confirmación anatomopatológica/microbiológica del tejido valvular o vegetación). Endocarditis posible: 1 mayor + 1 menor, o 3 menores. Endocarditis rechazada: diagnóstico alternativo firme, resolución con 4 días o menos de antibiótico, o no se cumplen los criterios de posible. Una clasificación de posible no excluye la enfermedad y obliga a reevaluar con nuevas pruebas.",
+      "cautions": "Validados en pacientes con sospecha clínica de endocarditis infecciosa; el rendimiento es menor en endocarditis sobre válvula protésica, dispositivos intracardiacos y hemocultivos negativos, donde es preciso recurrir a imagen avanzada y serologías. Son una herramienta de clasificación diagnóstica, no de cribado poblacional, y no estiman el riesgo de mortalidad, la indicación quirúrgica ni la duración del tratamiento. Ninguna regla sustituye el juicio clínico ni la valoración por un equipo multidisciplinar (endocarditis team).",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre endocarditis definida y posible según Duke?",
+          "a": "Definida requiere 2 criterios mayores, 1 mayor más 3 menores o 5 menores (o prueba histológica); posible requiere 1 mayor más 1 menor o 3 menores. Posible indica una sospecha persistente que debe seguir investigándose."
+        },
+        {
+          "q": "¿Los criterios de Duke modificados incluyen el PET-TC?",
+          "a": "Sí, la actualización ESC 2023/Duke-ISCVID incorpora la captación anómala por ¹⁸F-FDG PET/TC sobre válvula protésica o material como criterio mayor de imagen, además de la TC cardiaca."
+        },
+        {
+          "q": "¿Se puede diagnosticar endocarditis con hemocultivos negativos?",
+          "a": "Sí; en endocarditis con hemocultivos negativos el diagnóstico se apoya en serologías (por ejemplo Coxiella burnetii), PCR e imagen, pero la sensibilidad de los criterios disminuye y suele quedar en categoría posible."
+        }
+      ]
     }
   },
   "hinchey": {
@@ -1355,6 +2001,25 @@
         "¿Podría necesitar una colostomía?",
         "¿Qué recuperación debo esperar tras la operación?",
         "¿Cómo se pueden prevenir nuevos episodios?"
+      ]
+    },
+    "content": {
+      "overview": "La clasificación de Hinchey estadifica la gravedad de la diverticulitis aguda complicada del colon, sobre todo del sigma, según el hallazgo quirúrgico o tomográfico de la extensión de la inflamación, el absceso y la peritonitis. Se utiliza para orientar la decisión terapéutica entre manejo conservador, drenaje percutáneo y cirugía urgente. La versión modificada (Wasvary/Kaiser) integra los hallazgos de la TC y es la referencia empleada por guías de sociedades como la ASCRS (American Society of Colon and Rectal Surgeons) y la WSES.",
+      "interpretation": "Estadio I: inflamación pericólica o flemón (Ia) o absceso pericólico confinado (Ib); habitualmente manejo médico, con drenaje percutáneo si el absceso es grande. Estadio II: absceso pélvico, intraabdominal a distancia o retroperitoneal; a menudo candidato a drenaje percutáneo guiado por imagen más antibióticos. Estadio III: peritonitis purulenta generalizada por rotura de un absceso sin comunicación libre con la luz; requiere cirugía urgente. Estadio IV: peritonitis fecaloidea por perforación libre con contaminación fecal; cirugía urgente con la mayor mortalidad. En general, a mayor estadio, mayor probabilidad de intervención quirúrgica y peor pronóstico.",
+      "cautions": "Fue diseñada y validada para la diverticulitis aguda del colon, originalmente como clasificación intraoperatoria y posteriormente adaptada a la TC. No se aplica a la diverticulitis no complicada ni sirve para decidir el alta ambulatoria; no evalúa sepsis sistémica, comorbilidad ni riesgo anestésico, por lo que la decisión quirúrgica debe individualizarse con el estado clínico global. Un error frecuente es estadificar solo por imagen sin correlación clínica o aplicarla a episodios recurrentes/crónicos, para los que no está pensada.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre Hinchey I y II?",
+          "a": "El estadio I es un absceso o flemón pericólico confinado cerca del colon, mientras que el estadio II es un absceso a distancia (pélvico, intraabdominal o retroperitoneal). El estadio II suele requerir drenaje percutáneo, a diferencia del I pequeño, que a menudo se trata solo con antibióticos."
+        },
+        {
+          "q": "¿Qué estadios de Hinchey necesitan cirugía urgente?",
+          "a": "Los estadios III (peritonitis purulenta generalizada) y IV (peritonitis fecaloidea) requieren cirugía urgente. Los estadios I y II se manejan habitualmente con antibióticos y, si es preciso, drenaje percutáneo."
+        },
+        {
+          "q": "¿La clasificación de Hinchey se basa en la TC o en la cirugía?",
+          "a": "La versión original de Hinchey (1978) era una clasificación intraoperatoria. La versión modificada de Wasvary/Kaiser incorpora los hallazgos de la TC y es la que se utiliza actualmente en la práctica clínica."
+        }
       ]
     }
   },
@@ -1395,6 +2060,25 @@
         "¿Deberíamos medir lactato, cuerpos cetónicos o brecha osmolar?",
         "¿Cada cuánto repetiremos la gasometría?"
       ]
+    },
+    "content": {
+      "overview": "El anion gap (hiato aniónico) es un cálculo derivado de los electrolitos séricos que estima la diferencia entre los cationes y los aniones medidos, y sirve para detectar y clasificar la acidosis metabólica. Se calcula como Na⁺ − (Cl⁻ + HCO₃⁻), con la variante que incluye el potasio [(Na⁺ + K⁺) − (Cl⁻ + HCO₃⁻)]. Como la albúmina es el principal anión no medido, en pacientes hipoalbuminémicos debe aplicarse la corrección de albúmina (añadir aproximadamente 2,5 mEq/L por cada 1 g/dL de albúmina por debajo de 4 g/dL) para evitar infraestimar el gap. Es una herramienta diagnóstica básica del equilibrio ácido-base, no una escala pronóstica de una sociedad concreta.",
+      "interpretation": "El rango de referencia habitual del anion gap sin potasio es de aproximadamente 8–12 mEq/L (unos 12–16 mEq/L si se incluye el potasio), aunque varía según el laboratorio y los métodos de medición actuales. Un anion gap elevado orienta hacia acidosis metabólica con gap aumentado (cetoacidosis, acidosis láctica, insuficiencia renal, intoxicaciones como metanol, etilenglicol o salicilatos). Un gap normal en presencia de acidosis sugiere acidosis hiperclorémica (diarrea, acidosis tubular renal). Un gap bajo es poco frecuente y puede reflejar hipoalbuminemia, paraproteinemia o errores de laboratorio. Siempre debe interpretarse el valor corregido por albúmina y en el contexto gasométrico global.",
+      "cautions": "Deben usarse valores de electrolitos simultáneos y fiables; cada laboratorio tiene su propio rango según la metodología. La corrección por albúmina es esencial en pacientes críticos, hepatópatas o desnutridos, donde una hipoalbuminemia puede enmascarar una acidosis con gap elevado. El cálculo puede alterarse por hiperlipemia, hiperglobulinemia, litio, bromuro o errores preanalíticos. El anion gap NO es por sí solo un diagnóstico ni una medida del pH o de la gravedad: no sustituye la gasometría arterial ni el cálculo del gap osmolar cuando se sospecha intoxicación, y no aporta información pronóstica directa.",
+      "faq": [
+        {
+          "q": "¿Por qué hay que corregir el anion gap por la albúmina?",
+          "a": "La albúmina es el principal anión no medido; cuando está baja, el gap calculado resulta artificialmente bajo y puede enmascarar una acidosis con gap elevado. Se corrige añadiendo aproximadamente 2,5 mEq/L por cada 1 g/dL de albúmina por debajo de 4 g/dL."
+        },
+        {
+          "q": "¿Cuál es el valor normal del anion gap?",
+          "a": "Habitualmente es de unos 8–12 mEq/L cuando no se incluye el potasio, y de unos 12–16 mEq/L cuando sí se incluye, pero el rango exacto depende del laboratorio y del método de medición."
+        },
+        {
+          "q": "¿Qué significa un anion gap elevado?",
+          "a": "Sugiere una acidosis metabólica con gap aumentado, típicamente por cetoacidosis, acidosis láctica, insuficiencia renal o intoxicaciones (metanol, etilenglicol, salicilatos). Debe confirmarse con la gasometría y el contexto clínico."
+        }
+      ]
     }
   },
   "fena": {
@@ -1422,6 +2106,25 @@
         "¿Necesitaré sueros, diálisis u otro tratamiento?",
         "¿Hay algún medicamento que esté afectando a mis riñones?",
         "¿Qué signos de empeoramiento debemos vigilar?"
+      ]
+    },
+    "content": {
+      "overview": "La fracción de excreción de sodio (FENa) es un índice que estima el porcentaje del sodio filtrado que finalmente se excreta en la orina, calculado a partir del sodio y la creatinina en plasma y orina. Se utiliza en el estudio de la lesión renal aguda (LRA) con oliguria para ayudar a distinguir la azoemia prerrenal (hipoperfusión, con reabsorción ávida de sodio) de la necrosis tubular aguda (NTA). Es una herramienta de apoyo diagnóstico clásica que complementa la clasificación KDIGO de la LRA, no una escala formalmente avalada por ninguna sociedad.",
+      "interpretation": "Una FENa inferior al 1% sugiere una causa prerrenal, con túbulos intactos que reabsorben ávidamente el sodio para preservar volumen (también se observa en estados de bajo flujo como el síndrome hepatorrenal o la insuficiencia cardíaca). Una FENa superior al 2% es típica de la necrosis tubular aguda, donde el túbulo lesionado no puede conservar el sodio. Los valores entre el 1% y el 2% son indeterminados y requieren interpretación clínica. El resultado debe interpretarse siempre junto con el contexto, el examen de la orina y el estado de volumen.",
+      "cautions": "La FENa se validó en pacientes con LRA oligúrica y no debe tomarse de forma aislada. Pierde fiabilidad con el uso de diuréticos (que aumentan la excreción de sodio y pueden dar una FENa elevada pese a una causa prerrenal); en esos casos es preferible la fracción de excreción de urea. También puede ser inferior al 1% en cuadros no prerrenales como nefropatía por contraste, glomerulonefritis aguda, rabdomiólisis o sepsis precoz. No evalúa la causa exacta de la LRA, no sustituye el examen del sedimento urinario y no es útil en la enfermedad renal crónica.",
+      "faq": [
+        {
+          "q": "¿Cómo se calcula la FENa?",
+          "a": "FENa (%) = (sodio orina × creatinina plasma) / (sodio plasma × creatinina orina) × 100. Se necesitan valores simultáneos de sodio y creatinina en plasma y en orina."
+        },
+        {
+          "q": "¿Qué significa una FENa menor del 1%?",
+          "a": "Sugiere una causa prerrenal de la lesión renal aguda, con túbulos intactos que reabsorben sodio de forma ávida por la hipoperfusión. También puede aparecer en el síndrome hepatorrenal o la nefropatía por contraste."
+        },
+        {
+          "q": "¿Por qué la FENa no es fiable con diuréticos?",
+          "a": "Los diuréticos aumentan la excreción renal de sodio y pueden elevar falsamente la FENa incluso en una causa prerrenal; en pacientes con diuréticos se recomienda calcular la fracción de excreción de urea (FEUrea)."
+        }
       ]
     }
   },
@@ -1490,6 +2193,25 @@
         "¿Necesitaré una cama de UCI después de la operación?",
         "¿Cuáles son las complicaciones más probables para mi clase ASA?"
       ]
+    },
+    "content": {
+      "overview": "La clasificación del estado físico de la American Society of Anesthesiologists (ASA-PS) es una escala ordinal de seis categorías que describe el estado de salud sistémica preoperatorio de un paciente antes de la anestesia y la cirugía. No mide por sí sola el riesgo quirúrgico, sino la carga de comorbilidad sistémica del paciente, y se utiliza de forma rutinaria como parte de la evaluación preanestésica para comunicar el riesgo y orientar la planificación perioperatoria. Es un sistema definido y mantenido por la American Society of Anesthesiologists (ASA), con ejemplos aprobados en 2014 y actualizados en 2020.",
+      "interpretation": "Existen seis clases. ASA I: paciente sano, sin enfermedad sistémica. ASA II: enfermedad sistémica leve y bien controlada, sin limitación funcional sustancial (por ejemplo, fumador, embarazo, obesidad con IMC 30-40, hipertensión o diabetes bien controladas). ASA III: enfermedad sistémica grave con limitación funcional sustancial (por ejemplo, diabetes o hipertensión mal controladas, EPOC, IMC ≥40, infarto o ictus de más de 3 meses, enfermedad renal terminal en diálisis regular). ASA IV: enfermedad sistémica grave que constituye una amenaza constante para la vida (por ejemplo, infarto, ictus o stent coronario recientes de menos de 3 meses, isquemia cardíaca en curso, sepsis, enfermedad renal terminal sin diálisis regular). ASA V: paciente moribundo que no se espera que sobreviva sin la intervención. ASA VI: paciente con muerte cerebral declarada para donación de órganos. El sufijo E se añade a cualquier clase cuando la cirugía es una emergencia. Una clase más alta se asocia con mayor morbilidad y mortalidad perioperatorias.",
+      "cautions": "La clase ASA se asigna mediante el juicio clínico del anestesiólogo y presenta variabilidad interobservador conocida; los ejemplos de la ASA son orientativos, no exhaustivos. No incorpora la edad, el peso por sí solo, ni la complejidad o la naturaleza del procedimiento quirúrgico, y no es una herramienta de predicción de riesgo validada para un paciente individual. No debe usarse de forma aislada para cuantificar el riesgo operatorio: para estimar el riesgo deberían emplearse modelos específicos (por ejemplo, calculadora de riesgo del ACS NSQIP, RCRI). Tampoco refleja la dificultad de la vía aérea.",
+      "faq": [
+        {
+          "q": "¿Qué significa ASA III antes de una operación?",
+          "a": "Indica una enfermedad sistémica grave con limitación funcional sustancial pero no inmediatamente amenazante para la vida, como diabetes o hipertensión mal controladas, EPOC u obesidad con IMC igual o superior a 40."
+        },
+        {
+          "q": "¿Qué quiere decir la letra E en la clasificación ASA?",
+          "a": "El sufijo E indica que el procedimiento es una emergencia, es decir, que retrasar el tratamiento aumentaría de forma significativa la amenaza para la vida o para una parte del cuerpo. Se añade a la clase correspondiente, por ejemplo ASA IIIE."
+        },
+        {
+          "q": "¿La clase ASA predice mi mortalidad quirúrgica?",
+          "a": "Se asocia estadísticamente con la morbilidad y mortalidad perioperatorias, pero no es una calculadora de riesgo individual; para estimar el riesgo de un paciente concreto hay que utilizar modelos diseñados con ese fin."
+        }
+      ]
     }
   },
   "caprini": {
@@ -1546,6 +2268,25 @@
         "¿Qué signos de trombosis debo vigilar en casa?",
         "¿La prevención interactúa con mis otros medicamentos?"
       ]
+    },
+    "content": {
+      "overview": "La escala de Caprini (Caprini Risk Assessment Model) estratifica el riesgo de tromboembolismo venoso (TEV) —trombosis venosa profunda y embolia pulmonar— en pacientes hospitalizados, sobre todo quirúrgicos, sumando puntos ponderados por factores de riesgo clínicos. Incluye edad, tipo y duración de la cirugía, antecedentes de TEV, trombofilia, neoplasia, inmovilidad, obesidad, uso de anticonceptivos o terapia hormonal, embarazo o posparto, y otras comorbilidades. Orienta la indicación y la intensidad de la tromboprofilaxis (mecánica y/o farmacológica). Es uno de los modelos de valoración del riesgo de TEV recomendados por las guías del American College of Chest Physicians (ACCP/CHEST) en pacientes quirúrgicos no ortopédicos.",
+      "interpretation": "La puntuación total agrupa al paciente en bandas de riesgo. En la versión de cirugía general/abdominopélvica, 0 puntos indica riesgo muy bajo; 1-2 puntos, riesgo bajo; 3-4 puntos, riesgo moderado; y ≥5 puntos, riesgo alto. A mayor puntuación, mayor riesgo de TEV y, en general, más indicación de tromboprofilaxis farmacológica añadida a la mecánica, siempre balanceando el riesgo hemorrágico individual. Los umbrales exactos y la conducta profiláctica pueden variar según la población (p. ej. cirugía plástica u ortopédica) y el protocolo institucional, por lo que deben aplicarse con la versión validada correspondiente.",
+      "cautions": "El modelo se desarrolló y validó principalmente en pacientes quirúrgicos adultos (especialmente cirugía general, vascular, urológica y plástica); su aplicación a pacientes médicos, obstétricos o pediátricos está menos establecida. No evalúa el riesgo hemorrágico, que debe estimarse por separado antes de decidir la profilaxis farmacológica, ni sustituye el juicio clínico ni las pruebas diagnósticas ante la sospecha de TEV activo. Un error frecuente es usarlo como herramienta diagnóstica o aplicar los umbrales de una versión a una población distinta de la validada.",
+      "faq": [
+        {
+          "q": "¿Cuándo debo iniciar tromboprofilaxis farmacológica según el Caprini?",
+          "a": "En general, los pacientes con puntuación moderada-alta (típicamente ≥3-5 puntos según la versión) se benefician de añadir profilaxis farmacológica a la mecánica, siempre que el riesgo hemorrágico sea aceptable. La decisión final se individualiza con el protocolo local."
+        },
+        {
+          "q": "¿El Caprini sirve para pacientes médicos no quirúrgicos?",
+          "a": "Se validó sobre todo en pacientes quirúrgicos. En pacientes médicos hospitalizados a menudo se prefieren modelos específicos como el Padua Prediction Score, aunque algunas instituciones adaptan el Caprini."
+        },
+        {
+          "q": "¿Qué diferencia hay entre el Caprini y la escala de Wells?",
+          "a": "El Caprini estima el riesgo de desarrollar TEV para orientar la profilaxis, mientras que la escala de Wells estima la probabilidad de que un paciente ya tenga una TVP o EP para guiar el diagnóstico. No son intercambiables."
+        }
+      ]
     }
   },
   "wellsDvt": {
@@ -1573,6 +2314,25 @@
         "¿Hay motivo para iniciar tratamiento empírico?",
         "¿Qué signos de embolia pulmonar debo vigilar?",
         "¿Cuánto tiempo necesitaré tratamiento si se confirma la TVP?"
+      ]
+    },
+    "content": {
+      "overview": "La escala de Wells para trombosis venosa profunda (TVP) estima la probabilidad clínica pre-test de TVP en pacientes ambulatorios con sospecha de trombosis en las extremidades inferiores. Suma puntos por factores de riesgo y signos clínicos (cáncer activo, parálisis o inmovilización reciente de una pierna, encamamiento o cirugía mayor recientes, dolor a lo largo del sistema venoso profundo, tumefacción de toda la pierna, aumento del perímetro de la pantorrilla >3 cm, edema con fóvea, venas colaterales superficiales y antecedente de TVP), y resta 2 puntos si existe un diagnóstico alternativo igual o más probable que la TVP. Forma parte de los algoritmos diagnósticos de TVP avalados por la guía ESC 2019 de tromboembolia pulmonar y por el American College of Chest Physicians (CHEST).",
+      "interpretation": "Con el modelo dicotómico (el más utilizado), una puntuación ≤1 clasifica al paciente como TVP improbable y una puntuación ≥2 como TVP probable. En el modelo original de tres niveles, una puntuación ≤0 indica probabilidad baja, 1-2 intermedia y ≥3 alta (la puntuación puede ser negativa porque se restan puntos por el diagnóstico alternativo). En los pacientes con TVP improbable, un dímero-D negativo permite excluir la TVP con seguridad sin necesidad de ecografía; si el dímero-D es positivo o la TVP es probable, debe realizarse una ecografía de compresión de la extremidad. La escala no confirma por sí sola el diagnóstico: siempre debe combinarse con dímero-D y/o imagen.",
+      "cautions": "Validada en pacientes ambulatorios adultos con sospecha de una primera TVP de la extremidad inferior. No se ha validado de forma fiable en pacientes hospitalizados, embarazadas, usuarias de anticoagulación, sospecha de TVP de la extremidad superior ni TVP recurrente, donde su rendimiento es menor. No evalúa la probabilidad de embolia pulmonar (para ello se usa la escala de Wells para EP, distinta) ni sustituye al dímero-D ni a la imagen. Un error frecuente es aplicarla de forma aislada para descartar una TVP sin integrar el dímero-D en los pacientes de riesgo bajo/improbable.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre la escala de Wells para TVP y la de embolia pulmonar?",
+          "a": "Son dos escalas distintas con ítems y puntos propios: la de TVP evalúa la trombosis en las piernas y la de EP la sospecha de embolia pulmonar. No son intercambiables."
+        },
+        {
+          "q": "¿Qué hago si la puntuación de Wells es baja o de TVP improbable?",
+          "a": "En un paciente con TVP improbable (≤1), un dímero-D negativo excluye la TVP con seguridad y evita la ecografía; si el dímero-D es positivo, debe realizarse una ecografía de compresión."
+        },
+        {
+          "q": "¿Hay que pedir siempre una ecografía si la Wells es alta?",
+          "a": "Sí; cuando la TVP es probable (≥2) el dímero-D no basta para excluirla y debe realizarse una ecografía de compresión de la extremidad."
+        }
       ]
     }
   },
@@ -1624,6 +2384,25 @@
         "¿Qué pruebas de seguimiento necesitaré?",
         "¿Hay cambios de estilo de vida que puedan mejorar mi puntuación?"
       ]
+    },
+    "content": {
+      "overview": "La clasificación de Child-Pugh estima la gravedad y el pronóstico de la cirrosis hepática y ayuda a estratificar el riesgo de mortalidad y de complicaciones perioperatorias. Combina cinco variables: bilirrubina sérica, albúmina sérica, INR (o tiempo de protrombina), ascitis y encefalopatía hepática. Cada variable puntúa de 1 a 3 puntos, con un total de 5 a 15 puntos. Es una herramienta histórica ampliamente utilizada en hepatología; las guías de la EASL la reconocen como medida clásica de función hepática, a menudo complementada por el MELD en la evaluación para trasplante.",
+      "interpretation": "La puntuación total (5–15) se divide en tres clases. Clase A (5–6 puntos): cirrosis bien compensada, supervivencia estimada a 1 año en torno al 95–100%. Clase B (7–9 puntos): compromiso funcional significativo, supervivencia a 1 año aproximadamente del 80%. Clase C (10–15 puntos): enfermedad descompensada, supervivencia a 1 año alrededor del 45%. La clase también orienta el riesgo quirúrgico y el ajuste de dosis de fármacos con metabolismo hepático.",
+      "cautions": "Validada en pacientes con cirrosis crónica. Incluye dos componentes subjetivos (grado de ascitis y de encefalopatía) que generan variabilidad interobservador, y no contempla la función renal, factor pronóstico clave que sí recoge el MELD. La bilirrubina puede estar artificialmente elevada en colestasis o síndromes como el de Gilbert, y la albúmina y el INR pueden alterarse por causas extrahepáticas (nutrición, anticoagulación). No evalúa de forma directa la presencia de varices ni el riesgo de hemorragia por hipertensión portal, ni sustituye al MELD para la priorización en lista de trasplante.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre Child-Pugh y MELD?",
+          "a": "El Child-Pugh clasifica la cirrosis en tres clases (A, B, C) con variables clínicas y analíticas, mientras que el MELD es una puntuación continua basada en bilirrubina, INR y creatinina (y sodio en el MELD-Na) que prioriza la asignación de órganos para trasplante."
+        },
+        {
+          "q": "¿Qué significa una cirrosis Child-Pugh clase C?",
+          "a": "Indica una cirrosis descompensada con función hepática gravemente afectada y peor pronóstico, con una supervivencia estimada a 1 año en torno al 45%; suele motivar valoración para trasplante hepático."
+        },
+        {
+          "q": "¿Hay que estar en ayunas para calcular el Child-Pugh?",
+          "a": "No. Se calcula con parámetros analíticos (bilirrubina, albúmina, INR) y la evaluación clínica de ascitis y encefalopatía; no requiere ayuno específico más allá del que indique el laboratorio para la extracción."
+        }
+      ]
     }
   },
   "glasgowBlatchford": {
@@ -1652,6 +2431,25 @@
         "¿Cuándo se realizará la endoscopia?",
         "¿Qué signos de re-sangrado debo vigilar en casa?"
       ]
+    },
+    "content": {
+      "overview": "La escala de Glasgow-Blatchford (GBS) estratifica el riesgo en pacientes que se presentan con hemorragia digestiva alta e identifica a los de bajo riesgo de requerir una intervención clínica (transfusión, endoscopia terapéutica o cirugía) o de fallecer. Se calcula con datos disponibles al ingreso, sin necesidad de endoscopia: urea, hemoglobina, presión arterial sistólica, frecuencia cardíaca, melena, síncope, hepatopatía e insuficiencia cardíaca. Es útil en urgencias para decidir el alta precoz o la necesidad de ingreso. Las guías de la ESGE y del NICE recomiendan emplear el GBS en la valoración inicial pre-endoscópica.",
+      "interpretation": "La puntuación va de 0 a 23: cuanto más alta, mayor el riesgo de intervención o muerte. Un valor de 0 (o ≤1 según algunos protocolos) identifica a pacientes de muy bajo riesgo que pueden considerarse para manejo ambulatorio con endoscopia diferida, ya que la probabilidad de necesitar transfusión, hemostasia o cirugía es muy baja. Puntuaciones más altas se asocian progresivamente a mayor necesidad de intervención y justifican ingreso y endoscopia precoz. No existe un único umbral universal de alto riesgo; el valor práctico principal del GBS es su alta sensibilidad para descartar pacientes de bajo riesgo.",
+      "cautions": "Validada en adultos con hemorragia digestiva alta aguda. El GBS es una herramienta pronóstica para orientar la disposición, no diagnostica la causa del sangrado ni sustituye a la endoscopia. No debe usarse en hemorragia digestiva baja. La urea puede estar elevada por causas ajenas al sangrado (insuficiencia renal, deshidratación) y la hemoglobina inicial puede no reflejar aún la pérdida aguda, lo que puede sobreestimar o infraestimar el riesgo. Debe mantenerse el juicio clínico: un GBS bajo no excluye patología grave si la presentación es preocupante.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre el Glasgow-Blatchford y el Rockall?",
+          "a": "El Glasgow-Blatchford se aplica antes de la endoscopia y predice la necesidad de intervención, mientras que el Rockall completo incorpora hallazgos endoscópicos y se orienta más a predecir mortalidad y resangrado."
+        },
+        {
+          "q": "¿Qué puntuación de Glasgow-Blatchford permite el alta desde urgencias?",
+          "a": "Un GBS de 0 (y en algunos protocolos ≤1) identifica a pacientes de muy bajo riesgo candidatos a manejo ambulatorio con endoscopia diferida, siempre con valoración clínica individual."
+        },
+        {
+          "q": "¿Qué parámetros necesito para calcular el Glasgow-Blatchford?",
+          "a": "Urea, hemoglobina, presión arterial sistólica y frecuencia cardíaca, más la presencia de melena, síncope, hepatopatía e insuficiencia cardíaca; no requiere endoscopia."
+        }
+      ]
     }
   },
   "score2": {
@@ -1678,6 +2476,25 @@
         "¿Debo iniciar una estatina?",
         "¿Qué cifras de tensión arterial debo perseguir?",
         "¿Cuándo deberíamos reevaluar?"
+      ]
+    },
+    "content": {
+      "overview": "SCORE2 y SCORE2-OP estiman el riesgo a 10 años de eventos cardiovasculares ateroscleróticos fatales y no fatales (infarto de miocardio e ictus) en personas sin enfermedad cardiovascular establecida, diabetes o enfermedad renal crónica previas. SCORE2 se aplica a adultos de 40 a 69 años y SCORE2-OP (Older Persons) a partir de 70 años. Combinan edad, sexo, tabaquismo, presión arterial sistólica y colesterol no-HDL, calibrados por regiones de riesgo europeas (bajo, moderado, alto y muy alto). Son los algoritmos recomendados por la guía ESC 2021 de prevención cardiovascular.",
+      "interpretation": "El resultado es un porcentaje de riesgo a 10 años, interpretado según franjas de edad. En adultos <50 años: <2,5% riesgo bajo-moderado, 2,5-7,5% riesgo alto, ≥7,5% riesgo muy alto. En 50-69 años: <5% bajo-moderado, 5-10% alto, ≥10% muy alto. En ≥70 años (SCORE2-OP): <7,5% bajo-moderado, 7,5-15% alto, ≥15% muy alto. La categoría orienta la intensidad del tratamiento: en riesgo alto o muy alto se considera tratamiento hipolipemiante y de la presión arterial más intensivo, siempre dentro de una decisión compartida con el paciente.",
+      "cautions": "Validado en población europea de 40 años o más sin eventos cardiovasculares previos. No debe aplicarse a pacientes con enfermedad cardiovascular aterosclerótica establecida, diabetes mellitus, enfermedad renal crónica, hipercolesterolemia familiar o hipertensión secundaria, que ya son de alto o muy alto riesgo o disponen de herramientas específicas. Hay que elegir la tabla de la región de riesgo correcta. No estima riesgo de insuficiencia cardíaca, fibrilación auricular ni mortalidad global, y puede infraestimar el riesgo en algunos grupos (enfermedad inflamatoria crónica, origen étnico sudasiático, condicionantes socioeconómicos).",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre SCORE2 y el SCORE original?",
+          "a": "SCORE2 estima eventos cardiovasculares fatales y NO fatales a 10 años y usa colesterol no-HDL, mientras que el SCORE antiguo solo estimaba mortalidad cardiovascular. Además, SCORE2 está recalibrado por regiones de riesgo europeas."
+        },
+        {
+          "q": "¿Qué tabla de riesgo regional debo usar en España?",
+          "a": "España está clasificada como región de riesgo bajo en la calibración de SCORE2; hay que seleccionar la tabla correspondiente a esa región para obtener una estimación correcta."
+        },
+        {
+          "q": "¿Puedo usar SCORE2 en un paciente diabético?",
+          "a": "No. En diabetes deben usarse herramientas específicas como SCORE2-Diabetes; SCORE2 y SCORE2-OP están pensados para personas sin diabetes, enfermedad cardiovascular ni enfermedad renal crónica."
+        }
       ]
     }
   },
@@ -1711,6 +2528,25 @@
         "¿Qué cambios de estilo de vida son más eficaces?",
         "¿Cada cuánto revisar el riesgo?"
       ]
+    },
+    "content": {
+      "overview": "El ASCVD 10-year Risk (Pooled Cohort Equations) estima la probabilidad a 10 años de un primer evento de enfermedad cardiovascular aterosclerótica (infarto de miocardio no fatal, muerte coronaria o ictus, fatal o no) en adultos sin enfermedad cardiovascular establecida. Combina edad, sexo, raza, colesterol total y HDL, presión arterial sistólica (tratada o no), tabaquismo, diabetes y tratamiento antihipertensivo. Las ecuaciones fueron derivadas por el ACC/AHA en la guía de 2013 y sus umbrales de decisión se reafirmaron en las guías ACC/AHA de colesterol de 2018 y de prevención primaria de 2019 para orientar el inicio del tratamiento con estatinas.",
+      "interpretation": "El resultado se clasifica en cuatro bandas de riesgo a 10 años: bajo (<5%), limítrofe (5% a <7,5%), intermedio (7,5% a <20%) y alto (>=20%). En riesgo intermedio (7,5% a <20%) se recomienda, tras la conversación riesgo-beneficio, una estatina de intensidad moderada; en riesgo alto (>=20%) se recomienda estatina de alta intensidad. En la franja limítrofe (5% a <7,5%) se valora una estatina de intensidad moderada cuando hay factores potenciadores del riesgo. Estos factores (historia familiar prematura, lipoproteína(a), proteína C reactiva, índice tobillo-brazo) y el calcio coronario (CAC) ayudan a refinar la decisión y a personalizar la conversación riesgo-beneficio con el paciente.",
+      "cautions": "Las ecuaciones están validadas en adultos de 40 a 79 años sin enfermedad cardiovascular previa, derivadas en poblaciones blancas y afroamericanas de EE. UU.; tienden a sobreestimar el riesgo en poblaciones contemporáneas, europeas y de otras etnias (asiáticos, hispanos). No se aplican en prevención secundaria, en LDL >=190 mg/dL, ni sustituyen el juicio clínico. No evalúan el riesgo a corto plazo ni el riesgo de por vida, y no están validadas fuera del rango de edad ni en pacientes con enfermedad cardiovascular ya conocida.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre el ASCVD y el SCORE2 europeo?",
+          "a": "Ambos estiman el riesgo cardiovascular a 10 años en prevención primaria, pero el ASCVD es la herramienta del ACC/AHA derivada en población estadounidense, mientras que el SCORE2 es la herramienta recomendada por la guía ESC y está calibrado por regiones de riesgo europeas."
+        },
+        {
+          "q": "¿A partir de qué porcentaje se debe iniciar una estatina?",
+          "a": "La guía ACC/AHA recomienda una estatina de intensidad moderada en riesgo intermedio (7,5% a <20%) y de alta intensidad cuando el riesgo es >=20%; entre 5 y <7,5% (riesgo limítrofe) se valora individualmente según los factores potenciadores del riesgo, siempre dentro de una decisión compartida con el paciente."
+        },
+        {
+          "q": "¿Se puede usar el ASCVD si el paciente ya ha tenido un infarto?",
+          "a": "No; las Pooled Cohort Equations son solo para prevención primaria. Un paciente con enfermedad cardiovascular establecida ya es de alto riesgo y requiere tratamiento intensivo independientemente del cálculo."
+        }
+      ]
     }
   },
   "sofa": {
@@ -1736,6 +2572,25 @@
         "¿Está mejorando o empeorando respecto a ayer?",
         "¿Vamos a cambiar el tratamiento según la tendencia?",
         "¿Cuándo deberíamos hablar de objetivos de cuidados?"
+      ]
+    },
+    "content": {
+      "overview": "La escala SOFA (Sequential Organ Failure Assessment) cuantifica la gravedad de la disfunción orgánica en pacientes críticos evaluando seis sistemas: respiratorio (PaO₂/FiO₂), coagulación (plaquetas), hepático (bilirrubina), cardiovascular (presión arterial media o necesidad de vasopresores), neurológico (escala de coma de Glasgow) y renal (creatinina o diuresis). Cada sistema puntúa de 0 a 4, con un total de 0 a 24. Se emplea para monitorizar la evolución de la disfunción orgánica en la UCI y es la herramienta central de la definición Sepsis-3 (2016) avalada por SCCM/ESICM para identificar la sepsis como disfunción orgánica potencialmente mortal secundaria a infección.",
+      "interpretation": "La puntuación se obtiene sumando los puntos de cada órgano (0-4 por sistema, total 0-24); cuanto más alta, mayor disfunción y mayor mortalidad. En el contexto de Sepsis-3, un incremento agudo de ≥2 puntos respecto al SOFA basal en un paciente con infección define sepsis y se asocia a una mortalidad intrahospitalaria aproximada del 10% o superior. Puntuaciones iniciales y máximas más altas, y sobre todo un SOFA que aumenta en los primeros días de ingreso, predicen peor pronóstico; un SOFA que desciende sugiere respuesta al tratamiento. No existe un único umbral dicotómico universal de supervivencia: su valor es sobre todo evolutivo y comparativo.",
+      "cautions": "Validado en pacientes adultos críticamente enfermos, principalmente en entornos de UCI; existen versiones pediátrica y neonatal adaptadas (pSOFA, nSOFA) que no deben intercambiarse con la versión adulta. Requiere datos de laboratorio y gasometría, por lo que no es adecuado para un cribado rápido a pie de cama (para ello se usaba el qSOFA, hoy desaconsejado como herramienta de cribado aislada). El SOFA mide disfunción orgánica y gravedad, no diagnostica infección ni sepsis por sí solo ni sustituye al juicio clínico; componentes como el Glasgow pueden estar sesgados por sedación y la creatinina por enfermedad renal crónica previa.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre SOFA y qSOFA?",
+          "a": "El SOFA es una puntuación completa de 0-24 que requiere datos de laboratorio para cuantificar la disfunción de seis órganos, mientras que el qSOFA es una herramienta clínica rápida de 3 ítems (frecuencia respiratoria, alteración mental, presión arterial sistólica) pensada para cribado fuera de la UCI, hoy con un papel más limitado."
+        },
+        {
+          "q": "¿Qué significa un incremento de 2 puntos en el SOFA?",
+          "a": "En un paciente con sospecha o confirmación de infección, un aumento agudo de ≥2 puntos sobre el SOFA basal define sepsis según los criterios Sepsis-3 e identifica un riesgo de mortalidad clínicamente significativo."
+        },
+        {
+          "q": "¿Se puede usar el SOFA en niños?",
+          "a": "No directamente; la versión adulta se validó en adultos críticos. Para población pediátrica y neonatal existen adaptaciones específicas (pSOFA y nSOFA) con umbrales propios por edad."
+        }
       ]
     }
   },
@@ -1773,6 +2628,25 @@
         "¿Cuáles son los objetivos realistas de este ingreso?",
         "¿Cuándo deberíamos reevaluar?"
       ]
+    },
+    "content": {
+      "overview": "APACHE II (Acute Physiology and Chronic Health Evaluation II) es un sistema de gradación de gravedad que estima el riesgo de mortalidad hospitalaria en pacientes adultos ingresados en unidades de cuidados intensivos. Se calcula a partir de 12 variables fisiológicas agudas recogidas durante las primeras 24 horas de ingreso en la UCI (entre otras temperatura, presión arterial media, frecuencia cardíaca y respiratoria, oxigenación, pH arterial, sodio, potasio, creatinina, hematocrito, leucocitos y escala de coma de Glasgow), junto con la edad y el estado de salud crónico. La puntuación total oscila entre 0 y 71 puntos. Es una de las herramientas de referencia descritas en la literatura de medicina intensiva y empleada habitualmente para la estratificación de gravedad y la comparación de casuística entre UCIs.",
+      "interpretation": "La puntuación total combina el subtotal de fisiología aguda, los puntos por edad (de 0 a 6 según las franjas) y los puntos por enfermedad crónica grave o inmunodepresión (2 puntos si el ingreso es postoperatorio electivo, 5 puntos si es no quirúrgico o postoperatorio de urgencia). A mayor puntuación, mayor riesgo de muerte hospitalaria: de forma orientativa, puntuaciones bajas (aproximadamente 0-9) se asocian a una mortalidad estimada por debajo del 10%, mientras que puntuaciones elevadas (por encima de 25-30) se asocian a mortalidades superiores al 50-75%. La mortalidad predicha se deriva de una ecuación logística que incorpora la puntuación APACHE II y un coeficiente específico del diagnóstico de ingreso; por tanto, el porcentaje de mortalidad depende tanto del número de puntos como de la categoría diagnóstica.",
+      "cautions": "APACHE II se validó en pacientes adultos de UCI y no se aplica a población pediátrica, gestantes ni a pacientes quemados o postoperados cardíacos, en los que se utilizan modelos específicos. La puntuación debe calcularse con los peores valores de las primeras 24 horas de ingreso en la UCI y no está diseñada para cálculos repetidos ni para la monitorización diaria de la evolución. Es una herramienta de predicción poblacional para estratificación de gravedad y comparación de cohortes, no un instrumento para decidir el pronóstico o limitar el tratamiento de un paciente individual. No evalúa la respuesta al tratamiento a lo largo del ingreso ni la disfunción orgánica de manera dinámica como hacen otras escalas (p. ej., SOFA).",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre APACHE II y SOFA?",
+          "a": "APACHE II es un modelo de predicción de mortalidad calculado una sola vez con los datos de las primeras 24 horas, mientras que SOFA cuantifica y hace el seguimiento diario de la disfunción de seis sistemas orgánicos a lo largo del ingreso. Se complementan: APACHE II para la estratificación inicial y SOFA para la evolución."
+        },
+        {
+          "q": "¿Cuándo debe calcularse el APACHE II?",
+          "a": "Debe calcularse utilizando los valores fisiológicos más alterados registrados durante las primeras 24 horas del ingreso en la UCI; no se recalcula diariamente."
+        },
+        {
+          "q": "¿Una puntuación APACHE II alta significa que el paciente va a morir?",
+          "a": "No. APACHE II estima una probabilidad de mortalidad a escala poblacional, no un desenlace individual; pacientes con puntuaciones altas pueden sobrevivir y no debe usarse de forma aislada para limitar el tratamiento."
+        }
+      ]
     }
   },
   "nihss": {
@@ -1807,6 +2681,25 @@
         "¿Una trombectomía mecánica podría ayudarme?",
         "¿Qué recuperación se espera con esta gravedad?",
         "¿Cuánto tiempo se espera que esté en la unidad de ictus?"
+      ]
+    },
+    "content": {
+      "overview": "La escala NIHSS (National Institutes of Health Stroke Scale) cuantifica la gravedad del déficit neurológico en pacientes con ictus isquémico agudo mediante 11 ítems que evalúan nivel de consciencia, mirada, campos visuales, parálisis facial, fuerza de los miembros, ataxia, sensibilidad, lenguaje, disartria y extinción/inatención. Se emplea en la evaluación inicial, para orientar decisiones de trombólisis y trombectomía, y para monitorizar la evolución. Es la escala recomendada por las guías AHA/ASA para el manejo del ictus isquémico agudo.",
+      "interpretation": "La puntuación total va de 0 a 42; cuanto más alta, más grave es el déficit. Una estratificación habitual es: 0 sin síntomas; 1-4 ictus leve (minor); 5-15 moderado; 16-20 moderado-grave; 21-42 grave. Las puntuaciones altas se asocian a peor pronóstico y a mayor volumen de infarto. Una puntuación elevada (con frecuencia orientativamente en torno a 6 o más) junto con oclusión de gran vaso apoyan la consideración de trombectomía mecánica, siempre integrada con la neuroimagen y la ventana temporal.",
+      "cautions": "Validada en ictus isquémico agudo en adultos; debe ser administrada por personal entrenado y certificado para garantizar la fiabilidad interobservador. Infravalora los ictus de circulación posterior y de hemisferios no dominantes, donde déficits clínicamente relevantes pueden dar puntuaciones bajas. No es una herramienta diagnóstica: no distingue isquemia de hemorragia (se requiere neuroimagen) ni evalúa la causa, ni sustituye a la escala de discapacidad funcional (como el Rankin modificado). La sedación, la afasia previa, la intubación o el coma pueden confundir la puntuación.",
+      "faq": [
+        {
+          "q": "¿Qué se considera un ictus grave según la NIHSS?",
+          "a": "En general, puntuaciones de 16 o más indican un ictus de gravedad alta, y 21-42 se consideran graves, con peor pronóstico funcional."
+        },
+        {
+          "q": "¿Qué puntuación NIHSS se necesita para trombectomía?",
+          "a": "No hay un umbral absoluto, pero una NIHSS aproximadamente de 6 o más con oclusión de gran vaso demostrada en neuroimagen suele apoyar la trombectomía, siempre dentro de la ventana terapéutica."
+        },
+        {
+          "q": "¿La NIHSS detecta todos los ictus?",
+          "a": "No; infravalora especialmente los ictus de circulación posterior y del hemisferio no dominante, por lo que una puntuación baja no excluye un ictus relevante."
+        }
       ]
     }
   }
