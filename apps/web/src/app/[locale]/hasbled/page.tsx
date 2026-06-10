@@ -3,6 +3,7 @@ import { hasbled } from "@medcalc/calculators";
 import { HasBledForm } from "@/components/HasBledForm";
 import { buildCalcMetadata } from "@/lib/calc-metadata";
 import { CalcJsonLd } from "@/components/CalcJsonLd";
+import { CalcContent } from "@/components/CalcContent";
 
 export function generateMetadata(props: {
   params: Promise<{ locale: string }>;
@@ -32,6 +33,8 @@ export default async function HasBledPage({
       </div>
 
       <HasBledForm />
+
+      <CalcContent id="hasbled" locale={locale} />
 
       <details className="glass-panel p-4 text-sm text-slate-600 dark:text-slate-300">
         <summary className="cursor-pointer text-xs font-medium text-slate-500 dark:text-slate-400">

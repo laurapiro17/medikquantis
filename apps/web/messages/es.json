@@ -186,6 +186,25 @@
         "¿Qué controles tendré que hacer mientras tome el tratamiento?",
         "¿Cuál es mi riesgo de sangrado según la escala HAS-BLED?"
       ]
+    },
+    "content": {
+      "overview": "La escala CHA₂DS₂-VASc estima el riesgo anual de ictus isquémico en pacientes con fibrilación auricular no valvular y orienta la decisión de iniciar anticoagulación oral. Suma puntos por insuficiencia cardíaca, hipertensión, edad, diabetes, ictus o AIT previo, enfermedad vascular y sexo femenino. Es la escala de riesgo de ictus recomendada por la guía ESC 2024 de fibrilación auricular.",
+      "interpretation": "Una puntuación de 0 en hombres, o de 1 en una mujer cuyo único punto procede de su sexo, indica riesgo bajo y no se recomienda anticoagulación. Una puntuación de 1 en hombres o 2 en mujeres se sitúa en una banda intermedia en la que debe considerarse la anticoagulación (clase IIa de la ESC). A partir de 2 puntos en hombres o 3 en mujeres se recomienda la anticoagulación oral (clase I). El riesgo anual estimado de ictus asciende desde alrededor del 0,2% con una puntuación de 0 hasta cerca del 10% o más en las puntuaciones más altas.",
+      "cautions": "CHA₂DS₂-VASc se aplica solo a la fibrilación auricular no valvular. No debe usarse en la FA valvular (estenosis mitral moderada-grave o prótesis valvular mecánica), donde la anticoagulación está indicada con independencia de la puntuación. Estima solo el riesgo trombótico y no evalúa el riesgo de sangrado, que se valora aparte, por ejemplo con la escala HAS-BLED. El sexo femenino es un modificador del riesgo, no una indicación independiente: una mujer sin otros factores se maneja como un hombre con puntuación 0. La escala informa pero no sustituye el juicio clínico individualizado.",
+      "faq": [
+        {
+          "q": "¿Con qué puntuación CHA₂DS₂-VASc hay que anticoagular?",
+          "a": "La anticoagulación oral se recomienda a partir de 2 puntos en hombres y 3 en mujeres, y debe considerarse con 1 en hombres y 2 en mujeres. Una puntuación de 0 en hombres, o de 1 en una mujer cuyo único punto es su sexo, no justifica anticoagulación."
+        },
+        {
+          "q": "¿CHA₂DS₂-VASc mide el riesgo de sangrado?",
+          "a": "No. Estima solo el riesgo de ictus (trombótico). El riesgo de sangrado se evalúa aparte, por ejemplo con la escala HAS-BLED, y ambos se ponderan juntos al decidir la anticoagulación."
+        },
+        {
+          "q": "¿Puede usarse en la fibrilación auricular valvular?",
+          "a": "No. En la FA valvular — estenosis mitral moderada-grave o prótesis valvular mecánica — la anticoagulación está indicada con independencia de la puntuación, por lo que CHA₂DS₂-VASc no se aplica."
+        }
+      ]
     }
   },
   "ckdEpi2021": {
