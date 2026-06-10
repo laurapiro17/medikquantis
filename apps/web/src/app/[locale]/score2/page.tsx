@@ -3,6 +3,7 @@ import { score2 } from "@medcalc/calculators";
 import { Score2Form } from "@/components/Score2Form";
 import { buildCalcMetadata } from "@/lib/calc-metadata";
 import { CalcJsonLd } from "@/components/CalcJsonLd";
+import { CalcContent } from "@/components/CalcContent";
 
 export function generateMetadata(props: {
   params: Promise<{ locale: string }>;
@@ -32,6 +33,8 @@ export default async function Score2Page({
       </div>
 
       <Score2Form />
+
+      <CalcContent id="score2" locale={locale} />
 
       <details className="glass-panel p-4 text-sm text-slate-600 dark:text-slate-300">
         <summary className="cursor-pointer text-xs font-medium text-slate-500 dark:text-slate-400">

@@ -186,6 +186,25 @@
         "Quins controls hauré de fer mentre prengui el tractament?",
         "Quin és el meu risc de sagnat segons l'escala HAS-BLED?"
       ]
+    },
+    "content": {
+      "overview": "L'escala CHA₂DS₂-VASc estima el risc anual d'ictus isquèmic en pacients amb fibril·lació auricular no valvular i orienta la decisió d'iniciar anticoagulació oral. Suma punts per insuficiència cardíaca, hipertensió, edat, diabetis, ictus o AIT previ, malaltia vascular i sexe femení. És l'escala de risc d'ictus recomanada per la guia ESC 2024 de fibril·lació auricular.",
+      "interpretation": "Una puntuació de 0 en homes, o d'1 en una dona el punt de la qual prové només del seu sexe, indica risc baix i no es recomana anticoagulació. Una puntuació d'1 en homes o 2 en dones se situa en una banda intermèdia en què cal considerar l'anticoagulació (classe IIa de l'ESC). A partir de 2 punts en homes o 3 en dones es recomana l'anticoagulació oral (classe I). El risc anual estimat d'ictus puja des d'aproximadament el 0,2% amb una puntuació de 0 fins a prop del 10% o més en les puntuacions més altes.",
+      "cautions": "CHA₂DS₂-VASc s'aplica només a la fibril·lació auricular no valvular. No s'ha d'usar en la FA valvular (estenòsi mitral moderada-greu o pròtesi valvular mecànica), on l'anticoagulació està indicada independentment de la puntuació. Estima només el risc trombòtic i no avalua el risc de sagnat, que es valora a part, per exemple amb l'escala HAS-BLED. El sexe femení és un modificador del risc, no una indicació independent: una dona sense altres factors es maneja com un home amb puntuació 0. L'escala informa però no substitueix el judici clínic individualitzat.",
+      "faq": [
+        {
+          "q": "Amb quina puntuació CHA₂DS₂-VASc cal anticoagular?",
+          "a": "L'anticoagulació oral es recomana a partir de 2 punts en homes i 3 en dones, i cal considerar-la amb 1 en homes i 2 en dones. Una puntuació de 0 en homes, o d'1 en una dona el punt de la qual és només el seu sexe, no justifica anticoagulació."
+        },
+        {
+          "q": "CHA₂DS₂-VASc mesura el risc de sagnat?",
+          "a": "No. Estima només el risc d'ictus (trombòtic). El risc de sagnat s'avalua a part, per exemple amb l'escala HAS-BLED, i tots dos es ponderen junts en decidir l'anticoagulació."
+        },
+        {
+          "q": "Es pot usar en la fibril·lació auricular valvular?",
+          "a": "No. En la FA valvular — estenòsi mitral moderada-greu o pròtesi valvular mecànica — l'anticoagulació està indicada independentment de la puntuació, de manera que CHA₂DS₂-VASc no s'aplica."
+        }
+      ]
     }
   },
   "ckdEpi2021": {

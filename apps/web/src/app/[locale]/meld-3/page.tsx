@@ -3,6 +3,7 @@ import { meld3 } from "@medcalc/calculators";
 import { Meld3Form } from "@/components/Meld3Form";
 import { buildCalcMetadata } from "@/lib/calc-metadata";
 import { CalcJsonLd } from "@/components/CalcJsonLd";
+import { CalcContent } from "@/components/CalcContent";
 
 export function generateMetadata(props: {
   params: Promise<{ locale: string }>;
@@ -32,6 +33,8 @@ export default async function Meld3Page({
       </div>
 
       <Meld3Form />
+
+      <CalcContent id="meld-3" locale={locale} />
 
       <details className="glass-panel p-4 text-sm text-slate-600 dark:text-slate-300">
         <summary className="cursor-pointer text-xs font-medium text-slate-500 dark:text-slate-400">

@@ -3,6 +3,7 @@ import { grace } from "@medcalc/calculators";
 import { GraceForm } from "@/components/GraceForm";
 import { buildCalcMetadata } from "@/lib/calc-metadata";
 import { CalcJsonLd } from "@/components/CalcJsonLd";
+import { CalcContent } from "@/components/CalcContent";
 
 export function generateMetadata(props: {
   params: Promise<{ locale: string }>;
@@ -32,6 +33,8 @@ export default async function GracePage({
       </div>
 
       <GraceForm />
+
+      <CalcContent id="grace" locale={locale} />
 
       <details className="glass-panel p-4 text-sm text-slate-600 dark:text-slate-300">
         <summary className="cursor-pointer text-xs font-medium text-slate-500 dark:text-slate-400">
