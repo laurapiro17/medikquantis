@@ -2,6 +2,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { grace } from "@medcalc/calculators";
 import { GraceForm } from "@/components/GraceForm";
 import { buildCalcMetadata } from "@/lib/calc-metadata";
+import { CalcJsonLd } from "@/components/CalcJsonLd";
 
 export function generateMetadata(props: {
   params: Promise<{ locale: string }>;
@@ -20,6 +21,7 @@ export default async function GracePage({
 
   return (
     <div className="space-y-8">
+      <CalcJsonLd id="grace" locale={locale} />
       <div>
         <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
           {t("grace.title")}

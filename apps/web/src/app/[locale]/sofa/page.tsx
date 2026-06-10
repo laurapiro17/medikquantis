@@ -2,6 +2,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { sofa } from "@medcalc/calculators";
 import { SofaForm } from "@/components/SofaForm";
 import { buildCalcMetadata } from "@/lib/calc-metadata";
+import { CalcJsonLd } from "@/components/CalcJsonLd";
 
 export function generateMetadata(props: {
   params: Promise<{ locale: string }>;
@@ -20,6 +21,7 @@ export default async function SofaPage({
 
   return (
     <div className="space-y-8">
+      <CalcJsonLd id="sofa" locale={locale} />
       <div>
         <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
           {t("sofa.title")}
