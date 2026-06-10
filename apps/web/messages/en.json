@@ -228,6 +228,25 @@
         "Which drugs should I avoid or have dose-adjusted?",
         "How often should we reassess my kidney function?"
       ]
+    },
+    "content": {
+      "overview": "The CKD-EPI 2021 (creatinine) equation estimates the glomerular filtration rate (eGFR) in mL/min/1.73 m² from serum creatinine, age and sex, without race as a variable. It is the recommended tool for estimating kidney function and classifying chronic kidney disease (CKD). The KDIGO 2024 CKD guideline and the U.S. nephrology societies (NKF-ASN Task Force) endorse this race-free equation as the standard for eGFR calculation in clinical practice.",
+      "interpretation": "eGFR is classified into KDIGO G categories: G1 ≥90 (normal or high), G2 60-89 (mildly decreased), G3a 45-59 (mild-to-moderate), G3b 30-44 (moderate-to-severe), G4 15-29 (severe) and G5 <15 (kidney failure). An eGFR <60 sustained for ≥3 months defines CKD, as does the presence of markers of kidney damage (such as albuminuria) with eGFR ≥60. It should be staged together with albuminuria (categories A1-A3) to estimate the full risk of progression and cardiovascular events.",
+      "cautions": "Validated in adults; it should not be applied to those under 18 years (the CKiD/Schwartz equation is used instead). The estimate loses reliability in unstable kidney function (acute kidney injury), extremes of muscle mass (amputation, paraplegia, bodybuilding, cachexia, sarcopenia), pregnancy, very high- or low-protein diets, and creatine supplementation. It does not assess albuminuria or tubular damage, so a normal eGFR alone does not exclude CKD; it must always be combined with the urine albumin-to-creatinine ratio.",
+      "faq": [
+        {
+          "q": "What is the difference between CKD-EPI 2021 and the 2009 version?",
+          "a": "The 2021 version removes the race (Black) coefficient that the 2009 version included, so it gives the same result regardless of ethnic background; it may slightly lower the estimated eGFR in people previously classified as Black."
+        },
+        {
+          "q": "Do I need a 24-hour urine collection for this calculation?",
+          "a": "No. The equation requires only serum creatinine, age and sex; no urine collection or body weight is needed."
+        },
+        {
+          "q": "When should the cystatin C variant be used instead of creatinine alone?",
+          "a": "KDIGO recommends confirming with the CKD-EPI 2021 creatinine-cystatin C equation when the creatinine-based eGFR is uncertain or when a more accurate estimate is needed for important clinical decisions, such as drug dosing or donor evaluation."
+        }
+      ]
     }
   },
   "wellsPe": {
@@ -252,6 +271,25 @@
         "Which test will I have next?",
         "If PE is confirmed, what treatment will I take and for how long?",
         "Which warning signs should I watch for?"
+      ]
+    },
+    "content": {
+      "overview": "The Wells score for pulmonary embolism estimates the pretest clinical probability of pulmonary embolism in patients with suspected PE, to guide use of D-dimer testing and imaging (CT pulmonary angiography). It assigns points for clinical signs of deep vein thrombosis, an alternative diagnosis less likely than PE, heart rate above 100, recent immobilization or surgery, prior PE or DVT, hemoptysis, and active cancer. The 2019 ESC guidelines on pulmonary embolism recognize it as one of the validated clinical prediction rules for stratifying pretest probability.",
+      "interpretation": "There are two ways to apply it. In the three-tier scheme: 0-1 points indicates low probability, 2-6 points intermediate probability, and 7 or more points high probability. In the dichotomized scheme, now the most widely used: a score of 4 or less (PE unlikely) allows PE to be ruled out with a negative D-dimer, avoiding imaging; a score above 4 (PE likely) warrants CT pulmonary angiography. In the simplified model each item scores 1 point and the dichotomized threshold is 0-1 (unlikely) versus 2 or more (likely).",
+      "cautions": "It was validated in outpatients and emergency department patients with suspected PE, not in patients already hospitalized for other reasons nor as screening in asymptomatic individuals. The item \"alternative diagnosis less likely than PE\" is subjective and introduces interobserver variability. The score estimates probability but does not by itself confirm or exclude the diagnosis, nor does it assess the severity or mortality risk of confirmed PE: for that, indices such as the PESI and markers of right ventricular dysfunction are needed. It should not be used in isolation without integrating D-dimer and imaging according to the algorithm.",
+      "faq": [
+        {
+          "q": "What is the difference between the Wells score and the PERC rule?",
+          "a": "The PERC rule is applied only when clinical probability is already low, to rule out PE without even ordering a D-dimer; the Wells score instead establishes that pretest probability and decides the next diagnostic step."
+        },
+        {
+          "q": "What Wells cut-off rules out pulmonary embolism with D-dimer?",
+          "a": "Using the dichotomized scheme, a score of 4 or less (PE unlikely) combined with a negative D-dimer safely excludes PE without the need for CT pulmonary angiography."
+        },
+        {
+          "q": "Can the Wells score be used during pregnancy?",
+          "a": "It is not well validated in pregnant patients and D-dimer-based algorithms perform less well in pregnancy; in this setting adapted pathways such as the pregnancy-adapted YEARS algorithm are used instead."
+        }
       ]
     }
   },
@@ -278,6 +316,25 @@
         "Which complications should we watch for?",
         "Is there any medication that could improve my MELD?"
       ]
+    },
+    "content": {
+      "overview": "MELD 3.0 is an update of the MELD index that estimates 90-day mortality in patients with advanced chronic liver disease and sets priority for liver transplantation. It combines bilirubin, INR, creatinine, sodium and albumin, and adds sex and variable interactions to correct the underestimation of disease severity in women. In the United States, the OPTN (operated by UNOS) implemented it in 2023 as the official organ allocation criterion for candidates aged 12 and older.",
+      "interpretation": "The score ranges from 6 to 40; the higher the value, the greater the estimated 90-day mortality and the higher the transplant priority. Values near 6 indicate compensated disease with low risk, whereas scores ≥30 reflect high mortality and urgent need for transplantation. On allocation lists, a higher score confers priority over candidates with a lower score. The value is rounded to the nearest integer and capped at 40.",
+      "cautions": "Validated in candidates aged 12 and older with chronic liver disease; PELD is used for children under 12. It does not predict mortality in acute fulminant hepatitis or in specific scenarios requiring MELD exceptions (e.g., hepatocellular carcinoma, hepatopulmonary syndrome). The calculation becomes less reliable with anticoagulation that alters INR or with extreme nutritional deficits; in patients on dialysis (≥2 sessions or 24 h of continuous therapy in the prior 7 days) creatinine is automatically set to 3.0 mg/dL, and creatinine is capped at 3.0 mg/dL in all cases. It does not assess complications such as refractory ascites, encephalopathy, or quality of life, a frequent cause of clinical underestimation.",
+      "faq": [
+        {
+          "q": "What is the difference between MELD-Na and MELD 3.0?",
+          "a": "MELD 3.0 adds albumin and sex and incorporates interactions between variables, which improves mortality prediction and corrects the historical disadvantage of women compared with MELD-Na."
+        },
+        {
+          "q": "What is the minimum MELD 3.0 to be listed for transplantation?",
+          "a": "There is no single universal threshold, but referral for evaluation is often considered from a score of about 15, where the benefit of transplantation outweighs the surgical risk; recent MELD 3.0 data place that survival benefit as low as a score of about 12."
+        },
+        {
+          "q": "Does sex affect the MELD 3.0 score?",
+          "a": "Yes; the model adds points for female sex (approximately 1.33) to offset the fact that creatinine tends to underestimate renal dysfunction in women, reducing inequity in access to transplantation."
+        }
+      ]
     }
   },
   "perc": {
@@ -303,6 +360,25 @@
         "Which warning signs should I keep in mind if I go home?",
         "When should I come back if symptoms return?"
       ]
+    },
+    "content": {
+      "overview": "The PERC Rule (Pulmonary Embolism Rule-out Criteria) is a set of 8 clinical criteria that, in patients with a low pre-test probability of pulmonary embolism (PE), allows PE to be ruled out without ordering a D-dimer or imaging. The 8 criteria are: age <50 years, heart rate <100/min, SaO₂ ≥95% on room air, no hemoptysis, no estrogen use, no surgery or trauma requiring hospitalization in the prior 4 weeks, no prior DVT or PE, and no unilateral leg swelling. It was derived by Kline et al. (2004) and is endorsed by the American College of Physicians (ACP) and incorporated by the European Society of Cardiology (ESC) as an option in patients with low clinical suspicion.",
+      "interpretation": "The rule applies only after clinical judgment has already established a LOW pre-test probability of PE (for example, low-risk clinical gestalt or a Wells score ≤4, i.e. \"PE unlikely\"). If all 8 criteria are met (PERC negative), the probability of PE is low enough (<2%) to rule it out without further testing. If any of the 8 criteria is not met (PERC positive), PE cannot be excluded and workup proceeds with D-dimer and, depending on the result, imaging (CT pulmonary angiography or V/Q scan). PERC is not scored additively: a single criterion being present makes it positive.",
+      "cautions": "PERC is validated only in low-risk outpatient emergency department patients; it should not be applied in populations with high PE prevalence or in hospitalized patients. It is not valid as a universal screening tool: applying it to patients with intermediate or high pre-test probability can miss PE. Use caution in populations with baseline tachycardia, pregnant patients (estrogen criterion and altered physiology), or patients with risk factors not captured by the criteria. PERC does not diagnose PE or assess its severity; it is solely a rule-out tool in low-risk patients.",
+      "faq": [
+        {
+          "q": "When can I use the PERC rule?",
+          "a": "Only after you have judged the patient to have a low clinical probability of PE (low-risk gestalt or a Wells score ≤4, i.e. \"PE unlikely\") in an emergency department setting. If probability is high, PERC does not apply."
+        },
+        {
+          "q": "If PERC is negative, do I still need a D-dimer?",
+          "a": "No. If all 8 criteria are met in a low-risk patient, the probability of PE is low enough to rule it out without a D-dimer or imaging, avoiding unnecessary testing."
+        },
+        {
+          "q": "How many criteria can fail for PERC to be positive?",
+          "a": "None. The rule is negative only when all 8 criteria are met simultaneously; the presence of even one criterion makes it positive and requires further workup."
+        }
+      ]
     }
   },
   "qsofa": {
@@ -323,6 +399,25 @@
         "Do I have an infection? Where could it be?",
         "Do I need a full blood workup or cultures?",
         "Which warning signs should I watch for?"
+      ]
+    },
+    "content": {
+      "overview": "The qSOFA (quick Sepsis-related Organ Failure Assessment) is a rapid bedside tool to identify patients with suspected infection who are at higher risk of poor outcomes (in-hospital mortality or prolonged ICU stay). It assesses three simple clinical criteria with no laboratory tests required: respiratory rate, mental status, and systolic blood pressure. It was introduced by the Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3, 2016, JAMA), endorsed by the SCCM and ESICM, as an alerting tool outside the ICU.",
+      "interpretation": "One point is assigned for each of the three criteria: respiratory rate ≥ 22 breaths/min, altered mental status (Glasgow Coma Scale < 15), and systolic blood pressure ≤ 100 mmHg. The score ranges from 0 to 3. A qSOFA ≥ 2 identifies patients with suspected infection at greater risk of mortality and adverse outcomes, and should prompt escalation of monitoring, assessment of organ dysfunction with the full SOFA score, and early initiation of treatment. A score of 0 or 1 does not rule out sepsis or severe infection.",
+      "cautions": "Validated in adult patients with suspected infection, primarily outside the ICU (emergency department and ward). It is a prognostic screening tool, not a diagnostic one: it does not define sepsis on its own and does not replace clinical judgment or the full SOFA score. It has limited sensitivity, so a low qSOFA does not exclude severe infection and must not be used to rule out sepsis or to delay treatment. The Surviving Sepsis Campaign 2021 guidelines recommend against using qSOFA as a single screening tool compared with systems such as SIRS, NEWS, or MEWS.",
+      "faq": [
+        {
+          "q": "What does a qSOFA score of 2 or more mean?",
+          "a": "It indicates that a patient with suspected infection is at increased risk of in-hospital mortality and adverse outcomes. Monitoring should be escalated, organ dysfunction assessed with the full SOFA score, and early treatment started."
+        },
+        {
+          "q": "What is the difference between qSOFA and SOFA?",
+          "a": "SOFA is a full six-system organ-dysfunction score requiring laboratory data, used mainly in the ICU. qSOFA is a rapid three-criteria clinical version, without lab tests, designed for bedside alerting outside the ICU."
+        },
+        {
+          "q": "Does a negative qSOFA rule out sepsis?",
+          "a": "No. qSOFA has limited sensitivity; a score of 0 or 1 does not exclude severe infection or sepsis and should never be used to delay assessment or treatment when clinical suspicion is high."
+        }
       ]
     }
   },
@@ -347,6 +442,25 @@
         "Am I on the complete four-pillar combination?",
         "Would I benefit from a device such as a CRT or an ICD?",
         "Should we consider a referral to a heart-failure unit?"
+      ]
+    },
+    "content": {
+      "overview": "The NYHA (New York Heart Association) Functional Classification grades the severity of heart failure symptoms based on the limitation of physical activity and the onset of dyspnea, fatigue, or palpitations. It is assigned clinically, without the need for additional testing, and is used to stratify patients, guide treatment intensity, and monitor therapeutic response over time. It is the symptom classification recommended by the 2021 ESC guidelines for acute and chronic heart failure and by the 2022 AHA/ACC/HFSA guidelines.",
+      "interpretation": "Class I: no limitation of physical activity; ordinary activity does not cause symptoms. Class II: slight limitation; comfortable at rest, but ordinary physical activity causes dyspnea, fatigue, or palpitations. Class III: marked limitation; comfortable at rest, but less-than-ordinary activity already provokes symptoms. Class IV: unable to carry out any physical activity without discomfort; symptoms occur at rest or with minimal exertion. A higher class is associated with worse prognosis and higher mortality, and many therapeutic indications (for example, certain devices or drugs) are defined according to NYHA class.",
+      "cautions": "The classification was developed and validated in patients with heart failure and is not applicable as a diagnostic tool in an asymptomatic population. It is a subjective assessment with substantial inter-observer variability and low reproducibility, and it may fluctuate depending on the day or the moment of evaluation. It does not measure ejection fraction, ventricular function, natriuretic peptides, or the underlying cause of heart failure, and it should not be confused with the AHA/ACC stages A-D, which reflect the structural progression of disease and are not reversible.",
+      "faq": [
+        {
+          "q": "What is the difference between NYHA class and the AHA/ACC stages A-D?",
+          "a": "NYHA class describes current symptoms and can improve or worsen with treatment, whereas the AHA/ACC stages A-D reflect the structural progression of disease and only advance, never regress."
+        },
+        {
+          "q": "Can NYHA class be reversed with treatment?",
+          "a": "Yes; unlike structural staging, functional class can improve with optimal heart failure therapy and worsen with decompensation."
+        },
+        {
+          "q": "Is any test needed to assign NYHA class?",
+          "a": "No; it is assigned solely from the history and clinical assessment of functional limitation, without the need for echocardiography or laboratory work."
+        }
       ]
     }
   },
@@ -373,6 +487,25 @@
         "When are you planning the angiogram?",
         "Which medications will I take in the next days, and why?",
         "How can I recognise if my symptoms get worse?"
+      ]
+    },
+    "content": {
+      "overview": "The TIMI Risk Score for unstable angina / NSTEMI estimates the risk of adverse events at 14 days in patients with non-ST-elevation acute coronary syndrome. It awards 1 point for each of 7 criteria: age ≥65 years, ≥3 coronary artery disease risk factors, known coronary disease (stenosis ≥50%), aspirin use in the prior 7 days, ≥2 anginal episodes in 24 hours, ST-segment deviation ≥0.5 mm, and elevated cardiac biomarkers. It was derived from the TIMI 11B and ESSENCE trials (Antman et al., 2000) and is recognized by the ESC and ACC/AHA guidelines as a risk-stratification tool in NSTE-ACS.",
+      "interpretation": "The score ranges from 0 to 7. It estimates the 14-day composite risk of all-cause death, new or recurrent myocardial infarction, and severe recurrent ischemia requiring urgent revascularization. Risk rises continuously: 0–2 points reflect low risk (about 5–8%), 3–4 points intermediate risk (roughly 13–20%), and 5–7 points high risk (up to about 40% at a score of 6–7). A higher score supports an early invasive strategy and more intensive antithrombotic therapy.",
+      "cautions": "It was validated in patients with unstable angina or NSTEMI; it does not apply to STEMI or to undifferentiated chest pain in the emergency department, where tools such as HEART are preferable. It is a population-level risk-stratification tool, not a diagnostic rule-out: a low score does not safely exclude acute coronary syndrome and must not replace clinical judgment, serial troponins, or the ECG. It does not assess bleeding risk and does not by itself guide anticoagulant dosing.",
+      "faq": [
+        {
+          "q": "What are the 7 variables in the TIMI Risk Score for UA/NSTEMI?",
+          "a": "Age ≥65 years, ≥3 coronary risk factors, known coronary disease (≥50% stenosis), aspirin use in the prior 7 days, ≥2 anginal episodes in 24 h, ST-segment deviation ≥0.5 mm, and positive cardiac biomarkers. Each criterion scores 1 point."
+        },
+        {
+          "q": "What TIMI score is considered high risk?",
+          "a": "A score of 5 to 7 indicates high risk of adverse events at 14 days and supports an early invasive strategy; 0–2 is considered low risk and 3–4 intermediate risk."
+        },
+        {
+          "q": "What is the difference between the TIMI and GRACE scores?",
+          "a": "Both stratify risk in NSTE-ACS, but GRACE incorporates continuous variables (heart rate, blood pressure, creatinine, Killip class) and offers superior discrimination for mortality; TIMI is simpler and faster to apply at the bedside."
+        }
       ]
     }
   },
@@ -406,6 +539,25 @@
         "When will the angiogram be done and why now?",
         "What treatments will I need afterwards?",
         "When can I go home and with what precautions?"
+      ]
+    },
+    "content": {
+      "overview": "The GRACE Score (Global Registry of Acute Coronary Events) estimates in-hospital and 6-month mortality risk in patients with acute coronary syndrome (ACS), covering both ST-elevation and non-ST-elevation presentations. It combines eight variables: age, heart rate, systolic blood pressure, serum creatinine, Killip class, cardiac arrest at admission, ST-segment deviation, and elevated cardiac necrosis biomarkers. The ESC ACS guideline (2023) recommends it for risk stratification and to guide the timing of an invasive strategy in non-ST-elevation ACS.",
+      "interpretation": "The score maps to risk categories. For in-hospital mortality, a GRACE ≤108 indicates low risk (<1%), 109-140 intermediate risk (1-3%) and >140 high risk (>3%). For 6-month mortality, ≤88 is low risk (<3%), 89-118 intermediate (3-8%) and >118 high (>8%). In non-ST-elevation ACS, a GRACE >140 identifies high-risk patients in whom an early invasive strategy (within 24 hours) is recommended.",
+      "cautions": "It was derived and validated in a large international cohort of patients with confirmed ACS; it is not validated for undifferentiated chest pain or to rule out ACS in the emergency department. It is a prognostic mortality tool, not a diagnostic one: it does not confirm or exclude infarction, does not assess bleeding risk (a dedicated score such as CRUSADE is needed for that), and does not by itself dictate revascularization. The GRACE 2.0 version extends estimates to 1-3 years and can substitute variables such as creatinine or Killip class with equivalents when these are unavailable.",
+      "faq": [
+        {
+          "q": "What is the difference between the GRACE Score and the TIMI Score?",
+          "a": "Both stratify risk in ACS, but GRACE has stronger discriminative power for mortality and uses continuous variables (age, heart rate, blood pressure, creatinine), whereas TIMI is simpler and based on dichotomous points."
+        },
+        {
+          "q": "Does a high GRACE Score mean urgent catheterization is needed?",
+          "a": "A GRACE >140 in non-ST-elevation ACS favors an early invasive strategy within 24 hours, but the final decision is integrated with the clinical picture, hemodynamic stability and other risk factors."
+        },
+        {
+          "q": "Is the GRACE Score useful for patients with ST-elevation myocardial infarction (STEMI)?",
+          "a": "Yes, GRACE estimates mortality in both ST-elevation and non-ST-elevation ACS; in STEMI it adds prognostic information even though immediate reperfusion is already indicated by definition."
+        }
       ]
     }
   },
@@ -456,6 +608,25 @@
         "Should I come back if the pain returns?",
         "When will I have my next follow-up?"
       ]
+    },
+    "content": {
+      "overview": "The HEART Score estimates the 6-week risk of major adverse cardiac events (MACE: myocardial infarction, revascularization, or death) in adult patients presenting to the emergency department with chest pain and suspected acute coronary syndrome. It sums points (0, 1, or 2 each) across five domains: History, ECG, Age, Risk factors, and Troponin, for a total range of 0 to 10. Developed by Six and Backus, it is one of the most extensively validated risk-stratification tools for undifferentiated chest pain in the emergency setting.",
+      "interpretation": "The total score stratifies patients into three bands. Low risk (0-3 points): approximately 1-2% 6-week MACE risk, compatible with early discharge and outpatient management in many protocols. Moderate risk (4-6 points): intermediate risk (around 12-17%), warranting observation, serial troponins, and further testing. High risk (7-10 points): elevated risk (around 50-65%), favoring early invasive management and admission. Many modern protocols combine HEART with serial troponins (the HEART Pathway) to refine safe discharge decisions.",
+      "cautions": "Validated in adults with acute non-traumatic chest pain in the emergency department with suspected ACS; it should not be used in ST-elevation myocardial infarction (STEMI), hemodynamic instability, or an obvious non-cardiac cause, which require immediate action regardless of the score. It is not a diagnostic tool: it neither confirms nor excludes ACS on its own, does not assess non-coronary causes of chest pain (pulmonary embolism, aortic dissection, pneumothorax), and depends on clinical judgment and a reliable troponin assay. Apply it cautiously in young patients with atypical pain or when high-sensitivity troponin is interpreted using assay-specific thresholds.",
+      "faq": [
+        {
+          "q": "What does a low HEART Score of 0 to 3 mean?",
+          "a": "It indicates a low 6-week MACE risk of roughly 1-2%, and in many protocols supports early discharge with outpatient follow-up, ideally after negative serial troponins."
+        },
+        {
+          "q": "What is the difference between the HEART Score and the HEART Pathway?",
+          "a": "The HEART Score is the 0-to-10 points scale; the HEART Pathway adds a second serial troponin (e.g., at 0 and 3 hours) to more safely identify low-risk patients suitable for discharge."
+        },
+        {
+          "q": "Can the HEART Score rule out a heart attack?",
+          "a": "Not on its own. It is a risk-stratification tool, not a diagnostic test; a low score lowers the probability of MACE but does not exclude ACS, and it must always be combined with troponins and clinical judgment."
+        }
+      ]
     }
   },
   "ehra": {
@@ -481,6 +652,25 @@
         "Would I benefit from cardioversion or ablation?",
         "How can I recognise if my symptoms get worse?"
       ]
+    },
+    "content": {
+      "overview": "The EHRA (European Heart Rhythm Association) symptom scale, in its modified version (mEHRA), classifies the intensity of atrial fibrillation-related symptoms and their impact on the patient's daily activity. It does not estimate thromboembolic or bleeding risk; rather, it standardizes symptom burden to guide rhythm-control decisions and monitor treatment response. It is the symptom-quantification tool recommended by the ESC atrial fibrillation guideline and is embedded within the structured approach to AF management.",
+      "interpretation": "The score assigns one of four classes. EHRA 1: no symptoms. EHRA 2a: mild symptoms, normal daily activity not affected. EHRA 2b: moderate symptoms, normal daily activity not affected but the patient is troubled by symptoms. EHRA 3: severe symptoms, normal daily activity affected. EHRA 4: disabling symptoms, normal daily activity discontinued. The key distinction between 2a and 2b is whether symptoms trouble the patient; between 2b and 3, whether they objectively affect activity. A class of 2b or higher generally supports a rhythm-control strategy.",
+      "cautions": "The scale has been validated in adult patients with atrial fibrillation and measures only symptoms attributable to AF (palpitations, dyspnea, fatigue, dizziness, chest pain). It is a subjective, interview-dependent assessment, not an objective instrument. A frequent error is attributing to AF symptoms actually caused by comorbidities (heart failure, pulmonary disease, anemia). It does not assess stroke or bleeding risk and does not replace CHA₂DS₂-VASc or HAS-BLED, nor does it by itself guide the decision to anticoagulate.",
+      "faq": [
+        {
+          "q": "What is the difference between EHRA 2a and 2b?",
+          "a": "In both, normal daily activity is preserved, but in 2a symptoms are mild and not bothersome, whereas in 2b they are moderate and the patient is troubled by them."
+        },
+        {
+          "q": "Is the EHRA scale used to decide on anticoagulation?",
+          "a": "No. The EHRA scale only quantifies symptoms; the decision to anticoagulate is based on stroke risk measured with CHA₂DS₂-VASc."
+        },
+        {
+          "q": "What is the modified mEHRA version?",
+          "a": "It is the current version that splits class 2 into 2a and 2b based on whether symptoms trouble the patient, and it is the one recommended by the ESC guideline."
+        }
+      ]
     }
   },
   "orbit": {
@@ -503,6 +693,25 @@
         "Can my antiplatelet be stopped, or is it essential?",
         "Do I have anaemia? Should it be treated before starting anticoagulation?",
         "When should we recalculate my bleeding risk?"
+      ]
+    },
+    "content": {
+      "overview": "The ORBIT score estimates the risk of major bleeding in patients with atrial fibrillation treated with oral anticoagulation (vitamin K antagonists or direct oral anticoagulants). It scores five variables: older age (>74 years), low haemoglobin or anaemia, history of bleeding, renal impairment (estimated GFR <60 ml/min) and concomitant antiplatelet therapy. It was derived and validated in the ORBIT-AF cohort and shows better calibration than some older scores. The 2024 ESC guideline on atrial fibrillation references it among tools for quantifying bleeding risk, with the emphasis on identifying and correcting modifiable risk factors rather than withholding anticoagulation.",
+      "interpretation": "The score ranges from 0 to 7 points. Points are assigned as follows: age >74 years 1, low haemoglobin/anaemia 2, history of bleeding 2, renal impairment (GFR <60) 1, and concomitant antiplatelet therapy 1. It stratifies into three categories: low risk (0-2 points), intermediate risk (3 points) and high risk (4-7 points), with rising rates of major bleeding per 100 patient-years across the bands. A high score does not contraindicate anticoagulation: it should prompt correction of modifiable factors (anaemia, unnecessary antiplatelet, renal function) and closer follow-up.",
+      "cautions": "It was validated in patients with atrial fibrillation who were candidates for or already receiving anticoagulation; it should not be applied to non-AF populations or used as an absolute rule to deny anticoagulation. It does not estimate stroke risk or the net benefit of anticoagulation, which must be assessed independently (for example with CHA₂DS₂-VASc). The most frequent misuse is using a high bleeding score to avoid anticoagulating a patient with a clear indication, when the correct approach is to address modifiable factors and reassess periodically.",
+      "faq": [
+        {
+          "q": "What is the difference between ORBIT and HAS-BLED?",
+          "a": "Both estimate bleeding risk in anticoagulated AF, but ORBIT incorporates objective laboratory parameters (haemoglobin/anaemia and renal function) and shows good calibration; HAS-BLED includes variables such as uncontrolled hypertension and labile INR. They can be used in a complementary way."
+        },
+        {
+          "q": "Does a high ORBIT score mean anticoagulation should be stopped?",
+          "a": "No. A high risk does not contraindicate anticoagulation; it should prompt correction of modifiable factors (anaemia, unnecessary antiplatelet) and closer monitoring, while continuing anticoagulation if indicated by stroke risk."
+        },
+        {
+          "q": "Which ORBIT values define high risk?",
+          "a": "A score of 0-2 indicates low risk, 3 intermediate risk and 4-7 high risk of major bleeding, with increasing rates across each category."
+        }
       ]
     }
   },
@@ -530,6 +739,25 @@
         "Which of my risk factors can I reduce (blood pressure, drugs, alcohol)?",
         "How often should we review my bleeding risk?",
         "What bleeding warning signs should I watch for?"
+      ]
+    },
+    "content": {
+      "overview": "The HAS-BLED score estimates the risk of major bleeding in patients with atrial fibrillation who are candidates for, or already receiving, oral anticoagulation. It assigns one point for each of the following: uncontrolled hypertension (HAS, systolic blood pressure above 160 mmHg), abnormal renal or liver function (Abnormal, one point each), prior stroke (Stroke), bleeding history or predisposition (Bleeding), labile INR (Labile, applicable only to patients on vitamin K antagonists), elderly age over 65 years (Elderly), and concomitant antiplatelet or NSAID drugs or alcohol use (Drugs/alcohol, one point each). The ESC 2024 guidelines on atrial fibrillation recommend assessing and correcting modifiable bleeding risk factors but advise against using the score in isolation to withhold anticoagulation.",
+      "interpretation": "The score ranges from 0 to 9 points. A value of 0 to 2 is considered low-to-moderate bleeding risk, whereas a score of 3 or higher indicates high risk and identifies patients who warrant caution, closer clinical follow-up, and active correction of modifiable factors. A high HAS-BLED score is not in itself a contraindication to anticoagulation: it flags the need for vigilance, not treatment withdrawal.",
+      "cautions": "The score was validated in patients with atrial fibrillation, and the labile INR component applies only to those on vitamin K antagonists, not to direct oral anticoagulants. Its purpose is to identify and correct modifiable risk factors, not to exclude anticoagulation in patients who have an indication for it. The most frequent misuse is applying it to deny treatment; it should always be interpreted alongside embolic risk (CHA₂DS₂-VASc), as it does not assess stroke risk or the net clinical benefit of anticoagulation.",
+      "faq": [
+        {
+          "q": "What does a HAS-BLED score of 3 or more mean?",
+          "a": "It indicates high bleeding risk. It does not contraindicate anticoagulation, but it calls for correcting modifiable factors and closer clinical follow-up."
+        },
+        {
+          "q": "Should HAS-BLED be used to decide not to anticoagulate?",
+          "a": "No. A high score is not a reason to withhold anticoagulation; it is used to identify and correct bleeding risk factors and to intensify monitoring."
+        },
+        {
+          "q": "What is the difference between HAS-BLED and CHA₂DS₂-VASc?",
+          "a": "CHA₂DS₂-VASc estimates stroke risk and guides whether to anticoagulate; HAS-BLED estimates bleeding risk. They are used together, not as mutually exclusive tools."
+        }
       ]
     }
   },
@@ -562,6 +790,25 @@
         "Do I need to be admitted to hospital?",
         "Which antibiotics should I take and for how long?",
         "What signs of worsening should I watch for at home?"
+      ]
+    },
+    "content": {
+      "overview": "The CURB-65 score estimates the severity of community-acquired pneumonia (CAP) and guides the decision between outpatient treatment, hospital admission, or assessment for intensive care. It assigns one point to each of five items: new-onset confusion, urea >7 mmol/L (BUN >19 mg/dL), respiratory rate ≥30/min, low blood pressure (systolic <90 mmHg or diastolic ≤60 mmHg), and age ≥65 years. It is a stratification tool recommended by the British Thoracic Society (BTS); the ATS/IDSA CAP guideline, by contrast, preferentially recommends the Pneumonia Severity Index (PSI) for the admission decision.",
+      "interpretation": "The score ranges from 0 to 5 and correlates with increasing 30-day mortality. A score of 0-1 indicates low risk and usually allows outpatient treatment. A score of 2 indicates intermediate risk and suggests considering hospital admission or close observation. A score of 3-5 indicates high risk, generally warranting admission, and with 4-5 points intensive care unit assessment should be considered. The CRB-65 variant, which omits urea, is useful in primary care when laboratory testing is unavailable.",
+      "cautions": "It was validated in adults with community-acquired pneumonia and does not apply to hospital-acquired or ventilator-associated pneumonia or to immunocompromised patients. It is a decision aid, not a substitute for clinical judgement: it may underestimate risk in young patients without comorbidities who are already severely ill, and it does not account for hypoxaemia, radiographic extent, decompensated comorbidities, or social support. It does not assess oxygenation (SpO₂/PaO₂), which is why it is often complemented with oxygen saturation and additional criteria.",
+      "faq": [
+        {
+          "q": "What is the difference between CURB-65 and CRB-65?",
+          "a": "CRB-65 omits urea and scores from 0 to 4; it is intended for primary care or settings without immediate bloodwork. CURB-65 includes urea and is more common in hospital emergency departments."
+        },
+        {
+          "q": "What CURB-65 score requires hospital admission?",
+          "a": "A score of 2 prompts consideration of admission or observation, and 3 or more generally indicates admission; with 4-5 points the intensive care unit should be considered."
+        },
+        {
+          "q": "Can CURB-65 be used to decide ICU admission?",
+          "a": "It offers guidance (scores of 4-5 indicate high risk) but was not specifically designed for that decision; the ATS/IDSA major and minor criteria are used for ICU triage."
+        }
       ]
     }
   },
@@ -606,6 +853,25 @@
         "What signs of worsening will be monitored?",
         "When can the family see the patient?"
       ]
+    },
+    "content": {
+      "overview": "The Glasgow Coma Scale (GCS) is the standard tool for quantifying level of consciousness in patients with acute neurological impairment, particularly after traumatic brain injury. It grades three independent components —eye opening (1-4), verbal response (1-5) and motor response (1-6)— and sums them into a total score ranging from 3 to 15. It is used for initial assessment and serial monitoring in the emergency department, prehospital care and critical care units, and is a core component of severity classifications such as Advanced Trauma Life Support (ATLS) and the Brain Trauma Foundation guidelines.",
+      "interpretation": "The total score ranges from 3 (deep coma or no response) to 15 (fully awake and oriented). Conventionally, 13-15 indicates mild impairment, 9-12 moderate and ≤8 severe; a score of ≤8 generally identifies the comatose patient and is the classic threshold for considering definitive airway control (intubation). The score should always be documented broken down by component (e.g. E3V4M5) rather than as the total alone, since the same total can correspond to different clinical pictures; a serial drop of ≥2 points indicates neurological deterioration and warrants urgent reassessment.",
+      "cautions": "The GCS was validated in adults with traumatic brain injury; infants and young children require the adapted pediatric version. Reliability falls with sedation, intoxication, hypoglycemia, hypoxemia, pharmacological paralysis, intubation (which prevents the verbal response), aphasia or periocular injury preventing eye opening; these factors must be recorded as non-assessable. It is not a diagnostic or lesion-localizing tool and does not replace a full neurological examination (pupils, focal deficits, brainstem signs) or neuroimaging; a frequent misuse is making decisions on the total alone without considering context or the component breakdown.",
+      "faq": [
+        {
+          "q": "What Glasgow Coma Scale score means a patient needs intubation?",
+          "a": "A total score of ≤8 is the classic threshold for considering definitive airway protection, but the decision must be individualized based on the trend, the ability to protect the airway and the overall clinical context."
+        },
+        {
+          "q": "What are the minimum and maximum Glasgow Coma Scale scores?",
+          "a": "The minimum is 3 (no response in any of the three components) and the maximum is 15 (fully awake and oriented). There is no score of 0."
+        },
+        {
+          "q": "How is traumatic brain injury severity classified by GCS?",
+          "a": "Conventionally, 13-15 is considered mild, 9-12 moderate and 3-8 severe, always interpreted together with clinical findings and neuroimaging."
+        }
+      ]
     }
   },
   "centor": {
@@ -635,6 +901,25 @@
         "How long until I am no longer contagious?",
         "When should I return if symptoms worsen?"
       ]
+    },
+    "content": {
+      "overview": "The Centor score, in its McIsaac-modified version, estimates the probability that acute pharyngitis is caused by group A streptococcus (Streptococcus pyogenes) and guides the decision to perform diagnostic testing or start antibiotics. It adds points for absence of cough, tonsillar exudate or swelling, tender anterior cervical lymphadenopathy, fever above 38 °C, and age (the McIsaac criterion adds an age adjustment). It is used in patients with acute sore throat and is endorsed by guidelines such as the IDSA (Infectious Diseases Society of America) as a tool to select who should undergo microbiological testing.",
+      "interpretation": "Each criterion adds 1 point: absence of cough, tonsillar exudate/swelling, tender anterior cervical lymphadenopathy, and temperature >38 °C. The McIsaac age adjustment adds +1 point for ages 3-14, 0 points for 15-44, and −1 point for ≥45 years, giving a total range of −1 to 5. A low score (0-1) indicates very low risk of streptococcal infection and generally requires neither testing nor antibiotics. An intermediate score (2-3) justifies a rapid antigen test or culture, treating only if positive. A high score (4-5) carries the highest probability of streptococcus, but under the IDSA microbiological confirmation (rapid test or culture) is still required before treatment; empiric treatment without confirmation is endorsed only by some other guidelines in selected settings.",
+      "cautions": "Validated mainly in patients with acute pharyngitis, both adults and children (the McIsaac adjustment extends pediatric use from age 3). It should not be applied in children under 3 years, where group A streptococcus is uncommon and presentation atypical. The score estimates probability, it does not confirm a diagnosis: a high score does not replace microbiological testing to guide antibiotics, and it does not assess complications, other causes of pharyngitis (viral, mononucleosis, gonococcal), or the patient's immune status. In children and adolescents with a negative rapid antigen test, the IDSA recommends a confirmatory throat culture. A frequent misuse is prescribing antibiotics based on the score alone without confirmation.",
+      "faq": [
+        {
+          "q": "What is the difference between the Centor score and the McIsaac score?",
+          "a": "The original Centor score has four clinical criteria; the McIsaac modification adds an age adjustment (+1 for ages 3-14, 0 for 15-44, −1 for ≥45), which makes it applicable to the pediatric population as well."
+        },
+        {
+          "q": "At what Centor/McIsaac score should antibiotics be given?",
+          "a": "The score alone does not indicate antibiotics: with 0-1 points neither testing nor treatment is needed, and with 2 or more points a rapid test or culture is recommended, treating only microbiologically confirmed cases."
+        },
+        {
+          "q": "Can the Centor score diagnose strep throat?",
+          "a": "No: it only estimates the probability of group A streptococcal infection to decide who should be tested; confirmatory diagnosis requires a rapid antigen test or throat culture."
+        }
+      ]
     }
   },
   "calciumCorrected": {
@@ -662,6 +947,25 @@
         "Do any of my medicines change calcium levels?",
         "Should I change my diet or supplements?"
       ]
+    },
+    "content": {
+      "overview": "Albumin-corrected calcium estimates the total serum calcium a patient would have if their albumin were normal, because a substantial fraction of circulating calcium is bound to albumin. It is used in the setting of hypoalbuminemia (liver disease, nephrotic syndrome, critical illness, malnutrition), where measured total calcium underestimates true calcium and can mask hypo- or hypercalcemia. The classic Payne formula adds 0.8 mg/dL of calcium for every 1 g/dL of albumin below 4.0 g/dL (equivalent to +0.02 mmol/L for every 1 g/L below 40 g/L).",
+      "interpretation": "The corrected value is interpreted against the usual total calcium reference range: normal is approximately 8.5-10.2 mg/dL (2.12-2.55 mmol/L). A corrected calcium below this range suggests hypocalcemia and above it hypercalcemia, even when the measured total calcium appears normal in the presence of low albumin. The correction does not change the diagnostic threshold, only the figure compared against it; for clinically relevant or discordant values, confirm with ionized calcium.",
+      "cautions": "The Payne correction was derived in specific populations and has limited reliability in advanced chronic kidney disease, pH disturbances (acidosis and alkalosis alter the ionized fraction), hyperphosphatemia, myeloma, or massive transfusion. It does not replace ionized calcium, which is the reference measure of the biologically active fraction and is preferred in the critically ill patient or when the clinical decision is critical. The result only adjusts for albumin and does not assess PTH, vitamin D, or the underlying cause of the calcium disorder.",
+      "faq": [
+        {
+          "q": "What is the formula for albumin-corrected calcium?",
+          "a": "Corrected calcium (mg/dL) = measured total calcium + 0.8 × (4.0 − albumin in g/dL). In SI units: calcium (mmol/L) + 0.02 × (40 − albumin in g/L)."
+        },
+        {
+          "q": "When should I use corrected calcium instead of total calcium?",
+          "a": "When the patient has hypoalbuminemia, because measured total calcium underestimates true calcium and can hide a genuine hypo- or hypercalcemia."
+        },
+        {
+          "q": "Is ionized calcium more reliable than corrected calcium?",
+          "a": "Yes. Ionized calcium directly measures the biologically active fraction and is the reference standard, especially in critically ill patients, pH disturbances, or advanced kidney disease."
+        }
+      ]
     }
   },
   "sodiumCorrected": {
@@ -688,6 +992,25 @@
         "What is causing my high glucose right now?",
         "Do I need extra fluids or insulin?",
         "What signs of complications should I watch for?"
+      ]
+    },
+    "content": {
+      "overview": "Corrected sodium for hyperglycemia estimates what the patient's serum sodium would be once glucose is normalized. Hyperglycemia drives an osmotic shift of water from the intracellular space into plasma, diluting the measured sodium; this is a true translocational (hypertonic) hyponatremia, not a pseudohyponatremia (which is a laboratory artifact from hyperlipidemia or hyperproteinemia with normal osmolality). It is typically applied in diabetic ketoacidosis, hyperosmolar hyperglycemic state, and any marked hyperglycemia. The most widely used correction adds 1.6 mEq/L of sodium for every 100 mg/dL of glucose above 100 mg/dL; the alternative factor of 2.4 mEq/L (Hillier, 1999) is considered more accurate at very high glucose levels. It is a standard physiological calculation rather than a society-endorsed score, but its use is incorporated into protocols for managing hyperglycemic crises (ADA).",
+      "interpretation": "The result is the sodium concentration expected if glucose were normal. If the corrected sodium is normal (135-145 mEq/L) or elevated despite a low measured value, the hyponatremia is attributable to the osmotic shift from hyperglycemia and is expected to resolve as glucose is corrected, with no specific hyponatremia treatment needed. A corrected sodium below 135 mEq/L indicates a concurrent true hyponatremia that should be evaluated and treated on its own. An elevated corrected sodium (>145 mEq/L) flags a significant free-water deficit. Initial resuscitation of the hyperglycemic crisis uses isotonic saline (0.9%); switching to hypotonic saline (0.45%) is reserved for later phases once the patient is euvolemic and the corrected sodium is normal or high. The trend in corrected sodium during treatment is clinically more meaningful than any single isolated value.",
+      "cautions": "The formula assumes reasonably stable renal function and volume status and has been validated mainly in acute hyperglycemia; the correction factors (1.6 vs 2.4) derive from small studies and may under- or overestimate depending on the degree of hyperglycemia. It does not apply to pseudohyponatremia from hyperlipidemia or hyperproteinemia (a different laboratory artifact) and does not replace direct measurement of sodium once glucose is normalized. It does not assess overall plasma osmolality, acid-base status, or total water deficit, and should not by itself guide the rate of sodium correction, where the risk of osmotic demyelination syndrome (central pontine myelinolysis) from overly rapid correction must be monitored.",
+      "faq": [
+        {
+          "q": "What formula is used to correct sodium for hyperglycemia?",
+          "a": "Corrected sodium = measured sodium + 1.6 × [(glucose in mg/dL − 100) / 100]. Many authors prefer the 2.4 factor (Hillier) when glucose exceeds 400 mg/dL because it fits real-world data more closely."
+        },
+        {
+          "q": "Why does sodium fall when glucose is high?",
+          "a": "Glucose is osmotically active and pulls water out of cells into the plasma, diluting sodium. This is a true dilutional (translocational, hypertonic) hyponatremia, not a real sodium loss nor a laboratory artifact, and it usually corrects once glucose is normalized."
+        },
+        {
+          "q": "Does corrected sodium replace the measured value for guiding treatment?",
+          "a": "No. Corrected sodium guides fluid therapy and helps distinguish hyperglycemia-driven hyponatremia from a concurrent true hyponatremia, but it should always be confirmed with serial direct sodium measurements as glucose is corrected."
+        }
       ]
     }
   },
@@ -721,6 +1044,25 @@
         "Should I aim to maintain, lose or gain weight?",
         "How much protein should I get each day?"
       ]
+    },
+    "content": {
+      "overview": "The Harris-Benedict equation estimates the basal metabolic rate (BMR), the energy (kcal/day) the body expends at complete rest to maintain vital functions. It uses sex, weight, height and age, based on the original 1919 formulas or, more commonly, the Roza and Shizgal (1984) revision. Multiplying the BMR by a physical activity factor yields total daily energy expenditure, the basis for planning weight-maintenance, weight-loss or weight-gain diets. It is not a score endorsed by a specific clinical society, but a predictive equation in general nutritional use.",
+      "interpretation": "The result is an absolute value in kcal/day, not a scale with risk bands. As a rough guide, adult BMR typically falls between 1,200 and 1,900 kcal/day depending on body build and sex (often higher in men owing to greater lean mass). To estimate total needs, multiply the BMR by an activity factor: sedentary ×1.2; light activity ×1.375; moderate ×1.55; intense ×1.725; very intense ×1.9. An approximate 500 kcal/day deficit relative to that total expenditure is associated with about 0.5 kg/week of weight loss.",
+      "cautions": "It was derived in healthy adults of relatively normal weight and tends to overestimate BMR in people with obesity, being less accurate at the extremes of age; in those cases the Mifflin-St Jeor equation is usually preferred. It has not been validated in children, pregnant women, critically ill patients, or hypermetabolic states (burns, sepsis, major trauma), where indirect calorimetry is required. It estimates resting expenditure only: it does not measure body composition, true nutritional status or macronutrient requirements, and the activity factor introduces substantial variability.",
+      "faq": [
+        {
+          "q": "What is the difference between Harris-Benedict and Mifflin-St Jeor?",
+          "a": "Both estimate BMR from sex, weight, height and age, but Mifflin-St Jeor (1990) is generally more accurate in the general population and in obesity, whereas Harris-Benedict tends to overestimate calories slightly."
+        },
+        {
+          "q": "How do I calculate my daily calorie needs with Harris-Benedict?",
+          "a": "First calculate the BMR with the formula, then multiply it by your activity factor (from 1.2 sedentary to 1.9 very active) to obtain total daily energy expenditure."
+        },
+        {
+          "q": "Can Harris-Benedict be used for children or pregnant women?",
+          "a": "No. The equation was validated in healthy adults and is unreliable in paediatric patients, during pregnancy, or in critically ill patients, where specific methods or indirect calorimetry are needed."
+        }
+      ]
     }
   },
   "psaDensity": {
@@ -741,6 +1083,25 @@
         "What other tests can help avoid a biopsy?",
         "How often should we repeat the PSA?",
         "What lifestyle factors affect my prostate health?"
+      ]
+    },
+    "content": {
+      "overview": "PSA density (PSAD) is the serum total PSA concentration divided by prostate volume measured by ultrasound (transrectal or transabdominal) or MRI, expressed in ng/mL per cm³. It adjusts the PSA value for prostate size to improve discrimination between benign prostatic hyperplasia and clinically significant prostate cancer, particularly in men with PSA in the grey zone (roughly 4–10 ng/mL). It is used to support biopsy and surveillance decisions, and the EAU (European Association of Urology) guideline includes it as an auxiliary parameter within the prostate cancer diagnostic pathway.",
+      "interpretation": "PSAD is calculated by dividing total PSA (ng/mL) by prostate volume (cm³). The most widely used threshold is 0.15 ng/mL/cm³: values at or above 0.15 raise the probability of clinically significant cancer and strengthen the indication for biopsy, whereas lower values make significant cancer less likely. In the context of multiparametric MRI, a low PSAD (often below 0.10–0.15) is used to support avoiding or deferring biopsy in equivocal PI-RADS lesions (typically PI-RADS 3); higher values increase risk. Thresholds are indicative and must be integrated with age, digital rectal examination, MRI and clinical history.",
+      "cautions": "Validated chiefly in men with elevated PSA (especially 4–10 ng/mL) being assessed for prostate biopsy. Reliability depends critically on accurate measurement of prostate volume; interobserver variability and imaging method (ultrasound vs MRI) can change the result. It does not apply reliably after recent prostate manipulation, prostatitis, urinary retention, or under 5-alpha-reductase inhibitors (finasteride, dutasteride), which lower PSA by roughly half after 6–12 months. PSAD does not diagnose cancer or determine its grade or stage: it only estimates risk and does not replace MRI, biopsy or histological evaluation.",
+      "faq": [
+        {
+          "q": "What is a normal PSA density value?",
+          "a": "The most commonly used reference threshold is 0.15 ng/mL/cm³; values below it are considered lower risk and values above raise suspicion of clinically significant cancer. It is indicative and should be interpreted alongside other clinical and imaging findings."
+        },
+        {
+          "q": "How is PSA density calculated?",
+          "a": "Divide the total blood PSA (ng/mL) by the prostate volume (cm³) measured by ultrasound or MRI. The result is expressed in ng/mL/cm³."
+        },
+        {
+          "q": "Can PSA density help avoid a biopsy?",
+          "a": "It can: combined with multiparametric MRI, a low PSAD supports avoiding or deferring biopsy in equivocal lesions, but the decision is always individualized and not based on this value alone."
+        }
       ]
     }
   },
@@ -769,6 +1130,25 @@
         "When should I come back to the emergency department?",
         "Can I eat or drink in the meantime?"
       ]
+    },
+    "content": {
+      "overview": "The Alvarado Score is a clinical prediction rule that estimates the likelihood of acute appendicitis in patients with abdominal pain. It totals 10 points from eight variables (the MANTRELS mnemonic): Migration of pain to the right iliac fossa, Anorexia, Nausea or vomiting, Tenderness in the right iliac fossa, Rebound pain, Elevated temperature (≥37.3 °C), Leukocytosis, and left Shift of the white-cell count. Leukocytosis and right iliac fossa tenderness score 2 points each; the remaining items score 1 point. It is used as a screening and risk-stratification tool in the initial assessment of abdominal pain suspicious for appendicitis.",
+      "interpretation": "The score ranges from 0 to 10. As a general guide: 1-4 points indicates low probability of appendicitis (discharge with follow-up may be considered); 5-6 points indicates intermediate or compatible probability, where observation and/or imaging (ultrasound or CT) is usually recommended; and 7-10 points indicates high probability, warranting surgical evaluation or imaging depending on context. The most widely used threshold to reasonably rule out appendicitis is a score ≤4. The exact cut-off and resulting management vary with local protocol, age, and sex.",
+      "cautions": "The score was derived and validated predominantly in adults with acute abdominal pain. Its performance is more limited and less consistent in children, the elderly, pregnant women, and women of childbearing age (where gynecological differentials lower specificity). It is not a definitive diagnostic test: a low score does not fully exclude appendicitis, nor does a high score confirm it, and it does not replace clinical judgment or imaging. A frequent misuse is relying on it to proceed directly to surgery without imaging in intermediate cases, or applying it outside the setting of acute abdominal pain.",
+      "faq": [
+        {
+          "q": "What Alvarado score indicates appendicitis?",
+          "a": "A score of 7-10 indicates high probability of appendicitis and warrants surgical evaluation or imaging; 5-6 is intermediate and usually requires observation or imaging; 1-4 indicates low probability."
+        },
+        {
+          "q": "What does the MANTRELS mnemonic stand for?",
+          "a": "Migration of pain, Anorexia, Nausea/vomiting, Tenderness in the right iliac fossa, Rebound pain, Elevated temperature, Leukocytosis, and Shift to the left. These are the eight variables of the score."
+        },
+        {
+          "q": "Is the Alvarado score valid for children and pregnant women?",
+          "a": "It was validated mainly in adults; its performance is less reliable in children, pregnant women, and women of childbearing age, so it should be complemented with imaging and clinical judgment."
+        }
+      ]
     }
   },
   "rcri": {
@@ -794,6 +1174,25 @@
         "Do I need a cardiology review?",
         "What signs of complications should I watch for after surgery?"
       ]
+    },
+    "content": {
+      "overview": "The Revised Cardiac Risk Index (RCRI), also known as the Lee index, estimates the risk of major cardiac complications (myocardial infarction, pulmonary edema, ventricular fibrillation or cardiac arrest, and complete heart block) associated with major noncardiac surgery. It assigns one point to each of six independent predictors: high-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular), history of ischemic heart disease, history of heart failure, history of cerebrovascular disease, insulin-treated diabetes, and preoperative serum creatinine above 2.0 mg/dL. It is one of the preoperative risk-assessment tools endorsed by the ESC and ACC/AHA guidelines for noncardiac surgery.",
+      "interpretation": "The score ranges from 0 to 6 points based on the number of factors present. In the original validation cohort (Lee 1999), the risk of major cardiac complications rises with the number of factors: 0 factors carries the lowest risk, 1 factor low risk, 2 factors intermediate risk, and 3 or more factors the highest risk, with approximate estimated rates of about 0.4%, 0.9%, 7%, and 11% respectively; later pooled validated estimates place the 0, 1, 2, and ≥3 factor groups at roughly 3.9%, 6.0%, 10.1%, and 15% for major cardiovascular complications. In practice, a score of 0–1 is interpreted as low risk and a score of ≥2 as elevated risk that may warrant medical optimization or further testing.",
+      "cautions": "The RCRI was developed and validated in patients aged 50 years or older undergoing elective major noncardiac surgery with hospital admission; it is not validated for urgent or emergent surgery, cardiac surgery, or low-risk or ambulatory procedures. It does not assess overall mortality risk, noncardiac complications, or functional capacity, and it tends to underestimate risk in vascular surgery. It does not replace clinical judgment or functional-capacity assessment (METs) and should not be used in isolation to decide on preoperative cardiac testing.",
+      "faq": [
+        {
+          "q": "What are the six factors in the Lee index (RCRI)?",
+          "a": "High-risk surgery, ischemic heart disease, heart failure, cerebrovascular disease, insulin-treated diabetes, and serum creatinine above 2.0 mg/dL. Each factor is worth one point."
+        },
+        {
+          "q": "What RCRI score is considered high risk?",
+          "a": "A score of 2 or more points is associated with substantially elevated cardiac risk and often prompts medical optimization or further evaluation; 0–1 point is considered low risk."
+        },
+        {
+          "q": "Is the RCRI valid for cardiac or emergency surgery?",
+          "a": "No. It was validated in elective noncardiac surgery in patients aged 50 or older and is not validated for cardiac, emergency, or low-risk procedures."
+        }
+      ]
     }
   },
   "lrinec": {
@@ -818,6 +1217,25 @@
         "Will antibiotics alone be enough?",
         "What signs of worsening should I watch for?",
         "When will the surgical team review me?"
+      ]
+    },
+    "content": {
+      "overview": "The LRINEC (Laboratory Risk Indicator for Necrotizing Fasciitis) is a laboratory-based tool that estimates the likelihood that a severe soft-tissue infection represents necrotizing fasciitis rather than cellulitis or an abscess. It sums points from six routinely available laboratory variables: C-reactive protein, white-cell count, hemoglobin, sodium, creatinine and glucose. It was derived and validated as a diagnostic aid (Wong et al., 2004) to raise suspicion when the clinical presentation is equivocal; it does not replace surgical assessment and is not formally embedded as a decisive criterion in society guidelines such as the IDSA.",
+      "interpretation": "The score ranges from 0 to 13 points. It is usually stratified into three categories: low risk at 5 points or fewer (low probability of necrotizing fasciitis), intermediate risk at 6 to 7 points, and high risk at 8 points or more. A cut-off of 6 is proposed as the alert threshold: a value of 6 or above should heighten suspicion and prompt urgent exploration, while a value of 8 or more carries the highest risk. No score, however low, rules out the disease when the clinical picture is suggestive.",
+      "cautions": "It was derived in adult patients with soft-tissue infections; performance is poorer and less validated in pediatric patients, the immunocompromised, diabetics, and in necrotizing fasciitis of non-bacterial cause or very rapid progression. The critical limitation is low sensitivity: a substantial proportion of confirmed cases have an LRINEC below 6, so a low score does NOT exclude necrotizing fasciitis. It is a supportive, not a diagnostic, tool: it does not assess clinical signs (pain out of proportion, bullae, crepitus, skin necrosis, hemodynamic instability) and must never delay surgical consultation or wound exploration when clinical suspicion exists.",
+      "faq": [
+        {
+          "q": "Does a low LRINEC score rule out necrotizing fasciitis?",
+          "a": "No. Sensitivity is limited and many confirmed cases score below 6, so a low score does not exclude the diagnosis when the clinical picture is suggestive."
+        },
+        {
+          "q": "What LRINEC score is considered a warning?",
+          "a": "A score of 6 or higher is used as the threshold to heighten suspicion, and 8 or higher marks the highest-risk group; both warrant urgent surgical evaluation."
+        },
+        {
+          "q": "Which lab tests do I need to calculate the LRINEC?",
+          "a": "You need C-reactive protein, white-cell count, hemoglobin, sodium, creatinine and serum glucose, all routine laboratory tests."
+        }
       ]
     }
   },
@@ -862,6 +1280,25 @@
         "How does this change shared decisions like cancer screening or surgery?",
         "What is the most important issue to focus on right now?"
       ]
+    },
+    "content": {
+      "overview": "The Charlson Comorbidity Index (CCI) is a prognostic tool that estimates a patient's 10-year mortality based on the burden of coexisting chronic conditions. It assigns weights of 1 to 6 points across 19 comorbidity categories (for example myocardial infarction, congestive heart failure, chronic kidney disease, diabetes with end-organ damage, liver disease, cancer and AIDS), so that conditions with greater impact on survival contribute more points. It is the most widely used comorbidity index in clinical and epidemiological research for risk adjustment; the age-combined version (age-adjusted Charlson comorbidity index) adds 1 point for each decade of age from 50 years onward.",
+      "interpretation": "The total score is the sum of the weights of all comorbidities present (plus the age points if the age-adjusted version is used). A score of 0 indicates no significant comorbidity and the best expected survival; the higher the score, the greater the disease burden and the lower the estimated 10-year survival. It is commonly stratified into low (0), intermediate (1-2), high (3-4) and very high (≥5) comorbidity categories. Charlson's original formulation associated a 10-year survival of roughly 99% with 0 points, declining progressively with each additional point; the survival tables of the relevant validation cohort should be used rather than memorizing isolated percentages.",
+      "cautions": "The CCI was originally developed and validated in a cohort of inpatients on a general medicine service and subsequently in breast cancer patients, and has been widely applied using administrative codes (ICD-9/ICD-10), which may underestimate uncoded comorbidities. It is a measure of chronic disease burden, not acute severity: it does not assess functional status, frailty, cognitive status or the severity of the current acute episode, and should not be used in isolation for individual treatment decisions or as a predictor of short-term in-hospital mortality. Several versions with differing weights and updates (Deyo, Quan) exist and are not interchangeable.",
+      "faq": [
+        {
+          "q": "What is the difference between the Charlson index and the age-adjusted version?",
+          "a": "The original Charlson index only sums the comorbidity weights; the age-adjusted version (age-comorbidity Charlson index) adds 1 point per decade of life from age 50 onward to improve 10-year mortality prediction."
+        },
+        {
+          "q": "What Charlson score is considered high?",
+          "a": "There is no single universal cut-off, but in general a score of 0 indicates low comorbidity, 1-2 intermediate, 3-4 high and ≥5 very high, with estimated survival declining progressively as the score rises."
+        },
+        {
+          "q": "Can the Charlson index predict ICU or short-term in-hospital mortality?",
+          "a": "It is not designed for that; the CCI measures chronic comorbidity burden and long-term survival, not acute severity. For short-term mortality, dedicated scores such as APACHE II or SOFA should be used instead."
+        }
+      ]
     }
   },
   "pittBacteremia": {
@@ -896,6 +1333,25 @@
         "Which antibiotics am I receiving and why?",
         "How long will I likely need to be in hospital?",
         "What signs of improvement or worsening should we monitor?"
+      ]
+    },
+    "content": {
+      "overview": "The Pitt Bacteremia Score is a clinical severity scale that estimates the risk of acute mortality in patients with a bloodstream infection (bacteremia). It sums points for temperature, hypotension/shock, mechanical ventilation, cardiac arrest and mental status, reflecting the patient's physiological instability at the time of bacteremia. It is a widely used research and prognostic tool in studies of bacteremia and multidrug-resistant organisms; it is not formally endorsed by a specific medical-society guideline, but is extensively applied to stratify severity in Gram-negative and Staphylococcus aureus infections.",
+      "interpretation": "The score ranges from 0 to 14 points: temperature (1 point for 35.1-36 °C or 39.0-39.9 °C; 2 points for ≤35 °C or ≥40 °C), hypotension or shock (2 points), mechanical ventilation (2 points), cardiac arrest (4 points) and mental status (1 point if disoriented, 2 if stuporous, 4 if comatose). A higher score indicates greater physiological severity and worse prognosis. The most commonly applied threshold in the literature is ≥4 points, which identifies patients at substantially elevated mortality risk and is often used to define severe bacteremia; values of 0-1 indicate low severity. There is no single universal cut-off, so it should be interpreted within the clinical context.",
+      "cautions": "It was developed and validated in adult patients with confirmed bacteremia, primarily in cohorts of Gram-negative and Staphylococcus aureus infections; its usefulness in pediatric populations and fungal infections is less well established. It is a measure of acute physiological severity, not a diagnosis or a guide to antibiotic therapy: it does not indicate which antibiotic to choose or whether empirical therapy is adequate, and it does not replace clinical judgment or other comorbidity (e.g. Charlson) or sepsis (e.g. SOFA/qSOFA) indices. A frequent misuse is applying it outside the context of bacteremia or using it as the sole criterion for ICU admission.",
+      "faq": [
+        {
+          "q": "What is considered a high or high-risk Pitt bacteremia score?",
+          "a": "A score of ≥4 is the most commonly used threshold to identify severe bacteremia with elevated mortality risk; the higher the score (maximum 14), the worse the prognosis."
+        },
+        {
+          "q": "What is the difference between the Pitt bacteremia score and SOFA?",
+          "a": "The Pitt score is specific for stratifying bacteremia severity using five simple clinical variables, whereas SOFA assesses multi-organ dysfunction in sepsis using laboratory and organ-support parameters."
+        },
+        {
+          "q": "Can the Pitt bacteremia score be calculated without laboratory tests?",
+          "a": "Yes, it requires only bedside clinical data (temperature, blood pressure, ventilation, cardiac arrest and mental status), with no laboratory values needed."
+        }
       ]
     }
   },
@@ -950,6 +1406,25 @@
         "What kind of mattress is best for me?",
         "What signs of skin damage should we watch for?",
         "Can my nutrition be improved to help my skin?"
+      ]
+    },
+    "content": {
+      "overview": "The Norton Scale is a screening tool to estimate the risk of developing pressure ulcers in bedbound or mobility-impaired patients, particularly hospitalized or institutionalized older adults. It rates five parameters (general physical condition, mental state, activity, mobility, and incontinence), each scored 1 to 4, for a total ranging from 5 to 20. It is one of the classic risk-assessment scales; pressure injury prevention guidelines (EPUAP/NPIAP/PPPIA) recommend performing a structured risk assessment and cite it, alongside Braden and Waterlow, as examples of available instruments.",
+      "interpretation": "The total score ranges from 5 to 20: the lower the score, the higher the risk. Traditionally a score of 14 or below identifies patients at risk of pressure ulcers, and 12 or below indicates high risk. Some protocols apply more conservative thresholds (for example ≤16 as the onset of risk). A low score should trigger preventive measures: scheduled repositioning, pressure-redistributing surfaces, skin care, and optimization of nutrition and incontinence management.",
+      "cautions": "Originally validated in hospitalized older adults; its performance is more limited in other populations (pediatrics, intensive care, ambulatory patients). It tends to overestimate risk (high sensitivity, low specificity), so it may prompt interventions in patients who will not develop an ulcer. It does not replace direct, regular skin inspection or clinical judgment, and it does not assess existing ulcers or determine their stage; it also does not explicitly include nutrition as a separate item (unlike Braden).",
+      "faq": [
+        {
+          "q": "What Norton score indicates pressure ulcer risk?",
+          "a": "Classically, a total score of 14 or below is considered at risk, and 12 or below high risk. The lower the score (minimum 5), the greater the risk."
+        },
+        {
+          "q": "What is the difference between the Norton Scale and the Braden Scale?",
+          "a": "Both estimate pressure ulcer risk, but Braden includes nutrition and friction/shear as specific items and tends to show better predictive validity, whereas Norton is simpler and quicker to apply."
+        },
+        {
+          "q": "How often should the Norton Scale be reassessed?",
+          "a": "Reassessment is recommended on admission and at regular intervals, as well as whenever the patient's clinical condition changes (for example, after surgery or a decline in mobility)."
+        }
       ]
     }
   },
@@ -1010,6 +1485,25 @@
         "How often should I be repositioned?",
         "How can my nutrition help my skin?",
         "What early signs of skin damage should we watch for?"
+      ]
+    },
+    "content": {
+      "overview": "The Braden Scale estimates the risk of developing pressure ulcers by assessing six subscales: sensory perception, skin moisture, activity, mobility, nutrition, and friction/shear. The first five are scored 1 to 4 and friction/shear 1 to 3, giving a total score between 6 and 23; the lower the score, the higher the risk. It is one of the most widely used nursing risk-screening tools and is recommended by the international pressure injury prevention guidelines (EPUAP/NPIAP/PPPIA).",
+      "interpretation": "A lower total score indicates greater risk. The commonly used cut-offs are: no risk 19-23; mild risk 15-18; moderate risk 13-14; high risk 10-12; very high risk 9 or below. At a value of 18 or lower, preventive measures are recommended (repositioning, pressure-redistribution support surfaces, skin care, and nutritional optimization), with intensity tailored to the risk band and clinical judgement.",
+      "cautions": "Validated in hospitalized adults, long-term care residents, and home care; pediatrics uses the adapted Braden Q version. The score is a screening aid that does not replace direct skin inspection or overall clinical assessment, and it may underestimate risk in some settings (for example, skin already showing erythema or patients with medical devices). It does not assess the presence or severity of existing ulcers, does not estimate cardiovascular risk or mortality, and should be reassessed periodically because risk changes with the patient's condition.",
+      "faq": [
+        {
+          "q": "What Braden score is considered high risk?",
+          "a": "A score of 10 to 12 indicates high risk and 9 or below very high risk; below 18, preventive measures should already be started."
+        },
+        {
+          "q": "How often should the Braden Scale be repeated?",
+          "a": "It should be reassessed on admission and periodically depending on the setting (often every 24-48 h in acute care) and whenever the patient's clinical condition changes."
+        },
+        {
+          "q": "Is the Braden Scale used for children?",
+          "a": "Not directly; pediatrics uses the adapted Braden Q version, which is validated for that population."
+        }
       ]
     }
   },
@@ -1090,6 +1584,25 @@
         "What aids (walking, dressing, eating) would help me most?",
         "How often will my level of independence be reassessed?"
       ]
+    },
+    "content": {
+      "overview": "The Barthel Index is an ordinal scale that measures the degree of functional independence across ten basic activities of daily living: feeding, bathing, grooming, dressing, bowel control, bladder control, toilet use, bed-to-chair transfers, mobility on level surfaces, and stair climbing. It is scored from 0 to 100 (in increments of 5 in the classic version) and is used to quantify disability, plan rehabilitation, and track functional change, particularly in stroke, older adults, and neurological disease. It is one of the most widely used functional outcome measures in rehabilitation and stroke care pathways.",
+      "interpretation": "The total score ranges from 0 (total dependence) to 100 (full independence). A widely used descriptive banding is: 0-20 total dependence, 21-60 severe dependence, 61-90 moderate dependence, 91-99 mild dependence, and 100 independence. Change should be interpreted in clinical context; absolute values matter, but trends over time and the trajectory of individual items are often more informative than any single cut-off.",
+      "cautions": "Validated primarily in stroke patients, older adults, and people with physical disability in hospital and rehabilitation settings. It assesses only basic activities (self-care and mobility) and does NOT capture instrumental activities (cooking, managing medication or finances, shopping), cognitive function, mood, communication, or pain. It shows a ceiling effect in patients with good physical function but cognitive impairment, who may score high despite needing supervision. The score reflects what the patient actually does, not what they could potentially do.",
+      "faq": [
+        {
+          "q": "What is the difference between the Barthel Index and the Lawton scale?",
+          "a": "The Barthel Index measures basic activities of daily living (self-care and mobility), whereas the Lawton-Brody scale assesses instrumental activities such as cooking, shopping, or managing medication. They are often used together as complementary tools."
+        },
+        {
+          "q": "What is considered a good Barthel Index score?",
+          "a": "A score of 100 indicates full independence in basic activities, and scores of 91-99 reflect mild dependence. However, 100 does not mean the person can live alone, because instrumental activities and cognition are not assessed."
+        },
+        {
+          "q": "Does the Barthel Index measure cognitive impairment?",
+          "a": "No. The Barthel Index only assesses physical independence in self-care and mobility. Assessing cognition requires a dedicated tool such as the MMSE or MoCA."
+        }
+      ]
     }
   },
   "findrisc": {
@@ -1138,6 +1651,25 @@
         "Is a structured prevention programme available?",
         "When should we reassess my risk?"
       ]
+    },
+    "content": {
+      "overview": "FINDRISC (Finnish Diabetes Risk Score) estimates the probability of developing type 2 diabetes over the next 10 years using simple clinical variables, with no blood test required. It sums points for age, body mass index, waist circumference, physical activity, daily fruit and vegetable intake, use of antihypertensive medication, history of elevated blood glucose, and family history of diabetes. It is a widely validated population screening tool recommended in the joint ESC/EASD guidelines on diabetes, pre-diabetes, and cardiovascular disease and adopted by the International Diabetes Federation for early detection.",
+      "interpretation": "The score ranges from 0 to 26 points and is grouped into 10-year risk categories: <7 points, low risk (approximately 1%); 7-11, slightly elevated risk (around 4%); 12-14, moderate risk (around 17%); 15-20, high risk (approximately 33%); and >20 points, very high risk (up to 50%). At a score of 15 or above, confirmation of glycaemic status with fasting glucose, HbA1c, or an oral glucose tolerance test is recommended, along with initiation of lifestyle intervention.",
+      "cautions": "FINDRISC was developed and validated in a European Caucasian adult population (Finnish cohort), and its performance may differ in other ethnicities, in pregnant women, and in people under 25 years. It is a risk-prediction tool, not a diagnostic one: a high score does not confirm diabetes nor detect existing or undiagnosed diabetes, which always requires laboratory confirmation. It also does not assess complications, type 1 diabetes, or overall cardiovascular risk.",
+      "faq": [
+        {
+          "q": "Does FINDRISC require a blood test?",
+          "a": "No. It is a questionnaire that uses only clinical and anthropometric data (age, BMI, waist, habits, medication, and history), with no laboratory measurement."
+        },
+        {
+          "q": "What FINDRISC score is considered high?",
+          "a": "A score of 15 or above indicates high or very high risk; above this threshold, confirming blood glucose and starting lifestyle intervention are recommended."
+        },
+        {
+          "q": "How often should FINDRISC be repeated?",
+          "a": "In people at low or slightly elevated risk it can be repeated every few years; if risk is moderate or higher, reassess sooner and pair it with glycaemic testing."
+        }
+      ]
     }
   },
   "ipss": {
@@ -1173,6 +1705,25 @@
         "Do I need any imaging tests?",
         "When would surgery be considered?"
       ]
+    },
+    "content": {
+      "overview": "The IPSS (International Prostate Symptom Score) is a self-administered questionnaire that quantifies the severity of lower urinary tract symptoms (LUTS) in men, typically associated with benign prostatic hyperplasia. It comprises 7 questions assessing symptoms (incomplete emptying, frequency, intermittency, urgency, weak stream, straining and nocturia), each scored 0 to 5, for a total of 0 to 35; a separate eighth question assesses quality of life (0 to 6) and is not counted within the symptom score. It is the instrument recommended by the EAU (European Association of Urology) and AUA guidelines for the initial assessment and follow-up of male LUTS (it is identical to the AUA-SI with the quality-of-life question added).",
+      "interpretation": "The symptom score (0-35) is classified into three bands: 0-7 mild symptoms, 8-19 moderate symptoms and 20-35 severe symptoms. Mild symptoms usually allow watchful waiting; moderate and severe scores point toward medical therapy or, depending on response and complications, surgery. The separate quality-of-life question (bother index, 0=delighted to 6=terrible) is not added to the total but is key to deciding treatment intensity, since two patients with the same score may tolerate their symptoms very differently.",
+      "cautions": "Validated in men with LUTS/suspected benign prostatic hyperplasia. It is neither diagnostic nor specific: a high score does not confirm a prostatic origin, since infection, overactive bladder, neurogenic bladder dysfunction, prostatitis or causes in women can yield similar scores. It does not assess prostate cancer and does not replace PSA, digital rectal examination, uroflowmetry or ultrasound. It requires adequate literacy and comprehension and may be unreliable with language barriers or cognitive impairment. Its main value is longitudinal monitoring of treatment response within the same patient.",
+      "faq": [
+        {
+          "q": "What IPSS score is considered severe?",
+          "a": "A total symptom score of 20 to 35 is considered severe; 8-19 is moderate and 0-7 is mild."
+        },
+        {
+          "q": "Can the IPSS diagnose prostate cancer?",
+          "a": "No. The IPSS only measures the severity of urinary symptoms and does not detect cancer; screening requires PSA, digital rectal examination and urological assessment."
+        },
+        {
+          "q": "Is the quality-of-life question counted in the IPSS total?",
+          "a": "No. The quality-of-life question is scored separately (0-6) and is not added to the 0-35 total, but it helps guide treatment decisions."
+        }
+      ]
     }
   },
   "basdai": {
@@ -1198,6 +1749,25 @@
         "Should we consider a biological therapy?",
         "What exercises or physiotherapy can help?",
         "What complications should we monitor for?"
+      ]
+    },
+    "content": {
+      "overview": "The BASDAI (Bath Ankylosing Spondylitis Disease Activity Index) is a patient-reported questionnaire that measures disease activity in axial spondyloarthritis, including ankylosing spondylitis. It assesses six domains using 0-10 numerical scales: fatigue, axial pain (neck, back, hips), pain and swelling in peripheral joints, tenderness to pressure (enthesitis), and the duration and severity of morning stiffness. It is used in clinical practice and trials to monitor symptomatic activity and was one of the reference tools recommended by ASAS (Assessment of SpondyloArthritis international Society) and EULAR, now complemented by the ASDAS.",
+      "interpretation": "The final score ranges from 0 to 10, with higher scores indicating greater disease activity. The most established threshold is BASDAI ≥ 4, which reflects active disease and has often been used as a criterion to consider or evaluate response to biologic therapy. Values below 4 suggest low or controlled activity. BASDAI is best interpreted longitudinally: a meaningful reduction from baseline (for example, an improvement of ≥ 2 points) indicates a treatment response.",
+      "cautions": "BASDAI is validated in adults with axial spondyloarthritis and ankylosing spondylitis; it is a subjective measure based solely on the patient's perception. It does not assess objective inflammatory activity (it includes no CRP/ESR or imaging) nor structural damage or spinal mobility, for which the BASFI or BASMI are needed. A common misuse is relying on it in isolation to make treatment decisions: guidelines recommend combining it with objective parameters, and the ASDAS (which incorporates CRP) provides a more complete assessment of activity.",
+      "faq": [
+        {
+          "q": "What BASDAI score indicates active disease?",
+          "a": "A score of 4 or higher (on the 0-10 scale) is considered indicative of active disease and has commonly been used as a threshold to evaluate initiation of biologic therapy."
+        },
+        {
+          "q": "What is the difference between BASDAI and ASDAS?",
+          "a": "BASDAI relies only on patient-reported symptoms, whereas the ASDAS combines patient items with an acute-phase reactant (CRP or ESR), making it a more objective measure of disease activity."
+        },
+        {
+          "q": "How is the BASDAI score calculated?",
+          "a": "The two morning-stiffness questions are averaged and that value is added to the other four responses; the total is divided by 5 to yield a final score from 0 to 10."
+        }
       ]
     }
   },
@@ -1235,6 +1805,25 @@
         "Would a biological or targeted-synthetic therapy be appropriate?",
         "When will we reassess?"
       ]
+    },
+    "content": {
+      "overview": "The DAS28 (Disease Activity Score in 28 joints) is a composite index that quantifies rheumatoid arthritis activity by combining the tender and swollen joint counts across 28 joints, an acute-phase reactant (ESR or CRP) and the patient's global health assessment on a visual analogue scale. It is used to monitor disease activity over time and to guide a treat-to-target strategy. It is one of the disease activity measures recommended by EULAR for monitoring rheumatoid arthritis.",
+      "interpretation": "With the ESR-based version (DAS28-ESR), the conventional thresholds are: below 2.6 indicates remission; 2.6 to 3.2 (inclusive) low activity; above 3.2 and up to 5.1 (inclusive) moderate activity; and above 5.1 high activity. A reduction of more than 1.2 points is considered a clinically meaningful response. The CRP-based version (DAS28-CRP) tends to yield slightly lower values, so the same cut-offs are not fully interchangeable and it may underestimate activity near the remission threshold.",
+      "cautions": "Validated in adults with established rheumatoid arthritis; it is not intended for other arthropathies or for diagnosis. The 28-joint count excludes the ankles and feet, so it may underestimate activity in patients with predominantly foot involvement. The global and joint assessments have a subjective component, and comorbidities such as fibromyalgia or infection can raise ESR/CRP or pain and distort the score. It does not assess radiographic structural damage or long-term physical function.",
+      "faq": [
+        {
+          "q": "What is the difference between DAS28-ESR and DAS28-CRP?",
+          "a": "They use different acute-phase reactants and different formulas; DAS28-CRP usually gives somewhat lower values, so the same version should be used consistently in a given patient for comparison."
+        },
+        {
+          "q": "What DAS28 value indicates remission?",
+          "a": "A DAS28-ESR below 2.6 is considered remission under the conventional criteria."
+        },
+        {
+          "q": "Which joints are included in the 28-joint count?",
+          "a": "Twenty-eight joints are assessed, counting both sides: shoulders (2), elbows (2), wrists (2), metacarpophalangeal (10), proximal interphalangeal joints of the hands including the thumb interphalangeal joint (10) and knees (2); the ankles and feet are excluded."
+        }
+      ]
     }
   },
   "pasi": {
@@ -1264,6 +1853,25 @@
         "Which systemic options are available?",
         "What are the side effects to watch for?",
         "How often will we reassess?"
+      ]
+    },
+    "content": {
+      "overview": "The PASI (Psoriasis Area and Severity Index) is the standard tool for quantifying the severity of plaque psoriasis and monitoring treatment response. It combines the extent of affected body surface with the intensity of three clinical signs —erythema, induration (thickness) and desquamation (scaling)— weighted across four body regions (head, trunk, upper limbs and lower limbs). It is the reference outcome measure in clinical trials and in psoriasis guidelines such as those from the AAD-NPF and EuroGuiDerm/EDF for assessing candidates for systemic and biologic therapy.",
+      "interpretation": "PASI scores range from 0 to 72; higher values indicate greater severity. There are no universal thresholds, but by convention a score below roughly 5-10 suggests mild disease, 10 to 20 moderate and above 20 severe; a PASI ≥10 is one of the common criteria for considering systemic therapy. Treatment response is expressed as percentage reduction from baseline: PASI 75 (≥75% reduction) was the classic endpoint, while PASI 90 and PASI 100 (near-complete or complete clearance) are the current targets with modern biologic therapies.",
+      "cautions": "PASI was validated for chronic plaque psoriasis and is unreliable in pustular, erythrodermic or guttate forms. It has limited sensitivity in mild or very localized disease and notable interobserver variability, especially in scoring induration. It does not assess involvement of high-impact special areas (scalp, nails, palms, soles, genitals) nor symptom burden or quality of life; for this reason it is complemented by BSA, IGA and DLQI. It does not measure psoriatic arthritis or comorbidities.",
+      "faq": [
+        {
+          "q": "What does PASI 75 mean?",
+          "a": "PASI 75 means at least a 75% reduction in the PASI score compared with the baseline value before treatment. It has been the classic therapeutic endpoint in clinical trials."
+        },
+        {
+          "q": "What PASI score is considered severe psoriasis?",
+          "a": "There is no universal cut-off, but a PASI above 20 is often considered severe; a PASI ≥10 typically already justifies considering systemic treatment, especially when combined with a high DLQI."
+        },
+        {
+          "q": "Is PASI suitable for scalp or nail psoriasis?",
+          "a": "Not adequately. PASI underestimates special areas; for scalp, nails, palms, soles or genitals, dedicated indices such as PSSI, NAPSI or ppPASI are used instead."
+        }
       ]
     }
   },
@@ -1296,6 +1904,25 @@
         "How do we treat flares vs. maintenance?",
         "Should we consider a biologic like dupilumab?",
         "What lifestyle factors aggravate the eczema?"
+      ]
+    },
+    "content": {
+      "overview": "The SCORAD (SCORing Atopic Dermatitis) is a composite index that quantifies atopic dermatitis severity by combining three components: disease extent (rule of nines applied to body surface area), intensity of six clinical signs (erythema, oedema/papulation, oozing/crusting, excoriation, lichenification and dryness), and subjective symptoms (pruritus and sleep loss) rated by the patient on visual analogue scales. It was developed by the European Task Force on Atopic Dermatitis (ETFAD/EADV) and is one of the reference tools recommended by European guidelines (EuroGuiDerm/EADV) to assess severity and monitor treatment response.",
+      "interpretation": "The total SCORAD ranges from 0 to 103. It is calculated as A/5 + 7B/2 + C, where A is extent (0-100), B is intensity (0-18) and C is subjective symptoms (0-20). It is generally interpreted as follows: below 25 indicates mild disease, 25 to 50 moderate disease, and above 50 severe disease. An objective variant (oSCORAD) omits the subjective component C and has a maximum of 83, useful when patient-reported scores are unavailable. Relative reduction from baseline (SCORAD-50, SCORAD-75) is used as a measure of therapeutic response.",
+      "cautions": "The SCORAD is validated for atopic dermatitis in children and adults; it does not apply to other eczematous dermatoses. It is a single-timepoint, observer-dependent tool with non-negligible inter-observer variability, particularly in estimating extent and lichenification; it also has limitations in dark skin, where erythema may be underestimated. It does not assess quality-of-life impact (instruments such as the DLQI or POEM are needed for that) nor the chronic course of disease, and the subjective component requires patient cooperation, making it unreliable in very young infants.",
+      "faq": [
+        {
+          "q": "What is the difference between SCORAD and oSCORAD?",
+          "a": "The SCORAD includes patient-reported subjective symptoms (pruritus and sleep loss), whereas the oSCORAD (objective) omits them. Total SCORAD reaches 103 and oSCORAD reaches 83."
+        },
+        {
+          "q": "What SCORAD value is considered severe atopic dermatitis?",
+          "a": "A score above 50 is considered severe disease; 25 to 50 is moderate, and below 25 is mild."
+        },
+        {
+          "q": "How is treatment response measured with SCORAD?",
+          "a": "It is expressed as percentage reduction from baseline, such as SCORAD-50 (50% improvement) or SCORAD-75, which are common endpoints in clinical trials and follow-up practice."
+        }
       ]
     }
   },
@@ -1331,6 +1958,25 @@
         "Could the source of infection be identified and treated?",
         "What complications should be watched for?"
       ]
+    },
+    "content": {
+      "overview": "The Modified Duke Criteria classify the probability of infective endocarditis by combining microbiological data (blood cultures), imaging (echocardiography and, in the updated versions, also CT, PET/CT and MRI) and clinical findings. They are organized into major and minor criteria and are used when endocarditis is suspected on native valves, prosthetic valves or cardiac devices. They are the diagnostic criteria recommended by the ESC 2023 guideline on infective endocarditis (ESC 2023/Duke-ISCVID 2023 criteria), an update of the classic 2000 Modified Duke Criteria.",
+      "interpretation": "The diagnosis is classified into three categories. Definite endocarditis: 2 major criteria, or 1 major + 3 minor, or 5 minor criteria (or pathological/microbiological confirmation from valve tissue or a vegetation). Possible endocarditis: 1 major + 1 minor, or 3 minor criteria. Rejected endocarditis: a firm alternative diagnosis, resolution with 4 days or fewer of antibiotics, or criteria for possible endocarditis are not met. A classification of possible does not rule out disease and mandates reassessment with further testing.",
+      "cautions": "Validated in patients with clinical suspicion of infective endocarditis; performance is lower in prosthetic valve endocarditis, intracardiac devices and culture-negative cases, where advanced imaging and serologies are needed. They are a diagnostic classification tool, not a population screening test, and do not estimate mortality risk, surgical indication or treatment duration. No rule replaces clinical judgement or assessment by a multidisciplinary endocarditis team.",
+      "faq": [
+        {
+          "q": "What is the difference between definite and possible endocarditis on the Duke criteria?",
+          "a": "Definite requires 2 major criteria, 1 major plus 3 minor, or 5 minor (or histological proof); possible requires 1 major plus 1 minor, or 3 minor. Possible signals persistent suspicion that warrants further investigation."
+        },
+        {
+          "q": "Do the Modified Duke Criteria include PET-CT?",
+          "a": "Yes; the ESC 2023/Duke-ISCVID update adds abnormal ¹⁸F-FDG PET/CT uptake on a prosthetic valve or material as a major imaging criterion, alongside cardiac CT."
+        },
+        {
+          "q": "Can endocarditis be diagnosed with negative blood cultures?",
+          "a": "Yes; in culture-negative endocarditis the diagnosis relies on serology (for example Coxiella burnetii), PCR and imaging, but the sensitivity of the criteria falls and cases often remain in the possible category."
+        }
+      ]
     }
   },
   "hinchey": {
@@ -1355,6 +2001,25 @@
         "Could a stoma be needed?",
         "What recovery should I expect after the operation?",
         "How can future episodes be prevented?"
+      ]
+    },
+    "content": {
+      "overview": "The Hinchey classification stages the severity of acute complicated colonic diverticulitis, particularly of the sigmoid, based on the surgical or CT finding of the extent of inflammation, abscess, and peritonitis. It is used to guide the therapeutic decision between conservative management, percutaneous drainage, and emergency surgery. The modified version (Wasvary/Kaiser) incorporates CT findings and is the reference used by society guidelines such as the ASCRS (American Society of Colon and Rectal Surgeons) and the WSES.",
+      "interpretation": "Stage I: pericolic inflammation or phlegmon (Ia) or a confined pericolic abscess (Ib); usually managed medically, with percutaneous drainage if the abscess is large. Stage II: distant pelvic, intra-abdominal, or retroperitoneal abscess; often a candidate for image-guided percutaneous drainage plus antibiotics. Stage III: generalized purulent peritonitis from rupture of an abscess without free communication with the bowel lumen; requires emergency surgery. Stage IV: feculent peritonitis from free perforation with fecal contamination; emergency surgery, carrying the highest mortality. In general, the higher the stage, the greater the likelihood of surgical intervention and the worse the prognosis.",
+      "cautions": "It was designed and validated for acute colonic diverticulitis, originally as an intraoperative classification and later adapted to CT. It does not apply to uncomplicated diverticulitis and is not used to decide outpatient discharge; it does not assess systemic sepsis, comorbidity, or anesthetic risk, so the surgical decision must be individualized against the overall clinical status. A frequent misuse is staging on imaging alone without clinical correlation, or applying it to recurrent/chronic episodes, for which it is not intended.",
+      "faq": [
+        {
+          "q": "What is the difference between Hinchey I and II?",
+          "a": "Stage I is a confined pericolic abscess or phlegmon near the colon, whereas stage II is a distant abscess (pelvic, intra-abdominal, or retroperitoneal). Stage II usually requires percutaneous drainage, unlike a small stage I, which is often treated with antibiotics alone."
+        },
+        {
+          "q": "Which Hinchey stages require emergency surgery?",
+          "a": "Stages III (generalized purulent peritonitis) and IV (feculent peritonitis) require emergency surgery. Stages I and II are usually managed with antibiotics and, when needed, percutaneous drainage."
+        },
+        {
+          "q": "Is the Hinchey classification based on CT or on surgery?",
+          "a": "The original Hinchey classification (1978) was an intraoperative classification. The modified Wasvary/Kaiser version incorporates CT findings and is the one currently used in clinical practice."
+        }
       ]
     }
   },
@@ -1395,6 +2060,25 @@
         "Should we check lactate, ketones or osmolar gap?",
         "How often should we recheck the blood gas?"
       ]
+    },
+    "content": {
+      "overview": "The anion gap is a calculation derived from serum electrolytes that estimates the difference between measured cations and anions, and is used to detect and classify metabolic acidosis. It is computed as Na⁺ − (Cl⁻ + HCO₃⁻), with a variant that includes potassium [(Na⁺ + K⁺) − (Cl⁻ + HCO₃⁻)]. Because albumin is the principal unmeasured anion, in hypoalbuminemic patients an albumin correction should be applied (adding roughly 2.5 mEq/L for every 1 g/dL of albumin below 4 g/dL) to avoid underestimating the gap. It is a foundational acid–base diagnostic tool rather than a prognostic score endorsed by a single society.",
+      "interpretation": "The usual reference range for the anion gap without potassium is approximately 8–12 mEq/L (around 12–16 mEq/L when potassium is included), though it varies by laboratory and current measurement methods. An elevated anion gap points to high-anion-gap metabolic acidosis (ketoacidosis, lactic acidosis, renal failure, toxic ingestions such as methanol, ethylene glycol, or salicylates). A normal gap in the setting of acidosis suggests hyperchloremic (normal-gap) acidosis (diarrhea, renal tubular acidosis). A low gap is uncommon and may reflect hypoalbuminemia, paraproteinemia, or laboratory error. The albumin-corrected value should always be interpreted within the overall blood-gas context.",
+      "cautions": "Use simultaneous, reliable electrolyte values; each laboratory has its own reference range depending on methodology. Albumin correction is essential in critically ill, hepatic, or malnourished patients, where hypoalbuminemia can mask a high-gap acidosis. The calculation may be distorted by hyperlipidemia, hyperglobulinemia, lithium, bromide, or preanalytical error. The anion gap by itself is NOT a diagnosis or a measure of pH or severity: it does not replace arterial blood-gas analysis or the osmolar-gap calculation when intoxication is suspected, and it provides no direct prognostic information.",
+      "faq": [
+        {
+          "q": "Why does the anion gap need to be corrected for albumin?",
+          "a": "Albumin is the main unmeasured anion; when it is low, the calculated gap is artificially low and can mask a high-gap acidosis. It is corrected by adding roughly 2.5 mEq/L for every 1 g/dL of albumin below 4 g/dL."
+        },
+        {
+          "q": "What is a normal anion gap value?",
+          "a": "It is typically around 8–12 mEq/L when potassium is not included, and around 12–16 mEq/L when it is, but the exact range depends on the laboratory and measurement method."
+        },
+        {
+          "q": "What does a high anion gap mean?",
+          "a": "It suggests a high-anion-gap metabolic acidosis, typically from ketoacidosis, lactic acidosis, renal failure, or toxic ingestions (methanol, ethylene glycol, salicylates). It should be confirmed with blood-gas analysis and the clinical context."
+        }
+      ]
     }
   },
   "fena": {
@@ -1422,6 +2106,25 @@
         "Will I need fluids, dialysis or another treatment?",
         "Are any of my medications affecting my kidneys?",
         "What signs of worsening should we watch for?"
+      ]
+    },
+    "content": {
+      "overview": "The fractional excretion of sodium (FENa) is an index that estimates the percentage of filtered sodium that is ultimately excreted in the urine, calculated from plasma and urine sodium and creatinine. It is used in the workup of oliguric acute kidney injury (AKI) to help distinguish prerenal azotemia (hypoperfusion, with avid sodium reabsorption) from acute tubular necrosis (ATN). It is a classic diagnostic aid that complements the KDIGO classification of AKI rather than a formally guideline-endorsed score.",
+      "interpretation": "A FENa below 1% suggests a prerenal cause, with intact tubules avidly reabsorbing sodium to preserve volume (also seen in low-flow states such as hepatorenal syndrome and heart failure). A FENa above 2% is typical of acute tubular necrosis, where the injured tubule cannot conserve sodium. Values between 1% and 2% are indeterminate and require clinical interpretation. The result should always be read together with the clinical context, urinalysis, and volume status.",
+      "cautions": "FENa was validated in patients with oliguric AKI and should not be used in isolation. It loses reliability with diuretic use (which increases sodium excretion and can yield a high FENa despite a prerenal cause); in this setting the fractional excretion of urea is preferred. It may also be below 1% in non-prerenal conditions such as contrast nephropathy, acute glomerulonephritis, rhabdomyolysis, or early sepsis. It does not identify the exact cause of AKI, does not replace examination of the urine sediment, and is not useful in chronic kidney disease.",
+      "faq": [
+        {
+          "q": "How is FENa calculated?",
+          "a": "FENa (%) = (urine sodium × plasma creatinine) / (plasma sodium × urine creatinine) × 100. Simultaneous plasma and urine sodium and creatinine values are required."
+        },
+        {
+          "q": "What does a FENa below 1% mean?",
+          "a": "It suggests a prerenal cause of acute kidney injury, with intact tubules avidly reabsorbing sodium because of hypoperfusion. It can also occur in hepatorenal syndrome and contrast nephropathy."
+        },
+        {
+          "q": "Why is FENa unreliable with diuretics?",
+          "a": "Diuretics increase renal sodium excretion and can falsely raise FENa even when the cause is prerenal; in patients on diuretics the fractional excretion of urea (FEUrea) is recommended instead."
+        }
       ]
     }
   },
@@ -1490,6 +2193,25 @@
         "Will I need an intensive care bed after the operation?",
         "What are the most likely complications for my ASA class?"
       ]
+    },
+    "content": {
+      "overview": "The American Society of Anesthesiologists Physical Status Classification (ASA-PS) is a six-category ordinal scale describing a patient's preoperative systemic health status before anesthesia and surgery. It does not measure surgical risk on its own but rather the patient's systemic comorbidity burden, and it is used routinely as part of the preanesthetic assessment to communicate risk and guide perioperative planning. It is a system defined and maintained by the American Society of Anesthesiologists (ASA), with examples approved in 2014 and updated in 2020.",
+      "interpretation": "There are six classes. ASA I: a normal healthy patient with no systemic disease. ASA II: mild, well-controlled systemic disease without substantial functional limitation (for example, current smoker, pregnancy, obesity with BMI 30-40, well-controlled hypertension or diabetes). ASA III: severe systemic disease with substantial functional limitation (for example, poorly controlled diabetes or hypertension, COPD, BMI ≥40, myocardial infarction or stroke more than 3 months ago, end-stage renal disease on regularly scheduled dialysis). ASA IV: severe systemic disease that is a constant threat to life (for example, recent myocardial infarction, stroke or coronary stent within 3 months, ongoing cardiac ischemia, sepsis, end-stage renal disease not on regularly scheduled dialysis). ASA V: a moribund patient not expected to survive without the operation. ASA VI: a declared brain-dead patient for organ donation. The suffix E is added to any class when surgery is an emergency. A higher class is associated with greater perioperative morbidity and mortality.",
+      "cautions": "The ASA class is assigned by the anesthesiologist's clinical judgment and has known interobserver variability; the ASA examples are illustrative, not exhaustive. It does not incorporate age, weight alone, or the complexity or nature of the surgical procedure, and it is not a validated risk-prediction tool for an individual patient. It should not be used in isolation to quantify operative risk: dedicated risk models (for example, the ACS NSQIP risk calculator or RCRI) should be used for risk estimation. It also does not reflect airway difficulty.",
+      "faq": [
+        {
+          "q": "What does ASA III mean before an operation?",
+          "a": "It indicates severe systemic disease with substantial functional limitation but not an immediate threat to life, such as poorly controlled diabetes or hypertension, COPD, or obesity with a BMI of 40 or higher."
+        },
+        {
+          "q": "What does the letter E mean in the ASA classification?",
+          "a": "The E suffix indicates that the procedure is an emergency, meaning that a delay in treatment would significantly increase the threat to life or to a body part. It is appended to the relevant class, for example ASA IIIE."
+        },
+        {
+          "q": "Does the ASA class predict my surgical mortality?",
+          "a": "It is statistically associated with perioperative morbidity and mortality, but it is not an individual risk calculator; estimating the risk for a specific patient requires models designed for that purpose."
+        }
+      ]
     }
   },
   "caprini": {
@@ -1546,6 +2268,25 @@
         "Are there signs of clots I should watch for at home?",
         "Will the prevention interact with my other medications?"
       ]
+    },
+    "content": {
+      "overview": "The Caprini Score (Caprini Risk Assessment Model) stratifies the risk of venous thromboembolism (VTE) —deep vein thrombosis and pulmonary embolism— in hospitalized patients, particularly surgical ones, by summing weighted points for clinical risk factors. It includes age, type and duration of surgery, prior VTE, thrombophilia, malignancy, immobility, obesity, oral contraceptive or hormone therapy use, pregnancy or postpartum, and other comorbidities. It guides the indication and intensity of thromboprophylaxis (mechanical and/or pharmacologic). It is one of the VTE risk assessment models recommended by the American College of Chest Physicians (ACCP/CHEST) guidelines for non-orthopedic surgical patients.",
+      "interpretation": "The total score places the patient into risk bands. In the general/abdominopelvic surgery version, 0 points indicates very low risk; 1-2 points, low risk; 3-4 points, moderate risk; and ≥5 points, high risk. Higher scores reflect greater VTE risk and generally a stronger indication for adding pharmacologic prophylaxis to mechanical measures, always weighing the individual bleeding risk. Exact thresholds and prophylactic management can vary by population (e.g., plastic or orthopedic surgery) and institutional protocol, so they should be applied using the corresponding validated version.",
+      "cautions": "The model was developed and validated mainly in adult surgical patients (especially general, vascular, urologic, and plastic surgery); its application to medical, obstetric, or pediatric patients is less well established. It does not assess bleeding risk, which must be estimated separately before deciding on pharmacologic prophylaxis, nor does it replace clinical judgment or diagnostic testing when active VTE is suspected. A common misuse is treating it as a diagnostic tool or applying one version's thresholds to a population other than the one in which it was validated.",
+      "faq": [
+        {
+          "q": "When should I start pharmacologic thromboprophylaxis based on the Caprini score?",
+          "a": "In general, patients with moderate-to-high scores (typically ≥3-5 points depending on the version) benefit from adding pharmacologic prophylaxis to mechanical measures, provided bleeding risk is acceptable. The final decision is individualized using the local protocol."
+        },
+        {
+          "q": "Is the Caprini score valid for non-surgical medical patients?",
+          "a": "It was validated mainly in surgical patients. For hospitalized medical patients, dedicated models such as the Padua Prediction Score are often preferred, though some institutions adapt the Caprini score."
+        },
+        {
+          "q": "What is the difference between the Caprini score and the Wells score?",
+          "a": "The Caprini score estimates the risk of developing VTE to guide prophylaxis, whereas the Wells score estimates the probability that a patient already has a DVT or PE to guide diagnosis. They are not interchangeable."
+        }
+      ]
     }
   },
   "wellsDvt": {
@@ -1573,6 +2314,25 @@
         "Are there reasons to start treatment empirically?",
         "What signs of pulmonary embolism should I watch for?",
         "How long will I need treatment if DVT is confirmed?"
+      ]
+    },
+    "content": {
+      "overview": "The Wells score for deep vein thrombosis (DVT) estimates the pre-test clinical probability of DVT in outpatients with suspected lower-limb thrombosis. It adds points for risk factors and clinical signs (active cancer, recent leg paralysis or immobilization, recent bed rest or major surgery, tenderness along the deep venous system, swelling of the entire leg, calf circumference >3 cm larger than the asymptomatic side, pitting edema, collateral superficial veins, and previous DVT), and subtracts 2 points when an alternative diagnosis is at least as likely as DVT. It is part of the DVT diagnostic algorithms endorsed by the ESC 2019 guideline on pulmonary embolism and by the American College of Chest Physicians (CHEST).",
+      "interpretation": "In the dichotomized model (most widely used), a score ≤1 classifies the patient as DVT unlikely and a score ≥2 as DVT likely. In the original three-tier model, a score ≤0 indicates low probability, 1-2 moderate, and ≥3 high (the score can be negative because points are subtracted for an alternative diagnosis). In patients deemed DVT unlikely, a negative D-dimer safely excludes DVT without imaging; if the D-dimer is positive or DVT is likely, compression ultrasonography of the limb is required. The score does not confirm the diagnosis on its own and must always be combined with D-dimer and/or imaging.",
+      "cautions": "Validated in adult outpatients with suspected first lower-limb DVT. It has not been reliably validated in hospitalized patients, pregnancy, patients already on anticoagulation, suspected upper-extremity DVT, or recurrent DVT, where its performance is reduced. It does not assess the probability of pulmonary embolism (a separate Wells score for PE is used for that) and does not replace D-dimer or imaging. A common misuse is applying it alone to rule out DVT without integrating the D-dimer in low-risk/unlikely patients.",
+      "faq": [
+        {
+          "q": "What is the difference between the Wells score for DVT and the one for pulmonary embolism?",
+          "a": "They are two distinct scores with their own items and points: the DVT score assesses leg thrombosis and the PE score assesses suspected pulmonary embolism. They are not interchangeable."
+        },
+        {
+          "q": "What should I do if the Wells score is low or DVT unlikely?",
+          "a": "In a DVT-unlikely patient (≤1), a negative D-dimer safely excludes DVT and avoids ultrasonography; if the D-dimer is positive, compression ultrasound is required."
+        },
+        {
+          "q": "Do I always need an ultrasound if the Wells score is high?",
+          "a": "Yes; when DVT is likely (≥2), D-dimer is not sufficient to exclude it and compression ultrasonography of the limb should be performed."
+        }
       ]
     }
   },
@@ -1624,6 +2384,25 @@
         "What follow-up tests will I need?",
         "Are there lifestyle changes that can improve my score?"
       ]
+    },
+    "content": {
+      "overview": "The Child-Pugh classification estimates the severity and prognosis of hepatic cirrhosis and helps stratify the risk of mortality and perioperative complications. It combines five variables: serum bilirubin, serum albumin, INR (or prothrombin time), ascites, and hepatic encephalopathy. Each variable scores 1 to 3 points, for a total of 5 to 15 points. It is a long-standing tool widely used in hepatology; EASL guidance recognizes it as a classic measure of liver function, often complemented by MELD in transplant evaluation.",
+      "interpretation": "The total score (5–15) divides into three classes. Class A (5–6 points): well-compensated cirrhosis, estimated 1-year survival around 95–100%. Class B (7–9 points): significant functional compromise, 1-year survival roughly 80%. Class C (10–15 points): decompensated disease, 1-year survival around 45%. The class also informs surgical risk and dose adjustment of hepatically metabolized drugs.",
+      "cautions": "Validated in patients with chronic cirrhosis. It includes two subjective components (degree of ascites and encephalopathy) that introduce interobserver variability, and it omits renal function, a key prognostic factor that MELD captures. Bilirubin may be artificially elevated in cholestasis or syndromes such as Gilbert's, and albumin and INR can be altered by extrahepatic causes (nutrition, anticoagulation). It does not directly assess the presence of varices or the risk of bleeding from portal hypertension, nor does it replace MELD for transplant waitlist prioritization.",
+      "faq": [
+        {
+          "q": "What is the difference between Child-Pugh and MELD?",
+          "a": "Child-Pugh classifies cirrhosis into three classes (A, B, C) using clinical and laboratory variables, whereas MELD is a continuous score based on bilirubin, INR, and creatinine (plus sodium in MELD-Na) used to prioritize organ allocation for transplantation."
+        },
+        {
+          "q": "What does Child-Pugh class C cirrhosis mean?",
+          "a": "It indicates decompensated cirrhosis with severely impaired liver function and a worse prognosis, with an estimated 1-year survival around 45%; it typically prompts evaluation for liver transplantation."
+        },
+        {
+          "q": "Do I need to fast to calculate the Child-Pugh score?",
+          "a": "No. It is calculated from laboratory values (bilirubin, albumin, INR) and the clinical assessment of ascites and encephalopathy; no specific fasting is required beyond any lab instructions for the blood draw."
+        }
+      ]
     }
   },
   "glasgowBlatchford": {
@@ -1652,6 +2431,25 @@
         "When will the endoscopy be done?",
         "What signs of re-bleeding should I watch for at home?"
       ]
+    },
+    "content": {
+      "overview": "The Glasgow-Blatchford Score (GBS) risk-stratifies patients presenting with upper gastrointestinal bleeding and identifies those at low risk of needing clinical intervention (blood transfusion, therapeutic endoscopy, or surgery) or of dying. It is calculated from data available at admission, without endoscopy: urea, haemoglobin, systolic blood pressure, heart rate, melaena, syncope, hepatic disease, and cardiac failure. It is useful in the emergency department to decide on early discharge versus admission. The ESGE and NICE guidelines recommend using the GBS for initial pre-endoscopic assessment.",
+      "interpretation": "The score ranges from 0 to 23: the higher the value, the greater the risk of intervention or death. A score of 0 (or ≤1 in some protocols) identifies very-low-risk patients who may be considered for outpatient management with deferred endoscopy, as the probability of needing transfusion, haemostasis, or surgery is very low. Higher scores are progressively associated with greater need for intervention and support admission and early endoscopy. There is no single universal high-risk threshold; the GBS's main practical value is its high sensitivity for ruling out low-risk patients.",
+      "cautions": "Validated in adults with acute upper gastrointestinal bleeding. The GBS is a prognostic tool to guide disposition; it does not diagnose the source of bleeding nor replace endoscopy. It should not be used for lower gastrointestinal bleeding. Urea can be elevated for reasons unrelated to bleeding (renal failure, dehydration) and the initial haemoglobin may not yet reflect acute loss, which can over- or under-estimate risk. Clinical judgement must be maintained: a low GBS does not exclude serious pathology when the presentation is concerning.",
+      "faq": [
+        {
+          "q": "What is the difference between the Glasgow-Blatchford and Rockall scores?",
+          "a": "The Glasgow-Blatchford is applied before endoscopy and predicts the need for intervention, whereas the full Rockall score incorporates endoscopic findings and is more oriented to predicting mortality and rebleeding."
+        },
+        {
+          "q": "What Glasgow-Blatchford score allows discharge from the emergency department?",
+          "a": "A GBS of 0 (and ≤1 in some protocols) identifies very-low-risk patients suitable for outpatient management with deferred endoscopy, always alongside individual clinical assessment."
+        },
+        {
+          "q": "What parameters do I need to calculate the Glasgow-Blatchford score?",
+          "a": "Urea, haemoglobin, systolic blood pressure, and heart rate, plus the presence of melaena, syncope, hepatic disease, and cardiac failure; no endoscopy is required."
+        }
+      ]
     }
   },
   "score2": {
@@ -1678,6 +2476,25 @@
         "Should I start a statin?",
         "How tight should my blood pressure be?",
         "When should we reassess?"
+      ]
+    },
+    "content": {
+      "overview": "SCORE2 and SCORE2-OP estimate the 10-year risk of fatal and non-fatal atherosclerotic cardiovascular events (myocardial infarction and stroke) in people without established cardiovascular disease, diabetes or chronic kidney disease. SCORE2 applies to adults aged 40 to 69 years and SCORE2-OP (Older Persons) to those aged 70 years and over. They combine age, sex, smoking, systolic blood pressure and non-HDL cholesterol, calibrated to European risk regions (low, moderate, high and very high). They are the algorithms recommended by the 2021 ESC guidelines on cardiovascular disease prevention.",
+      "interpretation": "The result is a 10-year risk percentage, interpreted by age band. In adults <50 years: <2.5% low-to-moderate risk, 2.5-7.5% high risk, ≥7.5% very high risk. In those 50-69 years: <5% low-to-moderate, 5-10% high, ≥10% very high. In those ≥70 years (SCORE2-OP): <7.5% low-to-moderate, 7.5-15% high, ≥15% very high. The category guides treatment intensity: in high or very high risk, more intensive lipid-lowering and blood pressure treatment is considered, always within shared decision-making with the patient.",
+      "cautions": "Validated in European populations aged 40 years or older without prior cardiovascular events. It should not be applied to patients with established atherosclerotic cardiovascular disease, diabetes mellitus, chronic kidney disease, familial hypercholesterolaemia or secondary hypertension, who are already at high or very high risk or have dedicated tools. The correct risk-region chart must be selected. It does not estimate the risk of heart failure, atrial fibrillation or all-cause mortality, and may underestimate risk in some groups (chronic inflammatory disease, South Asian ethnicity, socioeconomic deprivation).",
+      "faq": [
+        {
+          "q": "What is the difference between SCORE2 and the original SCORE?",
+          "a": "SCORE2 estimates fatal AND non-fatal cardiovascular events over 10 years and uses non-HDL cholesterol, whereas the older SCORE estimated cardiovascular mortality only. SCORE2 is also recalibrated to European risk regions."
+        },
+        {
+          "q": "Which regional risk chart should I use in Spain?",
+          "a": "Spain is classified as a low-risk region in the SCORE2 calibration; the chart for that region must be selected to obtain a correct estimate."
+        },
+        {
+          "q": "Can I use SCORE2 in a patient with diabetes?",
+          "a": "No. In diabetes, dedicated tools such as SCORE2-Diabetes should be used; SCORE2 and SCORE2-OP are intended for people without diabetes, cardiovascular disease or chronic kidney disease."
+        }
       ]
     }
   },
@@ -1711,6 +2528,25 @@
         "Which lifestyle changes will help the most?",
         "How often should we recheck?"
       ]
+    },
+    "content": {
+      "overview": "The ASCVD 10-year Risk (Pooled Cohort Equations) estimates the 10-year probability of a first atherosclerotic cardiovascular disease event (non-fatal myocardial infarction, coronary death, or fatal/non-fatal stroke) in adults without established cardiovascular disease. It combines age, sex, race, total and HDL cholesterol, systolic blood pressure (treated or untreated), smoking, diabetes, and antihypertensive treatment. The equations were derived by the ACC/AHA in the 2013 guideline, and their decision thresholds were reaffirmed in the 2018 ACC/AHA cholesterol and 2019 primary-prevention guidelines to guide initiation of statin therapy.",
+      "interpretation": "The result is stratified into four 10-year risk bands: low (<5%), borderline (5% to <7.5%), intermediate (7.5% to <20%), and high (>=20%). In intermediate risk (7.5% to <20%), a moderate-intensity statin is recommended after a risk-benefit discussion; in high risk (>=20%), high-intensity statin therapy is recommended. In the borderline band (5% to <7.5%), a moderate-intensity statin is considered when risk-enhancing factors are present. These factors (premature family history, lipoprotein(a), C-reactive protein, ankle-brachial index) and the coronary artery calcium (CAC) score help refine the decision and personalize the risk-benefit discussion with the patient.",
+      "cautions": "The equations are validated in adults aged 40 to 79 without prior cardiovascular disease, derived from US white and African-American cohorts; they tend to overestimate risk in contemporary, European, and other ethnic populations (Asian, Hispanic). They do not apply to secondary prevention, to LDL >=190 mg/dL, and do not replace clinical judgment. They do not assess short-term or lifetime risk, and are not validated outside the age range or in patients with already known cardiovascular disease.",
+      "faq": [
+        {
+          "q": "What is the difference between the ASCVD score and the European SCORE2?",
+          "a": "Both estimate 10-year cardiovascular risk in primary prevention, but the ASCVD is the ACC/AHA tool derived from a US population, whereas SCORE2 is the tool recommended by the ESC guideline and is calibrated to European risk regions."
+        },
+        {
+          "q": "At what percentage should a statin be started?",
+          "a": "The ACC/AHA guideline recommends a moderate-intensity statin in intermediate risk (7.5% to <20%) and a high-intensity statin when risk is >=20%; between 5 and <7.5% (borderline risk) the decision is individualized using risk-enhancing factors, always within shared decision-making with the patient."
+        },
+        {
+          "q": "Can the ASCVD score be used if the patient has already had a heart attack?",
+          "a": "No; the Pooled Cohort Equations are for primary prevention only. A patient with established cardiovascular disease is already high-risk and requires intensive treatment regardless of the calculated score."
+        }
+      ]
     }
   },
   "sofa": {
@@ -1736,6 +2572,25 @@
         "Is the patient improving or worsening compared with yesterday?",
         "Are we changing treatment based on the trend?",
         "When should we discuss goals of care?"
+      ]
+    },
+    "content": {
+      "overview": "The SOFA (Sequential Organ Failure Assessment) score quantifies the severity of organ dysfunction in critically ill patients by assessing six systems: respiratory (PaO₂/FiO₂), coagulation (platelets), hepatic (bilirubin), cardiovascular (mean arterial pressure or vasopressor requirement), neurological (Glasgow Coma Scale) and renal (creatinine or urine output). Each system scores 0 to 4, for a total of 0 to 24. It is used to track the evolution of organ dysfunction in the ICU and is the central tool of the Sepsis-3 definition (2016), endorsed by SCCM/ESICM, which characterises sepsis as life-threatening organ dysfunction secondary to infection.",
+      "interpretation": "The score is the sum of points across organs (0-4 per system, total 0-24); higher values indicate greater dysfunction and higher mortality. Within Sepsis-3, an acute rise of ≥2 points from baseline SOFA in a patient with infection defines sepsis and is associated with an in-hospital mortality of roughly 10% or higher. Higher initial and maximum scores, and especially a SOFA that increases over the first days of admission, predict a worse prognosis; a falling SOFA suggests response to treatment. There is no single universal dichotomous survival threshold: its value is primarily longitudinal and comparative.",
+      "cautions": "Validated in critically ill adult patients, mainly in ICU settings; adapted paediatric and neonatal versions exist (pSOFA, nSOFA) that must not be interchanged with the adult version. It requires laboratory and blood-gas data, so it is not suited to rapid bedside screening (qSOFA was used for that purpose, though it is now discouraged as a standalone screening tool). SOFA measures organ dysfunction and severity; it does not by itself diagnose infection or sepsis and does not replace clinical judgement. Components such as the Glasgow Coma Scale may be confounded by sedation and creatinine by pre-existing chronic kidney disease.",
+      "faq": [
+        {
+          "q": "What is the difference between SOFA and qSOFA?",
+          "a": "SOFA is a full 0-24 score requiring laboratory data to quantify dysfunction across six organs, whereas qSOFA is a rapid 3-item bedside tool (respiratory rate, altered mentation, systolic blood pressure) intended for screening outside the ICU, now with a more limited role."
+        },
+        {
+          "q": "What does a 2-point increase in SOFA mean?",
+          "a": "In a patient with suspected or confirmed infection, an acute rise of ≥2 points above baseline SOFA defines sepsis under the Sepsis-3 criteria and identifies a clinically significant mortality risk."
+        },
+        {
+          "q": "Can SOFA be used in children?",
+          "a": "Not directly; the adult version was validated in critically ill adults. Age-specific adaptations exist for paediatric and neonatal populations (pSOFA and nSOFA) with their own thresholds."
+        }
       ]
     }
   },
@@ -1773,6 +2628,25 @@
         "What are realistic goals for this admission?",
         "When should we reassess?"
       ]
+    },
+    "content": {
+      "overview": "APACHE II (Acute Physiology and Chronic Health Evaluation II) is a severity-of-disease classification system that estimates the risk of in-hospital mortality in adult patients admitted to intensive care units. It is calculated from 12 acute physiological variables recorded during the first 24 hours of ICU admission (including temperature, mean arterial pressure, heart and respiratory rate, oxygenation, arterial pH, sodium, potassium, creatinine, haematocrit, white blood cell count and the Glasgow Coma Scale), together with age and chronic health status. The total score ranges from 0 to 71 points. It is one of the reference tools described in the critical-care literature and is widely used for severity stratification and for comparing case mix across ICUs.",
+      "interpretation": "The total score combines the acute physiology subtotal, age points (0 to 6 according to age band) and points for severe chronic illness or immunocompromise (2 points if admission is elective postoperative, 5 points if non-operative or emergency postoperative). The higher the score, the greater the risk of in-hospital death: as a guide, low scores (roughly 0-9) are associated with an estimated mortality below 10%, whereas high scores (above 25-30) are associated with mortality exceeding 50-75%. Predicted mortality is derived from a logistic equation that incorporates the APACHE II score and a diagnosis-specific coefficient; the mortality percentage therefore depends on both the number of points and the admission diagnostic category.",
+      "cautions": "APACHE II was validated in adult ICU patients and does not apply to paediatric patients, pregnant women, burns patients or post-cardiac-surgery patients, for whom specific models are used. The score should be calculated from the worst values of the first 24 hours of ICU admission and is not designed for repeated calculation or daily monitoring of progress. It is a population-level prediction tool for severity stratification and cohort comparison, not an instrument for determining prognosis or limiting treatment in an individual patient. It does not assess response to treatment over the course of admission, nor does it track organ dysfunction dynamically as other scores do (e.g. SOFA).",
+      "faq": [
+        {
+          "q": "What is the difference between APACHE II and SOFA?",
+          "a": "APACHE II is a mortality-prediction model calculated once from the first 24 hours of data, whereas SOFA quantifies and tracks daily dysfunction across six organ systems during admission. They are complementary: APACHE II for initial stratification and SOFA for following the clinical course."
+        },
+        {
+          "q": "When should APACHE II be calculated?",
+          "a": "It should be calculated using the most deranged physiological values recorded during the first 24 hours of ICU admission; it is not recalculated daily."
+        },
+        {
+          "q": "Does a high APACHE II score mean the patient will die?",
+          "a": "No. APACHE II estimates a probability of mortality at the population level, not an individual outcome; patients with high scores can survive, and it should not be used in isolation to limit treatment."
+        }
+      ]
     }
   },
   "nihss": {
@@ -1807,6 +2681,25 @@
         "Could a mechanical thrombectomy help?",
         "What is the expected recovery for this severity?",
         "How long should I expect to stay in the stroke unit?"
+      ]
+    },
+    "content": {
+      "overview": "The NIHSS (National Institutes of Health Stroke Scale) quantifies the severity of neurological deficit in patients with acute ischemic stroke through 11 items assessing level of consciousness, gaze, visual fields, facial palsy, limb strength, ataxia, sensation, language, dysarthria, and extinction/inattention. It is used in initial assessment, to guide thrombolysis and thrombectomy decisions, and to monitor progression. It is the scale recommended by the AHA/ASA guidelines for the management of acute ischemic stroke.",
+      "interpretation": "The total score ranges from 0 to 42; higher scores indicate more severe deficit. A common stratification is: 0 no symptoms; 1-4 minor stroke; 5-15 moderate; 16-20 moderate-to-severe; 21-42 severe. Higher scores correlate with worse prognosis and larger infarct volume. A high score (often indicatively around 6 or more) together with a large-vessel occlusion supports consideration of mechanical thrombectomy, always integrated with neuroimaging and the time window.",
+      "cautions": "Validated in adults with acute ischemic stroke; it should be administered by trained and certified personnel to ensure interrater reliability. It underestimates posterior-circulation and non-dominant-hemisphere strokes, where clinically relevant deficits may yield low scores. It is not a diagnostic tool: it does not distinguish ischemia from hemorrhage (neuroimaging is required) or assess etiology, and it does not replace a functional disability scale (such as the modified Rankin Scale). Sedation, pre-existing aphasia, intubation, or coma can confound the score.",
+      "faq": [
+        {
+          "q": "What NIHSS score is considered a severe stroke?",
+          "a": "In general, scores of 16 or more indicate high-severity stroke, and 21-42 are considered severe, with worse functional prognosis."
+        },
+        {
+          "q": "What NIHSS score is needed for thrombectomy?",
+          "a": "There is no absolute threshold, but an NIHSS of approximately 6 or more with an imaging-confirmed large-vessel occlusion typically supports thrombectomy, within the appropriate time window."
+        },
+        {
+          "q": "Does the NIHSS detect all strokes?",
+          "a": "No; it particularly underestimates posterior-circulation and non-dominant-hemisphere strokes, so a low score does not rule out a clinically relevant stroke."
+        }
       ]
     }
   }
