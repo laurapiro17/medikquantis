@@ -2741,5 +2741,19 @@
     ],
     "cite_heading": "Com citar",
     "cite_body": "Si fas servir MedikQuantis en recerca o docència, cita la versió arxivada amb el seu DOI:"
+  },
+  "smart": {
+    "heading": "Connecta amb la història clínica",
+    "intro": "Prototip SMART on FHIR: connecta't a un servidor FHIR (per defecte, el sandbox públic de SMART Health IT) i precarrega el CHA₂DS₂-VASc amb l'edat, el sexe i els antecedents del pacient. Revisa sempre els factors detectats abans d'usar el resultat.",
+    "endpoint_label": "Servidor FHIR",
+    "connect": "Connecta amb l'EHR",
+    "connecting": "Connectant…",
+    "loading_patient": "Llegint dades del pacient…",
+    "error": "No s'ha pogut connectar amb el servidor FHIR. Comprova l'adreça i torna-ho a provar.",
+    "patient_heading": "Pacient",
+    "detected_heading": "Factors detectats (CHA₂DS₂-VASc)",
+    "none_detected": "No s'ha detectat automàticament cap factor de risc; revisa'ls manualment a la calculadora.",
+    "open_calc": "Obre a la calculadora amb aquestes dades",
+    "prototype_note": "Prototip amb finalitats de demostració. El mapatge de problemes codificats és incomplet i pot tenir errors: verifica'l clínicament."
   }
 }

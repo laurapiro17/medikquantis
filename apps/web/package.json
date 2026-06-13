@@ -14,6 +14,7 @@
     "@medcalc/calculators": "workspace:*",
     "@vercel/analytics": "^2.0.1",
     "@vercel/kv": "^3.0.0",
+    "fhirclient": "^2.6.3",
     "next": "^15.0.0",
     "next-intl": "^3.26.0",
     "react": "^19.0.0",
