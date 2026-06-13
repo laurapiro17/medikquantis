@@ -162,6 +162,12 @@ export default async function LocaleLayout({
           <Link href="/about" className="hover:text-trust-600 dark:hover:text-neon">
             {t("nav_about")}
           </Link>
+          <Link
+            href="/methodology"
+            className="hover:text-trust-600 dark:hover:text-neon"
+          >
+            {t("nav_methodology")}
+          </Link>
           <Link href="/privacy" className="hover:text-trust-600 dark:hover:text-neon">
             {t("nav_privacy")}
           </Link>
