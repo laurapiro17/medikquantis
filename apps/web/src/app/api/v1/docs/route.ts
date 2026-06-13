@@ -79,7 +79,7 @@ const HTML = `<!doctype html>
     <h1>MedikQuantis API · v1</h1>
     <p>
       Open clinical calculators · MIT licensed ·
-      <a href="https://doi.org/10.5281/zenodo.20562618">DOI 10.5281/zenodo.20562618</a> ·
+      <a href="https://doi.org/10.5281/zenodo.20562617">DOI 10.5281/zenodo.20562617</a> ·
       <a href="https://github.com/laurapiro17/medikquantis">github.com/laurapiro17/medikquantis</a>
     </p>
   </div>

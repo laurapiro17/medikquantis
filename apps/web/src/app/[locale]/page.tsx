@@ -3,7 +3,7 @@ import { getCalc, listCalcs, POPULAR_CALC_IDS } from "@medcalc/calculators";
 import { Link } from "@/i18n/navigation";
 import { Catalog } from "@/components/Catalog";
 
-const DOI = "10.5281/zenodo.20608408";
+const DOI = "10.5281/zenodo.20562617";
 const DOI_URL = `https://doi.org/${DOI}`;
 const REPO_URL = "https://github.com/laurapiro17/medikquantis";
 

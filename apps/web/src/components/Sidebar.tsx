@@ -19,7 +19,7 @@ interface SidebarProps {
   onCollapse?: () => void; // Desktop only — collapse the sidebar.
 }
 
-const DOI = "10.5281/zenodo.20562618";
+const DOI = "10.5281/zenodo.20562617";
 const REPO_URL = "https://github.com/laurapiro17/medikquantis";
 
 export function Sidebar({ calcs, popularIds, onNavigate, onCollapse }: SidebarProps) {

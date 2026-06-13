@@ -11,7 +11,7 @@ export interface Release {
   itemsKey: "changelog.v1_items";
 }
 
-export const DOI = "10.5281/zenodo.20562618";
+export const DOI = "10.5281/zenodo.20562617";
 export const DOI_URL = `https://doi.org/${DOI}`;
 
 // Newest first.

@@ -24,7 +24,7 @@ export function GET(): Response {
     health: "/api/v1/health",
     batch: "/api/v1/batch",
     license: "MIT",
-    citation: "https://doi.org/10.5281/zenodo.20562618",
+    citation: "https://doi.org/10.5281/zenodo.20562617",
     calculatorCount: calcs.length,
     calculators: calcs,
   });
