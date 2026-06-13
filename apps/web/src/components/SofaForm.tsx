@@ -22,14 +22,12 @@ const fields: (keyof SofaInput)[] = [
 export function SofaForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<SofaInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const score = sofa.formula(inputs);
@@ -40,7 +38,6 @@ export function SofaForm() {
   }
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
@@ -48,7 +45,7 @@ export function SofaForm() {
       <ModeToggle mode={mode} onChange={setMode} />
       <p className="text-sm text-slate-600 dark:text-slate-300">{t("sofa.scale_legend")}</p>
       <form
-        onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
+        onSubmit={(e) => { e.preventDefault(); }}
         className="glass-panel space-y-6 p-6"
       >
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -64,7 +61,7 @@ export function SofaForm() {
         </div>
         <FormActions submitLabel={t("common.calculate")} resetLabel={t("common.reset")} onReset={reset} />
       </form>
-      {submitted && (
+      {(
         <ResultPanel
           mode={mode}
           score={score}

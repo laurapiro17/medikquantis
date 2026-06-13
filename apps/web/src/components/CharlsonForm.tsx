@@ -61,14 +61,12 @@ const sixPtFields = ["metastaticSolidTumor", "aids"] as const;
 export function CharlsonForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<CharlsonInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const score = charlson.formula(inputs);
@@ -79,7 +77,6 @@ export function CharlsonForm() {
   }
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   function renderGroup(
@@ -107,7 +104,7 @@ export function CharlsonForm() {
     <div className="space-y-6">
       <ModeToggle mode={mode} onChange={setMode} />
       <form
-        onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
+        onSubmit={(e) => { e.preventDefault(); }}
         className="glass-panel space-y-6 p-6"
       >
         <NumberInput
@@ -127,7 +124,7 @@ export function CharlsonForm() {
           onReset={reset}
         />
       </form>
-      {submitted && (
+      {(
         <ResultPanel
           mode={mode}
           score={score}

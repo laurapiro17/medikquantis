@@ -23,7 +23,6 @@ const tierStyles = {
 export function HincheyForm() {
   const t = useTranslations();
   const [selected, setSelected] = useState<HincheyClassValue | null>(null);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
@@ -32,7 +31,6 @@ export function HincheyForm() {
     const cls = urlInputs.hincheyClass;
     if (typeof cls === "string" && (classes as string[]).includes(cls)) {
       setSelected(cls as HincheyClassValue);
-      setSubmitted(true);
     }
   }, [urlInputs]);
 
@@ -45,7 +43,6 @@ export function HincheyForm() {
 
   function reset() {
     setSelected(null);
-    setSubmitted(false);
   }
 
   return (
@@ -54,7 +51,6 @@ export function HincheyForm() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          if (selected) setSubmitted(true);
         }}
         className="glass-panel space-y-6 p-6"
       >
@@ -77,7 +73,7 @@ export function HincheyForm() {
           canSubmit={!!selected}
         />
       </form>
-      {submitted && result && (
+      {result && (
         <>
           <HincheyResultPanel mode={mode} result={result} />
           <div className="glass-panel p-4">

@@ -41,13 +41,11 @@ const tierStyles = {
 export function GraceForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<GraceInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const [mode, setMode] = useState<Mode>("clinician");
@@ -61,7 +59,6 @@ export function GraceForm() {
 
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
@@ -71,7 +68,6 @@ export function GraceForm() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          setSubmitted(true);
         }}
         className="glass-panel space-y-6 p-6"
       >
@@ -138,7 +134,7 @@ export function GraceForm() {
         />
       </form>
 
-      {submitted && (
+      {(
         <>
           <GraceResultPanel
           mode={mode}

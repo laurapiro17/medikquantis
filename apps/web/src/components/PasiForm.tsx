@@ -24,14 +24,12 @@ const features = ["area", "erythema", "induration", "desquamation"] as const;
 export function PasiForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<PasiInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs } as PasiInput));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const score = pasi.formula(inputs);
@@ -50,7 +48,6 @@ export function PasiForm() {
 
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
@@ -60,7 +57,7 @@ export function PasiForm() {
         {t("pasi.scale_legend")}
       </p>
       <form
-        onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
+        onSubmit={(e) => { e.preventDefault(); }}
         className="glass-panel space-y-8 p-6"
       >
         {regions.map((region) => (
@@ -88,7 +85,7 @@ export function PasiForm() {
           onReset={reset}
         />
       </form>
-      {submitted && (
+      {(
         <ResultPanel
           mode={mode}
           score={score}

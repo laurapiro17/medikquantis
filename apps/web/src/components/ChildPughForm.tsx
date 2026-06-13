@@ -27,14 +27,12 @@ const classStyles = {
 export function ChildPughForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<ChildPughInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const score = childPugh.formula(inputs);
@@ -45,14 +43,13 @@ export function ChildPughForm() {
   }
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
     <div className="space-y-6">
       <ModeToggle mode={mode} onChange={setMode} />
       <form
-        onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
+        onSubmit={(e) => { e.preventDefault(); }}
         className="glass-panel space-y-6 p-6"
       >
         {fields.map((f) => (
@@ -76,7 +73,7 @@ export function ChildPughForm() {
           onReset={reset}
         />
       </form>
-      {submitted && (
+      {(
         <>
           <ChildPughResultPanel
             mode={mode}

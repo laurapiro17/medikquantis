@@ -31,13 +31,11 @@ const booleanFields = [
 export function Cha2ds2vascForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<Cha2ds2vascInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const [mode, setMode] = useState<Mode>("clinician");
@@ -51,7 +49,6 @@ export function Cha2ds2vascForm() {
 
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
@@ -61,7 +58,6 @@ export function Cha2ds2vascForm() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          setSubmitted(true);
         }}
         className="glass-panel space-y-6 p-6"
       >
@@ -102,7 +98,7 @@ export function Cha2ds2vascForm() {
         />
       </form>
 
-      {submitted && (
+      {(
         <ResultPanel
           mode={mode}
           score={score}

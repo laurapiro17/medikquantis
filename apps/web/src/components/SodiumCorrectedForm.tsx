@@ -28,14 +28,12 @@ const categoryStyles = {
 export function SodiumCorrectedForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<SodiumCorrectedInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const corrected = sodiumCorrected.formula(inputs);
@@ -50,7 +48,6 @@ export function SodiumCorrectedForm() {
 
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
@@ -60,7 +57,6 @@ export function SodiumCorrectedForm() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          setSubmitted(true);
         }}
         className="glass-panel space-y-6 p-6"
       >
@@ -88,7 +84,7 @@ export function SodiumCorrectedForm() {
         />
       </form>
 
-      {submitted && (
+      {(
         <>
           <SodiumResultPanel
             mode={mode}
