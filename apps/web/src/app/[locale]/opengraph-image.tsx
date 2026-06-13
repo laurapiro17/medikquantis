@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og";
 import { getTranslations } from "next-intl/server";
+import { listCalcs } from "@medcalc/calculators";
 import { routing, type Locale } from "@/i18n/routing";
 
 // Node.js runtime (not "edge"): next-intl's getTranslations bundles the whole
@@ -22,6 +23,11 @@ export default async function OpenGraphImage({
 }) {
   const locale = isSupportedLocale(params.locale) ? params.locale : "en";
   const t = await getTranslations({ locale, namespace: "home" });
+
+  // Derive the counts from the registry so this strapline never goes stale.
+  const calcs = listCalcs();
+  const calcCount = calcs.length;
+  const specialtyCount = new Set(calcs.map((c) => c.specialty)).size;
 
   return new ImageResponse(
     (
@@ -99,7 +105,10 @@ export default async function OpenGraphImage({
             paddingTop: 24,
           }}
         >
-          <span>13 calculators · 5 specialties · CA · ES · EN</span>
+          <span>
+            {calcCount} calculators · {specialtyCount} specialties · CA · ES ·
+            EN
+          </span>
           <span style={{ fontFamily: "monospace", color: "#00f0ff" }}>
             DOI 10.5281/zenodo.20562617
           </span>
