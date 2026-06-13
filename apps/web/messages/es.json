@@ -166,7 +166,10 @@
     "reviewer_role": "estudiante de Medicina, Universidad de Barcelona",
     "scores_attribution": "Las fórmulas y los puntos de corte provienen de los autores originales de cada escala; véanse las referencias.",
     "last_reviewed": "Última revisión",
-    "last_reviewed_value": "junio de 2026"
+    "last_reviewed_value": "junio de 2026",
+    "copy_result": "Copiar resultado",
+    "copy_result_copied": "Resultado copiado",
+    "result_source": "Calculado con MedikQuantis"
   },
   "cha2ds2vasc": {
     "title": "CHA₂DS₂-VASc",

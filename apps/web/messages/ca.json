@@ -166,7 +166,10 @@
     "reviewer_role": "estudiant de Medicina, Universitat de Barcelona",
     "scores_attribution": "Les fórmules i els punts de tall provenen dels autors originals de cada escala; vegeu les referències.",
     "last_reviewed": "Última revisió",
-    "last_reviewed_value": "juny de 2026"
+    "last_reviewed_value": "juny de 2026",
+    "copy_result": "Copia el resultat",
+    "copy_result_copied": "Resultat copiat",
+    "result_source": "Calculat amb MedikQuantis"
   },
   "cha2ds2vasc": {
     "title": "CHA₂DS₂-VASc",
