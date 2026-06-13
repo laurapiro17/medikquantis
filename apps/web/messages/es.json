@@ -2710,5 +2710,19 @@
         }
       ]
     }
+  },
+  "smart": {
+    "heading": "Conecta con la historia clínica",
+    "intro": "Prototipo SMART on FHIR: conéctate a un servidor FHIR (por defecto, el sandbox público de SMART Health IT) y precarga el CHA₂DS₂-VASc con la edad, el sexo y los antecedentes del paciente. Revisa siempre los factores detectados antes de usar el resultado.",
+    "endpoint_label": "Servidor FHIR",
+    "connect": "Conectar con el EHR",
+    "connecting": "Conectando…",
+    "loading_patient": "Leyendo datos del paciente…",
+    "error": "No se ha podido conectar con el servidor FHIR. Comprueba la dirección e inténtalo de nuevo.",
+    "patient_heading": "Paciente",
+    "detected_heading": "Factores detectados (CHA₂DS₂-VASc)",
+    "none_detected": "No se ha detectado automáticamente ningún factor de riesgo; revísalos manualmente en la calculadora.",
+    "open_calc": "Abrir en la calculadora con estos datos",
+    "prototype_note": "Prototipo con fines de demostración. El mapeo de problemas codificados es incompleto y puede tener errores: verifícalo clínicamente."
   }
 }
