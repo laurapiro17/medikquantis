@@ -13,8 +13,13 @@ import {
 // fhirclient; this field is for standalone launch.
 const DEFAULT_FHIR = "https://launch.smarthealthit.org/v/r4/fhir";
 const CLIENT_ID = "medikquantis_demo";
+// Standalone launch: the app asks for a patient context up front.
 const SCOPE =
   "launch/patient patient/Patient.read patient/Condition.read openid fhirUser";
+// EHR launch: the launch context already names the patient, so we use the
+// bare `launch` scope instead of `launch/patient`.
+const EHR_SCOPE =
+  "launch patient/Patient.read patient/Condition.read openid fhirUser";
 
 type Status = "idle" | "connecting" | "loading" | "ready" | "error";
 
@@ -37,19 +42,25 @@ export function SmartLaunch({ locale }: { locale: string }) {
   useEffect(() => {
     if (typeof window === "undefined") return;
     const params = new URLSearchParams(window.location.search);
-    const inFlow =
-      params.has("code") ||
-      params.has("state") ||
-      params.has("launch") ||
-      !!sessionStorage.getItem("SMART_KEY");
-    if (!inFlow) return;
+    // Returning from the auth redirect (has `code`, or an in-progress state
+    // stored by fhirclient) vs a fresh EHR launch (`iss` + `launch`, no code).
+    const isReturn = params.has("code") || !!sessionStorage.getItem("SMART_KEY");
+    const isEhrLaunch = params.has("iss") && params.has("launch");
+    if (!isReturn && !isEhrLaunch) return; // idle → show the standalone UI
 
     let cancelled = false;
     (async () => {
       setStatus("loading");
       try {
         const FHIR = (await import("fhirclient")).default;
-        const client = await FHIR.oauth2.ready();
+        // init() does the whole dance: on a fresh EHR launch it redirects to
+        // the authorize endpoint (and never resolves on this pass); on the
+        // return it completes the handshake and resolves the client.
+        const client = await FHIR.oauth2.init({
+          clientId: CLIENT_ID,
+          scope: isEhrLaunch ? EHR_SCOPE : SCOPE,
+          redirectUri: window.location.pathname,
+        });
         const patient = await client.patient.read();
         const conditions = (await client.request(
           `Condition?patient=${client.patient.id}`,
@@ -77,13 +88,14 @@ export function SmartLaunch({ locale }: { locale: string }) {
     setStatus("connecting");
     try {
       const FHIR = (await import("fhirclient")).default;
-      FHIR.oauth2.authorize({
+      // Standalone launch against the entered endpoint: init() redirects to
+      // the server's authorize endpoint; nothing after runs on success.
+      await FHIR.oauth2.init({
         iss: endpoint,
         clientId: CLIENT_ID,
         scope: SCOPE,
         redirectUri: window.location.pathname,
       });
-      // authorize() navigates away; nothing after this runs on success.
     } catch {
       setStatus("error");
     }
