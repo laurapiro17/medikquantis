@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { getCalc } from "@medcalc/calculators";
 import { BASE_URL } from "@/lib/site";
+import { REVIEWER } from "@/lib/reviewer";
 
 /**
  * Emits schema.org structured data (JSON-LD) for a calculator page.
@@ -31,6 +32,17 @@ export async function CalcJsonLd({
   const subtitle = t(`${calc.i18nKey}.subtitle`);
   const url = `${BASE_URL}/${locale}/${id}`;
 
+  // The person who curated/reviewed the content + implementation. Surfaced as
+  // both author and reviewedBy; clinical authority for the score itself lives
+  // in `citation` (the original literature). Mirrors the visible CalcByline.
+  const reviewer = {
+    "@type": "Person",
+    name: REVIEWER.name,
+    url: REVIEWER.orcidUrl,
+    identifier: REVIEWER.orcidUrl,
+    affiliation: { "@type": "Organization", name: REVIEWER.affiliation },
+  };
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
@@ -38,6 +50,9 @@ export async function CalcJsonLd({
     description: subtitle,
     inLanguage: locale,
     url,
+    author: reviewer,
+    reviewedBy: reviewer,
+    lastReviewed: REVIEWER.lastReviewedIso,
     isPartOf: { "@type": "WebSite", name: "MedikQuantis", url: BASE_URL },
     medicalAudience: {
       "@type": "MedicalAudience",

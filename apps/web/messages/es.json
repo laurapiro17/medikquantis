@@ -161,7 +161,12 @@
     "built_by": "Hecho en Barcelona",
     "share_copy": "Copiar enlace",
     "share_copied": "¡Copiado!",
-    "share_print": "Imprimir"
+    "share_print": "Imprimir",
+    "reviewed_by": "Revisión de contenido",
+    "reviewer_role": "estudiante de Medicina, Universidad de Barcelona",
+    "scores_attribution": "Las fórmulas y los puntos de corte provienen de los autores originales de cada escala; véanse las referencias.",
+    "last_reviewed": "Última revisión",
+    "last_reviewed_value": "junio de 2026"
   },
   "cha2ds2vasc": {
     "title": "CHA₂DS₂-VASc",

@@ -4,6 +4,7 @@ import { PercForm } from "@/components/PercForm";
 import { buildCalcMetadata } from "@/lib/calc-metadata";
 import { CalcJsonLd } from "@/components/CalcJsonLd";
 import { CalcContent } from "@/components/CalcContent";
+import { CalcByline } from "@/components/CalcByline";
 
 export function generateMetadata(props: {
   params: Promise<{ locale: string }>;
@@ -35,6 +36,8 @@ export default async function PercPage({
       <PercForm />
 
       <CalcContent id="perc" locale={locale} />
+
+      <CalcByline locale={locale} />
 
       <details className="glass-panel p-4 text-sm text-slate-600 dark:text-slate-300">
         <summary className="cursor-pointer text-xs font-medium text-slate-500 dark:text-slate-400">
