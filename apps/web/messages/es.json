@@ -10,7 +10,8 @@
     "nav_terms": "Términos",
     "nav_api": "API",
     "nav_compare": "Comparar",
-    "nav_methodology": "Metodología"
+    "nav_methodology": "Metodología",
+    "nav_changelog": "Cambios"
   },
   "specialties": {
     "cardiology": "Cardiología",
@@ -2727,5 +2728,18 @@
     "open_body": "El código es abierto (licencia MIT) y auditable en GitHub. La misma lógica de cálculo es accesible para desarrolladores y agentes a través de una API abierta, con las mismas referencias.",
     "limitations_heading": "Limitaciones",
     "limitations_body": "Estas herramientas son apoyo a la decisión clínica y no sustituyen el juicio de un profesional sanitario. Verifica siempre el resultado en el contexto completo del paciente."
+  },
+  "changelog": {
+    "heading": "Registro de cambios",
+    "intro": "Cada versión publicada de MedikQuantis queda archivada y es citable. Cuando una guía clínica cambia un punto de corte o una recomendación, la calculadora afectada se actualiza y el cambio se registra aquí, fechado.",
+    "released_label": "Publicado",
+    "v1_items": [
+      "Lanzamiento público inicial: 49 calculadoras clínicas (cardiología, nefrología, urgencias, cuidados intensivos y más).",
+      "Cada escala implementa la fórmula y los puntos de corte de los autores originales, con referencias primarias enlazadas por PMID.",
+      "CHA₂DS₂-VASc y HAS-BLED alineados con las Guías ESC de fibrilación auricular 2024 (PMID 39210723).",
+      "Interfaz dual (vista clínica y vista para el paciente), cálculo 100% en el navegador y API abierta."
+    ],
+    "cite_heading": "Cómo citar",
+    "cite_body": "Si usas MedikQuantis en investigación o docencia, cita la versión archivada con su DOI:"
   }
 }

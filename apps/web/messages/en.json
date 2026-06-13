@@ -10,7 +10,8 @@
     "nav_terms": "Terms",
     "nav_api": "API",
     "nav_compare": "Compare",
-    "nav_methodology": "Methodology"
+    "nav_methodology": "Methodology",
+    "nav_changelog": "Changelog"
   },
   "specialties": {
     "cardiology": "Cardiology",
@@ -2727,5 +2728,18 @@
     "open_body": "The code is open source (MIT licence) and auditable on GitHub. The same calculation logic is accessible to developers and AI agents through an open API, with the same references.",
     "limitations_heading": "Limitations",
     "limitations_body": "These tools are clinical decision support and do not replace the judgement of a healthcare professional. Always verify the result in the patient's full context."
+  },
+  "changelog": {
+    "heading": "Changelog",
+    "intro": "Every released version of MedikQuantis is archived and citable. When a clinical guideline changes a cut-off or a recommendation, the affected calculator is updated and the change is recorded here, dated.",
+    "released_label": "Released",
+    "v1_items": [
+      "Initial public release: 49 clinical calculators (cardiology, nephrology, emergency, intensive care and more).",
+      "Each score implements the original authors' formula and cut-offs, with primary references linked by PMID.",
+      "CHA₂DS₂-VASc and HAS-BLED aligned with the 2024 ESC atrial fibrillation guidelines (PMID 39210723).",
+      "Dual interface (clinician and patient views), 100% in-browser computation, and an open API."
+    ],
+    "cite_heading": "How to cite",
+    "cite_body": "If you use MedikQuantis in research or teaching, cite the archived version by its DOI:"
   }
 }
