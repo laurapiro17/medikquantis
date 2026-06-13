@@ -10,6 +10,7 @@
     "nav_terms": "Condicions",
     "nav_api": "API",
     "nav_compare": "Compara",
+    "nav_methodology": "Metodologia",
     "nav_changelog": "Canvis"
   },
   "specialties": {
@@ -2711,6 +2712,22 @@
         }
       ]
     }
+  },
+  "methodology": {
+    "heading": "Metodologia",
+    "intro": "Com es construeixen, es documenten i es revisen les calculadores de MedikQuantis. L'objectiu és que cada resultat sigui verificable i traçable fins a la seva font original.",
+    "sources_heading": "Fonts i evidència",
+    "sources_body": "Cada calculadora implementa la fórmula i els punts de tall tal com els van publicar els autors originals de l'escala. No reinterpretem ni ajustem les puntuacions. Cada pàgina enllaça les referències primàries amb el seu identificador PubMed (PMID) perquè puguis comprovar la font.",
+    "review_heading": "Revisió de contingut",
+    "review_body": "El contingut i la implementació els revisa una persona identificable (vegeu la signatura a cada calculadora i el seu ORCID). L'autoritat clínica de cada escala recau en els seus autors originals i en les guies de pràctica citades, no en aquesta web.",
+    "updates_heading": "Actualitzacions",
+    "updates_body": "Quan una guia canvia un punt de tall o una recomanació, actualitzem la calculadora afectada i ho registrem de manera datada al registre de canvis.",
+    "privacy_heading": "Privadesa",
+    "privacy_body": "Tots els càlculs s'executen al teu navegador. MedikQuantis no recull, emmagatzema ni transmet les dades clíniques que introdueixes.",
+    "open_heading": "Codi obert i API",
+    "open_body": "El codi és obert (llicència MIT) i auditable a GitHub. La mateixa lògica de càlcul és accessible per a desenvolupadors i agents a través d'una API oberta, amb les mateixes referències.",
+    "limitations_heading": "Limitacions",
+    "limitations_body": "Aquestes eines són suport a la decisió clínica i no substitueixen el judici d'un professional sanitari. Verifica sempre el resultat en el context complet del pacient."
   },
   "changelog": {
     "heading": "Registre de canvis",

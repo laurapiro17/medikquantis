@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "terms",
     "compare",
     "changelog",
+    "methodology",
     ...listCalcIds(),
   ];
   const entries: MetadataRoute.Sitemap = [];

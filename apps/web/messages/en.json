@@ -10,6 +10,7 @@
     "nav_terms": "Terms",
     "nav_api": "API",
     "nav_compare": "Compare",
+    "nav_methodology": "Methodology",
     "nav_changelog": "Changelog"
   },
   "specialties": {
@@ -2711,6 +2712,22 @@
         }
       ]
     }
+  },
+  "methodology": {
+    "heading": "Methodology",
+    "intro": "How MedikQuantis calculators are built, documented and reviewed. The goal is that every result is verifiable and traceable back to its original source.",
+    "sources_heading": "Sources and evidence",
+    "sources_body": "Each calculator implements the formula and cut-offs exactly as published by the score's original authors. We do not reinterpret or adjust the scores. Every page links the primary references with their PubMed identifier (PMID) so you can check the source.",
+    "review_heading": "Content review",
+    "review_body": "Content and implementation are reviewed by an identifiable person (see the byline on each calculator and their ORCID). Clinical authority for each score rests with its original authors and the cited practice guidelines, not with this site.",
+    "updates_heading": "Updates",
+    "updates_body": "When a guideline changes a cut-off or a recommendation, we update the affected calculator and record it, dated, in the changelog.",
+    "privacy_heading": "Privacy",
+    "privacy_body": "All calculations run in your browser. MedikQuantis does not collect, store or transmit the clinical data you enter.",
+    "open_heading": "Open source and API",
+    "open_body": "The code is open source (MIT licence) and auditable on GitHub. The same calculation logic is accessible to developers and AI agents through an open API, with the same references.",
+    "limitations_heading": "Limitations",
+    "limitations_body": "These tools are clinical decision support and do not replace the judgement of a healthcare professional. Always verify the result in the patient's full context."
   },
   "changelog": {
     "heading": "Changelog",
