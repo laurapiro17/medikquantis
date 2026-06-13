@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState, type ReactNode } from "react";
 import { useTranslations } from "next-intl";
 import { Sidebar } from "./Sidebar";
+import { CommandPalette } from "./CommandPalette";
 
 interface CalcEntry {
   id: string;
@@ -128,6 +129,7 @@ export function LayoutShell({
                   <ChevronRightIcon />
                 </button>
               )}
+              <CommandPalette calcs={calcs} />
               <div className="flex flex-1 items-center justify-between gap-2">
                 {header}
               </div>
