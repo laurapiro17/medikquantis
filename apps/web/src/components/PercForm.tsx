@@ -35,13 +35,11 @@ const booleanFields = [
 export function PercForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<PercInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const [mode, setMode] = useState<Mode>("clinician");
@@ -55,7 +53,6 @@ export function PercForm() {
 
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
@@ -65,7 +62,6 @@ export function PercForm() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          setSubmitted(true);
         }}
         className="glass-panel space-y-6 p-6"
       >
@@ -85,7 +81,7 @@ export function PercForm() {
         />
       </form>
 
-      {submitted && (
+      {(
         <ResultPanel
           mode={mode}
           score={score}

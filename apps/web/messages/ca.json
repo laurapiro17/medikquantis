@@ -162,6 +162,11 @@
     "share_copy": "Copiar enllaç",
     "share_copied": "Copiat!",
     "share_print": "Imprimir",
+    "reviewed_by": "Revisió de contingut",
+    "reviewer_role": "estudiant de Medicina, Universitat de Barcelona",
+    "scores_attribution": "Les fórmules i els punts de tall provenen dels autors originals de cada escala; vegeu les referències.",
+    "last_reviewed": "Última revisió",
+    "last_reviewed_value": "juny de 2026",
     "copy_result": "Copia el resultat",
     "copy_result_copied": "Resultat copiat",
     "result_source": "Calculat amb MedikQuantis"

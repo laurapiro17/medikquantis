@@ -26,14 +26,12 @@ const apsFields: (keyof Apache2Input)[] = [
 export function Apache2Form() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<Apache2Input>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const score = apache2.formula(inputs);
@@ -44,7 +42,6 @@ export function Apache2Form() {
   }
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
@@ -52,7 +49,7 @@ export function Apache2Form() {
       <ModeToggle mode={mode} onChange={setMode} />
       <p className="text-sm text-slate-600 dark:text-slate-300">{t("apache2.scale_legend")}</p>
       <form
-        onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
+        onSubmit={(e) => { e.preventDefault(); }}
         className="glass-panel space-y-6 p-6"
       >
         <fieldset className="space-y-3">
@@ -88,7 +85,7 @@ export function Apache2Form() {
         </fieldset>
         <FormActions submitLabel={t("common.calculate")} resetLabel={t("common.reset")} onReset={reset} />
       </form>
-      {submitted && (
+      {(
         <ResultPanel
           mode={mode}
           score={score}

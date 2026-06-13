@@ -31,14 +31,12 @@ const fields = [
 export function NortonForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<NortonInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const score = norton.formula(inputs);
@@ -49,14 +47,13 @@ export function NortonForm() {
   }
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
     <div className="space-y-6">
       <ModeToggle mode={mode} onChange={setMode} />
       <form
-        onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
+        onSubmit={(e) => { e.preventDefault(); }}
         className="glass-panel space-y-6 p-6"
       >
         {fields.map((f) => (
@@ -80,7 +77,7 @@ export function NortonForm() {
           onReset={reset}
         />
       </form>
-      {submitted && (
+      {(
         <ResultPanel
           mode={mode}
           score={score}

@@ -35,14 +35,12 @@ const values = ["0", "1", "2", "3", "4", "5"] as const;
 export function IpssForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<IpssInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const score = ipss.formula(inputs);
@@ -53,7 +51,6 @@ export function IpssForm() {
   }
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
@@ -63,7 +60,7 @@ export function IpssForm() {
         {t("ipss.scale_legend")}
       </p>
       <form
-        onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
+        onSubmit={(e) => { e.preventDefault(); }}
         className="glass-panel space-y-6 p-6"
       >
         {fields.map((f) => (
@@ -87,7 +84,7 @@ export function IpssForm() {
           onReset={reset}
         />
       </form>
-      {submitted && (
+      {(
         <ResultPanel
           mode={mode}
           score={score}

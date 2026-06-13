@@ -36,14 +36,12 @@ const fields: (keyof NihssInput)[] = [
 export function NihssForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<NihssInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const score = nihss.formula(inputs);
@@ -54,7 +52,6 @@ export function NihssForm() {
   }
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
@@ -62,7 +59,7 @@ export function NihssForm() {
       <ModeToggle mode={mode} onChange={setMode} />
       <p className="text-sm text-slate-600 dark:text-slate-300">{t("nihss.scale_legend")}</p>
       <form
-        onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
+        onSubmit={(e) => { e.preventDefault(); }}
         className="glass-panel space-y-6 p-6"
       >
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -79,7 +76,7 @@ export function NihssForm() {
         </div>
         <FormActions submitLabel={t("common.calculate")} resetLabel={t("common.reset")} onReset={reset} />
       </form>
-      {submitted && (
+      {(
         <ResultPanel
           mode={mode}
           score={score}

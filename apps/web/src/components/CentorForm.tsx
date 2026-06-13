@@ -30,13 +30,11 @@ const ageBands = ["lt_15", "15_to_44", "gte_45"] as const;
 export function CentorForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<CentorInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const [mode, setMode] = useState<Mode>("clinician");
@@ -53,7 +51,6 @@ export function CentorForm() {
 
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
@@ -63,7 +60,6 @@ export function CentorForm() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          setSubmitted(true);
         }}
         className="glass-panel space-y-6 p-6"
       >
@@ -94,7 +90,7 @@ export function CentorForm() {
         />
       </form>
 
-      {submitted && (
+      {(
         <ResultPanel
           mode={mode}
           score={score}

@@ -162,6 +162,11 @@
     "share_copy": "Copy link",
     "share_copied": "Copied!",
     "share_print": "Print",
+    "reviewed_by": "Content review",
+    "reviewer_role": "medical student, University of Barcelona",
+    "scores_attribution": "Formulas and cut-offs are from the original authors of each score; see the references.",
+    "last_reviewed": "Last reviewed",
+    "last_reviewed_value": "June 2026",
     "copy_result": "Copy result",
     "copy_result_copied": "Result copied",
     "result_source": "Calculated with MedikQuantis"

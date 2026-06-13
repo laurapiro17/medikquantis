@@ -31,14 +31,12 @@ const fields: (keyof BasdaiInput)[] = [
 export function BasdaiForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<BasdaiInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const score = basdai.formula(inputs);
@@ -49,7 +47,6 @@ export function BasdaiForm() {
   }
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
@@ -59,7 +56,7 @@ export function BasdaiForm() {
         {t("basdai.scale_legend")}
       </p>
       <form
-        onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
+        onSubmit={(e) => { e.preventDefault(); }}
         className="glass-panel space-y-6 p-6"
       >
         <div className="grid gap-6 sm:grid-cols-2">
@@ -80,7 +77,7 @@ export function BasdaiForm() {
           onReset={reset}
         />
       </form>
-      {submitted && (
+      {(
         <ResultPanel
           mode={mode}
           score={score}

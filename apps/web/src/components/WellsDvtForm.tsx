@@ -29,14 +29,12 @@ const booleanFields = [
 export function WellsDvtForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<WellsDvtInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const score = wellsDvt.formula(inputs);
@@ -47,14 +45,13 @@ export function WellsDvtForm() {
   }
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
     <div className="space-y-6">
       <ModeToggle mode={mode} onChange={setMode} />
       <form
-        onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
+        onSubmit={(e) => { e.preventDefault(); }}
         className="glass-panel space-y-6 p-6"
       >
         <BooleanList
@@ -71,7 +68,7 @@ export function WellsDvtForm() {
           onReset={reset}
         />
       </form>
-      {submitted && (
+      {(
         <ResultPanel
           mode={mode}
           score={score}
