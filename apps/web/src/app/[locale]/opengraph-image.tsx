@@ -2,7 +2,11 @@ import { ImageResponse } from "next/og";
 import { getTranslations } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
 
-export const runtime = "edge";
+// Node.js runtime (not "edge"): next-intl's getTranslations bundles the whole
+// messages file, and as the i18n grew the edge bundle crossed Vercel's 1 MB
+// Edge Function limit, failing the deploy. The Node serverless limit is far
+// higher and next/og's ImageResponse runs fine here.
+export const runtime = "nodejs";
 export const alt = "MedikQuantis";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
