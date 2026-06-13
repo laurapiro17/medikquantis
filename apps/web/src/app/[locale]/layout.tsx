@@ -10,6 +10,7 @@ import { Link } from "@/i18n/navigation";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { LayoutShell } from "@/components/LayoutShell";
+import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister";
 import { BASE_URL } from "@/lib/site";
 
 const inter = Inter({
@@ -190,6 +191,7 @@ export default async function LocaleLayout({
           </LayoutShell>
         </NextIntlClientProvider>
         <Analytics />
+        <ServiceWorkerRegister />
       </body>
     </html>
   );
