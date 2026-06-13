@@ -11,6 +11,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "privacy",
     "terms",
     "compare",
+    "changelog",
+    "methodology",
     ...listCalcIds(),
   ];
   const entries: MetadataRoute.Sitemap = [];

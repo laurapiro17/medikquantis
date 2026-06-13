@@ -9,7 +9,9 @@
     "nav_privacy": "Privacidad",
     "nav_terms": "Términos",
     "nav_api": "API",
-    "nav_compare": "Comparar"
+    "nav_compare": "Comparar",
+    "nav_methodology": "Metodología",
+    "nav_changelog": "Cambios"
   },
   "specialties": {
     "cardiology": "Cardiología",
@@ -2710,6 +2712,35 @@
         }
       ]
     }
+  },
+  "methodology": {
+    "heading": "Metodología",
+    "intro": "Cómo se construyen, documentan y revisan las calculadoras de MedikQuantis. El objetivo es que cada resultado sea verificable y trazable hasta su fuente original.",
+    "sources_heading": "Fuentes y evidencia",
+    "sources_body": "Cada calculadora implementa la fórmula y los puntos de corte tal como los publicaron los autores originales de la escala. No reinterpretamos ni ajustamos las puntuaciones. Cada página enlaza las referencias primarias con su identificador PubMed (PMID) para que puedas comprobar la fuente.",
+    "review_heading": "Revisión de contenido",
+    "review_body": "El contenido y la implementación los revisa una persona identificable (véase la firma en cada calculadora y su ORCID). La autoridad clínica de cada escala recae en sus autores originales y en las guías de práctica citadas, no en esta web.",
+    "updates_heading": "Actualizaciones",
+    "updates_body": "Cuando una guía cambia un punto de corte o una recomendación, actualizamos la calculadora afectada y lo registramos de forma fechada en el registro de cambios.",
+    "privacy_heading": "Privacidad",
+    "privacy_body": "Todos los cálculos se ejecutan en tu navegador. MedikQuantis no recoge, almacena ni transmite los datos clínicos que introduces.",
+    "open_heading": "Código abierto y API",
+    "open_body": "El código es abierto (licencia MIT) y auditable en GitHub. La misma lógica de cálculo es accesible para desarrolladores y agentes a través de una API abierta, con las mismas referencias.",
+    "limitations_heading": "Limitaciones",
+    "limitations_body": "Estas herramientas son apoyo a la decisión clínica y no sustituyen el juicio de un profesional sanitario. Verifica siempre el resultado en el contexto completo del paciente."
+  },
+  "changelog": {
+    "heading": "Registro de cambios",
+    "intro": "Cada versión publicada de MedikQuantis queda archivada y es citable. Cuando una guía clínica cambia un punto de corte o una recomendación, la calculadora afectada se actualiza y el cambio se registra aquí, fechado.",
+    "released_label": "Publicado",
+    "v1_items": [
+      "Lanzamiento público inicial: 49 calculadoras clínicas (cardiología, nefrología, urgencias, cuidados intensivos y más).",
+      "Cada escala implementa la fórmula y los puntos de corte de los autores originales, con referencias primarias enlazadas por PMID.",
+      "CHA₂DS₂-VASc y HAS-BLED alineados con las Guías ESC de fibrilación auricular 2024 (PMID 39210723).",
+      "Interfaz dual (vista clínica y vista para el paciente), cálculo 100% en el navegador y API abierta."
+    ],
+    "cite_heading": "Cómo citar",
+    "cite_body": "Si usas MedikQuantis en investigación o docencia, cita la versión archivada con su DOI:"
   },
   "smart": {
     "heading": "Conecta con la historia clínica",
