@@ -28,14 +28,12 @@ const tierStyles = {
 export function AsaPsForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<AsaPsInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const score = asaPs.formula(inputs);
@@ -46,14 +44,13 @@ export function AsaPsForm() {
   }
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
     <div className="space-y-6">
       <ModeToggle mode={mode} onChange={setMode} />
       <form
-        onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
+        onSubmit={(e) => { e.preventDefault(); }}
         className="glass-panel space-y-6 p-6"
       >
         <RadioGroup
@@ -82,7 +79,7 @@ export function AsaPsForm() {
           onReset={reset}
         />
       </form>
-      {submitted && (
+      {(
         <>
           <AsaResultPanel mode={mode} result={result} />
           <div className="glass-panel p-4">

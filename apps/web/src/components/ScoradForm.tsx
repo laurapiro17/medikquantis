@@ -34,14 +34,12 @@ const intensityFields: (keyof ScoradInput)[] = [
 export function ScoradForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<ScoradInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const score = scorad.formula(inputs);
@@ -52,14 +50,13 @@ export function ScoradForm() {
   }
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
     <div className="space-y-6">
       <ModeToggle mode={mode} onChange={setMode} />
       <form
-        onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
+        onSubmit={(e) => { e.preventDefault(); }}
         className="glass-panel space-y-6 p-6"
       >
         <fieldset className="space-y-2">
@@ -124,7 +121,7 @@ export function ScoradForm() {
           onReset={reset}
         />
       </form>
-      {submitted && (
+      {(
         <ResultPanel
           mode={mode}
           score={score}

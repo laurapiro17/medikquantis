@@ -31,14 +31,12 @@ const activityLevels: ActivityLevelValue[] = [
 export function HarrisBenedictForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<HarrisBenedictInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const bmr = harrisBenedict.formula(inputs);
@@ -53,7 +51,6 @@ export function HarrisBenedictForm() {
 
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
@@ -63,7 +60,6 @@ export function HarrisBenedictForm() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          setSubmitted(true);
         }}
         className="glass-panel space-y-6 p-6"
       >
@@ -120,7 +116,7 @@ export function HarrisBenedictForm() {
         />
       </form>
 
-      {submitted && (
+      {(
         <>
           <HarrisBenedictResultPanel
             mode={mode}

@@ -18,14 +18,12 @@ const defaultInputs: PsaDensityInput = {
 export function PsaDensityForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<PsaDensityInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const density = psaDensity.formula(inputs);
@@ -40,7 +38,6 @@ export function PsaDensityForm() {
 
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
@@ -50,7 +47,6 @@ export function PsaDensityForm() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          setSubmitted(true);
         }}
         className="glass-panel space-y-6 p-6"
       >
@@ -78,7 +74,7 @@ export function PsaDensityForm() {
         />
       </form>
 
-      {submitted && (
+      {(
         <ResultPanel
           mode={mode}
           score={density}

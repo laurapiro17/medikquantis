@@ -49,13 +49,11 @@ const tierStyles = {
 export function HeartForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<Partial<HeartInput>>({});
-  const [submitted, setSubmitted] = useState(false);
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const [mode, setMode] = useState<Mode>("clinician");
@@ -73,7 +71,6 @@ export function HeartForm() {
 
   function reset() {
     setInputs({});
-    setSubmitted(false);
   }
 
   return (
@@ -83,7 +80,6 @@ export function HeartForm() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          if (allFilled) setSubmitted(true);
         }}
         className="glass-panel space-y-6 p-6"
       >
@@ -113,7 +109,7 @@ export function HeartForm() {
         />
       </form>
 
-      {submitted && result !== null && score !== null && (
+      {result !== null && score !== null && (
         <>
           <HeartResultPanel
           mode={mode}

@@ -41,13 +41,11 @@ const tierStyles = {
 export function TimiForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<TimiInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const [mode, setMode] = useState<Mode>("clinician");
@@ -61,7 +59,6 @@ export function TimiForm() {
 
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
@@ -71,7 +68,6 @@ export function TimiForm() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          setSubmitted(true);
         }}
         className="glass-panel space-y-6 p-6"
       >
@@ -91,7 +87,7 @@ export function TimiForm() {
         />
       </form>
 
-      {submitted && (
+      {(
         <>
           <TimiResultPanel
           mode={mode}

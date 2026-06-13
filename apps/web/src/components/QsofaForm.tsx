@@ -25,13 +25,11 @@ const booleanFields = [
 export function QsofaForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<QsofaInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const [mode, setMode] = useState<Mode>("clinician");
@@ -45,7 +43,6 @@ export function QsofaForm() {
 
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
@@ -55,7 +52,6 @@ export function QsofaForm() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          setSubmitted(true);
         }}
         className="glass-panel space-y-6 p-6"
       >
@@ -75,7 +71,7 @@ export function QsofaForm() {
         />
       </form>
 
-      {submitted && (
+      {(
         <ResultPanel
           mode={mode}
           score={score}

@@ -28,13 +28,11 @@ const booleanFields = [
 export function OrbitForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<OrbitInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const [mode, setMode] = useState<Mode>("clinician");
@@ -48,7 +46,6 @@ export function OrbitForm() {
 
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
@@ -58,7 +55,6 @@ export function OrbitForm() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          setSubmitted(true);
         }}
         className="glass-panel space-y-6 p-6"
       >
@@ -88,7 +84,7 @@ export function OrbitForm() {
         />
       </form>
 
-      {submitted && (
+      {(
         <ResultPanel
           mode={mode}
           score={score}

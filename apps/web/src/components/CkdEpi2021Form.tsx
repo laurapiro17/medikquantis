@@ -27,13 +27,11 @@ const tierStyles = {
 export function CkdEpi2021Form() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<CkdEpi2021Input>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const [mode, setMode] = useState<Mode>("clinician");
@@ -47,7 +45,6 @@ export function CkdEpi2021Form() {
 
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
@@ -57,7 +54,6 @@ export function CkdEpi2021Form() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          setSubmitted(true);
         }}
         className="glass-panel space-y-6 p-6"
       >
@@ -95,7 +91,7 @@ export function CkdEpi2021Form() {
         />
       </form>
 
-      {submitted && (
+      {(
         <>
           <CkdEpiResultPanel
           mode={mode}

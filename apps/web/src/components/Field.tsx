@@ -171,26 +171,21 @@ export function RadioGroup<V extends string>({
   );
 }
 
+// Results compute and display live as inputs change (no "Calculate" button) —
+// this removes the biggest point-of-care friction. Only a Reset remains.
+// `submitLabel`/`canSubmit` are still accepted (and ignored) so the 48 call
+// sites stay untouched.
 export function FormActions({
-  submitLabel,
   resetLabel,
   onReset,
-  canSubmit = true,
 }: {
-  submitLabel: string;
+  submitLabel?: string;
   resetLabel: string;
   onReset: () => void;
   canSubmit?: boolean;
 }) {
   return (
     <div className="flex gap-3 border-t border-slate-200 pt-5 dark:border-white/10">
-      <button
-        type="submit"
-        disabled={!canSubmit}
-        className="rounded-md bg-trust-600 px-5 py-2 text-sm font-medium text-white transition hover:bg-trust-700 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neon dark:text-neon-ink dark:shadow-neon-soft dark:hover:bg-neon-soft"
-      >
-        {submitLabel}
-      </button>
       <button
         type="button"
         onClick={onReset}

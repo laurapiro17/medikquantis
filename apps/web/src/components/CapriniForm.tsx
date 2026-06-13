@@ -50,14 +50,12 @@ const fivePtFields = [
 export function CapriniForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<CapriniInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const score = caprini.formula(inputs);
@@ -68,7 +66,6 @@ export function CapriniForm() {
   }
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   function renderGroup(
@@ -96,7 +93,7 @@ export function CapriniForm() {
     <div className="space-y-6">
       <ModeToggle mode={mode} onChange={setMode} />
       <form
-        onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
+        onSubmit={(e) => { e.preventDefault(); }}
         className="glass-panel space-y-6 p-6"
       >
         {renderGroup(t("caprini.group_one_point"), onePtFields)}
@@ -109,7 +106,7 @@ export function CapriniForm() {
           onReset={reset}
         />
       </form>
-      {submitted && (
+      {(
         <ResultPanel
           mode={mode}
           score={score}

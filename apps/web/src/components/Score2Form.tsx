@@ -25,14 +25,12 @@ const tierStyles = {
 export function Score2Form() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<Score2Input>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const value = score2.formula(inputs);
@@ -44,7 +42,6 @@ export function Score2Form() {
   }
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
@@ -54,7 +51,7 @@ export function Score2Form() {
         {t("score2.region_note")}
       </p>
       <form
-        onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
+        onSubmit={(e) => { e.preventDefault(); }}
         className="glass-panel space-y-6 p-6"
       >
         <RadioGroup
@@ -76,7 +73,7 @@ export function Score2Form() {
         <BooleanList items={[{ key: "smoker", label: t("score2.fields.smoker"), checked: inputs.smoker, onChange: (v) => update("smoker", v) }]} />
         <FormActions submitLabel={t("common.calculate")} resetLabel={t("common.reset")} onReset={reset} />
       </form>
-      {submitted && (
+      {(
         <>
           <Score2ResultPanel mode={mode} value={value} tier={result.tier} isOp={isOp} recommendation={result.recommendation} evidenceGrade={result.evidenceGrade} />
           <div className="glass-panel p-4">

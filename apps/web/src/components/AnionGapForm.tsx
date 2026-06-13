@@ -29,7 +29,6 @@ export function AnionGapForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<AnionGapInput>(defaultInputs);
   const [useAlbumin, setUseAlbumin] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
@@ -37,7 +36,6 @@ export function AnionGapForm() {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
     if (urlInputs.albuminGDl !== undefined) setUseAlbumin(true);
-    setSubmitted(true);
   }, [urlInputs]);
 
   const effectiveInputs: AnionGapInput = useAlbumin
@@ -59,7 +57,6 @@ export function AnionGapForm() {
   function reset() {
     setInputs(defaultInputs);
     setUseAlbumin(false);
-    setSubmitted(false);
   }
 
   return (
@@ -68,7 +65,6 @@ export function AnionGapForm() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          setSubmitted(true);
         }}
         className="glass-panel space-y-6 p-6"
       >
@@ -124,7 +120,7 @@ export function AnionGapForm() {
         />
       </form>
 
-      {submitted && (
+      {(
         <>
           <AnionGapResultPanel
             mode={mode}

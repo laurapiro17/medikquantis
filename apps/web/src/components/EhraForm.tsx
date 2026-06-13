@@ -23,7 +23,6 @@ const tierStyles = {
 export function EhraForm() {
   const t = useTranslations();
   const [selected, setSelected] = useState<EhraClassValue | null>(null);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
@@ -32,7 +31,6 @@ export function EhraForm() {
     const cls = urlInputs.ehraClass;
     if (typeof cls === "string" && (classes as string[]).includes(cls)) {
       setSelected(cls as EhraClassValue);
-      setSubmitted(true);
     }
   }, [urlInputs]);
 
@@ -46,7 +44,6 @@ export function EhraForm() {
 
   function reset() {
     setSelected(null);
-    setSubmitted(false);
   }
 
   return (
@@ -56,7 +53,6 @@ export function EhraForm() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          if (selected) setSubmitted(true);
         }}
         className="glass-panel space-y-6 p-6"
       >
@@ -81,7 +77,7 @@ export function EhraForm() {
         />
       </form>
 
-      {submitted && result && (
+      {result && (
         <>
           <EhraResultPanel mode={mode} result={result} />
           <div className="glass-panel p-4">

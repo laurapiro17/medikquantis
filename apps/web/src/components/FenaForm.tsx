@@ -30,14 +30,12 @@ const categoryStyles = {
 export function FenaForm() {
   const t = useTranslations();
   const [inputs, setInputs] = useState<FenaInput>(defaultInputs);
-  const [submitted, setSubmitted] = useState(false);
   const [mode, setMode] = useState<Mode>("clinician");
 
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
     setInputs((prev) => ({ ...prev, ...urlInputs }));
-    setSubmitted(true);
   }, [urlInputs]);
 
   const value = fena.formula(inputs);
@@ -49,7 +47,6 @@ export function FenaForm() {
 
   function reset() {
     setInputs(defaultInputs);
-    setSubmitted(false);
   }
 
   return (
@@ -58,7 +55,6 @@ export function FenaForm() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          setSubmitted(true);
         }}
         className="glass-panel space-y-6 p-6"
       >
@@ -99,7 +95,7 @@ export function FenaForm() {
         />
       </form>
 
-      {submitted && (
+      {(
         <>
           <FenaResultPanel
             mode={mode}
