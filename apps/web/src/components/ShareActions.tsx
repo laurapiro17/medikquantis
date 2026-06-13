@@ -8,6 +8,10 @@ interface ShareActionsProps {
   shareableInputs?: Record<string, unknown>;
   tier?: "low" | "moderate" | "high";
   mode?: "clinician" | "patient";
+  // Plain-text clinical summary of the result, ready to paste into an EHR.
+  // Built by ResultPanel (clinician mode only). When present, a "Copy result"
+  // button is shown; the canonical URL + attribution are appended at copy time.
+  resultSummary?: string;
 }
 
 // Extract the locale segment (`en`, `es`, `ca`) from the current URL path,
@@ -40,13 +44,34 @@ function encodeInputs(inputs: Record<string, unknown>): string {
   return btoa(json).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
 }
 
+// Copy arbitrary text to the clipboard with a textarea fallback for
+// insecure contexts / denied permissions. Returns true on success.
+async function copyText(text: string): Promise<boolean> {
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch {
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+      return document.execCommand("copy");
+    } finally {
+      document.body.removeChild(ta);
+    }
+  }
+}
+
 export function ShareActions({
   shareableInputs,
   tier,
   mode,
+  resultSummary,
 }: ShareActionsProps) {
   const t = useTranslations();
   const [copied, setCopied] = useState(false);
+  const [resultCopied, setResultCopied] = useState(false);
 
   // Fire once when this component first appears — i.e. when a result has
   // just been rendered. Vercel auto-captures the path (so we already know
@@ -68,26 +93,23 @@ export function ShareActions({
     if (shareableInputs && Object.keys(shareableInputs).length > 0) {
       url.searchParams.set("p", encodeInputs(shareableInputs));
     }
-    try {
-      await navigator.clipboard.writeText(url.toString());
+    if (await copyText(url.toString())) {
       setCopied(true);
       window.setTimeout(() => setCopied(false), 1800);
-    } catch {
-      // Clipboard API rejected (insecure context, permission, etc.) —
-      // fall back to a textarea select-and-copy.
-      const ta = document.createElement("textarea");
-      ta.value = url.toString();
-      document.body.appendChild(ta);
-      ta.select();
-      try {
-        document.execCommand("copy");
-        setCopied(true);
-        window.setTimeout(() => setCopied(false), 1800);
-      } finally {
-        document.body.removeChild(ta);
-      }
     }
   }, [shareableInputs]);
+
+  // Copy the EHR-pasteable clinical summary, with the canonical (param-free)
+  // URL + attribution appended so the note is traceable to its source.
+  const handleCopyResult = useCallback(async () => {
+    if (typeof window === "undefined" || !resultSummary) return;
+    const source = `${window.location.origin}${window.location.pathname}`;
+    const text = `${resultSummary}\n\n${t("common.result_source")} — ${source}`;
+    if (await copyText(text)) {
+      setResultCopied(true);
+      window.setTimeout(() => setResultCopied(false), 1800);
+    }
+  }, [resultSummary, t]);
 
   const handlePrint = useCallback(() => {
     if (typeof window !== "undefined") window.print();
@@ -98,6 +120,23 @@ export function ShareActions({
       data-no-print
       className="flex flex-wrap gap-2 border-t border-slate-200 pt-4 dark:border-white/10"
     >
+      {resultSummary && (
+        <button
+          type="button"
+          onClick={() => {
+            track("result_copied", {
+              tier: tier ?? "unknown",
+              lang: detectLang(),
+            });
+            void handleCopyResult();
+          }}
+          className="rounded-md bg-trust-600 px-3 py-1.5 text-xs font-medium text-white transition hover:bg-trust-700 dark:bg-neon dark:text-neon-ink dark:shadow-neon-soft dark:hover:bg-neon-soft"
+        >
+          {resultCopied
+            ? t("common.copy_result_copied")
+            : t("common.copy_result")}
+        </button>
+      )}
       <button
         type="button"
         onClick={() => {

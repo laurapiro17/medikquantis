@@ -161,7 +161,10 @@
     "built_by": "Built in Barcelona",
     "share_copy": "Copy link",
     "share_copied": "Copied!",
-    "share_print": "Print"
+    "share_print": "Print",
+    "copy_result": "Copy result",
+    "copy_result_copied": "Result copied",
+    "result_source": "Calculated with MedikQuantis"
   },
   "cha2ds2vasc": {
     "title": "CHA₂DS₂-VASc",

@@ -161,7 +161,10 @@
     "built_by": "Construït a Barcelona",
     "share_copy": "Copiar enllaç",
     "share_copied": "Copiat!",
-    "share_print": "Imprimir"
+    "share_print": "Imprimir",
+    "copy_result": "Copia el resultat",
+    "copy_result_copied": "Resultat copiat",
+    "result_source": "Calculat amb MedikQuantis"
   },
   "cha2ds2vasc": {
     "title": "CHA₂DS₂-VASc",

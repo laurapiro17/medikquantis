@@ -39,6 +39,19 @@ export function ResultPanel({
   const t = useTranslations();
 
   if (mode === "clinician") {
+    // EHR-pasteable one-block summary. Mirrors the on-screen result so a
+    // clinician can drop it straight into a note; ShareActions appends the
+    // canonical URL + attribution.
+    const titleKey = `${i18nNamespace}.title`;
+    const resultSummary = [
+      `${t(titleKey)}: ${score} (${t(`common.tier_${tier}` as "common.tier_low")})`,
+      ...(annualRiskPercent !== undefined
+        ? [`${t(riskLabelKey)}: ${annualRiskPercent}%`]
+        : []),
+      recommendation,
+      `${t("common.evidence")}: ${evidenceGrade}`,
+    ].join("\n");
+
     return (
       <div className="glass-panel animate-fade-in p-6">
         <div className="flex items-baseline gap-4">
@@ -78,7 +91,12 @@ export function ResultPanel({
           </div>
         </dl>
 
-        <ShareActions shareableInputs={shareableInputs} tier={tier} mode={mode} />
+        <ShareActions
+          shareableInputs={shareableInputs}
+          tier={tier}
+          mode={mode}
+          resultSummary={resultSummary}
+        />
       </div>
     );
   }
