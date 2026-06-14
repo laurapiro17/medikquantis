@@ -2,8 +2,10 @@
 
 [![CI](https://github.com/laurapiro17/medikquantis/actions/workflows/ci.yml/badge.svg)](https://github.com/laurapiro17/medikquantis/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Live](https://img.shields.io/badge/live-medikquantis.me-93c5fd)](https://medikquantis.me)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20562617.svg)](https://doi.org/10.5281/zenodo.20562617)
 
-Clinical calculators in Catalan, Spanish and English — open source, cited evidence, patient mode. Starting with cardiology.
+**[medikquantis.me](https://medikquantis.me)** — 48 clinical calculators across 13 specialties in Catalan, Spanish and English. Open source, cited from the original papers, with a clinician/patient dual mode, a free REST API and SMART on FHIR support.
 
 ## Question
 
@@ -11,7 +13,7 @@ Why do clinicians in Spain still use English-only calculator tools, with no pati
 
 ## Background
 
-MDCalc and MedCalc are the global standards for clinical calculators, but neither offers Catalan/Spanish localisation done by a clinician, neither serves a parallel patient-friendly explanation, and neither publishes the calculation logic as open source code. MedikQuantis fills that gap, starting with cardiology and growing across other medical fields.
+MDCalc and MedCalc are the global standards for clinical calculators, but neither offers Catalan/Spanish localisation done by a clinician, neither serves a parallel patient-friendly explanation, and neither publishes the calculation logic as open source code. MedikQuantis fills that gap across 13 specialties (cardiology, nephrology, neurology, ICU/sepsis, gastroenterology, infectious disease, surgery, geriatrics and more).
 
 ## What it is
 
@@ -26,25 +28,20 @@ MDCalc and MedCalc are the global standards for clinical calculators, but neithe
 - NOT issuing personalised therapeutic recommendations.
 - NOT yet validated in local populations; the scores are the originals from the authors.
 
-## Calculators (current)
+## Calculators
 
-| Calc | Domain | Score range |
-|---|---|---|
-| CHA₂DS₂-VASc | AFiB stroke risk | 0–9 |
-| HAS-BLED | AFiB bleeding risk (warfarin era) | 0–9 |
-| ORBIT | AFiB bleeding risk (DOAC era) | 0–7 |
-| EHRA | AFiB symptom classification | I/IIa/IIb/III/IV |
-| HEART | Chest pain → ACS risk in the ED | 0–10 |
-| GRACE | In-hospital mortality in ACS | 0–372 |
-| TIMI | 14-day MACE in UA/NSTEMI | 0–7 |
-| NYHA | Heart failure functional class | I/II/III/IV |
+**48 calculators across 13 specialties** — full searchable catalog at **[medikquantis.me](https://medikquantis.me)**.
+
+Cardiology (CHA₂DS₂-VASc, HAS-BLED, ORBIT, EHRA, HEART, GRACE, TIMI, NYHA, SCORE2/OP, ASCVD) · Pulmonology/PE (Wells-PE, PERC, CURB-65) · ICU/sepsis (qSOFA, SOFA, APACHE II) · Neurology (GCS, NIHSS) · Gastro/Hepatology (MELD-3, Child-Pugh, Glasgow-Blatchford, Hinchey) · Nephrology (CKD-EPI 2021, Anion Gap, FENa, corrected Ca/Na) · Endocrine/Nutrition (Harris-Benedict, FINDRISC) · Infectious disease (Centor, LRINEC, Pitt, Duke) · Surgery/risk (RCRI, ASA-PS, Caprini, Wells-DVT) · Geriatrics (Charlson, Norton, Braden, Barthel) · Derm/Rheumatology (BASDAI, DAS28, PASI, SCORAD) · Urology (IPSS) · and more.
+
+Every calculator is also available via the **free REST API** (OpenAPI/Swagger documented).
 
 ## Stack
 
 - Next.js 15 (App Router) + TypeScript + Tailwind CSS
 - next-intl for i18n
 - Zod for input validation
-- Vitest for unit tests (101 currently green)
+- Vitest unit tests, CI-gated on every push
 - Deployed to Vercel (free tier)
 
 ## Structure
