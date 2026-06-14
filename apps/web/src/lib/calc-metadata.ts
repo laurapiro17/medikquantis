@@ -21,10 +21,11 @@ const DESCRIPTION_SUFFIX: Record<string, string> = {
  * "calculadora {score}" in CA/ES, "{score} calculator" in EN. The previous
  * title was just "{name} — {subtitle}", which never matched those queries.
  */
+const enTitle = (name: string, subtitle: string) => `${name} Calculator — ${subtitle}`;
 const TITLE_PATTERN: Record<string, (name: string, subtitle: string) => string> = {
   ca: (name, subtitle) => `Calculadora ${name} — ${subtitle}`,
   es: (name, subtitle) => `Calculadora ${name} — ${subtitle}`,
-  en: (name, subtitle) => `${name} Calculator — ${subtitle}`,
+  en: enTitle,
 };
 
 /**
@@ -51,7 +52,7 @@ export async function buildCalcMetadata(
   const name = t(`${calc.i18nKey}.title`);
   const subtitle = t(`${calc.i18nKey}.subtitle`);
 
-  const makeTitle = TITLE_PATTERN[locale] ?? TITLE_PATTERN.en;
+  const makeTitle = TITLE_PATTERN[locale] ?? enTitle;
   const title = makeTitle(name, subtitle);
   const suffix = DESCRIPTION_SUFFIX[locale] ?? DESCRIPTION_SUFFIX.en;
   const description = `${subtitle}. ${suffix}`;
