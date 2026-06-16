@@ -11,6 +11,7 @@ import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { LayoutShell } from "@/components/LayoutShell";
 import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister";
+import { Logo } from "@/components/Logo";
 import { BASE_URL } from "@/lib/site";
 
 const inter = Inter({
@@ -117,9 +118,12 @@ export default async function LocaleLayout({
     <>
       <Link
         href="/"
-        className="font-semibold tracking-tight text-slate-900 transition hover:text-trust-600 dark:text-slate-100 dark:hover:text-neon"
+        aria-label={t("title")}
+        className="flex items-center gap-2 font-semibold tracking-tight"
       >
-        {t("title")}
+        <Logo className="h-7 w-auto" />
+        <span className="text-slate-800 transition dark:text-slate-100">Medik</span>
+        <span className="-ml-2 text-trust-600 transition dark:text-neon">Quantis</span>
       </Link>
       <div className="flex items-center gap-2">
         <LanguageSwitcher currentLocale={locale} />
