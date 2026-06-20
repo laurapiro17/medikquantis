@@ -1,12 +1,9 @@
-// Single source of truth for the content-review byline shown on every
-// calculator page (and mirrored into JSON-LD as author/reviewedBy).
-//
-// Honesty matters for medical E-E-A-T: this names the person who curated and
-// reviewed the *content/implementation*. Clinical authority for each score
-// stays with its original authors + the cited guidelines (see each page's
-// References). To change the byline (e.g. to an editorial team, or to add a
-// physician reviewer), edit only this file — the visible byline, the
-// localized role label, and the structured data all read from here.
+// Content-review metadata. Only `lastReviewedIso` is currently rendered
+// (schema.org lastReviewed). The named reviewer (name/ORCID/affiliation) is
+// intentionally NOT shown on the public site for now — the calculator byline,
+// the methodology page and the structured data attribute authorship to the
+// MedikQuantis project instead. The identity is kept here so the named byline
+// can be re-enabled in one place once the project has more traction.
 
 export const REVIEWER = {
   name: "Laura Piñero Roig",
