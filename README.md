@@ -5,7 +5,7 @@
 [![Live](https://img.shields.io/badge/live-medikquantis.me-93c5fd)](https://medikquantis.me)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20562617.svg)](https://doi.org/10.5281/zenodo.20562617)
 
-**[medikquantis.me](https://medikquantis.me)** — 48 clinical calculators across 16 specialties in Catalan, Spanish and English. Open source, cited from the original papers, with a clinician/patient dual mode, a free REST API and SMART on FHIR support.
+**[medikquantis.me](https://medikquantis.me)** — 49 clinical calculators across 16 specialties in Catalan, Spanish and English. Open source, cited from the original papers, with a clinician/patient dual mode, a free REST API and SMART on FHIR support.
 
 ## Question
 
@@ -30,7 +30,7 @@ MDCalc and MedCalc are the global standards for clinical calculators, but neithe
 
 ## Calculators
 
-**48 calculators across 16 specialties** — full searchable catalog at **[medikquantis.me](https://medikquantis.me)**.
+**49 calculators across 16 specialties** — full searchable catalog at **[medikquantis.me](https://medikquantis.me)**.
 
 Cardiology (CHA₂DS₂-VASc, HAS-BLED, ORBIT, EHRA, HEART, GRACE, TIMI, NYHA, SCORE2/OP, ASCVD) · Pulmonology/PE (Wells-PE, PERC, CURB-65) · ICU/sepsis (qSOFA, SOFA, APACHE II) · Neurology (GCS, NIHSS) · Gastro/Hepatology (MELD-3, Child-Pugh, Glasgow-Blatchford, Hinchey) · Nephrology (CKD-EPI 2021, Anion Gap, FENa, corrected Ca/Na) · Endocrine/Nutrition (Harris-Benedict, FINDRISC) · Infectious disease (Centor, LRINEC, Pitt, Duke) · Surgery/risk (RCRI, ASA-PS, Caprini, Wells-DVT) · Geriatrics (Charlson, Norton, Braden, Barthel) · Derm/Rheumatology (BASDAI, DAS28, PASI, SCORAD) · Urology (IPSS) · and more.
 
