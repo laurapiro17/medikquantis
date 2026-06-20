@@ -125,7 +125,7 @@
     "value_3_title": "Citable & open",
     "value_3_body": "MIT licensed code, permanent Zenodo DOI, free REST API, no tracking.",
     "catalog_heading": "Catalog",
-    "catalog_subheading": "48 calculators across 13 specialties.",
+    "catalog_subheading": "48 calculators across 16 specialties.",
     "doi_label": "Cite this work",
     "api_callout_heading": "Programmatic access",
     "api_callout_body": "All 48 calculators are exposed as a REST API with an OpenAPI 3.1 spec and live Swagger UI. CORS open, no auth, language switchable.",

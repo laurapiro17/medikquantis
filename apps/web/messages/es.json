@@ -125,7 +125,7 @@
     "value_3_title": "Citable y abierto",
     "value_3_body": "Código bajo licencia MIT, DOI permanente en Zenodo, API REST gratuita, sin tracking.",
     "catalog_heading": "Catálogo",
-    "catalog_subheading": "48 calculadoras en 13 especialidades.",
+    "catalog_subheading": "48 calculadoras en 16 especialidades.",
     "doi_label": "Cita este trabajo",
     "api_callout_heading": "Acceso programático",
     "api_callout_body": "Las 48 calculadoras se exponen como API REST con especificación OpenAPI 3.1 y Swagger UI en vivo. CORS abierto, sin autenticación, idioma intercambiable.",

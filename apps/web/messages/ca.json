@@ -125,7 +125,7 @@
     "value_3_title": "Citable i obert",
     "value_3_body": "Codi sota llicència MIT, DOI permanent a Zenodo, API REST gratuïta, sense tracking.",
     "catalog_heading": "Catàleg",
-    "catalog_subheading": "48 calculadores en 13 especialitats.",
+    "catalog_subheading": "48 calculadores en 16 especialitats.",
     "doi_label": "Cita aquest treball",
     "api_callout_heading": "Accés programàtic",
     "api_callout_body": "Les 48 calculadores s'exposen com a API REST amb especificació OpenAPI 3.1 i Swagger UI en viu. CORS obert, sense autenticació, idioma intercanviable.",
