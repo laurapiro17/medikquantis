@@ -32,15 +32,13 @@ export async function CalcJsonLd({
   const subtitle = t(`${calc.i18nKey}.subtitle`);
   const url = `${BASE_URL}/${locale}/${id}`;
 
-  // The person who curated/reviewed the content + implementation. Surfaced as
-  // both author and reviewedBy; clinical authority for the score itself lives
-  // in `citation` (the original literature). Mirrors the visible CalcByline.
-  const reviewer = {
-    "@type": "Person",
-    name: REVIEWER.name,
-    url: REVIEWER.orcidUrl,
-    identifier: REVIEWER.orcidUrl,
-    affiliation: { "@type": "Organization", name: REVIEWER.affiliation },
+  // Authorship is attributed to the project (not a named person) for now;
+  // clinical authority for the score itself lives in `citation` (the original
+  // literature). Mirrors the visible CalcByline.
+  const publisher = {
+    "@type": "Organization",
+    name: "MedikQuantis",
+    url: BASE_URL,
   };
 
   const jsonLd = {
@@ -50,8 +48,7 @@ export async function CalcJsonLd({
     description: subtitle,
     inLanguage: locale,
     url,
-    author: reviewer,
-    reviewedBy: reviewer,
+    author: publisher,
     lastReviewed: REVIEWER.lastReviewedIso,
     isPartOf: { "@type": "WebSite", name: "MedikQuantis", url: BASE_URL },
     medicalAudience: {

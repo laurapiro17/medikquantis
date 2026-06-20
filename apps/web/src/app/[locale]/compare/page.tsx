@@ -30,13 +30,11 @@ export default async function ComparePage({
   const t = await getTranslations();
 
   // MedicalWebPage JSON-LD for the decision page: grounds it in the ESC 2024
-  // guideline and carries the same reviewer signal as the calculator pages.
-  const reviewer = {
-    "@type": "Person",
-    name: REVIEWER.name,
-    url: REVIEWER.orcidUrl,
-    identifier: REVIEWER.orcidUrl,
-    affiliation: { "@type": "Organization", name: REVIEWER.affiliation },
+  // guideline. Authorship is attributed to the project (not a named person).
+  const publisher = {
+    "@type": "Organization",
+    name: "MedikQuantis",
+    url: BASE_URL,
   };
   const jsonLd = {
     "@context": "https://schema.org",
@@ -47,8 +45,7 @@ export default async function ComparePage({
     url: `${BASE_URL}/${locale}/compare`,
     isPartOf: { "@type": "WebSite", name: "MedikQuantis", url: BASE_URL },
     medicalAudience: { "@type": "MedicalAudience", audienceType: "Clinician" },
-    author: reviewer,
-    reviewedBy: reviewer,
+    author: publisher,
     lastReviewed: REVIEWER.lastReviewedIso,
     citation: {
       "@type": "CreativeWork",

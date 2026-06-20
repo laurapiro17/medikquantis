@@ -1,6 +1,5 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { buildPageMetadata } from "@/lib/page-metadata";
-import { REVIEWER } from "@/lib/reviewer";
 
 export async function generateMetadata({
   params,
@@ -52,19 +51,6 @@ export default async function MethodologyPage({
             {t(s.h)}
           </h2>
           <p className="mt-2 text-slate-700 dark:text-slate-300">{t(s.b)}</p>
-          {s.h === "methodology.review_heading" && (
-            <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
-              {REVIEWER.name} —{" "}
-              <a
-                href={REVIEWER.orcidUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="text-trust-600 underline dark:text-neon"
-              >
-                ORCID {REVIEWER.orcidId}
-              </a>
-            </p>
-          )}
           {s.h === "methodology.open_heading" && (
             <p className="mt-2 text-sm">
               <a
