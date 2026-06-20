@@ -60,7 +60,7 @@ export async function generateMetadata({
     // `default` is used by pages without their own title (e.g. the homepage);
     // `template` wraps any page that sets a plain string title (the calculators).
     title: {
-      default: `${title} — ${description}`,
+      default: t("seo_title"),
       template: `%s · ${title}`,
     },
     description,
