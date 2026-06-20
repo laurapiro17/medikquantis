@@ -1,6 +1,7 @@
 import type { CalcDefinition } from "./types";
 
 import { calculator as cha2ds2vasc } from "./cha2ds2vasc";
+import { calculator as cha2ds2va } from "./cha2ds2va";
 import { calculator as hasbled } from "./hasbled";
 import { calculator as orbit } from "./orbit";
 import { calculator as ehra } from "./ehra";
@@ -58,6 +59,7 @@ export type AnyCalc = CalcDefinition<any>;
 
 const registry: Record<string, AnyCalc> = {
   cha2ds2vasc,
+  cha2ds2va,
   hasbled,
   orbit,
   ehra,

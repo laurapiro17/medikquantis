@@ -115,7 +115,7 @@
     "subheading": "Elige una calculadora para empezar.",
     "hero_eyebrow": "Calculadoras clínicas abiertas",
     "hero_heading": "Scores multilingües. Evidencia citada. API gratuita.",
-    "hero_subheading": "48 scores clínicos validados en catalán, español e inglés, con una API REST pública y un DOI permanente. Abierto bajo MIT.",
+    "hero_subheading": "49 scores clínicos validados en catalán, español e inglés, con una API REST pública y un DOI permanente. Abierto bajo MIT.",
     "hero_cta_calcs": "Ver calculadoras",
     "hero_cta_api": "Usar la API",
     "value_1_title": "Multilingüe nativo",
@@ -125,10 +125,10 @@
     "value_3_title": "Citable y abierto",
     "value_3_body": "Código bajo licencia MIT, DOI permanente en Zenodo, API REST gratuita, sin tracking.",
     "catalog_heading": "Catálogo",
-    "catalog_subheading": "48 calculadoras en 13 especialidades.",
+    "catalog_subheading": "49 calculadoras en 13 especialidades.",
     "doi_label": "Cita este trabajo",
     "api_callout_heading": "Acceso programático",
-    "api_callout_body": "Las 48 calculadoras se exponen como API REST con especificación OpenAPI 3.1 y Swagger UI en vivo. CORS abierto, sin autenticación, idioma intercambiable.",
+    "api_callout_body": "Las 49 calculadoras se exponen como API REST con especificación OpenAPI 3.1 y Swagger UI en vivo. CORS abierto, sin autenticación, idioma intercambiable.",
     "api_callout_cta": "Abrir docs de la API",
     "search_placeholder": "Buscar calculadoras…",
     "search_empty": "Ninguna calculadora coincide con tu búsqueda.",
@@ -172,6 +172,49 @@
     "copy_result": "Copiar resultado",
     "copy_result_copied": "Resultado copiado",
     "result_source": "Calculado con MedikQuantis"
+  },
+  "cha2ds2va": {
+    "title": "CHA₂DS₂-VA",
+    "subtitle": "Riesgo de ictus en fibrilación auricular (ESC 2024, sin sexo)",
+    "fields": {
+      "age": "Edad",
+      "chf": "Insuficiencia cardíaca congestiva",
+      "hypertension": "Hipertensión",
+      "diabetes": "Diabetes mellitus",
+      "strokeOrTia": "Ictus o AIT previo",
+      "vascularDisease": "Enfermedad vascular (IAM previo, EAP, placa aórtica)"
+    },
+    "patient": {
+      "intro": "Esta calculadora estima la probabilidad de que sufras un ictus en los próximos años a causa de tu fibrilación auricular, con el método europeo de 2024 que ya no tiene en cuenta el sexo.",
+      "result_low": "Tu riesgo de ictus es bajo. Según las guías europeas de 2024, no se recomienda un anticoagulante solo por este motivo.",
+      "result_moderate": "Tu riesgo de ictus es intermedio. Conviene hablar con tu cardiólogo para valorar si la anticoagulación te beneficiaría.",
+      "result_high": "Tu riesgo de ictus es alto. Las guías recomiendan iniciar un anticoagulante oral para reducirlo.",
+      "ask_doctor": "Pregunta a tu médico:",
+      "questions": [
+        "¿Qué anticoagulante me recomiendas y por qué?",
+        "¿Qué seguimiento necesitaré durante el tratamiento?",
+        "¿Cuál es mi riesgo de sangrado según la escala HAS-BLED?"
+      ]
+    },
+    "content": {
+      "overview": "La escala CHA₂DS₂-VA es la puntuación de riesgo de ictus introducida por las guías ESC de 2024 para el manejo de la fibrilación auricular. Es la conocida CHA₂DS₂-VASc sin la categoría de sexo: suma puntos por insuficiencia cardíaca congestiva, hipertensión, edad (un punto de 65 a 74 años y dos a partir de 75), diabetes, ictus o AIT previo y enfermedad vascular, hasta un máximo de 8. Eliminar el sexo simplifica la decisión y aplica el mismo umbral a hombres y mujeres.",
+      "interpretation": "Una puntuación de 0 indica riesgo bajo y no se recomienda anticoagulación. Una puntuación de 1 se sitúa en una banda intermedia en la que la anticoagulación debe considerarse (clase IIa de la ESC). A partir de 2 puntos se recomienda la anticoagulación oral (clase I). Como el sexo ya no puntúa, mujeres y hombres con los mismos factores de riesgo reciben la misma recomendación.",
+      "cautions": "La CHA₂DS₂-VA no se aplica a pacientes con válvula cardíaca mecánica o estenosis mitral moderada-grave, en quienes la anticoagulación con un antagonista de la vitamina K está indicada con independencia de la puntuación. Estima solo el riesgo trombótico y no evalúa el riesgo de sangrado, que se valora aparte, por ejemplo con la escala HAS-BLED. La puntuación orienta pero no sustituye el juicio clínico individualizado y no ofrece un porcentaje anual de ictus por punto.",
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre CHA₂DS₂-VA y CHA₂DS₂-VASc?",
+          "a": "La CHA₂DS₂-VA elimina la categoría de sexo (Sc). Las guías ESC de 2024 la adoptaron para simplificar la decisión, de modo que la puntuación máxima es 8 en lugar de 9 y se aplican los mismos umbrales a hombres y mujeres."
+        },
+        {
+          "q": "¿Qué puntuación de CHA₂DS₂-VA requiere anticoagulación?",
+          "a": "La anticoagulación oral se recomienda a partir de una puntuación de 2 (clase I de la ESC) y debe considerarse con una puntuación de 1 (clase IIa). Una puntuación de 0 no justifica la anticoagulación."
+        },
+        {
+          "q": "¿La CHA₂DS₂-VA mide el riesgo de sangrado?",
+          "a": "No. Estima solo el riesgo de ictus (trombótico). El riesgo de sangrado se valora aparte, por ejemplo con la escala HAS-BLED."
+        }
+      ]
+    }
   },
   "cha2ds2vasc": {
     "title": "CHA₂DS₂-VASc",

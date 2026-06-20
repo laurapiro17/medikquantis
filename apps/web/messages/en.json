@@ -115,7 +115,7 @@
     "subheading": "Pick a calculator to get started.",
     "hero_eyebrow": "Open clinical calculators",
     "hero_heading": "Multilingual scores. Cited evidence. Free API.",
-    "hero_subheading": "48 peer-reviewed clinical scores in Catalan, Spanish and English, with a public REST API and a permanent DOI. Open under MIT.",
+    "hero_subheading": "49 peer-reviewed clinical scores in Catalan, Spanish and English, with a public REST API and a permanent DOI. Open under MIT.",
     "hero_cta_calcs": "Browse calculators",
     "hero_cta_api": "Use the API",
     "value_1_title": "Native multilingual",
@@ -125,10 +125,10 @@
     "value_3_title": "Citable & open",
     "value_3_body": "MIT licensed code, permanent Zenodo DOI, free REST API, no tracking.",
     "catalog_heading": "Catalog",
-    "catalog_subheading": "48 calculators across 13 specialties.",
+    "catalog_subheading": "49 calculators across 13 specialties.",
     "doi_label": "Cite this work",
     "api_callout_heading": "Programmatic access",
-    "api_callout_body": "All 48 calculators are exposed as a REST API with an OpenAPI 3.1 spec and live Swagger UI. CORS open, no auth, language switchable.",
+    "api_callout_body": "All 49 calculators are exposed as a REST API with an OpenAPI 3.1 spec and live Swagger UI. CORS open, no auth, language switchable.",
     "api_callout_cta": "Open API docs",
     "search_placeholder": "Search calculators…",
     "search_empty": "No calculators match your search.",
@@ -172,6 +172,49 @@
     "copy_result": "Copy result",
     "copy_result_copied": "Result copied",
     "result_source": "Calculated with MedikQuantis"
+  },
+  "cha2ds2va": {
+    "title": "CHA₂DS₂-VA",
+    "subtitle": "Stroke risk in atrial fibrillation (2024 ESC, sex-free)",
+    "fields": {
+      "age": "Age",
+      "chf": "Congestive heart failure",
+      "hypertension": "Hypertension",
+      "diabetes": "Diabetes mellitus",
+      "strokeOrTia": "Prior stroke or TIA",
+      "vascularDisease": "Vascular disease (prior MI, PAD, aortic plaque)"
+    },
+    "patient": {
+      "intro": "This calculator estimates how likely you are to have a stroke in the coming years because of your atrial fibrillation, using the 2024 European method that no longer counts sex.",
+      "result_low": "Your stroke risk is low. According to the 2024 European guidelines, a blood thinner is not recommended on this basis alone.",
+      "result_moderate": "Your stroke risk is intermediate. It is worth discussing with your cardiologist whether a blood thinner would benefit you.",
+      "result_high": "Your stroke risk is high. Guidelines recommend starting an oral blood thinner (anticoagulant) to reduce it.",
+      "ask_doctor": "Ask your doctor:",
+      "questions": [
+        "Which anticoagulant do you recommend for me and why?",
+        "What follow-up will I need while on treatment?",
+        "What is my bleeding risk according to the HAS-BLED score?"
+      ]
+    },
+    "content": {
+      "overview": "CHA₂DS₂-VA is the stroke-risk score introduced by the 2024 ESC guidelines for the management of atrial fibrillation. It is the established CHA₂DS₂-VASc score with the sex category removed: it adds points for congestive heart failure, hypertension, age (one point at 65–74, two from 75), diabetes, prior stroke or TIA, and vascular disease, for a maximum of 8. Removing sex simplifies the decision and applies the same threshold to men and women.",
+      "interpretation": "A score of 0 indicates low risk and oral anticoagulation is not recommended. A score of 1 lies in an intermediate band where anticoagulation should be considered (ESC Class IIa). From 2 points upward, oral anticoagulation is recommended (Class I). Because sex is no longer scored, women and men with the same risk factors receive the same recommendation.",
+      "cautions": "CHA₂DS₂-VA does not apply to patients with a mechanical heart valve or moderate-to-severe mitral stenosis, in whom anticoagulation with a vitamin K antagonist is indicated regardless of the score. It estimates thrombotic risk only and does not assess bleeding risk, which is evaluated separately, for example with the HAS-BLED score. The score informs but does not replace individualised clinical judgement, and it does not provide a per-point annual stroke percentage.",
+      "faq": [
+        {
+          "q": "What is the difference between CHA₂DS₂-VA and CHA₂DS₂-VASc?",
+          "a": "CHA₂DS₂-VA removes the sex (Sc) category. The 2024 ESC guidelines adopted it to simplify the decision, so the maximum score is 8 instead of 9 and the same thresholds apply to men and women."
+        },
+        {
+          "q": "Which CHA₂DS₂-VA score requires anticoagulation?",
+          "a": "Oral anticoagulation is recommended from a score of 2 (ESC Class I) and should be considered at a score of 1 (Class IIa). A score of 0 does not warrant anticoagulation."
+        },
+        {
+          "q": "Does CHA₂DS₂-VA measure bleeding risk?",
+          "a": "No. It estimates stroke (thrombotic) risk only. Bleeding risk is assessed separately, for example with the HAS-BLED score."
+        }
+      ]
+    }
   },
   "cha2ds2vasc": {
     "title": "CHA₂DS₂-VASc",
