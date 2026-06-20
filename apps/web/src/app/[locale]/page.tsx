@@ -2,6 +2,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { getCalc, listCalcs, POPULAR_CALC_IDS } from "@medcalc/calculators";
 import { Link } from "@/i18n/navigation";
 import { Catalog } from "@/components/Catalog";
+import { BASE_URL } from "@/lib/site";
 
 const DOI = "10.5281/zenodo.20562617";
 const DOI_URL = `https://doi.org/${DOI}`;
@@ -40,13 +41,9 @@ export default async function HomePage({
     isAccessibleForFree: true,
     inLanguage: ["ca", "es", "en"],
     author: {
-      "@type": "Person",
-      name: "Laura Piñero Roig",
-      affiliation: {
-        "@type": "EducationalOrganization",
-        name: "School of Medicine, University of Barcelona",
-      },
-      identifier: "https://orcid.org/0009-0008-3390-4029",
+      "@type": "Organization",
+      name: "MedikQuantis",
+      url: BASE_URL,
     },
     identifier: {
       "@type": "PropertyValue",
