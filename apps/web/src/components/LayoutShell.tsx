@@ -1,9 +1,14 @@
 "use client";
 
 import { useCallback, useEffect, useState, type ReactNode } from "react";
+import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
 import { Sidebar } from "./Sidebar";
-import { CommandPalette } from "./CommandPalette";
+
+const CommandPalette = dynamic(
+  () => import("./CommandPalette").then((m) => m.CommandPalette),
+  { ssr: false },
+);
 
 interface CalcEntry {
   id: string;
@@ -90,6 +95,12 @@ export function LayoutShell({
 
   return (
     <>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[70] focus:rounded-md focus:bg-trust-600 focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-white dark:focus:bg-neon dark:focus:text-[#0c0f10]"
+      >
+        {t("common.skip_to_content")}
+      </a>
       <div className={gridClass}>
         {/* Sticky desktop sidebar */}
         <aside
@@ -137,7 +148,7 @@ export function LayoutShell({
           </div>
 
           {disclaimer}
-          <main className="mx-auto w-full max-w-4xl flex-1 px-4 py-10">
+          <main id="main-content" className="mx-auto w-full max-w-4xl flex-1 px-4 py-10">
             {children}
           </main>
           {footer}

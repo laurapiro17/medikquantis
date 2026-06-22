@@ -1,7 +1,9 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
 import { ShareActions } from "./ShareActions";
+import { CountUp } from "./CountUp";
 
 type Mode = "clinician" | "patient";
 type Tier = "low" | "moderate" | "high";
@@ -11,6 +13,18 @@ const tierStyles: Record<Tier, string> = {
   moderate:
     "bg-amber-50 text-amber-800 ring-amber-200 dark:bg-amber-400/10 dark:text-amber-300 dark:ring-amber-400/30",
   high: "bg-cardio-50 text-cardio-700 ring-cardio-200 dark:bg-cardio-500/10 dark:text-cardio-500 dark:ring-cardio-500/30",
+};
+
+const tierText: Record<Tier, string> = {
+  low: "text-emerald-600 dark:text-emerald-400",
+  moderate: "text-amber-600 dark:text-amber-400",
+  high: "text-cardio-600 dark:text-cardio-500",
+};
+
+const tierBar: Record<Tier, string> = {
+  low: "bg-emerald-500",
+  moderate: "bg-amber-500",
+  high: "bg-cardio-600",
 };
 
 interface ResultPanelProps {
@@ -37,6 +51,11 @@ export function ResultPanel({
   shareableInputs,
 }: ResultPanelProps) {
   const t = useTranslations();
+  const [lit, setLit] = useState(false);
+  useEffect(() => {
+    const id = requestAnimationFrame(() => setLit(true));
+    return () => cancelAnimationFrame(id);
+  }, [score]);
 
   if (mode === "clinician") {
     // EHR-pasteable one-block summary. Mirrors the on-screen result so a
@@ -53,19 +72,24 @@ export function ResultPanel({
     ].join("\n");
 
     return (
-      <div className="glass-panel animate-fade-in p-6">
+      <div key={score} role="status" aria-live="polite" aria-atomic="true" aria-label={t("common.result")} className="glass-panel animate-result p-6">
         <div className="flex items-baseline gap-4">
           <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
             {t("common.score")}
           </span>
-          <span className="score-glow-light dark:score-glow-dark font-mono text-6xl font-semibold leading-none tabular-nums">
-            {score}
-          </span>
+          <CountUp
+            value={score}
+            className={`inline-block animate-score font-mono text-6xl sm:text-7xl font-semibold leading-none tabular-nums ${tierText[tier]}`}
+          />
           <span
-            className={`ml-auto rounded-full px-3 py-1 text-xs font-medium ring-1 ${tierStyles[tier]}`}
+            className={`animate-badge ml-auto rounded-full px-3 py-1 text-xs font-medium ring-1 ${tierStyles[tier]}`}
           >
             {t(`common.tier_${tier}` as "common.tier_low")}
           </span>
+        </div>
+
+        <div className="mt-3 h-2 w-full overflow-hidden rounded-full bg-slate-100 dark:bg-white/10">
+          <div className={`tier-bar-fill h-full rounded-full ${tierBar[tier]} ${lit ? "is-filled" : ""}`} />
         </div>
 
         <p className="mt-5 text-slate-900 dark:text-slate-100">{recommendation}</p>
@@ -77,7 +101,11 @@ export function ResultPanel({
                 {t(riskLabelKey)}
               </dt>
               <dd className="mt-1 font-mono text-2xl font-medium text-slate-900 tabular-nums dark:text-slate-100">
-                {annualRiskPercent}%
+                <CountUp
+                  value={annualRiskPercent}
+                  decimals={Number.isInteger(annualRiskPercent) ? 0 : 1}
+                  className="font-mono text-2xl font-medium text-slate-900 tabular-nums dark:text-slate-100"
+                />%
               </dd>
             </div>
           )}
@@ -110,7 +138,7 @@ export function ResultPanel({
   const questionList = Array.isArray(questions) ? (questions as string[]) : [];
 
   return (
-    <div className="glass-panel animate-fade-in space-y-5 p-6">
+    <div key={score} role="status" aria-live="polite" aria-atomic="true" aria-label={t("common.result")} className="glass-panel animate-result space-y-5 p-6">
       <p className="text-slate-700 dark:text-slate-300">{t(introKey)}</p>
 
       <div className={`rounded-lg px-4 py-3 ring-1 ${tierStyles[tier]}`}>
@@ -151,21 +179,30 @@ export function ModeToggle({
 }) {
   const t = useTranslations();
   return (
-    <div className="inline-flex rounded-full border border-slate-200 bg-white p-1 dark:border-white/15 dark:bg-white/5">
-      {(["clinician", "patient"] as const).map((m) => (
-        <button
-          key={m}
-          type="button"
-          onClick={() => onChange(m)}
-          className={
-            mode === m
-              ? "rounded-full bg-trust-600 px-4 py-1.5 text-sm font-medium text-white dark:bg-neon dark:text-neon-ink dark:shadow-neon-soft"
-              : "rounded-full px-4 py-1.5 text-sm font-medium text-slate-600 transition hover:text-slate-900 dark:text-slate-300 dark:hover:text-neon"
-          }
-        >
-          {t(`common.mode_${m}` as "common.mode_clinician")}
-        </button>
-      ))}
+    <div>
+      <div
+        role="radiogroup"
+        aria-label={t("common.view_mode")}
+        className="inline-flex rounded-full border border-slate-200 bg-white p-1 dark:border-white/15 dark:bg-white/5"
+      >
+        {(["clinician", "patient"] as const).map((m) => (
+          <button
+            key={m}
+            type="button"
+            role="radio"
+            aria-checked={mode === m}
+            onClick={() => onChange(m)}
+            className={
+              mode === m
+                ? "press rounded-full bg-trust-600 px-4 py-1.5 text-sm font-medium text-white dark:bg-neon dark:text-neon-ink dark:shadow-neon-soft"
+                : "press rounded-full px-4 py-1.5 text-sm font-medium text-slate-600 transition hover:text-slate-900 dark:text-slate-300 dark:hover:text-neon"
+            }
+          >
+            {t(`common.mode_${m}` as "common.mode_clinician")}
+          </button>
+        ))}
+      </div>
+      <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">{t("common.mode_hint")}</p>
     </div>
   );
 }

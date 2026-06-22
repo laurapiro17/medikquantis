@@ -2,9 +2,12 @@ import type { MetadataRoute } from "next";
 import { listCalcIds } from "@medcalc/calculators";
 import { routing } from "@/i18n/routing";
 import { BASE_URL } from "@/lib/site";
+import { REVIEWER } from "@/lib/reviewer";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
+  const reviewed = new Date(REVIEWER.lastReviewedIso);
+  const calcIds = new Set(listCalcIds());
   const localePaths = [
     "",
     "about",
@@ -24,8 +27,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         : `${BASE_URL}/${locale}`;
       entries.push({
         url,
-        lastModified: now,
-        changeFrequency: path === "" ? "weekly" : "monthly",
+        lastModified: path === "" ? now : calcIds.has(path) ? reviewed : now,
+        changeFrequency:
+          path === ""
+            ? "weekly"
+            : path === "about" || path === "privacy" || path === "terms"
+              ? "yearly"
+              : "monthly",
         priority: path === "" ? 1.0 : 0.7,
       });
     }

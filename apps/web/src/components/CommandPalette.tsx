@@ -135,7 +135,7 @@ export function CommandPalette({ calcs }: { calcs: readonly CalcEntry[] }) {
             type="button"
             onClick={close}
             className="absolute inset-0 bg-slate-900/50 backdrop-blur-sm"
-            aria-label="Close"
+            aria-label={t("sidebar.close_label")}
             tabIndex={-1}
           />
           <div className="relative w-full max-w-lg overflow-hidden rounded-xl border border-slate-200 bg-white shadow-2xl animate-fade-in dark:border-white/10 dark:bg-[#0c0f10]">
@@ -147,6 +147,10 @@ export function CommandPalette({ calcs }: { calcs: readonly CalcEntry[] }) {
               onKeyDown={onInputKeyDown}
               placeholder={t("home.search_placeholder")}
               aria-label={t("home.search_placeholder")}
+              role="combobox"
+              aria-expanded={results.length > 0}
+              aria-controls="cmdk-listbox"
+              aria-activedescendant={results[active] ? `cmdk-opt-${results[active].id}` : undefined}
               className="w-full border-b border-slate-200 bg-transparent px-4 py-3.5 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none dark:border-white/10 dark:text-slate-100 dark:placeholder:text-slate-500"
             />
             {results.length === 0 ? (
@@ -154,9 +158,9 @@ export function CommandPalette({ calcs }: { calcs: readonly CalcEntry[] }) {
                 {t("home.search_empty")}
               </p>
             ) : (
-              <ul className="max-h-[50vh] overflow-y-auto py-2" role="listbox">
+              <ul id="cmdk-listbox" className="max-h-[50vh] overflow-y-auto py-2" role="listbox">
                 {results.map((item, i) => (
-                  <li key={item.id} role="option" aria-selected={i === active}>
+                  <li key={item.id} id={`cmdk-opt-${item.id}`} role="option" aria-selected={i === active}>
                     <button
                       type="button"
                       onClick={() => go(item.id)}

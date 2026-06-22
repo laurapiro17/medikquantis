@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { Reveal } from "./Reveal";
 
 interface CatalogEntry {
   id: string;
@@ -106,7 +107,7 @@ export function Catalog({ calcs }: CatalogProps) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder={t("home.search_placeholder")}
-          className="w-full rounded-md border border-slate-300 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-trust-500 focus:outline-none focus:ring-1 focus:ring-trust-500 dark:border-white/10 dark:bg-white/5 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-neon/60 dark:focus:ring-neon/30"
+          className="w-full rounded-lg border border-ink-200 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-trust-500 focus:outline-none focus:ring-1 focus:ring-trust-500/30 dark:border-white/10 dark:bg-white/5 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-neon/60 dark:focus:ring-neon/30"
           aria-label={t("home.search_placeholder")}
         />
       </div>
@@ -118,11 +119,12 @@ export function Catalog({ calcs }: CatalogProps) {
       ) : (
         <div className="space-y-10">
           {Array.from(grouped.entries()).map(
-            ([specialty, { label, entries }]) => (
+            ([specialty, { label, entries }], gi) => (
+              <Reveal key={specialty} delay={Math.min(gi, 6) * 55}>
               <section key={specialty} className="space-y-3">
-                <h3 className="flex items-baseline justify-between border-b border-slate-200 pb-2 text-sm font-semibold text-slate-700 dark:border-white/10 dark:text-slate-300">
+                <h3 className="flex items-baseline justify-between border-b border-slate-200 pb-2 text-sm font-semibold tracking-wide text-slate-700 dark:border-white/10 dark:text-slate-300">
                   <span>{label}</span>
-                  <span className="text-[10px] text-slate-400 dark:text-slate-500">
+                  <span className="text-[10px] text-slate-500 dark:text-slate-500">
                     {entries.length}
                   </span>
                 </h3>
@@ -131,14 +133,14 @@ export function Catalog({ calcs }: CatalogProps) {
                     <li key={item.id}>
                       <Link
                         href={`/${item.id}`}
-                        className="glass-panel block p-5 transition hover:border-trust-500 hover:shadow-md dark:hover:border-neon/50 dark:hover:shadow-neon-soft"
+                        className="card-lift press glass-panel block p-5 transition hover:border-trust-400 hover:shadow-trust dark:hover:border-neon/50"
                       >
                         <div className="flex items-start justify-between gap-3">
                           <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-200">
                             {item.title}
                           </h4>
                           <span
-                            className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium ${
+                            className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium ring-1 ring-inset ring-current/15 ${
                               SPECIALTY_CHIP[item.specialty] ?? DEFAULT_CHIP
                             }`}
                           >
@@ -153,6 +155,7 @@ export function Catalog({ calcs }: CatalogProps) {
                   ))}
                 </ul>
               </section>
+              </Reveal>
             ),
           )}
         </div>

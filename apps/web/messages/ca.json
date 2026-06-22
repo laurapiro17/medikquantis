@@ -172,7 +172,10 @@
     "last_reviewed_value": "juny de 2026",
     "copy_result": "Copia el resultat",
     "copy_result_copied": "Resultat copiat",
-    "result_source": "Calculat amb MedikQuantis"
+    "result_source": "Calculat amb MedikQuantis",
+    "mode_hint": "Canvia com s'expliquen els resultats",
+    "view_mode": "Mode de visualització",
+    "skip_to_content": "Salta al contingut"
   },
   "cha2ds2va": {
     "title": "CHA₂DS₂-VA",

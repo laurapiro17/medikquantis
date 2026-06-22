@@ -59,6 +59,8 @@ export async function buildCalcMetadata(
 
   const path = (l: string) => `${BASE_URL}/${l}/${id}`;
 
+  const OG_LOCALE: Record<string, string> = { ca: "ca_ES", es: "es_ES", en: "en_GB" };
+
   return {
     title,
     description,
@@ -75,7 +77,8 @@ export async function buildCalcMetadata(
       url: path(locale),
       siteName: "MedikQuantis",
       type: "article",
-      locale,
+      locale: OG_LOCALE[locale] ?? "en_GB",
+      alternateLocale: routing.locales.filter((l) => l !== locale).map((l) => OG_LOCALE[l] ?? "en_GB"),
     },
     twitter: {
       card: "summary_large_image",

@@ -52,6 +52,7 @@ export async function generateMetadata({
   const title = t("title");
   const description = t("tagline");
   const url = `${BASE_URL}/${locale}`;
+  const OG_LOCALE: Record<string, string> = { ca: "ca_ES", es: "es_ES", en: "en_GB" };
 
   return {
     metadataBase: new URL(BASE_URL),
@@ -79,7 +80,10 @@ export async function generateMetadata({
       url,
       siteName: title,
       type: "website",
-      locale,
+      locale: OG_LOCALE[locale] ?? "en_GB",
+      alternateLocale: routing.locales
+        .filter((l) => l !== locale)
+        .map((l) => OG_LOCALE[l] ?? "en_GB"),
     },
     twitter: {
       card: "summary_large_image",
@@ -133,7 +137,7 @@ export default async function LocaleLayout({
   );
 
   const disclaimer = (
-    <div className="border-b border-slate-200 px-4 py-1.5 text-center text-xs text-slate-400 dark:border-white/8 dark:text-slate-500">
+    <div className="border-b border-slate-200 px-4 py-1.5 text-center text-xs text-slate-600 dark:border-white/8 dark:text-slate-400">
       {t("disclaimer_banner")}
     </div>
   );
@@ -192,6 +196,8 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={inter.variable}>
       <head>
+        <link rel="preconnect" href="https://va.vercel-scripts.com" crossOrigin="" />
+        <link rel="dns-prefetch" href="https://va.vercel-scripts.com" />
         <script dangerouslySetInnerHTML={{ __html: themeBootstrapScript }} />
       </head>
       <body className="font-sans">
