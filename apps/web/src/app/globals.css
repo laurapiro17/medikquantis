@@ -34,6 +34,7 @@
 @layer components {
   .glass-panel {
     @apply rounded-xl border border-slate-200 bg-white shadow-sm;
+    transition: transform 160ms ease-out, box-shadow 160ms ease-out, border-color 160ms ease-out;
   }
   .dark .glass-panel {
     background-color: rgba(17, 20, 21, 0.55);
@@ -72,7 +73,7 @@
   }
   .reveal {
     opacity: 0;
-    transform: translateY(16px);
+    transform: translateY(10px);
     transition: opacity 460ms cubic-bezier(0.16, 1, 0.3, 1), transform 460ms cubic-bezier(0.16, 1, 0.3, 1);
     will-change: opacity, transform;
   }
@@ -102,6 +103,83 @@
   .dark .text-neon {
     color: #93c5fd;
     text-shadow: none;
+  }
+  .bg-mesh {
+    background-image:
+      radial-gradient(640px 420px at 8% -10%, rgba(37, 99, 235, 0.22), transparent 68%),
+      radial-gradient(520px 380px at 98% 4%, rgba(14, 165, 233, 0.18), transparent 66%),
+      radial-gradient(460px 360px at 62% 116%, rgba(124, 58, 237, 0.14), transparent 64%);
+  }
+  .dark .bg-mesh {
+    background-image:
+      radial-gradient(640px 420px at 8% -10%, rgba(96, 165, 250, 0.28), transparent 68%),
+      radial-gradient(520px 380px at 98% 4%, rgba(56, 189, 248, 0.22), transparent 66%),
+      radial-gradient(460px 360px at 62% 116%, rgba(167, 139, 250, 0.2), transparent 64%);
+  }
+  .btn-primary {
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(135deg, #1d4ed8 0%, #2563eb 45%, #38bdf8 100%);
+    background-size: 160% 160%;
+    transition: background-position 360ms ease-out, transform 160ms ease-out, box-shadow 200ms ease-out;
+  }
+  .btn-primary:hover {
+    background-position: 100% 0;
+    transform: translateY(-1px);
+    box-shadow: 0 12px 30px -10px rgba(37, 99, 235, 0.55);
+  }
+  .btn-primary::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-120%) skewX(-18deg);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.38), transparent);
+  }
+  .btn-primary:hover::after {
+    animation: sheen 720ms ease-out;
+  }
+  .animate-score {
+    animation: scorePop 760ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .animate-badge {
+    animation: badgePop 620ms cubic-bezier(0.16, 1, 0.3, 1) 120ms both;
+  }
+  .tier-bar-fill {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .tier-bar-fill.is-filled {
+    transform: scaleX(1);
+  }
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+  }
+  .rule-draw {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .rule-draw.is-visible,
+  .is-visible .rule-draw {
+    transform: scaleX(1);
+  }
+  .card-lift {
+    transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 180ms ease-out, border-color 180ms ease-out;
+  }
+  @media (hover: hover) {
+    .card-lift:hover,
+    .card-lift:focus-visible {
+      transform: translateY(-4px) scale(1.012);
+      box-shadow: 0 18px 40px -16px rgba(37, 99, 235, 0.4);
+    }
+    .dark .card-lift:hover,
+    .dark .card-lift:focus-visible {
+      box-shadow: 0 0 22px rgba(147, 197, 253, 0.28);
+    }
   }
 }
 
@@ -138,21 +216,72 @@
   }
 }
 
+@keyframes scorePop {
+  0% {
+    opacity: 0;
+    transform: scale(0.82);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes badgePop {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes sheen {
+  from {
+    transform: translateX(-120%) skewX(-18deg);
+  }
+  to {
+    transform: translateX(220%) skewX(-18deg);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-in,
   .animate-rise,
   .animate-result,
-  .press {
+  .animate-score,
+  .animate-badge,
+  .btn-primary,
+  .btn-primary::after,
+  .press,
+  .tier-bar-fill,
+  .rule-draw,
+  .card-lift {
     animation: none !important;
     transition: none !important;
+  }
+  .btn-primary::after {
+    display: none !important;
   }
   .reveal {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
   }
+  .rule-draw {
+    transform: none !important;
+  }
   .press:active {
     transform: none !important;
+  }
+  .bg-mesh,
+  .animate-mesh-drift {
+    animation: none !important;
   }
 }
 

@@ -1,7 +1,9 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
 import { ShareActions } from "./ShareActions";
+import { CountUp } from "./CountUp";
 
 type Mode = "clinician" | "patient";
 type Tier = "low" | "moderate" | "high";
@@ -11,6 +13,18 @@ const tierStyles: Record<Tier, string> = {
   moderate:
     "bg-amber-50 text-amber-800 ring-amber-200 dark:bg-amber-400/10 dark:text-amber-300 dark:ring-amber-400/30",
   high: "bg-cardio-50 text-cardio-700 ring-cardio-200 dark:bg-cardio-500/10 dark:text-cardio-500 dark:ring-cardio-500/30",
+};
+
+const tierText: Record<Tier, string> = {
+  low: "text-emerald-600 dark:text-emerald-400",
+  moderate: "text-amber-600 dark:text-amber-400",
+  high: "text-cardio-600 dark:text-cardio-500",
+};
+
+const tierBar: Record<Tier, string> = {
+  low: "bg-emerald-500",
+  moderate: "bg-amber-500",
+  high: "bg-cardio-600",
 };
 
 interface ResultPanelProps {
@@ -37,6 +51,11 @@ export function ResultPanel({
   shareableInputs,
 }: ResultPanelProps) {
   const t = useTranslations();
+  const [lit, setLit] = useState(false);
+  useEffect(() => {
+    const id = requestAnimationFrame(() => setLit(true));
+    return () => cancelAnimationFrame(id);
+  }, [score]);
 
   if (mode === "clinician") {
     // EHR-pasteable one-block summary. Mirrors the on-screen result so a
@@ -58,14 +77,19 @@ export function ResultPanel({
           <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
             {t("common.score")}
           </span>
-          <span className="score-glow-light dark:score-glow-dark font-mono text-6xl font-semibold leading-none tabular-nums">
-            {score}
-          </span>
+          <CountUp
+            value={score}
+            className={`inline-block animate-score font-mono text-6xl sm:text-7xl font-semibold leading-none tabular-nums ${tierText[tier]}`}
+          />
           <span
-            className={`ml-auto rounded-full px-3 py-1 text-xs font-medium ring-1 ${tierStyles[tier]}`}
+            className={`animate-badge ml-auto rounded-full px-3 py-1 text-xs font-medium ring-1 ${tierStyles[tier]}`}
           >
             {t(`common.tier_${tier}` as "common.tier_low")}
           </span>
+        </div>
+
+        <div className="mt-3 h-2 w-full overflow-hidden rounded-full bg-slate-100 dark:bg-white/10">
+          <div className={`tier-bar-fill h-full rounded-full ${tierBar[tier]} ${lit ? "is-filled" : ""}`} />
         </div>
 
         <p className="mt-5 text-slate-900 dark:text-slate-100">{recommendation}</p>
@@ -77,7 +101,11 @@ export function ResultPanel({
                 {t(riskLabelKey)}
               </dt>
               <dd className="mt-1 font-mono text-2xl font-medium text-slate-900 tabular-nums dark:text-slate-100">
-                {annualRiskPercent}%
+                <CountUp
+                  value={annualRiskPercent}
+                  decimals={Number.isInteger(annualRiskPercent) ? 0 : 1}
+                  className="font-mono text-2xl font-medium text-slate-900 tabular-nums dark:text-slate-100"
+                />%
               </dd>
             </div>
           )}
