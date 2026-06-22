@@ -106,15 +106,17 @@
   }
   .bg-mesh {
     background-image:
-      radial-gradient(640px 420px at 8% -10%, rgba(37, 99, 235, 0.22), transparent 68%),
-      radial-gradient(520px 380px at 98% 4%, rgba(14, 165, 233, 0.18), transparent 66%),
-      radial-gradient(460px 360px at 62% 116%, rgba(124, 58, 237, 0.14), transparent 64%);
+      radial-gradient(640px 420px at 8% -10%, rgba(37, 99, 235, 0.2), transparent 68%),
+      radial-gradient(520px 380px at 98% 4%, rgba(14, 165, 233, 0.16), transparent 66%),
+      radial-gradient(460px 360px at 62% 116%, rgba(124, 58, 237, 0.12), transparent 64%);
+    -webkit-mask-image: radial-gradient(78% 78% at 40% 38%, #000 42%, transparent 100%);
+    mask-image: radial-gradient(78% 78% at 40% 38%, #000 42%, transparent 100%);
   }
   .dark .bg-mesh {
     background-image:
-      radial-gradient(640px 420px at 8% -10%, rgba(96, 165, 250, 0.28), transparent 68%),
-      radial-gradient(520px 380px at 98% 4%, rgba(56, 189, 248, 0.22), transparent 66%),
-      radial-gradient(460px 360px at 62% 116%, rgba(167, 139, 250, 0.2), transparent 64%);
+      radial-gradient(640px 420px at 8% -10%, rgba(96, 165, 250, 0.2), transparent 68%),
+      radial-gradient(520px 380px at 98% 4%, rgba(56, 189, 248, 0.16), transparent 66%),
+      radial-gradient(460px 360px at 62% 116%, rgba(167, 139, 250, 0.14), transparent 64%);
   }
   .btn-primary {
     position: relative;
