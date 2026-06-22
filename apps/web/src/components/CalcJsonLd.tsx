@@ -71,11 +71,29 @@ export async function CalcJsonLd({
     },
   };
 
+  const breadcrumb = {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "MedikQuantis",
+        item: `${BASE_URL}/${locale}`,
+      },
+      { "@type": "ListItem", position: 2, name, item: url },
+    ],
+  };
+
+  const graph = {
+    "@context": "https://schema.org",
+    "@graph": [{ ...jsonLd, "@context": undefined }, breadcrumb],
+  };
+
   // Content is derived from trusted in-repo data (calc registry + translations,
   // never user input). Escaping `<` to `<` is the standard Next.js JSON-LD
   // hardening: it makes it impossible to break out of the <script> tag (e.g. a
   // stray "</script>") regardless of the source string.
-  const json = JSON.stringify(jsonLd).replace(/</g, "\\u003c");
+  const json = JSON.stringify(graph).replace(/</g, "\\u003c");
 
   return (
     <script

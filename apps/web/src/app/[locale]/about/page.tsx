@@ -1,4 +1,20 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
+import { buildPageMetadata } from "@/lib/page-metadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+  return buildPageMetadata({
+    pathSegment: "about",
+    locale,
+    title: t("about.heading"),
+    description: t("about.intro"),
+  });
+}
 
 export default async function AboutPage({
   params,

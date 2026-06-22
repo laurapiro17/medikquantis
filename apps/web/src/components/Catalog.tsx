@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { Reveal } from "./Reveal";
 
 interface CatalogEntry {
   id: string;
@@ -118,11 +119,12 @@ export function Catalog({ calcs }: CatalogProps) {
       ) : (
         <div className="space-y-10">
           {Array.from(grouped.entries()).map(
-            ([specialty, { label, entries }]) => (
+            ([specialty, { label, entries }], gi) => (
+              <Reveal key={specialty} delay={Math.min(gi, 4) * 60}>
               <section key={specialty} className="space-y-3">
                 <h3 className="flex items-baseline justify-between border-b border-slate-200 pb-2 text-sm font-semibold text-slate-700 dark:border-white/10 dark:text-slate-300">
                   <span>{label}</span>
-                  <span className="text-[10px] text-slate-400 dark:text-slate-500">
+                  <span className="text-[10px] text-slate-500 dark:text-slate-500">
                     {entries.length}
                   </span>
                 </h3>
@@ -131,7 +133,7 @@ export function Catalog({ calcs }: CatalogProps) {
                     <li key={item.id}>
                       <Link
                         href={`/${item.id}`}
-                        className="glass-panel block p-5 transition hover:border-trust-500 hover:shadow-md dark:hover:border-neon/50 dark:hover:shadow-neon-soft"
+                        className="press glass-panel block p-5 transition hover:border-trust-500 hover:shadow-md dark:hover:border-neon/50 dark:hover:shadow-neon-soft"
                       >
                         <div className="flex items-start justify-between gap-3">
                           <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-200">
@@ -153,6 +155,7 @@ export function Catalog({ calcs }: CatalogProps) {
                   ))}
                 </ul>
               </section>
+              </Reveal>
             ),
           )}
         </div>

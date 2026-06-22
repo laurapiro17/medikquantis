@@ -2,6 +2,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { getCalc, listCalcs, POPULAR_CALC_IDS } from "@medcalc/calculators";
 import { Link } from "@/i18n/navigation";
 import { Catalog } from "@/components/Catalog";
+import { Reveal } from "@/components/Reveal";
 import { BASE_URL } from "@/lib/site";
 
 const DOI = "10.5281/zenodo.20562617";
@@ -53,43 +54,105 @@ export default async function HomePage({
     offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
   };
 
+  const siteJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${BASE_URL}/#website`,
+        name: "MedikQuantis",
+        url: `${BASE_URL}/${locale}`,
+        inLanguage: locale,
+        description: t("site.tagline"),
+        potentialAction: {
+          "@type": "SearchAction",
+          target: {
+            "@type": "EntryPoint",
+            urlTemplate: `${BASE_URL}/${locale}?q={search_term_string}#catalog`,
+          },
+          "query-input": "required name=search_term_string",
+        },
+        publisher: { "@id": `${BASE_URL}/#organization` },
+      },
+      {
+        "@type": "Organization",
+        "@id": `${BASE_URL}/#organization`,
+        name: "MedikQuantis",
+        url: BASE_URL,
+        sameAs: [REPO_URL, "https://orcid.org/0009-0008-3390-4029", DOI_URL],
+      },
+    ],
+  };
+
   return (
     <div className="space-y-16">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(siteJsonLd) }}
+      />
 
       <section className="space-y-6">
-        <p className="text-xs font-medium text-trust-600 dark:text-neon/80">
+        <p className="animate-rise text-xs font-medium text-trust-600 dark:text-neon/80">
           {t("home.hero_eyebrow")}
         </p>
-        <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl dark:text-slate-50">
+        <h1
+          style={{ animationDelay: "60ms" }}
+          className="animate-rise text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl dark:text-slate-50"
+        >
           {t("home.hero_heading")}
         </h1>
-        <p className="max-w-2xl text-lg text-slate-600 dark:text-slate-300">
+        <p
+          style={{ animationDelay: "120ms" }}
+          className="animate-rise max-w-2xl text-lg text-slate-600 dark:text-slate-300"
+        >
           {t("home.hero_subheading")}
         </p>
-        <div className="flex flex-wrap gap-3 pt-2">
+        <div
+          style={{ animationDelay: "180ms" }}
+          className="animate-rise flex flex-wrap gap-3 pt-2"
+        >
           <Link
-            href="#catalog"
-            className="rounded-md bg-trust-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm transition hover:bg-trust-700 dark:bg-neon dark:text-[#0c0f10] dark:hover:bg-[#5cf5ff]"
+            href={`/${POPULAR_CALC_IDS[0]}`}
+            className="press rounded-md bg-trust-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm transition hover:bg-trust-700 dark:bg-neon dark:text-[#0c0f10] dark:hover:bg-[#5cf5ff]"
           >
             {t("home.hero_cta_calcs")}
           </Link>
+          <Link
+            href="#catalog"
+            className="press rounded-md border border-slate-300 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 transition hover:border-trust-500 hover:text-trust-700 dark:border-white/15 dark:bg-white/5 dark:text-slate-200 dark:hover:border-neon/50 dark:hover:text-neon"
+          >
+            {t("home.catalog_heading")}
+          </Link>
           <a
             href="/api/v1/docs"
-            className="rounded-md border border-slate-300 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 transition hover:border-trust-500 hover:text-trust-700 dark:border-white/15 dark:bg-white/5 dark:text-slate-200 dark:hover:border-neon/50 dark:hover:text-neon"
+            className="press self-center text-sm font-medium text-slate-600 hover:text-trust-700 dark:text-slate-300 dark:hover:text-neon"
           >
-            {t("home.hero_cta_api")} →
+            {t("home.hero_cta_api")} <span aria-hidden="true">→</span>
           </a>
         </div>
+        <ul className="flex flex-wrap gap-2 pt-1 text-xs">
+          <li className="rounded-full bg-slate-100 px-2.5 py-1 text-slate-600 dark:bg-white/5 dark:text-slate-300">
+            MIT
+          </li>
+          <li>
+            <a
+              href={DOI_URL}
+              className="press rounded-full bg-slate-100 px-2.5 py-1 font-mono text-trust-600 hover:underline dark:bg-white/5 dark:text-neon"
+            >
+              DOI
+            </a>
+          </li>
+          <li className="rounded-full bg-slate-100 px-2.5 py-1 text-slate-600 dark:bg-white/5 dark:text-slate-300">
+            {t("home.value_3_title")}
+          </li>
+        </ul>
       </section>
 
-      <ul
-        aria-label="Value propositions"
-        className="max-w-2xl space-y-3 border-l-2 border-slate-200 pl-5 dark:border-white/10"
-      >
+      <ul className="max-w-2xl space-y-3 border-l-2 border-slate-200 pl-5 dark:border-white/10">
         {[1, 2, 3].map((n) => (
           <li key={n} className="text-sm text-slate-700 dark:text-slate-300">
             <span className="font-semibold text-slate-900 dark:text-slate-100">
@@ -103,54 +166,60 @@ export default async function HomePage({
 
       <section
         id="api"
-        className="glass-panel flex flex-col gap-4 p-6 sm:flex-row sm:items-center sm:justify-between"
+        className="glass-panel p-6"
       >
-        <div className="space-y-1">
-          <h2 className="text-xs font-semibold text-slate-500 dark:text-slate-400">
-            {t("home.api_callout_heading")}
-          </h2>
-          <p className="text-sm text-slate-600 dark:text-slate-300 sm:max-w-xl">
-            {t("home.api_callout_body")}
-          </p>
-        </div>
-        <a
-          href="/api/v1/docs"
-          className="shrink-0 self-start rounded-md border border-trust-500 px-4 py-2 text-sm font-medium text-trust-700 transition hover:bg-trust-50 sm:self-center dark:border-neon/50 dark:text-neon dark:hover:bg-white/5"
-        >
-          {t("home.api_callout_cta")} →
-        </a>
+        <Reveal className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div className="space-y-1">
+            <h2 className="text-xs font-semibold text-slate-500 dark:text-slate-400">
+              {t("home.api_callout_heading")}
+            </h2>
+            <p className="text-sm text-slate-600 dark:text-slate-300 sm:max-w-xl">
+              {t("home.api_callout_body")}
+            </p>
+          </div>
+          <a
+            href="/api/v1/docs"
+            className="shrink-0 self-start rounded-md border border-trust-500 px-4 py-2 text-sm font-medium text-trust-700 transition hover:bg-trust-50 sm:self-center dark:border-neon/50 dark:text-neon dark:hover:bg-white/5"
+          >
+            {t("home.api_callout_cta")} →
+          </a>
+        </Reveal>
       </section>
 
       <section id="popular" className="space-y-6 scroll-mt-24">
-        <div className="flex items-baseline justify-between gap-3">
-          <div>
-            <h2 className="flex items-center gap-2 text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-50">
-              <span aria-hidden className="text-trust-600 dark:text-neon">★</span>
-              {t("home.popular_heading")}
-            </h2>
-            <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
-              {t("home.popular_subheading")}
-            </p>
+        <Reveal>
+          <div className="flex items-baseline justify-between gap-3">
+            <div>
+              <h2 className="flex items-center gap-2 text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-50">
+                <span aria-hidden className="text-trust-600 dark:text-neon">★</span>
+                {t("home.popular_heading")}
+              </h2>
+              <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
+                {t("home.popular_subheading")}
+              </p>
+            </div>
           </div>
-        </div>
+        </Reveal>
 
         <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {POPULAR_CALC_IDS.map((id) => {
+          {POPULAR_CALC_IDS.map((id, i) => {
             const calc = getCalc(id);
             if (!calc) return null;
             return (
               <li key={id}>
-                <Link
-                  href={`/${id}`}
-                  className="glass-panel block h-full p-4 transition hover:border-trust-500 hover:shadow-md dark:hover:border-neon/50 dark:hover:shadow-neon-soft"
-                >
-                  <h3 className="text-xs font-semibold text-trust-600 dark:text-neon">
-                    {t(`${calc.i18nKey}.title` as "cha2ds2vasc.title")}
-                  </h3>
-                  <p className="mt-2 text-sm text-slate-900 dark:text-slate-100">
-                    {t(`${calc.i18nKey}.subtitle` as "cha2ds2vasc.subtitle")}
-                  </p>
-                </Link>
+                <Reveal delay={i * 70} className="h-full">
+                  <Link
+                    href={`/${id}`}
+                    className="press glass-panel block h-full p-4 transition hover:border-trust-500 hover:shadow-md dark:hover:border-neon/50 dark:hover:shadow-neon-soft"
+                  >
+                    <h3 className="text-xs font-semibold text-trust-600 dark:text-neon">
+                      {t(`${calc.i18nKey}.title` as "cha2ds2vasc.title")}
+                    </h3>
+                    <p className="mt-2 text-sm text-slate-900 dark:text-slate-100">
+                      {t(`${calc.i18nKey}.subtitle` as "cha2ds2vasc.subtitle")}
+                    </p>
+                  </Link>
+                </Reveal>
               </li>
             );
           })}
@@ -158,14 +227,16 @@ export default async function HomePage({
       </section>
 
       <section id="catalog" className="space-y-6 scroll-mt-24">
-        <div>
-          <h2 className="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-50">
-            {t("home.catalog_heading")}
-          </h2>
-          <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
-            {t("home.catalog_subheading")}
-          </p>
-        </div>
+        <Reveal>
+          <div>
+            <h2 className="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-50">
+              {t("home.catalog_heading")}
+            </h2>
+            <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
+              {t("home.catalog_subheading")}
+            </p>
+          </div>
+        </Reveal>
 
         <Catalog
           calcs={calcs.map((c) => ({
@@ -192,7 +263,7 @@ export default async function HomePage({
           target="_blank"
           rel="noreferrer"
         >
-          {REPO_URL.replace("https://", "")} ↗
+          {REPO_URL.replace("https://", "")} <span aria-hidden="true">↗</span>
         </a>
       </section>
     </div>

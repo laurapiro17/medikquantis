@@ -53,7 +53,7 @@ export function ResultPanel({
     ].join("\n");
 
     return (
-      <div className="glass-panel animate-fade-in p-6">
+      <div key={score} role="status" aria-live="polite" aria-atomic="true" aria-label={t("common.result")} className="glass-panel animate-result p-6">
         <div className="flex items-baseline gap-4">
           <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
             {t("common.score")}
@@ -110,7 +110,7 @@ export function ResultPanel({
   const questionList = Array.isArray(questions) ? (questions as string[]) : [];
 
   return (
-    <div className="glass-panel animate-fade-in space-y-5 p-6">
+    <div key={score} role="status" aria-live="polite" aria-atomic="true" aria-label={t("common.result")} className="glass-panel animate-result space-y-5 p-6">
       <p className="text-slate-700 dark:text-slate-300">{t(introKey)}</p>
 
       <div className={`rounded-lg px-4 py-3 ring-1 ${tierStyles[tier]}`}>
@@ -151,21 +151,30 @@ export function ModeToggle({
 }) {
   const t = useTranslations();
   return (
-    <div className="inline-flex rounded-full border border-slate-200 bg-white p-1 dark:border-white/15 dark:bg-white/5">
-      {(["clinician", "patient"] as const).map((m) => (
-        <button
-          key={m}
-          type="button"
-          onClick={() => onChange(m)}
-          className={
-            mode === m
-              ? "rounded-full bg-trust-600 px-4 py-1.5 text-sm font-medium text-white dark:bg-neon dark:text-neon-ink dark:shadow-neon-soft"
-              : "rounded-full px-4 py-1.5 text-sm font-medium text-slate-600 transition hover:text-slate-900 dark:text-slate-300 dark:hover:text-neon"
-          }
-        >
-          {t(`common.mode_${m}` as "common.mode_clinician")}
-        </button>
-      ))}
+    <div>
+      <div
+        role="radiogroup"
+        aria-label={t("common.view_mode")}
+        className="inline-flex rounded-full border border-slate-200 bg-white p-1 dark:border-white/15 dark:bg-white/5"
+      >
+        {(["clinician", "patient"] as const).map((m) => (
+          <button
+            key={m}
+            type="button"
+            role="radio"
+            aria-checked={mode === m}
+            onClick={() => onChange(m)}
+            className={
+              mode === m
+                ? "press rounded-full bg-trust-600 px-4 py-1.5 text-sm font-medium text-white dark:bg-neon dark:text-neon-ink dark:shadow-neon-soft"
+                : "press rounded-full px-4 py-1.5 text-sm font-medium text-slate-600 transition hover:text-slate-900 dark:text-slate-300 dark:hover:text-neon"
+            }
+          >
+            {t(`common.mode_${m}` as "common.mode_clinician")}
+          </button>
+        ))}
+      </div>
+      <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">{t("common.mode_hint")}</p>
     </div>
   );
 }

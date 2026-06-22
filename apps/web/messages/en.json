@@ -172,7 +172,10 @@
     "last_reviewed_value": "June 2026",
     "copy_result": "Copy result",
     "copy_result_copied": "Result copied",
-    "result_source": "Calculated with MedikQuantis"
+    "result_source": "Calculated with MedikQuantis",
+    "mode_hint": "Switch how results are explained",
+    "view_mode": "View mode",
+    "skip_to_content": "Skip to content"
   },
   "cha2ds2va": {
     "title": "CHA₂DS₂-VA",

@@ -142,7 +142,7 @@ export function Sidebar({ calcs, popularIds, onNavigate, onCollapse }: SidebarPr
           <div className="space-y-3">
             {Array.from(grouped.entries()).map(([specialty, { label, entries }]) => (
               <div key={specialty} className="space-y-1">
-                <h3 className="px-2 text-[10px] font-semibold text-slate-400 dark:text-slate-500">
+                <h3 className="px-2 text-[10px] font-semibold text-slate-500 dark:text-slate-500">
                   {label}
                 </h3>
                 <ul className="space-y-0.5">
@@ -196,7 +196,7 @@ export function Sidebar({ calcs, popularIds, onNavigate, onCollapse }: SidebarPr
           rel="noreferrer"
           className="block hover:text-trust-600 dark:hover:text-neon"
         >
-          GitHub ↗
+          GitHub <span aria-hidden="true">↗</span>
         </a>
       </footer>
     </nav>

@@ -1,8 +1,27 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
+import { buildPageMetadata } from "@/lib/page-metadata";
 
 interface Section {
   heading: string;
   body: string;
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+  const sections = t.raw("terms.sections") as { heading: string; body: string }[];
+  const description =
+    Array.isArray(sections) && sections[0] ? sections[0].body : t("terms.heading");
+  return buildPageMetadata({
+    pathSegment: "terms",
+    locale,
+    title: t("terms.heading"),
+    description,
+  });
 }
 
 export default async function TermsPage({
