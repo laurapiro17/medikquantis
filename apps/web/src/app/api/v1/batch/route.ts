@@ -1,6 +1,7 @@
 import { getCalc, type AnyCalc } from "@medcalc/calculators";
 import { ZodError } from "zod";
 import { corsJson, corsPreflight } from "@/lib/api-cors";
+import { clientId, limitApi, tooManyRequests } from "@/lib/rate-limit";
 import {
   parseLang,
   translateRecommendation,
@@ -24,6 +25,9 @@ export function OPTIONS(): Response {
 }
 
 export async function POST(req: Request): Promise<Response> {
+  const rl = await limitApi(await clientId(req));
+  if (!rl.ok) return tooManyRequests(rl);
+
   let body: unknown;
   try {
     body = await req.json();
