@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { corsJson, corsPreflight } from "@/lib/api-cors";
+import { limitSuggestions, tooManyRequests } from "@/lib/rate-limit";
 import { getStore } from "@/lib/suggestions-store";
 import { verifyTurnstile } from "@/lib/turnstile";
 
@@ -56,6 +57,11 @@ export async function POST(req: Request): Promise<Response> {
   const ip =
     req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
   const ipHash = await hashIp(ip);
+
+  // Rate-limit on the IP hash before spending a Turnstile verification, so a
+  // hammering client is cut off cheaply.
+  const rl = await limitSuggestions(ipHash);
+  if (!rl.ok) return tooManyRequests(rl);
 
   const turn = await verifyTurnstile(parsed.data.turnstileToken, ip);
   if (!turn.ok) {

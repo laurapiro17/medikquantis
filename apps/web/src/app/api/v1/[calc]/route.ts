@@ -1,6 +1,7 @@
 import { getCalc, type AnyCalc } from "@medcalc/calculators";
 import { ZodError } from "zod";
 import { corsJson, corsPreflight } from "@/lib/api-cors";
+import { clientId, limitApi, tooManyRequests } from "@/lib/rate-limit";
 import { zodObjectToJsonSchema } from "@/lib/zod-to-jsonschema";
 import {
   SUPPORTED_LANGS,
@@ -27,6 +28,9 @@ export async function GET(_req: Request, { params }: RouteContext) {
 }
 
 export async function POST(req: Request, { params }: RouteContext) {
+  const rl = await limitApi(await clientId(req));
+  if (!rl.ok) return tooManyRequests(rl);
+
   const { calc: calcId } = await params;
   const calc = getCalc(calcId);
   if (!calc) return notFound(calcId);
