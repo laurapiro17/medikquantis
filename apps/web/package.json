@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@medcalc/calculators": "workspace:*",
+    "@sentry/nextjs": "^10.62.0",
     "@vercel/analytics": "^2.0.1",
     "@vercel/kv": "^3.0.0",
     "fhirclient": "^2.6.3",
