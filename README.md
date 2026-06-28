@@ -53,6 +53,8 @@ medikquantis/
 └── scripts/                   i18n parity check, etc.
 ```
 
+The calculator engine has its own API docs in [`packages/calculators/README.md`](packages/calculators/README.md).
+
 ## Reproduce locally
 
 ```

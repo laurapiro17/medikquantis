@@ -98,7 +98,7 @@ export default async function HomePage({
       <section className="relative isolate space-y-6 overflow-hidden">
         <div
           aria-hidden
-          className="pointer-events-none absolute -inset-x-24 -top-32 -z-10 h-[520px] bg-mesh animate-mesh-drift"
+          className="pointer-events-none absolute inset-0 -z-10 bg-mesh animate-mesh-drift"
         />
         <p className="eyebrow animate-rise text-trust-600 dark:text-neon">
           {t("home.hero_eyebrow")}
