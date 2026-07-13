@@ -63,7 +63,7 @@ export default async function HomePage({
         dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }}
       />
 
-      <section className="space-y-6">
+      <section className="space-y-6 motion-safe:animate-fade-in-up">
         <p className="text-xs font-medium text-trust-600 dark:text-neon/80">
           {t("home.hero_eyebrow")}
         </p>

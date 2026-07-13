@@ -43,6 +43,15 @@ export default {
       backdropBlur: {
         glass: "24px",
       },
+      keyframes: {
+        "fade-in-up": {
+          from: { opacity: "0", transform: "translateY(0.5rem)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        "fade-in-up": "fade-in-up 0.5s ease-out both",
+      },
     },
   },
   plugins: [],
