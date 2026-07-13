@@ -8,6 +8,7 @@ import {
   useState,
 } from "react";
 import { useTranslations } from "next-intl";
+import { Search } from "lucide-react";
 import { useRouter } from "@/i18n/navigation";
 
 interface CalcEntry {
@@ -117,7 +118,7 @@ export function CommandPalette({ calcs }: { calcs: readonly CalcEntry[] }) {
         className="flex items-center gap-2 rounded-md border border-slate-300 bg-white px-3 py-1.5 text-xs text-slate-500 transition hover:border-trust-500 hover:text-trust-700 dark:border-white/15 dark:bg-white/5 dark:text-slate-400 dark:hover:border-neon/50 dark:hover:text-neon"
         aria-label={t("home.search_placeholder")}
       >
-        <SearchIcon />
+        <Search aria-hidden size={14} />
         <span className="hidden sm:inline">{t("home.search_placeholder")}</span>
         <kbd className="ml-1 hidden rounded border border-slate-300 px-1 font-sans text-[10px] text-slate-400 sm:inline dark:border-white/15 dark:text-slate-500">
           ⌘K
@@ -191,24 +192,5 @@ export function CommandPalette({ calcs }: { calcs: readonly CalcEntry[] }) {
         </div>
       )}
     </>
-  );
-}
-
-function SearchIcon() {
-  return (
-    <svg
-      width="14"
-      height="14"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden
-    >
-      <circle cx="11" cy="11" r="8" />
-      <path d="m21 21-4.3-4.3" />
-    </svg>
   );
 }
