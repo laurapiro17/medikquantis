@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { ChevronLeft } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { Link } from "@/i18n/navigation";
 
@@ -87,19 +88,7 @@ export function Sidebar({ calcs, popularIds, onNavigate, onCollapse }: SidebarPr
             aria-label={t("sidebar.collapse_label")}
             title={t("sidebar.collapse_label")}
           >
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden
-            >
-              <path d="M15 18l-6-6 6-6" />
-            </svg>
+            <ChevronLeft aria-hidden size={14} />
           </button>
         )}
       </div>
