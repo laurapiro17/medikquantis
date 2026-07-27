@@ -1,0 +1,27 @@
+{
+  "$comment": "Shared, language-agnostic test vectors for Glasgow Coma Scale (GCS). Derived from Teasdale G, Jennett B. Lancet 1974;2(7872):81-84.",
+  "calculator": "glasgow-gcs",
+  "reference": "Teasdale G, Jennett B. Lancet 1974;2(7872):81-84. doi:10.1016/s0140-6736(74)91639-0",
+  "vectors": [
+    {
+      "name": "fully alert and oriented patient (maximum score)",
+      "input": { "eye_response": 4, "verbal_response": 5, "motor_response": 6 },
+      "expected": { "total_score": 15, "tbi_severity": "mild", "intubation_indicated": false }
+    },
+    {
+      "name": "unresponsive patient in deep coma (minimum score)",
+      "input": { "eye_response": 1, "verbal_response": 1, "motor_response": 1 },
+      "expected": { "total_score": 3, "tbi_severity": "severe", "intubation_indicated": true }
+    },
+    {
+      "name": "moderate TBI patient (GCS 10)",
+      "input": { "eye_response": 3, "verbal_response": 3, "motor_response": 4 },
+      "expected": { "total_score": 10, "tbi_severity": "moderate", "intubation_indicated": false }
+    },
+    {
+      "name": "severe TBI boundary patient (GCS 8)",
+      "input": { "eye_response": 2, "verbal_response": 2, "motor_response": 4 },
+      "expected": { "total_score": 8, "tbi_severity": "severe", "intubation_indicated": true }
+    }
+  ]
+}

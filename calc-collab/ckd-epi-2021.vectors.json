@@ -1,0 +1,32 @@
+{
+  "$comment": "Shared, language-agnostic test vectors for CKD-EPI 2021 (race-free creatinine refit). Derived from Inker GJ et al. N Engl J Med 2021;385(19):1737-1749, doi 10.1056/NEJMoa2102953. Field names match standard clinical parameters.",
+  "calculator": "ckd-epi-2021",
+  "reference": "Inker GJ et al. N Engl J Med 2021;385(19):1737-1749. doi:10.1056/NEJMoa2102953",
+  "vectors": [
+    {
+      "name": "60-year-old male at creatinine threshold (0.9 mg/dL)",
+      "input": { "age": 60, "sex": "male", "serum_creatinine": 0.9 },
+      "expected": { "egfr": 97.7, "kdigo_stage": "G1", "unit": "mL/min/1.73m2" }
+    },
+    {
+      "name": "60-year-old female at creatinine threshold (0.7 mg/dL)",
+      "input": { "age": 60, "sex": "female", "serum_creatinine": 0.7 },
+      "expected": { "egfr": 98.9, "kdigo_stage": "G1", "unit": "mL/min/1.73m2" }
+    },
+    {
+      "name": "45-year-old male, mild impairment (1.2 mg/dL)",
+      "input": { "age": 45, "sex": "male", "serum_creatinine": 1.2 },
+      "expected": { "egfr": 76.1, "kdigo_stage": "G2", "unit": "mL/min/1.73m2" }
+    },
+    {
+      "name": "70-year-old male, moderate-to-severe impairment G3b (2.0 mg/dL)",
+      "input": { "age": 70, "sex": "male", "serum_creatinine": 2.0 },
+      "expected": { "egfr": 35.1, "kdigo_stage": "G3b", "unit": "mL/min/1.73m2" }
+    },
+    {
+      "name": "75-year-old female, severe kidney failure G5 (3.5 mg/dL)",
+      "input": { "age": 75, "sex": "female", "serum_creatinine": 3.5 },
+      "expected": { "egfr": 13.1, "kdigo_stage": "G5", "unit": "mL/min/1.73m2" }
+    }
+  ]
+}

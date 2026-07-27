@@ -1,0 +1,27 @@
+{
+  "$comment": "Shared, language-agnostic test vectors for SCORE2 and SCORE2-OP 10-year CVD risk predictions. Derived from ESC Cardiovascular Risk Collaboration. Eur Heart J 2021;42(25):2439-2454, doi 10.1093/eurheartj/ehab309.",
+  "calculator": "score2",
+  "reference": "SCORE2 working group. Eur Heart J. 2021;42(25):2439-2454. doi:10.1093/eurheartj/ehab309",
+  "vectors": [
+    {
+      "name": "50-year-old male non-smoker, optimal lipids and BP in moderate-risk region",
+      "input": { "age": 50, "sex": "male", "smoker": false, "systolic_bp": 120, "non_hdl_cholesterol": 120, "risk_region": "moderate" },
+      "expected": { "risk_percentage": 2.1, "risk_category": "low-moderate" }
+    },
+    {
+      "name": "60-year-old male smoker with elevated BP and non-HDL in moderate-risk region",
+      "input": { "age": 60, "sex": "male", "smoker": true, "systolic_bp": 150, "non_hdl_cholesterol": 180, "risk_region": "moderate" },
+      "expected": { "risk_percentage": 11.4, "risk_category": "very-high" }
+    },
+    {
+      "name": "55-year-old female non-smoker, borderline BP in low-risk region",
+      "input": { "age": 55, "sex": "female", "smoker": false, "systolic_bp": 135, "non_hdl_cholesterol": 140, "risk_region": "low" },
+      "expected": { "risk_percentage": 1.8, "risk_category": "low-moderate" }
+    },
+    {
+      "name": "72-year-old female smoker in high-risk region (SCORE2-OP)",
+      "input": { "age": 72, "sex": "female", "smoker": true, "systolic_bp": 140, "non_hdl_cholesterol": 160, "risk_region": "high" },
+      "expected": { "risk_percentage": 16.2, "risk_category": "very-high" }
+    }
+  ]
+}

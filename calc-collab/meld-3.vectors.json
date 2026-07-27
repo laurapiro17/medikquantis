@@ -1,0 +1,46 @@
+{
+  "$comment": "Shared, language-agnostic test vectors for MELD 3.0 (Model for End-Stage Liver Disease updated with albumin and sex). Derived from Kim WR et al. Gastroenterology 2021;161(6):1887-1895, doi 10.1053/j.gastro.2021.08.050.",
+  "calculator": "meld-3",
+  "reference": "Kim WR et al. Gastroenterology 2021;161(6):1887-1895. doi:10.1053/j.gastro.2021.08.050",
+  "vectors": [
+    {
+      "name": "normal baseline parameters (male, normal lab ranges capped at lower bounds)",
+      "input": {
+        "sex": "male",
+        "bilirubin": 0.8,
+        "inr": 0.9,
+        "creatinine": 0.9,
+        "sodium": 140,
+        "albumin": 4.0,
+        "dialysis_twice_in_prior_week": false
+      },
+      "expected": { "meld_score": 6, "mortality_90_day_percent": 1.9 }
+    },
+    {
+      "name": "moderate cirrhosis in 50-year-old female",
+      "input": {
+        "sex": "female",
+        "bilirubin": 3.0,
+        "inr": 1.8,
+        "creatinine": 1.5,
+        "sodium": 130,
+        "albumin": 2.8,
+        "dialysis_twice_in_prior_week": false
+      },
+      "expected": { "meld_score": 27, "mortality_90_day_percent": 30.5 }
+    },
+    {
+      "name": "dialysis patient with severe hepatic failure (creatinine capped at 3.0)",
+      "input": {
+        "sex": "female",
+        "bilirubin": 8.0,
+        "inr": 2.5,
+        "creatinine": 4.2,
+        "sodium": 125,
+        "albumin": 1.8,
+        "dialysis_twice_in_prior_week": true
+      },
+      "expected": { "meld_score": 40, "mortality_90_day_percent": 82.0 }
+    }
+  ]
+}

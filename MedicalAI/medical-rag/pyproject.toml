@@ -1,0 +1,40 @@
+[project]
+name = "medical-rag"
+version = "0.0.1"
+description = "Evidence-grounded RAG over PubMed for cardiology clinical questions."
+authors = [{ name = "Laura Piñero Roig", email = "laurapineroroig@gmail.com" }]
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+
+dependencies = [
+    "anthropic>=0.40.0",
+    "biopython>=1.84",
+    "chromadb>=0.5.0",
+    "sentence-transformers>=3.0.0",
+    "pydantic>=2.7",
+    "typer>=0.12",
+    "python-dotenv>=1.0",
+    "rich>=13.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.5",
+    "jupyter>=1.0",
+]
+demo = [
+    "streamlit>=1.36",
+]
+
+[project.scripts]
+medrag = "medical_rag.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

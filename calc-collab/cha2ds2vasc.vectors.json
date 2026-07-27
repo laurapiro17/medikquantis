@@ -1,0 +1,52 @@
+{
+  "$comment": "Shared, language-agnostic test vectors for CHA2DS2-VASc. Derived from the published scoring rules (Lip GYH et al. Chest 2010;137(2):263-272, doi 10.1378/chest.09-1584; thresholds per NICE NG196), NOT from any implementation. Field names match the calc-core Cha2ds2VascInput so both the Rust and the TypeScript engines can consume this file directly. recommendation: one of not-recommended | consider | offer.",
+  "calculator": "cha2ds2vasc",
+  "reference": "Lip GYH, Nieuwlaat R, Pisters R, et al. Chest. 2010;137(2):263-272. doi:10.1378/chest.09-1584. Thresholds per NICE NG196.",
+  "vectors": [
+    {
+      "name": "male, no risk factors, below age band",
+      "input": { "age": 64, "sex": "male", "congestive_heart_failure": false, "hypertension": false, "diabetes": false, "stroke_tia_thromboembolism": false, "vascular_disease": false },
+      "expected": { "score": 0, "non_sex_score": 0, "recommendation": "not-recommended" }
+    },
+    {
+      "name": "male, age 65 lower boundary of 1-point band",
+      "input": { "age": 65, "sex": "male", "congestive_heart_failure": false, "hypertension": false, "diabetes": false, "stroke_tia_thromboembolism": false, "vascular_disease": false },
+      "expected": { "score": 1, "non_sex_score": 1, "recommendation": "consider" }
+    },
+    {
+      "name": "male, age 75 lower boundary of 2-point band",
+      "input": { "age": 75, "sex": "male", "congestive_heart_failure": false, "hypertension": false, "diabetes": false, "stroke_tia_thromboembolism": false, "vascular_disease": false },
+      "expected": { "score": 2, "non_sex_score": 2, "recommendation": "offer" }
+    },
+    {
+      "name": "female sex only, no other factors (the silent-failure case)",
+      "input": { "age": 60, "sex": "female", "congestive_heart_failure": false, "hypertension": false, "diabetes": false, "stroke_tia_thromboembolism": false, "vascular_disease": false },
+      "expected": { "score": 1, "non_sex_score": 0, "recommendation": "not-recommended" }
+    },
+    {
+      "name": "female, age 65-74 band plus sex",
+      "input": { "age": 74, "sex": "female", "congestive_heart_failure": false, "hypertension": false, "diabetes": false, "stroke_tia_thromboembolism": false, "vascular_disease": false },
+      "expected": { "score": 2, "non_sex_score": 1, "recommendation": "offer" }
+    },
+    {
+      "name": "worked example: 70F with HTN and DM",
+      "input": { "age": 70, "sex": "female", "congestive_heart_failure": false, "hypertension": true, "diabetes": true, "stroke_tia_thromboembolism": false, "vascular_disease": false },
+      "expected": { "score": 4, "non_sex_score": 3, "recommendation": "offer" }
+    },
+    {
+      "name": "prior stroke scores two points: 80M",
+      "input": { "age": 80, "sex": "male", "congestive_heart_failure": false, "hypertension": false, "diabetes": false, "stroke_tia_thromboembolism": true, "vascular_disease": false },
+      "expected": { "score": 4, "non_sex_score": 4, "recommendation": "offer" }
+    },
+    {
+      "name": "vascular disease alone, male: one point",
+      "input": { "age": 60, "sex": "male", "congestive_heart_failure": false, "hypertension": false, "diabetes": false, "stroke_tia_thromboembolism": false, "vascular_disease": true },
+      "expected": { "score": 1, "non_sex_score": 1, "recommendation": "consider" }
+    },
+    {
+      "name": "maximum score of 9",
+      "input": { "age": 80, "sex": "female", "congestive_heart_failure": true, "hypertension": true, "diabetes": true, "stroke_tia_thromboembolism": true, "vascular_disease": true },
+      "expected": { "score": 9, "non_sex_score": 8, "recommendation": "offer" }
+    }
+  ]
+}

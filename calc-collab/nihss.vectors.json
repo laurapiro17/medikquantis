@@ -1,0 +1,55 @@
+{
+  "$comment": "Shared, language-agnostic test vectors for NIHSS (National Institutes of Health Stroke Scale). Derived from Brott T et al. Stroke 1989;20(7):864-870.",
+  "calculator": "nihss",
+  "reference": "Brott T et al. Stroke. 1989;20(7):864-870. doi:10.1161/01.str.20.7.864",
+  "vectors": [
+    {
+      "name": "normal neurological exam (score 0)",
+      "input": {
+        "loc": 0, "loc_questions": 0, "loc_commands": 0,
+        "best_gaze": 0, "visual": 0, "facial_palsy": 0,
+        "motor_arm_left": 0, "motor_arm_right": 0,
+        "motor_leg_left": 0, "motor_leg_right": 0,
+        "limb_ataxia": 0, "sensory": 0, "best_language": 0,
+        "dysarthria": 0, "extinction_inattention": 0
+      },
+      "expected": { "total_score": 0, "stroke_severity": "none" }
+    },
+    {
+      "name": "minor stroke (score 3)",
+      "input": {
+        "loc": 0, "loc_questions": 0, "loc_commands": 0,
+        "best_gaze": 0, "visual": 0, "facial_palsy": 1,
+        "motor_arm_left": 1, "motor_arm_right": 0,
+        "motor_leg_left": 1, "motor_leg_right": 0,
+        "limb_ataxia": 0, "sensory": 0, "best_language": 0,
+        "dysarthria": 0, "extinction_inattention": 0
+      },
+      "expected": { "total_score": 3, "stroke_severity": "minor" }
+    },
+    {
+      "name": "moderate stroke (score 9)",
+      "input": {
+        "loc": 0, "loc_questions": 1, "loc_commands": 0,
+        "best_gaze": 1, "visual": 1, "facial_palsy": 2,
+        "motor_arm_left": 2, "motor_arm_right": 0,
+        "motor_leg_left": 2, "motor_leg_right": 0,
+        "limb_ataxia": 0, "sensory": 0, "best_language": 0,
+        "dysarthria": 0, "extinction_inattention": 0
+      },
+      "expected": { "total_score": 9, "stroke_severity": "moderate" }
+    },
+    {
+      "name": "severe stroke (score 25)",
+      "input": {
+        "loc": 2, "loc_questions": 2, "loc_commands": 2,
+        "best_gaze": 2, "visual": 2, "facial_palsy": 3,
+        "motor_arm_left": 4, "motor_arm_right": 0,
+        "motor_leg_left": 4, "motor_leg_right": 0,
+        "limb_ataxia": 0, "sensory": 2, "best_language": 2,
+        "dysarthria": 0, "extinction_inattention": 0
+      },
+      "expected": { "total_score": 25, "stroke_severity": "severe" }
+    }
+  ]
+}
