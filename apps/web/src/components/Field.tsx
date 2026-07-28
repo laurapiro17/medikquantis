@@ -88,6 +88,13 @@ export interface RadioOption<V extends string> {
   badge?: string;
 }
 
+function cleanOptionLabel(label: string, badge?: string): string {
+  if (!badge) return label;
+  const escapedBadge = badge.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const pattern = new RegExp(`^${escapedBadge}\\s*[-—–:]\\s*`, "i");
+  return label.replace(pattern, "");
+}
+
 export function RadioGroup<V extends string>({
   legend,
   name,
@@ -139,6 +146,7 @@ export function RadioGroup<V extends string>({
       </legend>
       {options.map((opt) => {
         const selected = value === opt.value;
+        const cleanedLabel = cleanOptionLabel(opt.label, opt.badge);
         return (
           <label
             key={opt.value}
@@ -162,7 +170,7 @@ export function RadioGroup<V extends string>({
                   {opt.badge}
                 </span>
               )}
-              <span className={opt.badge ? "ml-2" : ""}>{opt.label}</span>
+              <span className={opt.badge ? "ml-2" : ""}>{cleanedLabel}</span>
             </span>
           </label>
         );
