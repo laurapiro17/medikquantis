@@ -79,14 +79,18 @@ export function AsaPsForm() {
           onReset={reset}
         />
       </form>
-      {(
-        <>
-          <AsaResultPanel mode={mode} result={result} />
-          <div className="glass-panel p-4">
-            <ShareActions shareableInputs={inputs} tier={result.tier} mode={mode} />
-          </div>
-        </>
-      )}
+      {(() => {
+        const label = `${result.classLabel}${result.emergency ? "E" : ""}`;
+        const resultSummary = `ASA-PS: ${label} (${t(`common.tier_${result.tier}` as "common.tier_low")})\n${result.recommendation}\n${t("common.evidence")}: ${result.evidenceGrade}`;
+        return (
+          <>
+            <AsaResultPanel mode={mode} result={result} />
+            <div className="glass-panel p-4">
+              <ShareActions shareableInputs={inputs} tier={result.tier} mode={mode} resultSummary={resultSummary} />
+            </div>
+          </>
+        );
+      })()}
     </div>
   );
 }

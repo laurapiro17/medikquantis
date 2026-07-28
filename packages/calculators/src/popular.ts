@@ -7,6 +7,7 @@
 // real `calc_computed` events to derive empirically (~Jul 2026).
 export const POPULAR_CALC_IDS = [
   "cha2ds2vasc",
+  "cha2ds2va",
   "heart",
   "sofa",
   "wells-pe",
