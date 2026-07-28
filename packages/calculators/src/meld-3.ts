@@ -2,7 +2,7 @@ import { z } from "zod";
 import type { CalcDefinition, InterpretResult } from "./types";
 
 // MELD 3.0 score for end-stage liver disease prioritisation
-// (Kim WR et al., NEJM 2021;385:1737, PMID 34481845).
+// (Kim WR et al., Gastroenterology 2021;161:1887, PMID 34481845).
 // Updates MELD-Na with female sex coefficient + albumin term.
 // Used by OPTN since 2023 for liver-transplant prioritisation.
 

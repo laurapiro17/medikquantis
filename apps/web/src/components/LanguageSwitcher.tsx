@@ -22,11 +22,12 @@ export function LanguageSwitcher({ currentLocale }: { currentLocale: string }) {
           key={locale}
           type="button"
           onClick={() => onChange(locale)}
-          disabled={isPending || locale === currentLocale}
+          disabled={isPending}
+          aria-current={locale === currentLocale ? "true" : undefined}
           className={
             locale === currentLocale
               ? "rounded-full bg-slate-900 px-2.5 py-1 font-medium text-white dark:bg-neon dark:text-neon-ink dark:shadow-neon-soft"
-              : "rounded-full border border-slate-300 px-2.5 py-1 text-slate-600 transition hover:border-trust-500 hover:text-trust-600 dark:border-white/15 dark:text-slate-300 dark:hover:border-neon dark:hover:text-neon"
+              : "rounded-full border border-slate-300 px-2.5 py-1 text-slate-600 transition hover:border-trust-500 hover:text-trust-600 dark:border-white/15 dark:text-slate-300 dark:hover:border-neon dark:hover:text-neon focus:outline-none focus:ring-2 focus:ring-trust-600 dark:focus:ring-neon"
           }
         >
           {locale.toUpperCase()}
