@@ -1,50 +1,34 @@
 /**
- * MedikQuantis brand mark: an ECG heartbeat that rises into the "M" of an
- * MQ monogram, paired with a "Q" ring. The line work uses `currentColor` so
- * the mark inherits the header text colour and stays legible in both the
- * light and dark themes; only the signature cyan→blue accent (the second
- * peak + the Q's upper-right arc) is fixed, since that hue reads on either
- * background.
+ * MedikQuantis brand mark: an "M" drawn as a single trace whose last leg
+ * descends into the lens of a "Q", so the monogram reads as one continuous
+ * stroke. The whole mark uses `currentColor` — it inherits the header text
+ * colour and therefore needs no separate light/dark variant.
+ *
+ * The viewBox is square so the same geometry backs the favicon and the PWA
+ * icons without being rescaled to fit.
  */
 export function Logo({ className }: { className?: string }) {
   return (
     <svg
-      viewBox="0 0 128 64"
+      viewBox="0 0 32 32"
       className={className}
       role="img"
       aria-label="MedikQuantis"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <defs>
-        <linearGradient id="mq-accent" x1="0" y1="64" x2="128" y2="0" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stopColor="#3b82f6" />
-          <stop offset="1" stopColor="#22d3ee" />
-        </linearGradient>
-      </defs>
-
       <g
-        strokeWidth="5"
+        stroke="currentColor"
+        strokeWidth="3"
         strokeLinecap="round"
         strokeLinejoin="round"
-        fill="none"
       >
-        {/* ECG lead-in + first half of the M (theme colour) */}
-        <path
-          d="M4 40 H22 l4 -6 4 6 H38 L50 12 58 44"
-          stroke="currentColor"
-        />
-        {/* Second peak of the M — the cyan→blue accent stroke */}
-        <path d="M58 44 L70 12 76 40 H86" stroke="url(#mq-accent)" />
-
-        {/* Q ring (theme colour) with its upper-right arc as the accent */}
-        <path
-          d="M104 18 A21 21 0 1 0 105 47"
-          stroke="currentColor"
-        />
-        <path d="M104 18 a21 21 0 0 1 1 29" stroke="url(#mq-accent)" />
+        {/* M — rounded first apex, pointed second, ending tangent to the lens */}
+        <path d="M4 25.8 L5.3 11 Q7 4.4 9 10.6 L11.8 18.8 L16.4 4.2 L19.5 13.8" />
+        {/* Q bowl, doubling as the lens */}
+        <circle cx="20" cy="19.8" r="6" />
         {/* Q tail */}
-        <path d="M99 41 L118 56" stroke="currentColor" />
+        <path d="M24.3 24.1 L28 27.8" />
       </g>
     </svg>
   );
