@@ -23,6 +23,7 @@ export function NumberInput({
   onChange,
   min,
   max,
+  step,
   className = "",
 }: {
   label: string;
@@ -30,6 +31,7 @@ export function NumberInput({
   onChange: (next: number) => void;
   min?: number;
   max?: number;
+  step?: number;
   className?: string;
 }) {
   return (
@@ -39,6 +41,7 @@ export function NumberInput({
         type="number"
         min={min}
         max={max}
+        step={step}
         value={value}
         onChange={(e) => onChange(Number(e.target.value))}
         className="input-underline mt-1 font-mono tabular-nums"

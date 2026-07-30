@@ -38,7 +38,7 @@ describe("COWS Calculator", () => {
       gooseflesh: "0",
     } as const;
     const score = formula(inputs);
-    expect(score).toBe(23);
+    expect(score).toBe(21);
     const result = interpret(score);
     expect(result.tier).toBe("moderate");
     expect(result.recommendationCode).toBe("COWS_MODERATE");

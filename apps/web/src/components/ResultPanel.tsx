@@ -34,7 +34,8 @@ interface ResultPanelProps {
   recommendation: string;
   evidenceGrade: "A" | "B" | "C";
   annualRiskPercent?: number;
-  riskLabelKey: "common.annual_risk" | "common.annual_bleeding_risk" | (string & {});
+  riskLabelKey?: "common.annual_risk" | "common.annual_bleeding_risk" | (string & {});
+  unit?: string;
   i18nNamespace: string;
   shareableInputs?: Record<string, unknown>;
   scoreRange?: { min: number; max: number };
@@ -90,7 +91,8 @@ export function ResultPanel({
   recommendation,
   evidenceGrade,
   annualRiskPercent,
-  riskLabelKey,
+  riskLabelKey = "common.annual_risk",
+  unit,
   i18nNamespace,
   shareableInputs,
   scoreRange,

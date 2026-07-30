@@ -36,7 +36,7 @@ export function DynamicCalcForm({
         } else if (fMeta.widget === "number") {
           defaults[key] = fMeta.min ?? 0;
         } else if (fMeta.widget === "radio" && fMeta.options?.length) {
-          defaults[key] = fMeta.options[0].value;
+          defaults[key] = fMeta.options[0]?.value ?? "";
         }
       });
     }
