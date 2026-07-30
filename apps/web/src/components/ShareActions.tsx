@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { track } from "@vercel/analytics";
+import { ClipboardCheck } from "lucide-react";
 
 interface ShareActionsProps {
   shareableInputs?: Record<string, unknown>;
@@ -130,8 +131,9 @@ export function ShareActions({
             });
             void handleCopyResult();
           }}
-          className="rounded-md bg-trust-600 px-3 py-1.5 text-xs font-medium text-white transition hover:bg-trust-700 dark:bg-neon dark:text-neon-ink dark:shadow-neon-soft dark:hover:bg-neon-soft"
+          className="flex items-center gap-1.5 rounded-md bg-trust-600 px-3.5 py-1.5 text-xs font-semibold text-white transition hover:bg-trust-700 shadow-sm dark:bg-neon dark:text-neon-ink dark:shadow-neon-soft dark:hover:bg-neon-soft"
         >
+          <ClipboardCheck size={14} />
           {resultCopied
             ? t("common.copy_result_copied")
             : t("common.copy_result")}

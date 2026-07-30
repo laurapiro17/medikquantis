@@ -73,7 +73,11 @@ export function Catalog({ calcs }: CatalogProps) {
       const specialtyLabel = t(
         `specialties.${calc.specialty}` as "specialties.cardiology",
       );
-      const haystack = [title, subtitle, specialtyLabel, calc.id]
+      const overviewKey = `${calc.i18nKey}.content.overview`;
+      const overview = t.has(overviewKey as never)
+        ? t(overviewKey as never)
+        : "";
+      const haystack = [title, subtitle, specialtyLabel, calc.id, overview]
         .join(" ")
         .toLowerCase();
       return { ...calc, title, subtitle, specialtyLabel, haystack };

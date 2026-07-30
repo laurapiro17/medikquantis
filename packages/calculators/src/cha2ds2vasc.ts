@@ -103,6 +103,22 @@ export const calculator: CalcDefinition<typeof Cha2ds2vascInputs> = {
   scoreRange: { min: 0, max: 9 },
   specialty: "cardiology",
   i18nKey: "cha2ds2vasc",
+  fieldsMetadata: {
+    age: { widget: "number", min: 18, max: 120, defaultValue: 65 },
+    sex: {
+      widget: "radio",
+      options: [
+        { value: "male", labelKey: "common.male" },
+        { value: "female", labelKey: "common.female" },
+      ],
+      defaultValue: "male",
+    },
+    chf: { widget: "boolean", defaultValue: false },
+    hypertension: { widget: "boolean", defaultValue: false },
+    diabetes: { widget: "boolean", defaultValue: false },
+    strokeOrTia: { widget: "boolean", defaultValue: false },
+    vascularDisease: { widget: "boolean", defaultValue: false },
+  },
   references: [
     {
       pmid: "19762550",
@@ -116,3 +132,4 @@ export const calculator: CalcDefinition<typeof Cha2ds2vascInputs> = {
     },
   ],
 };
+

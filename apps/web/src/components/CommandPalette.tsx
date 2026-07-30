@@ -39,7 +39,11 @@ export function CommandPalette({ calcs }: { calcs: readonly CalcEntry[] }) {
       const specialtyLabel = t(
         `specialties.${c.specialty}` as "specialties.cardiology",
       );
-      const haystack = [title, subtitle, specialtyLabel, c.id]
+      const overviewKey = `${c.i18nKey}.content.overview`;
+      const overview = t.has(overviewKey as never)
+        ? t(overviewKey as never)
+        : "";
+      const haystack = [title, subtitle, specialtyLabel, c.id, overview]
         .join(" ")
         .toLowerCase();
       return { ...c, title, subtitle, specialtyLabel, haystack };

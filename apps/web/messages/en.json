@@ -170,8 +170,8 @@
     "scores_attribution": "Formulas and cut-offs are from the original authors of each score; see the references.",
     "last_reviewed": "Last reviewed",
     "last_reviewed_value": "June 2026",
-    "copy_result": "Copy result",
-    "copy_result_copied": "Result copied",
+    "copy_result": "Copy EHR Note",
+    "copy_result_copied": "EHR Note Copied!",
     "result_source": "Calculated with MedikQuantis",
     "mode_hint": "Switch how results are explained",
     "view_mode": "View mode",
@@ -2802,5 +2802,78 @@
     "none_detected": "No risk factor was detected automatically; review them manually in the calculator.",
     "open_calc": "Open in the calculator with this data",
     "prototype_note": "Demonstration prototype. Mapping from coded problem lists is incomplete and may be wrong — verify it clinically."
+  },
+  "bmiBsaIbw": {
+    "title": "BMI, BSA & Ideal Body Weight",
+    "subtitle": "Body Mass Index, Mosteller/DuBois BSA, Devine IBW and Adjusted Body Weight.",
+    "fields": {
+      "heightCm": "Height (cm)",
+      "weightKg": "Weight (kg)",
+      "sex": "Sex"
+    },
+    "patient": {
+      "intro": "This calculator determines your Body Mass Index (BMI), Body Surface Area (BSA), and Ideal Body Weight based on your height and weight.",
+      "ask_doctor": "Questions to ask your doctor:",
+      "questions": [
+        "What is my target BMI range?",
+        "How does my body weight impact my health risk?",
+        "Should medication dosing be adjusted based on my body surface area or ideal body weight?"
+      ]
+    },
+    "content": {
+      "overview": "The Body Mass Index (BMI) categorizes weight status, while Body Surface Area (BSA via Mosteller and DuBois) and Ideal/Adjusted Body Weight (IBW/ABW via Devine) are widely used for chemotherapy, renal drug dosing, and clinical nutrition.",
+      "interpretation": "BMI <18.5 is underweight, 18.5–24.9 is normal weight, 25.0–29.9 is overweight, and ≥30.0 indicates obesity. BSA and IBW assist in accurate therapeutic dosing.",
+      "cautions": "BMI does not differentiate muscle mass from adipose tissue and may misclassify athletic individuals or elderly patients with sarcopenia.",
+      "faq": []
+    }
+  },
+  "freeWaterDeficit": {
+    "title": "Free Water Deficit in Hypernatremia",
+    "subtitle": "Calculate free water deficit and maximum safe rehydration rate.",
+    "fields": {
+      "weightKg": "Weight (kg)",
+      "currentSodiumMEqL": "Current Serum Sodium (mEq/L)",
+      "targetSodiumMEqL": "Target Serum Sodium (mEq/L)",
+      "sex": "Sex",
+      "ageCategory": "Age category"
+    },
+    "patient": {
+      "intro": "This calculator estimates the amount of fluid needed to treat hypernatremia (high blood sodium level).",
+      "ask_doctor": "Questions to ask your care team:",
+      "questions": [
+        "What caused my blood sodium to rise?",
+        "How quickly is my fluid deficit being corrected?",
+        "What symptoms should I report during treatment?"
+      ]
+    },
+    "content": {
+      "overview": "Free water deficit estimates the volume of pure water required to lower elevated serum sodium back to a safe target level (typically 140 mEq/L) based on estimated total body water.",
+      "interpretation": "Serum sodium should be corrected slowly (no more than 8–10 mEq/L per 24 hours) to prevent cerebral edema and permanent neurological damage.",
+      "cautions": "Always account for ongoing fluid losses (fever, diarrhea, urine) in total fluid orders. Recheck serum electrolytes frequently during active rehydration.",
+      "faq": []
+    }
+  },
+  "homaIr": {
+    "title": "HOMA-IR (Insulin Resistance)",
+    "subtitle": "Homeostatic Model Assessment for insulin resistance from fasting glucose and insulin.",
+    "fields": {
+      "fastingGlucoseMgDl": "Fasting Glucose (mg/dL)",
+      "fastingInsulinuIUml": "Fasting Insulin (µIU/mL)"
+    },
+    "patient": {
+      "intro": "This calculator measures your level of insulin resistance using fasting blood test results.",
+      "ask_doctor": "Questions to ask your doctor:",
+      "questions": [
+        "What does my HOMA-IR score mean for my diabetes risk?",
+        "Can diet and exercise reverse mild insulin resistance?",
+        "How often should I re-test my fasting glucose and insulin?"
+      ]
+    },
+    "content": {
+      "overview": "HOMA-IR (Homeostatic Model Assessment of Insulin Resistance) estimates insulin sensitivity based on fasting plasma glucose and fasting insulin levels.",
+      "interpretation": "Values <1.0 indicate optimal insulin sensitivity, 1.0–1.9 indicates mild insulin resistance, and ≥2.0 indicates significant insulin resistance.",
+      "cautions": "Results should be interpreted in the context of clinical history. Fasting must be strict (8–12 hours). Not applicable during acute illness or exogenous insulin therapy.",
+      "faq": []
+    }
   }
 }

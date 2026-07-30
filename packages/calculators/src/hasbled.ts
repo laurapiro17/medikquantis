@@ -88,6 +88,17 @@ export const calculator: CalcDefinition<typeof HasBledInputs> = {
   scoreRange: { min: 0, max: 9 },
   specialty: "cardiology",
   i18nKey: "hasbled",
+  fieldsMetadata: {
+    age: { widget: "number", min: 18, max: 120, defaultValue: 65 },
+    uncontrolledHypertension: { widget: "boolean", defaultValue: false },
+    abnormalRenalFunction: { widget: "boolean", defaultValue: false },
+    abnormalLiverFunction: { widget: "boolean", defaultValue: false },
+    strokeHistory: { widget: "boolean", defaultValue: false },
+    bleedingHistoryOrPredisposition: { widget: "boolean", defaultValue: false },
+    labileInr: { widget: "boolean", defaultValue: false },
+    drugsPredisposingToBleeding: { widget: "boolean", defaultValue: false },
+    alcoholExcess: { widget: "boolean", defaultValue: false },
+  },
   references: [
     {
       pmid: "20299623",
@@ -101,3 +112,4 @@ export const calculator: CalcDefinition<typeof HasBledInputs> = {
     },
   ],
 };
+

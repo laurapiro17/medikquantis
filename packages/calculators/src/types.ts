@@ -48,6 +48,29 @@ export type Specialty =
   | "anesthesiology"
   | (string & {});
 
+export type FieldWidgetType = "number" | "boolean" | "radio" | "select";
+
+export interface RadioOptionMeta {
+  value: string;
+  labelKey?: string;
+  badge?: string;
+}
+
+export interface FieldUIMetadata {
+  widget: FieldWidgetType;
+  min?: number;
+  max?: number;
+  step?: number;
+  unit?: string;
+  options?: ReadonlyArray<RadioOptionMeta>;
+  layout?: "inline" | "cards";
+  defaultValue?: unknown;
+}
+
+export type CalcFieldsMetadata<T = Record<string, unknown>> = {
+  [K in keyof T]?: FieldUIMetadata;
+};
+
 export interface CalcDefinition<Schema extends ZodTypeAny> {
   id: string;
   inputs: Schema;
@@ -57,4 +80,6 @@ export interface CalcDefinition<Schema extends ZodTypeAny> {
   scoreRange: { min: number; max: number };
   i18nKey: string;
   specialty: Specialty;
+  fieldsMetadata?: CalcFieldsMetadata<z.infer<Schema>>;
 }
+

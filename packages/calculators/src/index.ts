@@ -1,4 +1,5 @@
 export * from "./types";
+export * as units from "./units";
 export { getCalc, listCalcs, listCalcIds, type AnyCalc } from "./registry";
 export {
   POPULAR_CALC_IDS,
@@ -54,3 +55,10 @@ export * as ascvd from "./ascvd";
 export * as sofa from "./sofa";
 export * as apache2 from "./apache2";
 export * as nihss from "./nihss";
+export * as apgar from "./apgar";
+export * as bsaMosteller from "./bsa-mosteller";
+export * as cockcroftGault from "./cockcroft-gault";
+export * as bmi from "./bmi";
+export * as bmiBsaIbw from "./bmi-bsa-ibw";
+export * as freeWaterDeficit from "./free-water-deficit";
+export * as homaIr from "./homa-ir";

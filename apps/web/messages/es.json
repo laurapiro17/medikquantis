@@ -170,8 +170,8 @@
     "scores_attribution": "Las fórmulas y los puntos de corte provienen de los autores originales de cada escala; véanse las referencias.",
     "last_reviewed": "Última revisión",
     "last_reviewed_value": "junio de 2026",
-    "copy_result": "Copiar resultado",
-    "copy_result_copied": "Resultado copiado",
+    "copy_result": "Copiar nota HCE",
+    "copy_result_copied": "¡Nota HCE copiada!",
     "result_source": "Calculado con MedikQuantis",
     "mode_hint": "Cambia cómo se explican los resultados",
     "view_mode": "Modo de visualización",
@@ -2802,5 +2802,78 @@
     "none_detected": "No se ha detectado automáticamente ningún factor de riesgo; revísalos manualmente en la calculadora.",
     "open_calc": "Abrir en la calculadora con estos datos",
     "prototype_note": "Prototipo con fines de demostración. El mapeo de problemas codificados es incompleto y puede tener errores: verifícalo clínicamente."
+  },
+  "bmiBsaIbw": {
+    "title": "IMC, ASC y Peso Ideal",
+    "subtitle": "Índice de Masa Corporal, ASC de Mosteller/DuBois, Peso Ideal de Devine y Peso Ajustado.",
+    "fields": {
+      "heightCm": "Altura (cm)",
+      "weightKg": "Peso (kg)",
+      "sex": "Sexo"
+    },
+    "patient": {
+      "intro": "Esta calculadora determina tu Índice de Masa Corporal (IMC), Área de Superficie Corporal (ASC) y Peso Corporal Ideal en función de tu peso y altura.",
+      "ask_doctor": "Preguntas para tu equipo médico:",
+      "questions": [
+        "¿Cuál es mi rango objetivo de IMC?",
+        "¿Cómo afecta mi peso corporal a mi riesgo de salud?",
+        "¿Se debe ajustar la dosis de mis medicamentos según el peso ideal o la superficie corporal?"
+      ]
+    },
+    "content": {
+      "overview": "El Índice de Masa Corporal (IMC) clasifica el estado ponderal, mientras que la Superficie Corporal (ASC) y el Peso Ideal/Ajustado se utilizan en quimioterapia, dosificación de fármacos renales y nutrición clínica.",
+      "interpretation": "Un IMC <18.5 indica bajo peso, 18.5–24.9 peso normal, 25.0–29.9 sobrepeso y ≥30.0 obesidad. La ASC y el Peso Ideal ayudan a ajustar dosis farmacológicas.",
+      "cautions": "El IMC no distingue entre masa muscular y tejido adiposo, y puede clasificar erróneamente a deportistas o ancianos con sarcopenia.",
+      "faq": []
+    }
+  },
+  "freeWaterDeficit": {
+    "title": "Déficit de Agua Libre en Hipernatremia",
+    "subtitle": "Calcula el déficit de agua libre y el ritmo de rehidratación seguro.",
+    "fields": {
+      "weightKg": "Peso (kg)",
+      "currentSodiumMEqL": "Sodio sérico actual (mEq/L)",
+      "targetSodiumMEqL": "Sodio sérico objetivo (mEq/L)",
+      "sex": "Sexo",
+      "ageCategory": "Categoría de edad"
+    },
+    "patient": {
+      "intro": "Esta calculadora estima el volumen de líquido necesario para tratar la hipernatremia (nivel elevado de sodio en sangre).",
+      "ask_doctor": "Preguntas para tu equipo médico:",
+      "questions": [
+        "¿Qué ha causado el aumento de sodio en mi sangre?",
+        "¿A qué ritmo se está corrigiendo mi déficit de líquidos?",
+        "¿Qué síntomas debo comunicar durante el tratamiento?"
+      ]
+    },
+    "content": {
+      "overview": "El déficit de agua libre estima el volumen de agua pura requerido para reducir el sodio sérico elevado hasta un nivel objetivo seguro (típicamente 140 mEq/L).",
+      "interpretation": "El sodio sérico debe corregirse lentamente (no más de 8–10 mEq/L en 24 horas) para prevenir edema cerebral y daño neurológico permanente.",
+      "cautions": "Incluya siempre las pérdidas continuas (fiebre, diarrea, diuresis) en la pauta de fluidoterapia total. Controle electrolitos periódicamente.",
+      "faq": []
+    }
+  },
+  "homaIr": {
+    "title": "HOMA-IR (Resistencia a la Insulina)",
+    "subtitle": "Modelo de evaluación homeostática de la resistencia a la insulina según glucosa e insulina en ayunas.",
+    "fields": {
+      "fastingGlucoseMgDl": "Glucosa en ayunas (mg/dL)",
+      "fastingInsulinuIUml": "Insulina en ayunas (µIU/mL)"
+    },
+    "patient": {
+      "intro": "Esta calculadora mide el grado de resistencia a la insulina a partir de análisis de sangre en ayunas.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿Qué significa mi resultado de HOMA-IR para mi riesgo de diabetes?",
+        "¿Pueden la dieta y el ejercicio revertir la resistencia a la insulina leve?",
+        "¿Con qué frecuencia debo repetir los análisis de glucosa e insulina?"
+      ]
+    },
+    "content": {
+      "overview": "El índice HOMA-IR evalúa la sensibilidad a la insulina a partir de los niveles plasmáticos de glucosa e insulina en ayunas.",
+      "interpretation": "Valores <1.0 indican sensibilidad a la insulina óptima, 1.0–1.9 resistencia leve, y ≥2.0 resistencia a la insulina significativa.",
+      "cautions": "Interprete el resultado dentro del contexto clínico del paciente. Requiere ayuno estricto (8–12 horas). No aplicable durante enfermedades agudas ni con insulina exógena.",
+      "faq": []
+    }
   }
 }

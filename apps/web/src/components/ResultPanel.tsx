@@ -34,9 +34,53 @@ interface ResultPanelProps {
   recommendation: string;
   evidenceGrade: "A" | "B" | "C";
   annualRiskPercent?: number;
-  riskLabelKey: "common.annual_risk" | "common.annual_bleeding_risk";
+  riskLabelKey: "common.annual_risk" | "common.annual_bleeding_risk" | (string & {});
   i18nNamespace: string;
   shareableInputs?: Record<string, unknown>;
+  scoreRange?: { min: number; max: number };
+}
+
+function RiskSpectrumMeter({
+  score,
+  tier,
+  scoreRange,
+}: {
+  score: number;
+  tier: Tier;
+  scoreRange?: { min: number; max: number };
+}) {
+  const t = useTranslations();
+  const min = scoreRange?.min ?? 0;
+  const max = scoreRange?.max ?? (tier === "low" ? 3 : tier === "moderate" ? 6 : 10);
+
+  const percentage = Math.min(
+    96,
+    Math.max(4, Math.round(((score - min) / (max - min || 1)) * 100))
+  );
+
+  return (
+    <div className="mt-4 space-y-2">
+      <div className="relative h-4 w-full overflow-hidden rounded-full bg-slate-200/80 p-0.5 shadow-inner dark:bg-white/10">
+        <div className="h-full w-full rounded-full bg-gradient-to-r from-emerald-500 via-amber-500 to-rose-600 opacity-90 dark:from-emerald-400 dark:via-amber-400 dark:to-rose-500" />
+        <div
+          className="absolute top-0 bottom-0 w-3 -ml-1.5 rounded-full bg-white border-2 border-slate-900 shadow-md transition-all duration-700 ease-out dark:bg-slate-950 dark:border-white"
+          style={{ left: `${percentage}%` }}
+        />
+      </div>
+
+      <div className="flex justify-between px-1 text-[11px] font-medium text-slate-500 dark:text-slate-400">
+        <span className={tier === "low" ? "font-bold text-emerald-600 dark:text-emerald-400" : ""}>
+          {t("common.tier_low")}
+        </span>
+        <span className={tier === "moderate" ? "font-bold text-amber-600 dark:text-amber-400" : ""}>
+          {t("common.tier_moderate")}
+        </span>
+        <span className={tier === "high" ? "font-bold text-cardio-600 dark:text-cardio-500" : ""}>
+          {t("common.tier_high")}
+        </span>
+      </div>
+    </div>
+  );
 }
 
 export function ResultPanel({
@@ -49,6 +93,7 @@ export function ResultPanel({
   riskLabelKey,
   i18nNamespace,
   shareableInputs,
+  scoreRange,
 }: ResultPanelProps) {
   const t = useTranslations();
   const [lit, setLit] = useState(false);
@@ -58,16 +103,41 @@ export function ResultPanel({
   }, [score]);
 
   if (mode === "clinician") {
-    // EHR-pasteable one-block summary. Mirrors the on-screen result so a
-    // clinician can drop it straight into a note; ShareActions appends the
-    // canonical URL + attribution.
+    const activeCriteria: string[] = [];
+    if (shareableInputs) {
+      Object.entries(shareableInputs).forEach(([key, val]) => {
+        if (val === true) {
+          try {
+            activeCriteria.push(t(`${i18nNamespace}.fields.${key}`));
+          } catch {
+            activeCriteria.push(key);
+          }
+        } else if (typeof val === "number" || (typeof val === "string" && val.length > 0)) {
+          try {
+            const fieldLabel = t(`${i18nNamespace}.fields.${key}`);
+            const valDisplay =
+              typeof val === "string" && t.has(`${i18nNamespace}.fields.${key}_${val}`)
+                ? t(`${i18nNamespace}.fields.${key}_${val}`)
+                : typeof val === "string" && t.has(`common.${val}`)
+                ? t(`common.${val}`)
+                : String(val);
+            activeCriteria.push(`${fieldLabel}: ${valDisplay}`);
+          } catch {
+            activeCriteria.push(`${key}: ${val}`);
+          }
+        }
+      });
+    }
+
     const titleKey = `${i18nNamespace}.title`;
     const resultSummary = [
-      `${t(titleKey)}: ${score} (${t(`common.tier_${tier}` as "common.tier_low")})`,
+      `[${t(titleKey)}]`,
+      `${t("common.score")}: ${score} (${t(`common.tier_${tier}` as "common.tier_low")})`,
+      ...(activeCriteria.length > 0 ? [`Criterios: ${activeCriteria.join("; ")}`] : []),
       ...(annualRiskPercent !== undefined
         ? [`${t(riskLabelKey)}: ${annualRiskPercent}%`]
         : []),
-      recommendation,
+      `Recomendación: ${recommendation}`,
       `${t("common.evidence")}: ${evidenceGrade}`,
     ].join("\n");
 
@@ -88,9 +158,7 @@ export function ResultPanel({
           </span>
         </div>
 
-        <div className="mt-3 h-2 w-full overflow-hidden rounded-full bg-slate-100 dark:bg-white/10">
-          <div className={`tier-bar-fill h-full rounded-full ${tierBar[tier]} ${lit ? "is-filled" : ""}`} />
-        </div>
+        <RiskSpectrumMeter score={score} tier={tier} scoreRange={scoreRange} />
 
         <p className="mt-5 text-slate-900 dark:text-slate-100">{recommendation}</p>
 

@@ -170,8 +170,8 @@
     "scores_attribution": "Les fórmules i els punts de tall provenen dels autors originals de cada escala; vegeu les referències.",
     "last_reviewed": "Última revisió",
     "last_reviewed_value": "juny de 2026",
-    "copy_result": "Copia el resultat",
-    "copy_result_copied": "Resultat copiat",
+    "copy_result": "Copiar nota HAE",
+    "copy_result_copied": "¡Nota HAE copiada!",
     "result_source": "Calculat amb MedikQuantis",
     "mode_hint": "Canvia com s'expliquen els resultats",
     "view_mode": "Mode de visualització",
@@ -2802,5 +2802,78 @@
     "none_detected": "No s'ha detectat automàticament cap factor de risc; revisa'ls manualment a la calculadora.",
     "open_calc": "Obre a la calculadora amb aquestes dades",
     "prototype_note": "Prototip amb finalitats de demostració. El mapatge de problemes codificats és incomplet i pot tenir errors: verifica'l clínicament."
+  },
+  "bmiBsaIbw": {
+    "title": "IMC, ASC i Pes Ideal",
+    "subtitle": "Índex de Massa Corporal, ASC de Mosteller/DuBois, Pes Ideal de Devine i Pes Ajustat.",
+    "fields": {
+      "heightCm": "Alçada (cm)",
+      "weightKg": "Pes (kg)",
+      "sex": "Sexe"
+    },
+    "patient": {
+      "intro": "Aquesta calculadora determina el teu Índex de Massa Corporal (IMC), Àrea de Superfície Corporal (ASC) i Pes Ideal en funció de la teva alçada i pes.",
+      "ask_doctor": "Preguntes per al teu equip mèdic:",
+      "questions": [
+        "Quin és el meu rang objectiu d'IMC?",
+        "Com afecta el meu pes corporal al meu risc per a la salut?",
+        "S'ha d'ajustar la dosi dels meus medicaments segons el pes ideal o la superfície corporal?"
+      ]
+    },
+    "content": {
+      "overview": "L'Índex de Massa Corporal (IMC) classifica l'estat ponderal, mentre que la Superfície Corporal (ASC) i el Pes Ideal/Ajustat s'utilitzen en quimioteràpia, dosificació de fàrmacs renals i nutrició clínica.",
+      "interpretation": "Un IMC <18.5 indica baix pes, 18.5–24.9 pes normal, 25.0–29.9 sobrepes i ≥30.0 obesitat. L'ASC i el Pes Ideal ajuden a ajustar dosis farmacològiques.",
+      "cautions": "L'IMC no distingeix entre massa muscular i teixit adipós, i pot classificar de manera errònia esportistes o gent gran amb sarcopènia.",
+      "faq": []
+    }
+  },
+  "freeWaterDeficit": {
+    "title": "Dèficit d'Aigua Lliure en Hipernatrèmia",
+    "subtitle": "Calcula el dèficit d'aigua lliure i el ritme de rehidratació segur.",
+    "fields": {
+      "weightKg": "Pes (kg)",
+      "currentSodiumMEqL": "Sodi Sèric Actual (mEq/L)",
+      "targetSodiumMEqL": "Sodi Sèric Objectiu (mEq/L)",
+      "sex": "Sexe",
+      "ageCategory": "Categoria d'edat"
+    },
+    "patient": {
+      "intro": "Aquesta calculadora estima el volum de líquid necessari per tractar la hipernatrèmia (nivell elevat de sodi a la sang).",
+      "ask_doctor": "Preguntes per al teu equip mèdic:",
+      "questions": [
+        "Què ha causat l'augment de sodi a la meva sang?",
+        "A quin ritme s'està corregint el meu dèficit de líquids?",
+        "Quins símptomes he de comunicar durant el tractament?"
+      ]
+    },
+    "content": {
+      "overview": "El dèficit d'aigua lliure estima el volum d'aigua pura requerit per reduir el sodi sèric elevat fins a un nivell objectiu segur (típicament 140 mEq/L).",
+      "interpretation": "El sodi sèric s'ha de corregir lentament (no més de 8–10 mEq/L en 24 hores) per prevenir edema cerebral i dany neurològic permanent.",
+      "cautions": "Inclogui sempre les pèrdues contínues (febre, diarrea, diüresi) a la pauta de fluidoteràpia total. Controli electròlits periòdicament.",
+      "faq": []
+    }
+  },
+  "homaIr": {
+    "title": "HOMA-IR (Resistència a la Insulina)",
+    "subtitle": "Model d'avaluació homeostàtica de la resistència a la insulina segons glucosa i insulina en dejú.",
+    "fields": {
+      "fastingGlucoseMgDl": "Glucosa en dejú (mg/dL)",
+      "fastingInsulinuIUml": "Insulina en dejú (µIU/mL)"
+    },
+    "patient": {
+      "intro": "Aquesta calculadora mesura el grau de resistència a la insulina a partir d'anàlisis de sang en dejú.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "Què significa el meu resultat d'HOMA-IR per al meu risc de diabetis?",
+        "Poden la dieta i l'exercici revertir la resistència a la insulina lleu?",
+        "Amb quina freqüència he de repetir les anàlisis de glucosa i insulina?"
+      ]
+    },
+    "content": {
+      "overview": "L'índex HOMA-IR avalua la sensibilitat a la insulina a partir dels nivells plasmàtics de glucosa i insulina en dejú.",
+      "interpretation": "Valors <1.0 indiquen sensibilitat a la insulina òptima, 1.0–1.9 resistència lleu, i ≥2.0 resistència a la insulina significativa.",
+      "cautions": "Interpreti el resultat dins del context clínic del pacient. Requereix dejú estricte (8–12 hores). No aplicable durant malalties agudes ni amb insulina exògena.",
+      "faq": []
+    }
   }
 }
