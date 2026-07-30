@@ -62,3 +62,9 @@ export * as bmi from "./bmi";
 export * as bmiBsaIbw from "./bmi-bsa-ibw";
 export * as freeWaterDeficit from "./free-water-deficit";
 export * as homaIr from "./homa-ir";
+export * as phq9 from "./phq-9";
+export * as gad7 from "./gad-7";
+export * as ciwaAr from "./ciwa-ar";
+export * as cows from "./cows";
+export * as sadPersons from "./sad-persons";
+

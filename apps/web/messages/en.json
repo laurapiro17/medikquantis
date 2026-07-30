@@ -3017,5 +3017,369 @@
         }
       ]
     }
+  },
+  "phq9": {
+    "title": "PHQ-9 Depression Scale",
+    "subtitle": "Patient Health Questionnaire-9 for major depressive disorder screening and severity assessment.",
+    "fields": {
+      "q1": "1. Little interest or pleasure in doing things",
+      "q2": "2. Feeling down, depressed, or hopeless",
+      "q3": "3. Trouble falling or staying asleep, or sleeping too much",
+      "q4": "4. Feeling tired or having little energy",
+      "q5": "5. Poor appetite or overeating",
+      "q6": "6. Feeling bad about yourself — or that you are a failure or have let yourself or your family down",
+      "q7": "7. Trouble concentrating on things, such as reading the newspaper or watching television",
+      "q8": "8. Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless",
+      "q9": "9. Thoughts that you would be better off dead, or of hurting yourself in some way"
+    },
+    "options": {
+      "0": "0 — Not at all",
+      "1": "1 — Several days",
+      "2": "2 — More than half the days",
+      "3": "3 — Nearly every day"
+    },
+    "result_label": "PHQ-9 Total Score",
+    "suicide_alert": "Critical Alert: Positive response on Item 9 (suicidal ideation / self-harm). Immediate clinical safety evaluation and risk assessment required.",
+    "patient": {
+      "intro": "The PHQ-9 questionnaire helps measure the presence and severity of depressive symptoms over the past 2 weeks.",
+      "ask_doctor": "Questions to ask your healthcare provider:",
+      "questions": [
+        "What does my PHQ-9 score mean for my mental health treatment plan?",
+        "Are psychotherapy, counseling, or medications recommended for me?",
+        "What lifestyle habits or support services can help manage my mood?"
+      ]
+    },
+    "content": {
+      "overview": "The PHQ-9 (Patient Health Questionnaire-9) is a validated 9-item tool for screening, diagnosing, monitoring, and measuring the severity of major depression.",
+      "interpretation": "Scores 0–4: Minimal/No depression; 5–9: Mild depression; 10–14: Moderate depression; 15–19: Moderately severe depression; 20–27: Severe depression.",
+      "cautions": "A high PHQ-9 score is not a standalone diagnosis; medical causes of mood disturbance (e.g. hypothyroidism) should be ruled out. Any score > 0 on Item 9 warrants emergency suicide risk assessment.",
+      "faq": [
+        {
+          "q": "How often can the PHQ-9 be administered?",
+          "a": "The PHQ-9 can be repeated every 2–4 weeks to monitor treatment response and symptom remission over time."
+        }
+      ]
+    }
+  },
+  "gad7": {
+    "title": "GAD-7 Anxiety Scale",
+    "subtitle": "Generalized Anxiety Disorder 7-item scale for screening and severity measurement.",
+    "fields": {
+      "q1": "1. Feeling nervous, anxious, or on edge",
+      "q2": "2. Not being able to stop or control worrying",
+      "q3": "3. Worrying too much about different things",
+      "q4": "4. Trouble relaxing",
+      "q5": "5. Being so restless that it is hard to sit still",
+      "q6": "6. Becoming easily annoyed or irritable",
+      "q7": "7. Feeling afraid as if something awful might happen"
+    },
+    "options": {
+      "0": "0 — Not at all",
+      "1": "1 — Several days",
+      "2": "2 — More than half the days",
+      "3": "3 — Nearly every day"
+    },
+    "result_label": "GAD-7 Total Score",
+    "patient": {
+      "intro": "The GAD-7 is a self-assessment tool used to evaluate feelings of anxiety and worry over the past 2 weeks.",
+      "ask_doctor": "Questions to ask your doctor:",
+      "questions": [
+        "What steps can I take to reduce anxiety symptoms?",
+        "Would cognitive behavioral therapy (CBT) or medication be beneficial?",
+        "What relaxation techniques or resources are available?"
+      ]
+    },
+    "content": {
+      "overview": "The GAD-7 (Generalized Anxiety Disorder 7-item scale) is a self-administered questionnaire sensitive to anxiety symptom severity in outpatient settings.",
+      "interpretation": "Scores 0–4: Minimal anxiety; 5–9: Mild anxiety; 10–14: Moderate anxiety; 15–21: Severe anxiety.",
+      "cautions": "Scores ≥10 suggest probable Generalized Anxiety Disorder and warrant further clinical assessment for panic disorder, social anxiety, or PTSD.",
+      "faq": [
+        {
+          "q": "Is GAD-7 useful for panic disorder?",
+          "a": "Yes, GAD-7 has good sensitivity and specificity for screening panic disorder, social phobia, and PTSD in addition to GAD."
+        }
+      ]
+    }
+  },
+  "ciwaAr": {
+    "title": "CIWA-Ar Alcohol Withdrawal",
+    "subtitle": "Clinical Institute Withdrawal Assessment for Alcohol, Revised (10 items, max 67).",
+    "fields": {
+      "nausea": "Nausea and vomiting",
+      "tremor": "Tremor (arms extended, fingers spread)",
+      "sweats": "Paroxysmal sweats",
+      "anxiety": "Anxiety",
+      "agitation": "Agitation",
+      "tactile": "Tactile disturbances (itching, numbness, burning)",
+      "auditory": "Auditory disturbances (harshness, sound sensitivity)",
+      "visual": "Visual disturbances (light sensitivity, hallucinations)",
+      "headache": "Headache, fullness in head",
+      "orientation": "Orientation and sensorium"
+    },
+    "nausea_options": {
+      "0": "0 — None",
+      "1": "1 — Mild nausea, no vomiting",
+      "2": "2 — Mild nausea",
+      "3": "3 — Moderate nausea",
+      "4": "4 — Intermittent nausea with dry heaves",
+      "5": "5 — Nausea with dry heaves",
+      "6": "6 — Severe nausea with dry heaves",
+      "7": "7 — Constant nausea, frequent vomiting"
+    },
+    "tremor_options": {
+      "0": "0 — No tremor",
+      "1": "1 — Not visible, but felt fingertip to fingertip",
+      "2": "2 — Slight visible tremor",
+      "3": "3 — Mild visible tremor",
+      "4": "4 — Moderate, arms extended",
+      "5": "5 — Severe, arms extended",
+      "6": "6 — Very severe",
+      "7": "7 — Severe, even with arms not extended"
+    },
+    "sweats_options": {
+      "0": "0 — No sweat visible",
+      "1": "1 — Barely perceptible, palms moist",
+      "2": "2 — Slight dampness",
+      "3": "3 — Moist palms & forehead",
+      "4": "4 — Beads of sweat visible on forehead",
+      "5": "5 — Heavy sweating",
+      "6": "6 — Drenching sweats",
+      "7": "7 — Drenching sweats, soaked linens"
+    },
+    "anxiety_options": {
+      "0": "0 — No anxiety, at ease",
+      "1": "1 — Mildly anxious",
+      "2": "2 — Slightly anxious",
+      "3": "3 — Moderately anxious",
+      "4": "4 — Moderately anxious or guarded",
+      "5": "5 — Severely anxious",
+      "6": "6 — Very severely anxious",
+      "7": "7 — Equivalent to acute panic state"
+    },
+    "agitation_options": {
+      "0": "0 — Normal activity",
+      "1": "1 — Somewhat more than normal activity",
+      "2": "2 — Slightly restless",
+      "3": "3 — Moderately restless",
+      "4": "4 — Moderately fidgety and restless",
+      "5": "5 — Paces back and forth",
+      "6": "6 — Constantly moving",
+      "7": "7 — Paces constantly, thrashes about"
+    },
+    "tactile_options": {
+      "0": "0 — None",
+      "1": "1 — Very mild itching, pins/needles",
+      "2": "2 — Mild itching, burning, numbness",
+      "3": "3 — Moderate itching, numbness",
+      "4": "4 — Moderate hallucinations",
+      "5": "5 — Severe hallucinations",
+      "6": "6 — Extremely severe hallucinations",
+      "7": "7 — Continuous tactile hallucinations"
+    },
+    "auditory_options": {
+      "0": "0 — Not present",
+      "1": "1 — Very mild harshness or sound sensitivity",
+      "2": "2 — Mild sound sensitivity",
+      "3": "3 — Moderate sound sensitivity",
+      "4": "4 — Moderate auditory hallucinations",
+      "5": "5 — Severe auditory hallucinations",
+      "6": "6 — Extremely severe auditory hallucinations",
+      "7": "7 — Continuous auditory hallucinations"
+    },
+    "visual_options": {
+      "0": "0 — Not present",
+      "1": "1 — Very mild light sensitivity",
+      "2": "2 — Mild light sensitivity",
+      "3": "3 — Moderate light sensitivity",
+      "4": "4 — Moderate visual hallucinations",
+      "5": "5 — Severe visual hallucinations",
+      "6": "6 — Extremely severe visual hallucinations",
+      "7": "7 — Continuous visual hallucinations"
+    },
+    "headache_options": {
+      "0": "0 — Not present",
+      "1": "1 — Very mild",
+      "2": "2 — Mild",
+      "3": "3 — Moderate",
+      "4": "4 — Moderately severe",
+      "5": "5 — Severe",
+      "6": "6 — Very severe",
+      "7": "7 — Extremely severe"
+    },
+    "orientation_options": {
+      "0": "0 — Oriented and can do serial additions",
+      "1": "1 — Cannot do serial additions or uncertain about date",
+      "2": "2 — Disoriented for date by no more than 2 calendar days",
+      "3": "3 — Disoriented for date by more than 2 calendar days",
+      "4": "4 — Disoriented for place and/or person"
+    },
+    "result_label": "CIWA-Ar Total Score",
+    "patient": {
+      "intro": "The CIWA-Ar protocol measures physical and sensory symptoms associated with alcohol withdrawal to guide clinical management.",
+      "ask_doctor": "Questions to ask your medical team:",
+      "questions": [
+        "What medical monitoring will be needed during my withdrawal period?",
+        "Are medications like benzodiazepines recommended to prevent seizures?",
+        "What addiction recovery or medical support programs are available?"
+      ]
+    },
+    "content": {
+      "overview": "The Clinical Institute Withdrawal Assessment for Alcohol, Revised (CIWA-Ar) is a 10-item scale used to evaluate alcohol withdrawal severity.",
+      "interpretation": "Scores <10 indicate mild withdrawal; 10–15 moderate withdrawal (symptom-triggered benzodiazepines recommended); >15 severe withdrawal (high risk for seizures and delirium tremens).",
+      "cautions": "CIWA-Ar requires patient participation. If the patient is uncommunicative or severely obtunded, rely on objective signs and intensive monitoring.",
+      "faq": [
+        {
+          "q": "How frequently should CIWA-Ar be reassessed?",
+          "a": "Assessments are typically performed every 1 to 4 hours depending on symptom severity and protocol requirements."
+        }
+      ]
+    }
+  },
+  "cows": {
+    "title": "COWS Opioid Withdrawal",
+    "subtitle": "Clinical Opiate Withdrawal Scale for quantitative opioid withdrawal rating (11 items, max 48).",
+    "fields": {
+      "hr": "Resting pulse rate (bpm)",
+      "sweat": "Sweating over past 1/2 hour",
+      "restless": "Restlessness observed during assessment",
+      "pupils": "Pupil size",
+      "aches": "Bone or joint aches",
+      "rhinorrhea": "Runny nose or tearing",
+      "gi": "GI upset (nausea, vomiting, diarrhea)",
+      "tremor": "Tremor (observation of hands)",
+      "yawn": "Yawning (observation during assessment)",
+      "anxiety": "Anxiety or irritability",
+      "gooseflesh": "Gooseflesh skin (piloerection)"
+    },
+    "hr_options": {
+      "0": "0 — Pulse ≤ 80 bpm",
+      "1": "1 — Pulse 81–100 bpm",
+      "2": "2 — Pulse 101–120 bpm",
+      "4": "4 — Pulse > 120 bpm"
+    },
+    "sweat_options": {
+      "0": "0 — No report of chills or flushing",
+      "1": "1 — Subjective report of chills or flushing",
+      "2": "2 — Flush or moistness on face",
+      "3": "3 — Beads of sweat on brow or face",
+      "4": "4 — Sweat streaming off face"
+    },
+    "restless_options": {
+      "0": "0 — Able to sit still",
+      "1": "1 — Reports difficulty sitting still",
+      "3": "3 — Frequent shifting or movement of legs/arms",
+      "5": "5 — Unable to sit still for more than a few seconds"
+    },
+    "pupils_options": {
+      "0": "0 — Pupils normal or pinned",
+      "1": "1 — Pupils possibly larger than normal in room light",
+      "2": "2 — Pupils moderately dilated",
+      "5": "5 — Pupils extremely dilated"
+    },
+    "aches_options": {
+      "0": "0 — Not present",
+      "1": "1 — Mild subjective muscle/joint aches",
+      "2": "2 — Reports severe muscle/joint aches",
+      "4": "4 — Rubbing joints, unable to sit still due to pain"
+    },
+    "rhinorrhea_options": {
+      "0": "0 — Not present",
+      "1": "1 — Nasal stuffiness or moist eyes",
+      "2": "2 — Nose running or tearing eyes",
+      "4": "4 — Constant running nose or tears streaming down cheeks"
+    },
+    "gi_options": {
+      "0": "0 — No GI symptoms",
+      "1": "1 — Stomach cramps",
+      "2": "2 — Nausea or loose stool",
+      "3": "3 — Vomiting or diarrhea",
+      "4": "4 — Multiple episodes of vomiting or diarrhea"
+    },
+    "tremor_options": {
+      "0": "0 — No tremor",
+      "1": "1 — Tremor felt but not seen",
+      "2": "2 — Slight tremor visible",
+      "4": "4 — Gross tremor or muscle twitching"
+    },
+    "yawn_options": {
+      "0": "0 — No yawning",
+      "1": "1 — Yawning 1 or 2 times during assessment",
+      "2": "2 — Yawning 3 or more times during assessment",
+      "4": "4 — Yawning several times per minute"
+    },
+    "anxiety_options": {
+      "0": "0 — None",
+      "1": "1 — Mild anxiety or irritability",
+      "2": "2 — Patient obvious anxious or irritable",
+      "4": "4 — Severe anxiety, participating in assessment with difficulty"
+    },
+    "gooseflesh_options": {
+      "0": "0 — Skin smooth",
+      "3": "3 — Piloerection felt or hairs standing up",
+      "5": "5 — Prominent gooseflesh"
+    },
+    "result_label": "COWS Total Score",
+    "patient": {
+      "intro": "The COWS scale quantifies opioid withdrawal signs to time medication induction (such as buprenorphine) safely.",
+      "ask_doctor": "Questions to ask your medical provider:",
+      "questions": [
+        "Is my COWS score high enough to safely start buprenorphine without precipitating withdrawal?",
+        "What medications can ease my physical symptoms right now?",
+        "What addiction medicine support services are available to me?"
+      ]
+    },
+    "content": {
+      "overview": "The Clinical Opiate Withdrawal Scale (COWS) is an 11-item clinician-administered instrument for objective opioid withdrawal scoring.",
+      "interpretation": "Scores 5–12: Mild withdrawal; 13–24: Moderate withdrawal; 25–36: Moderately severe withdrawal; >36: Severe withdrawal.",
+      "cautions": "Buprenorphine induction before reaching a COWS score of at least 12–13 may cause severe precipitated withdrawal.",
+      "faq": [
+        {
+          "q": "Why is COWS timing crucial for buprenorphine?",
+          "a": "Buprenorphine is a partial agonist with high receptor affinity. Initiating it too early displaces full opioids and precipitates acute severe withdrawal."
+        }
+      ]
+    }
+  },
+  "sadPersons": {
+    "title": "SAD PERSONS Suicide Risk",
+    "subtitle": "Clinical triage score for suicide risk assessment and emergency decision-making.",
+    "fields": {
+      "sex": "Sex (Male)",
+      "age": "Age (<19 or >45 years)",
+      "depression": "Depression or hopelessness",
+      "previousAttempt": "Previous suicide attempt",
+      "ethanolUse": "Ethanol or substance abuse",
+      "rationalThinkingLoss": "Rational thinking loss (psychosis, organic brain syndrome)",
+      "socialSupportsLacking": "Social supports lacking",
+      "organizedPlan": "Organized plan or lethal intent",
+      "noSpouse": "No spouse (single, divorced, widowed)",
+      "sickness": "Sickness (chronic physical illness)"
+    },
+    "options": {
+      "0": "0 — No",
+      "1": "1 — Yes (+1 point)"
+    },
+    "result_label": "SAD PERSONS Score",
+    "risk_alert": "Urgent Safety Alert: High suicide risk score. Immediate psychiatric consultation and 1:1 constant observation safety precautions required.",
+    "patient": {
+      "intro": "The SAD PERSONS scale helps healthcare professionals evaluate suicide risk factors during emergency triage.",
+      "ask_doctor": "Immediate help resources:",
+      "questions": [
+        "If you or someone you know is in crisis, call or text 988 (in the US) or contact your local emergency services (112 in EU) immediately.",
+        "What safety plan and supportive resources are available for me right now?"
+      ]
+    },
+    "content": {
+      "overview": "The SAD PERSONS scale is a 10-item mnemonic-based clinical tool created by Patterson et al. (1983) for suicide risk assessment.",
+      "interpretation": "Scores 0–2: Low risk (outpatient evaluation); 3–4: Moderate risk (close outpatient follow-up); 5–6: High risk (consider hospitalization); 7–10: Very high risk (mandatory psychiatric admission).",
+      "cautions": "SAD PERSONS is a screening heuristic. Clinical judgment, patient intent, and acute psychiatric assessment must always supersede scoring cut-offs.",
+      "faq": [
+        {
+          "q": "What does the SAD PERSONS acronym stand for?",
+          "a": "S - Sex, A - Age, D - Depression, P - Previous attempt, E - Ethanol use, R - Rational thinking loss, S - Social supports lacking, O - Organized plan, N - No spouse, S - Sickness."
+        }
+      ]
+    }
   }
 }
+

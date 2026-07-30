@@ -3017,5 +3017,369 @@
         }
       ]
     }
+  },
+  "phq9": {
+    "title": "Escala PHQ-9 de Depressió",
+    "subtitle": "Qüestionari de Salut del Pacient-9 per al cribratge i valoració de severitat de la depressió major.",
+    "fields": {
+      "q1": "1. Poc interès o plaer en fer les coses",
+      "q2": "2. Sentir-se desanimat/da, deprimit/da o sense esperances",
+      "q3": "3. Problemes per adormir-se o mantenir el son, o dormir massa",
+      "q4": "4. Sentir-se cansat/da o amb poca energia",
+      "q5": "5. Poc gana o menjar en excés",
+      "q6": "6. Sentir-se malament amb un mateix/a — o que és un fracàs o que ha decebut la seva família",
+      "q7": "7. Dificultat per concentrar-se en coses com llegir el diari o mirar la televisió",
+      "q8": "8. Moure's o parlar tan a poc a poc que els altres ho hagin notat? O el contrari — estar tan Inquiet/a que li costa estar quiet/a",
+      "q9": "9. Pensaments que estaria millor mort/a, o de fer-se mal de qualsevol manera"
+    },
+    "options": {
+      "0": "0 — Mai",
+      "1": "1 — Diversos dies",
+      "2": "2 — Més de la meitat dels dies",
+      "3": "3 — Quasi tots els dies"
+    },
+    "result_label": "Puntuació Total PHQ-9",
+    "suicide_alert": "Alerta Crítica: Resposta positiva a l'Ítem 9 (ideació suïcida / autolesió). Es requereix avaluació clínica de seguretat i valoració de risc immediata.",
+    "patient": {
+      "intro": "El qüestionari PHQ-9 permet mesurar la presència i gravetat dels símptomes depressius durant les darreres 2 setmanes.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "Què significa la meva puntuació PHQ-9 per al meu pla de tractament?",
+        "Es recomana psicoteràpia, assessorament o medicació en el meu cas?",
+        "Quins hàbits o serveis de suport poden ajudar-me a millorar el meu estat d'ànim?"
+      ]
+    },
+    "content": {
+      "overview": "El PHQ-9 (Patient Health Questionnaire-9) és una eina validada de 9 ítems per al cribratge, diagnòstic i seguiment de la gravetat de la depressió major.",
+      "interpretation": "Puntuació 0–4: Depressió mínima o absent; 5–9: Depressió lleu; 10–14: Depressió moderada; 15–19: Depressió moderadament greu; 20–27: Depressió greu.",
+      "cautions": "Una puntuació elevada no constitueix per si sola un diagnòstic; s'han de descartar causes mèdiques (p. ex. hipotiroïdisme). Qualsevol puntuació > 0 a l'ítem 9 exigeix valoració urgent del risc de suïcidi.",
+      "faq": [
+        {
+          "q": "Amb quina freqüència es pot administrar el PHQ-9?",
+          "a": "El PHQ-9 es pot repetir cada 2–4 setmanes per monitorar la resposta al tractament i la remissió simptomàtica."
+        }
+      ]
+    }
+  },
+  "gad7": {
+    "title": "Escala GAD-7 d'Anxietat",
+    "subtitle": "Escala de 7 ítems per al cribratge i mesurament de gravetat del trastorn d'anxietat generalitzada.",
+    "fields": {
+      "q1": "1. Sentir-se nerviós/a, ansiós/a o amb els nervis de punta",
+      "q2": "2. No poder parar o controlar les preocupacions",
+      "q3": "3. Preocupar-se massa per diferents coses",
+      "q4": "4. Dificultat per relaxar-se",
+      "q5": "5. Estar tan inquiet/a que resulta difícil estar quiet/a",
+      "q6": "6. Irritar-se o enfadar-se amb facilitat",
+      "q7": "7. Sentir por com si alguna cosa terrible pogués passar"
+    },
+    "options": {
+      "0": "0 — Mai",
+      "1": "1 — Diversos dies",
+      "2": "2 — Més de la meitat dels dies",
+      "3": "3 — Quasi tots els dies"
+    },
+    "result_label": "Puntuació Total GAD-7",
+    "patient": {
+      "intro": "El GAD-7 és un qüestionari d'autoavaluació utilitzat per avaluar sentiments d'anxietat i preocupació durant les darreres 2 setmanes.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "Quines passes puc fer per reduir els meus símptomes d'anxietat?",
+        "Seria beneficiosa la teràpia cognitivo-conductual (TCC) o el tractament farmacològic?",
+        "Quines tècniques de relaxació o recursos de suport existeixen?"
+      ]
+    },
+    "content": {
+      "overview": "El GAD-7 (Generalized Anxiety Disorder 7-item scale) és un qüestionari autoadministrat d'elevada sensibilitat per quantificar la gravetat de l'anxietat en entorns ambulatoris.",
+      "interpretation": "Puntuació 0–4: Anxietat mínima; 5–9: Anxietat lleu; 10–14: Anxietat moderada; 15–21: Anxietat greu.",
+      "cautions": "Puntuacions ≥10 suggereixen probable Trastorn d'Anxietat Generalitzada i justifiquen una valoració clínica detallada per descartar agorafòbia, angoixa o TEPT.",
+      "faq": [
+        {
+          "q": "És útil el GAD-7 per al trastorn de pànic?",
+          "a": "Sí, el GAD-7 presenta bona sensibilitat i especificitat per al cribratge de trastorn de pànic, fòbia social i TEPT a més del TAG."
+        }
+      ]
+    }
+  },
+  "ciwaAr": {
+    "title": "Escala CIWA-Ar Síndrome d'Abstinència Alcohòlica",
+    "subtitle": "Clinical Institute Withdrawal Assessment for Alcohol, Revised (10 ítems, màx 67).",
+    "fields": {
+      "nausea": "Nàusees i vòmits",
+      "tremor": "Tremolor (braços estesos, dits oberts)",
+      "sweats": "Suor paroxística",
+      "anxiety": "Anxietat",
+      "agitation": "Agitació",
+      "tactile": "Alteracions tàctils (picor, entumiment, cremor)",
+      "auditory": "Alteracions auditives (hiperacúsia, sorolls molestos)",
+      "visual": "Alteracions visuals (fotofòbia, al·lucinacions)",
+      "headache": "Cefalea o sensació de plenitud al cap",
+      "orientation": "Orientació i nivell de consciència"
+    },
+    "nausea_options": {
+      "0": "0 — Cap",
+      "1": "1 — Nàusees lleus, sense vòmits",
+      "2": "2 — Nàusees lleus",
+      "3": "3 — Nàusees moderades",
+      "4": "4 — Nàusees intermitents amb arcades",
+      "5": "5 — Nàusees amb arcades",
+      "6": "6 — Nàusees severes amb arcades",
+      "7": "7 — Nàusees constants, vòmits freqüents"
+    },
+    "tremor_options": {
+      "0": "0 — Sense tremolor",
+      "1": "1 — No visible, perceptible en gemmes dels dits",
+      "2": "2 — Tremolor lleuger visible",
+      "3": "3 — Tremolor lleu visible",
+      "4": "4 — Moderat amb braços estesos",
+      "5": "5 — Sever amb braços estesos",
+      "6": "6 — Molt sever",
+      "7": "7 — Sever fins i tot sense estendre els braços"
+    },
+    "sweats_options": {
+      "0": "0 — Sense suor visible",
+      "1": "1 — Amb prou feines perceptible, palmes humides",
+      "2": "2 — Lleugera humitat",
+      "3": "3 — Palmes i front humits",
+      "4": "4 — Gotes de suor visibles al front",
+      "5": "5 — Sudoració profusa",
+      "6": "6 — Sudoració copiosa",
+      "7": "7 — Sudoració copiosa que xopa els llençols"
+    },
+    "anxiety_options": {
+      "0": "0 — Sense anxietat, tranquil",
+      "1": "1 — Lleument ansiós",
+      "2": "2 — Lleugerament ansiós",
+      "3": "3 — Moderadament ansiós",
+      "4": "4 — Moderadament ansiós o a la defensiva",
+      "5": "5 — Severament ansiós",
+      "6": "6 — Molt severament ansiós",
+      "7": "7 — Estat de pànic agut"
+    },
+    "agitation_options": {
+      "0": "0 — Activitat normal",
+      "1": "1 — Alguna cosa més actiu del normal",
+      "2": "2 — Lleugerament inquiet",
+      "3": "3 — Moderadament inquiet",
+      "4": "4 — Inquiet i desassossegat",
+      "5": "5 — Es passeja d'un costat a l'altre",
+      "6": "6 — En moviment constant",
+      "7": "7 — Es passeja contínuament, s'agita al llit"
+    },
+    "tactile_options": {
+      "0": "0 — Cap",
+      "1": "1 — Picor o formigueig molt lleu",
+      "2": "2 — Picor, cremor o entumiment lleu",
+      "3": "3 — Picor o entumiment moderat",
+      "4": "4 — Al·lucinacions tàctils moderades",
+      "5": "5 — Al·lucinacions tàctils severes",
+      "6": "6 — Al·lucinacions tàctils extremadament severes",
+      "7": "7 — Al·lucinacions tàctils contínues"
+    },
+    "auditory_options": {
+      "0": "0 — Absent",
+      "1": "1 — Sorolls molestos o hiperacúsia molt lleu",
+      "2": "2 — Sensibilitat acústica lleu",
+      "3": "3 — Sensibilitat acústica moderada",
+      "4": "4 — Al·lucinacions auditives moderades",
+      "5": "5 — Al·lucinacions auditives severes",
+      "6": "6 — Al·lucinacions auditives extremadament severes",
+      "7": "7 — Al·lucinacions auditives contínues"
+    },
+    "visual_options": {
+      "0": "0 — Absent",
+      "1": "1 — Fotofòbia molt lleu",
+      "2": "2 — Fotofòbia lleu",
+      "3": "3 — Fotofòbia moderada",
+      "4": "4 — Al·lucinacions visuals moderades",
+      "5": "5 — Al·lucinacions visuals severes",
+      "6": "6 — Al·lucinacions visuals extremadament severes",
+      "7": "7 — Al·lucinacions visuals contínues"
+    },
+    "headache_options": {
+      "0": "0 — Absent",
+      "1": "1 — Molt lleu",
+      "2": "2 — Lleu",
+      "3": "3 — Moderada",
+      "4": "4 — Moderadament severa",
+      "5": "5 — Severa",
+      "6": "6 — Molt severa",
+      "7": "7 — Extremadament severa"
+    },
+    "orientation_options": {
+      "0": "0 — Orientat, realitza sumes consecutives",
+      "1": "1 — No realitza sumes o dubta de la data",
+      "2": "2 — Desorientat en data per no més de 2 dies",
+      "3": "3 — Desorientat en data per més de 2 dies",
+      "4": "4 — Desorientat en espai i/o persona"
+    },
+    "result_label": "Puntuació Total CIWA-Ar",
+    "patient": {
+      "intro": "El protocol CIWA-Ar mesura els símptomes físics i sensorials associats a l'abstinència d'alcohol per guiar el tractament mèdic.",
+      "ask_doctor": "Preguntes per a l'equip mèdic:",
+      "questions": [
+        "Quina monitorització mèdica necessitaré durant el meu període d'abstinència?",
+        "Es recomanen fàrmacs com benzodiazepines per prevenir convulsions?",
+        "Quins programes de suport mèdic o deshabituació estan disponibles?"
+      ]
+    },
+    "content": {
+      "overview": "La Clinical Institute Withdrawal Assessment for Alcohol, Revised (CIWA-Ar) és una escala de 10 ítems per avaluar la gravetat de l'abstinència alcohòlica.",
+      "interpretation": "Puntuacions <10: abstinència lleu; 10–15: abstinència moderada (es recomanen benzodiazepines pautades per símptomes); >15: abstinència greu (alt risc de convulsions i delirium tremens).",
+      "cautions": "L'escala CIWA-Ar requereix la col·laboració del pacient. Si el pacient no es comunica o està profundament obnubilat, cal recórrer a signes objectius i monitorització estreta.",
+      "faq": [
+        {
+          "q": "Amb quina freqüència s'ha de reavaluar el CIWA-Ar?",
+          "a": "Les avaluacions se solen realitzar cada 1 a 4 hores segons la gravetat simptomàtica i el protocol del centre."
+        }
+      ]
+    }
+  },
+  "cows": {
+    "title": "Escala COWS d'Abstinència a Opiacis",
+    "subtitle": "Clinical Opiate Withdrawal Scale per a quantificació objectiva d'abstinència a opioides (11 ítems, màx 48).",
+    "fields": {
+      "hr": "Freqüència cardíaca en repòs (ppm)",
+      "sweat": "Sudoració en la darrera 1/2 hora",
+      "restless": "Inquietud observada durant l'avaluació",
+      "pupils": "Mida pupilar",
+      "aches": "Dolor ossi o articular",
+      "rhinorrhea": "Rinorrea o lagrimeig",
+      "gi": "Molèsties gastrointestinals (nàusees, vòmits, diarrea)",
+      "tremor": "Tremolor (observació de mans)",
+      "yawn": "Bostejos (observació durant l'avaluació)",
+      "anxiety": "Anxietat o irritabilitat",
+      "gooseflesh": "Pell de gallina (piloerecció)"
+    },
+    "hr_options": {
+      "0": "0 — Pulsació ≤ 80 ppm",
+      "1": "1 — Pulsació 81–100 ppm",
+      "2": "2 — Pulsació 101–120 ppm",
+      "4": "4 — Pulsació > 120 ppm"
+    },
+    "sweat_options": {
+      "0": "0 — Sense escalfreds ni sufocacions",
+      "1": "1 — Refereix escalfreds o sufocacions",
+      "2": "2 — Rubor o humitat a la cara",
+      "3": "3 — Gotes de suor al front o cara",
+      "4": "4 — Suor brollant per la cara"
+    },
+    "restless_options": {
+      "0": "0 — Capaç de romandre assegut",
+      "1": "1 — Refereix dificultat per romandre quiet",
+      "3": "3 — Moviment constant de cames o braços",
+      "5": "5 — Incapaç d'estar assegut més d'uns segons"
+    },
+    "pupils_options": {
+      "0": "0 — Pupil·les normals o miòtiques",
+      "1": "1 — Pupil·les possiblement majors del normal a la llum",
+      "2": "2 — Pupil·les moderadament dilatades",
+      "5": "5 — Pupil·les extremadament dilatades (midriasi)"
+    },
+    "aches_options": {
+      "0": "0 — Absent",
+      "1": "1 — Dols musculars/articulars lleus",
+      "2": "2 — Refereix dols musculars/articulars severes",
+      "4": "4 — Es frega les articulacions, incapaç d'estar quiet per dolor"
+    },
+    "rhinorrhea_options": {
+      "0": "0 — Absent",
+      "1": "1 — Congestió nasal o ulls humits",
+      "2": "2 — Secreció nasal o lagrimeig",
+      "4": "4 — Goteig nasal constant o lagrimeig continu"
+    },
+    "gi_options": {
+      "0": "0 — Sense símptomes digestius",
+      "1": "1 — Còlics abdominals",
+      "2": "2 — Nàusees o fems tous",
+      "3": "3 — Vòmits o diarrea",
+      "4": "4 — Múltiples episodis de vòmits o diarrea"
+    },
+    "tremor_options": {
+      "0": "0 — Sense tremolor",
+      "1": "1 — Tremolor palpable però no visible",
+      "2": "2 — Tremolor lleuger visible",
+      "4": "4 — Tremolor grosser o sacsejades musculars"
+    },
+    "yawn_options": {
+      "0": "0 — Sense bostejos",
+      "1": "1 — 1 o 2 bostejos durant l'avaluació",
+      "2": "2 — 3 o més bostejos durant l'avaluació",
+      "4": "4 — Bostejos múltiples per minut"
+    },
+    "anxiety_options": {
+      "0": "0 — Cap",
+      "1": "1 — Lleu anxietat i irritabilitat",
+      "2": "2 — Pacient obertament ansiós o irritable",
+      "4": "4 — Anxietat severa, dificultat per col·laborar en la valoració"
+    },
+    "gooseflesh_options": {
+      "0": "0 — Pell llisa",
+      "3": "3 — Piloerecció al tacte o pèl erissat",
+      "5": "5 — Pell de gallina prominent"
+    },
+    "result_label": "Puntuació Total COWS",
+    "patient": {
+      "intro": "L'escala COWS quantifica la intensitat de l'abstinència a opiacis per iniciar de forma segura tractaments com la buprenorfina.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "És la meva puntuació COWS suficient per iniciar buprenorfina de forma segura sense desencadenar abstinència precipitada?",
+        "Quins medicaments poden alleujar els meus símptomes físics ara mateix?",
+        "De quins serveis de suport en adiccions puc disposar?"
+      ]
+    },
+    "content": {
+      "overview": "La Clinical Opiate Withdrawal Scale (COWS) és una eina d'11 ítems administrada per personal sanitari per a la valoració objectiva de l'abstinència a opioides.",
+      "interpretation": "Puntuació 5–12: abstinència lleu; 13–24: abstinència moderada; 25–36: abstinència moderadament greu; >36: abstinència greu.",
+      "cautions": "Iniciar buprenorfina abans d'assolir una puntuació COWS d'almenys 12–13 pot provocar un quadre greu d'abstinència precipitada.",
+      "faq": [
+        {
+          "q": "Per què és decisiu el temps en la inducció de buprenorfina?",
+          "a": "La buprenorfina és un agonista parcial amb gran afinitat d'unió receptor. Si s'administra massa aviat, desplaça els opioides complets i desencadena abstinència aguda."
+        }
+      ]
+    }
+  },
+  "sadPersons": {
+    "title": "Escala SAD PERSONS Risc de Suïcidi",
+    "subtitle": "Puntuació de triatge clínic per a l'estimació de risc de suïcidi i presa de decisions d'urgència.",
+    "fields": {
+      "sex": "Sexe (Home)",
+      "age": "Edat (<19 o >45 anys)",
+      "depression": "Depressió o desesperança",
+      "previousAttempt": "Intent de suïcidi previ",
+      "ethanolUse": "Abús d'alcohol o substàncies",
+      "rationalThinkingLoss": "Pèrdua del pensament racional (psicosi, síndrome orgànic cerebral)",
+      "socialSupportsLacking": "Mancança de suport social",
+      "organizedPlan": "Pla organitzat o intenció letal",
+      "noSpouse": "Sense parella (solter/a, divorciat/da, violent/a)",
+      "sickness": "Malaltia física crònica"
+    },
+    "options": {
+      "0": "0 — No",
+      "1": "1 — Sí (+1 punt)"
+    },
+    "result_label": "Puntuació SAD PERSONS",
+    "risk_alert": "Alerta Urgent de Seguretat: Puntuació d'alt risc de suïcidi. Es requereix avaluació psiquiàtrica immediata i mesures de supervisió 1 a 1.",
+    "patient": {
+      "intro": "L'escala SAD PERSONS ajuda els professionals sanitaris a valorar els factors de risc de suïcidi en triatge d'urgències.",
+      "ask_doctor": "Recursos d'ajuda immediata:",
+      "questions": [
+        "Si tu o algú que coneixes està en crisi, truca al 024 o al 112 (Espanya/UE) immediatament.",
+        "De quin pla de seguretat i recursos de suport disposo ara mateix?"
+      ]
+    },
+    "content": {
+      "overview": "L'escala SAD PERSONS és un instrument clínic mnemotècnic de 10 ítems desenvolupat per Patterson et al. (1983) per avaluar el risc autolític.",
+      "interpretation": "Puntuació 0–2: risc baix (seguiment ambulatori); 3–4: risc moderat (seguiment ambulatori estret); 5–6: risc alt (considerar ingrés); 7–10: risc molt alt (ingrés psiquiàtric urgent).",
+      "cautions": "SAD PERSONS és una guia de cribratge. El judici clínic i la valoració aguda de l'estat mental han de prevaler sempre sobre els punts de tall numèrics.",
+      "faq": [
+        {
+          "q": "Què significa l'acrònim SAD PERSONS?",
+          "a": "S - Sex (Sexe), A - Age (Edat), D - Depression, P - Previous attempt, E - Ethanol, R - Rational thinking loss, S - Social supports lacking, O - Organized plan, N - No spouse, S - Sickness."
+        }
+      ]
+    }
   }
 }
+

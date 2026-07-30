@@ -3017,5 +3017,369 @@
         }
       ]
     }
+  },
+  "phq9": {
+    "title": "Escala PHQ-9 de Depresión",
+    "subtitle": "Cuestionario de Salud del Paciente-9 para cribado y valoración de severidad de depresión mayor.",
+    "fields": {
+      "q1": "1. Poco interés o placer en hacer las cosas",
+      "q2": "2. Sentirse desanimado/a, deprimido/a o sin esperanzas",
+      "q3": "3. Problemas para dormirse o mantener el sueño, o dormir demasiado",
+      "q4": "4. Sentirse cansado/a o con poca energía",
+      "q5": "5. Poco apetito o comer en exceso",
+      "q6": "6. Sentirse mal consigo mismo/a — o que es un fracaso o que ha decepcionado a su familia",
+      "q7": "7. Dificultad para concentrarse en cosas tales como leer el periódico o ver la televisión",
+      "q8": "8. ¿Movers o hablar tan despacio que los demás lo hayan notado? O lo contrario — estar tan inquieto/a que le cuesta estarse quieto/a",
+      "q9": "9. Pensamientos de que estaría mejor muerto/a, o de hacerse daño de alguna manera"
+    },
+    "options": {
+      "0": "0 — Nunca",
+      "1": "1 — Varios días",
+      "2": "2 — Más de la mitad de los días",
+      "3": "3 — Casi todos los días"
+    },
+    "result_label": "Puntuación Total PHQ-9",
+    "suicide_alert": "Alerta Crítica: Respuesta positiva en el Ítem 9 (ideación suicida / autolesión). Se requiere evaluación clínica de seguridad y valoración de riesgo inmediata.",
+    "patient": {
+      "intro": "El cuestionario PHQ-9 permite medir la presencia y gravedad de los síntomas depresivos durante las últimas 2 semanas.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿Qué significa mi puntuación PHQ-9 para mi plan de tratamiento?",
+        "¿Se recomienda psicoterapia, asesoramiento o medicación en mi caso?",
+        "¿Qué hábitos o servicios de apoyo pueden ayudarme a mejorar mi estado de ánimo?"
+      ]
+    },
+    "content": {
+      "overview": "El PHQ-9 (Patient Health Questionnaire-9) es una herramienta validada de 9 ítems para el cribado, diagnóstico y seguimiento de la gravedad de la depresión mayor.",
+      "interpretation": "Puntuación 0–4: Depresión mínima o ausente; 5–9: Depresión leve; 10–14: Depresión moderada; 15–19: Depresión moderadamente grave; 20–27: Depresión grave.",
+      "cautions": "Una puntuación elevada no constituye por sí sola un diagnóstico; se deben descartar causas médicas (p. ej. hipotiroidismo). Cualquier puntuación > 0 en el ítem 9 exige valoración urgente del riesgo de suicidio.",
+      "faq": [
+        {
+          "q": "¿Con qué frecuencia se puede administrar el PHQ-9?",
+          "a": "El PHQ-9 se puede repetir cada 2–4 semanas para monitorizar la respuesta al tratamiento y la remisión sintomática."
+        }
+      ]
+    }
+  },
+  "gad7": {
+    "title": "Escala GAD-7 de Ansiedad",
+    "subtitle": "Escala de 7 ítems para cribado y medición de gravedad del trastorno de ansiedad generalizada.",
+    "fields": {
+      "q1": "1. Sentirse nervioso/a, ansioso/a o con los nervios de punta",
+      "q2": "2. No poder parar o controlar las preocupaciones",
+      "q3": "3. Preocuparse demasiado por diferentes cosas",
+      "q4": "4. Dificultad para relajarse",
+      "q5": "5. Estar tan inquieto/a que resulta difícil estarse quieto/a",
+      "q6": "6. Irritarse o enfadarse con facilidad",
+      "q7": "7. Sentir miedo como si algo terrible pudiera pasar"
+    },
+    "options": {
+      "0": "0 — Nunca",
+      "1": "1 — Varios días",
+      "2": "2 — Más de la mitad de los días",
+      "3": "3 — Casi todos los días"
+    },
+    "result_label": "Puntuación Total GAD-7",
+    "patient": {
+      "intro": "El GAD-7 es un cuestionario de autoevaluación utilizado para evaluar sentimientos de ansiedad y preocupación durante las últimas 2 semanas.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿Qué pasos puedo dar para reducir mis síntomas de ansiedad?",
+        "¿Sería beneficiosa la terapia cognitivo-conductual (TCC) o el tratamiento farmacológico?",
+        "¿Qué técnicas de relajación o recursos de apoyo existen?"
+      ]
+    },
+    "content": {
+      "overview": "El GAD-7 (Generalized Anxiety Disorder 7-item scale) es un cuestionario autoadministrado de elevada sensibilidad para cuantificar la gravedad de la ansiedad en entornos ambulatorios.",
+      "interpretation": "Puntuación 0–4: Ansiedad mínima; 5–9: Ansiedad leve; 10–14: Ansiedad moderada; 15–21: Ansiedad grave.",
+      "cautions": "Puntuaciones ≥10 sugieren probable Trastorno de Ansiedad Generalizada y justifican una valoración clínica detallada para descarta agorafobia, angustia o TEPT.",
+      "faq": [
+        {
+          "q": "¿Es útil el GAD-7 para el trastorno de pánico?",
+          "a": "Sí, el GAD-7 presenta buena sensibilidad y especificidad para el cribado de trastorno de pánico, fobia social y TEPT además del TAG."
+        }
+      ]
+    }
+  },
+  "ciwaAr": {
+    "title": "Escala CIWA-Ar Síndrome de Abstinencia Alcohólica",
+    "subtitle": "Clinical Institute Withdrawal Assessment for Alcohol, Revised (10 ítems, máx 67).",
+    "fields": {
+      "nausea": "Náuseas y vómitos",
+      "tremor": "Temblor (brazos extendidos, dedos abiertos)",
+      "sweats": "Sudoración paroxística",
+      "anxiety": "Ansiedad",
+      "agitation": "Agitación",
+      "tactile": "Alteraciones táctiles (picor, entumecimiento, ardor)",
+      "auditory": "Alteraciones auditivas (hiperacusia, sonidos molestos)",
+      "visual": "Alteraciones visuales (fotofobia, alucinaciones)",
+      "headache": "Cefalea o sensación de plenitud en la cabeza",
+      "orientation": "Orientación y nivel de conciencia"
+    },
+    "nausea_options": {
+      "0": "0 — Ninguna",
+      "1": "1 — Náuseas leves, sin vómitos",
+      "2": "2 — Náuseas leves",
+      "3": "3 — Náuseas moderadas",
+      "4": "4 — Náuseas intermitentes con arcadas",
+      "5": "5 — Náuseas con arcadas",
+      "6": "6 — Náuseas severas con arcadas",
+      "7": "7 — Náuseas constantes, vómitos frecuentes"
+    },
+    "tremor_options": {
+      "0": "0 — Sin temblor",
+      "1": "1 — No visible, perceptible en yemas de los dedos",
+      "2": "2 — Temblor ligero visible",
+      "3": "3 — Temblor leve visible",
+      "4": "4 — Moderado con brazos extendidos",
+      "5": "5 — Severo con brazos extendidos",
+      "6": "6 — Muy severo",
+      "7": "7 — Severo incluso sin extender los brazos"
+    },
+    "sweats_options": {
+      "0": "0 — Sin sudor visible",
+      "1": "1 — Apenas perceptible, palmas húmedas",
+      "2": "2 — Ligera humedad",
+      "3": "3 — Palmas y frente húmedas",
+      "4": "4 — Gotas de sudor visibles en la frente",
+      "5": "5 — Sudoración profusa",
+      "6": "6 — Sudoración copiosa",
+      "7": "7 — Sudoración copiosa que empapa las sábanas"
+    },
+    "anxiety_options": {
+      "0": "0 — Sin ansiedad, tranquilo",
+      "1": "1 — Levemente ansioso",
+      "2": "2 — Ligeramente ansioso",
+      "3": "3 — Moderadamente ansioso",
+      "4": "4 — Moderadamente ansioso o a la defensiva",
+      "5": "5 — Severamente ansioso",
+      "6": "6 — Muy severamente ansioso",
+      "7": "7 — Estado de pánico agudo"
+    },
+    "agitation_options": {
+      "0": "0 — Actividad normal",
+      "1": "1 — Algo más activo de lo normal",
+      "2": "2 — Ligeramente inquieto",
+      "3": "3 — Moderadamente inquieto",
+      "4": "4 — Inquieto y desasosegado",
+      "5": "5 — Se pasea de un lado a otro",
+      "6": "6 — En movimiento constante",
+      "7": "7 — Se pasea continuamente, se agita en la cama"
+    },
+    "tactile_options": {
+      "0": "0 — Ninguna",
+      "1": "1 — Picor o hormigueo muy leve",
+      "2": "2 — Picor, ardor o entumecimiento leve",
+      "3": "3 — Picor o entumecimiento moderado",
+      "4": "4 — Alucinaciones táctiles moderadas",
+      "5": "5 — Alucinaciones táctiles severas",
+      "6": "6 — Alucinaciones táctiles extremadamente severas",
+      "7": "7 — Alucinaciones táctiles continuas"
+    },
+    "auditory_options": {
+      "0": "0 — Ausente",
+      "1": "1 — Ruidos molestos o hiperacusia muy leve",
+      "2": "2 — Sensibilidad acústica leve",
+      "3": "3 — Sensibilidad acústica moderada",
+      "4": "4 — Alucinaciones auditivas moderadas",
+      "5": "5 — Alucinaciones auditivas severas",
+      "6": "6 — Alucinaciones auditivas extremadamente severas",
+      "7": "7 — Alucinaciones auditivas continuas"
+    },
+    "visual_options": {
+      "0": "0 — Ausente",
+      "1": "1 — Fotofobia muy leve",
+      "2": "2 — Fotofobia leve",
+      "3": "3 — Fotofobia moderada",
+      "4": "4 — Alucinaciones visuales moderadas",
+      "5": "5 — Alucinaciones visuales severas",
+      "6": "6 — Alucinaciones visuales extremadamente severas",
+      "7": "7 — Alucinaciones visuales continuas"
+    },
+    "headache_options": {
+      "0": "0 — Ausente",
+      "1": "1 — Muy leve",
+      "2": "2 — Leve",
+      "3": "3 — Moderada",
+      "4": "4 — Moderadamente severa",
+      "5": "5 — Severa",
+      "6": "6 — Muy severa",
+      "7": "7 — Extremadamente severa"
+    },
+    "orientation_options": {
+      "0": "0 — Orientado, realiza sumas consecutivas",
+      "1": "1 — No realiza sumas o duda de la fecha",
+      "2": "2 — Desorientado en fecha por no más de 2 días",
+      "3": "3 — Desorientado en fecha por más de 2 días",
+      "4": "4 — Desorientado en espacio y/o persona"
+    },
+    "result_label": "Puntuación Total CIWA-Ar",
+    "patient": {
+      "intro": "El protocolo CIWA-Ar mide los síntomas físicos y sensoriales asociados a la abstinencia de alcohol para guiar el tratamiento médico.",
+      "ask_doctor": "Preguntas para el equipo médico:",
+      "questions": [
+        "¿Qué monitorización médica necesitaré durante mi periodo de abstinencia?",
+        "¿Se recomiendan fármacos como benzodiacepinas para prevenir convulsiones?",
+        "¿Qué programas de apoyo médico o deshabituación están disponibles?"
+      ]
+    },
+    "content": {
+      "overview": "La Clinical Institute Withdrawal Assessment for Alcohol, Revised (CIWA-Ar) es una escala de 10 ítems para evaluar la gravedad de la abstinencia alcohólica.",
+      "interpretation": "Puntuaciones <10: abstinencia leve; 10–15: abstinencia moderada (se recomiendan benzodiacepinas pautadas por síntomas); >15: abstinencia grave (alto riesgo de convulsiones y delirium tremens).",
+      "cautions": "La escala CIWA-Ar requiere la colaboración del paciente. Si el paciente no se comunica o está profundamente obnubilado, se debe recurrir a signos objetivos y monitorización estrecha.",
+      "faq": [
+        {
+          "q": "¿Con qué frecuencia debe reevaluarse el CIWA-Ar?",
+          "a": "Las evaluaciones se suelen realizar cada 1 a 4 horas según la gravedad sintomática y el protocolo del centro."
+        }
+      ]
+    }
+  },
+  "cows": {
+    "title": "Escala COWS de Abstinencia a Opiáceos",
+    "subtitle": "Clinical Opiate Withdrawal Scale para cuantificación objetiva de abstinencia a opióides (11 ítems, máx 48).",
+    "fields": {
+      "hr": "Frecuencia cardíaca en reposo (ppm)",
+      "sweat": "Sudoración en la última 1/2 hora",
+      "restless": "Inquietud observada durante la evaluación",
+      "pupils": "Tamaño pupilar",
+      "aches": "Dolor óseo o articular",
+      "rhinorrhea": "Rinorrea o lagrimeo",
+      "gi": "Molestias gastrointestinales (náuseas, vómitos, diarrea)",
+      "tremor": "Temblor (observación de manos)",
+      "yawn": "Bostezos (observación durante la evaluación)",
+      "anxiety": "Ansiedad o irritabilidad",
+      "gooseflesh": "Piel de gallina (piloerección)"
+    },
+    "hr_options": {
+      "0": "0 — Pulso ≤ 80 ppm",
+      "1": "1 — Pulso 81–100 ppm",
+      "2": "2 — Pulso 101–120 ppm",
+      "4": "4 — Pulso > 120 ppm"
+    },
+    "sweat_options": {
+      "0": "0 — Sin escalofríos ni sofocos",
+      "1": "1 — Refiere escalofríos o sofocos",
+      "2": "2 — Rubor o humedad en la cara",
+      "3": "3 — Gotas de sudor en frente o cara",
+      "4": "4 — Sudor chorreando por la cara"
+    },
+    "restless_options": {
+      "0": "0 — Capaz de permanecer sentado",
+      "1": "1 — Refiere dificultad para permanecer quieto",
+      "3": "3 — Movimiento constante de piernas o brazos",
+      "5": "5 — Incapaz de estar sentado más de unos segundos"
+    },
+    "pupils_options": {
+      "0": "0 — Pupilas normales o mióticas",
+      "1": "1 — Pupilas posiblemente mayores de lo normal a la luz",
+      "2": "2 — Pupilas moderadamente dilatadas",
+      "5": "5 — Pupilas extremadamente dilatadas (midriasis)"
+    },
+    "aches_options": {
+      "0": "0 — Ausente",
+      "1": "1 — Dolores musculares/articulares leves",
+      "2": "2 — Refiere dolores musculares/articulares severos",
+      "4": "4 — Se frota las articulaciones, incapaz de estar quieto por dolor"
+    },
+    "rhinorrhea_options": {
+      "0": "0 — Ausente",
+      "1": "1 — Congestión nasal u ojos húmedos",
+      "2": "2 — Secreción nasal o lagrimeo",
+      "4": "4 — Goteo nasal constante o lagrimeo continuo"
+    },
+    "gi_options": {
+      "0": "0 — Sin síntomas digestivos",
+      "1": "1 — Cólicos abdominales",
+      "2": "2 — Náuseas o heces blandas",
+      "3": "3 — Vómitos o diarrea",
+      "4": "4 — Múltiples episodios de vómitos o diarrea"
+    },
+    "tremor_options": {
+      "0": "0 — Sin temblor",
+      "1": "1 — Temblor palpable pero no visible",
+      "2": "2 — Temblor ligero visible",
+      "4": "4 — Temblor grosero o sacudidas musculares"
+    },
+    "yawn_options": {
+      "0": "0 — Sin bostezos",
+      "1": "1 — 1 o 2 bostezos durante la evaluación",
+      "2": "2 — 3 o más bostezos durante la evaluación",
+      "4": "4 — Bostezos múltiples por minuto"
+    },
+    "anxiety_options": {
+      "0": "0 — Ninguna",
+      "1": "1 — Leve ansiedad e irritabilidad",
+      "2": "2 — Paciente abiertamente ansioso o irritable",
+      "4": "4 — Ansiedad severa, dificultad para colaborar en la valoración"
+    },
+    "gooseflesh_options": {
+      "0": "0 — Piel lisa",
+      "3": "3 — Piloerección al tacto o vello erizado",
+      "5": "5 — Piel de gallina prominente"
+    },
+    "result_label": "Puntuación Total COWS",
+    "patient": {
+      "intro": "La escala COWS cuantifica la intensidad de la abstinencia a opiáceos para iniciar de forma segura tratamientos como la buprenorfina.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿Es mi puntuación COWS suficiente para iniciar buprenorfina de forma segura sin desencadenar abstinencia precipitada?",
+        "¿Qué medicamentos pueden aliviar mis síntomas físicos ahora mismo?",
+        "¿De qué servicios de apoyo en adicciones puedo disponer?"
+      ]
+    },
+    "content": {
+      "overview": "La Clinical Opiate Withdrawal Scale (COWS) es una herramienta de 11 ítems administrada por personal sanitario para la valoración objetiva de la abstinencia a opióides.",
+      "interpretation": "Puntuación 5–12: abstinencia leve; 13–24: abstinencia moderada; 25–36: abstinencia moderadamente grave; >36: abstinencia grave.",
+      "cautions": "Iniciar buprenorfina antes de alcanzar una puntuación COWS de al menos 12–13 puede provocar un cuadro grave de abstinencia precipitada.",
+      "faq": [
+        {
+          "q": "¿Por qué es decisivo el tiempo en la inducción de buprenorfina?",
+          "a": "La buprenorfina es un agonista parcial con gran afinidad de unión receptor. Si se administra demasiado pronto, desplaza a los opióides completos y desencadena abstinencia aguda."
+        }
+      ]
+    }
+  },
+  "sadPersons": {
+    "title": "Escala SAD PERSONS Riesgo de Suicidio",
+    "subtitle": "Puntuación de triaje clínico para la estimación de riesgo de suicidio y toma de decisiones de urgencia.",
+    "fields": {
+      "sex": "Sexo (Varón)",
+      "age": "Edad (<19 o >45 años)",
+      "depression": "Depresión o desesperanza",
+      "previousAttempt": "Intento de suicidio previo",
+      "ethanolUse": "Abuso de alcohol o sustancias",
+      "rationalThinkingLoss": "Pérdida del pensamiento racional (psicosis, síndrome orgánico cerebral)",
+      "socialSupportsLacking": "Carencia de apoyo social",
+      "organizedPlan": "Plan organizado o intención letal",
+      "noSpouse": "Sin pareja (soltero/a, divorciado/a, viudo/a)",
+      "sickness": "Enfermedad física crónica"
+    },
+    "options": {
+      "0": "0 — No",
+      "1": "1 — Sí (+1 punto)"
+    },
+    "result_label": "Puntuación SAD PERSONS",
+    "risk_alert": "Alerta Urgente de Seguridad: Puntuación de alto riesgo de suicidio. Se requiere evaluación psiquiátrica inmediata y medidas de supervisión 1 a 1.",
+    "patient": {
+      "intro": "La escala SAD PERSONS ayuda a los profesionales sanitarios a valorar los factores de riesgo de suicidio en triaje de urgencias.",
+      "ask_doctor": "Recursos de ayuda inmediata:",
+      "questions": [
+        "Si tú o alguien que conoces está en crisis, llama al 024 o al 112 (España/EU) inmediatamente.",
+        "¿De qué plan de seguridad y recursos de apoyo dispongo ahora mismo?"
+      ]
+    },
+    "content": {
+      "overview": "La escala SAD PERSONS es un instrumento clínico mnemotécnico de 10 ítems desarrollado por Patterson et al. (1983) para evaluar el riesgo autolítico.",
+      "interpretation": "Puntuación 0–2: riesgo bajo (seguimiento ambulatorio); 3–4: riesgo moderado (seguimiento ambulatorio estrecho); 5–6: riesgo alto (considerar ingreso); 7–10: riesgo muy alto (ingreso psiquiátrico urgente).",
+      "cautions": "SAD PERSONS es una guía de cribado. El juicio clínico y la valoración aguda del estado mental deben prevalecer siempre sobre los puntos de corte numéricos.",
+      "faq": [
+        {
+          "q": "¿Qué significa el acrónimo SAD PERSONS?",
+          "a": "S - Sex (Sexo), A - Age (Edad), D - Depression, P - Previous attempt, E - Ethanol, R - Rational thinking loss, S - Social supports lacking, O - Organized plan, N - No spouse, S - Sickness."
+        }
+      ]
+    }
   }
 }
+
