@@ -2875,5 +2875,147 @@
       "cautions": "Interpreti el resultat dins del context clínic del pacient. Requereix dejú estricte (8–12 hores). No aplicable durant malalties agudes ni amb insulina exògena.",
       "faq": []
     }
+  },
+  "apgar": {
+    "title": "Test d'APGAR",
+    "subtitle": "Avaluació fisiològica del nounat als 1 i 5 minuts després del naixement.",
+    "fields": {
+      "appearance": "Color de la pell (Aparença)",
+      "pulse": "Freqüència cardíaca (Puls)",
+      "grimace": "Irritabilitat reflexa (Gest)",
+      "activity": "Tó muscular (Activitat)",
+      "respiration": "Esforç respiratori (Respiració)"
+    },
+    "options": {
+      "appearance_0": "0 = Blau / pàl·lid generalitzat",
+      "appearance_1": "1 = Cos rosat, extremitats blaves",
+      "appearance_2": "2 = Completament rosat",
+      "pulse_0": "0 = Absent",
+      "pulse_1": "1 = < 100 bpm",
+      "pulse_2": "2 = ≥ 100 bpm",
+      "grimace_0": "0 = Sense resposta a l'estimulació",
+      "grimace_1": "1 = Mueca / plor feble",
+      "grimace_2": "2 = Plor fort, tos o esternut",
+      "activity_0": "0 = Flàccid / sense tó",
+      "activity_1": "1 = Certa flexió en braços/cames",
+      "activity_2": "2 = Moviments actius",
+      "respiration_0": "0 = Absent",
+      "respiration_1": "1 = Lenta, irregular, plor feble",
+      "respiration_2": "2 = Bona, plor fort"
+    },
+    "result_label": "Puntuació APGAR",
+    "patient": {
+      "intro": "El test d'APGAR és una avaluació ràpida realitzada per pediatres i llevadores al minut i als 5 minuts del naixement per comprovar l'estat general del nadó.",
+      "ask_doctor": "Preguntes per al teu pediatre o llevadora:",
+      "questions": [
+        "Quines van ser les puntuacions d'APGAR al minut i als 5 minuts del meu nadó?",
+        "Va necessitar el meu nadó suport respiratori o oxigen al néixer?",
+        "Es requereix algun seguiment addicional durant l'estada a l'hospital?"
+      ]
+    },
+    "content": {
+      "overview": "El test d'APGAR va ser ideat per la Dra. Virginia Apgar el 1953 com una avaluació ràpida i estandarditzada de la condició del nounat immediatament després del naixement. Avalua 5 paràmetres (Aparença, Puls, Gest, Activitat, Respiració) puntuats de 0 a 2 cadascun (rang 0–10).",
+      "interpretation": "Scores de 7 a 10 es consideren normals. De 4 a 6 indica depressió moderada que pot requerir estimulació tàctil, aspiració o oxigen. De 0 a 3 indica depressió greu i exigeix maniobres immediates de reanimació neonatal.",
+      "cautions": "El test d'APGAR documenta l'estat en néixer i la resposta a la reanimació; NO s'ha d'utilitzar per dictar les maniobres inicials de RCP ni per predir seqüeles neurològiques a llarg termini.",
+      "faq": [
+        {
+          "q": "Quan es calcula el test d'APGAR?",
+          "a": "Es fa de manera rutinària al minut i als 5 minuts del naixement. Si la puntuació als 5 minuts és inferior a 7, es pot repetir cada 5 minuts fins als 20 minuts."
+        },
+        {
+          "q": "Un APGAR baix vol dir que el meu nadó tindrà problemes de salut en el futur?",
+          "a": "No necessàriament. La majoria d'infants amb un APGAR baix al primer minut responen ràpidament a l'assistència mèdica i obtenen puntuacions normals als 5 o 10 minuts."
+        }
+      ]
+    }
+  },
+  "bsaMosteller": {
+    "title": "Superfície Corporal (ASC - Mosteller)",
+    "subtitle": "Càlcul de l'àrea de superfície corporal mitjançant la fórmula simplificada de Mosteller.",
+    "fields": {
+      "height": "Alçada (cm)",
+      "weight": "Pes (kg)"
+    },
+    "result_label": "Àrea de Superfície Corporal",
+    "patient": {
+      "intro": "L'Àrea de Superfície Corporal (ASC) mesura la superfície externa del cos en metres quadrats (m²). L'equip mèdic la utilitza per calcular dosis de medicaments amb precisió.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "Per què s'utilitza la superfície corporal per calcular la dosi del meu tractament?",
+        "S'ha d'ajustar la meva dosi si el meu pes canvia?",
+        "Amb quina freqüència es reavaluarà la meva ASC durant el tractament?"
+      ]
+    },
+    "content": {
+      "overview": "La fórmula de Mosteller (ASC = √(alçada × pes / 3600)) calcula la superfície corporal en m² i és amplament utilitzada en la pràctica clínica pediàtrica i d'adults per la seva simplicitat i precisió.",
+      "interpretation": "L'ASC mitjana en adults és aproximadament d'1.7 a 1.9 m². S'empra per indexar paràmetres fisiològics (despesa cardíaca, filtrat glomerular) i per ajustar dosis de fàrmacs de rang terapèutic estret com la quimioteràpia.",
+      "cautions": "En casos d'obesitat extrema o en oncologia pediàtrica, les guies clíniques recomanen límits de dosi basats en pes ideal o fórmules modificades.",
+      "faq": [
+        {
+          "q": "Per què s'utilitza l'ASC en lloc del pes corporal total?",
+          "a": "L'ASC es correlaciona millor amb el metabolisme basal, la despesa cardíaca i la distribució de líquids corporals que el pes corporal sol."
+        }
+      ]
+    }
+  },
+  "cockcroftGault": {
+    "title": "Aclariment de Creatinina (Cockcroft-Gault)",
+    "subtitle": "Estimació de l'aclariment de creatinina (CrCl) per a l'ajust de dosis de fàrmacs.",
+    "fields": {
+      "age": "Edat (anys)",
+      "sex": "Sexe",
+      "weight": "Pes (kg)",
+      "creatinine": "Creatinina sèrica (mg/dL)"
+    },
+    "result_label": "Aclariment de Creatinina (CrCl)",
+    "patient": {
+      "intro": "Aquesta calculadora estima l'eficiència dels rius per filtrar la creatinina de la sang. Els farmacèutics i metges la utilitzen per ajustar les dosis dels medicaments.",
+      "ask_doctor": "Preguntes per al teu metge o farmacèutic:",
+      "questions": [
+        "Cal ajustar la dosi de cap dels meus medicaments segons la meva funció renal?",
+        "Quan hem de repetir l'anàlisi de creatinina en sang?",
+        "Hi ha fàrmacs o suplements que hagi d'evitar?"
+      ]
+    },
+    "content": {
+      "overview": "L'equació de Cockcroft-Gault (1976) estima l'aclariment de creatinina (CrCl en mL/min) a partir de la creatinina sèrica, edat, pes corporal i sexe. Gran part de la literatura farmacològica i fitxes tècniques de medicaments basen els seus ajustos de dosi renal en aquesta fórmula.",
+      "interpretation": "CrCl ≥90 mL/min és normal; 60–89 mL/min lleugerament disminuït; 30–59 mL/min moderadament disminuït (requereix ajust de dosi); 15–29 mL/min severament disminuït; i <15 mL/min indica fallada renal.",
+      "cautions": "En pacient amb fracàs renal agut, desnutrició severa o obesitat mòrbida, aquesta fórmula pot sobreestimar o infravalorar la funció renal real.",
+      "faq": [
+        {
+          "q": "En què es diferencia Cockcroft-Gault de CKD-EPI 2021?",
+          "a": "Cockcroft-Gault calcula l'aclariment en mL/min incorporant el pes del pacient i és l'estàndard de dosificació farmacològica, mentre que CKD-EPI 2021 estima el filtrat glomerular estandarditzat per 1.73 m² per al diagnòstic de malaltia renal crònica."
+        }
+      ]
+    }
+  },
+  "bmi": {
+    "title": "IMC (Índex de Massa Corporal)",
+    "subtitle": "Càlcul de l'índex de massa corporal i classificació de risc segons l'OMS.",
+    "fields": {
+      "height": "Alçada (cm)",
+      "weight": "Pes (kg)"
+    },
+    "result_label": "Índex de Massa Corporal (IMC)",
+    "patient": {
+      "intro": "L'Índex de Massa Corporal (IMC) avalua la relació entre el teu pes i la teva alçada per ajudar-te a conèixer la teva categoria de pes i risc cardiometabòlic.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "Quin és el meu rang de pes saludable recomanat?",
+        "El meu IMC actual augmenta el meu risc d'hipertensió o diabetis?",
+        "Quines recomanacions de dieta o activitat física em dona?"
+      ]
+    },
+    "content": {
+      "overview": "L'IMC es calcula dividint el pes en quilograms per l'alçada en metres al quadrat (kg/m²). És l'eina de cribratge poblacional estàndard recomanada per l'Organització Mundial de la Salut (OMS).",
+      "interpretation": "IMC <18.5: baix pes; 18.5–24.9: pes normal; 25.0–29.9: sobrepes; 30.0–34.9: obesitat classe I; 35.0–39.9: obesitat classe II; ≥40.0: obesitat classe III (greu).",
+      "cautions": "L'IMC no distingeix entre massa grassa i muscular, per la qual cosa pot classificar incorrectament esportistes molt musculats o persones grans amb sarcopènia.",
+      "faq": [
+        {
+          "q": "És vàlid l'IMC en infants i adolescents?",
+          "a": "En menors de 18 anys, l'IMC s'ha d'interpretar mitjançant taules de percentils per edat i sexe (gràfiques de creixement) i no amb els tallats fixos d'adults."
+        }
+      ]
+    }
   }
 }

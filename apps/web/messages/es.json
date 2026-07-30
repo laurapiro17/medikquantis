@@ -2875,5 +2875,147 @@
       "cautions": "Interprete el resultado dentro del contexto clínico del paciente. Requiere ayuno estricto (8–12 horas). No aplicable durante enfermedades agudas ni con insulina exógena.",
       "faq": []
     }
+  },
+  "apgar": {
+    "title": "Test de APGAR",
+    "subtitle": "Evaluación fisiológica del recién nacido a los 1 y 5 minutos tras el nacimiento.",
+    "fields": {
+      "appearance": "Color de piel (Apariencia)",
+      "pulse": "Frecuencia cardíaca (Pulso)",
+      "grimace": "Irritabilidad refleja (Gesto)",
+      "activity": "Tono muscular (Actividad)",
+      "respiration": "Esfuerzo respiratorio (Respiración)"
+    },
+    "options": {
+      "appearance_0": "0 = Azul / pálido generalizado",
+      "appearance_1": "1 = Cuerpo rosado, extremidades azuladas",
+      "appearance_2": "2 = Completamente rosado",
+      "pulse_0": "0 = Ausente",
+      "pulse_1": "1 = < 100 lpm",
+      "pulse_2": "2 = ≥ 100 lpm",
+      "grimace_0": "0 = Sin respuesta a estimulación",
+      "grimace_1": "1 = Mueca / llanto débil",
+      "grimace_2": "2 = Llanto fuerte, tos o estornudo",
+      "activity_0": "0 = Flácido / sin tono",
+      "activity_1": "1 = Alguna flexión en brazos/piernas",
+      "activity_2": "2 = Movimientos activos",
+      "respiration_0": "0 = Ausente",
+      "respiration_1": "1 = Lenta, irregular, llanto débil",
+      "respiration_2": "2 = Buena, llanto fuerte"
+    },
+    "result_label": "Puntuación APGAR",
+    "patient": {
+      "intro": "El test de APGAR es una evaluación rápida realizada por pediatras y matronas al minuto y a los 5 minutos del nacimiento para comprobar el estado físico general del recién nacido.",
+      "ask_doctor": "Preguntas para tu pediatra o matrona:",
+      "questions": [
+        "¿Cuáles fueron los resultados de APGAR al minuto y a los 5 minutos?",
+        "¿Necesitó el bebé soporte respiratorio u oxígeno al nacer?",
+        "¿Se requiere algún seguimiento adicional durante la estancia hospitalaria?"
+      ]
+    },
+    "content": {
+      "overview": "El test de APGAR fue ideado por la Dra. Virginia Apgar en 1953 como una evaluación estandarizada y rápida de la adaptación neonatal al nacer. Evalúa 5 parámetros (Apariencia, Pulso, Gesto, Actividad, Respiración) puntuados de 0 a 2 cada uno (rango 0–10).",
+      "interpretation": "Una puntuación de 7 a 10 se considera normal. De 4 a 6 indica depresión moderada que puede requerir estimulación táctil, aspiración o soporte de oxígeno. De 0 a 3 refleja depresión grave y exige maniobras inmediatas de reanimación neonatal (NRP).",
+      "cautions": "El test de APGAR documenta el estado al nacer y la respuesta a la reanimación; NO debe demorar el inicio de las maniobras de RCP ni utilizarse para predecir secuelas neurológicas a largo plazo de forma aislada.",
+      "faq": [
+        {
+          "q": "¿Cuándo se realiza el test de APGAR?",
+          "a": "Se realiza de forma rutinaria al minuto y a los 5 minutos del parto. Si a los 5 minutos es inferior a 7, se repite cada 5 minutos hasta los 20 minutos."
+        },
+        {
+          "q": "¿Un APGAR bajo significa que mi bebé tendrá problemas futuros?",
+          "a": "No necesariamente. La mayoría de recién nacidos con un APGAR bajo al primer minuto responden rápidamente a las maniobras básicas y alcanzan valores normales a los 5 o 10 minutos."
+        }
+      ]
+    }
+  },
+  "bsaMosteller": {
+    "title": "Superficie Corporal (ASC - Mosteller)",
+    "subtitle": "Cálculo del área de superficie corporal mediante la fórmula simplificada de Mosteller.",
+    "fields": {
+      "height": "Altura (cm)",
+      "weight": "Peso (kg)"
+    },
+    "result_label": "Área de Superficie Corporal",
+    "patient": {
+      "intro": "El Área de Superficie Corporal (ASC) mide la superficie externa del cuerpo en metros cuadrados (m²). El equipo médico la utiliza para calcular dosis farmacológicas precisas.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿Por qué se utiliza la superficie corporal para calcular la dosis de mi tratamiento?",
+        "¿Debe ajustarse mi dosis si mi peso cambia?",
+        "¿Con qué frecuencia se recalculará mi ASC durante el tratamiento?"
+      ]
+    },
+    "content": {
+      "overview": "La fórmula de Mosteller (ASC = √(altura × peso / 3600)) calcula la superficie corporal en m² y es ampliamente utilizada en la práctica clínica pediátrica y de adultos por su simplicidad y precisión.",
+      "interpretation": "La ASC media en adultos es de 1.7 a 1.9 m². Se emplea para indexar parámetros fisiológicos (gasto cardíaco, filtrado glomerular) y para ajustar dosis de fármacos de estrecho margen terapéutico como la quimioterapia.",
+      "cautions": "En casos de obesidad extrema o en oncología pediátrica, las guías clínicas recomiendan límites de dosis basados en peso ideal o fórmulas modificadas.",
+      "faq": [
+        {
+          "q": "¿Por qué se prefiere la ASC al peso corporal total?",
+          "a": "La ASC se correlaciona mejor que el peso corporal con el metabolismo basal, el gasto cardíaco y la distribución de líquidos corporales."
+        }
+      ]
+    }
+  },
+  "cockcroftGault": {
+    "title": "Aclaramiento de Creatinina (Cockcroft-Gault)",
+    "subtitle": "Estimación del aclaramiento de creatinina (CrCl) para el ajuste de dosis de fármacos.",
+    "fields": {
+      "age": "Edad (años)",
+      "sex": "Sexo",
+      "weight": "Peso (kg)",
+      "creatinine": "Creatinina sérica (mg/dL)"
+    },
+    "result_label": "Aclaramiento de Creatinina (CrCl)",
+    "patient": {
+      "intro": "Esta calculadora estima la eficiencia de tus riñones para filtrar la creatinina de la sangre. Los farmacéuticos y médicos la utilizan para ajustar las dosis de medicamentos.",
+      "ask_doctor": "Preguntas para tu médico o farmacéutico:",
+      "questions": [
+        "¿Requiere alguno de mis medicamentos ajuste de dosis según mi función renal?",
+        "¿Cuándo debemos repetir el análisis de creatinina en sangre?",
+        "¿Hay fármacos o suplementos que deba evitar?"
+      ]
+    },
+    "content": {
+      "overview": "La ecuación de Cockcroft-Gault (1976) estima el aclaramiento de creatinina (CrCl en mL/min) a partir de la creatinina sérica, edad, peso corporal y sexo. Gran parte de la literatura farmacológica y fichas técnicas de medicamentos basan sus ajustes de dosis renal en esta fórmula.",
+      "interpretation": "CrCl ≥90 mL/min es normal; 60–89 mL/min levemente disminuido; 30–59 mL/min moderadamente disminuido (requiere ajuste de dosis); 15–29 mL/min severamente disminuido; y <15 mL/min indica fallo renal.",
+      "cautions": "En fracaso renal agudo, desnutrición severa u obesidad mórbida, esta fórmula puede sobreestimar o infravalorar la función renal real.",
+      "faq": [
+        {
+          "q": "¿En qué se diferencia Cockcroft-Gault de CKD-EPI 2021?",
+          "a": "Cockcroft-Gault calcula el aclaramiento en mL/min incorporando el peso del paciente y es el estándar de dosificación farmacológica, mientras que CKD-EPI 2021 estima el filtrado glomerular estandarizado por 1.73 m² para diagnóstico de enfermedad renal crónica."
+        }
+      ]
+    }
+  },
+  "bmi": {
+    "title": "IMC (Índice de Masa Corporal)",
+    "subtitle": "Cálculo del índice de masa corporal y clasificación de riesgo según la OMS.",
+    "fields": {
+      "height": "Altura (cm)",
+      "weight": "Peso (kg)"
+    },
+    "result_label": "Índice de Masa Corporal (IMC)",
+    "patient": {
+      "intro": "El Índice de Masa Corporal (IMC) evalúa la relación entre tu peso y tu altura para ayudarte a conocer tu categoría de peso y riesgo cardiometabólico.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿Cuál es mi rango de peso saludable recomendado?",
+        "¿Aumenta mi IMC actual mi riesgo de hipertensión o diabetes?",
+        "¿Qué plan de alimentación o actividad física me recomienda?"
+      ]
+    },
+    "content": {
+      "overview": "El IMC se calcula dividiendo el peso en kilogramos por la altura en metros al cuadrado (kg/m²). Es la herramienta cribado poblacional estándar recomendada por la Organización Mundial de la Salud (OMS).",
+      "interpretation": "IMC <18.5: bajo peso; 18.5–24.9: peso normal; 25.0–29.9: sobrepeso; 30.0–34.9: obesidad clase I; 35.0–39.9: obesidad clase II; ≥40.0: obesidad clase III (grave).",
+      "cautions": "El IMC no distingue entre masa grasa y muscular, por lo que puede clasificar incorrectamente a deportistas muy musculados o a personas mayores con sarcopenia.",
+      "faq": [
+        {
+          "q": "¿Es válido el IMC en niños y adolescentes?",
+          "a": "En menores de 18 años, el IMC debe interpretarse mediante tablas de percentiles por edad y sexo (gráficas de crecimiento) y no con los cortes fijos de adultos."
+        }
+      ]
+    }
   }
 }

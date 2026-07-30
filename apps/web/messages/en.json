@@ -2875,5 +2875,147 @@
       "cautions": "Results should be interpreted in the context of clinical history. Fasting must be strict (8–12 hours). Not applicable during acute illness or exogenous insulin therapy.",
       "faq": []
     }
+  },
+  "apgar": {
+    "title": "APGAR Score",
+    "subtitle": "Newborn physiological assessment at 1 and 5 minutes post-birth.",
+    "fields": {
+      "appearance": "Appearance (Skin Color)",
+      "pulse": "Pulse (Heart Rate)",
+      "grimace": "Grimace (Reflex Irritability)",
+      "activity": "Activity (Muscle Tone)",
+      "respiration": "Respiration (Breathing Effort)"
+    },
+    "options": {
+      "appearance_0": "0 = Blue, pale all over",
+      "appearance_1": "1 = Body pink, extremities blue",
+      "appearance_2": "2 = Completely pink",
+      "pulse_0": "0 = Absent",
+      "pulse_1": "1 = < 100 bpm",
+      "pulse_2": "2 = ≥ 100 bpm",
+      "grimace_0": "0 = No response to stimulation",
+      "grimace_1": "1 = Grimace / feeble cry",
+      "grimace_2": "2 = Cry, cough, or sneeze",
+      "activity_0": "0 = Flaccid / limp",
+      "activity_1": "1 = Some flexion of arms/legs",
+      "activity_2": "2 = Active motion",
+      "respiration_0": "0 = Absent",
+      "respiration_1": "1 = Slow, irregular, weak cry",
+      "respiration_2": "2 = Good, strong cry"
+    },
+    "result_label": "APGAR Score",
+    "patient": {
+      "intro": "The APGAR score is a quick assessment performed by doctors and midwives at 1 and 5 minutes after birth to check a newborn baby's heart rate, breathing, muscle tone, reflexes, and skin color.",
+      "ask_doctor": "Questions to ask your pediatrician or midwife:",
+      "questions": [
+        "What were my baby's 1-minute and 5-minute APGAR scores?",
+        "Did my baby require any breathing assistance or oxygen after birth?",
+        "Are there any follow-up checks needed during our hospital stay?"
+      ]
+    },
+    "content": {
+      "overview": "The APGAR score was devised by Dr. Virginia Apgar in 1953 as a rapid, standardized assessment of a newborn's condition immediately after birth. It evaluates five parameters (Appearance, Pulse, Grimace, Activity, Respiration), scored from 0 to 2 each, yielding a total score from 0 to 10.",
+      "interpretation": "Scores of 7 to 10 are considered normal and reassuring. Scores of 4 to 6 indicate moderate physiological depression, prompting tactile stimulation, airway clearing, or oxygen. Scores of 0 to 3 reflect severe depression and warrant immediate resuscitation per Neonatal Resuscitation Program (NRP) protocols.",
+      "cautions": "The APGAR score is intended to report post-birth status and response to resuscitation; it should NOT be used to dictate initial resuscitation measures or predict individual long-term neurological outcome.",
+      "faq": [
+        {
+          "q": "When is the APGAR score calculated?",
+          "a": "It is routinely performed at 1 minute and 5 minutes after birth. If the 5-minute score is under 7, additional assessments may be performed every 5 minutes up to 20 minutes."
+        },
+        {
+          "q": "Does a low APGAR score mean my baby will have long-term health issues?",
+          "a": "Not necessarily. Most infants with low 1-minute APGAR scores respond rapidly to medical assistance and score normally by 5 or 10 minutes."
+        }
+      ]
+    }
+  },
+  "bsaMosteller": {
+    "title": "BSA (Body Surface Area - Mosteller)",
+    "subtitle": "Body surface area calculation using the simplified Mosteller formula.",
+    "fields": {
+      "height": "Height (cm)",
+      "weight": "Weight (kg)"
+    },
+    "result_label": "Body Surface Area",
+    "patient": {
+      "intro": "Body Surface Area (BSA) measures the total outer surface area of the human body in square meters (m²). It is often used by doctors to calculate precise medication dosages.",
+      "ask_doctor": "Questions to ask your doctor:",
+      "questions": [
+        "Why is my body surface area used to calculate my medication dose?",
+        "Should my dosage change if my weight fluctuates?",
+        "How often will my BSA be recalculated during treatment?"
+      ]
+    },
+    "content": {
+      "overview": "Body Surface Area (BSA) calculated via the Mosteller formula (BSA = √(height × weight / 3600)) is widely recognized for its simplicity and clinical accuracy across both adult and pediatric populations.",
+      "interpretation": "Average adult BSA is approximately 1.7 to 1.9 m². BSA is standardly used for indexing physiological parameters (such as cardiac output and eGFR) and dosing narrow therapeutic index medications like chemotherapy.",
+      "cautions": "In extreme obesity or pediatric oncology, clinical guidelines may recommend ideal body weight capping or specific modified dosing rules.",
+      "faq": [
+        {
+          "q": "Why use BSA instead of total body weight?",
+          "a": "BSA correlates better with metabolic rate, cardiac output, and physiological fluid distribution than body weight alone."
+        }
+      ]
+    }
+  },
+  "cockcroftGault": {
+    "title": "Cockcroft-Gault Creatinine Clearance",
+    "subtitle": "Estimation of creatinine clearance (CrCl) for drug dose adjustment.",
+    "fields": {
+      "age": "Age (years)",
+      "sex": "Sex",
+      "weight": "Weight (kg)",
+      "creatinine": "Serum creatinine (mg/dL)"
+    },
+    "result_label": "Creatinine Clearance (CrCl)",
+    "patient": {
+      "intro": "This calculator estimates how efficiently your kidneys clear creatinine from your bloodstream. Pharmacists and doctors use it to adjust medication doses.",
+      "ask_doctor": "Questions to ask your doctor or pharmacist:",
+      "questions": [
+        "Does any of my current medication require dose adjustment based on my kidney function?",
+        "Should we recheck my blood creatinine level soon?",
+        "Are there any medications or over-the-counter drugs I should avoid?"
+      ]
+    },
+    "content": {
+      "overview": "The Cockcroft-Gault equation (1976) estimates creatinine clearance (CrCl in mL/min) from serum creatinine, age, body weight, and sex. Historically, most FDA drug labeling and renal dosage recommendations were established using this formula.",
+      "interpretation": "CrCl ≥90 mL/min is normal; 60–89 mL/min indicates mild reduction; 30–59 mL/min indicates moderate impairment requiring drug dose adjustments; 15–29 mL/min indicates severe impairment; and <15 mL/min indicates renal failure.",
+      "cautions": "In patients with acute kidney injury, severe muscle wasting, or extreme obesity, the Cockcroft-Gault estimate may overestimate or underestimate actual GFR.",
+      "faq": [
+        {
+          "q": "How does Cockcroft-Gault differ from CKD-EPI 2021?",
+          "a": "Cockcroft-Gault estimates clearance in mL/min incorporating patient weight and is standard for pharmacological dosing, whereas CKD-EPI 2021 calculates eGFR normalized to 1.73 m² body surface area for kidney disease diagnosis and staging."
+        }
+      ]
+    }
+  },
+  "bmi": {
+    "title": "BMI (Body Mass Index)",
+    "subtitle": "Body mass index calculation and WHO cardiometabolic risk categorization.",
+    "fields": {
+      "height": "Height (cm)",
+      "weight": "Weight (kg)"
+    },
+    "result_label": "Body Mass Index (BMI)",
+    "patient": {
+      "intro": "Body Mass Index (BMI) evaluates your weight relative to your height to help classify health and cardiometabolic risk categories.",
+      "ask_doctor": "Questions to ask your doctor:",
+      "questions": [
+        "What is my ideal target weight range?",
+        "Does my current BMI increase my risk for hypertension or diabetes?",
+        "What lifestyle or dietary steps do you recommend for me?"
+      ]
+    },
+    "content": {
+      "overview": "Body Mass Index (BMI) is calculated as weight in kilograms divided by height in meters squared (kg/m²). It is the standard population screening tool endorsed by the World Health Organization (WHO).",
+      "interpretation": "BMI <18.5 is underweight; 18.5–24.9 is normal weight; 25.0–29.9 is overweight; 30.0–34.9 is Class I obesity; 35.0–39.9 is Class II obesity; and ≥40.0 is Class III (severe) obesity.",
+      "cautions": "BMI does not directly measure body fat percentage and may misclassify muscular athletes, pregnant women, or sarcopenic elderly individuals.",
+      "faq": [
+        {
+          "q": "Is BMI suitable for children?",
+          "a": "In children and adolescents under 18, BMI must be interpreted using age- and sex-specific percentile growth charts rather than fixed adult cut-offs."
+        }
+      ]
+    }
   }
 }
