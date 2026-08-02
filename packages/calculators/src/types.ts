@@ -13,7 +13,12 @@ export interface InterpretResult {
 }
 
 export interface CalcReference {
-  pmid: string;
+  /**
+   * Omitted when the source predates PubMed indexing — e.g. Devine's 1974
+   * ideal-body-weight editorial in Drug Intell Clin Pharm, a journal-year
+   * with no records in PubMed at all.
+   */
+  pmid?: string;
   citation: string;
 }
 

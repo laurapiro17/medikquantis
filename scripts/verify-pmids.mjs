@@ -24,9 +24,11 @@ const SRC = resolve(__dirname, "..", "packages", "calculators", "src");
 const IGNORE = new Set(["types.ts", "registry.ts", "popular.ts", "index.ts"]);
 
 const entries = [];
+let totalCitations = 0;
 for (const file of readdirSync(SRC)) {
   if (!file.endsWith(".ts") || IGNORE.has(file)) continue;
   const text = readFileSync(join(SRC, file), "utf-8");
+  totalCitations += (text.match(/^\s*citation:/gm) ?? []).length;
   const re = /pmid:\s*"(\d+)",\s*citation:\s*"([^"]+)"/g;
   let m;
   while ((m = re.exec(text)) !== null) {
@@ -39,8 +41,12 @@ if (entries.length === 0) {
   process.exit(1);
 }
 
+// References with no `pmid` are unverifiable here (the source predates PubMed
+// indexing). Report the count so they never vanish silently from the total.
+const unchecked = totalCitations - entries.length;
 console.log(
-  `Verifying ${entries.length} PMID/citation pairs against NCBI…`,
+  `Verifying ${entries.length} PMID/citation pairs against NCBI…` +
+    (unchecked > 0 ? ` (${unchecked} reference(s) without a PMID, skipped)` : ""),
 );
 
 const pmids = [...new Set(entries.map((e) => e.pmid))];

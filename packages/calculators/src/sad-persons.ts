@@ -81,7 +81,7 @@ export const calculator: CalcDefinition<typeof SadPersonsInputs> = {
   i18nKey: "sadPersons",
   references: [
     {
-      pmid: "6833878",
+      pmid: "6867245",
       citation:
         "Patterson WM, Dohn HH, Bird J, Patterson GA. Evaluation of suicidal patients: the SAD PERSONS scale. Psychosomatics. 1983;24(4):343-349.",
     },

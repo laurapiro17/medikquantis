@@ -53,7 +53,7 @@ export const calculator: CalcDefinition<typeof HomaIrInputs> = {
   i18nKey: "homaIr",
   references: [
     {
-      pmid: "3892822",
+      pmid: "3899825",
       citation:
         "Matthews DR, Hosker JP, Rudenski AS, Naylor BA, Treacher DF, Turner RC. Homeostasis model assessment: insulin resistance and beta-cell function from fasting plasma glucose and insulin concentrations in man. Diabetologia. 1985;28(7):412-419.",
     },
