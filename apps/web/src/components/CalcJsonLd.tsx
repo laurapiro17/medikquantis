@@ -58,8 +58,14 @@ export async function CalcJsonLd({
     citation: calc.references.map((r) => ({
       "@type": "CreativeWork",
       name: r.citation,
-      identifier: `PMID:${r.pmid}`,
-      url: `https://pubmed.ncbi.nlm.nih.gov/${r.pmid}/`,
+      // Sources predating PubMed indexing carry no PMID — emit the citation
+      // alone rather than a broken identifier and link.
+      ...(r.pmid
+        ? {
+            identifier: `PMID:${r.pmid}`,
+            url: `https://pubmed.ncbi.nlm.nih.gov/${r.pmid}/`,
+          }
+        : {}),
     })),
     mainEntity: {
       "@type": "WebApplication",

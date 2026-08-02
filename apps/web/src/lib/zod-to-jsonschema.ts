@@ -1,6 +1,7 @@
 import {
   z,
   ZodBoolean,
+  ZodDefault,
   ZodEnum,
   ZodNumber,
   ZodObject,
@@ -13,6 +14,7 @@ export interface JsonSchemaPrimitive {
   enum?: readonly string[];
   minimum?: number;
   maximum?: number;
+  default?: string | number | boolean;
 }
 
 export interface JsonSchemaObject {
@@ -20,6 +22,7 @@ export interface JsonSchemaObject {
   properties: Record<string, JsonSchemaPrimitive | JsonSchemaObject>;
   required: string[];
   additionalProperties: false;
+  default?: string | number | boolean;
 }
 
 export type JsonSchemaProperty = JsonSchemaPrimitive | JsonSchemaObject;
@@ -51,6 +54,15 @@ function fieldToJsonSchema(field: ZodTypeAny): JsonSchemaProperty {
   // the value itself is just the inner type.
   if (field instanceof ZodOptional) {
     return fieldToJsonSchema((field as z.ZodOptional<ZodTypeAny>).unwrap());
+  }
+  // A defaulted field is optional on input, so the parent already leaves it
+  // out of `required`; describe the inner type and advertise the default.
+  if (field instanceof ZodDefault) {
+    const def = (field as z.ZodDefault<ZodTypeAny>)._def;
+    return {
+      ...fieldToJsonSchema(def.innerType),
+      default: def.defaultValue() as string | number | boolean,
+    };
   }
   if (field instanceof ZodNumber) {
     const checks = (field as z.ZodNumber)._def.checks ?? [];

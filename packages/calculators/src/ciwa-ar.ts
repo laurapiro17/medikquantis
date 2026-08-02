@@ -72,7 +72,7 @@ export const calculator: CalcDefinition<typeof CiwaArInputs> = {
   i18nKey: "ciwaAr",
   references: [
     {
-      pmid: "2596802",
+      pmid: "2597811",
       citation:
         "Sullivan JT, Sykora K, Schneiderman J, Naranjo CA, Sellers EM. Assessment of alcohol withdrawal: the revised Clinical Institute Withdrawal Assessment for Alcohol scale (CIWA-Ar). Br J Addict. 1989;84(11):1353-1357.",
     },

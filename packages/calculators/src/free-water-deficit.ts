@@ -72,7 +72,7 @@ export const calculator: CalcDefinition<typeof FreeWaterDeficitInputs> = {
   i18nKey: "freeWaterDeficit",
   references: [
     {
-      pmid: "10793168",
+      pmid: "10816188",
       citation:
         "Adrogué HJ, Madias NE. Hypernatremia. N Engl J Med. 2000;342(20):1493-1499.",
     },

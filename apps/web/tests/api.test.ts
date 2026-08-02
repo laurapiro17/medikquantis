@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { listCalcIds } from "@medcalc/calculators";
 
 import { GET as IndexGET } from "@/app/api/v1/route";
 import {
@@ -25,11 +26,11 @@ function ctx(calc: string) {
 }
 
 describe("GET /api/v1", () => {
-  it("returns the registry of 13 calculators", async () => {
+  it("returns every calculator in the registry", async () => {
     const res = IndexGET();
     const body = await res.json();
-    expect(body.calculatorCount).toBe(49);
-    expect(body.calculators).toHaveLength(49);
+    expect(body.calculatorCount).toBe(listCalcIds().length);
+    expect(body.calculators).toHaveLength(listCalcIds().length);
     expect(body.openapi).toBe("/api/v1/openapi.json");
     expect(res.headers.get("access-control-allow-origin")).toBe("*");
   });
@@ -235,7 +236,7 @@ describe("GET /api/v1/openapi.json", () => {
       const calcPaths = Object.keys(spec.paths).filter(
         (p) => p.startsWith("/api/v1/") && !indexPaths.has(p),
       );
-      expect(calcPaths).toHaveLength(49);
+      expect(calcPaths).toHaveLength(listCalcIds().length);
     });
   });
 });

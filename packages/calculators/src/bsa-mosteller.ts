@@ -56,7 +56,7 @@ export const calculator: CalcDefinition<typeof BsaMostellerInputs> = {
   i18nKey: "bsaMosteller",
   references: [
     {
-      pmid: "3657889",
+      pmid: "3657876",
       citation:
         "Mosteller RD. Simplified calculation of body-surface area. N Engl J Med. 1987;317(17):1098.",
     },

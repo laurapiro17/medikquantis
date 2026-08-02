@@ -160,12 +160,12 @@ export const calculator: CalcDefinition<typeof BmiBsaIbwInputs> = {
   i18nKey: "bmiBsaIbw",
   references: [
     {
-      pmid: "4071542",
+      pmid: "3657876",
       citation:
         "Mosteller RD. Simplified calculation of body-surface area. N Engl J Med. 1987;317(17):1098.",
     },
     {
-      pmid: "847053",
+      // Not indexed in PubMed — no PMID exists for this reference.
       citation:
         "Devine BJ. Gentamicin therapy. Drug Intell Clin Pharm. 1974;8:650-655.",
     },
