@@ -34,7 +34,7 @@ export default async function HomaIrPage({
       </div>
 
       <DynamicCalcForm
-        calculator={homaIr.calculator}
+        calcId="homa-ir"
         customDefaults={{ fastingGlucoseMgDl: 95, fastingInsulinuIUml: 5 }}
       />
 

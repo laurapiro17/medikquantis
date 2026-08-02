@@ -34,7 +34,7 @@ export default async function FreeWaterDeficitPage({
       </div>
 
       <DynamicCalcForm
-        calculator={freeWaterDeficit.calculator}
+        calcId="free-water-deficit"
         customDefaults={{
           weightKg: 70,
           currentSodiumMEqL: 155,

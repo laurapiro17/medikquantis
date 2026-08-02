@@ -1,12 +1,11 @@
 "use client";
 
-import { hasbled } from "@medcalc/calculators";
 import { DynamicCalcForm } from "./DynamicCalcForm";
 
 export function HasBledForm() {
   return (
     <DynamicCalcForm
-      calculator={hasbled.calculator}
+      calcId="hasbled"
       riskLabelKey="common.annual_bleeding_risk"
     />
   );
