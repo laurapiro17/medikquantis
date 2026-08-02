@@ -34,7 +34,7 @@ export default async function BmiBsaIbwPage({
       </div>
 
       <DynamicCalcForm
-        calculator={bmiBsaIbw.calculator}
+        calcId="bmi-bsa-ibw"
         customDefaults={{ heightCm: 170, weightKg: 70, sex: "male" }}
       />
 

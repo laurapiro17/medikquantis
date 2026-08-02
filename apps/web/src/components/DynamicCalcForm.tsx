@@ -5,22 +5,29 @@ import { useTranslations } from "next-intl";
 import { useUrlInputs } from "./useUrlInputs";
 import { ModeToggle, ResultPanel } from "./ResultPanel";
 import { BooleanList, FormActions, NumberInput, RadioGroup } from "./Field";
-import type { AnyCalc, FieldUIMetadata } from "@medcalc/calculators";
+import { getCalc, type FieldUIMetadata } from "@medcalc/calculators";
 
 type Mode = "clinician" | "patient";
 
 interface DynamicCalcFormProps {
-  calculator: AnyCalc;
+  /**
+   * Registry id, not the definition itself. A CalcDefinition holds `inputs`,
+   * a Zod schema — a class instance, which cannot cross the server/client
+   * boundary as a prop. Server Components pass the id; we resolve it here,
+   * on the client.
+   */
+  calcId: string;
   customDefaults?: Record<string, any>;
   riskLabelKey?: string;
 }
 
 export function DynamicCalcForm({
-  calculator,
+  calcId,
   customDefaults,
   riskLabelKey = "common.annual_risk",
 }: DynamicCalcFormProps) {
   const t = useTranslations();
+  const calculator = getCalc(calcId)!;
   const meta = calculator.fieldsMetadata as Record<string, FieldUIMetadata> | undefined;
 
   // Extract initial default inputs
