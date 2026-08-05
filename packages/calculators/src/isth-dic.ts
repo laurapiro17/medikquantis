@@ -34,6 +34,15 @@ export function interpret(score: number): InterpretResult {
       evidenceGrade: "A",
     };
   }
+  if (score === 0) {
+    return {
+      tier: "low",
+      recommendation:
+        "No laboratory evidence of DIC. Repeat the score if the underlying disorder persists or the clinical picture changes.",
+      recommendationCode: "ISTH_DIC_NONE",
+      evidenceGrade: "A",
+    };
+  }
   return {
     tier: "moderate",
     recommendation:

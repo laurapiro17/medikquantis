@@ -10,7 +10,13 @@ describe("isth-dic calculator", () => {
       fibrinogen: "0",
     });
     expect(score).toBe(0);
-    expect(interpret(score).recommendationCode).toBe("ISTH_DIC_NON_OVERT");
+    expect(interpret(score).tier).toBe("low");
+    expect(interpret(score).recommendationCode).toBe("ISTH_DIC_NONE");
+  });
+
+  it("treats 0 and 1 as different tiers", () => {
+    expect(interpret(0).tier).toBe("low");
+    expect(interpret(1).tier).toBe("moderate");
   });
 
   it("reaches the documented maximum of 8", () => {
