@@ -20,7 +20,15 @@ const ENFORCED = new Set([
 ]);
 
 describe("fieldsMetadata coverage", () => {
-  for (const calc of listCalcs().filter((c) => ENFORCED.has(c.id))) {
+  const enforced = listCalcs().filter((c) => ENFORCED.has(c.id));
+
+  // A filtered loop over an empty list registers zero test cases and reports
+  // a pass having asserted nothing.
+  it("ENFORCED matches at least one registered calculator", () => {
+    expect(enforced.length, "no calculators in ENFORCED were found in listCalcs()").toBeGreaterThan(0);
+  });
+
+  for (const calc of enforced) {
     it(`${calc.id} declares metadata for every schema field`, () => {
       const shape = (calc.inputs as unknown as ZodObject<Record<string, ZodTypeAny>>).shape;
       const schemaKeys = Object.keys(shape).sort();
