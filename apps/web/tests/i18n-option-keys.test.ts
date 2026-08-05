@@ -36,7 +36,9 @@ describe("i18n option keys", () => {
     for (const [field, rawType] of Object.entries(shape)) {
       const type = unwrap(rawType);
       if (!(type instanceof ZodEnum)) continue;
-      const meta = calc.fieldsMetadata?.[field as keyof typeof calc.fieldsMetadata];
+      const meta = (
+        calc.fieldsMetadata as Record<string, { options?: { labelKey?: string }[] }> | undefined
+      )?.[field];
       // Options with an explicit labelKey resolve elsewhere (e.g. common.male).
       if (meta?.options?.every((o) => o.labelKey)) continue;
       for (const value of type.options as string[]) {
