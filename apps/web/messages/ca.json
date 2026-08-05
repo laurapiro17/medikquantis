@@ -2835,7 +2835,9 @@
       "currentSodiumMEqL": "Sodi Sèric Actual (mEq/L)",
       "targetSodiumMEqL": "Sodi Sèric Objectiu (mEq/L)",
       "sex": "Sexe",
-      "ageCategory": "Categoria d'edat"
+      "ageCategory": "Categoria d'edat",
+      "ageCategory_adult": "Adult (18–64 anys)",
+      "ageCategory_elderly": "Gran (≥ 65 anys)"
     },
     "patient": {
       "intro": "Aquesta calculadora estima el volum de líquid necessari per tractar la hipernatrèmia (nivell elevat de sodi a la sang).",

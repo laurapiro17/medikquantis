@@ -158,6 +158,18 @@ export const calculator: CalcDefinition<typeof BmiBsaIbwInputs> = {
   scoreRange: { min: 10, max: 80 },
   specialty: "endocrinology",
   i18nKey: "bmiBsaIbw",
+  fieldsMetadata: {
+    heightCm: { widget: "number", min: 50, max: 250, defaultValue: 170 },
+    weightKg: { widget: "number", min: 10, max: 350, defaultValue: 70 },
+    sex: {
+      widget: "radio",
+      defaultValue: "male",
+      options: [
+        { value: "male", labelKey: "common.male" },
+        { value: "female", labelKey: "common.female" },
+      ],
+    },
+  },
   references: [
     {
       pmid: "3657876",

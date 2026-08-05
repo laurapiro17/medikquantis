@@ -2835,7 +2835,9 @@
       "currentSodiumMEqL": "Sodio sérico actual (mEq/L)",
       "targetSodiumMEqL": "Sodio sérico objetivo (mEq/L)",
       "sex": "Sexo",
-      "ageCategory": "Categoría de edad"
+      "ageCategory": "Categoría de edad",
+      "ageCategory_adult": "Adulto (18–64 años)",
+      "ageCategory_elderly": "Anciano (≥ 65 años)"
     },
     "patient": {
       "intro": "Esta calculadora estima el volumen de líquido necesario para tratar la hipernatremia (nivel elevado de sodio en sangre).",

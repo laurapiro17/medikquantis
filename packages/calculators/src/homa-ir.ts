@@ -51,6 +51,10 @@ export const calculator: CalcDefinition<typeof HomaIrInputs> = {
   scoreRange: { min: 0.1, max: 50 },
   specialty: "endocrinology",
   i18nKey: "homaIr",
+  fieldsMetadata: {
+    fastingGlucoseMgDl: { widget: "number", min: 30, max: 500, defaultValue: 95 },
+    fastingInsulinuIUml: { widget: "number", min: 0.5, max: 300, defaultValue: 5 },
+  },
   references: [
     {
       pmid: "3899825",

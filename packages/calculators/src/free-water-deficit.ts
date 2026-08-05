@@ -70,6 +70,24 @@ export const calculator: CalcDefinition<typeof FreeWaterDeficitInputs> = {
   scoreRange: { min: 0, max: 25 },
   specialty: "nephrology",
   i18nKey: "freeWaterDeficit",
+  fieldsMetadata: {
+    weightKg: { widget: "number", min: 20, max: 250, defaultValue: 70 },
+    currentSodiumMEqL: { widget: "number", min: 140, max: 200, defaultValue: 155 },
+    targetSodiumMEqL: { widget: "number", min: 130, max: 145, defaultValue: 140 },
+    sex: {
+      widget: "radio",
+      defaultValue: "male",
+      options: [
+        { value: "male", labelKey: "common.male" },
+        { value: "female", labelKey: "common.female" },
+      ],
+    },
+    ageCategory: {
+      widget: "radio",
+      defaultValue: "adult",
+      options: [{ value: "adult" }, { value: "elderly" }],
+    },
+  },
   references: [
     {
       pmid: "10816188",

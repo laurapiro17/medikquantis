@@ -2835,7 +2835,9 @@
       "currentSodiumMEqL": "Current Serum Sodium (mEq/L)",
       "targetSodiumMEqL": "Target Serum Sodium (mEq/L)",
       "sex": "Sex",
-      "ageCategory": "Age category"
+      "ageCategory": "Age category",
+      "ageCategory_adult": "Adult (18–64 years)",
+      "ageCategory_elderly": "Elderly (≥ 65 years)"
     },
     "patient": {
       "intro": "This calculator estimates the amount of fluid needed to treat hypernatremia (high blood sodium level).",
