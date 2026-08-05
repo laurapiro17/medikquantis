@@ -3382,6 +3382,42 @@
         }
       ]
     }
+  },
+  "isthDic": {
+    "title": "ISTH DIC score",
+    "subtitle": "ISTH score for overt disseminated intravascular coagulation, applicable only when an underlying disorder associated with DIC is present.",
+    "fields": {
+      "platelets": "Platelet count",
+      "platelets_0": "> 100 ×10⁹/L",
+      "platelets_1": "50–100 ×10⁹/L",
+      "platelets_2": "< 50 ×10⁹/L",
+      "fibrinMarker": "Fibrin-related marker (D-dimer or FDP)",
+      "fibrinMarker_0": "No increase",
+      "fibrinMarker_2": "Moderate increase",
+      "fibrinMarker_3": "Strong increase",
+      "ptProlongation": "Prothrombin time prolongation",
+      "ptProlongation_0": "< 3 s",
+      "ptProlongation_1": "3–6 s",
+      "ptProlongation_2": "> 6 s",
+      "fibrinogen": "Fibrinogen",
+      "fibrinogen_0": "≥ 1 g/L",
+      "fibrinogen_1": "< 1 g/L"
+    },
+    "patient": {
+      "intro": "This score assesses whether blood clotting has become disturbed throughout the body as a complication of another serious illness.",
+      "ask_doctor": "Questions for your doctor:",
+      "questions": [
+        "Which underlying illness caused this clotting problem?",
+        "How often will these blood tests be repeated?",
+        "What signs of bleeding or clotting should I watch for?"
+      ]
+    },
+    "content": {
+      "overview": "The ISTH score quantifies overt DIC from four laboratory parameters: platelets, a fibrin-related marker, prothrombin time and fibrinogen.",
+      "interpretation": "A score of 5 or more is compatible with overt DIC and should be repeated daily. Below 5 it suggests non-overt DIC; repeat in 1–2 days.",
+      "cautions": "Applicable only when the patient has an underlying disorder known to be associated with DIC. It does not replace clinical judgement or treatment of the underlying cause.",
+      "faq": []
+    }
   }
 }
 

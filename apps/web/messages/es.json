@@ -3382,6 +3382,42 @@
         }
       ]
     }
+  },
+  "isthDic": {
+    "title": "Escala CID de la ISTH",
+    "subtitle": "Puntuación de la ISTH para coagulación intravascular diseminada manifiesta, aplicable solo si existe una enfermedad de base asociada a CID.",
+    "fields": {
+      "platelets": "Recuento de plaquetas",
+      "platelets_0": "> 100 ×10⁹/L",
+      "platelets_1": "50–100 ×10⁹/L",
+      "platelets_2": "< 50 ×10⁹/L",
+      "fibrinMarker": "Marcador de fibrina (dímero D o PDF)",
+      "fibrinMarker_0": "Sin aumento",
+      "fibrinMarker_2": "Aumento moderado",
+      "fibrinMarker_3": "Aumento intenso",
+      "ptProlongation": "Alargamiento del tiempo de protrombina",
+      "ptProlongation_0": "< 3 s",
+      "ptProlongation_1": "3–6 s",
+      "ptProlongation_2": "> 6 s",
+      "fibrinogen": "Fibrinógeno",
+      "fibrinogen_0": "≥ 1 g/L",
+      "fibrinogen_1": "< 1 g/L"
+    },
+    "patient": {
+      "intro": "Esta escala valora si la coagulación de la sangre se ha alterado de forma generalizada como complicación de otra enfermedad grave.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿Qué enfermedad de base ha provocado esta alteración de la coagulación?",
+        "¿Cada cuánto repetiréis estos análisis?",
+        "¿Qué signos de hemorragia o de trombosis debo vigilar?"
+      ]
+    },
+    "content": {
+      "overview": "La puntuación de la ISTH cuantifica la CID manifiesta con cuatro parámetros de laboratorio: plaquetas, un marcador de fibrina, el tiempo de protrombina y el fibrinógeno.",
+      "interpretation": "Una puntuación ≥ 5 es compatible con CID manifiesta y debe repetirse a diario. Por debajo de 5, sugiere CID no manifiesta y se recomienda repetirla en 1–2 días.",
+      "cautions": "Solo es aplicable si el paciente tiene una enfermedad de base conocida por asociarse a CID. No sustituye al juicio clínico ni al tratamiento de la causa subyacente.",
+      "faq": []
+    }
   }
 }
 

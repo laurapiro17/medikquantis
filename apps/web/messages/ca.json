@@ -3382,6 +3382,42 @@
         }
       ]
     }
+  },
+  "isthDic": {
+    "title": "Escala CID de la ISTH",
+    "subtitle": "Puntuació de la ISTH per a coagulació intravascular disseminada manifesta, aplicable només si hi ha una malaltia de base associada a CID.",
+    "fields": {
+      "platelets": "Recompte de plaquetes",
+      "platelets_0": "> 100 ×10⁹/L",
+      "platelets_1": "50–100 ×10⁹/L",
+      "platelets_2": "< 50 ×10⁹/L",
+      "fibrinMarker": "Marcador de fibrina (dímer D o PDF)",
+      "fibrinMarker_0": "Sense augment",
+      "fibrinMarker_2": "Augment moderat",
+      "fibrinMarker_3": "Augment intens",
+      "ptProlongation": "Allargament del temps de protrombina",
+      "ptProlongation_0": "< 3 s",
+      "ptProlongation_1": "3–6 s",
+      "ptProlongation_2": "> 6 s",
+      "fibrinogen": "Fibrinogen",
+      "fibrinogen_0": "≥ 1 g/L",
+      "fibrinogen_1": "< 1 g/L"
+    },
+    "patient": {
+      "intro": "Aquesta escala valora si la coagulació de la sang s'ha alterat de manera generalitzada com a complicació d'una altra malaltia greu.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "Quina malaltia de base ha provocat aquesta alteració de la coagulació?",
+        "Cada quant repetireu aquestes anàlisis?",
+        "Quins signes d'hemorràgia o de trombosi he de vigilar?"
+      ]
+    },
+    "content": {
+      "overview": "La puntuació de la ISTH quantifica la CID manifesta amb quatre paràmetres de laboratori: plaquetes, un marcador de fibrina, el temps de protrombina i el fibrinogen.",
+      "interpretation": "Una puntuació ≥ 5 és compatible amb CID manifesta i s'ha de repetir cada dia. Per sota de 5, suggereix CID no manifesta i es recomana repetir-la en 1–2 dies.",
+      "cautions": "Només és aplicable si el pacient té una malaltia de base coneguda per associar-se a CID. No substitueix el judici clínic ni el tractament de la causa subjacent.",
+      "faq": []
+    }
   }
 }
 
