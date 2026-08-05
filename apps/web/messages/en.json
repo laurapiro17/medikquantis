@@ -3418,6 +3418,43 @@
       "cautions": "Applicable only when the patient has an underlying disorder known to be associated with DIC. It does not replace clinical judgement or treatment of the underlying cause.",
       "faq": []
     }
+  },
+  "fourTsHit": {
+    "title": "4Ts score for heparin-induced thrombocytopenia",
+    "subtitle": "Pretest probability of HIT from four clinical criteria, with a high negative predictive value at a low score.",
+    "fields": {
+      "thrombocytopenia": "Thrombocytopenia",
+      "thrombocytopenia_0": "Fall < 30% or nadir < 10 ×10⁹/L",
+      "thrombocytopenia_1": "Fall 30-50% or nadir 10-19 ×10⁹/L",
+      "thrombocytopenia_2": "Fall > 50% and nadir ≥ 20 ×10⁹/L",
+      "timing": "Timing of the platelet count fall",
+      "timing_0": "Fall before day 4 with no recent heparin exposure",
+      "timing_1": "Consistent with days 5-10 but not well documented, or onset after day 10, or fall ≤ 1 day with heparin exposure 30-100 days ago",
+      "timing_2": "Clear onset between days 5 and 10, or fall ≤ 1 day with heparin exposure within the past 30 days",
+      "thrombosis": "Thrombosis or other sequelae",
+      "thrombosis_0": "None",
+      "thrombosis_1": "Recurrent or progressive thrombosis, non-necrotising skin lesions, or suspected but unproven thrombosis",
+      "thrombosis_2": "New confirmed thrombosis, skin necrosis, or an acute systemic reaction after a heparin bolus",
+      "otherCauses": "Other causes of thrombocytopenia",
+      "otherCauses_0": "Clear alternative cause present",
+      "otherCauses_1": "Possible alternative cause",
+      "otherCauses_2": "No alternative cause evident"
+    },
+    "patient": {
+      "intro": "This score estimates how likely it is that heparin is causing the drop in platelets.",
+      "ask_doctor": "Questions for your doctor:",
+      "questions": [
+        "Do I need to stop heparin while we wait for the results?",
+        "Which alternative anticoagulant will I be given?",
+        "Will I be able to receive heparin again in the future?"
+      ]
+    },
+    "content": {
+      "overview": "The 4Ts score scores four criteria from 0 to 2 - thrombocytopenia, timing of the fall, thrombosis, and other causes - to estimate the pretest probability of HIT.",
+      "interpretation": "0-3 is low probability, 4-5 intermediate, 6-8 high. A low score has a high negative predictive value and avoids unnecessary testing and anticoagulant changes.",
+      "cautions": "This is a pretest probability, not a diagnosis: an intermediate or high score must be confirmed with an immunoassay plus a functional assay. The decision to stop heparin remains clinical.",
+      "faq": []
+    }
   }
 }
 

@@ -3418,6 +3418,43 @@
       "cautions": "Només és aplicable si el pacient té una malaltia de base coneguda per associar-se a CID. No substitueix el judici clínic ni el tractament de la causa subjacent.",
       "faq": []
     }
+  },
+  "fourTsHit": {
+    "title": "Escala 4T per a trombocitopènia induïda per heparina",
+    "subtitle": "Probabilitat pretest de TIH a partir de quatre criteris clínics, amb un valor predictiu negatiu alt quan la puntuació és baixa.",
+    "fields": {
+      "thrombocytopenia": "Trombocitopènia",
+      "thrombocytopenia_0": "Descens < 30 % o nadir < 10 ×10⁹/L",
+      "thrombocytopenia_1": "Descens 30–50 % o nadir 10–19 ×10⁹/L",
+      "thrombocytopenia_2": "Descens > 50 % i nadir ≥ 20 ×10⁹/L",
+      "timing": "Moment del descens de plaquetes",
+      "timing_0": "Descens abans del dia 4 sense exposició recent a heparina",
+      "timing_1": "Compatible amb dies 5–10 però poc documentat, o inici després del dia 10, o descens ≤ 1 dia amb exposició fa 30–100 dies",
+      "timing_2": "Inici clar entre els dies 5 i 10, o descens ≤ 1 dia amb exposició a heparina els últims 30 dies",
+      "thrombosis": "Trombosi o altres seqüeles",
+      "thrombosis_0": "Cap",
+      "thrombosis_1": "Trombosi recurrent o progressiva, lesions cutànies no necròtiques, o trombosi sospitada no confirmada",
+      "thrombosis_2": "Trombosi nova confirmada, necrosi cutània, o reacció sistèmica aguda després d'un bolus d'heparina",
+      "otherCauses": "Altres causes de trombocitopènia",
+      "otherCauses_0": "Causa alternativa clara",
+      "otherCauses_1": "Causa alternativa possible",
+      "otherCauses_2": "Cap causa alternativa aparent"
+    },
+    "patient": {
+      "intro": "Aquesta escala calcula quina probabilitat hi ha que l'heparina sigui la causa de la baixada de plaquetes.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "Cal que deixi l'heparina mentre espereu els resultats?",
+        "Quin anticoagulant alternatiu faré servir?",
+        "Podré tornar a rebre heparina en el futur?"
+      ]
+    },
+    "content": {
+      "overview": "L'escala 4T puntua de 0 a 2 quatre criteris — trombocitopènia, moment del descens, trombosi i altres causes — per estimar la probabilitat pretest de TIH.",
+      "interpretation": "0–3 probabilitat baixa, 4–5 intermèdia, 6–8 alta. Una puntuació baixa té un valor predictiu negatiu alt i permet evitar proves i canvis d'anticoagulant innecessaris.",
+      "cautions": "És una probabilitat pretest, no un diagnòstic: una puntuació intermèdia o alta obliga a confirmar-la amb immunoassaig i prova funcional. La decisió de suspendre l'heparina és clínica.",
+      "faq": []
+    }
   }
 }
 
