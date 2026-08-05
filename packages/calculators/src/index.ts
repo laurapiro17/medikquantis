@@ -69,4 +69,5 @@ export * as cows from "./cows";
 export * as sadPersons from "./sad-persons";
 export * as isthDic from "./isth-dic";
 export * as fourTsHit from "./4ts-hit";
+export * as khorana from "./khorana";
 

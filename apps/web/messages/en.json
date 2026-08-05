@@ -3455,6 +3455,35 @@
       "cautions": "This is a pretest probability, not a diagnosis: an intermediate or high score must be confirmed with an immunoassay plus a functional assay. The decision to stop heparin remains clinical.",
       "faq": []
     }
+  },
+  "khorana": {
+    "title": "Khorana score for chemotherapy-associated venous thromboembolism",
+    "subtitle": "VTE risk before starting ambulatory chemotherapy, from tumour site and four pretreatment laboratory values.",
+    "fields": {
+      "tumourSite": "Tumour site",
+      "tumourSite_0": "Other sites",
+      "tumourSite_1": "High risk: lung, lymphoma, gynaecological, bladder or testicular",
+      "tumourSite_2": "Very high risk: stomach or pancreas",
+      "plateletsHigh": "Platelet count ≥ 350 ×10⁹/L before chemotherapy",
+      "anaemiaOrEsa": "Haemoglobin < 10 g/dL or use of erythropoiesis-stimulating agents",
+      "leukocytesHigh": "Leukocyte count > 11 ×10⁹/L before chemotherapy",
+      "bmiHigh": "BMI ≥ 35 kg/m²"
+    },
+    "patient": {
+      "intro": "This score estimates how likely you are to develop a blood clot during chemotherapy, based on your tumour type and a few blood test results.",
+      "ask_doctor": "Questions for your oncologist:",
+      "questions": [
+        "Does my risk justify starting preventive low-molecular-weight heparin?",
+        "How often will you repeat my blood tests during treatment?",
+        "What symptoms of a blood clot should I watch for at home?"
+      ]
+    },
+    "content": {
+      "overview": "The Khorana score adds tumour site (0, 1 or 2 points by risk category) to four pretreatment variables - platelet count, haemoglobin or ESA use, leukocyte count and BMI - to estimate the risk of venous thromboembolism before starting chemotherapy.",
+      "interpretation": "A score of 0 is low risk, 1-2 intermediate, and 3 or above high risk. Guidelines recommend considering pharmacological thromboprophylaxis in high-risk patients without a contraindication from bleeding risk.",
+      "cautions": "This is a screening tool for ambulatory patients starting chemotherapy; it does not apply to inpatients or to managing an established VTE event. The final decision to start prophylaxis must weigh individual bleeding risk and the specific chemotherapy regimen.",
+      "faq": []
+    }
   }
 }
 

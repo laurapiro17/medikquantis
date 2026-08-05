@@ -3455,6 +3455,35 @@
       "cautions": "És una probabilitat pretest, no un diagnòstic: una puntuació intermèdia o alta obliga a confirmar-la amb immunoassaig i prova funcional. La decisió de suspendre l'heparina és clínica.",
       "faq": []
     }
+  },
+  "khorana": {
+    "title": "Escala de Khorana per a tromboembolisme venós associat a quimioteràpia",
+    "subtitle": "Risc de TEV abans d'iniciar un cicle de quimioteràpia ambulatòria, segons la localització tumoral i quatre paràmetres analítics.",
+    "fields": {
+      "tumourSite": "Localització del tumor",
+      "tumourSite_0": "Altres localitzacions",
+      "tumourSite_1": "Risc alt: pulmó, limfoma, ginecològic, bufeta o testicle",
+      "tumourSite_2": "Risc molt alt: estómac o pàncrees",
+      "plateletsHigh": "Plaquetes ≥ 350 ×10⁹/L abans de la quimioteràpia",
+      "anaemiaOrEsa": "Hemoglobina < 10 g/dL o ús d'agents estimulants de l'eritropoesi",
+      "leukocytesHigh": "Leucòcits > 11 ×10⁹/L abans de la quimioteràpia",
+      "bmiHigh": "IMC ≥ 35 kg/m²"
+    },
+    "patient": {
+      "intro": "Aquesta escala estima la probabilitat de desenvolupar una trombosi (un coàgul a la sang) durant el tractament de quimioteràpia, a partir del tipus de tumor i d'alguns valors de l'anàlisi de sang.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "El meu risc justifica començar heparina de baix pes molecular preventiva?",
+        "Amb quina freqüència m'heu de repetir l'analítica durant el tractament?",
+        "Quins símptomes de trombosi he de vigilar a casa?"
+      ]
+    },
+    "content": {
+      "overview": "L'escala de Khorana suma la localització del tumor (0, 1 o 2 punts segons el risc) a quatre variables pretractament — plaquetes, hemoglobina o ús d'ESA, leucòcits i IMC — per estimar el risc de tromboembolisme venós abans de començar la quimioteràpia.",
+      "interpretation": "0 punts és risc baix, 1–2 risc intermedi i ≥ 3 risc alt. En pacients d'alt risc les guies recomanen valorar tromboprofilaxi farmacològica si no hi ha contraindicació per sagnat.",
+      "cautions": "És una eina de cribratge per a pacients ambulatoris que comencen quimioteràpia, no vàlida per a ingressats ni per decidir sobre un episodi de TEV ja establert. La decisió final d'iniciar profilaxi ha de tenir en compte el risc hemorràgic individual i el tipus de quimioteràpia.",
+      "faq": []
+    }
   }
 }
 
