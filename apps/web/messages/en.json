@@ -3484,6 +3484,31 @@
       "cautions": "This is a screening tool for ambulatory patients starting chemotherapy; it does not apply to inpatients or to managing an established VTE event. The final decision to start prophylaxis must weigh individual bleeding risk and the specific chemotherapy regimen.",
       "faq": []
     }
+  },
+  "binet": {
+    "title": "Binet staging for chronic lymphocytic leukaemia",
+    "subtitle": "Prognostic classification into three stages (A, B, C) based on the number of involved lymphoid areas and the presence of anaemia or thrombocytopenia.",
+    "fields": {
+      "stage": "Binet stage",
+      "stage_A": "A — fewer than 3 involved lymphoid areas, no anaemia or thrombocytopenia",
+      "stage_B": "B — 3 or more involved lymphoid areas, no anaemia or thrombocytopenia",
+      "stage_C": "C — Hb < 10 g/dL and/or platelets < 100 ×10⁹/L, regardless of the number of areas"
+    },
+    "patient": {
+      "intro": "This staging system classifies chronic lymphocytic leukaemia (CLL) into three groups — A, B and C — based on how many areas with lymph nodes, the spleen or the liver are involved, and on whether anaemia or a drop in platelets is present.",
+      "ask_doctor": "Questions for your doctor:",
+      "questions": [
+        "What Binet stage am I in and what does it mean for my prognosis?",
+        "Do I need to start treatment now or is watch and wait more appropriate?",
+        "How often will you repeat my blood tests and physical exam?"
+      ]
+    },
+    "content": {
+      "overview": "Binet staging classifies chronic lymphocytic leukaemia by the number of involved lymphoid areas — cervical, axillary and inguinal nodes (each counted once whether unilateral or bilateral), spleen and liver, five areas in total — and by the presence of anaemia or thrombocytopenia.",
+      "interpretation": "Stage A: fewer than 3 involved areas, no anaemia or thrombocytopenia; watch and wait is the standard approach. Stage B: 3 or more involved areas, no anaemia or thrombocytopenia; treatment is given if active-disease criteria are met. Stage C: haemoglobin < 10 g/dL and/or platelets < 100 x10^9/L, regardless of the number of involved areas; treatment is generally indicated.",
+      "cautions": "Applies only to an already-diagnosed chronic lymphocytic leukaemia/small lymphocytic lymphoma; anaemia or thrombocytopenia must be confirmed as marrow-related (from infiltration) rather than autoimmune haemolysis or another peripheral cause, since that would misclassify the stage.",
+      "faq": []
+    }
   }
 }
 

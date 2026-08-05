@@ -3484,6 +3484,31 @@
       "cautions": "És una eina de cribratge per a pacients ambulatoris que comencen quimioteràpia, no vàlida per a ingressats ni per decidir sobre un episodi de TEV ja establert. La decisió final d'iniciar profilaxi ha de tenir en compte el risc hemorràgic individual i el tipus de quimioteràpia.",
       "faq": []
     }
+  },
+  "binet": {
+    "title": "Estadiatge de Binet per a la leucèmia limfàtica crònica",
+    "subtitle": "Classificació pronòstica en tres estadis (A, B, C) segons el nombre d'àrees limfoides afectades i la presència d'anèmia o trombocitopènia.",
+    "fields": {
+      "stage": "Estadi de Binet",
+      "stage_A": "A — menys de 3 àrees limfoides afectades, sense anèmia ni trombocitopènia",
+      "stage_B": "B — 3 o més àrees limfoides afectades, sense anèmia ni trombocitopènia",
+      "stage_C": "C — Hb < 10 g/dL i/o plaquetes < 100 ×10⁹/L, sigui quin sigui el nombre d'àrees"
+    },
+    "patient": {
+      "intro": "Aquest estadiatge classifica la leucèmia limfàtica crònica (LLC) en tres grups —A, B i C— segons quantes zones amb ganglis limfàtics, la melsa o el fetge estan afectats, i segons si hi ha anèmia o un descens de les plaquetes.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "En quin estadi de Binet estic i què significa per al meu pronòstic?",
+        "Necessito començar tractament ara o és millor fer seguiment (watch and wait)?",
+        "Amb quina freqüència m'heu de repetir l'analítica i l'exploració física?"
+      ]
+    },
+    "content": {
+      "overview": "L'estadiatge de Binet classifica la leucèmia limfàtica crònica segons el nombre d'àrees limfoides afectades —ganglis cervicals, axil·lars i inguinals (cadascuna es compta un sol cop encara que sigui bilateral), melsa i fetge, cinc àrees en total— i segons la presència d'anèmia o trombocitopènia.",
+      "interpretation": "Estadi A: menys de 3 àrees afectades, sense anèmia ni trombocitopènia; l'actitud estàndard és l'observació (watch and wait). Estadi B: 3 o més àrees afectades, sense anèmia ni trombocitopènia; es tracta si hi ha criteris de malaltia activa. Estadi C: hemoglobina < 10 g/dL i/o plaquetes < 100 ×10⁹/L, independentment del nombre d'àrees afectades; el tractament sol estar indicat.",
+      "cautions": "Només és aplicable a la leucèmia limfàtica crònica/limfoma limfocític petit ja diagnosticats; l'anèmia o la trombocitopènia s'han de confirmar d'origen medul·lar (per infiltració) i no per hemòlisi autoimmune o una altra causa perifèrica, ja que això alteraria l'estadiatge.",
+      "faq": []
+    }
   }
 }
 

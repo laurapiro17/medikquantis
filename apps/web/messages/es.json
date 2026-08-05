@@ -3484,6 +3484,31 @@
       "cautions": "Es una herramienta de cribado para pacientes ambulatorios que inician quimioterapia, no válida para pacientes ingresados ni para decidir sobre un episodio de TEV ya establecido. La decisión final de iniciar profilaxis debe tener en cuenta el riesgo hemorrágico individual y el tipo de quimioterapia.",
       "faq": []
     }
+  },
+  "binet": {
+    "title": "Estadificación de Binet para la leucemia linfática crónica",
+    "subtitle": "Clasificación pronóstica en tres estadios (A, B, C) según el número de áreas linfoides afectadas y la presencia de anemia o trombocitopenia.",
+    "fields": {
+      "stage": "Estadio de Binet",
+      "stage_A": "A — menos de 3 áreas linfoides afectadas, sin anemia ni trombocitopenia",
+      "stage_B": "B — 3 o más áreas linfoides afectadas, sin anemia ni trombocitopenia",
+      "stage_C": "C — Hb < 10 g/dL y/o plaquetas < 100 ×10⁹/L, sea cual sea el número de áreas"
+    },
+    "patient": {
+      "intro": "Esta estadificación clasifica la leucemia linfática crónica (LLC) en tres grupos —A, B y C— según cuántas zonas con ganglios linfáticos, el bazo o el hígado están afectados, y según si hay anemia o un descenso de las plaquetas.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿En qué estadio de Binet estoy y qué significa para mi pronóstico?",
+        "¿Necesito empezar tratamiento ahora o es mejor hacer seguimiento (watch and wait)?",
+        "¿Con qué frecuencia me repetiréis la analítica y la exploración física?"
+      ]
+    },
+    "content": {
+      "overview": "La estadificación de Binet clasifica la leucemia linfática crónica según el número de áreas linfoides afectadas —ganglios cervicales, axilares e inguinales (cada uno se cuenta una sola vez aunque sea bilateral), bazo e hígado, cinco áreas en total— y según la presencia de anemia o trombocitopenia.",
+      "interpretation": "Estadio A: menos de 3 áreas afectadas, sin anemia ni trombocitopenia; la actitud estándar es la observación (watch and wait). Estadio B: 3 o más áreas afectadas, sin anemia ni trombocitopenia; se trata si existen criterios de enfermedad activa. Estadio C: hemoglobina < 10 g/dL y/o plaquetas < 100 ×10⁹/L, independientemente del número de áreas afectadas; el tratamiento suele estar indicado.",
+      "cautions": "Solo es aplicable a la leucemia linfática crónica/linfoma linfocítico de células pequeñas ya diagnosticados; la anemia o la trombocitopenia deben confirmarse de origen medular (por infiltración) y no por hemólisis autoinmune u otra causa periférica, ya que eso alteraría la estadificación.",
+      "faq": []
+    }
   }
 }
 
