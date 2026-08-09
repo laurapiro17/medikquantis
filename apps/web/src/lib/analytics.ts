@@ -23,11 +23,20 @@ export const UMAMI_SRC = "https://cloud.umami.is/script.js";
 export const UMAMI_ORIGIN = new URL(UMAMI_SRC).origin;
 
 /**
- * Set in Vercel project settings (Production + Preview). When unset — local
- * dev, forks, CI — the script is not injected and `track()` degrades to
- * Vercel-only, so nothing here can break a build or a contributor's setup.
+ * Public site id. Not a secret — it ships in the HTML of every page, and it
+ * only identifies which dashboard receives the beacon.
  */
-export const UMAMI_WEBSITE_ID = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID;
+export const UMAMI_WEBSITE_ID = "98319327-932c-43fa-8482-3152b3b77194";
+
+/**
+ * Umami only sends beacons from these hostnames. This is what keeps localhost,
+ * CI, forks and Vercel preview deploys out of the production numbers, so no
+ * env var (and no "did you redeploy after setting it?" failure mode) is needed.
+ *
+ * Both hosts are listed because `www.` serves the site directly rather than
+ * redirecting to the apex.
+ */
+export const UMAMI_DOMAINS = "medikquantis.me,www.medikquantis.me";
 
 type EventData = Record<string, string | number | boolean | null | undefined>;
 
