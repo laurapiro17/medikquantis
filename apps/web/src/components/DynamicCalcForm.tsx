@@ -179,6 +179,7 @@ export function DynamicCalcForm({
         riskLabelKey={riskLabelKey}
         i18nNamespace={calculator.i18nKey}
         shareableInputs={inputs}
+        scoreRange={calculator.scoreRange}
       />
     </div>
   );

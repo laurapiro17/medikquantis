@@ -1,5 +1,5 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { bmiBsaIbw } from "@medcalc/calculators";
+import { fourTsHit } from "@medcalc/calculators";
 import { DynamicCalcForm } from "@/components/DynamicCalcForm";
 import { buildCalcMetadata } from "@/lib/calc-metadata";
 import { CalcJsonLd } from "@/components/CalcJsonLd";
@@ -10,10 +10,10 @@ import { CalcReferences } from "@/components/CalcReferences";
 export function generateMetadata(props: {
   params: Promise<{ locale: string }>;
 }) {
-  return buildCalcMetadata("bmi-bsa-ibw", props.params);
+  return buildCalcMetadata("4ts-hit", props.params);
 }
 
-export default async function BmiBsaIbwPage({
+export default async function FourTsHitPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -24,27 +24,24 @@ export default async function BmiBsaIbwPage({
 
   return (
     <div className="space-y-8">
-      <CalcJsonLd id="bmi-bsa-ibw" locale={locale} />
+      <CalcJsonLd id="4ts-hit" locale={locale} />
       <div>
         <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
-          {t("bmiBsaIbw.title")}
+          {t("fourTsHit.title")}
         </p>
         <h1 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-50">
-          {t("bmiBsaIbw.subtitle")}
+          {t("fourTsHit.subtitle")}
         </h1>
       </div>
 
-      <DynamicCalcForm
-        calcId="bmi-bsa-ibw"
-        customDefaults={{ heightCm: 170, weightKg: 70, sex: "male" }}
-      />
+      <DynamicCalcForm calcId="4ts-hit" />
 
-      <CalcContent id="bmi-bsa-ibw" locale={locale} />
+      <CalcContent id="4ts-hit" locale={locale} />
 
       <CalcByline locale={locale} />
 
       <CalcReferences
-        references={bmiBsaIbw.calculator.references}
+        references={fourTsHit.calculator.references}
         label={t("common.references")}
       />
     </div>

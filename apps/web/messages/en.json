@@ -2835,7 +2835,9 @@
       "currentSodiumMEqL": "Current Serum Sodium (mEq/L)",
       "targetSodiumMEqL": "Target Serum Sodium (mEq/L)",
       "sex": "Sex",
-      "ageCategory": "Age category"
+      "ageCategory": "Age category",
+      "ageCategory_adult": "Adult (18–64 years)",
+      "ageCategory_elderly": "Elderly (≥ 65 years)"
     },
     "patient": {
       "intro": "This calculator estimates the amount of fluid needed to treat hypernatremia (high blood sodium level).",
@@ -3379,6 +3381,133 @@
           "a": "S - Sex, A - Age, D - Depression, P - Previous attempt, E - Ethanol use, R - Rational thinking loss, S - Social supports lacking, O - Organized plan, N - No spouse, S - Sickness."
         }
       ]
+    }
+  },
+  "isthDic": {
+    "title": "ISTH DIC score",
+    "subtitle": "ISTH score for overt DIC in patients with a predisposing disorder.",
+    "fields": {
+      "platelets": "Platelet count",
+      "platelets_0": "> 100 ×10⁹/L",
+      "platelets_1": "50–100 ×10⁹/L",
+      "platelets_2": "< 50 ×10⁹/L",
+      "fibrinMarker": "Fibrin-related marker (D-dimer or FDP)",
+      "fibrinMarker_0": "No increase",
+      "fibrinMarker_2": "Moderate increase",
+      "fibrinMarker_3": "Strong increase",
+      "ptProlongation": "Prothrombin time prolongation",
+      "ptProlongation_0": "< 3 s",
+      "ptProlongation_1": "3–6 s",
+      "ptProlongation_2": "> 6 s",
+      "fibrinogen": "Fibrinogen",
+      "fibrinogen_0": "≥ 1 g/L",
+      "fibrinogen_1": "< 1 g/L"
+    },
+    "patient": {
+      "intro": "This score assesses whether blood clotting has become disturbed throughout the body as a complication of another serious illness.",
+      "ask_doctor": "Questions for your doctor:",
+      "questions": [
+        "Which underlying illness caused this clotting problem?",
+        "How often will these blood tests be repeated?",
+        "What signs of bleeding or clotting should I watch for?"
+      ]
+    },
+    "content": {
+      "overview": "The ISTH score quantifies overt DIC from four laboratory parameters: platelets, a fibrin-related marker, prothrombin time and fibrinogen.",
+      "interpretation": "A score of 0 means none of the four criteria is abnormal; overt DIC is not supported at this time. A score of 1–4 is not compatible with overt DIC but is suggestive of non-overt DIC; repeat the score in 1–2 days if the underlying disorder persists. A score of 5 or more is compatible with overt DIC and should be repeated daily.",
+      "cautions": "Applicable only when the patient has an underlying disorder known to be associated with DIC. It does not replace clinical judgement or treatment of the underlying cause.",
+      "faq": []
+    }
+  },
+  "fourTsHit": {
+    "title": "4Ts score for heparin-induced thrombocytopenia",
+    "subtitle": "Pretest probability of HIT from four clinical criteria; low scores rule it out.",
+    "fields": {
+      "thrombocytopenia": "Thrombocytopenia",
+      "thrombocytopenia_0": "Fall < 30% or nadir < 10 ×10⁹/L",
+      "thrombocytopenia_1": "Fall 30–50% or nadir 10–19 ×10⁹/L",
+      "thrombocytopenia_2": "Fall > 50% and nadir ≥ 20 ×10⁹/L",
+      "timing": "Timing of the platelet count fall",
+      "timing_0": "Fall before day 4 with no recent heparin exposure",
+      "timing_1": "Consistent with days 5–10 but not well documented, or onset after day 10, or fall ≤ 1 day with heparin exposure 30–100 days ago",
+      "timing_2": "Clear onset between days 5 and 10, or fall ≤ 1 day with heparin exposure within the past 30 days",
+      "thrombosis": "Thrombosis or other sequelae",
+      "thrombosis_0": "None",
+      "thrombosis_1": "Recurrent or progressive thrombosis, non-necrotising skin lesions, or suspected but unproven thrombosis",
+      "thrombosis_2": "New confirmed thrombosis, skin necrosis, or an acute systemic reaction after a heparin bolus",
+      "otherCauses": "Other causes of thrombocytopenia",
+      "otherCauses_0": "Clear alternative cause present",
+      "otherCauses_1": "Possible alternative cause",
+      "otherCauses_2": "No alternative cause evident"
+    },
+    "patient": {
+      "intro": "This score estimates how likely it is that heparin is causing the drop in platelets.",
+      "ask_doctor": "Questions for your doctor:",
+      "questions": [
+        "Do I need to stop heparin while we wait for the results?",
+        "Which alternative anticoagulant will I be given?",
+        "Will I be able to receive heparin again in the future?"
+      ]
+    },
+    "content": {
+      "overview": "The 4Ts score scores four criteria from 0 to 2 - thrombocytopenia, timing of the fall, thrombosis, and other causes - to estimate the pretest probability of HIT.",
+      "interpretation": "0–3 is low probability, 4–5 intermediate, 6–8 high. A low score has a high negative predictive value and avoids unnecessary testing and anticoagulant changes.",
+      "cautions": "This is a pretest probability, not a diagnosis: an intermediate or high score must be confirmed with an immunoassay plus a functional assay. The decision to stop heparin remains clinical.",
+      "faq": []
+    }
+  },
+  "khorana": {
+    "title": "Khorana score for chemotherapy-associated venous thromboembolism",
+    "subtitle": "VTE risk before chemotherapy, from tumour site and pretreatment labs.",
+    "fields": {
+      "tumourSite": "Tumour site",
+      "tumourSite_0": "Other sites",
+      "tumourSite_1": "High risk: lung, lymphoma, gynaecological, bladder or testicular",
+      "tumourSite_2": "Very high risk: stomach or pancreas",
+      "plateletsHigh": "Platelet count ≥ 350 ×10⁹/L before chemotherapy",
+      "anaemiaOrEsa": "Haemoglobin < 10 g/dL or use of erythropoiesis-stimulating agents",
+      "leukocytesHigh": "Leukocyte count > 11 ×10⁹/L before chemotherapy",
+      "bmiHigh": "BMI ≥ 35 kg/m²"
+    },
+    "patient": {
+      "intro": "This score estimates how likely you are to develop a blood clot during chemotherapy, based on your tumour type and a few blood test results.",
+      "ask_doctor": "Questions for your oncologist:",
+      "questions": [
+        "Does my risk justify starting preventive low-molecular-weight heparin?",
+        "How often will you repeat my blood tests during treatment?",
+        "What symptoms of a blood clot should I watch for at home?"
+      ]
+    },
+    "content": {
+      "overview": "The Khorana score adds tumour site (0, 1 or 2 points by risk category) to four pretreatment variables - platelet count, haemoglobin or ESA use, leukocyte count and BMI - to estimate the risk of venous thromboembolism before starting chemotherapy.",
+      "interpretation": "A score of 0 is low risk, 1–2 intermediate, and 3 or above high risk. Guidelines recommend considering pharmacological thromboprophylaxis in high-risk patients without a contraindication from bleeding risk.",
+      "cautions": "This is a screening tool for ambulatory patients starting chemotherapy; it does not apply to inpatients or to managing an established VTE event. The final decision to start prophylaxis must weigh individual bleeding risk and the specific chemotherapy regimen.",
+      "faq": []
+    }
+  },
+  "binet": {
+    "title": "Binet staging for chronic lymphocytic leukaemia",
+    "subtitle": "Prognostic staging (A, B, C) by involved lymphoid areas and cytopenias.",
+    "fields": {
+      "stage": "Binet stage",
+      "stage_A": "A — fewer than 3 involved lymphoid areas, no anaemia or thrombocytopenia",
+      "stage_B": "B — 3 or more involved lymphoid areas, no anaemia or thrombocytopenia",
+      "stage_C": "C — Hb < 10 g/dL and/or platelets < 100 ×10⁹/L, regardless of the number of areas"
+    },
+    "patient": {
+      "intro": "This staging system classifies chronic lymphocytic leukaemia (CLL) into three groups — A, B and C — based on how many areas with lymph nodes, the spleen or the liver are involved, and on whether anaemia or a drop in platelets is present.",
+      "ask_doctor": "Questions for your doctor:",
+      "questions": [
+        "What Binet stage am I in and what does it mean for my prognosis?",
+        "Do I need to start treatment now or is watch and wait more appropriate?",
+        "How often will you repeat my blood tests and physical exam?"
+      ]
+    },
+    "content": {
+      "overview": "Binet staging classifies chronic lymphocytic leukaemia by the number of involved lymphoid areas — cervical, axillary and inguinal nodes (each counted once whether unilateral or bilateral), spleen and liver, five areas in total — and by the presence of anaemia or thrombocytopenia.",
+      "interpretation": "Stage A: fewer than 3 involved areas, no anaemia or thrombocytopenia; watch and wait is the standard approach. Stage B: 3 or more involved areas, no anaemia or thrombocytopenia; treatment is given if active-disease criteria are met. Stage C: haemoglobin < 10 g/dL and/or platelets < 100 ×10⁹/L, regardless of the number of involved areas; treatment is generally indicated.",
+      "cautions": "Applies only to an already-diagnosed chronic lymphocytic leukaemia/small lymphocytic lymphoma; anaemia or thrombocytopenia must be confirmed as marrow-related (from infiltration) rather than autoimmune haemolysis or another peripheral cause, since that would misclassify the stage.",
+      "faq": []
     }
   }
 }

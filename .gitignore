@@ -10,3 +10,5 @@ coverage
 *.tsbuildinfo
 .vercel
 .aider*
+docs/superpowers/
+.superpowers/

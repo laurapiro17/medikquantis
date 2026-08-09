@@ -2835,7 +2835,9 @@
       "currentSodiumMEqL": "Sodio sérico actual (mEq/L)",
       "targetSodiumMEqL": "Sodio sérico objetivo (mEq/L)",
       "sex": "Sexo",
-      "ageCategory": "Categoría de edad"
+      "ageCategory": "Categoría de edad",
+      "ageCategory_adult": "Adulto (18–64 años)",
+      "ageCategory_elderly": "Anciano (≥ 65 años)"
     },
     "patient": {
       "intro": "Esta calculadora estima el volumen de líquido necesario para tratar la hipernatremia (nivel elevado de sodio en sangre).",
@@ -3379,6 +3381,133 @@
           "a": "S - Sex (Sexo), A - Age (Edad), D - Depression, P - Previous attempt, E - Ethanol, R - Rational thinking loss, S - Social supports lacking, O - Organized plan, N - No spouse, S - Sickness."
         }
       ]
+    }
+  },
+  "isthDic": {
+    "title": "Escala CID de la ISTH",
+    "subtitle": "Puntuación ISTH para la CID manifiesta, en enfermedades de base que predisponen.",
+    "fields": {
+      "platelets": "Recuento de plaquetas",
+      "platelets_0": "> 100 ×10⁹/L",
+      "platelets_1": "50–100 ×10⁹/L",
+      "platelets_2": "< 50 ×10⁹/L",
+      "fibrinMarker": "Marcador de fibrina (dímero D o PDF)",
+      "fibrinMarker_0": "Sin aumento",
+      "fibrinMarker_2": "Aumento moderado",
+      "fibrinMarker_3": "Aumento intenso",
+      "ptProlongation": "Alargamiento del tiempo de protrombina",
+      "ptProlongation_0": "< 3 s",
+      "ptProlongation_1": "3–6 s",
+      "ptProlongation_2": "> 6 s",
+      "fibrinogen": "Fibrinógeno",
+      "fibrinogen_0": "≥ 1 g/L",
+      "fibrinogen_1": "< 1 g/L"
+    },
+    "patient": {
+      "intro": "Esta escala valora si la coagulación de la sangre se ha alterado de forma generalizada como complicación de otra enfermedad grave.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿Qué enfermedad de base ha provocado esta alteración de la coagulación?",
+        "¿Cada cuánto repetiréis estos análisis?",
+        "¿Qué signos de hemorragia o de trombosis debo vigilar?"
+      ]
+    },
+    "content": {
+      "overview": "La puntuación de la ISTH cuantifica la CID manifiesta con cuatro parámetros de laboratorio: plaquetas, un marcador de fibrina, el tiempo de protrombina y el fibrinógeno.",
+      "interpretation": "Una puntuación de 0 significa que ninguno de los cuatro criterios está alterado; no hay datos de CID manifiesta en este momento. Una puntuación de 1 a 4 no es compatible con CID manifiesta pero sugiere CID no manifiesta; repítela en 1–2 días si persiste la enfermedad de base. Una puntuación ≥ 5 es compatible con CID manifiesta y debe repetirse a diario.",
+      "cautions": "Solo es aplicable si el paciente tiene una enfermedad de base conocida por asociarse a CID. No sustituye al juicio clínico ni al tratamiento de la causa subyacente.",
+      "faq": []
+    }
+  },
+  "fourTsHit": {
+    "title": "Escala 4T para trombocitopenia inducida por heparina",
+    "subtitle": "Probabilidad pretest de TIH según cuatro criterios clínicos; la descarta si es baja.",
+    "fields": {
+      "thrombocytopenia": "Trombocitopenia",
+      "thrombocytopenia_0": "Descenso < 30 % o nadir < 10 ×10⁹/L",
+      "thrombocytopenia_1": "Descenso 30–50 % o nadir 10–19 ×10⁹/L",
+      "thrombocytopenia_2": "Descenso > 50 % y nadir ≥ 20 ×10⁹/L",
+      "timing": "Momento del descenso de plaquetas",
+      "timing_0": "Descenso antes del día 4 sin exposición reciente a heparina",
+      "timing_1": "Compatible con días 5–10 pero poco documentado, o inicio después del día 10, o descenso ≤ 1 día con exposición hace 30–100 días",
+      "timing_2": "Inicio claro entre los días 5 y 10, o descenso ≤ 1 día con exposición a heparina en los últimos 30 días",
+      "thrombosis": "Trombosis u otras secuelas",
+      "thrombosis_0": "Ninguna",
+      "thrombosis_1": "Trombosis recurrente o progresiva, lesiones cutáneas no necróticas, o trombosis sospechada no confirmada",
+      "thrombosis_2": "Trombosis nueva confirmada, necrosis cutánea, o reacción sistémica aguda tras un bolo de heparina",
+      "otherCauses": "Otras causas de trombocitopenia",
+      "otherCauses_0": "Causa alternativa clara",
+      "otherCauses_1": "Causa alternativa posible",
+      "otherCauses_2": "Ninguna causa alternativa aparente"
+    },
+    "patient": {
+      "intro": "Esta escala calcula la probabilidad de que la heparina sea la causa de la bajada de plaquetas.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿Debo dejar la heparina mientras esperamos los resultados?",
+        "¿Qué anticoagulante alternativo voy a usar?",
+        "¿Podré volver a recibir heparina en el futuro?"
+      ]
+    },
+    "content": {
+      "overview": "La escala 4T puntúa de 0 a 2 cuatro criterios — trombocitopenia, momento del descenso, trombosis y otras causas — para estimar la probabilidad pretest de TIH.",
+      "interpretation": "0–3 probabilidad baja, 4–5 intermedia, 6–8 alta. Una puntuación baja tiene un valor predictivo negativo alto y permite evitar pruebas y cambios de anticoagulante innecesarios.",
+      "cautions": "Es una probabilidad pretest, no un diagnóstico: una puntuación intermedia o alta obliga a confirmarla con inmunoensayo y prueba funcional. La decisión de suspender la heparina es clínica.",
+      "faq": []
+    }
+  },
+  "khorana": {
+    "title": "Escala de Khorana para tromboembolismo venoso asociado a quimioterapia",
+    "subtitle": "Riesgo de TEV antes de la quimioterapia, según localización tumoral y analítica.",
+    "fields": {
+      "tumourSite": "Localización del tumor",
+      "tumourSite_0": "Otras localizaciones",
+      "tumourSite_1": "Riesgo alto: pulmón, linfoma, ginecológico, vejiga o testículo",
+      "tumourSite_2": "Riesgo muy alto: estómago o páncreas",
+      "plateletsHigh": "Plaquetas ≥ 350 ×10⁹/L antes de la quimioterapia",
+      "anaemiaOrEsa": "Hemoglobina < 10 g/dL o uso de agentes estimulantes de la eritropoyesis",
+      "leukocytesHigh": "Leucocitos > 11 ×10⁹/L antes de la quimioterapia",
+      "bmiHigh": "IMC ≥ 35 kg/m²"
+    },
+    "patient": {
+      "intro": "Esta escala calcula la probabilidad de que aparezca una trombosis (un coágulo en la sangre) durante el tratamiento de quimioterapia, a partir del tipo de tumor y de algunos valores de la analítica.",
+      "ask_doctor": "Preguntas para tu oncólogo:",
+      "questions": [
+        "¿Mi riesgo justifica empezar heparina de bajo peso molecular preventiva?",
+        "¿Con qué frecuencia me repetiréis la analítica durante el tratamiento?",
+        "¿Qué síntomas de trombosis debo vigilar en casa?"
+      ]
+    },
+    "content": {
+      "overview": "La escala de Khorana suma la localización del tumor (0, 1 o 2 puntos según el riesgo) a cuatro variables pretratamiento — plaquetas, hemoglobina o uso de ESA, leucocitos e IMC — para estimar el riesgo de tromboembolismo venoso antes de iniciar la quimioterapia.",
+      "interpretation": "0 puntos es riesgo bajo, 1–2 riesgo intermedio y ≥ 3 riesgo alto. En los pacientes de alto riesgo, las guías recomiendan valorar tromboprofilaxis farmacológica si no existe contraindicación por sangrado.",
+      "cautions": "Es una herramienta de cribado para pacientes ambulatorios que inician quimioterapia, no válida para pacientes ingresados ni para decidir sobre un episodio de TEV ya establecido. La decisión final de iniciar profilaxis debe tener en cuenta el riesgo hemorrágico individual y el tipo de quimioterapia.",
+      "faq": []
+    }
+  },
+  "binet": {
+    "title": "Estadificación de Binet para la leucemia linfática crónica",
+    "subtitle": "Estadificación pronóstica (A, B, C) según áreas linfoides afectadas y citopenias.",
+    "fields": {
+      "stage": "Estadio de Binet",
+      "stage_A": "A — menos de 3 áreas linfoides afectadas, sin anemia ni trombocitopenia",
+      "stage_B": "B — 3 o más áreas linfoides afectadas, sin anemia ni trombocitopenia",
+      "stage_C": "C — Hb < 10 g/dL y/o plaquetas < 100 ×10⁹/L, sea cual sea el número de áreas"
+    },
+    "patient": {
+      "intro": "Esta estadificación clasifica la leucemia linfática crónica (LLC) en tres grupos —A, B y C— según cuántas zonas con ganglios linfáticos, el bazo o el hígado están afectados, y según si hay anemia o un descenso de las plaquetas.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿En qué estadio de Binet estoy y qué significa para mi pronóstico?",
+        "¿Necesito empezar tratamiento ahora o es mejor hacer seguimiento (watch and wait)?",
+        "¿Con qué frecuencia me repetiréis la analítica y la exploración física?"
+      ]
+    },
+    "content": {
+      "overview": "La estadificación de Binet clasifica la leucemia linfática crónica según el número de áreas linfoides afectadas —ganglios cervicales, axilares e inguinales (cada uno se cuenta una sola vez aunque sea bilateral), bazo e hígado, cinco áreas en total— y según la presencia de anemia o trombocitopenia.",
+      "interpretation": "Estadio A: menos de 3 áreas afectadas, sin anemia ni trombocitopenia; la actitud estándar es la observación (watch and wait). Estadio B: 3 o más áreas afectadas, sin anemia ni trombocitopenia; se trata si existen criterios de enfermedad activa. Estadio C: hemoglobina < 10 g/dL y/o plaquetas < 100 ×10⁹/L, independientemente del número de áreas afectadas; el tratamiento suele estar indicado.",
+      "cautions": "Solo es aplicable a la leucemia linfática crónica/linfoma linfocítico de células pequeñas ya diagnosticados; la anemia o la trombocitopenia deben confirmarse de origen medular (por infiltración) y no por hemólisis autoinmune u otra causa periférica, ya que eso alteraría la estadificación.",
+      "faq": []
     }
   }
 }
