@@ -3471,7 +3471,7 @@
     },
     "patient": {
       "intro": "Aquesta escala estima la probabilitat de desenvolupar una trombosi (un coàgul a la sang) durant el tractament de quimioteràpia, a partir del tipus de tumor i d'alguns valors de l'anàlisi de sang.",
-      "ask_doctor": "Preguntes per al teu metge:",
+      "ask_doctor": "Preguntes per al teu oncòleg:",
       "questions": [
         "El meu risc justifica començar heparina de baix pes molecular preventiva?",
         "Amb quina freqüència m'heu de repetir l'analítica durant el tractament?",
