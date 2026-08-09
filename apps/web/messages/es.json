@@ -3385,7 +3385,7 @@
   },
   "isthDic": {
     "title": "Escala CID de la ISTH",
-    "subtitle": "Puntuación de la ISTH para coagulación intravascular diseminada manifiesta, aplicable solo si existe una enfermedad de base asociada a CID.",
+    "subtitle": "Puntuación ISTH para la CID manifiesta, en enfermedades de base que predisponen.",
     "fields": {
       "platelets": "Recuento de plaquetas",
       "platelets_0": "> 100 ×10⁹/L",
@@ -3421,7 +3421,7 @@
   },
   "fourTsHit": {
     "title": "Escala 4T para trombocitopenia inducida por heparina",
-    "subtitle": "Probabilidad pretest de TIH a partir de cuatro criterios clínicos, con un valor predictivo negativo alto cuando la puntuación es baja.",
+    "subtitle": "Probabilidad pretest de TIH según cuatro criterios clínicos; la descarta si es baja.",
     "fields": {
       "thrombocytopenia": "Trombocitopenia",
       "thrombocytopenia_0": "Descenso < 30 % o nadir < 10 ×10⁹/L",
@@ -3458,7 +3458,7 @@
   },
   "khorana": {
     "title": "Escala de Khorana para tromboembolismo venoso asociado a quimioterapia",
-    "subtitle": "Riesgo de TEV antes de iniciar un ciclo de quimioterapia ambulatoria, según la localización tumoral y cuatro parámetros analíticos.",
+    "subtitle": "Riesgo de TEV antes de la quimioterapia, según localización tumoral y analítica.",
     "fields": {
       "tumourSite": "Localización del tumor",
       "tumourSite_0": "Otras localizaciones",
@@ -3487,7 +3487,7 @@
   },
   "binet": {
     "title": "Estadificación de Binet para la leucemia linfática crónica",
-    "subtitle": "Clasificación pronóstica en tres estadios (A, B, C) según el número de áreas linfoides afectadas y la presencia de anemia o trombocitopenia.",
+    "subtitle": "Estadificación pronóstica (A, B, C) según áreas linfoides afectadas y citopenias.",
     "fields": {
       "stage": "Estadio de Binet",
       "stage_A": "A — menos de 3 áreas linfoides afectadas, sin anemia ni trombocitopenia",

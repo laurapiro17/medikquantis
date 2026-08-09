@@ -3385,7 +3385,7 @@
   },
   "isthDic": {
     "title": "Escala CID de la ISTH",
-    "subtitle": "Puntuació de la ISTH per a coagulació intravascular disseminada manifesta, aplicable només si hi ha una malaltia de base associada a CID.",
+    "subtitle": "Puntuació ISTH per a la CID manifesta, en malalties de base que hi predisposen.",
     "fields": {
       "platelets": "Recompte de plaquetes",
       "platelets_0": "> 100 ×10⁹/L",
@@ -3421,7 +3421,7 @@
   },
   "fourTsHit": {
     "title": "Escala 4T per a trombocitopènia induïda per heparina",
-    "subtitle": "Probabilitat pretest de TIH a partir de quatre criteris clínics, amb un valor predictiu negatiu alt quan la puntuació és baixa.",
+    "subtitle": "Probabilitat pretest de TIH segons quatre criteris clínics; descartada si és baixa.",
     "fields": {
       "thrombocytopenia": "Trombocitopènia",
       "thrombocytopenia_0": "Descens < 30 % o nadir < 10 ×10⁹/L",
@@ -3458,7 +3458,7 @@
   },
   "khorana": {
     "title": "Escala de Khorana per a tromboembolisme venós associat a quimioteràpia",
-    "subtitle": "Risc de TEV abans d'iniciar un cicle de quimioteràpia ambulatòria, segons la localització tumoral i quatre paràmetres analítics.",
+    "subtitle": "Risc de TEV abans de la quimioteràpia, segons localització tumoral i analítica.",
     "fields": {
       "tumourSite": "Localització del tumor",
       "tumourSite_0": "Altres localitzacions",
@@ -3487,7 +3487,7 @@
   },
   "binet": {
     "title": "Estadiatge de Binet per a la leucèmia limfàtica crònica",
-    "subtitle": "Classificació pronòstica en tres estadis (A, B, C) segons el nombre d'àrees limfoides afectades i la presència d'anèmia o trombocitopènia.",
+    "subtitle": "Estadiatge pronòstic (A, B, C) segons àrees limfoides afectades i citopènies.",
     "fields": {
       "stage": "Estadi de Binet",
       "stage_A": "A — menys de 3 àrees limfoides afectades, sense anèmia ni trombocitopènia",

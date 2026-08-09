@@ -3385,7 +3385,7 @@
   },
   "isthDic": {
     "title": "ISTH DIC score",
-    "subtitle": "ISTH score for overt disseminated intravascular coagulation, applicable only when an underlying disorder associated with DIC is present.",
+    "subtitle": "ISTH score for overt DIC in patients with a predisposing disorder.",
     "fields": {
       "platelets": "Platelet count",
       "platelets_0": "> 100 ×10⁹/L",
@@ -3421,7 +3421,7 @@
   },
   "fourTsHit": {
     "title": "4Ts score for heparin-induced thrombocytopenia",
-    "subtitle": "Pretest probability of HIT from four clinical criteria, with a high negative predictive value at a low score.",
+    "subtitle": "Pretest probability of HIT from four clinical criteria; low scores rule it out.",
     "fields": {
       "thrombocytopenia": "Thrombocytopenia",
       "thrombocytopenia_0": "Fall < 30% or nadir < 10 ×10⁹/L",
@@ -3458,7 +3458,7 @@
   },
   "khorana": {
     "title": "Khorana score for chemotherapy-associated venous thromboembolism",
-    "subtitle": "VTE risk before starting ambulatory chemotherapy, from tumour site and four pretreatment laboratory values.",
+    "subtitle": "VTE risk before chemotherapy, from tumour site and pretreatment labs.",
     "fields": {
       "tumourSite": "Tumour site",
       "tumourSite_0": "Other sites",
@@ -3487,7 +3487,7 @@
   },
   "binet": {
     "title": "Binet staging for chronic lymphocytic leukaemia",
-    "subtitle": "Prognostic classification into three stages (A, B, C) based on the number of involved lymphoid areas and the presence of anaemia or thrombocytopenia.",
+    "subtitle": "Prognostic staging (A, B, C) by involved lymphoid areas and cytopenias.",
     "fields": {
       "stage": "Binet stage",
       "stage_A": "A — fewer than 3 involved lymphoid areas, no anaemia or thrombocytopenia",
