@@ -3480,7 +3480,7 @@
     },
     "content": {
       "overview": "La escala de Khorana suma la localización del tumor (0, 1 o 2 puntos según el riesgo) a cuatro variables pretratamiento — plaquetas, hemoglobina o uso de ESA, leucocitos e IMC — para estimar el riesgo de tromboembolismo venoso antes de iniciar la quimioterapia.",
-      "interpretation": "0 puntos es riesgo bajo, 1-2 riesgo intermedio y ≥ 3 riesgo alto. En los pacientes de alto riesgo, las guías recomiendan valorar tromboprofilaxis farmacológica si no existe contraindicación por sangrado.",
+      "interpretation": "0 puntos es riesgo bajo, 1–2 riesgo intermedio y ≥ 3 riesgo alto. En los pacientes de alto riesgo, las guías recomiendan valorar tromboprofilaxis farmacológica si no existe contraindicación por sangrado.",
       "cautions": "Es una herramienta de cribado para pacientes ambulatorios que inician quimioterapia, no válida para pacientes ingresados ni para decidir sobre un episodio de TEV ya establecido. La decisión final de iniciar profilaxis debe tener en cuenta el riesgo hemorrágico individual y el tipo de quimioterapia.",
       "faq": []
     }

@@ -22,7 +22,7 @@ export function interpret(score: number): InterpretResult {
     return {
       tier: "high",
       recommendation:
-        "Binet stage C: anaemia (Hb < 10 g/dL) and/or thrombocytopenia (platelets < 100 x10^9/L). Treatment is generally indicated.",
+        "Binet stage C: anaemia (Hb < 10 g/dL) and/or thrombocytopenia (platelets < 100 ×10⁹/L). Treatment is generally indicated.",
       recommendationCode: "BINET_C",
       evidenceGrade: "A",
     };

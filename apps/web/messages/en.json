@@ -3425,11 +3425,11 @@
     "fields": {
       "thrombocytopenia": "Thrombocytopenia",
       "thrombocytopenia_0": "Fall < 30% or nadir < 10 ×10⁹/L",
-      "thrombocytopenia_1": "Fall 30-50% or nadir 10-19 ×10⁹/L",
+      "thrombocytopenia_1": "Fall 30–50% or nadir 10–19 ×10⁹/L",
       "thrombocytopenia_2": "Fall > 50% and nadir ≥ 20 ×10⁹/L",
       "timing": "Timing of the platelet count fall",
       "timing_0": "Fall before day 4 with no recent heparin exposure",
-      "timing_1": "Consistent with days 5-10 but not well documented, or onset after day 10, or fall ≤ 1 day with heparin exposure 30-100 days ago",
+      "timing_1": "Consistent with days 5–10 but not well documented, or onset after day 10, or fall ≤ 1 day with heparin exposure 30–100 days ago",
       "timing_2": "Clear onset between days 5 and 10, or fall ≤ 1 day with heparin exposure within the past 30 days",
       "thrombosis": "Thrombosis or other sequelae",
       "thrombosis_0": "None",
@@ -3451,7 +3451,7 @@
     },
     "content": {
       "overview": "The 4Ts score scores four criteria from 0 to 2 - thrombocytopenia, timing of the fall, thrombosis, and other causes - to estimate the pretest probability of HIT.",
-      "interpretation": "0-3 is low probability, 4-5 intermediate, 6-8 high. A low score has a high negative predictive value and avoids unnecessary testing and anticoagulant changes.",
+      "interpretation": "0–3 is low probability, 4–5 intermediate, 6–8 high. A low score has a high negative predictive value and avoids unnecessary testing and anticoagulant changes.",
       "cautions": "This is a pretest probability, not a diagnosis: an intermediate or high score must be confirmed with an immunoassay plus a functional assay. The decision to stop heparin remains clinical.",
       "faq": []
     }
@@ -3480,7 +3480,7 @@
     },
     "content": {
       "overview": "The Khorana score adds tumour site (0, 1 or 2 points by risk category) to four pretreatment variables - platelet count, haemoglobin or ESA use, leukocyte count and BMI - to estimate the risk of venous thromboembolism before starting chemotherapy.",
-      "interpretation": "A score of 0 is low risk, 1-2 intermediate, and 3 or above high risk. Guidelines recommend considering pharmacological thromboprophylaxis in high-risk patients without a contraindication from bleeding risk.",
+      "interpretation": "A score of 0 is low risk, 1–2 intermediate, and 3 or above high risk. Guidelines recommend considering pharmacological thromboprophylaxis in high-risk patients without a contraindication from bleeding risk.",
       "cautions": "This is a screening tool for ambulatory patients starting chemotherapy; it does not apply to inpatients or to managing an established VTE event. The final decision to start prophylaxis must weigh individual bleeding risk and the specific chemotherapy regimen.",
       "faq": []
     }
@@ -3505,7 +3505,7 @@
     },
     "content": {
       "overview": "Binet staging classifies chronic lymphocytic leukaemia by the number of involved lymphoid areas — cervical, axillary and inguinal nodes (each counted once whether unilateral or bilateral), spleen and liver, five areas in total — and by the presence of anaemia or thrombocytopenia.",
-      "interpretation": "Stage A: fewer than 3 involved areas, no anaemia or thrombocytopenia; watch and wait is the standard approach. Stage B: 3 or more involved areas, no anaemia or thrombocytopenia; treatment is given if active-disease criteria are met. Stage C: haemoglobin < 10 g/dL and/or platelets < 100 x10^9/L, regardless of the number of involved areas; treatment is generally indicated.",
+      "interpretation": "Stage A: fewer than 3 involved areas, no anaemia or thrombocytopenia; watch and wait is the standard approach. Stage B: 3 or more involved areas, no anaemia or thrombocytopenia; treatment is given if active-disease criteria are met. Stage C: haemoglobin < 10 g/dL and/or platelets < 100 ×10⁹/L, regardless of the number of involved areas; treatment is generally indicated.",
       "cautions": "Applies only to an already-diagnosed chronic lymphocytic leukaemia/small lymphocytic lymphoma; anaemia or thrombocytopenia must be confirmed as marrow-related (from infiltration) rather than autoimmune haemolysis or another peripheral cause, since that would misclassify the stage.",
       "faq": []
     }
