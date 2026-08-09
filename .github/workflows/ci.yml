@@ -41,6 +41,9 @@ jobs:
       - name: i18n key parity (CA/ES/EN)
         run: pnpm lint:i18n
 
+      - name: Verify catalogue counts in docs and copy
+        run: pnpm verify:counts
+
       - name: Verify PMIDs against PubMed (NCBI EUtils)
         run: pnpm verify:pmids
 
