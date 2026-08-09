@@ -3414,7 +3414,7 @@
     },
     "content": {
       "overview": "The ISTH score quantifies overt DIC from four laboratory parameters: platelets, a fibrin-related marker, prothrombin time and fibrinogen.",
-      "interpretation": "A score of 5 or more is compatible with overt DIC and should be repeated daily. Below 5 it suggests non-overt DIC; repeat in 1–2 days.",
+      "interpretation": "A score of 0 means none of the four criteria is abnormal; overt DIC is not supported at this time. A score of 1–4 is not compatible with overt DIC but is suggestive of non-overt DIC; repeat the score in 1–2 days if the underlying disorder persists. A score of 5 or more is compatible with overt DIC and should be repeated daily.",
       "cautions": "Applicable only when the patient has an underlying disorder known to be associated with DIC. It does not replace clinical judgement or treatment of the underlying cause.",
       "faq": []
     }

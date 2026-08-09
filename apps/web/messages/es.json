@@ -3414,7 +3414,7 @@
     },
     "content": {
       "overview": "La puntuación de la ISTH cuantifica la CID manifiesta con cuatro parámetros de laboratorio: plaquetas, un marcador de fibrina, el tiempo de protrombina y el fibrinógeno.",
-      "interpretation": "Una puntuación ≥ 5 es compatible con CID manifiesta y debe repetirse a diario. Por debajo de 5, sugiere CID no manifiesta y se recomienda repetirla en 1–2 días.",
+      "interpretation": "Una puntuación de 0 significa que ninguno de los cuatro criterios está alterado; no hay datos de CID manifiesta en este momento. Una puntuación de 1 a 4 no es compatible con CID manifiesta pero sugiere CID no manifiesta; repítela en 1–2 días si persiste la enfermedad de base. Una puntuación ≥ 5 es compatible con CID manifiesta y debe repetirse a diario.",
       "cautions": "Solo es aplicable si el paciente tiene una enfermedad de base conocida por asociarse a CID. No sustituye al juicio clínico ni al tratamiento de la causa subyacente.",
       "faq": []
     }
