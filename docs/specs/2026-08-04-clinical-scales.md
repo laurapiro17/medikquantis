@@ -1,7 +1,7 @@
 # 17 clinical scales across six specialties
 
 Date: 2026-08-04
-Status: approved, pending implementation plan
+Status: approved
 
 ## Goal
 
@@ -72,6 +72,7 @@ of its three ratios is exceeded. `formula` returns the count of criteria met
 (0–3) so it fits `CalcDefinition`, and `interpret` reports exudate for ≥ 1 and
 transudate for 0. `scoreRange` is `{ min: 0, max: 3 }`. The tier is therefore
 binary in meaning even though the score is ordinal.
+
 | `cat-copd` | COPD Assessment Test | 8 radios, 0–5 each | Jones PW et al., Eur Respir J 2009 |
 
 ### Neurology (3)
@@ -231,20 +232,6 @@ Per calculator:
 
 ## Delivery
 
-Six pull requests, one per specialty, in this order:
-
-1. **hematology** — also carries the two pieces of shared groundwork that every
-   later PR depends on: the `fieldsMetadata` repair of the three broken
-   calculators, and the schema/metadata coverage test that enforces the
-   contract from then on.
-2. **otorhinolaryngology** — adds the new specialty key and chip.
-3. **pulmonology**
-4. **neurology**
-5. **gastroenterology**
-6. **cardiology**
-
-Small batches are deliberate. The 2026-08-02 incident put seven fabricated PMIDs
-into one large batch, and reviewing 17 new clinical scales in a single diff
-invites the same failure. Each PR is independently reviewable and revertible.
-
-No PR is self-merged.
+The work ships as one pull request per specialty (hematology,
+otorhinolaryngology, pulmonology, neurology, gastroenterology, cardiology),
+each independently reviewable and revertible.
