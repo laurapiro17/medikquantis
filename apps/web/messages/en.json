@@ -3510,6 +3510,35 @@
       "cautions": "Applies only to an already-diagnosed chronic lymphocytic leukaemia/small lymphocytic lymphoma; anaemia or thrombocytopenia must be confirmed as marrow-related (from infiltration) rather than autoimmune haemolysis or another peripheral cause, since that would misclassify the stage.",
       "faq": []
     }
+  },
+  "stopBang": {
+    "title": "STOP-BANG",
+    "subtitle": "Obstructive sleep apnoea risk screening with eight clinical criteria.",
+    "fields": {
+      "snoring": "Snores loudly (audible through a closed door)",
+      "tired": "Tired, fatigued or sleepy during the daytime",
+      "observedApnoea": "Someone has observed you stop breathing during sleep",
+      "highBloodPressure": "High blood pressure or being treated for hypertension",
+      "bmiOver35": "BMI > 35 kg/m²",
+      "ageOver50": "Age > 50 years",
+      "neckOver40cm": "Neck circumference > 40 cm",
+      "male": "Male sex"
+    },
+    "patient": {
+      "intro": "This questionnaire estimates how likely you are to have sleep apnoea, a condition where breathing briefly stops many times during the night.",
+      "ask_doctor": "Questions for your doctor:",
+      "questions": [
+        "Do I need a sleep study to confirm this?",
+        "How does sleep apnoea affect my cardiovascular risk?",
+        "If I'm having surgery, do I need any special precautions?"
+      ]
+    },
+    "content": {
+      "overview": "STOP-BANG scores eight criteria - snoring, daytime tiredness, observed apnoeas, hypertension, BMI, age, neck circumference and sex - one point each.",
+      "interpretation": "0-2 is low risk, 3-4 intermediate risk, 5-8 high risk of obstructive sleep apnoea. Its strength is negative predictive value: a low score makes moderate-to-severe apnoea unlikely.",
+      "cautions": "This is a screening tool, not a diagnostic one. Diagnosis requires polysomnography or a home respiratory sleep study. A high score in a patient scheduled for surgery warrants consideration of perioperative precautions.",
+      "faq": []
+    }
   }
 }
 

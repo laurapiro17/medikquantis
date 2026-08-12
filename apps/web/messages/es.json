@@ -3510,6 +3510,35 @@
       "cautions": "Solo es aplicable a la leucemia linfática crónica/linfoma linfocítico de células pequeñas ya diagnosticados; la anemia o la trombocitopenia deben confirmarse de origen medular (por infiltración) y no por hemólisis autoinmune u otra causa periférica, ya que eso alteraría la estadificación.",
       "faq": []
     }
+  },
+  "stopBang": {
+    "title": "STOP-BANG",
+    "subtitle": "Cribado del riesgo de apnea obstructiva del sueño con ocho criterios clínicos.",
+    "fields": {
+      "snoring": "Ronca fuerte (se oye a través de una puerta cerrada)",
+      "tired": "Cansancio, fatiga o somnolencia durante el día",
+      "observedApnoea": "Alguien ha observado que deja de respirar mientras duerme",
+      "highBloodPressure": "Hipertensión arterial o tratamiento antihipertensivo",
+      "bmiOver35": "IMC > 35 kg/m²",
+      "ageOver50": "Edad > 50 años",
+      "neckOver40cm": "Perímetro del cuello > 40 cm",
+      "male": "Sexo masculino"
+    },
+    "patient": {
+      "intro": "Este cuestionario calcula la probabilidad de que tengas apnea del sueño, un trastorno en el que la respiración se interrumpe brevemente muchas veces durante la noche.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿Necesito un estudio del sueño para confirmarlo?",
+        "¿Cómo afecta la apnea del sueño a mi riesgo cardiovascular?",
+        "Si me tienen que operar, ¿hay que tomar alguna precaución especial?"
+      ]
+    },
+    "content": {
+      "overview": "El STOP-BANG puntúa ocho criterios —ronquido, cansancio diurno, apneas observadas, hipertensión, IMC, edad, perímetro del cuello y sexo— con un punto cada uno.",
+      "interpretation": "0-2 riesgo bajo, 3-4 riesgo intermedio, 5-8 riesgo alto de apnea obstructiva del sueño. Su punto fuerte es el valor predictivo negativo: una puntuación baja hace poco probable una apnea moderada o grave.",
+      "cautions": "Es una herramienta de cribado, no diagnóstica. El diagnóstico requiere una polisomnografía o una poligrafía respiratoria. Una puntuación alta en un paciente que va a ser intervenido obliga a valorar precauciones perioperatorias.",
+      "faq": []
+    }
   }
 }
 

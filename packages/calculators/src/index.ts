@@ -71,4 +71,5 @@ export * as isthDic from "./isth-dic";
 export * as fourTsHit from "./4ts-hit";
 export * as khorana from "./khorana";
 export * as binet from "./binet";
+export * as stopBang from "./stop-bang";
 

@@ -3510,6 +3510,35 @@
       "cautions": "Només és aplicable a la leucèmia limfàtica crònica/limfoma limfocític petit ja diagnosticats; l'anèmia o la trombocitopènia s'han de confirmar d'origen medul·lar (per infiltració) i no per hemòlisi autoimmune o una altra causa perifèrica, ja que això alteraria l'estadiatge.",
       "faq": []
     }
+  },
+  "stopBang": {
+    "title": "STOP-BANG",
+    "subtitle": "Cribratge de risc d'apnea obstructiva del son amb vuit criteris clínics.",
+    "fields": {
+      "snoring": "Ronca fort (s'escolta a través d'una porta tancada)",
+      "tired": "Cansament, fatiga o somnolència durant el dia",
+      "observedApnoea": "Algú ha observat que deixa de respirar mentre dorm",
+      "highBloodPressure": "Hipertensió arterial o tractament antihipertensiu",
+      "bmiOver35": "IMC > 35 kg/m²",
+      "ageOver50": "Edat > 50 anys",
+      "neckOver40cm": "Perímetre del coll > 40 cm",
+      "male": "Sexe masculí"
+    },
+    "patient": {
+      "intro": "Aquest qüestionari estima la probabilitat que tinguis apnea del son, un trastorn en què la respiració s'atura breument moltes vegades durant la nit.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "Em cal un estudi del son per confirmar-ho?",
+        "Com afecta l'apnea del son al meu risc cardiovascular?",
+        "Si m'han d'operar, cal prendre alguna precaució especial?"
+      ]
+    },
+    "content": {
+      "overview": "El STOP-BANG puntua vuit criteris —roncar, cansament diürn, apnees observades, hipertensió, IMC, edat, perímetre del coll i sexe— amb un punt cadascun.",
+      "interpretation": "0–2 risc baix, 3–4 risc intermedi, 5–8 risc alt d'apnea obstructiva del son. La seva força és el valor predictiu negatiu: una puntuació baixa fa poc probable una apnea moderada o greu.",
+      "cautions": "És una eina de cribratge, no diagnòstica. El diagnòstic requereix una polisomnografia o una poligrafia respiratòria. Una puntuació alta en un pacient que ha de ser operat obliga a valorar precaucions perioperatòries.",
+      "faq": []
+    }
   }
 }
 
