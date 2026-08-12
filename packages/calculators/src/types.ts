@@ -49,6 +49,7 @@ export type Specialty =
   | "intensive_care"
   | "pharmacology"
   | "urology"
+  | "otorhinolaryngology"
   | "geriatrics"
   | "anesthesiology"
   | (string & {});

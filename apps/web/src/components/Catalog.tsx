@@ -58,6 +58,10 @@ const SPECIALTY_CHIP: Record<string, string> = {
     "bg-teal-50 text-teal-700 dark:bg-teal-500/10 dark:text-teal-300",
   obstetrics:
     "bg-rose-50 text-rose-700 dark:bg-rose-500/10 dark:text-rose-300",
+  hematology:
+    "bg-green-50 text-green-700 dark:bg-green-500/10 dark:text-green-300",
+  otorhinolaryngology:
+    "bg-zinc-100 text-zinc-700 dark:bg-zinc-500/10 dark:text-zinc-300",
 };
 
 const DEFAULT_CHIP =
