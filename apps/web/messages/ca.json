@@ -3539,6 +3539,40 @@
       "cautions": "És una eina de cribratge, no diagnòstica. El diagnòstic requereix una polisomnografia o una poligrafia respiratòria. Una puntuació alta en un pacient que ha de ser operat obliga a valorar precaucions perioperatòries.",
       "faq": []
     }
+  },
+  "epworth": {
+    "title": "Escala de Somnolència d'Epworth",
+    "subtitle": "Qüestionari de vuit ítems que mesura la probabilitat de quedar-se adormit en situacions quotidianes.",
+    "fields": {
+      "sittingReading": "Assegut llegint",
+      "watchingTv": "Mirant la televisió",
+      "sittingInactivePublic": "Assegut i inactiu en un lloc públic (per exemple, al teatre o en una reunió)",
+      "passengerInCar": "Com a passatger en un cotxe durant una hora sense parar",
+      "lyingDownAfternoon": "Estirat descansant a la tarda quan les circumstàncies ho permeten",
+      "sittingTalking": "Assegut parlant amb algú",
+      "sittingAfterLunch": "Assegut tranquil·lament després d'un dinar sense alcohol",
+      "inCarStoppedInTraffic": "Al cotxe, aturat uns minuts en el trànsit"
+    },
+    "options": {
+      "0": "Mai no m'adormiria",
+      "1": "Poca probabilitat d'adormir-me",
+      "2": "Probabilitat moderada d'adormir-me",
+      "3": "Alta probabilitat d'adormir-me"
+    },
+    "patient": {
+      "intro": "Aquest qüestionari avalua la teva tendència a quedar-te adormit o endormiscar-te en vuit situacions de la vida diària, no només si et sents cansat.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "La meva somnolència diürna pot ser deguda a un trastorn del son?",
+        "Necessito una polisomnografia o algun altre estudi del son?",
+        "És segur per a mi conduir amb aquest nivell de somnolència?"
+      ]
+    },
+    "content": {
+      "overview": "L'escala d'Epworth puntua vuit situacions quotidianes —llegir, mirar la televisió, viatjar en cotxe, descansar a la tarda, entre d'altres— segons la probabilitat de quedar-se adormit en cadascuna, de 0 (mai) a 3 (alta probabilitat). La suma dels vuit ítems dona una puntuació de 0 a 24.",
+      "interpretation": "0–10 somnolència diürna normal; 11–14 somnolència diürna excessiva lleu; 15–17 moderada; 18–24 greu. Com més alta la puntuació, més probable és una somnolència patològica que requereix avaluació.",
+      "cautions": "És un qüestionari autoadministrat que reflecteix la percepció subjectiva del pacient, no una mesura objectiva de la son; no substitueix una polisomnografia. Una puntuació elevada obliga a valorar el risc en la conducció i altres activitats que requereixen vigilància.",
+      "faq": []
+    }
   }
 }
-

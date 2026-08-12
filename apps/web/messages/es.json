@@ -3539,6 +3539,40 @@
       "cautions": "Es una herramienta de cribado, no diagnóstica. El diagnóstico requiere una polisomnografía o una poligrafía respiratoria. Una puntuación alta en un paciente que va a ser intervenido obliga a valorar precauciones perioperatorias.",
       "faq": []
     }
+  },
+  "epworth": {
+    "title": "Escala de Somnolencia de Epworth",
+    "subtitle": "Cuestionario de ocho ítems que mide la probabilidad de quedarse dormido en situaciones cotidianas.",
+    "fields": {
+      "sittingReading": "Sentado leyendo",
+      "watchingTv": "Viendo la televisión",
+      "sittingInactivePublic": "Sentado e inactivo en un lugar público (por ejemplo, en el teatro o en una reunión)",
+      "passengerInCar": "Como pasajero en un coche durante una hora sin parar",
+      "lyingDownAfternoon": "Tumbado para descansar por la tarde, cuando las circunstancias lo permiten",
+      "sittingTalking": "Sentado charlando con alguien",
+      "sittingAfterLunch": "Sentado tranquilamente después de comer, sin haber tomado alcohol",
+      "inCarStoppedInTraffic": "En el coche, parado unos minutos en un atasco"
+    },
+    "options": {
+      "0": "Nunca me dormiría",
+      "1": "Pocas probabilidades de dormirme",
+      "2": "Probabilidad moderada de dormirme",
+      "3": "Alta probabilidad de dormirme"
+    },
+    "patient": {
+      "intro": "Este cuestionario valora tu tendencia a quedarte dormido o a dar cabezadas en ocho situaciones de la vida diaria, no solo si te sientes cansado.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿Puede esta somnolencia diurna deberse a un trastorno del sueño?",
+        "¿Necesito una polisomnografía u otro estudio del sueño?",
+        "¿Es seguro conducir con este nivel de somnolencia?"
+      ]
+    },
+    "content": {
+      "overview": "La escala de Epworth puntúa ocho situaciones cotidianas —leer, ver la televisión, viajar en coche, descansar por la tarde, entre otras— según la probabilidad de quedarse dormido en cada una, de 0 (nunca) a 3 (alta probabilidad). La suma de los ocho ítems da una puntuación de 0 a 24.",
+      "interpretation": "0–10 somnolencia diurna normal; 11–14 somnolencia diurna excesiva leve; 15–17 moderada; 18–24 grave. Cuanto mayor es la puntuación, más probable resulta una somnolencia patológica que requiere evaluación.",
+      "cautions": "Es un cuestionario autoadministrado que refleja la percepción subjetiva del paciente, no una medida objetiva del sueño; no sustituye a una polisomnografía. Una puntuación elevada obliga a valorar el riesgo al conducir y en otras actividades que requieren vigilancia.",
+      "faq": []
+    }
   }
 }
-

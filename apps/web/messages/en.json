@@ -3539,6 +3539,40 @@
       "cautions": "This is a screening tool, not a diagnostic one. Diagnosis requires polysomnography or a home respiratory sleep study. A high score in a patient scheduled for surgery warrants consideration of perioperative precautions.",
       "faq": []
     }
+  },
+  "epworth": {
+    "title": "Epworth Sleepiness Scale",
+    "subtitle": "Eight-item questionnaire measuring the likelihood of dozing off in everyday situations.",
+    "fields": {
+      "sittingReading": "Sitting and reading",
+      "watchingTv": "Watching television",
+      "sittingInactivePublic": "Sitting inactive in a public place (e.g. a theatre or a meeting)",
+      "passengerInCar": "As a passenger in a car for an hour without a break",
+      "lyingDownAfternoon": "Lying down to rest in the afternoon when circumstances permit",
+      "sittingTalking": "Sitting and talking to someone",
+      "sittingAfterLunch": "Sitting quietly after lunch without alcohol",
+      "inCarStoppedInTraffic": "In a car, while stopped for a few minutes in traffic"
+    },
+    "options": {
+      "0": "Would never doze",
+      "1": "Slight chance of dozing",
+      "2": "Moderate chance of dozing",
+      "3": "High chance of dozing"
+    },
+    "patient": {
+      "intro": "This questionnaire assesses how likely you are to doze off or fall asleep in eight everyday situations, not just how tired you feel.",
+      "ask_doctor": "Questions to ask your doctor:",
+      "questions": [
+        "Could my daytime sleepiness be caused by a sleep disorder?",
+        "Do I need a polysomnography or another sleep study?",
+        "Is it safe for me to drive with this level of sleepiness?"
+      ]
+    },
+    "content": {
+      "overview": "The Epworth Sleepiness Scale scores eight everyday situations — reading, watching television, travelling in a car, resting in the afternoon, among others — by the likelihood of dozing off in each, from 0 (would never doze) to 3 (high chance of dozing). The sum of the eight items gives a score from 0 to 24.",
+      "interpretation": "0–10 normal daytime sleepiness; 11–14 mild excessive daytime sleepiness; 15–17 moderate; 18–24 severe. The higher the score, the more likely the sleepiness is pathological and warrants evaluation.",
+      "cautions": "This is a self-administered questionnaire reflecting the patient's subjective perception, not an objective measure of sleep; it does not replace polysomnography. A high score should prompt consideration of driving risk and other activities requiring vigilance.",
+      "faq": []
+    }
   }
 }
-
