@@ -23,10 +23,13 @@ import { track } from "@/lib/analytics";
  * value in its report — raw seconds would produce hundreds of one-hit rows
  * instead of a readable histogram.
  *
- * TODO(laura): these bounds are a placeholder. They should mark the thresholds
- * that mean something clinically — see the note in the chat.
+ * The bounds mark what a visit to a calculator actually means: under 15s there
+ * was no time to fill the form, under 45s is the score-and-leave visit (a
+ * success here, even though every tool counts it as a bounce), under 120s the
+ * interpretation was read, and beyond that the notes and references were.
+ * Changing them once data exists splits the series, so they are deliberate.
  */
-const BUCKET_BOUNDS_S = [10, 30, 60, 180];
+const BUCKET_BOUNDS_S = [15, 45, 120, 300];
 
 function bucket(seconds: number): string {
   const hit = BUCKET_BOUNDS_S.find((bound) => seconds < bound);
