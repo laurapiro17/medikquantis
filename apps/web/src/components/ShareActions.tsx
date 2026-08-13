@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
-import { track } from "@vercel/analytics";
+import { track } from "@/lib/analytics";
 import { ClipboardCheck } from "lucide-react";
 
 interface ShareActionsProps {
