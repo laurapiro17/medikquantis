@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import { NextIntlClientProvider } from "next-intl";
 import { setRequestLocale, getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -11,8 +12,15 @@ import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { LayoutShell } from "@/components/LayoutShell";
 import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister";
+import { EngagementTracker } from "@/components/EngagementTracker";
 import { Logo } from "@/components/Logo";
 import { BASE_URL } from "@/lib/site";
+import {
+  UMAMI_DOMAINS,
+  UMAMI_ORIGIN,
+  UMAMI_SRC,
+  UMAMI_WEBSITE_ID,
+} from "@/lib/analytics";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -198,6 +206,7 @@ export default async function LocaleLayout({
       <head>
         <link rel="preconnect" href="https://va.vercel-scripts.com" crossOrigin="" />
         <link rel="dns-prefetch" href="https://va.vercel-scripts.com" />
+        <link rel="preconnect" href={UMAMI_ORIGIN} crossOrigin="" />
         <script dangerouslySetInnerHTML={{ __html: themeBootstrapScript }} />
       </head>
       <body className="font-sans">
@@ -213,6 +222,13 @@ export default async function LocaleLayout({
           </LayoutShell>
         </NextIntlClientProvider>
         <Analytics />
+        <Script
+          src={UMAMI_SRC}
+          data-website-id={UMAMI_WEBSITE_ID}
+          data-domains={UMAMI_DOMAINS}
+          strategy="afterInteractive"
+        />
+        <EngagementTracker />
         <ServiceWorkerRegister />
       </body>
     </html>
