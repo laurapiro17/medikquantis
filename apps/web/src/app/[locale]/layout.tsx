@@ -13,7 +13,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { LayoutShell } from "@/components/LayoutShell";
 import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister";
 import { EngagementTracker } from "@/components/EngagementTracker";
-import { Logo } from "@/components/Logo";
+import { Logo, LogoMark } from "@/components/Logo";
 import { BASE_URL } from "@/lib/site";
 import {
   UMAMI_DOMAINS,
@@ -131,11 +131,15 @@ export default async function LocaleLayout({
       <Link
         href="/"
         aria-label={t("title")}
-        className="flex items-center gap-2 font-semibold tracking-tight"
+        className="flex items-center gap-1.5 font-semibold tracking-tight"
       >
-        <Logo className="h-7 w-auto" />
-        <span className="text-slate-800 transition dark:text-slate-100">Medik</span>
-        <span className="-ml-2 text-trust-600 transition dark:text-neon">Quantis</span>
+        {/* The monogram is wider than tall, and the mobile header has no room
+            for it — below sm the square M stands in for the pair. */}
+        <LogoMark className="h-6 w-auto sm:hidden" />
+        <Logo className="hidden h-6 w-auto sm:block" />
+        <span className="text-slate-800 transition dark:text-slate-100">
+          Medik<span className="text-trust-600 dark:text-neon">Quantis</span>
+        </span>
       </Link>
       <div className="flex items-center gap-2">
         <LanguageSwitcher currentLocale={locale} />
