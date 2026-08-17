@@ -119,7 +119,10 @@ export function LayoutShell({
 
         <div className="flex min-h-screen flex-col">
           {/* Header: hamburger (mobile) + reveal button (desktop, when collapsed) */}
-          <div className="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur-md dark:border-white/10 dark:bg-[#111415]/60">
+          <div
+            data-no-print
+            className="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur-md dark:border-white/10 dark:bg-[#111415]/60"
+          >
             <div className="mx-auto flex max-w-4xl items-center gap-3 px-4 py-4">
               <button
                 type="button"
