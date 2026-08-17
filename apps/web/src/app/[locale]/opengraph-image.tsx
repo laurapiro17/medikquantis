@@ -39,32 +39,43 @@ export default async function OpenGraphImage({
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "72px 80px",
+          // Same palette as the site in dark mode: the #0c0f10 of the manifest
+          // and the `neon` accent, rather than the cyan-on-teal this image used
+          // to carry, which matched no other surface of the brand.
           background:
-            "radial-gradient(ellipse 90% 70% at 50% 0%, rgba(0,105,112,0.55), #0b0f14 65%)",
-          color: "#e6f7ff",
+            "radial-gradient(ellipse 90% 70% at 50% 0%, rgba(37,99,235,0.28), #0c0f10 65%)",
+          color: "#f1f5f9",
           fontFamily: "system-ui, -apple-system, sans-serif",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <div
-            style={{
-              width: 12,
-              height: 12,
-              borderRadius: 999,
-              background: "#00f0ff",
-              boxShadow: "0 0 18px #00f0ff",
-            }}
-          />
-          <span
-            style={{
-              fontSize: 22,
-              letterSpacing: 6,
-              textTransform: "uppercase",
-              color: "#00f0ff",
-              fontWeight: 600,
-            }}
-          >
-            MedikQuantis
+        {/* The MQ monogram, same geometry as components/Logo.tsx. */}
+        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+          <svg width={81} height={44} viewBox="0 0 59 32" fill="none">
+            <path
+              d="M4 26 L4 6 L16 26 L28 6 L28 26"
+              stroke="#f1f5f9"
+              strokeWidth={4}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <circle
+              cx={44.95}
+              cy={16}
+              r={10}
+              stroke="#93c5fd"
+              strokeWidth={4.1}
+              strokeLinecap="round"
+            />
+            <path
+              d="M48.70 24.4 L53.30 28.2"
+              stroke="#93c5fd"
+              strokeWidth={4}
+              strokeLinecap="round"
+            />
+          </svg>
+          <span style={{ display: "flex", fontSize: 30, fontWeight: 600, letterSpacing: -0.6 }}>
+            <span style={{ color: "#f1f5f9" }}>Medik</span>
+            <span style={{ color: "#93c5fd" }}>Quantis</span>
           </span>
         </div>
 
@@ -86,7 +97,7 @@ export default async function OpenGraphImage({
             style={{
               fontSize: 28,
               lineHeight: 1.35,
-              color: "#9fbac8",
+              color: "#94a3b8",
               maxWidth: 950,
             }}
           >
@@ -100,8 +111,8 @@ export default async function OpenGraphImage({
             justifyContent: "space-between",
             alignItems: "center",
             fontSize: 18,
-            color: "#9fbac8",
-            borderTop: "1px solid rgba(0,240,255,0.2)",
+            color: "#94a3b8",
+            borderTop: "1px solid rgba(147,197,253,0.22)",
             paddingTop: 24,
           }}
         >
@@ -109,7 +120,7 @@ export default async function OpenGraphImage({
             {calcCount} calculators · {specialtyCount} specialties · CA · ES ·
             EN
           </span>
-          <span style={{ fontFamily: "monospace", color: "#00f0ff" }}>
+          <span style={{ fontFamily: "monospace", color: "#93c5fd" }}>
             DOI 10.5281/zenodo.20562617
           </span>
         </div>
