@@ -9,7 +9,10 @@
  * Net effect: previously visited calculator pages keep working offline (a real
  * point-of-care win in dead-zone wards), with zero staleness risk while online.
  */
-const VERSION = "v1";
+// Bumped when the icons under /icons/ change: they are served cache-first and
+// never revalidated, so a returning visitor keeps the old bytes until the
+// cache key changes.
+const VERSION = "v2";
 const STATIC_CACHE = `mq-static-${VERSION}`;
 const PAGE_CACHE = `mq-pages-${VERSION}`;
 const OFFLINE_FALLBACK = "/ca";
