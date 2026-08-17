@@ -101,7 +101,7 @@ export default async function OpenGraphImage({
               maxWidth: 950,
             }}
           >
-            {t("hero_subheading")}
+            {t("hero_subheading", { count: calcCount })}
           </div>
         </div>
 
