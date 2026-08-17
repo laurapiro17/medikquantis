@@ -294,7 +294,10 @@
     background: #ffffff !important;
     color: #000000 !important;
   }
-  header, footer, nav, form, [data-no-print] {
+  /* `header` is deliberately NOT in this list. The site chrome header is a
+     <div> and opts out with data-no-print; the only <header> elements are the
+     title blocks of the content pages, which have to stay on the printout. */
+  footer, nav, form, [data-no-print] {
     display: none !important;
   }
   /* The disclaimer banner uses an amber background; reset it for print. */
