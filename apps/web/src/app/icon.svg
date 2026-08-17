@@ -1,6 +1,23 @@
 <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!--
+    A favicon cannot inherit the page theme, and no single flat blue clears 3:1
+    against both of Chrome's tab bars: the luminance window is narrow enough
+    that the theoretical optimum lands at 3.22:1 on each. So the colour is
+    picked per scheme instead. Light tab (#dee1e6): 5.11:1. Dark tab (#2d2e30):
+    7.54:1. Safari ignores the media query and falls back to the light value,
+    which is the safe direction.
+
+    The PNG app icons deliberately use a different blue, #2563eb. They are
+    raster and cannot switch on scheme, and #2563eb is the best single flat
+    blue across launcher backgrounds (4.06:1 on black, 3.62:1 on Android's
+    dark, 4.63:1 on an iOS light plate) where #1d4ed8 drops to 2.80:1.
+  -->
+  <style>
+    .mark { stroke: #1d4ed8; }
+    @media (prefers-color-scheme: dark) { .mark { stroke: #93c5fd; } }
+  </style>
   <g transform="translate(0.57 0.57) scale(0.9643)">
-    <path d="M4 26 L4 6 L16 26 L28 6 L28 26" stroke="#1d4ed8" stroke-width="4"
+    <path class="mark" d="M4 26 L4 6 L16 26 L28 6 L28 26" stroke-width="4"
           stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 </svg>
