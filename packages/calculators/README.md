@@ -77,7 +77,7 @@ pnpm --filter @medcalc/calculators typecheck
 
 ## Calculators
 
-49 calculators across 16 specialties. Call `listCalcIds()` for the live list, or browse the searchable catalogue at [medikquantis.me](https://medikquantis.me). The root [README](../../README.md) groups them by specialty.
+65 calculators across 19 specialties. Call `listCalcIds()` for the live list, or browse the searchable catalogue at [medikquantis.me](https://medikquantis.me). The root [README](../../README.md) groups them by specialty.
 
 ## Adding one
 

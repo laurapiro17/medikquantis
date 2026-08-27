@@ -21,8 +21,8 @@ bibliography: paper.bib
 
 # Summary
 
-`MedikQuantis` is an open-source platform that implements 49 validated clinical
-calculators and risk scores across 16 specialties, each localised to Catalan,
+`MedikQuantis` is an open-source platform that implements 65 validated clinical
+calculators and risk scores across 19 specialties, each localised to Catalan,
 Spanish and English. Every calculator reproduces the formula and decision
 thresholds exactly as published by the score's original authors, and links the
 primary literature through its PubMed identifier (PMID), so that any result is
@@ -71,8 +71,8 @@ who need an open, reproducible calculation layer rather than a closed product.
 
 # Functionality
 
-- **Calculators.** 49 scores across cardiology, nephrology, emergency medicine,
-  intensive care, and other specialties, each with a clinician and a
+- **Calculators.** 65 scores across cardiology, nephrology, emergency medicine,
+  intensive care, haematology, and other specialties, each with a clinician and a
   patient-facing view, computed live in the browser.
 - **Open API.** `GET /api/v1` lists calculators; `GET /api/v1/{id}` returns the
   input JSON Schema and references; `POST /api/v1/{id}` (and `/batch`) computes
