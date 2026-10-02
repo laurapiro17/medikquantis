@@ -69,7 +69,7 @@ export function SofaForm() {
           recommendation={result.recommendation}
           evidenceGrade={result.evidenceGrade}
           annualRiskPercent={result.annualRiskPercent}
-          riskLabelKey="common.annual_risk"
+          riskLabelKey="sofa.risk_label_icu"
           i18nNamespace="sofa"
           shareableInputs={inputs}
         />
