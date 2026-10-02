@@ -79,5 +79,10 @@ export const calculator: CalcDefinition<typeof SofaInputs> = {
       citation:
         "Vincent JL, Moreno R, Takala J, et al. The SOFA (Sepsis-related Organ Failure Assessment) score to describe organ dysfunction/failure. Intensive Care Med. 1996;22(7):707-710.",
     },
+    {
+      pmid: "9824069",
+      citation:
+        "Vincent JL, de Mendonça A, Cantraine F, et al. Use of the SOFA score to assess the incidence of organ dysfunction/failure in intensive care units: results of a multicenter, prospective study. Crit Care Med. 1998;26(11):1793-1800.",
+    },
   ],
 };

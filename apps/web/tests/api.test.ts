@@ -78,6 +78,28 @@ describe("POST /api/v1/[calc]", () => {
     expect(body.recommendation).toContain("anticoagulació oral");
   });
 
+  it("localises the CURB-65 recommendation into Catalan and Spanish", async () => {
+    const curb = {
+      confusion: false,
+      ureaOver7: false,
+      respiratoryRateAtLeast30: false,
+      lowBloodPressure: false,
+      ageAtLeast65: false,
+    };
+    for (const [lang, text] of [
+      ["ca", "Mortalitat baixa a 30 dies"],
+      ["es", "Mortalidad baja a 30 días"],
+    ]) {
+      const req = new Request(`https://x.example/api/v1/curb-65?lang=${lang}`, {
+        method: "POST",
+        body: JSON.stringify(curb),
+      });
+      const body = await (await CalcPOST(req, ctx("curb-65"))).json();
+      expect(body.recommendationCode).toBe("CURB65_LOW_OUTPATIENT");
+      expect(body.recommendation).toContain(text);
+    }
+  });
+
   it("falls back to English on unsupported lang", async () => {
     const req = new Request("https://x.example/api/v1/cha2ds2vasc?lang=fr", {
       method: "POST",

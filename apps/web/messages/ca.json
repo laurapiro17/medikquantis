@@ -829,6 +829,7 @@
   "curb65": {
     "title": "CURB-65",
     "subtitle": "Gravetat de la pneumònia adquirida a la comunitat",
+    "risk_label_30d": "Mortalitat a 30 dies",
     "fields": {
       "confusion": "Confusió (desorientació nova en persona/lloc/temps)",
       "ureaOver7": "Urea > 7 mmol/L (BUN > 19 mg/dL)",
@@ -934,6 +935,7 @@
   "centor": {
     "title": "Centor / McIsaac",
     "subtitle": "Probabilitat de faringitis per estreptococ del grup A",
+    "risk_label_gas": "Probabilitat d'estreptococ del grup A",
     "fields": {
       "tonsillarExudate": "Exsudat amigdalí",
       "tenderAnteriorCervicalNodes": "Adenopaties cervicals anteriors doloroses",
@@ -1211,6 +1213,7 @@
   "rcri": {
     "title": "RCRI (Lee)",
     "subtitle": "Índex de risc cardíac revisat per a cirurgia no cardíaca.",
+    "risk_label_periop": "Risc de complicació cardíaca major perioperatòria",
     "fields": {
       "highRiskSurgery": "Cirurgia d'alt risc (intraperitoneal, intratoràcica, vascular suprainguinal)",
       "ischemicHeartDisease": "Antecedent de cardiopatia isquèmica",
@@ -1299,6 +1302,7 @@
   "charlson": {
     "title": "Índex de Comorbiditat de Charlson",
     "subtitle": "Índex de comorbiditat ajustat per edat que prediu mortalitat a 10 anys.",
+    "risk_label_10y": "Mortalitat estimada a 10 anys",
     "group_one_point": "Comorbiditats d'1 punt",
     "group_two_points": "Comorbiditats de 2 punts",
     "group_three_points": "Comorbiditats de 3 punts",
@@ -1665,6 +1669,7 @@
   "findrisc": {
     "title": "FINDRISC",
     "subtitle": "Risc a 10 anys de desenvolupar diabetis tipus 2 (Lindström 2003).",
+    "risk_label_10y": "Risc de diabetis tipus 2 a 10 anys",
     "fields": {
       "ageBand": "Edat",
       "bmiBand": "Índex de massa corporal (kg/m²)",
@@ -2609,6 +2614,7 @@
   "sofa": {
     "title": "SOFA",
     "subtitle": "Sequential Organ Failure Assessment (Vincent 1996). Definició operativa de Sepsis-3.",
+    "risk_label_icu": "Mortalitat estimada a l'UCI",
     "scale_legend": "Introduïu cada subescala (0-4) directament. La gràfica d'UCI sol pre-calcular-les segons els punts de tall de Vincent 1996.",
     "fields": {
       "respiration": "Respiració (PaO₂/FiO₂)",
@@ -2622,7 +2628,7 @@
       "intro": "SOFA mesura com estan funcionant sis sistemes del cos en un pacient crític. Un augment de 2 punts o més és la definició moderna de sospita de sèpsia.",
       "result_low": "SOFA ≤ 6: funció orgànica relativament preservada. Cures de suport i reavaluar demà.",
       "result_moderate": "SOFA 7-9: disfunció orgànica significativa. Mortalitat ~22%; l'equip monitoritzarà de prop i pot escalar el suport.",
-      "result_high": "SOFA 10-12: disfunció orgànica greu. Mortalitat ~50%; participació multidisciplinar i discussió d'objectius de cures.",
+      "result_high": "SOFA ≥ 10: disfunció orgànica greu. Mortalitat ~50% (SOFA 10-12) i ≥80% a partir de 13; participació multidisciplinar i discussió d'objectius de cures.",
       "ask_doctor": "Pregunta a l'equip:",
       "questions": [
         "Quins òrgans estan fallant ara?",
@@ -2654,6 +2660,7 @@
   "apache2": {
     "title": "APACHE II",
     "subtitle": "Acute Physiology and Chronic Health Evaluation II (Knaus 1985). Gravetat / mortalitat a UCI.",
+    "risk_label_inhospital": "Mortalitat hospitalària estimada (pacients d'UCI no quirúrgics)",
     "scale_legend": "Cada subescala de Fisiologia Aguda s'introdueix directament (0-4). La puntuació combina APS + punts d'edat (0-6) + punts de salut crònica (0-5).",
     "section_aps": "Subescales de Fisiologia Aguda (cada una 0-4)",
     "section_age_chronic": "Edat + salut crònica",

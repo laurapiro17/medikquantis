@@ -78,7 +78,7 @@ export function RcriForm() {
           recommendation={result.recommendation}
           evidenceGrade={result.evidenceGrade}
           annualRiskPercent={result.annualRiskPercent}
-          riskLabelKey="common.annual_risk"
+          riskLabelKey="rcri.risk_label_periop"
           i18nNamespace="rcri"
           shareableInputs={inputs}
         />

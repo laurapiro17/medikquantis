@@ -98,7 +98,7 @@ export function CentorForm() {
           recommendation={result.recommendation}
           evidenceGrade={result.evidenceGrade}
           annualRiskPercent={result.annualRiskPercent}
-          riskLabelKey="common.annual_risk"
+          riskLabelKey="centor.risk_label_gas"
           i18nNamespace="centor"
           shareableInputs={inputs}
         />
