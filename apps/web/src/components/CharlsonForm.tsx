@@ -132,7 +132,7 @@ export function CharlsonForm() {
           recommendation={result.recommendation}
           evidenceGrade={result.evidenceGrade}
           annualRiskPercent={result.annualRiskPercent}
-          riskLabelKey="common.annual_risk"
+          riskLabelKey="charlson.risk_label_10y"
           i18nNamespace="charlson"
           shareableInputs={inputs}
         />
