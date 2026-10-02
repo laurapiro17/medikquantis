@@ -127,7 +127,7 @@ export function FindriscForm() {
           recommendation={result.recommendation}
           evidenceGrade={result.evidenceGrade}
           annualRiskPercent={result.annualRiskPercent}
-          riskLabelKey="common.annual_risk"
+          riskLabelKey="findrisc.risk_label_10y"
           i18nNamespace="findrisc"
           shareableInputs={inputs}
         />

@@ -93,7 +93,7 @@ export function Apache2Form() {
           recommendation={result.recommendation}
           evidenceGrade={result.evidenceGrade}
           annualRiskPercent={result.annualRiskPercent}
-          riskLabelKey="common.annual_risk"
+          riskLabelKey="apache2.risk_label_inhospital"
           i18nNamespace="apache2"
           shareableInputs={inputs}
         />

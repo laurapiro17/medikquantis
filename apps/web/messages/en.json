@@ -829,6 +829,7 @@
   "curb65": {
     "title": "CURB-65",
     "subtitle": "Community-acquired pneumonia severity",
+    "risk_label_30d": "30-day mortality",
     "fields": {
       "confusion": "Confusion (new disorientation in person/place/time)",
       "ureaOver7": "Urea > 7 mmol/L (BUN > 19 mg/dL)",
@@ -934,6 +935,7 @@
   "centor": {
     "title": "Centor / McIsaac",
     "subtitle": "Group A strep pharyngitis probability",
+    "risk_label_gas": "Probability of group A strep",
     "fields": {
       "tonsillarExudate": "Tonsillar exudate",
       "tenderAnteriorCervicalNodes": "Tender anterior cervical lymphadenopathy",
@@ -1211,6 +1213,7 @@
   "rcri": {
     "title": "RCRI (Lee)",
     "subtitle": "Revised Cardiac Risk Index for non-cardiac surgery.",
+    "risk_label_periop": "Perioperative major cardiac complication risk",
     "fields": {
       "highRiskSurgery": "High-risk surgery (intraperitoneal, intrathoracic, suprainguinal vascular)",
       "ischemicHeartDisease": "History of ischaemic heart disease",
@@ -1299,6 +1302,7 @@
   "charlson": {
     "title": "Charlson Comorbidity Index",
     "subtitle": "Age-adjusted comorbidity index predicting 10-year mortality.",
+    "risk_label_10y": "Estimated 10-year mortality",
     "group_one_point": "1-point comorbidities",
     "group_two_points": "2-point comorbidities",
     "group_three_points": "3-point comorbidities",
@@ -1665,6 +1669,7 @@
   "findrisc": {
     "title": "FINDRISC",
     "subtitle": "10-year risk of developing type 2 diabetes (Lindström 2003).",
+    "risk_label_10y": "10-year type 2 diabetes risk",
     "fields": {
       "ageBand": "Age",
       "bmiBand": "Body mass index (kg/m²)",
@@ -2609,6 +2614,7 @@
   "sofa": {
     "title": "SOFA",
     "subtitle": "Sequential Organ Failure Assessment (Vincent 1996). Sepsis-3 operational definition.",
+    "risk_label_icu": "Estimated ICU mortality",
     "scale_legend": "Enter each organ subscore (0-4) directly. The bedside ICU chart usually pre-computes these against the Vincent 1996 cut-offs.",
     "fields": {
       "respiration": "Respiration (PaO₂/FiO₂)",
@@ -2622,7 +2628,7 @@
       "intro": "SOFA measures how well six body systems are working in a critically ill patient. An increase of 2 points or more is the modern definition of suspected sepsis.",
       "result_low": "SOFA ≤ 6: relatively preserved organ function. Continue supportive care and re-check tomorrow.",
       "result_moderate": "SOFA 7-9: meaningful organ dysfunction. Mortality around 22%; the team will monitor closely and may escalate support.",
-      "result_high": "SOFA 10-12: severe organ dysfunction. Mortality around 50%; multidisciplinary input and goals-of-care conversation.",
+      "result_high": "SOFA ≥ 10: severe organ dysfunction. Mortality around 50% (SOFA 10-12) and 80% or more from 13; multidisciplinary input and goals-of-care conversation.",
       "ask_doctor": "Ask the medical team:",
       "questions": [
         "Which organs are failing right now?",
@@ -2654,6 +2660,7 @@
   "apache2": {
     "title": "APACHE II",
     "subtitle": "Acute Physiology and Chronic Health Evaluation II (Knaus 1985). ICU severity / mortality.",
+    "risk_label_inhospital": "Estimated in-hospital mortality (non-operative ICU patients)",
     "scale_legend": "Each Acute Physiology subscore is entered directly (0-4 each). The score combines APS + age points (0-6) + chronic health points (0-5).",
     "section_aps": "Acute Physiology subscores (each 0-4)",
     "section_age_chronic": "Age + chronic health",

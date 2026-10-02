@@ -234,6 +234,23 @@ const recommendations: Record<string, Translations> = {
     ca: "PERC positiu: NO useu PERC per descartar TEP. Procediu amb dímer D o imatge segons la probabilitat pretest.",
   },
 
+  // CURB-65
+  CURB65_LOW_OUTPATIENT: {
+    en: "Low 30-day mortality; outpatient treatment is usually appropriate.",
+    es: "Mortalidad baja a 30 días; el tratamiento ambulatorio suele ser adecuado.",
+    ca: "Mortalitat baixa a 30 dies; el tractament ambulatori sol ser adequat.",
+  },
+  CURB65_INTERMEDIATE_WARD: {
+    en: "Intermediate risk; consider hospital admission for short observation.",
+    es: "Riesgo intermedio; considere el ingreso hospitalario para una observación breve.",
+    ca: "Risc intermedi; considereu l'ingrés hospitalari per a una observació breu.",
+  },
+  CURB65_SEVERE_ICU: {
+    en: "Severe pneumonia; admit and consider intensive care evaluation.",
+    es: "Neumonía grave; ingrese al paciente y valore el ingreso en cuidados intensivos.",
+    ca: "Pneumònia greu; ingresseu el pacient i valoreu l'ingrés a cures intensives.",
+  },
+
   // qSOFA
   QSOFA_HIGH_SEPSIS_SUSPECT: {
     en: "qSOFA ≥2: high suspicion of sepsis-related organ dysfunction. Escalate care, consider full SOFA, lactate, blood cultures, antibiotics.",
