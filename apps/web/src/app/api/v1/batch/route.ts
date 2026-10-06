@@ -113,6 +113,7 @@ function compute(
     result.recommendationCode,
     lang,
     result.recommendation,
+    score,
   );
   return {
     index,
