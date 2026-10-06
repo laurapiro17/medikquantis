@@ -3492,6 +3492,31 @@
       "faq": []
     }
   },
+  "rIss": {
+    "title": "Sistema Internacional de Estadificación Revisado (R-ISS) del mieloma múltiple",
+    "subtitle": "Estadio ISS combinado con la citogenética de alto riesgo y la LDH en el mieloma de nuevo diagnóstico.",
+    "fields": {
+      "beta2Microglobulin": "β2-microglobulina sérica (mg/L)",
+      "albumin": "Albúmina sérica (g/dL)",
+      "highRiskCytogenetics": "Citogenética de alto riesgo por iFISH: del(17p), t(4;14) o t(14;16)",
+      "ldhHigh": "LDH sérica por encima del límite superior de la normalidad"
+    },
+    "patient": {
+      "intro": "Esta estadificación afina el ISS en el mieloma múltiple de nuevo diagnóstico añadiendo dos resultados: alteraciones genéticas de las células del mieloma y un análisis de sangre llamado LDH. Divide a los pacientes en estadios I, II y III.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿Cuál es mi estadio R-ISS y qué alteraciones genéticas se han encontrado?",
+        "¿Mi estadio cambia el tipo o la intensidad del tratamiento que me recomendáis?",
+        "¿Se repetirán estas pruebas durante el tratamiento?"
+      ]
+    },
+    "content": {
+      "overview": "El R-ISS combina el estadio ISS con las alteraciones cromosómicas detectadas por FISH en interfase y la LDH sérica. Estadio I: ISS I, sin citogenética de alto riesgo [del(17p), t(4;14) o t(14;16)] y LDH normal. Estadio III: ISS III con citogenética de alto riesgo o LDH elevada. Estadio II: todas las demás combinaciones.",
+      "interpretation": "En la cohorte del IMWG de pacientes de nuevo diagnóstico, la supervivencia global a cinco años fue del 82% en el estadio I, del 62% en el II y del 40% en el III; la supervivencia libre de progresión a cinco años fue del 55%, el 36% y el 24%.",
+      "cautions": "Validado en el mieloma de nuevo diagnóstico, valorado antes del tratamiento. La iFISH debe hacerse sobre células plasmáticas purificadas (selección CD138). La mayoría de los pacientes quedan en el estadio II, que es heterogéneo; el R2-ISS (2022) añade la ganancia de 1q para subdividirlo.",
+      "faq": []
+    }
+  },
   "isthDic": {
     "title": "Escala CID de la ISTH",
     "subtitle": "Puntuación ISTH para la CID manifiesta, en enfermedades de base que predisponen.",

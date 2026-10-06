@@ -3492,6 +3492,31 @@
       "faq": []
     }
   },
+  "rIss": {
+    "title": "Sistema Internacional d'Estadiatge Revisat (R-ISS) del mieloma múltiple",
+    "subtitle": "Estadi ISS combinat amb la citogenètica d'alt risc i la LDH en el mieloma de nou diagnòstic.",
+    "fields": {
+      "beta2Microglobulin": "β2-microglobulina sèrica (mg/L)",
+      "albumin": "Albúmina sèrica (g/dL)",
+      "highRiskCytogenetics": "Citogenètica d'alt risc per iFISH: del(17p), t(4;14) o t(14;16)",
+      "ldhHigh": "LDH sèrica per sobre del límit superior de la normalitat"
+    },
+    "patient": {
+      "intro": "Aquest estadiatge afina l'ISS en el mieloma múltiple de nou diagnòstic afegint-hi dos resultats: alteracions genètiques de les cèl·lules del mieloma i una anàlisi de sang anomenada LDH. Divideix els pacients en estadis I, II i III.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "Quin és el meu estadi R-ISS i quines alteracions genètiques s'han trobat?",
+        "El meu estadi canvia el tipus o la intensitat del tractament que em recomaneu?",
+        "Es repetiran aquestes proves durant el tractament?"
+      ]
+    },
+    "content": {
+      "overview": "L'R-ISS combina l'estadi ISS amb les alteracions cromosòmiques detectades per FISH en interfase i la LDH sèrica. Estadi I: ISS I, sense citogenètica d'alt risc [del(17p), t(4;14) o t(14;16)] i LDH normal. Estadi III: ISS III amb citogenètica d'alt risc o LDH elevada. Estadi II: totes les altres combinacions.",
+      "interpretation": "A la cohort de l'IMWG de pacients de nou diagnòstic, la supervivència global als cinc anys va ser del 82% a l'estadi I, del 62% al II i del 40% al III; la supervivència lliure de progressió als cinc anys va ser del 55%, el 36% i el 24%.",
+      "cautions": "Validat en el mieloma de nou diagnòstic, valorat abans del tractament. La iFISH s'ha de fer sobre cèl·lules plasmàtiques purificades (selecció CD138). La majoria dels pacients queden a l'estadi II, que és heterogeni; l'R2-ISS (2022) hi afegeix el guany de 1q per subdividir-lo.",
+      "faq": []
+    }
+  },
   "isthDic": {
     "title": "Escala CID de la ISTH",
     "subtitle": "Puntuació ISTH per a la CID manifesta, en malalties de base que hi predisposen.",

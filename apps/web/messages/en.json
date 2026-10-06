@@ -3492,6 +3492,31 @@
       "faq": []
     }
   },
+  "rIss": {
+    "title": "Revised International Staging System (R-ISS) for multiple myeloma",
+    "subtitle": "ISS stage combined with high-risk cytogenetics and LDH in newly diagnosed myeloma.",
+    "fields": {
+      "beta2Microglobulin": "Serum β2-microglobulin (mg/L)",
+      "albumin": "Serum albumin (g/dL)",
+      "highRiskCytogenetics": "High-risk cytogenetics by iFISH: del(17p), t(4;14) or t(14;16)",
+      "ldhHigh": "Serum LDH above the upper limit of normal"
+    },
+    "patient": {
+      "intro": "This staging system refines the ISS for newly diagnosed multiple myeloma by adding two results: genetic changes in the myeloma cells and a blood test called LDH. It divides patients into stages I, II and III.",
+      "ask_doctor": "Questions for your doctor:",
+      "questions": [
+        "What is my R-ISS stage, and which genetic changes were found?",
+        "Does my stage change the type or intensity of treatment you recommend?",
+        "Will these tests be repeated during treatment?"
+      ]
+    },
+    "content": {
+      "overview": "The R-ISS combines the ISS stage with chromosomal abnormalities detected by interphase FISH and serum LDH. Stage I: ISS I, no high-risk cytogenetics [del(17p), t(4;14) or t(14;16)] and normal LDH. Stage III: ISS III with high-risk cytogenetics or high LDH. Stage II: all other combinations.",
+      "interpretation": "In the IMWG cohort of newly diagnosed patients, five-year overall survival was 82% in stage I, 62% in stage II and 40% in stage III; five-year progression-free survival was 55%, 36% and 24%.",
+      "cautions": "Validated in newly diagnosed myeloma, assessed before treatment. iFISH should be performed on purified (CD138-selected) plasma cells. Most patients fall into stage II, which is heterogeneous; the R2-ISS (2022) adds 1q gain to split it further.",
+      "faq": []
+    }
+  },
   "isthDic": {
     "title": "ISTH DIC score",
     "subtitle": "ISTH score for overt DIC in patients with a predisposing disorder.",
