@@ -3416,6 +3416,31 @@
       "faq": []
     }
   },
+  "rai": {
+    "title": "Rai staging for chronic lymphocytic leukaemia",
+    "subtitle": "Clinical staging (0–IV) by lymphadenopathy, organomegaly and cytopenias, grouped into three risk levels.",
+    "fields": {
+      "lymphadenopathy": "Enlarged lymph nodes",
+      "organomegaly": "Splenomegaly and/or hepatomegaly",
+      "anaemia": "Anaemia: Hb < 11 g/dL",
+      "thrombocytopenia": "Thrombocytopenia: platelets < 100 ×10⁹/L"
+    },
+    "patient": {
+      "intro": "This staging system classifies chronic lymphocytic leukaemia (CLL) from stage 0 to IV according to whether there are swollen lymph nodes, an enlarged spleen or liver, anaemia or a low platelet count. The stages are grouped into low, intermediate and high risk.",
+      "ask_doctor": "Questions for your doctor:",
+      "questions": [
+        "What Rai stage am I in and which risk group does it belong to?",
+        "Do I need treatment now or is watch and wait appropriate?",
+        "Which changes in my blood tests or symptoms should make me contact you sooner?"
+      ]
+    },
+    "content": {
+      "overview": "Rai staging assumes blood and bone marrow lymphocytosis and adds findings in order of progression: stage 0, lymphocytosis only; I, enlarged lymph nodes; II, splenomegaly and/or hepatomegaly; III, anaemia (Hb < 11 g/dL); IV, thrombocytopenia (platelets < 100 ×10⁹/L). The stage is that of the most advanced finding, whether or not those of lower stages are present.",
+      "interpretation": "The modified Rai system groups the stages into low risk (0), intermediate risk (I–II) and high risk (III–IV). Early stages are monitored without treatment unless the disease is active by iwCLL criteria; high-risk stages generally warrant treatment. In the original 1975 series, median survival was over 150 months in stage 0 and 19 months in stages III and IV.",
+      "cautions": "Applies only to an already-diagnosed chronic lymphocytic leukaemia. Anaemia or thrombocytopenia counts towards the stage only when it is due to marrow infiltration, not to autoimmune haemolysis, immune thrombocytopenia or another cause. The survival figures predate current treatments, and the stage alone does not decide treatment.",
+      "faq": []
+    }
+  },
   "isthDic": {
     "title": "ISTH DIC score",
     "subtitle": "ISTH score for overt DIC in patients with a predisposing disorder.",
