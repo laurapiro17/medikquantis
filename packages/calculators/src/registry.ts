@@ -62,6 +62,7 @@ import { calculator as ciwaAr } from "./ciwa-ar";
 import { calculator as cows } from "./cows";
 import { calculator as sadPersons } from "./sad-persons";
 import { calculator as ipi } from "./ipi";
+import { calculator as rai } from "./rai";
 import { calculator as isthDic } from "./isth-dic";
 import { calculator as fourTsHit } from "./4ts-hit";
 import { calculator as khorana } from "./khorana";
@@ -137,6 +138,7 @@ const registry: Record<string, AnyCalc> = {
   cows,
   "sad-persons": sadPersons,
   ipi,
+  rai,
   "isth-dic": isthDic,
   "4ts-hit": fourTsHit,
   khorana,

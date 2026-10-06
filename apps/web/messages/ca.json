@@ -3416,6 +3416,31 @@
       "faq": []
     }
   },
+  "rai": {
+    "title": "Estadiatge de Rai per a la leucèmia limfàtica crònica",
+    "subtitle": "Estadiatge clínic (0–IV) segons adenopaties, visceromegàlies i citopènies, agrupat en tres nivells de risc.",
+    "fields": {
+      "lymphadenopathy": "Adenopaties",
+      "organomegaly": "Esplenomegàlia i/o hepatomegàlia",
+      "anaemia": "Anèmia: Hb < 11 g/dL",
+      "thrombocytopenia": "Trombocitopènia: plaquetes < 100 ×10⁹/L"
+    },
+    "patient": {
+      "intro": "Aquest estadiatge classifica la leucèmia limfàtica crònica (LLC) de l'estadi 0 al IV segons si hi ha ganglis augmentats de mida, la melsa o el fetge engrandits, anèmia o un descens de les plaquetes. Els estadis s'agrupen en risc baix, intermedi i alt.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "En quin estadi de Rai estic i a quin grup de risc correspon?",
+        "Necessito tractament ara o és millor fer seguiment (watch and wait)?",
+        "Quins canvis a les analítiques o als símptomes m'haurien de fer consultar abans?"
+      ]
+    },
+    "content": {
+      "overview": "L'estadiatge de Rai parteix d'una limfocitosi a la sang i a la medul·la òssia i hi afegeix troballes per ordre de progressió: estadi 0, només limfocitosi; I, adenopaties; II, esplenomegàlia i/o hepatomegàlia; III, anèmia (Hb < 11 g/dL); IV, trombocitopènia (plaquetes < 100 ×10⁹/L). L'estadi és el de la troballa més avançada, hi hagi o no les dels estadis inferiors.",
+      "interpretation": "El sistema de Rai modificat agrupa els estadis en risc baix (0), intermedi (I–II) i alt (III–IV). En els estadis inicials es fa seguiment sense tractament llevat que hi hagi malaltia activa segons els criteris de l'iwCLL; els estadis d'alt risc solen requerir tractament. A la sèrie original del 1975, la mediana de supervivència superava els 150 mesos a l'estadi 0 i era de 19 mesos als estadis III i IV.",
+      "cautions": "Només és aplicable a una leucèmia limfàtica crònica ja diagnosticada. L'anèmia o la trombocitopènia compten per a l'estadi només si es deuen a infiltració medul·lar, no a hemòlisi autoimmune, trombocitopènia immune o una altra causa. Les xifres de supervivència són anteriors als tractaments actuals, i l'estadi per si sol no decideix el tractament.",
+      "faq": []
+    }
+  },
   "isthDic": {
     "title": "Escala CID de la ISTH",
     "subtitle": "Puntuació ISTH per a la CID manifesta, en malalties de base que hi predisposen.",

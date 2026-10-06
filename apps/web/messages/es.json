@@ -3416,6 +3416,31 @@
       "faq": []
     }
   },
+  "rai": {
+    "title": "Estadificación de Rai para la leucemia linfática crónica",
+    "subtitle": "Estadificación clínica (0–IV) según adenopatías, visceromegalias y citopenias, agrupada en tres niveles de riesgo.",
+    "fields": {
+      "lymphadenopathy": "Adenopatías",
+      "organomegaly": "Esplenomegalia y/o hepatomegalia",
+      "anaemia": "Anemia: Hb < 11 g/dL",
+      "thrombocytopenia": "Trombocitopenia: plaquetas < 100 ×10⁹/L"
+    },
+    "patient": {
+      "intro": "Esta estadificación clasifica la leucemia linfática crónica (LLC) del estadio 0 al IV según si hay ganglios aumentados de tamaño, el bazo o el hígado agrandados, anemia o un descenso de las plaquetas. Los estadios se agrupan en riesgo bajo, intermedio y alto.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿En qué estadio de Rai estoy y a qué grupo de riesgo corresponde?",
+        "¿Necesito tratamiento ahora o es mejor hacer seguimiento (watch and wait)?",
+        "¿Qué cambios en los análisis o en los síntomas deberían hacerme consultar antes?"
+      ]
+    },
+    "content": {
+      "overview": "La estadificación de Rai parte de una linfocitosis en sangre y médula ósea y añade hallazgos por orden de progresión: estadio 0, solo linfocitosis; I, adenopatías; II, esplenomegalia y/o hepatomegalia; III, anemia (Hb < 11 g/dL); IV, trombocitopenia (plaquetas < 100 ×10⁹/L). El estadio es el del hallazgo más avanzado, estén o no presentes los de estadios inferiores.",
+      "interpretation": "El sistema de Rai modificado agrupa los estadios en riesgo bajo (0), intermedio (I–II) y alto (III–IV). En los estadios iniciales se hace seguimiento sin tratamiento salvo que haya enfermedad activa según los criterios del iwCLL; los estadios de alto riesgo suelen requerir tratamiento. En la serie original de 1975, la mediana de supervivencia superaba los 150 meses en el estadio 0 y era de 19 meses en los estadios III y IV.",
+      "cautions": "Solo es aplicable a una leucemia linfática crónica ya diagnosticada. La anemia o la trombocitopenia cuentan para el estadio solo si se deben a infiltración medular, no a hemólisis autoinmune, trombocitopenia inmune u otra causa. Las cifras de supervivencia son anteriores a los tratamientos actuales, y el estadio por sí solo no decide el tratamiento.",
+      "faq": []
+    }
+  },
   "isthDic": {
     "title": "Escala CID de la ISTH",
     "subtitle": "Puntuación ISTH para la CID manifiesta, en enfermedades de base que predisponen.",
