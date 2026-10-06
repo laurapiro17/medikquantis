@@ -3390,6 +3390,32 @@
       ]
     }
   },
+  "ipi": {
+    "title": "International Prognostic Index (IPI) for aggressive lymphoma",
+    "subtitle": "Five pretreatment factors that stratify survival in diffuse large B-cell and other aggressive lymphomas.",
+    "fields": {
+      "ageOver60": "Age > 60 years",
+      "ldhHigh": "Serum LDH above the upper limit of normal",
+      "ecog2OrMore": "ECOG performance status ≥ 2",
+      "advancedStage": "Ann Arbor stage III or IV",
+      "extranodalOver1": "More than one extranodal site involved"
+    },
+    "patient": {
+      "intro": "This index estimates the outlook of an aggressive lymphoma, such as diffuse large B-cell lymphoma, from five features checked before treatment: age, a blood test called LDH, how much the illness limits daily activity, how widespread the disease is, and whether it affects organs outside the lymph nodes.",
+      "ask_doctor": "Questions for your doctor:",
+      "questions": [
+        "What is my IPI score and how does it change my treatment plan?",
+        "Is the outlook with today's treatments better than the figures from the original study?",
+        "Which tests will you use to check how I am responding?"
+      ]
+    },
+    "content": {
+      "overview": "The IPI gives one point to each of five adverse factors present before treatment: age over 60, serum LDH above normal, ECOG performance status of 2 or more, Ann Arbor stage III–IV and more than one extranodal site. The total ranges from 0 to 5.",
+      "interpretation": "0–1 low risk, 2 low-intermediate, 3 high-intermediate, 4–5 high. In the 1993 derivation cohort, treated with doxorubicin-based chemotherapy before rituximab, five-year overall survival was 73%, 51%, 43% and 26% respectively.",
+      "cautions": "The survival figures predate rituximab; outcomes with R-CHOP are better in every group, although the index still separates risk. It is assessed at diagnosis, before treatment, and was derived in aggressive lymphoma — it is not the score for follicular lymphoma (FLIPI) or Hodgkin lymphoma. For patients aged 60 or under, the age-adjusted IPI uses only stage, LDH and performance status.",
+      "faq": []
+    }
+  },
   "isthDic": {
     "title": "ISTH DIC score",
     "subtitle": "ISTH score for overt DIC in patients with a predisposing disorder.",
