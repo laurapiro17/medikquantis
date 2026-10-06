@@ -62,6 +62,11 @@ import { calculator as gad7 } from "./gad-7";
 import { calculator as ciwaAr } from "./ciwa-ar";
 import { calculator as cows } from "./cows";
 import { calculator as sadPersons } from "./sad-persons";
+import { calculator as ipi } from "./ipi";
+import { calculator as rai } from "./rai";
+import { calculator as plasmic } from "./plasmic";
+import { calculator as iss } from "./iss";
+import { calculator as rIss } from "./r-iss";
 import { calculator as isthDic } from "./isth-dic";
 import { calculator as fourTsHit } from "./4ts-hit";
 import { calculator as khorana } from "./khorana";
@@ -140,6 +145,11 @@ const registry: Record<string, AnyCalc> = {
   "ciwa-ar": ciwaAr,
   cows,
   "sad-persons": sadPersons,
+  ipi,
+  rai,
+  plasmic,
+  iss,
+  "r-iss": rIss,
   "isth-dic": isthDic,
   "4ts-hit": fourTsHit,
   khorana,

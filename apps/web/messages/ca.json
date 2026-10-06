@@ -3437,6 +3437,133 @@
       ]
     }
   },
+  "ipi": {
+    "title": "Índex Pronòstic Internacional (IPI) per al limfoma agressiu",
+    "subtitle": "Cinc factors previs al tractament que estratifiquen la supervivència en el limfoma B difús de cèl·lula gran i altres limfomes agressius.",
+    "fields": {
+      "ageOver60": "Edat > 60 anys",
+      "ldhHigh": "LDH sèrica per sobre del límit superior de la normalitat",
+      "ecog2OrMore": "Estat funcional ECOG ≥ 2",
+      "advancedStage": "Estadi d'Ann Arbor III o IV",
+      "extranodalOver1": "Afectació de més d'una localització extraganglionar"
+    },
+    "patient": {
+      "intro": "Aquest índex estima el pronòstic d'un limfoma agressiu, com el limfoma B difús de cèl·lula gran, a partir de cinc dades que es valoren abans del tractament: l'edat, una anàlisi de sang anomenada LDH, quant limita la malaltia la teva activitat diària, com d'estesa està i si afecta òrgans fora dels ganglis.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "Quin és el meu IPI i com canvia el meu pla de tractament?",
+        "El pronòstic amb els tractaments actuals és millor que les xifres de l'estudi original?",
+        "Quines proves fareu servir per veure com responc al tractament?"
+      ]
+    },
+    "content": {
+      "overview": "L'IPI assigna un punt a cadascun de cinc factors adversos presents abans del tractament: edat superior a 60 anys, LDH sèrica elevada, estat funcional ECOG de 2 o més, estadi d'Ann Arbor III–IV i més d'una localització extraganglionar. La puntuació total va de 0 a 5.",
+      "interpretation": "0–1 risc baix, 2 intermedi-baix, 3 intermedi-alt, 4–5 alt. A la cohort de derivació del 1993, tractada amb quimioteràpia basada en doxorubicina abans de l'era del rituximab, la supervivència global als cinc anys va ser del 73%, 51%, 43% i 26%, respectivament.",
+      "cautions": "Les xifres de supervivència són anteriors al rituximab; amb R-CHOP els resultats són millors en tots els grups, tot i que l'índex continua separant el risc. Es calcula al diagnòstic, abans del tractament, i es va derivar en limfomes agressius: no és l'escala del limfoma fol·licular (FLIPI) ni del limfoma de Hodgkin. En pacients de 60 anys o menys, l'IPI ajustat per edat només fa servir l'estadi, la LDH i l'estat funcional.",
+      "faq": []
+    }
+  },
+  "rai": {
+    "title": "Estadiatge de Rai per a la leucèmia limfàtica crònica",
+    "subtitle": "Estadiatge clínic (0–IV) segons adenopaties, visceromegàlies i citopènies, agrupat en tres nivells de risc.",
+    "fields": {
+      "lymphadenopathy": "Adenopaties",
+      "organomegaly": "Esplenomegàlia i/o hepatomegàlia",
+      "anaemia": "Anèmia: Hb < 11 g/dL",
+      "thrombocytopenia": "Trombocitopènia: plaquetes < 100 ×10⁹/L"
+    },
+    "patient": {
+      "intro": "Aquest estadiatge classifica la leucèmia limfàtica crònica (LLC) de l'estadi 0 al IV segons si hi ha ganglis augmentats de mida, la melsa o el fetge engrandits, anèmia o un descens de les plaquetes. Els estadis s'agrupen en risc baix, intermedi i alt.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "En quin estadi de Rai estic i a quin grup de risc correspon?",
+        "Necessito tractament ara o és millor fer seguiment (watch and wait)?",
+        "Quins canvis a les analítiques o als símptomes m'haurien de fer consultar abans?"
+      ]
+    },
+    "content": {
+      "overview": "L'estadiatge de Rai parteix d'una limfocitosi a la sang i a la medul·la òssia i hi afegeix troballes per ordre de progressió: estadi 0, només limfocitosi; I, adenopaties; II, esplenomegàlia i/o hepatomegàlia; III, anèmia (Hb < 11 g/dL); IV, trombocitopènia (plaquetes < 100 ×10⁹/L). L'estadi és el de la troballa més avançada, hi hagi o no les dels estadis inferiors.",
+      "interpretation": "El sistema de Rai modificat agrupa els estadis en risc baix (0), intermedi (I–II) i alt (III–IV). En els estadis inicials es fa seguiment sense tractament llevat que hi hagi malaltia activa segons els criteris de l'iwCLL; els estadis d'alt risc solen requerir tractament. A la sèrie original del 1975, la mediana de supervivència superava els 150 mesos a l'estadi 0 i era de 19 mesos als estadis III i IV.",
+      "cautions": "Només és aplicable a una leucèmia limfàtica crònica ja diagnosticada. L'anèmia o la trombocitopènia compten per a l'estadi només si es deuen a infiltració medul·lar, no a hemòlisi autoimmune, trombocitopènia immune o una altra causa. Les xifres de supervivència són anteriors als tractaments actuals, i l'estadi per si sol no decideix el tractament.",
+      "faq": []
+    }
+  },
+  "plasmic": {
+    "title": "Escala PLASMIC per a la púrpura trombòtica trombocitopènica",
+    "subtitle": "Set criteris de capçalera que estimen la probabilitat de dèficit greu d'ADAMTS13 en la microangiopatia trombòtica.",
+    "fields": {
+      "plateletsLow": "Plaquetes < 30 ×10⁹/L",
+      "haemolysis": "Hemòlisi: reticulòcits > 2,5%, haptoglobina indetectable o bilirubina indirecta > 2 mg/dL (34 µmol/L)",
+      "noActiveCancer": "Sense càncer actiu (cap càncer tractat l'últim any)",
+      "noTransplant": "Sense antecedent de trasplantament d'òrgan sòlid ni de progenitors hematopoètics",
+      "mcvLow": "VCM < 90 fL",
+      "inrLow": "INR < 1,5",
+      "creatinineLow": "Creatinina < 2,0 mg/dL (177 µmol/L)"
+    },
+    "patient": {
+      "intro": "Aquesta escala ajuda a valorar, en poques hores, la probabilitat que un quadre amb plaquetes baixes i destrucció de glòbuls vermells sigui una púrpura trombòtica trombocitopènica (PTT), una urgència mèdica causada per la manca de l'enzim ADAMTS13. Fa servir set resultats que normalment ja estan disponibles.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "Quina probabilitat hi ha que tingui una PTT?",
+        "Necessitaré recanvi plasmàtic abans de tenir el resultat de l'ADAMTS13?",
+        "Quines altres causes esteu valorant?"
+      ]
+    },
+    "content": {
+      "overview": "PLASMIC suma un punt per cadascun de set criteris: plaquetes < 30 ×10⁹/L; hemòlisi (reticulòcits > 2,5%, haptoglobina indetectable o bilirubina indirecta > 2 mg/dL); absència de càncer actiu l'últim any; absència de trasplantament d'òrgan sòlid o de progenitors hematopoètics; VCM < 90 fL; INR < 1,5, i creatinina < 2,0 mg/dL. La puntuació total va de 0 a 7.",
+      "interpretation": "0–4 probabilitat baixa, 5 intermèdia i 6–7 alta de dèficit greu d'ADAMTS13 (activitat ≤ 10%). Una puntuació alta dona suport a iniciar el recanvi plasmàtic mentre s'espera el resultat de l'ADAMTS13; una puntuació baixa orienta cap a una altra causa de microangiopatia trombòtica.",
+      "cautions": "Fes-la servir només en adults amb microangiopatia trombòtica (anèmia hemolítica microangiopàtica amb trombocitopènia). Estima la probabilitat pretest i no substitueix la determinació de l'activitat d'ADAMTS13, que s'ha d'extreure abans d'administrar plasma. Les decisions de tractament es prenen amb hematologia.",
+      "faq": []
+    }
+  },
+  "iss": {
+    "title": "Sistema Internacional d'Estadiatge (ISS) del mieloma múltiple",
+    "subtitle": "Estadiatge pronòstic en tres estadis a partir de la β2-microglobulina i l'albúmina sèriques.",
+    "fields": {
+      "beta2Microglobulin": "β2-microglobulina sèrica (mg/L)",
+      "albumin": "Albúmina sèrica (g/dL)"
+    },
+    "patient": {
+      "intro": "Aquest estadiatge estima el pronòstic del mieloma múltiple al diagnòstic a partir de dues anàlisis de sang: la beta-2 microglobulina, que reflecteix la quantitat de malaltia i la funció renal, i l'albúmina. Divideix els pacients en estadis I, II i III.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "En quin estadi ISS estic i les proves genètiques en canvien el resultat?",
+        "Com influeix la meva funció renal en aquest resultat?",
+        "Quin tractament em recomaneu per al meu estadi?"
+      ]
+    },
+    "content": {
+      "overview": "L'ISS combina dues anàlisis sèriques de rutina mesurades al diagnòstic: la β2-microglobulina (mg/L) i l'albúmina (g/dL). Estadi I: β2-microglobulina < 3,5 mg/L i albúmina ≥ 3,5 g/dL. Estadi III: β2-microglobulina ≥ 5,5 mg/L, sigui quina sigui l'albúmina. Estadi II: la resta.",
+      "interpretation": "A la cohort de derivació del 2005, amb més de deu mil pacients, la mediana de supervivència va ser de 62 mesos a l'estadi I, 44 mesos al II i 29 mesos al III. Amb els tractaments actuals la supervivència és més llarga, però els estadis continuen separant el risc.",
+      "cautions": "S'aplica al mieloma múltiple simptomàtic al diagnòstic, no a la GMSI ni al mieloma quiescent. La β2-microglobulina augmenta amb la insuficiència renal, de manera que l'estadi III pot reflectir en part la funció renal. Introdueix l'albúmina en g/dL: divideix els g/L entre 10. L'R-ISS afina aquest estadiatge amb la citogenètica i la LDH.",
+      "faq": []
+    }
+  },
+  "rIss": {
+    "title": "Sistema Internacional d'Estadiatge Revisat (R-ISS) del mieloma múltiple",
+    "subtitle": "Estadi ISS combinat amb la citogenètica d'alt risc i la LDH en el mieloma de nou diagnòstic.",
+    "fields": {
+      "beta2Microglobulin": "β2-microglobulina sèrica (mg/L)",
+      "albumin": "Albúmina sèrica (g/dL)",
+      "highRiskCytogenetics": "Citogenètica d'alt risc per iFISH: del(17p), t(4;14) o t(14;16)",
+      "ldhHigh": "LDH sèrica per sobre del límit superior de la normalitat"
+    },
+    "patient": {
+      "intro": "Aquest estadiatge afina l'ISS en el mieloma múltiple de nou diagnòstic afegint-hi dos resultats: alteracions genètiques de les cèl·lules del mieloma i una anàlisi de sang anomenada LDH. Divideix els pacients en estadis I, II i III.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "Quin és el meu estadi R-ISS i quines alteracions genètiques s'han trobat?",
+        "El meu estadi canvia el tipus o la intensitat del tractament que em recomaneu?",
+        "Es repetiran aquestes proves durant el tractament?"
+      ]
+    },
+    "content": {
+      "overview": "L'R-ISS combina l'estadi ISS amb les alteracions cromosòmiques detectades per FISH en interfase i la LDH sèrica. Estadi I: ISS I, sense citogenètica d'alt risc [del(17p), t(4;14) o t(14;16)] i LDH normal. Estadi III: ISS III amb citogenètica d'alt risc o LDH elevada. Estadi II: totes les altres combinacions.",
+      "interpretation": "A la cohort de l'IMWG de pacients de nou diagnòstic, la supervivència global als cinc anys va ser del 82% a l'estadi I, del 62% al II i del 40% al III; la supervivència lliure de progressió als cinc anys va ser del 55%, el 36% i el 24%.",
+      "cautions": "Validat en el mieloma de nou diagnòstic, valorat abans del tractament. La iFISH s'ha de fer sobre cèl·lules plasmàtiques purificades (selecció CD138). La majoria dels pacients queden a l'estadi II, que és heterogeni; l'R2-ISS (2022) hi afegeix el guany de 1q per subdividir-lo.",
+      "faq": []
+    }
+  },
   "isthDic": {
     "title": "Escala CID de la ISTH",
     "subtitle": "Puntuació ISTH per a la CID manifesta, en malalties de base que hi predisposen.",
