@@ -71,6 +71,7 @@ export * as ipi from "./ipi";
 export * as rai from "./rai";
 export * as plasmic from "./plasmic";
 export * as iss from "./iss";
+export * as rIss from "./r-iss";
 export * as isthDic from "./isth-dic";
 export * as fourTsHit from "./4ts-hit";
 export * as khorana from "./khorana";
