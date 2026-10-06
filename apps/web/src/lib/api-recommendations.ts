@@ -10,6 +10,31 @@ export function parseLang(input: string | null | undefined): ApiLang {
 type Translations = Record<ApiLang, string>;
 
 const recommendations: Record<string, Translations> = {
+  YBOCS_SUBCLINICAL: {
+    en: "Subclinical symptom severity (0-7). This score alone does not exclude OCD.",
+    es: "Gravedad sintomática subclínica (0-7). La puntuación por sí sola no descarta el TOC.",
+    ca: "Gravetat simptomàtica subclínica (0-7). La puntuació per si sola no descarta el TOC.",
+  },
+  YBOCS_MILD: {
+    en: "Mild obsessive-compulsive symptom severity (8-15). Interpret within a full clinical assessment.",
+    es: "Síntomas obsesivo-compulsivos de gravedad leve (8-15). Interpretar en una valoración clínica completa.",
+    ca: "Símptomes obsessivocompulsius de gravetat lleu (8-15). Cal interpretar-los en una valoració clínica completa.",
+  },
+  YBOCS_MODERATE: {
+    en: "Moderate obsessive-compulsive symptom severity (16-23). Interpret within a full clinical assessment.",
+    es: "Síntomas obsesivo-compulsivos de gravedad moderada (16-23). Interpretar en una valoración clínica completa.",
+    ca: "Símptomes obsessivocompulsius de gravetat moderada (16-23). Cal interpretar-los en una valoració clínica completa.",
+  },
+  YBOCS_SEVERE: {
+    en: "Severe obsessive-compulsive symptom severity (24-31). Interpret within a full clinical assessment.",
+    es: "Síntomas obsesivo-compulsivos graves (24-31). Interpretar en una valoración clínica completa.",
+    ca: "Símptomes obsessivocompulsius greus (24-31). Cal interpretar-los en una valoració clínica completa.",
+  },
+  YBOCS_EXTREME: {
+    en: "Extreme obsessive-compulsive symptom severity (32-40). Interpret within a full clinical assessment.",
+    es: "Síntomas obsesivo-compulsivos de gravedad extrema (32-40). Interpretar en una valoración clínica completa.",
+    ca: "Símptomes obsessivocompulsius de gravetat extrema (32-40). Cal interpretar-los en una valoració clínica completa.",
+  },
   // CHA2DS2-VASc
   CHA2DS2VASC_OAC_NOT_RECOMMENDED: {
     en: "Oral anticoagulation not recommended.",

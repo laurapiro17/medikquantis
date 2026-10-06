@@ -37,6 +37,34 @@ describe("GET /api/v1", () => {
 });
 
 describe("POST /api/v1/[calc]", () => {
+  it.each(["en", "es", "ca"])("computes Y-BOCS and localises its severity in %s", async (lang) => {
+    const req = new Request(`https://x.example/api/v1/y-bocs?lang=${lang}`, {
+      method: "POST",
+      body: JSON.stringify({ obsessions: 12, compulsions: 12 }),
+    });
+    const res = await CalcPOST(req, ctx("y-bocs"));
+    expect(res.status).toBe(200);
+    const body = await res.json();
+    expect(body.score).toBe(24);
+    expect(body.recommendationCode).toBe("YBOCS_SEVERE");
+    expect(body.recommendation).toContain(lang === "en" ? "Severe" : lang === "es" ? "grave" : "greus");
+    expect(body.responseLanguage).toBe(lang);
+  });
+
+  it.each([
+    { obsessions: 21, compulsions: 0 },
+    { obsessions: 0, compulsions: -1 },
+    { obsessions: 0.5, compulsions: 1 },
+    { obsessions: 0 },
+  ])("rejects invalid Y-BOCS subtotals: %j", async (inputs) => {
+    const req = new Request("https://x.example/api/v1/y-bocs", {
+      method: "POST",
+      body: JSON.stringify(inputs),
+    });
+    const res = await CalcPOST(req, ctx("y-bocs"));
+    expect(res.status).toBe(422);
+  });
+
   it("computes a CHA2DS2-VASc score with full response shape", async () => {
     const req = new Request("https://x.example/api/v1/cha2ds2vasc", {
       method: "POST",

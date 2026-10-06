@@ -33,7 +33,8 @@ export function Phq9Form() {
   const urlInputs = useUrlInputs();
   useEffect(() => {
     if (!urlInputs) return;
-    setInputs((prev) => ({ ...prev, ...urlInputs }));
+    const parsed = phq9.Phq9Inputs.safeParse({ ...defaultInputs, ...urlInputs });
+    if (parsed.success) setInputs(parsed.data);
   }, [urlInputs]);
 
   const score = phq9.formula(inputs);
@@ -57,6 +58,9 @@ export function Phq9Form() {
         }}
         className="glass-panel space-y-6 p-6"
       >
+        <p className="text-sm text-slate-700 dark:text-slate-300">
+          {t("phq9.instructions")}
+        </p>
         {questions.map((qKey) => (
           <RadioGroup
             key={qKey}
@@ -81,8 +85,8 @@ export function Phq9Form() {
       </form>
 
       {inputs.q9 !== "0" && (
-        <div className="rounded-xl border border-red-500/30 bg-red-500/10 p-4 text-red-200">
-          <p className="font-semibold">⚠️ {t("phq9.suicide_alert")}</p>
+        <div role="alert" className="rounded-lg border border-red-500/30 bg-red-500/10 p-4 text-red-800 dark:text-red-200">
+          <p className="font-semibold">{t("phq9.suicide_alert")}</p>
         </div>
       )}
 
@@ -90,10 +94,11 @@ export function Phq9Form() {
         mode={mode}
         score={score}
         tier={result.tier}
-        recommendation={result.recommendation}
+        recommendation={t(`phq9.recommendations.${result.recommendationCode}`)}
         evidenceGrade={result.evidenceGrade}
         i18nNamespace="phq9"
         shareableInputs={inputs}
+        scoreRange={phq9.calculator.scoreRange}
       />
     </div>
   );

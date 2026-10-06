@@ -57,6 +57,7 @@ import { calculator as bmiBsaIbw } from "./bmi-bsa-ibw";
 import { calculator as freeWaterDeficit } from "./free-water-deficit";
 import { calculator as homaIr } from "./homa-ir";
 import { calculator as phq9 } from "./phq-9";
+import { calculator as ybocs } from "./y-bocs";
 import { calculator as gad7 } from "./gad-7";
 import { calculator as ciwaAr } from "./ciwa-ar";
 import { calculator as cows } from "./cows";
@@ -67,6 +68,7 @@ import { calculator as khorana } from "./khorana";
 import { calculator as binet } from "./binet";
 import { calculator as stopBang } from "./stop-bang";
 import { calculator as epworth } from "./epworth";
+import { calculator as snot22 } from "./snot-22";
 
 // `any` here is intentional: CalcDefinition is contravariant in its Schema
 // generic (the formula/interpret functions accept inputs typed by Schema),
@@ -133,6 +135,7 @@ const registry: Record<string, AnyCalc> = {
   "free-water-deficit": freeWaterDeficit,
   "homa-ir": homaIr,
   "phq-9": phq9,
+  "y-bocs": ybocs,
   "gad-7": gad7,
   "ciwa-ar": ciwaAr,
   cows,
@@ -143,6 +146,7 @@ const registry: Record<string, AnyCalc> = {
   binet,
   "stop-bang": stopBang,
   epworth,
+  "snot-22": snot22,
 };
 
 export function getCalc(id: string): AnyCalc | undefined {
