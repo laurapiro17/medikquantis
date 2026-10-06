@@ -65,6 +65,7 @@ export async function POST(req: Request, { params }: RouteContext) {
     result.recommendationCode,
     lang,
     result.recommendation,
+    score,
   );
 
   return corsJson({

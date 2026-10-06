@@ -914,21 +914,309 @@ const recommendations: Record<string, Translations> = {
     ca: "Ictus greu (NIHSS ≥ 21). LVO gairebé segur; trombectomia si és anatòmicament elegible i dins de finestra.",
   },
 
+  // 4Ts (heparin-induced thrombocytopenia)
+  FOURTS_LOW: {
+    en: "Low probability of HIT (0-3). HIT is unlikely; look for another cause of thrombocytopenia and continue heparin if otherwise indicated.",
+    es: "Probabilidad baja de TIH (0-3). La TIH es improbable; busque otra causa de la trombocitopenia y mantenga la heparina si está indicada por otro motivo.",
+    ca: "Probabilitat baixa de TIH (0-3). La TIH és improbable; busqueu una altra causa de la trombocitopènia i mantingueu l'heparina si està indicada per un altre motiu.",
+  },
+  FOURTS_INTERMEDIATE: {
+    en: "Intermediate probability of HIT (4-5). Consider stopping heparin and testing; clinical context decides.",
+    es: "Probabilidad intermedia de TIH (4-5). Valore suspender la heparina y solicitar pruebas; decide el contexto clínico.",
+    ca: "Probabilitat intermèdia de TIH (4-5). Valoreu suspendre l'heparina i sol·licitar proves; decideix el context clínic.",
+  },
+  FOURTS_HIGH: {
+    en: "High probability of HIT (6-8). Stop all heparin, start a non-heparin anticoagulant and send immunoassay plus functional testing.",
+    es: "Probabilidad alta de TIH (6-8). Suspenda toda la heparina, inicie un anticoagulante no heparínico y solicite inmunoensayo y prueba funcional.",
+    ca: "Probabilitat alta de TIH (6-8). Suspeneu tota l'heparina, inicieu un anticoagulant no heparínic i sol·liciteu immunoassaig i prova funcional.",
+  },
+
+  // Binet
+  BINET_A: {
+    en: "Binet stage A: fewer than three involved lymphoid areas, no anaemia or thrombocytopenia. Watch and wait is standard.",
+    es: "Estadio A de Binet: menos de tres áreas linfoides afectadas, sin anemia ni trombocitopenia. La conducta estándar es observar y esperar.",
+    ca: "Estadi A de Binet: menys de tres àrees limfoides afectades, sense anèmia ni trombocitopènia. La conducta estàndard és observar i esperar.",
+  },
+  BINET_B: {
+    en: "Binet stage B: three or more involved lymphoid areas without anaemia or thrombocytopenia. Treat if there are active-disease criteria.",
+    es: "Estadio B de Binet: tres o más áreas linfoides afectadas, sin anemia ni trombocitopenia. Trate si hay criterios de enfermedad activa.",
+    ca: "Estadi B de Binet: tres o més àrees limfoides afectades, sense anèmia ni trombocitopènia. Tracteu si hi ha criteris de malaltia activa.",
+  },
+  BINET_C: {
+    en: "Binet stage C: anaemia (Hb < 10 g/dL) and/or thrombocytopenia (platelets < 100 ×10⁹/L). Treatment is generally indicated.",
+    es: "Estadio C de Binet: anemia (Hb < 10 g/dL) y/o trombocitopenia (plaquetas < 100 ×10⁹/L). Por lo general está indicado tratar.",
+    ca: "Estadi C de Binet: anèmia (Hb < 10 g/dL) i/o trombocitopènia (plaquetes < 100 ×10⁹/L). En general cal tractar.",
+  },
+
+  // BMI / BSA / IBW
+  BMI_UNDERWEIGHT: {
+    en: "Underweight (BMI < 18.5 kg/m²). Evaluate for malnutrition, eating disorders, or underlying chronic disease.",
+    es: "Bajo peso (IMC < 18,5 kg/m²). Descarte desnutrición, trastornos de la conducta alimentaria o una enfermedad crónica subyacente.",
+    ca: "Pes baix (IMC < 18,5 kg/m²). Descarteu desnutrició, trastorns de la conducta alimentària o una malaltia crònica subjacent.",
+  },
+  BMI_NORMAL: {
+    en: "Normal body weight (BMI 18.5–24.9 kg/m²). Encourage healthy lifestyle and balanced nutrition.",
+    es: "Normopeso (IMC 18,5–24,9 kg/m²). Fomente hábitos de vida saludables y una alimentación equilibrada.",
+    ca: "Normopès (IMC 18,5–24,9 kg/m²). Fomenteu hàbits de vida saludables i una alimentació equilibrada.",
+  },
+  BMI_OVERWEIGHT: {
+    en: "Overweight (BMI 25.0–29.9 kg/m²). Recommend dietary modification, regular physical activity, and cardiovascular risk assessment.",
+    es: "Sobrepeso (IMC 25,0–29,9 kg/m²). Recomiende cambios en la dieta, actividad física regular y evaluación del riesgo cardiovascular.",
+    ca: "Sobrepès (IMC 25,0–29,9 kg/m²). Recomaneu canvis en la dieta, activitat física regular i avaluació del risc cardiovascular.",
+  },
+  BMI_OBESE_1: {
+    en: "Class I Obesity (BMI 30.0–34.9 kg/m²). Intensive lifestyle intervention recommended; evaluate metabolic comorbidities.",
+    es: "Obesidad grado I (IMC 30,0–34,9 kg/m²). Se recomienda una intervención intensiva sobre el estilo de vida; evalúe las comorbilidades metabólicas.",
+    ca: "Obesitat de grau I (IMC 30,0–34,9 kg/m²). Es recomana una intervenció intensiva sobre l'estil de vida; avalueu les comorbiditats metabòliques.",
+  },
+  BMI_OBESE_2: {
+    en: "Class II Obesity (BMI 35.0–39.9 kg/m²). Comprehensive weight management including pharmacotherapy evaluation.",
+    es: "Obesidad grado II (IMC 35,0–39,9 kg/m²). Abordaje integral del peso, incluida la valoración de tratamiento farmacológico.",
+    ca: "Obesitat de grau II (IMC 35,0–39,9 kg/m²). Abordatge integral del pes, inclosa la valoració de tractament farmacològic.",
+  },
+  BMI_OBESE_3: {
+    en: "Class III Severe Obesity (BMI ≥ 40.0 kg/m²). High metabolic/cardiovascular risk; consider bariatric multidisciplinary evaluation.",
+    es: "Obesidad grave, grado III (IMC ≥ 40,0 kg/m²). Riesgo metabólico/cardiovascular alto; considere una valoración multidisciplinar para cirugía bariátrica.",
+    ca: "Obesitat greu, grau III (IMC ≥ 40,0 kg/m²). Risc metabòlic/cardiovascular alt; considereu una valoració multidisciplinària per a cirurgia bariàtrica.",
+  },
+
+  // Epworth
+  EPWORTH_NORMAL: {
+    en: "Normal daytime sleepiness (0-10). No excessive daytime sleepiness on this basis alone.",
+    es: "Somnolencia diurna normal (0-10). Sin somnolencia diurna excesiva según esta escala por sí sola.",
+    ca: "Somnolència diürna normal (0-10). Sense somnolència diürna excessiva segons aquesta escala per si sola.",
+  },
+  EPWORTH_MILD: {
+    en: "Mild excessive daytime sleepiness (11-14). Consider further evaluation if symptoms are persistent or impair daily function.",
+    es: "Somnolencia diurna excesiva leve (11-14). Valore ampliar el estudio si los síntomas persisten o afectan a la actividad diaria.",
+    ca: "Somnolència diürna excessiva lleu (11-14). Valoreu ampliar l'estudi si els símptomes persisteixen o afecten l'activitat diària.",
+  },
+  EPWORTH_MODERATE: {
+    en: "Moderate excessive daytime sleepiness (15-17). Evaluate for an underlying sleep disorder.",
+    es: "Somnolencia diurna excesiva moderada (15-17). Estudie un posible trastorno del sueño subyacente.",
+    ca: "Somnolència diürna excessiva moderada (15-17). Estudieu un possible trastorn del son subjacent.",
+  },
+  EPWORTH_SEVERE: {
+    en: "Severe excessive daytime sleepiness (18-24). Prompt evaluation for an underlying sleep disorder is warranted, along with counselling about driving safety.",
+    es: "Somnolencia diurna excesiva grave (18-24). Está indicado estudiar sin demora un trastorno del sueño subyacente y aconsejar sobre la seguridad al conducir.",
+    ca: "Somnolència diürna excessiva greu (18-24). Cal estudiar sense demora un trastorn del son subjacent i aconsellar sobre la seguretat en la conducció.",
+  },
+
+  // Free water deficit — {score} is the deficit in litres
+  FWD_NONE: {
+    en: "No free water deficit calculated (serum sodium is at or below target).",
+    es: "Sin déficit de agua libre (el sodio sérico está en el objetivo o por debajo).",
+    ca: "Sense dèficit d'aigua lliure (el sodi sèric és a l'objectiu o per sota).",
+  },
+  FWD_DEFICIT_CALCULATED: {
+    en: "Free water deficit is {score} L. Correct slowly: decrease serum Na⁺ by NO MORE than 8–10 mEq/L per 24 hours (approx. 0.5 mEq/L/hour) to avoid severe cerebral edema. Include ongoing obligate fluid losses in total fluid replacement volume.",
+    es: "Déficit de agua libre: {score} L. Corrija lentamente: NO reduzca el Na⁺ sérico más de 8–10 mEq/L en 24 horas (aprox. 0,5 mEq/L/hora) para evitar un edema cerebral grave. Sume las pérdidas obligadas de líquidos en curso al volumen total de reposición.",
+    ca: "Dèficit d'aigua lliure: {score} L. Corregiu lentament: NO reduïu el Na⁺ sèric més de 8–10 mEq/L en 24 hores (aprox. 0,5 mEq/L/hora) per evitar un edema cerebral greu. Sumeu les pèrdues obligades de líquids en curs al volum total de reposició.",
+  },
+
+  // HOMA-IR
+  HOMA_OPTIMAL: {
+    en: "Optimal insulin sensitivity (HOMA-IR < 1.0). Low risk of insulin resistance.",
+    es: "Sensibilidad a la insulina óptima (HOMA-IR < 1,0). Riesgo bajo de resistencia a la insulina.",
+    ca: "Sensibilitat a la insulina òptima (HOMA-IR < 1,0). Risc baix de resistència a la insulina.",
+  },
+  HOMA_MILD: {
+    en: "Early or mild insulin resistance (HOMA-IR 1.0–1.9). Recommend physical activity, dietary counseling, and periodic metabolic monitoring.",
+    es: "Resistencia a la insulina incipiente o leve (HOMA-IR 1,0–1,9). Recomiende actividad física, consejo dietético y control metabólico periódico.",
+    ca: "Resistència a la insulina incipient o lleu (HOMA-IR 1,0–1,9). Recomaneu activitat física, consell dietètic i control metabòlic periòdic.",
+  },
+  HOMA_ELEVATED: {
+    en: "Significant insulin resistance (HOMA-IR ≥ 2.0). Elevated risk for metabolic syndrome, type 2 diabetes mellitus, and cardiovascular disease.",
+    es: "Resistencia a la insulina significativa (HOMA-IR ≥ 2,0). Riesgo elevado de síndrome metabólico, diabetes mellitus tipo 2 y enfermedad cardiovascular.",
+    ca: "Resistència a la insulina significativa (HOMA-IR ≥ 2,0). Risc elevat de síndrome metabòlica, diabetis mellitus tipus 2 i malaltia cardiovascular.",
+  },
+
+  // IPI
+  IPI_LOW: {
+    en: "Low risk (IPI 0-1). Five-year overall survival was 73% in the original pre-rituximab cohort.",
+    es: "Riesgo bajo (IPI 0-1). La supervivencia global a cinco años fue del 73% en la cohorte original, previa al rituximab.",
+    ca: "Risc baix (IPI 0-1). La supervivència global a cinc anys va ser del 73% en la cohort original, prèvia al rituximab.",
+  },
+  IPI_LOW_INTERMEDIATE: {
+    en: "Low-intermediate risk (IPI 2). Five-year overall survival was 51% in the original pre-rituximab cohort.",
+    es: "Riesgo intermedio-bajo (IPI 2). La supervivencia global a cinco años fue del 51% en la cohorte original, previa al rituximab.",
+    ca: "Risc intermedi-baix (IPI 2). La supervivència global a cinc anys va ser del 51% en la cohort original, prèvia al rituximab.",
+  },
+  IPI_HIGH_INTERMEDIATE: {
+    en: "High-intermediate risk (IPI 3). Five-year overall survival was 43% in the original pre-rituximab cohort.",
+    es: "Riesgo intermedio-alto (IPI 3). La supervivencia global a cinco años fue del 43% en la cohorte original, previa al rituximab.",
+    ca: "Risc intermedi-alt (IPI 3). La supervivència global a cinc anys va ser del 43% en la cohort original, prèvia al rituximab.",
+  },
+  IPI_HIGH: {
+    en: "High risk (IPI 4-5). Five-year overall survival was 26% in the original pre-rituximab cohort.",
+    es: "Riesgo alto (IPI 4-5). La supervivencia global a cinco años fue del 26% en la cohorte original, previa al rituximab.",
+    ca: "Risc alt (IPI 4-5). La supervivència global a cinc anys va ser del 26% en la cohort original, prèvia al rituximab.",
+  },
+
+  // ISS
+  ISS_I: {
+    en: "ISS stage I: β2-microglobulin < 3.5 mg/L and albumin ≥ 3.5 g/dL. Median survival was 62 months in the original cohort.",
+    es: "Estadio ISS I: β2-microglobulina < 3,5 mg/L y albúmina ≥ 3,5 g/dL. La mediana de supervivencia fue de 62 meses en la cohorte original.",
+    ca: "Estadi ISS I: β2-microglobulina < 3,5 mg/L i albúmina ≥ 3,5 g/dL. La mediana de supervivència va ser de 62 mesos en la cohort original.",
+  },
+  ISS_II: {
+    en: "ISS stage II: neither stage I nor stage III. Median survival was 44 months in the original cohort.",
+    es: "Estadio ISS II: ni estadio I ni estadio III. La mediana de supervivencia fue de 44 meses en la cohorte original.",
+    ca: "Estadi ISS II: ni estadi I ni estadi III. La mediana de supervivència va ser de 44 mesos en la cohort original.",
+  },
+  ISS_III: {
+    en: "ISS stage III: β2-microglobulin ≥ 5.5 mg/L. Median survival was 29 months in the original cohort; renal impairment also raises β2-microglobulin.",
+    es: "Estadio ISS III: β2-microglobulina ≥ 5,5 mg/L. La mediana de supervivencia fue de 29 meses en la cohorte original; la insuficiencia renal también eleva la β2-microglobulina.",
+    ca: "Estadi ISS III: β2-microglobulina ≥ 5,5 mg/L. La mediana de supervivència va ser de 29 mesos en la cohort original; la insuficiència renal també eleva la β2-microglobulina.",
+  },
+
+  // ISTH DIC
+  ISTH_DIC_NONE: {
+    en: "No laboratory evidence of DIC. Repeat the score if the underlying disorder persists or the clinical picture changes.",
+    es: "Sin datos analíticos de CID. Repita la puntuación si persiste la enfermedad de base o cambia el cuadro clínico.",
+    ca: "Sense dades analítiques de CID. Repetiu la puntuació si persisteix la malaltia de base o canvia el quadre clínic.",
+  },
+  ISTH_DIC_NON_OVERT: {
+    en: "Not compatible with overt DIC (score < 5). Suggestive of non-overt DIC; repeat in 1-2 days if clinical suspicion persists.",
+    es: "No compatible con CID manifiesta (puntuación < 5). Sugiere CID no manifiesta; repita en 1-2 días si persiste la sospecha clínica.",
+    ca: "No compatible amb CID manifesta (puntuació < 5). Suggereix CID no manifesta; repetiu en 1-2 dies si persisteix la sospita clínica.",
+  },
+  ISTH_DIC_OVERT: {
+    en: "Compatible with overt DIC (score >= 5). Treat the underlying disorder and repeat the score daily.",
+    es: "Compatible con CID manifiesta (puntuación >= 5). Trate la enfermedad de base y repita la puntuación a diario.",
+    ca: "Compatible amb CID manifesta (puntuació >= 5). Tracteu la malaltia de base i repetiu la puntuació cada dia.",
+  },
+
+  // Khorana
+  KHORANA_LOW: {
+    en: "Low risk (score 0). Thromboprophylaxis is not indicated; educate on the symptoms of thrombosis.",
+    es: "Riesgo bajo (puntuación 0). No está indicada la tromboprofilaxis; informe sobre los síntomas de trombosis.",
+    ca: "Risc baix (puntuació 0). No està indicada la tromboprofilaxi; informeu sobre els símptomes de trombosi.",
+  },
+  KHORANA_INTERMEDIATE: {
+    en: "Intermediate risk (score 1-2). Routine thromboprophylaxis is not recommended; reassess if the clinical situation changes.",
+    es: "Riesgo intermedio (puntuación 1-2). No se recomienda tromboprofilaxis sistemática; reevalúe si cambia la situación clínica.",
+    ca: "Risc intermedi (puntuació 1-2). No es recomana tromboprofilaxi sistemàtica; reavalueu si canvia la situació clínica.",
+  },
+  KHORANA_HIGH: {
+    en: "High risk of chemotherapy-associated VTE (score >= 3). Thromboprophylaxis is recommended by guideline in the absence of bleeding risk.",
+    es: "Riesgo alto de TEV asociado a quimioterapia (puntuación >= 3). Las guías recomiendan tromboprofilaxis si no hay riesgo hemorrágico.",
+    ca: "Risc alt de TEV associat a quimioteràpia (puntuació >= 3). Les guies recomanen tromboprofilaxi si no hi ha risc hemorràgic.",
+  },
+
+  // PLASMIC
+  PLASMIC_LOW: {
+    en: "Low probability of severe ADAMTS13 deficiency (PLASMIC 0-4). TTP is unlikely; look for another cause of the thrombotic microangiopathy.",
+    es: "Probabilidad baja de déficit grave de ADAMTS13 (PLASMIC 0-4). La PTT es improbable; busque otra causa de la microangiopatía trombótica.",
+    ca: "Probabilitat baixa de dèficit greu d'ADAMTS13 (PLASMIC 0-4). La PTT és improbable; busqueu una altra causa de la microangiopatia trombòtica.",
+  },
+  PLASMIC_INTERMEDIATE: {
+    en: "Intermediate probability (PLASMIC 5). Send ADAMTS13 activity and decide on plasma exchange with haematology in light of the whole clinical picture.",
+    es: "Probabilidad intermedia (PLASMIC 5). Solicite la actividad de ADAMTS13 y decida el recambio plasmático con hematología según el cuadro clínico global.",
+    ca: "Probabilitat intermèdia (PLASMIC 5). Sol·liciteu l'activitat d'ADAMTS13 i decidiu el recanvi plasmàtic amb hematologia segons el quadre clínic global.",
+  },
+  PLASMIC_HIGH: {
+    en: "High probability of severe ADAMTS13 deficiency (PLASMIC 6-7). Send ADAMTS13 activity and start urgent plasma exchange without waiting for the result, under haematology guidance.",
+    es: "Probabilidad alta de déficit grave de ADAMTS13 (PLASMIC 6-7). Solicite la actividad de ADAMTS13 e inicie recambio plasmático urgente sin esperar el resultado, con la orientación de hematología.",
+    ca: "Probabilitat alta de dèficit greu d'ADAMTS13 (PLASMIC 6-7). Sol·liciteu l'activitat d'ADAMTS13 i inicieu recanvi plasmàtic urgent sense esperar el resultat, amb l'orientació d'hematologia.",
+  },
+
+  // R-ISS
+  RISS_I: {
+    en: "R-ISS stage I: ISS I with standard-risk cytogenetics and normal LDH. Five-year overall survival was 82% in the IMWG cohort.",
+    es: "Estadio R-ISS I: ISS I con citogenética de riesgo estándar y LDH normal. La supervivencia global a cinco años fue del 82% en la cohorte del IMWG.",
+    ca: "Estadi R-ISS I: ISS I amb citogenètica de risc estàndard i LDH normal. La supervivència global a cinc anys va ser del 82% en la cohort de l'IMWG.",
+  },
+  RISS_II: {
+    en: "R-ISS stage II: neither stage I nor stage III. Five-year overall survival was 62% in the IMWG cohort.",
+    es: "Estadio R-ISS II: ni estadio I ni estadio III. La supervivencia global a cinco años fue del 62% en la cohorte del IMWG.",
+    ca: "Estadi R-ISS II: ni estadi I ni estadi III. La supervivència global a cinc anys va ser del 62% en la cohort de l'IMWG.",
+  },
+  RISS_III: {
+    en: "R-ISS stage III: ISS III with high-risk cytogenetics or high LDH. Five-year overall survival was 40% in the IMWG cohort.",
+    es: "Estadio R-ISS III: ISS III con citogenética de alto riesgo o LDH elevada. La supervivencia global a cinco años fue del 40% en la cohorte del IMWG.",
+    ca: "Estadi R-ISS III: ISS III amb citogenètica d'alt risc o LDH elevada. La supervivència global a cinc anys va ser del 40% en la cohort de l'IMWG.",
+  },
+
+  // Rai
+  RAI_0: {
+    en: "Rai stage 0 (low risk): blood and marrow lymphocytosis only. Watch and wait is standard.",
+    es: "Estadio 0 de Rai (riesgo bajo): solo linfocitosis en sangre y médula ósea. La conducta estándar es observar y esperar.",
+    ca: "Estadi 0 de Rai (risc baix): només limfocitosi en sang i medul·la òssia. La conducta estàndard és observar i esperar.",
+  },
+  RAI_I: {
+    en: "Rai stage I (intermediate risk): lymphocytosis with enlarged lymph nodes. Treat only if iwCLL active-disease criteria are met.",
+    es: "Estadio I de Rai (riesgo intermedio): linfocitosis con adenopatías. Trate solo si se cumplen los criterios iwCLL de enfermedad activa.",
+    ca: "Estadi I de Rai (risc intermedi): limfocitosi amb adenopaties. Tracteu només si es compleixen els criteris iwCLL de malaltia activa.",
+  },
+  RAI_II: {
+    en: "Rai stage II (intermediate risk): lymphocytosis with splenomegaly and/or hepatomegaly. Treat only if iwCLL active-disease criteria are met.",
+    es: "Estadio II de Rai (riesgo intermedio): linfocitosis con esplenomegalia y/o hepatomegalia. Trate solo si se cumplen los criterios iwCLL de enfermedad activa.",
+    ca: "Estadi II de Rai (risc intermedi): limfocitosi amb esplenomegàlia i/o hepatomegàlia. Tracteu només si es compleixen els criteris iwCLL de malaltia activa.",
+  },
+  RAI_III: {
+    en: "Rai stage III (high risk): lymphocytosis with anaemia (Hb < 11 g/dL). Treatment is generally indicated once a marrow-related cause is confirmed.",
+    es: "Estadio III de Rai (riesgo alto): linfocitosis con anemia (Hb < 11 g/dL). Por lo general está indicado tratar una vez confirmado el origen medular.",
+    ca: "Estadi III de Rai (risc alt): limfocitosi amb anèmia (Hb < 11 g/dL). En general cal tractar un cop confirmat l'origen medul·lar.",
+  },
+  RAI_IV: {
+    en: "Rai stage IV (high risk): lymphocytosis with thrombocytopenia (platelets < 100 ×10⁹/L). Treatment is generally indicated once a marrow-related cause is confirmed.",
+    es: "Estadio IV de Rai (riesgo alto): linfocitosis con trombocitopenia (plaquetas < 100 ×10⁹/L). Por lo general está indicado tratar una vez confirmado el origen medular.",
+    ca: "Estadi IV de Rai (risc alt): limfocitosi amb trombocitopènia (plaquetes < 100 ×10⁹/L). En general cal tractar un cop confirmat l'origen medul·lar.",
+  },
+
+  // SNOT-22
+  SNOT22_MILD: {
+    en: "Mild sinonasal symptom burden (0-20). Limited impact on daily life on this basis alone.",
+    es: "Carga leve de síntomas sinonasales (0-20). Impacto limitado en la vida diaria según esta escala por sí sola.",
+    ca: "Càrrega lleu de símptomes sinonasals (0-20). Impacte limitat en la vida diària segons aquesta escala per si sola.",
+  },
+  SNOT22_MODERATE: {
+    en: "Moderate sinonasal symptom burden (21-50). Clinically meaningful impact on quality of life warranting evaluation and treatment.",
+    es: "Carga moderada de síntomas sinonasales (21-50). Impacto clínicamente relevante en la calidad de vida que justifica evaluación y tratamiento.",
+    ca: "Càrrega moderada de símptomes sinonasals (21-50). Impacte clínicament rellevant en la qualitat de vida que justifica avaluació i tractament.",
+  },
+  SNOT22_SEVERE: {
+    en: "Severe sinonasal symptom burden (51-110). Substantial impact on daily life; specialist rhinology review is warranted.",
+    es: "Carga grave de síntomas sinonasales (51-110). Impacto importante en la vida diaria; está indicada la valoración por rinología.",
+    ca: "Càrrega greu de símptomes sinonasals (51-110). Impacte important en la vida diària; cal valoració per rinologia.",
+  },
+
+  // STOP-BANG
+  STOPBANG_LOW: {
+    en: "Low risk of obstructive sleep apnoea (0-2). Moderate-to-severe OSA is unlikely; no sleep study indicated on this basis alone.",
+    es: "Riesgo bajo de apnea obstructiva del sueño (0-2). Una AOS moderada-grave es improbable; esta escala por sí sola no indica estudio del sueño.",
+    ca: "Risc baix d'apnea obstructiva del son (0-2). Una AOS moderada-greu és improbable; aquesta escala per si sola no indica estudi del son.",
+  },
+  STOPBANG_INTERMEDIATE: {
+    en: "Intermediate risk of obstructive sleep apnoea (3-4). Consider further evaluation, weighted by symptoms and comorbidity.",
+    es: "Riesgo intermedio de apnea obstructiva del sueño (3-4). Valore ampliar el estudio según los síntomas y la comorbilidad.",
+    ca: "Risc intermedi d'apnea obstructiva del son (3-4). Valoreu ampliar l'estudi segons els símptomes i la comorbiditat.",
+  },
+  STOPBANG_HIGH: {
+    en: "High risk of obstructive sleep apnoea (5-8). Refer for sleep study; consider perioperative precautions if surgery is planned.",
+    es: "Riesgo alto de apnea obstructiva del sueño (5-8). Derive para estudio del sueño; considere precauciones perioperatorias si hay cirugía programada.",
+    ca: "Risc alt d'apnea obstructiva del son (5-8). Deriveu per a estudi del son; considereu precaucions perioperatòries si hi ha cirurgia programada.",
+  },
+
 };
 
 /**
  * Translate a recommendation code into the requested language.
  * Falls back to the English string carried by interpret() if the code is
  * unknown (defensive — should never trigger if registry + codes stay in sync).
+ * `{score}` in an entry is replaced by `score`, for advice that quotes it.
  */
 export function translateRecommendation(
   code: string,
   lang: ApiLang,
   fallbackEn: string,
+  score?: number,
 ): string {
   const entry = recommendations[code];
   if (!entry) return fallbackEn;
-  return entry[lang] ?? entry.en;
+  const text = entry[lang] ?? entry.en;
+  return score === undefined ? text : text.replace("{score}", String(score));
 }
 
 export function listRecommendationCodes(): string[] {
