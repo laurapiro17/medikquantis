@@ -20,6 +20,7 @@ const ENFORCED = new Set([
   "ipi",
   "rai",
   "plasmic",
+  "iss",
 ]);
 
 describe("fieldsMetadata coverage", () => {

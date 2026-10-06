@@ -3469,6 +3469,29 @@
       "faq": []
     }
   },
+  "iss": {
+    "title": "Sistema Internacional d'Estadiatge (ISS) del mieloma múltiple",
+    "subtitle": "Estadiatge pronòstic en tres estadis a partir de la β2-microglobulina i l'albúmina sèriques.",
+    "fields": {
+      "beta2Microglobulin": "β2-microglobulina sèrica (mg/L)",
+      "albumin": "Albúmina sèrica (g/dL)"
+    },
+    "patient": {
+      "intro": "Aquest estadiatge estima el pronòstic del mieloma múltiple al diagnòstic a partir de dues anàlisis de sang: la beta-2 microglobulina, que reflecteix la quantitat de malaltia i la funció renal, i l'albúmina. Divideix els pacients en estadis I, II i III.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "En quin estadi ISS estic i les proves genètiques en canvien el resultat?",
+        "Com influeix la meva funció renal en aquest resultat?",
+        "Quin tractament em recomaneu per al meu estadi?"
+      ]
+    },
+    "content": {
+      "overview": "L'ISS combina dues anàlisis sèriques de rutina mesurades al diagnòstic: la β2-microglobulina (mg/L) i l'albúmina (g/dL). Estadi I: β2-microglobulina < 3,5 mg/L i albúmina ≥ 3,5 g/dL. Estadi III: β2-microglobulina ≥ 5,5 mg/L, sigui quina sigui l'albúmina. Estadi II: la resta.",
+      "interpretation": "A la cohort de derivació del 2005, amb més de deu mil pacients, la mediana de supervivència va ser de 62 mesos a l'estadi I, 44 mesos al II i 29 mesos al III. Amb els tractaments actuals la supervivència és més llarga, però els estadis continuen separant el risc.",
+      "cautions": "S'aplica al mieloma múltiple simptomàtic al diagnòstic, no a la GMSI ni al mieloma quiescent. La β2-microglobulina augmenta amb la insuficiència renal, de manera que l'estadi III pot reflectir en part la funció renal. Introdueix l'albúmina en g/dL: divideix els g/L entre 10. L'R-ISS afina aquest estadiatge amb la citogenètica i la LDH.",
+      "faq": []
+    }
+  },
   "isthDic": {
     "title": "Escala CID de la ISTH",
     "subtitle": "Puntuació ISTH per a la CID manifesta, en malalties de base que hi predisposen.",

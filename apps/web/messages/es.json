@@ -3469,6 +3469,29 @@
       "faq": []
     }
   },
+  "iss": {
+    "title": "Sistema Internacional de Estadificación (ISS) del mieloma múltiple",
+    "subtitle": "Estadificación pronóstica en tres estadios a partir de la β2-microglobulina y la albúmina séricas.",
+    "fields": {
+      "beta2Microglobulin": "β2-microglobulina sérica (mg/L)",
+      "albumin": "Albúmina sérica (g/dL)"
+    },
+    "patient": {
+      "intro": "Esta estadificación estima el pronóstico del mieloma múltiple al diagnóstico a partir de dos análisis de sangre: la beta-2 microglobulina, que refleja la cantidad de enfermedad y la función renal, y la albúmina. Divide a los pacientes en estadios I, II y III.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿En qué estadio ISS estoy y cambian el resultado mis pruebas genéticas?",
+        "¿Cómo influye mi función renal en este resultado?",
+        "¿Qué tratamiento me recomendáis para mi estadio?"
+      ]
+    },
+    "content": {
+      "overview": "El ISS combina dos análisis séricos de rutina medidos al diagnóstico: la β2-microglobulina (mg/L) y la albúmina (g/dL). Estadio I: β2-microglobulina < 3,5 mg/L y albúmina ≥ 3,5 g/dL. Estadio III: β2-microglobulina ≥ 5,5 mg/L, sea cual sea la albúmina. Estadio II: el resto.",
+      "interpretation": "En la cohorte de derivación de 2005, con más de diez mil pacientes, la mediana de supervivencia fue de 62 meses en el estadio I, 44 meses en el II y 29 meses en el III. Con los tratamientos actuales la supervivencia es mayor, pero los estadios siguen separando el riesgo.",
+      "cautions": "Se aplica al mieloma múltiple sintomático al diagnóstico, no a la GMSI ni al mieloma quiescente. La β2-microglobulina aumenta con la insuficiencia renal, por lo que el estadio III puede reflejar en parte la función renal. Introduce la albúmina en g/dL: divide los g/L entre 10. El R-ISS afina esta estadificación con la citogenética y la LDH.",
+      "faq": []
+    }
+  },
   "isthDic": {
     "title": "Escala CID de la ISTH",
     "subtitle": "Puntuación ISTH para la CID manifiesta, en enfermedades de base que predisponen.",
