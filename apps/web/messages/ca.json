@@ -3390,6 +3390,32 @@
       ]
     }
   },
+  "ipi": {
+    "title": "Índex Pronòstic Internacional (IPI) per al limfoma agressiu",
+    "subtitle": "Cinc factors previs al tractament que estratifiquen la supervivència en el limfoma B difús de cèl·lula gran i altres limfomes agressius.",
+    "fields": {
+      "ageOver60": "Edat > 60 anys",
+      "ldhHigh": "LDH sèrica per sobre del límit superior de la normalitat",
+      "ecog2OrMore": "Estat funcional ECOG ≥ 2",
+      "advancedStage": "Estadi d'Ann Arbor III o IV",
+      "extranodalOver1": "Afectació de més d'una localització extraganglionar"
+    },
+    "patient": {
+      "intro": "Aquest índex estima el pronòstic d'un limfoma agressiu, com el limfoma B difús de cèl·lula gran, a partir de cinc dades que es valoren abans del tractament: l'edat, una anàlisi de sang anomenada LDH, quant limita la malaltia la teva activitat diària, com d'estesa està i si afecta òrgans fora dels ganglis.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "Quin és el meu IPI i com canvia el meu pla de tractament?",
+        "El pronòstic amb els tractaments actuals és millor que les xifres de l'estudi original?",
+        "Quines proves fareu servir per veure com responc al tractament?"
+      ]
+    },
+    "content": {
+      "overview": "L'IPI assigna un punt a cadascun de cinc factors adversos presents abans del tractament: edat superior a 60 anys, LDH sèrica elevada, estat funcional ECOG de 2 o més, estadi d'Ann Arbor III–IV i més d'una localització extraganglionar. La puntuació total va de 0 a 5.",
+      "interpretation": "0–1 risc baix, 2 intermedi-baix, 3 intermedi-alt, 4–5 alt. A la cohort de derivació del 1993, tractada amb quimioteràpia basada en doxorubicina abans de l'era del rituximab, la supervivència global als cinc anys va ser del 73%, 51%, 43% i 26%, respectivament.",
+      "cautions": "Les xifres de supervivència són anteriors al rituximab; amb R-CHOP els resultats són millors en tots els grups, tot i que l'índex continua separant el risc. Es calcula al diagnòstic, abans del tractament, i es va derivar en limfomes agressius: no és l'escala del limfoma fol·licular (FLIPI) ni del limfoma de Hodgkin. En pacients de 60 anys o menys, l'IPI ajustat per edat només fa servir l'estadi, la LDH i l'estat funcional.",
+      "faq": []
+    }
+  },
   "isthDic": {
     "title": "Escala CID de la ISTH",
     "subtitle": "Puntuació ISTH per a la CID manifesta, en malalties de base que hi predisposen.",
