@@ -63,6 +63,7 @@ export * as bmiBsaIbw from "./bmi-bsa-ibw";
 export * as freeWaterDeficit from "./free-water-deficit";
 export * as homaIr from "./homa-ir";
 export * as phq9 from "./phq-9";
+export * as ybocs from "./y-bocs";
 export * as gad7 from "./gad-7";
 export * as ciwaAr from "./ciwa-ar";
 export * as cows from "./cows";
@@ -71,4 +72,6 @@ export * as isthDic from "./isth-dic";
 export * as fourTsHit from "./4ts-hit";
 export * as khorana from "./khorana";
 export * as binet from "./binet";
-
+export * as stopBang from "./stop-bang";
+export * as epworth from "./epworth";
+export * as snot22 from "./snot-22";
