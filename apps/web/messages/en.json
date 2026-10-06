@@ -3469,6 +3469,29 @@
       "faq": []
     }
   },
+  "iss": {
+    "title": "International Staging System (ISS) for multiple myeloma",
+    "subtitle": "Three-stage prognostic staging from serum β2-microglobulin and albumin.",
+    "fields": {
+      "beta2Microglobulin": "Serum β2-microglobulin (mg/L)",
+      "albumin": "Serum albumin (g/dL)"
+    },
+    "patient": {
+      "intro": "This staging system estimates the outlook of multiple myeloma at diagnosis from two blood tests: beta-2 microglobulin, which reflects the amount of disease and kidney function, and albumin. It divides patients into stages I, II and III.",
+      "ask_doctor": "Questions for your doctor:",
+      "questions": [
+        "What ISS stage am I in, and do my genetic test results change it?",
+        "How does my kidney function affect this result?",
+        "Which treatment do you recommend for my stage?"
+      ]
+    },
+    "content": {
+      "overview": "The ISS combines two routine serum tests measured at diagnosis: β2-microglobulin (mg/L) and albumin (g/dL). Stage I: β2-microglobulin < 3.5 mg/L and albumin ≥ 3.5 g/dL. Stage III: β2-microglobulin ≥ 5.5 mg/L, whatever the albumin. Stage II: everything else.",
+      "interpretation": "In the 2005 derivation cohort of more than ten thousand patients, median survival was 62 months in stage I, 44 months in stage II and 29 months in stage III. Survival is longer with current treatments, but the stages still separate risk.",
+      "cautions": "Applies to symptomatic multiple myeloma at diagnosis, not to MGUS or smouldering myeloma. β2-microglobulin rises with renal impairment, so stage III may partly reflect kidney function. Enter albumin in g/dL: divide g/L by 10. The R-ISS refines this staging with cytogenetics and LDH.",
+      "faq": []
+    }
+  },
   "isthDic": {
     "title": "ISTH DIC score",
     "subtitle": "ISTH score for overt DIC in patients with a predisposing disorder.",
