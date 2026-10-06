@@ -35,6 +35,7 @@
     "intensive_care": "Cures intensives",
     "pharmacology": "Farmacologia",
     "urology": "Urologia",
+    "otorhinolaryngology": "Otorinolaringologia",
     "geriatrics": "Geriatria",
     "anesthesiology": "Anestesiologia"
   },
@@ -116,7 +117,7 @@
     "subheading": "Tria una calculadora per començar.",
     "hero_eyebrow": "Calculadores clíniques obertes",
     "hero_heading": "Scores multilingües. Evidència citada. API gratuïta.",
-    "hero_subheading": "49 scores clínics validats en català, castellà i anglès, amb una API REST pública i un DOI permanent. Obert sota MIT.",
+    "hero_subheading": "{count} scores clínics validats en català, castellà i anglès, amb una API REST pública i un DOI permanent. Obert sota MIT.",
     "hero_cta_calcs": "Veure calculadores",
     "hero_cta_api": "Fer servir l'API",
     "value_1_title": "Multilingüe natiu",
@@ -126,10 +127,10 @@
     "value_3_title": "Citable i obert",
     "value_3_body": "Codi sota llicència MIT, DOI permanent a Zenodo, API REST gratuïta, sense tracking.",
     "catalog_heading": "Catàleg",
-    "catalog_subheading": "49 calculadores en 16 especialitats.",
+    "catalog_subheading": "{count} calculadores en {specialties} especialitats.",
     "doi_label": "Cita aquest treball",
     "api_callout_heading": "Accés programàtic",
-    "api_callout_body": "Les 49 calculadores s'exposen com a API REST amb especificació OpenAPI 3.1 i Swagger UI en viu. CORS obert, sense autenticació, idioma intercanviable.",
+    "api_callout_body": "Les {count} calculadores s'exposen com a API REST amb especificació OpenAPI 3.1 i Swagger UI en viu. CORS obert, sense autenticació, idioma intercanviable.",
     "api_callout_cta": "Obrir docs de l'API",
     "search_placeholder": "Cerca calculadores…",
     "search_empty": "Cap calculadora coincideix amb la teva cerca.",
@@ -3028,6 +3029,14 @@
     }
   },
   "phq9": {
+    "instructions": "Valora amb quina freqüència ha aparegut cada símptoma durant les darreres dues setmanes.",
+    "recommendations": {
+      "PHQ9_MINIMAL": "Símptomes depressius mínims (0-4). Cal valorar els símptomes i la repercussió funcional juntament amb la puntuació.",
+      "PHQ9_MILD": "Símptomes depressius lleus (5-9). Cal considerar seguiment clínic i reavaluació.",
+      "PHQ9_MODERATE": "Símptomes depressius moderats (10-14). Cal avaluar la repercussió funcional i acordar un pla de tractament.",
+      "PHQ9_MODERATELY_SEVERE": "Símptomes depressius moderadament greus (15-19). Generalment requereixen valoració clínica i tractament actiu.",
+      "PHQ9_SEVERE": "Símptomes depressius greus (20-27). Requereixen valoració clínica aviat i planificació del tractament."
+    },
     "title": "Escala PHQ-9 de Depressió",
     "subtitle": "Qüestionari de Salut del Pacient-9 per al cribratge i valoració de severitat de la depressió major.",
     "fields": {
@@ -3035,10 +3044,10 @@
       "q2": "2. Sentir-se desanimat/da, deprimit/da o sense esperances",
       "q3": "3. Problemes per adormir-se o mantenir el son, o dormir massa",
       "q4": "4. Sentir-se cansat/da o amb poca energia",
-      "q5": "5. Poc gana o menjar en excés",
+      "q5": "5. Poca gana o menjar en excés",
       "q6": "6. Sentir-se malament amb un mateix/a — o que és un fracàs o que ha decebut la seva família",
       "q7": "7. Dificultat per concentrar-se en coses com llegir el diari o mirar la televisió",
-      "q8": "8. Moure's o parlar tan a poc a poc que els altres ho hagin notat? O el contrari — estar tan Inquiet/a que li costa estar quiet/a",
+      "q8": "8. Moure's o parlar tan a poc a poc que els altres ho hagin notat? O el contrari — estar tan inquiet/a que li costa estar quiet/a",
       "q9": "9. Pensaments que estaria millor mort/a, o de fer-se mal de qualsevol manera"
     },
     "options": {
@@ -3051,6 +3060,9 @@
     "suicide_alert": "Alerta Crítica: Resposta positiva a l'Ítem 9 (ideació suïcida / autolesió). Es requereix avaluació clínica de seguretat i valoració de risc immediata.",
     "patient": {
       "intro": "El qüestionari PHQ-9 permet mesurar la presència i gravetat dels símptomes depressius durant les darreres 2 setmanes.",
+      "result_low": "Les teves respostes se situen en el rang de símptomes mínims o lleus. Consulta si els símptomes persisteixen o dificulten la vida diària.",
+      "result_moderate": "Les teves respostes indiquen símptomes depressius moderats. Una valoració clínica ajudarà a decidir els passos següents.",
+      "result_high": "Les teves respostes indiquen símptomes depressius moderadament greus o greus. Demana una valoració clínica aviat.",
       "ask_doctor": "Preguntes per al teu metge:",
       "questions": [
         "Què significa la meva puntuació PHQ-9 per al meu pla de tractament?",
@@ -3068,6 +3080,41 @@
           "a": "El PHQ-9 es pot repetir cada 2–4 setmanes per monitorar la resposta al tractament i la remissió simptomàtica."
         }
       ]
+    }
+  },
+  "ybocs": {
+    "title": "Y-BOCS",
+    "subtitle": "Escala de Yale-Brown per al trastorn obsessivocompulsiu: gravetat a partir de subtotals clínics.",
+    "assessment_note": "Per a adults avaluats amb la Y-BOCS original (0-40). Els subtotals han de procedir d'una avaluació administrada per un professional. No s'hi inclouen l'entrevista ni la llista de símptomes.",
+    "instrument_link": "Instrument oficial i llicència",
+    "fields": {
+      "obsessions": "Subtotal d'obsessions (0-20)",
+      "compulsions": "Subtotal de compulsions (0-20)"
+    },
+    "validation": "Cada subtotal ha de ser un nombre enter entre 0 i 20.",
+    "result_label": "Puntuació total Y-BOCS",
+    "recommendations": {
+      "YBOCS_SUBCLINICAL": "Gravetat simptomàtica subclínica (0-7). La puntuació per si sola no descarta el TOC.",
+      "YBOCS_MILD": "Símptomes obsessivocompulsius de gravetat lleu (8-15). Cal interpretar-los en una valoració clínica completa.",
+      "YBOCS_MODERATE": "Símptomes obsessivocompulsius de gravetat moderada (16-23). Cal interpretar-los en una valoració clínica completa.",
+      "YBOCS_SEVERE": "Símptomes obsessivocompulsius greus (24-31). Cal interpretar-los en una valoració clínica completa.",
+      "YBOCS_EXTREME": "Símptomes obsessivocompulsius de gravetat extrema (32-40). Cal interpretar-los en una valoració clínica completa."
+    },
+    "patient": {
+      "intro": "Aquest total descriu la gravetat dels símptomes obsessivocompulsius valorats pel teu professional.",
+      "result_low": "La puntuació se situa en el rang subclínic o lleu. Una puntuació baixa no descarta el TOC.",
+      "result_moderate": "La puntuació se situa en el rang moderat. Comenta amb el teu professional com afecten els símptomes la vida diària.",
+      "result_high": "La puntuació se situa en el rang greu o extrem. Revisa el tractament i el seguiment amb el teu professional.",
+      "ask_doctor": "Preguntes per al teu professional:",
+      "questions": [
+        "Com afecten aquests símptomes la meva vida diària?",
+        "Com ha canviat la meva puntuació des de l'avaluació anterior?"
+      ]
+    },
+    "content": {
+      "overview": "La Y-BOCS original per a adults mesura la gravetat dels símptomes obsessivocompulsius mitjançant una avaluació clínica. Deu ítems de 0 a 4 punts formen dos subtotals: obsessions (0-20) i compulsions (0-20). La suma va de 0 a 40.",
+      "interpretation": "Bandes convencionals de gravetat: 0-7 subclínica; 8-15 lleu; 16-23 moderada; 24-31 greu; 32-40 extrema.",
+      "cautions": "La puntuació de gravetat no estableix ni descarta un diagnòstic. Correspon a l'escala original per a adults, no a Y-BOCS-II (0-50) ni a la versió infantil. L'instrument complet i les traduccions estan subjectes a les condicions de llicència dels seus titulars."
     }
   },
   "gad7": {
@@ -3516,6 +3563,120 @@
       "cautions": "Només és aplicable a la leucèmia limfàtica crònica/limfoma limfocític petit ja diagnosticats; l'anèmia o la trombocitopènia s'han de confirmar d'origen medul·lar (per infiltració) i no per hemòlisi autoimmune o una altra causa perifèrica, ja que això alteraria l'estadiatge.",
       "faq": []
     }
+  },
+  "stopBang": {
+    "title": "STOP-BANG",
+    "subtitle": "Cribratge de risc d'apnea obstructiva del son amb vuit criteris clínics.",
+    "fields": {
+      "snoring": "Ronca fort (s'escolta a través d'una porta tancada)",
+      "tired": "Cansament, fatiga o somnolència durant el dia",
+      "observedApnoea": "Algú ha observat que deixa de respirar mentre dorm",
+      "highBloodPressure": "Hipertensió arterial o tractament antihipertensiu",
+      "bmiOver35": "IMC > 35 kg/m²",
+      "ageOver50": "Edat > 50 anys",
+      "neckOver40cm": "Perímetre del coll > 40 cm",
+      "male": "Sexe masculí"
+    },
+    "patient": {
+      "intro": "Aquest qüestionari estima la probabilitat que tinguis apnea del son, un trastorn en què la respiració s'atura breument moltes vegades durant la nit.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "Em cal un estudi del son per confirmar-ho?",
+        "Com afecta l'apnea del son al meu risc cardiovascular?",
+        "Si m'han d'operar, cal prendre alguna precaució especial?"
+      ]
+    },
+    "content": {
+      "overview": "El STOP-BANG puntua vuit criteris —roncar, cansament diürn, apnees observades, hipertensió, IMC, edat, perímetre del coll i sexe— amb un punt cadascun.",
+      "interpretation": "0–2 risc baix, 3–4 risc intermedi, 5–8 risc alt d'apnea obstructiva del son. La seva força és el valor predictiu negatiu: una puntuació baixa fa poc probable una apnea moderada o greu.",
+      "cautions": "És una eina de cribratge, no diagnòstica. El diagnòstic requereix una polisomnografia o una poligrafia respiratòria. Una puntuació alta en un pacient que ha de ser operat obliga a valorar precaucions perioperatòries.",
+      "faq": []
+    }
+  },
+  "epworth": {
+    "title": "Escala de Somnolència d'Epworth",
+    "subtitle": "Qüestionari de vuit ítems que mesura la probabilitat de quedar-se adormit en situacions quotidianes.",
+    "fields": {
+      "sittingReading": "Assegut llegint",
+      "watchingTv": "Mirant la televisió",
+      "sittingInactivePublic": "Assegut i inactiu en un lloc públic (per exemple, al teatre o en una reunió)",
+      "passengerInCar": "Com a passatger en un cotxe durant una hora sense parar",
+      "lyingDownAfternoon": "Estirat descansant a la tarda quan les circumstàncies ho permeten",
+      "sittingTalking": "Assegut parlant amb algú",
+      "sittingAfterLunch": "Assegut tranquil·lament després d'un dinar sense alcohol",
+      "inCarStoppedInTraffic": "Al cotxe, aturat uns minuts en el trànsit"
+    },
+    "options": {
+      "0": "Mai no m'adormiria",
+      "1": "Poca probabilitat d'adormir-me",
+      "2": "Probabilitat moderada d'adormir-me",
+      "3": "Alta probabilitat d'adormir-me"
+    },
+    "patient": {
+      "intro": "Aquest qüestionari avalua la teva tendència a quedar-te adormit o endormiscar-te en vuit situacions de la vida diària, no només si et sents cansat.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "La meva somnolència diürna pot ser deguda a un trastorn del son?",
+        "Necessito una polisomnografia o algun altre estudi del son?",
+        "És segur per a mi conduir amb aquest nivell de somnolència?"
+      ]
+    },
+    "content": {
+      "overview": "L'escala d'Epworth puntua vuit situacions quotidianes —llegir, mirar la televisió, viatjar en cotxe, descansar a la tarda, entre d'altres— segons la probabilitat de quedar-se adormit en cadascuna, de 0 (mai) a 3 (alta probabilitat). La suma dels vuit ítems dona una puntuació de 0 a 24.",
+      "interpretation": "0–10 somnolència diürna normal; 11–14 somnolència diürna excessiva lleu; 15–17 moderada; 18–24 greu. Com més alta la puntuació, més probable és una somnolència patològica que requereix avaluació.",
+      "cautions": "És un qüestionari autoadministrat que reflecteix la percepció subjectiva del pacient, no una mesura objectiva de la son; no substitueix una polisomnografia. Una puntuació elevada obliga a valorar el risc en la conducció i altres activitats que requereixen vigilància.",
+      "faq": []
+    }
+  },
+  "snot22": {
+    "title": "Test de Resultats Sinonasals (SNOT-22)",
+    "subtitle": "Qüestionari de 22 ítems que mesura l'impacte dels símptomes de la sinusitis crònica en la qualitat de vida.",
+    "fields": {
+      "needToBlowNose": "Necessitat de mocar-se",
+      "sneezing": "Esternuts",
+      "runnyNose": "Nas degotant",
+      "nasalObstruction": "Obstrucció nasal",
+      "lossOfSmellOrTaste": "Pèrdua d'olfacte o de gust",
+      "cough": "Tos",
+      "postNasalDischarge": "Degoteig retronasal (mucositat que baixa per la gola)",
+      "thickNasalDischarge": "Mucositat nasal espessa",
+      "earFullness": "Sensació de taponament a les orelles",
+      "dizziness": "Marejos",
+      "earPain": "Dolor d'orelles",
+      "facialPainOrPressure": "Dolor o pressió facial",
+      "difficultyFallingAsleep": "Dificultat per conciliar el son",
+      "wakingUpAtNight": "Despertars nocturns",
+      "lackOfGoodNightsSleep": "Manca d'un son reparador",
+      "wakingUpTired": "Despertar-se cansat/da",
+      "fatigueDuringTheDay": "Cansament durant el dia",
+      "reducedProductivity": "Disminució del rendiment",
+      "reducedConcentration": "Disminució de la concentració",
+      "frustratedRestlessOrIrritable": "Sensació de frustració, neguit o irritabilitat",
+      "sad": "Sensació de tristesa",
+      "embarrassed": "Sensació de vergonya"
+    },
+    "options": {
+      "0": "Cap problema",
+      "1": "Problema molt lleu",
+      "2": "Problema lleu",
+      "3": "Problema moderat",
+      "4": "Problema greu",
+      "5": "El pitjor possible"
+    },
+    "patient": {
+      "intro": "Aquest qüestionari avalua com t'han afectat 22 símptomes nasals, d'orelles, de son i d'estat d'ànim durant les darreres dues setmanes.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "Aquesta puntuació reflecteix una sinusitis crònica o una altra causa?",
+        "Cal fer-me una endoscòpia nasal o una TC dels sins?",
+        "Com sabré si el tractament o la cirurgia m'han millorat de veritat?"
+      ]
+    },
+    "content": {
+      "overview": "El SNOT-22 puntua 22 símptomes nasosinusals, òtics, del son i emocionals segons el seu impacte en els darrers 15 dies, de 0 (cap problema) a 5 (el pitjor problema possible). La suma dels 22 ítems dona una puntuació de 0 a 110.",
+      "interpretation": "0–20 lleu; 21–50 moderat; 51–110 greu (Toma i Hopkins, 2016). La puntuació absoluta orienta la gravetat basal, però la diferència mínima clínicament important és de 8,9 punts: un canvi d'aquesta magnitud entre dues administracions és el que es considera clínicament rellevant, per exemple després d'un tractament o una cirurgia, més que la xifra aïllada.",
+      "cautions": "És un qüestionari autoadministrat que reflecteix la percepció subjectiva del pacient sobre els darrers 15 dies; no substitueix l'exploració endoscòpica ni les proves d'imatge. Els ítems òtics i emocionals no són específics de patologia sinonasal i poden estar influïts per comorbiditats.",
+      "faq": []
+    }
   }
 }
-

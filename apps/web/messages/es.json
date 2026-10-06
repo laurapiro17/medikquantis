@@ -35,6 +35,7 @@
     "intensive_care": "Cuidados intensivos",
     "pharmacology": "Farmacología",
     "urology": "Urología",
+    "otorhinolaryngology": "Otorrinolaringología",
     "geriatrics": "Geriatría",
     "anesthesiology": "Anestesiología"
   },
@@ -116,7 +117,7 @@
     "subheading": "Elige una calculadora para empezar.",
     "hero_eyebrow": "Calculadoras clínicas abiertas",
     "hero_heading": "Scores multilingües. Evidencia citada. API gratuita.",
-    "hero_subheading": "49 scores clínicos validados en catalán, español e inglés, con una API REST pública y un DOI permanente. Abierto bajo MIT.",
+    "hero_subheading": "{count} scores clínicos validados en catalán, español e inglés, con una API REST pública y un DOI permanente. Abierto bajo MIT.",
     "hero_cta_calcs": "Ver calculadoras",
     "hero_cta_api": "Usar la API",
     "value_1_title": "Multilingüe nativo",
@@ -126,10 +127,10 @@
     "value_3_title": "Citable y abierto",
     "value_3_body": "Código bajo licencia MIT, DOI permanente en Zenodo, API REST gratuita, sin tracking.",
     "catalog_heading": "Catálogo",
-    "catalog_subheading": "49 calculadoras en 16 especialidades.",
+    "catalog_subheading": "{count} calculadoras en {specialties} especialidades.",
     "doi_label": "Cita este trabajo",
     "api_callout_heading": "Acceso programático",
-    "api_callout_body": "Las 49 calculadoras se exponen como API REST con especificación OpenAPI 3.1 y Swagger UI en vivo. CORS abierto, sin autenticación, idioma intercambiable.",
+    "api_callout_body": "Las {count} calculadoras se exponen como API REST con especificación OpenAPI 3.1 y Swagger UI en vivo. CORS abierto, sin autenticación, idioma intercambiable.",
     "api_callout_cta": "Abrir docs de la API",
     "search_placeholder": "Buscar calculadoras…",
     "search_empty": "Ninguna calculadora coincide con tu búsqueda.",
@@ -3028,6 +3029,14 @@
     }
   },
   "phq9": {
+    "instructions": "Valora con qué frecuencia apareció cada síntoma durante las últimas dos semanas.",
+    "recommendations": {
+      "PHQ9_MINIMAL": "Síntomas depresivos mínimos (0-4). Valorar los síntomas y su repercusión funcional junto con la puntuación.",
+      "PHQ9_MILD": "Síntomas depresivos leves (5-9). Considerar seguimiento clínico y reevaluación.",
+      "PHQ9_MODERATE": "Síntomas depresivos moderados (10-14). Evaluar la repercusión funcional y acordar un plan de tratamiento.",
+      "PHQ9_MODERATELY_SEVERE": "Síntomas depresivos moderadamente graves (15-19). Generalmente requieren valoración clínica y tratamiento activo.",
+      "PHQ9_SEVERE": "Síntomas depresivos graves (20-27). Requieren valoración clínica pronta y planificación del tratamiento."
+    },
     "title": "Escala PHQ-9 de Depresión",
     "subtitle": "Cuestionario de Salud del Paciente-9 para cribado y valoración de severidad de depresión mayor.",
     "fields": {
@@ -3038,7 +3047,7 @@
       "q5": "5. Poco apetito o comer en exceso",
       "q6": "6. Sentirse mal consigo mismo/a — o que es un fracaso o que ha decepcionado a su familia",
       "q7": "7. Dificultad para concentrarse en cosas tales como leer el periódico o ver la televisión",
-      "q8": "8. ¿Movers o hablar tan despacio que los demás lo hayan notado? O lo contrario — estar tan inquieto/a que le cuesta estarse quieto/a",
+      "q8": "8. ¿Moverse o hablar tan despacio que los demás lo hayan notado? O lo contrario — estar tan inquieto/a que le cuesta estarse quieto/a",
       "q9": "9. Pensamientos de que estaría mejor muerto/a, o de hacerse daño de alguna manera"
     },
     "options": {
@@ -3051,6 +3060,9 @@
     "suicide_alert": "Alerta Crítica: Respuesta positiva en el Ítem 9 (ideación suicida / autolesión). Se requiere evaluación clínica de seguridad y valoración de riesgo inmediata.",
     "patient": {
       "intro": "El cuestionario PHQ-9 permite medir la presencia y gravedad de los síntomas depresivos durante las últimas 2 semanas.",
+      "result_low": "Tus respuestas se sitúan en el rango de síntomas mínimos o leves. Consulta si los síntomas persisten o dificultan tu vida diaria.",
+      "result_moderate": "Tus respuestas indican síntomas depresivos moderados. Una valoración clínica ayudará a decidir los siguientes pasos.",
+      "result_high": "Tus respuestas indican síntomas depresivos moderadamente graves o graves. Solicita una valoración clínica pronta.",
       "ask_doctor": "Preguntas para tu médico:",
       "questions": [
         "¿Qué significa mi puntuación PHQ-9 para mi plan de tratamiento?",
@@ -3068,6 +3080,41 @@
           "a": "El PHQ-9 se puede repetir cada 2–4 semanas para monitorizar la respuesta al tratamiento y la remisión sintomática."
         }
       ]
+    }
+  },
+  "ybocs": {
+    "title": "Y-BOCS",
+    "subtitle": "Escala de Yale-Brown para el trastorno obsesivo-compulsivo: gravedad a partir de subtotales clínicos.",
+    "assessment_note": "Para adultos evaluados con la Y-BOCS original (0-40). Los subtotales deben proceder de una evaluación administrada por un profesional. No se incluyen la entrevista ni la lista de síntomas.",
+    "instrument_link": "Instrumento oficial y licencia",
+    "fields": {
+      "obsessions": "Subtotal de obsesiones (0-20)",
+      "compulsions": "Subtotal de compulsiones (0-20)"
+    },
+    "validation": "Cada subtotal debe ser un número entero entre 0 y 20.",
+    "result_label": "Puntuación total Y-BOCS",
+    "recommendations": {
+      "YBOCS_SUBCLINICAL": "Gravedad sintomática subclínica (0-7). La puntuación por sí sola no descarta el TOC.",
+      "YBOCS_MILD": "Síntomas obsesivo-compulsivos de gravedad leve (8-15). Interpretar en una valoración clínica completa.",
+      "YBOCS_MODERATE": "Síntomas obsesivo-compulsivos de gravedad moderada (16-23). Interpretar en una valoración clínica completa.",
+      "YBOCS_SEVERE": "Síntomas obsesivo-compulsivos graves (24-31). Interpretar en una valoración clínica completa.",
+      "YBOCS_EXTREME": "Síntomas obsesivo-compulsivos de gravedad extrema (32-40). Interpretar en una valoración clínica completa."
+    },
+    "patient": {
+      "intro": "Este total describe la gravedad de los síntomas obsesivo-compulsivos valorados por tu profesional.",
+      "result_low": "La puntuación se sitúa en el rango subclínico o leve. Una puntuación baja no descarta el TOC.",
+      "result_moderate": "La puntuación se sitúa en el rango moderado. Comenta con tu profesional cómo afectan los síntomas a tu vida diaria.",
+      "result_high": "La puntuación se sitúa en el rango grave o extremo. Revisa el tratamiento y el seguimiento con tu profesional.",
+      "ask_doctor": "Preguntas para tu profesional:",
+      "questions": [
+        "¿Cómo afectan estos síntomas a mi vida diaria?",
+        "¿Cómo ha cambiado mi puntuación desde la evaluación anterior?"
+      ]
+    },
+    "content": {
+      "overview": "La Y-BOCS original para adultos mide la gravedad de los síntomas obsesivo-compulsivos mediante una evaluación clínica. Diez ítems de 0 a 4 puntos forman dos subtotales: obsesiones (0-20) y compulsiones (0-20). Su suma va de 0 a 40.",
+      "interpretation": "Bandas convencionales de gravedad: 0-7 subclínica; 8-15 leve; 16-23 moderada; 24-31 grave; 32-40 extrema.",
+      "cautions": "La puntuación de gravedad no establece ni descarta un diagnóstico. Corresponde a la escala original para adultos, no a Y-BOCS-II (0-50) ni a la versión infantil. El instrumento completo y sus traducciones están sujetos a las condiciones de licencia de sus titulares."
     }
   },
   "gad7": {
@@ -3516,6 +3563,120 @@
       "cautions": "Solo es aplicable a la leucemia linfática crónica/linfoma linfocítico de células pequeñas ya diagnosticados; la anemia o la trombocitopenia deben confirmarse de origen medular (por infiltración) y no por hemólisis autoinmune u otra causa periférica, ya que eso alteraría la estadificación.",
       "faq": []
     }
+  },
+  "stopBang": {
+    "title": "STOP-BANG",
+    "subtitle": "Cribado del riesgo de apnea obstructiva del sueño con ocho criterios clínicos.",
+    "fields": {
+      "snoring": "Ronca fuerte (se oye a través de una puerta cerrada)",
+      "tired": "Cansancio, fatiga o somnolencia durante el día",
+      "observedApnoea": "Alguien ha observado que deja de respirar mientras duerme",
+      "highBloodPressure": "Hipertensión arterial o tratamiento antihipertensivo",
+      "bmiOver35": "IMC > 35 kg/m²",
+      "ageOver50": "Edad > 50 años",
+      "neckOver40cm": "Perímetro del cuello > 40 cm",
+      "male": "Sexo masculino"
+    },
+    "patient": {
+      "intro": "Este cuestionario calcula la probabilidad de que tengas apnea del sueño, un trastorno en el que la respiración se interrumpe brevemente muchas veces durante la noche.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿Necesito un estudio del sueño para confirmarlo?",
+        "¿Cómo afecta la apnea del sueño a mi riesgo cardiovascular?",
+        "Si me tienen que operar, ¿hay que tomar alguna precaución especial?"
+      ]
+    },
+    "content": {
+      "overview": "El STOP-BANG puntúa ocho criterios —ronquido, cansancio diurno, apneas observadas, hipertensión, IMC, edad, perímetro del cuello y sexo— con un punto cada uno.",
+      "interpretation": "0-2 riesgo bajo, 3-4 riesgo intermedio, 5-8 riesgo alto de apnea obstructiva del sueño. Su punto fuerte es el valor predictivo negativo: una puntuación baja hace poco probable una apnea moderada o grave.",
+      "cautions": "Es una herramienta de cribado, no diagnóstica. El diagnóstico requiere una polisomnografía o una poligrafía respiratoria. Una puntuación alta en un paciente que va a ser intervenido obliga a valorar precauciones perioperatorias.",
+      "faq": []
+    }
+  },
+  "epworth": {
+    "title": "Escala de Somnolencia de Epworth",
+    "subtitle": "Cuestionario de ocho ítems que mide la probabilidad de quedarse dormido en situaciones cotidianas.",
+    "fields": {
+      "sittingReading": "Sentado leyendo",
+      "watchingTv": "Viendo la televisión",
+      "sittingInactivePublic": "Sentado e inactivo en un lugar público (por ejemplo, en el teatro o en una reunión)",
+      "passengerInCar": "Como pasajero en un coche durante una hora sin parar",
+      "lyingDownAfternoon": "Tumbado para descansar por la tarde, cuando las circunstancias lo permiten",
+      "sittingTalking": "Sentado charlando con alguien",
+      "sittingAfterLunch": "Sentado tranquilamente después de comer, sin haber tomado alcohol",
+      "inCarStoppedInTraffic": "En el coche, parado unos minutos en un atasco"
+    },
+    "options": {
+      "0": "Nunca me dormiría",
+      "1": "Pocas probabilidades de dormirme",
+      "2": "Probabilidad moderada de dormirme",
+      "3": "Alta probabilidad de dormirme"
+    },
+    "patient": {
+      "intro": "Este cuestionario valora tu tendencia a quedarte dormido o a dar cabezadas en ocho situaciones de la vida diaria, no solo si te sientes cansado.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿Puede esta somnolencia diurna deberse a un trastorno del sueño?",
+        "¿Necesito una polisomnografía u otro estudio del sueño?",
+        "¿Es seguro conducir con este nivel de somnolencia?"
+      ]
+    },
+    "content": {
+      "overview": "La escala de Epworth puntúa ocho situaciones cotidianas —leer, ver la televisión, viajar en coche, descansar por la tarde, entre otras— según la probabilidad de quedarse dormido en cada una, de 0 (nunca) a 3 (alta probabilidad). La suma de los ocho ítems da una puntuación de 0 a 24.",
+      "interpretation": "0–10 somnolencia diurna normal; 11–14 somnolencia diurna excesiva leve; 15–17 moderada; 18–24 grave. Cuanto mayor es la puntuación, más probable resulta una somnolencia patológica que requiere evaluación.",
+      "cautions": "Es un cuestionario autoadministrado que refleja la percepción subjetiva del paciente, no una medida objetiva del sueño; no sustituye a una polisomnografía. Una puntuación elevada obliga a valorar el riesgo al conducir y en otras actividades que requieren vigilancia.",
+      "faq": []
+    }
+  },
+  "snot22": {
+    "title": "Test de Resultados Sinonasales (SNOT-22)",
+    "subtitle": "Cuestionario de 22 ítems que mide el impacto de los síntomas de la sinusitis crónica en la calidad de vida.",
+    "fields": {
+      "needToBlowNose": "Necesidad de sonarse la nariz",
+      "sneezing": "Estornudos",
+      "runnyNose": "Moqueo o goteo nasal",
+      "nasalObstruction": "Obstrucción nasal",
+      "lossOfSmellOrTaste": "Pérdida del olfato o del gusto",
+      "cough": "Tos",
+      "postNasalDischarge": "Goteo retronasal (mucosidad que baja por la garganta)",
+      "thickNasalDischarge": "Mucosidad nasal espesa",
+      "earFullness": "Sensación de taponamiento en los oídos",
+      "dizziness": "Mareo",
+      "earPain": "Dolor de oídos",
+      "facialPainOrPressure": "Dolor o presión facial",
+      "difficultyFallingAsleep": "Dificultad para conciliar el sueño",
+      "wakingUpAtNight": "Despertares nocturnos",
+      "lackOfGoodNightsSleep": "Falta de un sueño reparador",
+      "wakingUpTired": "Despertar cansado",
+      "fatigueDuringTheDay": "Cansancio durante el día",
+      "reducedProductivity": "Disminución del rendimiento",
+      "reducedConcentration": "Disminución de la concentración",
+      "frustratedRestlessOrIrritable": "Sensación de frustración, inquietud o irritabilidad",
+      "sad": "Sensación de tristeza",
+      "embarrassed": "Sensación de vergüenza"
+    },
+    "options": {
+      "0": "Ningún problema",
+      "1": "Problema muy leve",
+      "2": "Problema leve",
+      "3": "Problema moderado",
+      "4": "Problema grave",
+      "5": "El peor problema posible"
+    },
+    "patient": {
+      "intro": "Este cuestionario valora cómo te han afectado 22 síntomas nasales, de oídos, de sueño y de estado de ánimo durante las últimas dos semanas.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿Esta puntuación refleja una sinusitis crónica u otra causa?",
+        "¿Necesito una endoscopia nasal o un TC de los senos paranasales?",
+        "¿Cómo sabré si el tratamiento o la cirugía me han mejorado de verdad?"
+      ]
+    },
+    "content": {
+      "overview": "El SNOT-22 puntúa 22 síntomas nasosinusales, óticos, del sueño y emocionales según su impacto en los últimos 15 días, de 0 (ningún problema) a 5 (el peor problema posible). La suma de los 22 ítems da una puntuación de 0 a 110.",
+      "interpretation": "0–20 leve; 21–50 moderado; 51–110 grave (Toma y Hopkins, 2016). La puntuación absoluta orienta la gravedad basal, pero la diferencia mínima clínicamente importante es de 8,9 puntos: un cambio de esta magnitud entre dos administraciones es el que se considera clínicamente relevante, por ejemplo tras un tratamiento o una cirugía, más que la cifra aislada.",
+      "cautions": "Es un cuestionario autoadministrado que refleja la percepción subjetiva del paciente sobre los últimos 15 días; no sustituye a la exploración endoscópica ni a las pruebas de imagen. Los ítems óticos y emocionales no son específicos de patología sinonasal y pueden estar influidos por comorbilidades.",
+      "faq": []
+    }
   }
 }
-

@@ -28,6 +28,11 @@ export default async function HomePage({
   setRequestLocale(locale);
   const t = await getTranslations();
   const calcs = listCalcs();
+  // Derive the counts from the registry so the copy never goes stale.
+  const counts = {
+    count: calcs.length,
+    specialties: new Set(calcs.map((c) => c.specialty)).size,
+  };
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -113,7 +118,7 @@ export default async function HomePage({
           style={{ animationDelay: "120ms" }}
           className="animate-rise max-w-2xl text-lg text-slate-600 dark:text-slate-300"
         >
-          {t("home.hero_subheading")}
+          {t("home.hero_subheading", counts)}
         </p>
         <div
           style={{ animationDelay: "180ms" }}
@@ -184,7 +189,7 @@ export default async function HomePage({
               {t("home.api_callout_heading")}
             </h2>
             <p className="text-sm text-slate-600 dark:text-slate-300 sm:max-w-xl">
-              {t("home.api_callout_body")}
+              {t("home.api_callout_body", counts)}
             </p>
           </div>
           <a
@@ -249,7 +254,7 @@ export default async function HomePage({
               {t("home.catalog_heading")}
             </h2>
             <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
-              {t("home.catalog_subheading")}
+              {t("home.catalog_subheading", counts)}
             </p>
           </div>
         </Reveal>
