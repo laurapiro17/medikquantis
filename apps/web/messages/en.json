@@ -3022,6 +3022,14 @@
     }
   },
   "phq9": {
+    "instructions": "Rate how often each symptom occurred during the past two weeks.",
+    "recommendations": {
+      "PHQ9_MINIMAL": "Minimal depressive symptoms (0-4). Consider symptoms and functional impact alongside the score.",
+      "PHQ9_MILD": "Mild depressive symptoms (5-9). Consider clinical follow-up and reassessment.",
+      "PHQ9_MODERATE": "Moderate depressive symptoms (10-14). Assess functional impairment and discuss a treatment plan.",
+      "PHQ9_MODERATELY_SEVERE": "Moderately severe depressive symptoms (15-19). Clinical assessment and active treatment are generally indicated.",
+      "PHQ9_SEVERE": "Severe depressive symptoms (20-27). Prompt clinical assessment and treatment planning are indicated."
+    },
     "title": "PHQ-9 Depression Scale",
     "subtitle": "Patient Health Questionnaire-9 for major depressive disorder screening and severity assessment.",
     "fields": {
@@ -3045,6 +3053,9 @@
     "suicide_alert": "Critical Alert: Positive response on Item 9 (suicidal ideation / self-harm). Immediate clinical safety evaluation and risk assessment required.",
     "patient": {
       "intro": "The PHQ-9 questionnaire helps measure the presence and severity of depressive symptoms over the past 2 weeks.",
+      "result_low": "Your answers fall in the minimal or mild symptom range. Discuss persistent symptoms or difficulties in daily life with a healthcare professional.",
+      "result_moderate": "Your answers indicate moderate depressive symptoms. A clinical assessment can help decide the next steps.",
+      "result_high": "Your answers indicate moderately severe or severe depressive symptoms. Arrange a prompt clinical assessment.",
       "ask_doctor": "Questions to ask your healthcare provider:",
       "questions": [
         "What does my PHQ-9 score mean for my mental health treatment plan?",
@@ -3062,6 +3073,41 @@
           "a": "The PHQ-9 can be repeated every 2–4 weeks to monitor treatment response and symptom remission over time."
         }
       ]
+    }
+  },
+  "ybocs": {
+    "title": "Y-BOCS",
+    "subtitle": "Yale-Brown Obsessive Compulsive Scale: severity score from clinician-rated subtotals.",
+    "assessment_note": "For adults assessed with the original Y-BOCS (0-40). Subtotals must come from a clinician-administered assessment. The interview and symptom checklist are not included.",
+    "instrument_link": "Official instrument and licensing",
+    "fields": {
+      "obsessions": "Obsession subtotal (0-20)",
+      "compulsions": "Compulsion subtotal (0-20)"
+    },
+    "validation": "Each subtotal must be a whole number from 0 to 20.",
+    "result_label": "Y-BOCS total score",
+    "recommendations": {
+      "YBOCS_SUBCLINICAL": "Subclinical symptom severity (0-7). This score alone does not exclude OCD.",
+      "YBOCS_MILD": "Mild obsessive-compulsive symptom severity (8-15). Interpret within a full clinical assessment.",
+      "YBOCS_MODERATE": "Moderate obsessive-compulsive symptom severity (16-23). Interpret within a full clinical assessment.",
+      "YBOCS_SEVERE": "Severe obsessive-compulsive symptom severity (24-31). Interpret within a full clinical assessment.",
+      "YBOCS_EXTREME": "Extreme obsessive-compulsive symptom severity (32-40). Interpret within a full clinical assessment."
+    },
+    "patient": {
+      "intro": "This total describes the severity of obsessive-compulsive symptoms assessed by your clinician.",
+      "result_low": "The score falls in the subclinical or mild symptom range. A low score does not rule out OCD.",
+      "result_moderate": "The score falls in the moderate symptom range. Discuss its impact on your daily life with your clinician.",
+      "result_high": "The score falls in the severe or extreme symptom range. Discuss treatment and follow-up with your clinician.",
+      "ask_doctor": "Questions for your clinician:",
+      "questions": [
+        "How do these symptoms affect my daily life?",
+        "How has my score changed since the previous assessment?"
+      ]
+    },
+    "content": {
+      "overview": "The original adult Y-BOCS is a clinician-rated measure of obsessive-compulsive symptom severity. Ten items scored from 0 to 4 form two subtotals: obsessions (0-20) and compulsions (0-20). Their sum ranges from 0 to 40.",
+      "interpretation": "Conventional severity bands: 0-7 subclinical; 8-15 mild; 16-23 moderate; 24-31 severe; 32-40 extreme.",
+      "cautions": "Severity scoring does not establish or exclude a diagnosis. Use the original adult scale, not Y-BOCS-II (0-50) or the child version. The full instrument and translations are subject to the rights holder's licensing terms."
     }
   },
   "gad7": {
@@ -3572,6 +3618,57 @@
       "overview": "The Epworth Sleepiness Scale scores eight everyday situations — reading, watching television, travelling in a car, resting in the afternoon, among others — by the likelihood of dozing off in each, from 0 (would never doze) to 3 (high chance of dozing). The sum of the eight items gives a score from 0 to 24.",
       "interpretation": "0–10 normal daytime sleepiness; 11–14 mild excessive daytime sleepiness; 15–17 moderate; 18–24 severe. The higher the score, the more likely the sleepiness is pathological and warrants evaluation.",
       "cautions": "This is a self-administered questionnaire reflecting the patient's subjective perception, not an objective measure of sleep; it does not replace polysomnography. A high score should prompt consideration of driving risk and other activities requiring vigilance.",
+      "faq": []
+    }
+  },
+  "snot22": {
+    "title": "Sinonasal Outcome Test (SNOT-22)",
+    "subtitle": "22-item questionnaire measuring the impact of chronic rhinosinusitis symptoms on quality of life.",
+    "fields": {
+      "needToBlowNose": "Need to blow your nose",
+      "sneezing": "Sneezing",
+      "runnyNose": "Runny nose",
+      "nasalObstruction": "Nasal blockage",
+      "lossOfSmellOrTaste": "Loss of sense of smell or taste",
+      "cough": "Cough",
+      "postNasalDischarge": "Post-nasal discharge",
+      "thickNasalDischarge": "Thick nasal discharge",
+      "earFullness": "Ear fullness",
+      "dizziness": "Dizziness",
+      "earPain": "Ear pain",
+      "facialPainOrPressure": "Facial pain or pressure",
+      "difficultyFallingAsleep": "Difficulty falling asleep",
+      "wakingUpAtNight": "Waking up at night",
+      "lackOfGoodNightsSleep": "Lack of a good night's sleep",
+      "wakingUpTired": "Waking up tired",
+      "fatigueDuringTheDay": "Fatigue during the day",
+      "reducedProductivity": "Reduced productivity",
+      "reducedConcentration": "Reduced concentration",
+      "frustratedRestlessOrIrritable": "Feeling frustrated, restless or irritable",
+      "sad": "Feeling sad",
+      "embarrassed": "Feeling embarrassed"
+    },
+    "options": {
+      "0": "No problem",
+      "1": "Very mild problem",
+      "2": "Mild problem",
+      "3": "Moderate problem",
+      "4": "Severe problem",
+      "5": "As bad as it can be"
+    },
+    "patient": {
+      "intro": "This questionnaire assesses how 22 nasal, ear, sleep and mood-related symptoms have affected you over the past two weeks.",
+      "ask_doctor": "Questions to ask your doctor:",
+      "questions": [
+        "Does this score reflect chronic sinusitis or another cause?",
+        "Do I need a nasal endoscopy or a sinus CT scan?",
+        "How will I know if treatment or surgery has genuinely improved things?"
+      ]
+    },
+    "content": {
+      "overview": "SNOT-22 scores 22 sinonasal, otologic, sleep and emotional symptoms by their impact over the past 15 days, from 0 (no problem) to 5 (as bad as it can be). The sum of the 22 items gives a score from 0 to 110.",
+      "interpretation": "0–20 mild; 21–50 moderate; 51–110 severe (Toma and Hopkins, 2016). The absolute score indicates baseline severity, but the minimal clinically important difference is 8.9 points: a change of this magnitude between two administrations is what is considered clinically meaningful — for example after treatment or surgery — more so than any single absolute total.",
+      "cautions": "This is a self-administered questionnaire reflecting the patient's subjective perception over the preceding 15 days; it does not replace nasal endoscopy or imaging. The otologic and emotional items are not specific to sinonasal disease and may be influenced by comorbidities.",
       "faq": []
     }
   }

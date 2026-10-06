@@ -1,7 +1,33 @@
 import { describe, expect, it } from "vitest";
-import { calculator, formula, interpret } from "../src/phq-9";
+import { calculator, formula, interpret, Phq9Inputs } from "../src/phq-9";
 
 describe("PHQ-9 Calculator", () => {
+  it.each([
+    [0, "PHQ9_MINIMAL"], [4, "PHQ9_MINIMAL"],
+    [5, "PHQ9_MILD"], [9, "PHQ9_MILD"],
+    [10, "PHQ9_MODERATE"], [14, "PHQ9_MODERATE"],
+    [15, "PHQ9_MODERATELY_SEVERE"], [19, "PHQ9_MODERATELY_SEVERE"],
+    [20, "PHQ9_SEVERE"], [27, "PHQ9_SEVERE"],
+  ])("classifies total %i as %s", (score, code) => {
+    expect(interpret(score).recommendationCode).toBe(code);
+  });
+
+  it("scores all nine maximum responses as 27", () => {
+    const inputs = Phq9Inputs.parse(Object.fromEntries(
+      Array.from({ length: 9 }, (_, index) => [`q${index + 1}`, "3"])
+    ));
+    expect(formula(inputs)).toBe(27);
+  });
+
+  it("rejects missing and out-of-range responses", () => {
+    const inputs = Object.fromEntries(
+      Array.from({ length: 9 }, (_, index) => [`q${index + 1}`, "0"])
+    );
+    for (const invalid of ["4", "-1", "1.5", 1, null, undefined]) {
+      expect(Phq9Inputs.safeParse({ ...inputs, q9: invalid }).success).toBe(false);
+    }
+  });
+
   it("calculates minimal score correctly", () => {
     const inputs = {
       q1: "0",
