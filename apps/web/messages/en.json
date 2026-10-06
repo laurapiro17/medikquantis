@@ -3437,6 +3437,133 @@
       ]
     }
   },
+  "ipi": {
+    "title": "International Prognostic Index (IPI) for aggressive lymphoma",
+    "subtitle": "Five pretreatment factors that stratify survival in diffuse large B-cell and other aggressive lymphomas.",
+    "fields": {
+      "ageOver60": "Age > 60 years",
+      "ldhHigh": "Serum LDH above the upper limit of normal",
+      "ecog2OrMore": "ECOG performance status ≥ 2",
+      "advancedStage": "Ann Arbor stage III or IV",
+      "extranodalOver1": "More than one extranodal site involved"
+    },
+    "patient": {
+      "intro": "This index estimates the outlook of an aggressive lymphoma, such as diffuse large B-cell lymphoma, from five features checked before treatment: age, a blood test called LDH, how much the illness limits daily activity, how widespread the disease is, and whether it affects organs outside the lymph nodes.",
+      "ask_doctor": "Questions for your doctor:",
+      "questions": [
+        "What is my IPI score and how does it change my treatment plan?",
+        "Is the outlook with today's treatments better than the figures from the original study?",
+        "Which tests will you use to check how I am responding?"
+      ]
+    },
+    "content": {
+      "overview": "The IPI gives one point to each of five adverse factors present before treatment: age over 60, serum LDH above normal, ECOG performance status of 2 or more, Ann Arbor stage III–IV and more than one extranodal site. The total ranges from 0 to 5.",
+      "interpretation": "0–1 low risk, 2 low-intermediate, 3 high-intermediate, 4–5 high. In the 1993 derivation cohort, treated with doxorubicin-based chemotherapy before rituximab, five-year overall survival was 73%, 51%, 43% and 26% respectively.",
+      "cautions": "The survival figures predate rituximab; outcomes with R-CHOP are better in every group, although the index still separates risk. It is assessed at diagnosis, before treatment, and was derived in aggressive lymphoma — it is not the score for follicular lymphoma (FLIPI) or Hodgkin lymphoma. For patients aged 60 or under, the age-adjusted IPI uses only stage, LDH and performance status.",
+      "faq": []
+    }
+  },
+  "rai": {
+    "title": "Rai staging for chronic lymphocytic leukaemia",
+    "subtitle": "Clinical staging (0–IV) by lymphadenopathy, organomegaly and cytopenias, grouped into three risk levels.",
+    "fields": {
+      "lymphadenopathy": "Enlarged lymph nodes",
+      "organomegaly": "Splenomegaly and/or hepatomegaly",
+      "anaemia": "Anaemia: Hb < 11 g/dL",
+      "thrombocytopenia": "Thrombocytopenia: platelets < 100 ×10⁹/L"
+    },
+    "patient": {
+      "intro": "This staging system classifies chronic lymphocytic leukaemia (CLL) from stage 0 to IV according to whether there are swollen lymph nodes, an enlarged spleen or liver, anaemia or a low platelet count. The stages are grouped into low, intermediate and high risk.",
+      "ask_doctor": "Questions for your doctor:",
+      "questions": [
+        "What Rai stage am I in and which risk group does it belong to?",
+        "Do I need treatment now or is watch and wait appropriate?",
+        "Which changes in my blood tests or symptoms should make me contact you sooner?"
+      ]
+    },
+    "content": {
+      "overview": "Rai staging assumes blood and bone marrow lymphocytosis and adds findings in order of progression: stage 0, lymphocytosis only; I, enlarged lymph nodes; II, splenomegaly and/or hepatomegaly; III, anaemia (Hb < 11 g/dL); IV, thrombocytopenia (platelets < 100 ×10⁹/L). The stage is that of the most advanced finding, whether or not those of lower stages are present.",
+      "interpretation": "The modified Rai system groups the stages into low risk (0), intermediate risk (I–II) and high risk (III–IV). Early stages are monitored without treatment unless the disease is active by iwCLL criteria; high-risk stages generally warrant treatment. In the original 1975 series, median survival was over 150 months in stage 0 and 19 months in stages III and IV.",
+      "cautions": "Applies only to an already-diagnosed chronic lymphocytic leukaemia. Anaemia or thrombocytopenia counts towards the stage only when it is due to marrow infiltration, not to autoimmune haemolysis, immune thrombocytopenia or another cause. The survival figures predate current treatments, and the stage alone does not decide treatment.",
+      "faq": []
+    }
+  },
+  "plasmic": {
+    "title": "PLASMIC score for thrombotic thrombocytopenic purpura",
+    "subtitle": "Seven bedside criteria that estimate the probability of severe ADAMTS13 deficiency in thrombotic microangiopathy.",
+    "fields": {
+      "plateletsLow": "Platelets < 30 ×10⁹/L",
+      "haemolysis": "Haemolysis: reticulocytes > 2.5%, undetectable haptoglobin or indirect bilirubin > 2 mg/dL (34 µmol/L)",
+      "noActiveCancer": "No active cancer (no cancer treated in the past year)",
+      "noTransplant": "No history of solid-organ or stem-cell transplant",
+      "mcvLow": "MCV < 90 fL",
+      "inrLow": "INR < 1.5",
+      "creatinineLow": "Creatinine < 2.0 mg/dL (177 µmol/L)"
+    },
+    "patient": {
+      "intro": "This score helps doctors judge, within hours, how likely it is that a condition with low platelets and red-cell breakdown is thrombotic thrombocytopenic purpura (TTP), a medical emergency caused by a lack of the ADAMTS13 enzyme. It uses seven results that are usually already available.",
+      "ask_doctor": "Questions for your doctor:",
+      "questions": [
+        "How likely is it that I have TTP?",
+        "Will I need plasma exchange before the ADAMTS13 result is back?",
+        "What other causes are you considering?"
+      ]
+    },
+    "content": {
+      "overview": "PLASMIC gives one point for each of seven criteria: platelets < 30 ×10⁹/L; haemolysis (reticulocytes > 2.5%, undetectable haptoglobin or indirect bilirubin > 2 mg/dL); no active cancer in the past year; no solid-organ or stem-cell transplant; MCV < 90 fL; INR < 1.5; and creatinine < 2.0 mg/dL. The total ranges from 0 to 7.",
+      "interpretation": "0–4 low, 5 intermediate and 6–7 high probability of severe ADAMTS13 deficiency (activity ≤ 10%). A high score supports starting plasma exchange while the ADAMTS13 result is pending; a low score points to another cause of thrombotic microangiopathy.",
+      "cautions": "Use it only in adults with thrombotic microangiopathy (microangiopathic haemolytic anaemia with thrombocytopenia). It estimates pretest probability and does not replace ADAMTS13 activity testing, which should be drawn before plasma is given. Treatment decisions are made with haematology.",
+      "faq": []
+    }
+  },
+  "iss": {
+    "title": "International Staging System (ISS) for multiple myeloma",
+    "subtitle": "Three-stage prognostic staging from serum β2-microglobulin and albumin.",
+    "fields": {
+      "beta2Microglobulin": "Serum β2-microglobulin (mg/L)",
+      "albumin": "Serum albumin (g/dL)"
+    },
+    "patient": {
+      "intro": "This staging system estimates the outlook of multiple myeloma at diagnosis from two blood tests: beta-2 microglobulin, which reflects the amount of disease and kidney function, and albumin. It divides patients into stages I, II and III.",
+      "ask_doctor": "Questions for your doctor:",
+      "questions": [
+        "What ISS stage am I in, and do my genetic test results change it?",
+        "How does my kidney function affect this result?",
+        "Which treatment do you recommend for my stage?"
+      ]
+    },
+    "content": {
+      "overview": "The ISS combines two routine serum tests measured at diagnosis: β2-microglobulin (mg/L) and albumin (g/dL). Stage I: β2-microglobulin < 3.5 mg/L and albumin ≥ 3.5 g/dL. Stage III: β2-microglobulin ≥ 5.5 mg/L, whatever the albumin. Stage II: everything else.",
+      "interpretation": "In the 2005 derivation cohort of more than ten thousand patients, median survival was 62 months in stage I, 44 months in stage II and 29 months in stage III. Survival is longer with current treatments, but the stages still separate risk.",
+      "cautions": "Applies to symptomatic multiple myeloma at diagnosis, not to MGUS or smouldering myeloma. β2-microglobulin rises with renal impairment, so stage III may partly reflect kidney function. Enter albumin in g/dL: divide g/L by 10. The R-ISS refines this staging with cytogenetics and LDH.",
+      "faq": []
+    }
+  },
+  "rIss": {
+    "title": "Revised International Staging System (R-ISS) for multiple myeloma",
+    "subtitle": "ISS stage combined with high-risk cytogenetics and LDH in newly diagnosed myeloma.",
+    "fields": {
+      "beta2Microglobulin": "Serum β2-microglobulin (mg/L)",
+      "albumin": "Serum albumin (g/dL)",
+      "highRiskCytogenetics": "High-risk cytogenetics by iFISH: del(17p), t(4;14) or t(14;16)",
+      "ldhHigh": "Serum LDH above the upper limit of normal"
+    },
+    "patient": {
+      "intro": "This staging system refines the ISS for newly diagnosed multiple myeloma by adding two results: genetic changes in the myeloma cells and a blood test called LDH. It divides patients into stages I, II and III.",
+      "ask_doctor": "Questions for your doctor:",
+      "questions": [
+        "What is my R-ISS stage, and which genetic changes were found?",
+        "Does my stage change the type or intensity of treatment you recommend?",
+        "Will these tests be repeated during treatment?"
+      ]
+    },
+    "content": {
+      "overview": "The R-ISS combines the ISS stage with chromosomal abnormalities detected by interphase FISH and serum LDH. Stage I: ISS I, no high-risk cytogenetics [del(17p), t(4;14) or t(14;16)] and normal LDH. Stage III: ISS III with high-risk cytogenetics or high LDH. Stage II: all other combinations.",
+      "interpretation": "In the IMWG cohort of newly diagnosed patients, five-year overall survival was 82% in stage I, 62% in stage II and 40% in stage III; five-year progression-free survival was 55%, 36% and 24%.",
+      "cautions": "Validated in newly diagnosed myeloma, assessed before treatment. iFISH should be performed on purified (CD138-selected) plasma cells. Most patients fall into stage II, which is heterogeneous; the R2-ISS (2022) adds 1q gain to split it further.",
+      "faq": []
+    }
+  },
   "isthDic": {
     "title": "ISTH DIC score",
     "subtitle": "ISTH score for overt DIC in patients with a predisposing disorder.",

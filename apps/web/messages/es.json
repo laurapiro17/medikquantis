@@ -3437,6 +3437,133 @@
       ]
     }
   },
+  "ipi": {
+    "title": "Índice Pronóstico Internacional (IPI) para el linfoma agresivo",
+    "subtitle": "Cinco factores previos al tratamiento que estratifican la supervivencia en el linfoma B difuso de células grandes y otros linfomas agresivos.",
+    "fields": {
+      "ageOver60": "Edad > 60 años",
+      "ldhHigh": "LDH sérica por encima del límite superior de la normalidad",
+      "ecog2OrMore": "Estado funcional ECOG ≥ 2",
+      "advancedStage": "Estadio de Ann Arbor III o IV",
+      "extranodalOver1": "Afectación de más de una localización extraganglionar"
+    },
+    "patient": {
+      "intro": "Este índice estima el pronóstico de un linfoma agresivo, como el linfoma B difuso de células grandes, a partir de cinco datos que se valoran antes del tratamiento: la edad, un análisis de sangre llamado LDH, cuánto limita la enfermedad tu actividad diaria, lo extendida que está y si afecta a órganos fuera de los ganglios.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿Cuál es mi IPI y cómo cambia mi plan de tratamiento?",
+        "¿El pronóstico con los tratamientos actuales es mejor que las cifras del estudio original?",
+        "¿Qué pruebas usaréis para ver cómo respondo al tratamiento?"
+      ]
+    },
+    "content": {
+      "overview": "El IPI asigna un punto a cada uno de cinco factores adversos presentes antes del tratamiento: edad mayor de 60 años, LDH sérica elevada, estado funcional ECOG de 2 o más, estadio de Ann Arbor III–IV y más de una localización extraganglionar. La puntuación total va de 0 a 5.",
+      "interpretation": "0–1 riesgo bajo, 2 intermedio-bajo, 3 intermedio-alto, 4–5 alto. En la cohorte de derivación de 1993, tratada con quimioterapia basada en doxorrubicina antes de la era del rituximab, la supervivencia global a cinco años fue del 73%, 51%, 43% y 26%, respectivamente.",
+      "cautions": "Las cifras de supervivencia son anteriores al rituximab; con R-CHOP los resultados son mejores en todos los grupos, aunque el índice sigue separando el riesgo. Se calcula al diagnóstico, antes del tratamiento, y se derivó en linfomas agresivos: no es la escala del linfoma folicular (FLIPI) ni del linfoma de Hodgkin. En pacientes de 60 años o menos, el IPI ajustado por edad utiliza solo el estadio, la LDH y el estado funcional.",
+      "faq": []
+    }
+  },
+  "rai": {
+    "title": "Estadificación de Rai para la leucemia linfática crónica",
+    "subtitle": "Estadificación clínica (0–IV) según adenopatías, visceromegalias y citopenias, agrupada en tres niveles de riesgo.",
+    "fields": {
+      "lymphadenopathy": "Adenopatías",
+      "organomegaly": "Esplenomegalia y/o hepatomegalia",
+      "anaemia": "Anemia: Hb < 11 g/dL",
+      "thrombocytopenia": "Trombocitopenia: plaquetas < 100 ×10⁹/L"
+    },
+    "patient": {
+      "intro": "Esta estadificación clasifica la leucemia linfática crónica (LLC) del estadio 0 al IV según si hay ganglios aumentados de tamaño, el bazo o el hígado agrandados, anemia o un descenso de las plaquetas. Los estadios se agrupan en riesgo bajo, intermedio y alto.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿En qué estadio de Rai estoy y a qué grupo de riesgo corresponde?",
+        "¿Necesito tratamiento ahora o es mejor hacer seguimiento (watch and wait)?",
+        "¿Qué cambios en los análisis o en los síntomas deberían hacerme consultar antes?"
+      ]
+    },
+    "content": {
+      "overview": "La estadificación de Rai parte de una linfocitosis en sangre y médula ósea y añade hallazgos por orden de progresión: estadio 0, solo linfocitosis; I, adenopatías; II, esplenomegalia y/o hepatomegalia; III, anemia (Hb < 11 g/dL); IV, trombocitopenia (plaquetas < 100 ×10⁹/L). El estadio es el del hallazgo más avanzado, estén o no presentes los de estadios inferiores.",
+      "interpretation": "El sistema de Rai modificado agrupa los estadios en riesgo bajo (0), intermedio (I–II) y alto (III–IV). En los estadios iniciales se hace seguimiento sin tratamiento salvo que haya enfermedad activa según los criterios del iwCLL; los estadios de alto riesgo suelen requerir tratamiento. En la serie original de 1975, la mediana de supervivencia superaba los 150 meses en el estadio 0 y era de 19 meses en los estadios III y IV.",
+      "cautions": "Solo es aplicable a una leucemia linfática crónica ya diagnosticada. La anemia o la trombocitopenia cuentan para el estadio solo si se deben a infiltración medular, no a hemólisis autoinmune, trombocitopenia inmune u otra causa. Las cifras de supervivencia son anteriores a los tratamientos actuales, y el estadio por sí solo no decide el tratamiento.",
+      "faq": []
+    }
+  },
+  "plasmic": {
+    "title": "Escala PLASMIC para la púrpura trombótica trombocitopénica",
+    "subtitle": "Siete criterios de cabecera que estiman la probabilidad de déficit grave de ADAMTS13 en la microangiopatía trombótica.",
+    "fields": {
+      "plateletsLow": "Plaquetas < 30 ×10⁹/L",
+      "haemolysis": "Hemólisis: reticulocitos > 2,5%, haptoglobina indetectable o bilirrubina indirecta > 2 mg/dL (34 µmol/L)",
+      "noActiveCancer": "Sin cáncer activo (ningún cáncer tratado en el último año)",
+      "noTransplant": "Sin antecedente de trasplante de órgano sólido ni de progenitores hematopoyéticos",
+      "mcvLow": "VCM < 90 fL",
+      "inrLow": "INR < 1,5",
+      "creatinineLow": "Creatinina < 2,0 mg/dL (177 µmol/L)"
+    },
+    "patient": {
+      "intro": "Esta escala ayuda a valorar, en pocas horas, la probabilidad de que un cuadro con plaquetas bajas y destrucción de glóbulos rojos sea una púrpura trombótica trombocitopénica (PTT), una urgencia médica causada por la falta de la enzima ADAMTS13. Utiliza siete resultados que suelen estar ya disponibles.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿Qué probabilidad hay de que tenga una PTT?",
+        "¿Necesitaré recambio plasmático antes de tener el resultado de ADAMTS13?",
+        "¿Qué otras causas estáis valorando?"
+      ]
+    },
+    "content": {
+      "overview": "PLASMIC suma un punto por cada uno de siete criterios: plaquetas < 30 ×10⁹/L; hemólisis (reticulocitos > 2,5%, haptoglobina indetectable o bilirrubina indirecta > 2 mg/dL); ausencia de cáncer activo en el último año; ausencia de trasplante de órgano sólido o de progenitores hematopoyéticos; VCM < 90 fL; INR < 1,5, y creatinina < 2,0 mg/dL. La puntuación total va de 0 a 7.",
+      "interpretation": "0–4 probabilidad baja, 5 intermedia y 6–7 alta de déficit grave de ADAMTS13 (actividad ≤ 10%). Una puntuación alta apoya iniciar el recambio plasmático mientras se espera el resultado de ADAMTS13; una puntuación baja orienta hacia otra causa de microangiopatía trombótica.",
+      "cautions": "Úsala solo en adultos con microangiopatía trombótica (anemia hemolítica microangiopática con trombocitopenia). Estima la probabilidad pretest y no sustituye a la determinación de la actividad de ADAMTS13, que debe extraerse antes de administrar plasma. Las decisiones de tratamiento se toman con hematología.",
+      "faq": []
+    }
+  },
+  "iss": {
+    "title": "Sistema Internacional de Estadificación (ISS) del mieloma múltiple",
+    "subtitle": "Estadificación pronóstica en tres estadios a partir de la β2-microglobulina y la albúmina séricas.",
+    "fields": {
+      "beta2Microglobulin": "β2-microglobulina sérica (mg/L)",
+      "albumin": "Albúmina sérica (g/dL)"
+    },
+    "patient": {
+      "intro": "Esta estadificación estima el pronóstico del mieloma múltiple al diagnóstico a partir de dos análisis de sangre: la beta-2 microglobulina, que refleja la cantidad de enfermedad y la función renal, y la albúmina. Divide a los pacientes en estadios I, II y III.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿En qué estadio ISS estoy y cambian el resultado mis pruebas genéticas?",
+        "¿Cómo influye mi función renal en este resultado?",
+        "¿Qué tratamiento me recomendáis para mi estadio?"
+      ]
+    },
+    "content": {
+      "overview": "El ISS combina dos análisis séricos de rutina medidos al diagnóstico: la β2-microglobulina (mg/L) y la albúmina (g/dL). Estadio I: β2-microglobulina < 3,5 mg/L y albúmina ≥ 3,5 g/dL. Estadio III: β2-microglobulina ≥ 5,5 mg/L, sea cual sea la albúmina. Estadio II: el resto.",
+      "interpretation": "En la cohorte de derivación de 2005, con más de diez mil pacientes, la mediana de supervivencia fue de 62 meses en el estadio I, 44 meses en el II y 29 meses en el III. Con los tratamientos actuales la supervivencia es mayor, pero los estadios siguen separando el riesgo.",
+      "cautions": "Se aplica al mieloma múltiple sintomático al diagnóstico, no a la GMSI ni al mieloma quiescente. La β2-microglobulina aumenta con la insuficiencia renal, por lo que el estadio III puede reflejar en parte la función renal. Introduce la albúmina en g/dL: divide los g/L entre 10. El R-ISS afina esta estadificación con la citogenética y la LDH.",
+      "faq": []
+    }
+  },
+  "rIss": {
+    "title": "Sistema Internacional de Estadificación Revisado (R-ISS) del mieloma múltiple",
+    "subtitle": "Estadio ISS combinado con la citogenética de alto riesgo y la LDH en el mieloma de nuevo diagnóstico.",
+    "fields": {
+      "beta2Microglobulin": "β2-microglobulina sérica (mg/L)",
+      "albumin": "Albúmina sérica (g/dL)",
+      "highRiskCytogenetics": "Citogenética de alto riesgo por iFISH: del(17p), t(4;14) o t(14;16)",
+      "ldhHigh": "LDH sérica por encima del límite superior de la normalidad"
+    },
+    "patient": {
+      "intro": "Esta estadificación afina el ISS en el mieloma múltiple de nuevo diagnóstico añadiendo dos resultados: alteraciones genéticas de las células del mieloma y un análisis de sangre llamado LDH. Divide a los pacientes en estadios I, II y III.",
+      "ask_doctor": "Preguntas para tu médico:",
+      "questions": [
+        "¿Cuál es mi estadio R-ISS y qué alteraciones genéticas se han encontrado?",
+        "¿Mi estadio cambia el tipo o la intensidad del tratamiento que me recomendáis?",
+        "¿Se repetirán estas pruebas durante el tratamiento?"
+      ]
+    },
+    "content": {
+      "overview": "El R-ISS combina el estadio ISS con las alteraciones cromosómicas detectadas por FISH en interfase y la LDH sérica. Estadio I: ISS I, sin citogenética de alto riesgo [del(17p), t(4;14) o t(14;16)] y LDH normal. Estadio III: ISS III con citogenética de alto riesgo o LDH elevada. Estadio II: todas las demás combinaciones.",
+      "interpretation": "En la cohorte del IMWG de pacientes de nuevo diagnóstico, la supervivencia global a cinco años fue del 82% en el estadio I, del 62% en el II y del 40% en el III; la supervivencia libre de progresión a cinco años fue del 55%, el 36% y el 24%.",
+      "cautions": "Validado en el mieloma de nuevo diagnóstico, valorado antes del tratamiento. La iFISH debe hacerse sobre células plasmáticas purificadas (selección CD138). La mayoría de los pacientes quedan en el estadio II, que es heterogéneo; el R2-ISS (2022) añade la ganancia de 1q para subdividirlo.",
+      "faq": []
+    }
+  },
   "isthDic": {
     "title": "Escala CID de la ISTH",
     "subtitle": "Puntuación ISTH para la CID manifiesta, en enfermedades de base que predisponen.",

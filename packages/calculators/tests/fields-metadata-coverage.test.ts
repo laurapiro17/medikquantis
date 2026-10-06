@@ -17,6 +17,11 @@ const ENFORCED = new Set([
   "4ts-hit",
   "khorana",
   "binet",
+  "ipi",
+  "rai",
+  "plasmic",
+  "iss",
+  "r-iss",
 ]);
 
 describe("fieldsMetadata coverage", () => {
