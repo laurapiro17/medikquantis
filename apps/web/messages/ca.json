@@ -3441,6 +3441,34 @@
       "faq": []
     }
   },
+  "plasmic": {
+    "title": "Escala PLASMIC per a la púrpura trombòtica trombocitopènica",
+    "subtitle": "Set criteris de capçalera que estimen la probabilitat de dèficit greu d'ADAMTS13 en la microangiopatia trombòtica.",
+    "fields": {
+      "plateletsLow": "Plaquetes < 30 ×10⁹/L",
+      "haemolysis": "Hemòlisi: reticulòcits > 2,5%, haptoglobina indetectable o bilirubina indirecta > 2 mg/dL (34 µmol/L)",
+      "noActiveCancer": "Sense càncer actiu (cap càncer tractat l'últim any)",
+      "noTransplant": "Sense antecedent de trasplantament d'òrgan sòlid ni de progenitors hematopoètics",
+      "mcvLow": "VCM < 90 fL",
+      "inrLow": "INR < 1,5",
+      "creatinineLow": "Creatinina < 2,0 mg/dL (177 µmol/L)"
+    },
+    "patient": {
+      "intro": "Aquesta escala ajuda a valorar, en poques hores, la probabilitat que un quadre amb plaquetes baixes i destrucció de glòbuls vermells sigui una púrpura trombòtica trombocitopènica (PTT), una urgència mèdica causada per la manca de l'enzim ADAMTS13. Fa servir set resultats que normalment ja estan disponibles.",
+      "ask_doctor": "Preguntes per al teu metge:",
+      "questions": [
+        "Quina probabilitat hi ha que tingui una PTT?",
+        "Necessitaré recanvi plasmàtic abans de tenir el resultat de l'ADAMTS13?",
+        "Quines altres causes esteu valorant?"
+      ]
+    },
+    "content": {
+      "overview": "PLASMIC suma un punt per cadascun de set criteris: plaquetes < 30 ×10⁹/L; hemòlisi (reticulòcits > 2,5%, haptoglobina indetectable o bilirubina indirecta > 2 mg/dL); absència de càncer actiu l'últim any; absència de trasplantament d'òrgan sòlid o de progenitors hematopoètics; VCM < 90 fL; INR < 1,5, i creatinina < 2,0 mg/dL. La puntuació total va de 0 a 7.",
+      "interpretation": "0–4 probabilitat baixa, 5 intermèdia i 6–7 alta de dèficit greu d'ADAMTS13 (activitat ≤ 10%). Una puntuació alta dona suport a iniciar el recanvi plasmàtic mentre s'espera el resultat de l'ADAMTS13; una puntuació baixa orienta cap a una altra causa de microangiopatia trombòtica.",
+      "cautions": "Fes-la servir només en adults amb microangiopatia trombòtica (anèmia hemolítica microangiopàtica amb trombocitopènia). Estima la probabilitat pretest i no substitueix la determinació de l'activitat d'ADAMTS13, que s'ha d'extreure abans d'administrar plasma. Les decisions de tractament es prenen amb hematologia.",
+      "faq": []
+    }
+  },
   "isthDic": {
     "title": "Escala CID de la ISTH",
     "subtitle": "Puntuació ISTH per a la CID manifesta, en malalties de base que hi predisposen.",

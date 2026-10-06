@@ -19,6 +19,7 @@ const ENFORCED = new Set([
   "binet",
   "ipi",
   "rai",
+  "plasmic",
 ]);
 
 describe("fieldsMetadata coverage", () => {

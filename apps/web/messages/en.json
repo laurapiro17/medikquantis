@@ -3441,6 +3441,34 @@
       "faq": []
     }
   },
+  "plasmic": {
+    "title": "PLASMIC score for thrombotic thrombocytopenic purpura",
+    "subtitle": "Seven bedside criteria that estimate the probability of severe ADAMTS13 deficiency in thrombotic microangiopathy.",
+    "fields": {
+      "plateletsLow": "Platelets < 30 ×10⁹/L",
+      "haemolysis": "Haemolysis: reticulocytes > 2.5%, undetectable haptoglobin or indirect bilirubin > 2 mg/dL (34 µmol/L)",
+      "noActiveCancer": "No active cancer (no cancer treated in the past year)",
+      "noTransplant": "No history of solid-organ or stem-cell transplant",
+      "mcvLow": "MCV < 90 fL",
+      "inrLow": "INR < 1.5",
+      "creatinineLow": "Creatinine < 2.0 mg/dL (177 µmol/L)"
+    },
+    "patient": {
+      "intro": "This score helps doctors judge, within hours, how likely it is that a condition with low platelets and red-cell breakdown is thrombotic thrombocytopenic purpura (TTP), a medical emergency caused by a lack of the ADAMTS13 enzyme. It uses seven results that are usually already available.",
+      "ask_doctor": "Questions for your doctor:",
+      "questions": [
+        "How likely is it that I have TTP?",
+        "Will I need plasma exchange before the ADAMTS13 result is back?",
+        "What other causes are you considering?"
+      ]
+    },
+    "content": {
+      "overview": "PLASMIC gives one point for each of seven criteria: platelets < 30 ×10⁹/L; haemolysis (reticulocytes > 2.5%, undetectable haptoglobin or indirect bilirubin > 2 mg/dL); no active cancer in the past year; no solid-organ or stem-cell transplant; MCV < 90 fL; INR < 1.5; and creatinine < 2.0 mg/dL. The total ranges from 0 to 7.",
+      "interpretation": "0–4 low, 5 intermediate and 6–7 high probability of severe ADAMTS13 deficiency (activity ≤ 10%). A high score supports starting plasma exchange while the ADAMTS13 result is pending; a low score points to another cause of thrombotic microangiopathy.",
+      "cautions": "Use it only in adults with thrombotic microangiopathy (microangiopathic haemolytic anaemia with thrombocytopenia). It estimates pretest probability and does not replace ADAMTS13 activity testing, which should be drawn before plasma is given. Treatment decisions are made with haematology.",
+      "faq": []
+    }
+  },
   "isthDic": {
     "title": "ISTH DIC score",
     "subtitle": "ISTH score for overt DIC in patients with a predisposing disorder.",
