@@ -1,11 +1,12 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useUrlInputs } from "./useUrlInputs";
 import { ModeToggle, ResultPanel } from "./ResultPanel";
 import { BooleanList, FormActions, NumberInput, RadioGroup } from "./Field";
 import { getCalc, type FieldUIMetadata } from "@medcalc/calculators";
+import { parseLang, translateRecommendation } from "@/lib/api-recommendations";
 
 type Mode = "clinician" | "patient";
 
@@ -27,6 +28,7 @@ export function DynamicCalcForm({
   riskLabelKey = "common.annual_risk",
 }: DynamicCalcFormProps) {
   const t = useTranslations();
+  const locale = useLocale();
   const calculator = getCalc(calcId)!;
   const meta = calculator.fieldsMetadata as Record<string, FieldUIMetadata> | undefined;
 
@@ -173,7 +175,12 @@ export function DynamicCalcForm({
         mode={mode}
         score={score}
         tier={result.tier}
-        recommendation={result.recommendation}
+        recommendation={translateRecommendation(
+          result.recommendationCode,
+          parseLang(locale),
+          result.recommendation,
+          score,
+        )}
         evidenceGrade={result.evidenceGrade}
         annualRiskPercent={result.annualRiskPercent}
         riskLabelKey={riskLabelKey}
