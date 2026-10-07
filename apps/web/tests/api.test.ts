@@ -21,6 +21,15 @@ const validCha = {
   vascularDisease: false,
 };
 
+// 70 kg man, Na 155 → 140: a 4.5 L deficit.
+const validFwd = {
+  weightKg: 70,
+  currentSodiumMEqL: 155,
+  targetSodiumMEqL: 140,
+  sex: "male" as const,
+  ageCategory: "adult" as const,
+};
+
 function ctx(calc: string) {
   return { params: Promise.resolve({ calc }) };
 }
@@ -128,6 +137,20 @@ describe("POST /api/v1/[calc]", () => {
     }
   });
 
+  it.each([
+    ["en", "Free water deficit is 4.5 L."],
+    ["es", "Déficit de agua libre: 4.5 L."],
+    ["ca", "Dèficit d'aigua lliure: 4.5 L."],
+  ])("localises the free water deficit and keeps its volume in %s", async (lang, text) => {
+    const req = new Request(`https://x.example/api/v1/free-water-deficit?lang=${lang}`, {
+      method: "POST",
+      body: JSON.stringify(validFwd),
+    });
+    const body = await (await CalcPOST(req, ctx("free-water-deficit"))).json();
+    expect(body.recommendationCode).toBe("FWD_DEFICIT_CALCULATED");
+    expect(body.recommendation).toContain(text);
+  });
+
   it("falls back to English on unsupported lang", async () => {
     const req = new Request("https://x.example/api/v1/cha2ds2vasc?lang=fr", {
       method: "POST",
@@ -231,6 +254,17 @@ describe("POST /api/v1/batch", () => {
     expect(body.results[1].responseLanguage).toBe("ca");
     expect(body.results[0].recommendation).toContain("anticoagulación");
     expect(body.results[1].recommendation).toContain("anticoagulació");
+  });
+
+  it("keeps the free water deficit volume in a translated item", async () => {
+    const req = new Request("https://x.example/api/v1/batch", {
+      method: "POST",
+      body: JSON.stringify({
+        calcs: [{ id: "free-water-deficit", inputs: validFwd, lang: "ca" }],
+      }),
+    });
+    const body = await (await BatchPOST(req)).json();
+    expect(body.results[0].recommendation).toContain("Dèficit d'aigua lliure: 4.5 L.");
   });
 
   it("returns per-item errors without short-circuiting", async () => {
