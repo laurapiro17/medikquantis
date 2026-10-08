@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useUrlInputs } from "./useUrlInputs";
 import { orbit } from "@medcalc/calculators";
+import { parseLang, translateRecommendation } from "@/lib/api-recommendations";
 import { ModeToggle, ResultPanel } from "./ResultPanel";
 import { BooleanList, FormActions, NumberInput } from "./Field";
 
@@ -27,6 +28,7 @@ const booleanFields = [
 
 export function OrbitForm() {
   const t = useTranslations();
+  const locale = useLocale();
   const [inputs, setInputs] = useState<OrbitInput>(defaultInputs);
 
   const urlInputs = useUrlInputs();
@@ -89,7 +91,11 @@ export function OrbitForm() {
           mode={mode}
           score={score}
           tier={result.tier}
-          recommendation={result.recommendation}
+          recommendation={translateRecommendation(
+            result.recommendationCode,
+            parseLang(locale),
+            result.recommendation,
+          )}
           evidenceGrade={result.evidenceGrade}
           annualRiskPercent={result.annualRiskPercent}
           riskLabelKey="common.annual_bleeding_risk"

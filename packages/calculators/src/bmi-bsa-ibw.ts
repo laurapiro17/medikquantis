@@ -85,7 +85,7 @@ export function interpret(
       tier: "moderate",
       recommendation:
         "Underweight (BMI < 18.5 kg/m²). Evaluate for malnutrition, eating disorders, or underlying chronic disease.",
-      recommendationCode: "BMI_UNDERWEIGHT",
+      recommendationCode: "BMI_BSA_IBW_UNDERWEIGHT",
       evidenceGrade: "A",
       details,
     };
@@ -97,7 +97,7 @@ export function interpret(
       tier: "low",
       recommendation:
         "Normal body weight (BMI 18.5–24.9 kg/m²). Encourage healthy lifestyle and balanced nutrition.",
-      recommendationCode: "BMI_NORMAL",
+      recommendationCode: "BMI_BSA_IBW_NORMAL",
       evidenceGrade: "A",
       details,
     };
@@ -109,7 +109,7 @@ export function interpret(
       tier: "moderate",
       recommendation:
         "Overweight (BMI 25.0–29.9 kg/m²). Recommend dietary modification, regular physical activity, and cardiovascular risk assessment.",
-      recommendationCode: "BMI_OVERWEIGHT",
+      recommendationCode: "BMI_BSA_IBW_OVERWEIGHT",
       evidenceGrade: "A",
       details,
     };

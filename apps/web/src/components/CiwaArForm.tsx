@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useUrlInputs } from "./useUrlInputs";
 import { ciwaAr } from "@medcalc/calculators";
+import { parseLang, translateRecommendation } from "@/lib/api-recommendations";
 import { ModeToggle, ResultPanel } from "./ResultPanel";
 import { FormActions, RadioGroup } from "./Field";
 
@@ -39,6 +40,7 @@ const orientationOptions = ["0", "1", "2", "3", "4"] as const;
 
 export function CiwaArForm() {
   const t = useTranslations();
+  const locale = useLocale();
   const [inputs, setInputs] = useState<CiwaArInput>(defaultInputs);
   const [mode, setMode] = useState<Mode>("clinician");
 
@@ -109,7 +111,11 @@ export function CiwaArForm() {
         mode={mode}
         score={score}
         tier={result.tier}
-        recommendation={result.recommendation}
+        recommendation={translateRecommendation(
+          result.recommendationCode,
+          parseLang(locale),
+          result.recommendation,
+        )}
         evidenceGrade={result.evidenceGrade}
         i18nNamespace="ciwaAr"
         shareableInputs={inputs}
