@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useUrlInputs } from "./useUrlInputs";
 import { grace } from "@medcalc/calculators";
+import { parseLang, translateRecommendation } from "@/lib/api-recommendations";
 import { ModeToggle } from "./ResultPanel";
 import { ShareActions } from "./ShareActions";
 import { BooleanList, FormActions, NumberInput, RadioGroup } from "./Field";
@@ -40,6 +41,7 @@ const tierStyles = {
 
 export function GraceForm() {
   const t = useTranslations();
+  const locale = useLocale();
   const [inputs, setInputs] = useState<GraceInput>(defaultInputs);
 
   const urlInputs = useUrlInputs();
@@ -140,7 +142,11 @@ export function GraceForm() {
           mode={mode}
           score={score}
           tier={result.tier}
-          recommendation={result.recommendation}
+          recommendation={translateRecommendation(
+            result.recommendationCode,
+            parseLang(locale),
+            result.recommendation,
+          )}
           evidenceGrade={result.evidenceGrade}
           mortality={result.annualRiskPercent}
         />

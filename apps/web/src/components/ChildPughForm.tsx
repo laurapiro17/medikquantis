@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useUrlInputs } from "./useUrlInputs";
 import { childPugh } from "@medcalc/calculators";
+import { parseLang, translateRecommendation } from "@/lib/api-recommendations";
 import { ModeToggle } from "./ResultPanel";
 import { ShareActions } from "./ShareActions";
 import { FormActions, RadioGroup } from "./Field";
@@ -26,6 +27,7 @@ const classStyles = {
 
 export function ChildPughForm() {
   const t = useTranslations();
+  const locale = useLocale();
   const [inputs, setInputs] = useState<ChildPughInput>(defaultInputs);
   const [mode, setMode] = useState<Mode>("clinician");
 
@@ -80,7 +82,11 @@ export function ChildPughForm() {
             score={score}
             classLabel={result.classLabel}
             tier={result.tier}
-            recommendation={result.recommendation}
+            recommendation={translateRecommendation(
+              result.recommendationCode,
+              parseLang(locale),
+              result.recommendation,
+            )}
             evidenceGrade={result.evidenceGrade}
           />
           <div className="glass-panel p-4">

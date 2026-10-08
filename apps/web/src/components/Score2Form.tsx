@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useUrlInputs } from "./useUrlInputs";
 import { score2 } from "@medcalc/calculators";
+import { parseLang, translateRecommendation } from "@/lib/api-recommendations";
 import { ModeToggle } from "./ResultPanel";
 import { ShareActions } from "./ShareActions";
 import { BooleanList, FormActions, NumberInput, RadioGroup } from "./Field";
@@ -24,6 +25,7 @@ const tierStyles = {
 
 export function Score2Form() {
   const t = useTranslations();
+  const locale = useLocale();
   const [inputs, setInputs] = useState<Score2Input>(defaultInputs);
   const [mode, setMode] = useState<Mode>("clinician");
 
@@ -75,7 +77,7 @@ export function Score2Form() {
       </form>
       {(
         <>
-          <Score2ResultPanel mode={mode} value={value} tier={result.tier} isOp={isOp} recommendation={result.recommendation} evidenceGrade={result.evidenceGrade} />
+          <Score2ResultPanel mode={mode} value={value} tier={result.tier} isOp={isOp} recommendation={translateRecommendation(result.recommendationCode, parseLang(locale), result.recommendation)} evidenceGrade={result.evidenceGrade} />
           <div className="glass-panel p-4">
             <ShareActions shareableInputs={inputs} tier={result.tier} mode={mode} />
           </div>

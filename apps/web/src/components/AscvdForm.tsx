@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useUrlInputs } from "./useUrlInputs";
 import { ascvd } from "@medcalc/calculators";
+import { parseLang, translateRecommendation } from "@/lib/api-recommendations";
 import { ModeToggle } from "./ResultPanel";
 import { ShareActions } from "./ShareActions";
 import { BooleanList, FormActions, NumberInput, RadioGroup } from "./Field";
@@ -30,6 +31,7 @@ const booleanFields = [
 
 export function AscvdForm() {
   const t = useTranslations();
+  const locale = useLocale();
   const [inputs, setInputs] = useState<AscvdInput>(defaultInputs);
   const [mode, setMode] = useState<Mode>("clinician");
 
@@ -94,7 +96,7 @@ export function AscvdForm() {
       </form>
       {(
         <>
-          <AscvdResultPanel mode={mode} value={value} tier={result.tier} recommendation={result.recommendation} evidenceGrade={result.evidenceGrade} />
+          <AscvdResultPanel mode={mode} value={value} tier={result.tier} recommendation={translateRecommendation(result.recommendationCode, parseLang(locale), result.recommendation)} evidenceGrade={result.evidenceGrade} />
           <div className="glass-panel p-4">
             <ShareActions shareableInputs={inputs} tier={result.tier} mode={mode} />
           </div>

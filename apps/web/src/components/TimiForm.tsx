@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useUrlInputs } from "./useUrlInputs";
 import { timi } from "@medcalc/calculators";
+import { parseLang, translateRecommendation } from "@/lib/api-recommendations";
 import { ModeToggle } from "./ResultPanel";
 import { ShareActions } from "./ShareActions";
 import { BooleanList, FormActions } from "./Field";
@@ -40,6 +41,7 @@ const tierStyles = {
 
 export function TimiForm() {
   const t = useTranslations();
+  const locale = useLocale();
   const [inputs, setInputs] = useState<TimiInput>(defaultInputs);
 
   const urlInputs = useUrlInputs();
@@ -93,7 +95,11 @@ export function TimiForm() {
           mode={mode}
           score={score}
           tier={result.tier}
-          recommendation={result.recommendation}
+          recommendation={translateRecommendation(
+            result.recommendationCode,
+            parseLang(locale),
+            result.recommendation,
+          )}
           evidenceGrade={result.evidenceGrade}
           mace14d={result.annualRiskPercent}
         />

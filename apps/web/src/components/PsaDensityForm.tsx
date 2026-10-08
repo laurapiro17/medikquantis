@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { psaDensity } from "@medcalc/calculators";
+import { parseLang, translateRecommendation } from "@/lib/api-recommendations";
 import { ModeToggle, ResultPanel } from "./ResultPanel";
 import { FormActions, NumberInput } from "./Field";
 import { useUrlInputs } from "./useUrlInputs";
@@ -17,6 +18,7 @@ const defaultInputs: PsaDensityInput = {
 
 export function PsaDensityForm() {
   const t = useTranslations();
+  const locale = useLocale();
   const [inputs, setInputs] = useState<PsaDensityInput>(defaultInputs);
   const [mode, setMode] = useState<Mode>("clinician");
 
@@ -79,7 +81,11 @@ export function PsaDensityForm() {
           mode={mode}
           score={density}
           tier={result.tier}
-          recommendation={result.recommendation}
+          recommendation={translateRecommendation(
+            result.recommendationCode,
+            parseLang(locale),
+            result.recommendation,
+          )}
           evidenceGrade={result.evidenceGrade}
           riskLabelKey="common.annual_risk"
           i18nNamespace="psaDensity"

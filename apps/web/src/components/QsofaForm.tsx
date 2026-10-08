@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useUrlInputs } from "./useUrlInputs";
 import { qsofa } from "@medcalc/calculators";
+import { parseLang, translateRecommendation } from "@/lib/api-recommendations";
 import { ModeToggle, ResultPanel } from "./ResultPanel";
 import { BooleanList, FormActions } from "./Field";
 
@@ -24,6 +25,7 @@ const booleanFields = [
 
 export function QsofaForm() {
   const t = useTranslations();
+  const locale = useLocale();
   const [inputs, setInputs] = useState<QsofaInput>(defaultInputs);
 
   const urlInputs = useUrlInputs();
@@ -76,7 +78,11 @@ export function QsofaForm() {
           mode={mode}
           score={score}
           tier={result.tier}
-          recommendation={result.recommendation}
+          recommendation={translateRecommendation(
+            result.recommendationCode,
+            parseLang(locale),
+            result.recommendation,
+          )}
           evidenceGrade={result.evidenceGrade}
           annualRiskPercent={result.annualRiskPercent}
           riskLabelKey="common.annual_risk"
