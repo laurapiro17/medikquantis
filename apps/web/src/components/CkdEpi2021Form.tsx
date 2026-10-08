@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useUrlInputs } from "./useUrlInputs";
 import { ckdEpi2021 } from "@medcalc/calculators";
+import { parseLang, translateRecommendation } from "@/lib/api-recommendations";
 import { ModeToggle } from "./ResultPanel";
 import { ShareActions } from "./ShareActions";
 import { FormActions, NumberInput, RadioGroup } from "./Field";
@@ -26,6 +27,7 @@ const tierStyles = {
 
 export function CkdEpi2021Form() {
   const t = useTranslations();
+  const locale = useLocale();
   const [inputs, setInputs] = useState<CkdEpi2021Input>(defaultInputs);
 
   const urlInputs = useUrlInputs();
@@ -98,7 +100,11 @@ export function CkdEpi2021Form() {
           egfr={egfr}
           stage={result.stage}
           tier={result.tier}
-          recommendation={result.recommendation}
+          recommendation={translateRecommendation(
+            result.recommendationCode,
+            parseLang(locale),
+            result.recommendation,
+          )}
           evidenceGrade={result.evidenceGrade}
         />
           <div className="glass-panel p-4">

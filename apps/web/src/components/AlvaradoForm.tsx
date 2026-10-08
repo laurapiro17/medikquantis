@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useUrlInputs } from "./useUrlInputs";
 import { alvarado } from "@medcalc/calculators";
+import { parseLang, translateRecommendation } from "@/lib/api-recommendations";
 import { ModeToggle, ResultPanel } from "./ResultPanel";
 import { BooleanList, FormActions } from "./Field";
 
@@ -34,6 +35,7 @@ const booleanFields = [
 
 export function AlvaradoForm() {
   const t = useTranslations();
+  const locale = useLocale();
   const [inputs, setInputs] = useState<AlvaradoInput>(defaultInputs);
   const [mode, setMode] = useState<Mode>("clinician");
 
@@ -79,7 +81,11 @@ export function AlvaradoForm() {
           mode={mode}
           score={score}
           tier={result.tier}
-          recommendation={result.recommendation}
+          recommendation={translateRecommendation(
+            result.recommendationCode,
+            parseLang(locale),
+            result.recommendation,
+          )}
           evidenceGrade={result.evidenceGrade}
           riskLabelKey="common.annual_risk"
           i18nNamespace="alvarado"

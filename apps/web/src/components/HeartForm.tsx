@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useUrlInputs } from "./useUrlInputs";
 import { heart } from "@medcalc/calculators";
+import { parseLang, translateRecommendation } from "@/lib/api-recommendations";
 import { ModeToggle } from "./ResultPanel";
 import { ShareActions } from "./ShareActions";
 import { FormActions, RadioGroup } from "./Field";
@@ -48,6 +49,7 @@ const tierStyles = {
 
 export function HeartForm() {
   const t = useTranslations();
+  const locale = useLocale();
   const [inputs, setInputs] = useState<Partial<HeartInput>>({});
 
   const urlInputs = useUrlInputs();
@@ -115,7 +117,11 @@ export function HeartForm() {
           mode={mode}
           score={score}
           tier={result.tier}
-          recommendation={result.recommendation}
+          recommendation={translateRecommendation(
+            result.recommendationCode,
+            parseLang(locale),
+            result.recommendation,
+          )}
           evidenceGrade={result.evidenceGrade}
           mace6w={result.annualRiskPercent}
         />

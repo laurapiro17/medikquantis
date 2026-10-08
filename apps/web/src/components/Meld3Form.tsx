@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useUrlInputs } from "./useUrlInputs";
 import { meld3 } from "@medcalc/calculators";
+import { parseLang, translateRecommendation } from "@/lib/api-recommendations";
 import { ModeToggle, ResultPanel } from "./ResultPanel";
 import { BooleanList, FormActions, NumberInput, RadioGroup } from "./Field";
 
@@ -22,6 +23,7 @@ const defaultInputs: Meld3Input = {
 
 export function Meld3Form() {
   const t = useTranslations();
+  const locale = useLocale();
   const [inputs, setInputs] = useState<Meld3Input>(defaultInputs);
 
   const urlInputs = useUrlInputs();
@@ -124,7 +126,11 @@ export function Meld3Form() {
           mode={mode}
           score={score}
           tier={result.tier}
-          recommendation={result.recommendation}
+          recommendation={translateRecommendation(
+            result.recommendationCode,
+            parseLang(locale),
+            result.recommendation,
+          )}
           evidenceGrade={result.evidenceGrade}
           annualRiskPercent={result.annualRiskPercent}
           riskLabelKey="common.annual_risk"
