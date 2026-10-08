@@ -949,17 +949,17 @@ const recommendations: Record<string, Translations> = {
   },
 
   // BMI / BSA / IBW
-  BMI_UNDERWEIGHT: {
+  BMI_BSA_IBW_UNDERWEIGHT: {
     en: "Underweight (BMI < 18.5 kg/m²). Evaluate for malnutrition, eating disorders, or underlying chronic disease.",
     es: "Bajo peso (IMC < 18,5 kg/m²). Descarte desnutrición, trastornos de la conducta alimentaria o una enfermedad crónica subyacente.",
     ca: "Pes baix (IMC < 18,5 kg/m²). Descarteu desnutrició, trastorns de la conducta alimentària o una malaltia crònica subjacent.",
   },
-  BMI_NORMAL: {
+  BMI_BSA_IBW_NORMAL: {
     en: "Normal body weight (BMI 18.5–24.9 kg/m²). Encourage healthy lifestyle and balanced nutrition.",
     es: "Normopeso (IMC 18,5–24,9 kg/m²). Fomente hábitos de vida saludables y una alimentación equilibrada.",
     ca: "Normopès (IMC 18,5–24,9 kg/m²). Fomenteu hàbits de vida saludables i una alimentació equilibrada.",
   },
-  BMI_OVERWEIGHT: {
+  BMI_BSA_IBW_OVERWEIGHT: {
     en: "Overweight (BMI 25.0–29.9 kg/m²). Recommend dietary modification, regular physical activity, and cardiovascular risk assessment.",
     es: "Sobrepeso (IMC 25,0–29,9 kg/m²). Recomiende cambios en la dieta, actividad física regular y evaluación del riesgo cardiovascular.",
     ca: "Sobrepès (IMC 25,0–29,9 kg/m²). Recomaneu canvis en la dieta, activitat física regular i avaluació del risc cardiovascular.",
