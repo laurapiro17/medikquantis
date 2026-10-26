@@ -11,9 +11,9 @@ type Translations = Record<ApiLang, string>;
 
 const recommendations: Record<string, Translations> = {
   YBOCS_SUBCLINICAL: {
-    en: "Subclinical symptom severity (0-7). This score alone does not exclude OCD.",
-    es: "Gravedad sintomática subclínica (0-7). La puntuación por sí sola no descarta el TOC.",
-    ca: "Gravetat simptomàtica subclínica (0-7). La puntuació per si sola no descarta el TOC.",
+    en: "Subclinical obsessive-compulsive symptom severity (0-7). This score alone does not exclude OCD.",
+    es: "Síntomas obsesivo-compulsivos de gravedad subclínica (0-7). La puntuación por sí sola no descarta el TOC.",
+    ca: "Símptomes obsessivocompulsius de gravetat subclínica (0-7). La puntuació per si sola no descarta el TOC.",
   },
   YBOCS_MILD: {
     en: "Mild obsessive-compulsive symptom severity (8-15). Interpret within a full clinical assessment.",
@@ -679,16 +679,16 @@ const recommendations: Record<string, Translations> = {
     ca: "Bretxa aniònica normal (6–12 mEq/L).",
   },
   AG_ELEVATED: {
-    en: "Elevated anion gap. Work up high-AG metabolic acidosis (MUDPILES).",
-    es: "Brecha aniónica elevada. Estudie acidosis metabólica con brecha aniónica elevada (MUDPILES).",
-    ca: "Bretxa aniònica elevada. Estudieu acidosi metabòlica amb bretxa aniònica elevada (MUDPILES).",
+    en: "Elevated anion gap. Work up high-AG metabolic acidosis (MUDPILES: methanol, uraemia, DKA, paraldehyde, INH, lactate, ethylene glycol, salicylates).",
+    es: "Brecha aniónica elevada. Estudie acidosis metabólica con brecha aniónica elevada (MUDPILES: metanol, uremia, cetoacidosis diabética, paraldehído, isoniazida, lactato, etilenglicol, salicilatos).",
+    ca: "Bretxa aniònica elevada. Estudieu acidosi metabòlica amb bretxa aniònica elevada (MUDPILES: metanol, urèmia, cetoacidosi diabètica, paraldehid, isoniazida, lactat, etilenglicol, salicilats).",
   },
 
   // FENa
   FENA_PRERENAL: {
-    en: "FENa < 1 % suggests prerenal AKI. Restore effective circulating volume; reassess after fluid challenge.",
-    es: "FENa < 1 % sugiere FRA prerrenal. Restablezca el volumen circulante efectivo; reevalúe tras prueba de fluidos.",
-    ca: "FENa < 1 % suggereix IRA prerenal. Restabliu el volum circulant efectiu; reavalueu després de prova de fluids.",
+    en: "FENa < 1 % suggests prerenal AKI. Restore effective circulating volume; reassess after fluid challenge. NOTE: also < 1 % in contrast nephropathy, glomerulonephritis and hepatorenal syndrome.",
+    es: "FENa < 1 % sugiere FRA prerrenal. Restablezca el volumen circulante efectivo; reevalúe tras prueba de fluidos. NOTA: también < 1 % en nefropatía por contraste, glomerulonefritis y síndrome hepatorrenal.",
+    ca: "FENa < 1 % suggereix IRA prerenal. Restabliu el volum circulant efectiu; reavalueu després de prova de fluids. NOTA: també < 1 % en nefropatia per contrast, glomerulonefritis i síndrome hepatorenal.",
   },
   FENA_INDETERMINATE: {
     en: "FENa 1–2 % is indeterminate. On diuretics, FENa is unreliable — use FEUrea (< 35 % supports prerenal).",
@@ -696,9 +696,9 @@ const recommendations: Record<string, Translations> = {
     ca: "FENa 1–2 % és indeterminat. Amb diürètics, FENa és poc fiable — useu FEUrea (< 35 % suport prerenal).",
   },
   FENA_INTRINSIC: {
-    en: "FENa > 2 % suggests intrinsic AKI (most commonly acute tubular necrosis). Search for ischaemic or nephrotoxic insult.",
-    es: "FENa > 2 % sugiere FRA intrínseco (lo más habitual NTA). Busque insulto isquémico o nefrotóxico.",
-    ca: "FENa > 2 % suggereix IRA intrínseca (el més habitual NTA). Cerqueu insult isquèmic o nefrotòxic.",
+    en: "FENa > 2 % suggests intrinsic AKI (most commonly acute tubular necrosis). Search for ischaemic or nephrotoxic insult; nephrology input.",
+    es: "FENa > 2 % sugiere FRA intrínseco (lo más habitual NTA). Busque insulto isquémico o nefrotóxico; valoración por nefrología.",
+    ca: "FENa > 2 % suggereix IRA intrínseca (el més habitual NTA). Cerqueu insult isquèmic o nefrotòxic; valoració per nefrologia.",
   },
 
 
@@ -751,7 +751,7 @@ const recommendations: Record<string, Translations> = {
     ca: "Risc moderat. Es recomana profilaxi farmacològica (HBPM o HNF a dosi baixa) excepte risc hemorràgic prohibitiu.",
   },
   CAPRINI_HIGH: {
-    en: "High VTE risk. Pharmacological + mechanical prophylaxis; consider extended-duration prophylaxis in selected surgical patients.",
+    en: "High VTE risk. Pharmacological prophylaxis plus mechanical prophylaxis; consider extended-duration prophylaxis in selected surgical patients.",
     es: "Riesgo alto. Profilaxis farmacológica + mecánica; considere profilaxis prolongada en pacientes quirúrgicos seleccionados.",
     ca: "Risc alt. Profilaxi farmacològica + mecànica; considereu profilaxi prolongada en pacients quirúrgics seleccionats.",
   },
@@ -780,9 +780,9 @@ const recommendations: Record<string, Translations> = {
     ca: "Classe B (compromís funcional significatiu). ~80% de supervivència a 1 any; valoreu candidatura a trasplantament; difereixiu la cirurgia electiva si és possible.",
   },
   CHILD_PUGH_C: {
-    en: "Class C (decompensated cirrhosis). ~45% 1-year survival; transplant evaluation; avoid elective surgery.",
-    es: "Clase C (cirrosis descompensada). ~45% de supervivencia a 1 año; evaluación para trasplante; evite cirugía electiva.",
-    ca: "Classe C (cirrosi descompensada). ~45% de supervivència a 1 any; avaluació per a trasplantament; eviteu cirurgia electiva.",
+    en: "Class C (decompensated cirrhosis). ~45% 1-year survival; transplant evaluation; avoid elective surgery — high peri-operative mortality.",
+    es: "Clase C (cirrosis descompensada). ~45% de supervivencia a 1 año; evaluación para trasplante; evite cirugía electiva — mortalidad perioperatoria alta.",
+    ca: "Classe C (cirrosi descompensada). ~45% de supervivència a 1 any; avaluació per a trasplantament; eviteu cirurgia electiva — mortalitat perioperatòria alta.",
   },
 
   // Glasgow-Blatchford
@@ -797,9 +797,9 @@ const recommendations: Record<string, Translations> = {
     ca: "Risc baix-moderat. Ingresseu per observació; endoscòpia en 24 hores.",
   },
   GBS_HIGH: {
-    en: "High risk for intervention. Resuscitate and arrange urgent endoscopy.",
-    es: "Riesgo alto de intervención. Reanime y solicite endoscopia urgente.",
-    ca: "Risc alt d'intervenció. Reanimeu i sol·liciteu endoscòpia urgent.",
+    en: "High risk for intervention (transfusion, endoscopic therapy or surgery). Resuscitate and arrange urgent endoscopy.",
+    es: "Riesgo alto de intervención (transfusión, tratamiento endoscópico o cirugía). Reanime y solicite endoscopia urgente.",
+    ca: "Risc alt d'intervenció (transfusió, tractament endoscòpic o cirurgia). Reanimeu i sol·liciteu endoscòpia urgent.",
   },
 
 
@@ -827,12 +827,12 @@ const recommendations: Record<string, Translations> = {
     ca: "Risc ASCVD a 10 anys baix. Consell d'estil de vida; l'estatina no s'indica de rutina.",
   },
   ASCVD_BORDERLINE: {
-    en: "Borderline risk (5-7.4%). Discuss risk-enhancing factors; consider moderate-intensity statin in selected patients.",
+    en: "Borderline risk (5–7.4%). Discuss risk-enhancing factors; consider moderate-intensity statin in selected patients.",
     es: "Riesgo limítrofe (5-7,4 %). Comente factores potenciadores; considere estatina de intensidad moderada en pacientes seleccionados.",
     ca: "Risc límit (5-7,4 %). Comenteu factors potenciadors; considereu estatina d'intensitat moderada en pacients seleccionats.",
   },
   ASCVD_INTERMEDIATE: {
-    en: "Intermediate risk (7.5-19.9%). Moderate- to high-intensity statin generally indicated alongside lifestyle changes.",
+    en: "Intermediate risk (7.5–19.9%). Moderate- to high-intensity statin generally indicated alongside lifestyle changes.",
     es: "Riesgo intermedio (7,5-19,9 %). Estatina de intensidad moderada-alta suele estar indicada junto a cambios de estilo de vida.",
     ca: "Risc intermedi (7,5-19,9 %). Estatina d'intensitat moderada-alta sol estar indicada juntament amb canvis d'estil de vida.",
   },
@@ -860,7 +860,7 @@ const recommendations: Record<string, Translations> = {
     ca: "Disfunció orgànica greu (SOFA 10-12). Mortalitat alta; participació multidisciplinar d'UCI i discussió d'objectius de cures.",
   },
   SOFA_VERY_HIGH: {
-    en: "Very high organ dysfunction (SOFA ≥ 13). Mortality ≥ 80%; consider limitation of life-sustaining treatment in shared decision-making.",
+    en: "Very high organ dysfunction (SOFA ≥ 13). Mortality ≥ 80 %; consider limitation of life-sustaining treatment in shared decision-making.",
     es: "Disfunción orgánica muy alta (SOFA ≥ 13). Mortalidad ≥ 80%; considere limitación del tratamiento de soporte vital en decisión compartida.",
     ca: "Disfunció orgànica molt alta (SOFA ≥ 13). Mortalitat ≥ 80%; considereu limitació del tractament de suport vital en decisió compartida.",
   },
@@ -872,17 +872,17 @@ const recommendations: Record<string, Translations> = {
     ca: "APACHE II baix (≤ 9). Monitorització rutinària a UCI; reavalueu cada 24 h.",
   },
   APACHE2_MODERATE: {
-    en: "Moderate APACHE II (10-19). Hospital mortality ~15-25%; full ICU support and serial APACHE trend.",
+    en: "Moderate APACHE II (10-19). Hospital mortality ~15-25 %; full ICU support and serial APACHE trend.",
     es: "APACHE II moderado (10-19). Mortalidad hospitalaria ~15-25%; soporte completo de UCI y seguimiento seriado.",
     ca: "APACHE II moderat (10-19). Mortalitat hospitalària ~15-25%; suport complet d'UCI i seguiment seriat.",
   },
   APACHE2_HIGH: {
-    en: "High APACHE II (20-29). Mortality 40-55%; multidisciplinary input and goals-of-care discussion.",
+    en: "High APACHE II (20-29). Mortality 40-55 %; multidisciplinary input and goals-of-care discussion.",
     es: "APACHE II alto (20-29). Mortalidad 40-55%; participación multidisciplinar y discusión de objetivos de cuidados.",
     ca: "APACHE II alt (20-29). Mortalitat 40-55%; participació multidisciplinar i discussió d'objectius de cures.",
   },
   APACHE2_VERY_HIGH: {
-    en: "Very high APACHE II (≥ 30). Mortality ≥ 75%; consider limitation of life-sustaining treatment within shared decision-making.",
+    en: "Very high APACHE II (≥ 30). Mortality ≥ 75 %; consider limitation of life-sustaining treatment within a shared decision-making process.",
     es: "APACHE II muy alto (≥ 30). Mortalidad ≥ 75%; considere limitación de tratamiento de soporte vital en decisión compartida.",
     ca: "APACHE II molt alt (≥ 30). Mortalitat ≥ 75%; considereu limitació del tractament de suport vital en decisió compartida.",
   },
@@ -909,9 +909,9 @@ const recommendations: Record<string, Translations> = {
     ca: "Ictus moderat a greu (NIHSS 16-20). LVO molt probable — sol·liciteu imatge immediata per valorar trombectomia endovascular.",
   },
   NIHSS_SEVERE: {
-    en: "Severe stroke (NIHSS ≥ 21). LVO almost certain; thrombectomy if anatomically eligible and within time window.",
-    es: "Ictus grave (NIHSS ≥ 21). LVO casi seguro; trombectomía si es anatómicamente elegible y dentro de ventana.",
-    ca: "Ictus greu (NIHSS ≥ 21). LVO gairebé segur; trombectomia si és anatòmicament elegible i dins de finestra.",
+    en: "Severe stroke (NIHSS ≥ 21). LVO almost certain; thrombectomy if anatomically eligible and within time window; consider NCC monitoring.",
+    es: "Ictus grave (NIHSS ≥ 21). LVO casi seguro; trombectomía si es anatómicamente elegible y dentro de ventana; considere monitorización neurocrítica.",
+    ca: "Ictus greu (NIHSS ≥ 21). LVO gairebé segur; trombectomia si és anatòmicament elegible i dins de finestra; considereu monitoratge neurocrític.",
   },
 
   // 4Ts (heparin-induced thrombocytopenia)
@@ -949,17 +949,17 @@ const recommendations: Record<string, Translations> = {
   },
 
   // BMI / BSA / IBW
-  BMI_UNDERWEIGHT: {
+  BMI_BSA_IBW_UNDERWEIGHT: {
     en: "Underweight (BMI < 18.5 kg/m²). Evaluate for malnutrition, eating disorders, or underlying chronic disease.",
     es: "Bajo peso (IMC < 18,5 kg/m²). Descarte desnutrición, trastornos de la conducta alimentaria o una enfermedad crónica subyacente.",
     ca: "Pes baix (IMC < 18,5 kg/m²). Descarteu desnutrició, trastorns de la conducta alimentària o una malaltia crònica subjacent.",
   },
-  BMI_NORMAL: {
+  BMI_BSA_IBW_NORMAL: {
     en: "Normal body weight (BMI 18.5–24.9 kg/m²). Encourage healthy lifestyle and balanced nutrition.",
     es: "Normopeso (IMC 18,5–24,9 kg/m²). Fomente hábitos de vida saludables y una alimentación equilibrada.",
     ca: "Normopès (IMC 18,5–24,9 kg/m²). Fomenteu hàbits de vida saludables i una alimentació equilibrada.",
   },
-  BMI_OVERWEIGHT: {
+  BMI_BSA_IBW_OVERWEIGHT: {
     en: "Overweight (BMI 25.0–29.9 kg/m²). Recommend dietary modification, regular physical activity, and cardiovascular risk assessment.",
     es: "Sobrepeso (IMC 25,0–29,9 kg/m²). Recomiende cambios en la dieta, actividad física regular y evaluación del riesgo cardiovascular.",
     ca: "Sobrepès (IMC 25,0–29,9 kg/m²). Recomaneu canvis en la dieta, activitat física regular i avaluació del risc cardiovascular.",
@@ -1197,6 +1197,238 @@ const recommendations: Record<string, Translations> = {
     en: "High risk of obstructive sleep apnoea (5-8). Refer for sleep study; consider perioperative precautions if surgery is planned.",
     es: "Riesgo alto de apnea obstructiva del sueño (5-8). Derive para estudio del sueño; considere precauciones perioperatorias si hay cirugía programada.",
     ca: "Risc alt d'apnea obstructiva del son (5-8). Deriveu per a estudi del son; considereu precaucions perioperatòries si hi ha cirurgia programada.",
+  },
+
+  // Apgar
+  APGAR_NORMAL: {
+    en: "Normal score (7–10). Routine post-natal care, drying, warming, and ongoing monitoring.",
+    es: "Puntuación normal (7–10). Cuidados posnatales habituales: secado, calor y vigilancia continuada.",
+    ca: "Puntuació normal (7–10). Cures postnatals habituals: assecat, escalfor i vigilància continuada.",
+  },
+  APGAR_MODERATE: {
+    en: "Moderately depressed (4–6). Provide airway clearing, tactile stimulation, and supplemental oxygen as indicated.",
+    es: "Depresión moderada (4–6). Despeje la vía aérea, aplique estimulación táctil y administre oxígeno suplementario si está indicado.",
+    ca: "Depressió moderada (4–6). Desobstruïu la via aèria, apliqueu estimulació tàctil i administreu oxigen suplementari si està indicat.",
+  },
+  APGAR_SEVERE: {
+    en: "Severely depressed (0–3). Immediate resuscitation required according to NRP guidelines (airway, ventilation, compressions).",
+    es: "Depresión grave (0–3). Requiere reanimación inmediata según las guías NRP de reanimación neonatal (vía aérea, ventilación, compresiones).",
+    ca: "Depressió greu (0–3). Cal reanimació immediata segons les guies NRP de reanimació neonatal (via aèria, ventilació, compressions).",
+  },
+
+  // BMI
+  BMI_UNDERWEIGHT: {
+    en: "Underweight (< 18.5 kg/m²). Evaluate for nutritional deficiencies, eating disorders, or underlying chronic illness.",
+    es: "Bajo peso (< 18,5 kg/m²). Descarte déficits nutricionales, trastornos de la conducta alimentaria o una enfermedad crónica subyacente.",
+    ca: "Pes baix (< 18,5 kg/m²). Descarteu dèficits nutricionals, trastorns de la conducta alimentària o una malaltia crònica subjacent.",
+  },
+  BMI_NORMAL: {
+    en: "Normal weight (18.5–24.9 kg/m²). Lowest overall cardiometabolic risk; maintain healthy diet and regular exercise.",
+    es: "Normopeso (18,5–24,9 kg/m²). Menor riesgo cardiometabólico global; mantenga una dieta saludable y ejercicio regular.",
+    ca: "Normopès (18,5–24,9 kg/m²). Menor risc cardiometabòlic global; mantingueu una dieta saludable i exercici regular.",
+  },
+  BMI_OVERWEIGHT: {
+    en: "Overweight (25.0–29.9 kg/m²). Increased cardiometabolic risk; counsel on lifestyle modifications, exercise, and dietary intervention.",
+    es: "Sobrepeso (25,0–29,9 kg/m²). Riesgo cardiometabólico aumentado; aconseje cambios en el estilo de vida, ejercicio e intervención dietética.",
+    ca: "Sobrepès (25,0–29,9 kg/m²). Risc cardiometabòlic augmentat; aconselleu canvis en l'estil de vida, exercici i intervenció dietètica.",
+  },
+  BMI_OBESITY_1: {
+    en: "Obesity Class I (30.0–34.9 kg/m²). High cardiometabolic risk; initiate structured weight management program.",
+    es: "Obesidad grado I (30,0–34,9 kg/m²). Riesgo cardiometabólico alto; inicie un programa estructurado de control del peso.",
+    ca: "Obesitat de grau I (30,0–34,9 kg/m²). Risc cardiometabòlic alt; inicieu un programa estructurat de control del pes.",
+  },
+  BMI_OBESITY_2: {
+    en: "Obesity Class II (35.0–39.9 kg/m²). Very high cardiometabolic risk; evaluate for pharmacotherapy or metabolic surgery.",
+    es: "Obesidad grado II (35,0–39,9 kg/m²). Riesgo cardiometabólico muy alto; valore tratamiento farmacológico o cirugía metabólica.",
+    ca: "Obesitat de grau II (35,0–39,9 kg/m²). Risc cardiometabòlic molt alt; valoreu tractament farmacològic o cirurgia metabòlica.",
+  },
+  BMI_OBESITY_3: {
+    en: "Obesity Class III (≥ 40.0 kg/m²). Extremely high risk of complications; comprehensive bariatric/multidisciplinary care recommended.",
+    es: "Obesidad grado III (≥ 40,0 kg/m²). Riesgo de complicaciones extremadamente alto; se recomienda un abordaje bariátrico/multidisciplinar integral.",
+    ca: "Obesitat de grau III (≥ 40,0 kg/m²). Risc de complicacions extremadament alt; es recomana un abordatge bariàtric/multidisciplinari integral.",
+  },
+
+  // BSA (Mosteller)
+  BSA_LOW: {
+    en: "BSA is below average adult range (< 1.4 m²). Common in pediatric patients or small adults; adjust chemotherapy and fluid dosing accordingly.",
+    es: "ASC por debajo del rango adulto habitual (< 1,4 m²). Frecuente en pacientes pediátricos o adultos de baja talla; ajuste en consecuencia la dosis de quimioterapia y de fluidos.",
+    ca: "ASC per sota del rang adult habitual (< 1,4 m²). Freqüent en pacients pediàtrics o adults de talla baixa; ajusteu en conseqüència la dosi de quimioteràpia i de fluids.",
+  },
+  BSA_NORMAL: {
+    en: "BSA is within standard adult range (1.4–2.2 m²). Use for indexing GFR, cardiac output, and drug dosing.",
+    es: "ASC dentro del rango adulto estándar (1,4–2,2 m²). Útil para indexar el filtrado glomerular, el gasto cardíaco y la dosificación de fármacos.",
+    ca: "ASC dins del rang adult estàndard (1,4–2,2 m²). Útil per indexar el filtrat glomerular, la despesa cardíaca i la dosificació de fàrmacs.",
+  },
+  BSA_HIGH: {
+    en: "BSA is above average adult range (> 2.2 m²). Consider ideal body weight capping if recommended for chemotherapy dosing.",
+    es: "ASC por encima del rango adulto habitual (> 2,2 m²). Valore limitar la dosis según el peso ideal si así se recomienda para la quimioterapia.",
+    ca: "ASC per sobre del rang adult habitual (> 2,2 m²). Valoreu limitar la dosi segons el pes ideal si així es recomana per a la quimioteràpia.",
+  },
+
+  // Centor
+  CENTOR_LOW_NO_TEST: {
+    en: "Low probability of strep; neither testing nor empirical antibiotics are needed.",
+    es: "Probabilidad baja de estreptococo; no se necesitan pruebas ni antibióticos empíricos.",
+    ca: "Probabilitat baixa d'estreptococ; no calen proves ni antibiòtics empírics.",
+  },
+  CENTOR_MODERATE_RADT: {
+    en: "Moderate probability; perform a rapid antigen detection test and treat only if positive.",
+    es: "Probabilidad moderada; realice una prueba rápida de detección de antígeno y trate solo si es positiva.",
+    ca: "Probabilitat moderada; feu una prova ràpida de detecció d'antigen i tracteu només si és positiva.",
+  },
+  CENTOR_HIGH_TREAT: {
+    en: "High probability; consider empirical antibiotics or confirm with a rapid antigen test before treating.",
+    es: "Probabilidad alta; considere antibióticos empíricos o confirme con una prueba rápida de antígeno antes de tratar.",
+    ca: "Probabilitat alta; considereu antibiòtics empírics o confirmeu-ho amb una prova ràpida d'antigen abans de tractar.",
+  },
+
+  // CHA2DS2-VA (same advice as CHA2DS2-VASc)
+  CHA2DS2VA_OAC_NOT_RECOMMENDED: {
+    en: "Oral anticoagulation not recommended.",
+    es: "No se recomienda anticoagulación oral.",
+    ca: "No es recomana anticoagulació oral.",
+  },
+  CHA2DS2VA_OAC_CONSIDERED_IIA: {
+    en: "Oral anticoagulation should be considered (ESC Class IIa).",
+    es: "Debe considerarse anticoagulación oral (ESC clase IIa).",
+    ca: "Cal considerar l'anticoagulació oral (ESC classe IIa).",
+  },
+  CHA2DS2VA_OAC_RECOMMENDED_I: {
+    en: "Oral anticoagulation is recommended (ESC Class I).",
+    es: "Se recomienda anticoagulación oral (ESC clase I).",
+    ca: "Es recomana anticoagulació oral (ESC classe I).",
+  },
+
+  // CIWA-Ar
+  CIWA_SEVERE: {
+    en: "Severe alcohol withdrawal (score > 15). High risk for DTs and seizures. Immediate aggressive benzodiazepine treatment, close monitoring, and inpatient admission.",
+    es: "Abstinencia alcohólica grave (puntuación > 15). Riesgo alto de delirium tremens y convulsiones. Tratamiento inmediato e intensivo con benzodiacepinas, monitorización estrecha e ingreso hospitalario.",
+    ca: "Abstinència alcohòlica greu (puntuació > 15). Risc alt de deliri trèmens i convulsions. Tractament immediat i intensiu amb benzodiazepines, monitoratge estret i ingrés hospitalari.",
+  },
+  CIWA_MODERATE: {
+    en: "Moderate alcohol withdrawal (score 10–15). Symptom-triggered benzodiazepine regimen indicated with frequent reassessment every 1–2 hours.",
+    es: "Abstinencia alcohólica moderada (puntuación 10–15). Indicada pauta de benzodiacepinas guiada por síntomas, con reevaluación frecuente cada 1–2 horas.",
+    ca: "Abstinència alcohòlica moderada (puntuació 10–15). Indicada pauta de benzodiazepines guiada per símptomes, amb reavaluació freqüent cada 1–2 hores.",
+  },
+  CIWA_MILD: {
+    en: "Mild alcohol withdrawal (score < 10). Generally does not require pharmacological treatment unless patient has prior history of seizures or DTs.",
+    es: "Abstinencia alcohólica leve (puntuación < 10). En general no requiere tratamiento farmacológico, salvo antecedentes de convulsiones o delirium tremens.",
+    ca: "Abstinència alcohòlica lleu (puntuació < 10). En general no requereix tractament farmacològic, llevat d'antecedents de convulsions o deliri trèmens.",
+  },
+
+  // Cockcroft-Gault
+  CG_NORMAL: {
+    en: "Normal creatinine clearance (≥ 90 mL/min). Standard drug dosing suitable unless patient has other risk factors.",
+    es: "Aclaramiento de creatinina normal (≥ 90 mL/min). Dosificación estándar adecuada salvo otros factores de riesgo.",
+    ca: "Aclariment de creatinina normal (≥ 90 mL/min). Dosificació estàndard adequada llevat d'altres factors de risc.",
+  },
+  CG_MILD: {
+    en: "Mild renal impairment (60–89 mL/min). Monitor kidney function and check package inserts for narrow therapeutic index drugs.",
+    es: "Insuficiencia renal leve (60–89 mL/min). Vigile la función renal y consulte la ficha técnica de los fármacos de margen terapéutico estrecho.",
+    ca: "Insuficiència renal lleu (60–89 mL/min). Vigileu la funció renal i consulteu la fitxa tècnica dels fàrmacs de marge terapèutic estret.",
+  },
+  CG_MODERATE: {
+    en: "Moderate renal impairment (30–59 mL/min). Dose reduction or extended interval required for renally excreted medications.",
+    es: "Insuficiencia renal moderada (30–59 mL/min). Los fármacos de eliminación renal requieren reducir la dosis o ampliar el intervalo.",
+    ca: "Insuficiència renal moderada (30–59 mL/min). Els fàrmacs d'eliminació renal requereixen reduir la dosi o allargar l'interval.",
+  },
+  CG_SEVERE: {
+    en: "Severe renal impairment (15–29 mL/min). Significant dose adjustment required; avoid nephrotoxic agents.",
+    es: "Insuficiencia renal grave (15–29 mL/min). Requiere un ajuste de dosis importante; evite fármacos nefrotóxicos.",
+    ca: "Insuficiència renal greu (15–29 mL/min). Cal un ajust de dosi important; eviteu fàrmacs nefrotòxics.",
+  },
+  CG_FAILURE: {
+    en: "Renal failure / End-stage (< 15 mL/min). Specialized dosing for ESRD/dialysis required; nephrology consultation indicated.",
+    es: "Fallo renal / enfermedad renal terminal (< 15 mL/min). Requiere dosificación específica para enfermedad renal terminal o diálisis; indicada consulta con nefrología.",
+    ca: "Fallida renal / malaltia renal terminal (< 15 mL/min). Cal dosificació específica per a malaltia renal terminal o diàlisi; indicada consulta amb nefrologia.",
+  },
+
+  // COWS
+  COWS_MINIMAL: {
+    en: "Minimal or no withdrawal (score 0–4). Buprenorphine induction is not indicated.",
+    es: "Abstinencia mínima o ausente (puntuación 0–4). No está indicada la inducción con buprenorfina.",
+    ca: "Abstinència mínima o absent (puntuació 0–4). No està indicada la inducció amb buprenorfina.",
+  },
+  COWS_MILD: {
+    en: "Mild opioid withdrawal (score 5–12). Monitor patient; buprenorphine induction should generally be delayed until score reaches ≥ 12–13 to avoid precipitated withdrawal.",
+    es: "Abstinencia de opioides leve (puntuación 5–12). Vigile al paciente; en general conviene retrasar la inducción con buprenorfina hasta una puntuación ≥ 12–13 para evitar una abstinencia precipitada.",
+    ca: "Abstinència d'opioides lleu (puntuació 5–12). Vigileu el pacient; en general convé endarrerir la inducció amb buprenorfina fins a una puntuació ≥ 12–13 per evitar una abstinència precipitada.",
+  },
+  COWS_MODERATE: {
+    en: "Moderate opioid withdrawal (score 13–24). Ideal range to initiate buprenorphine/sublingual buprenorphine-naloxone.",
+    es: "Abstinencia de opioides moderada (puntuación 13–24). Rango ideal para iniciar buprenorfina o buprenorfina-naloxona sublingual.",
+    ca: "Abstinència d'opioides moderada (puntuació 13–24). Rang ideal per iniciar buprenorfina o buprenorfina-naloxona sublingual.",
+  },
+  COWS_MODERATELY_SEVERE: {
+    en: "Moderately severe opioid withdrawal (score 25–36). Target for buprenorphine induction and symptom management.",
+    es: "Abstinencia de opioides moderadamente grave (puntuación 25–36). Rango adecuado para la inducción con buprenorfina y el control de síntomas.",
+    ca: "Abstinència d'opioides moderadament greu (puntuació 25–36). Rang adequat per a la inducció amb buprenorfina i el control de símptomes.",
+  },
+  COWS_SEVERE: {
+    en: "Severe opioid withdrawal (score > 36). Medical intervention indicated; safe for buprenorphine induction if protocol criteria are met.",
+    es: "Abstinencia de opioides grave (puntuación > 36). Indicada intervención médica; la inducción con buprenorfina es segura si se cumplen los criterios del protocolo.",
+    ca: "Abstinència d'opioides greu (puntuació > 36). Indicada intervenció mèdica; la inducció amb buprenorfina és segura si es compleixen els criteris del protocol.",
+  },
+
+  // GAD-7
+  GAD7_MINIMAL: {
+    en: "Minimal anxiety (0–4). Typically does not require formal intervention.",
+    es: "Ansiedad mínima (0–4). Habitualmente no requiere intervención formal.",
+    ca: "Ansietat mínima (0–4). Habitualment no requereix intervenció formal.",
+  },
+  GAD7_MILD: {
+    en: "Mild anxiety (5–9). Monitor patient; consider counseling and stress management strategies.",
+    es: "Ansiedad leve (5–9). Haga seguimiento; considere asesoramiento psicológico y estrategias de manejo del estrés.",
+    ca: "Ansietat lleu (5–9). Feu seguiment; considereu assessorament psicològic i estratègies de gestió de l'estrès.",
+  },
+  GAD7_MODERATE: {
+    en: "Moderate anxiety (10–14). Further evaluation required; consider psychotherapy or medical management.",
+    es: "Ansiedad moderada (10–14). Requiere más evaluación; considere psicoterapia o tratamiento médico.",
+    ca: "Ansietat moderada (10–14). Cal més avaluació; considereu psicoteràpia o tractament mèdic.",
+  },
+  GAD7_SEVERE: {
+    en: "Severe anxiety (15–21). Active treatment recommended with pharmacotherapy and/or psychotherapy; psychiatric evaluation advised.",
+    es: "Ansiedad grave (15–21). Se recomienda tratamiento activo con farmacoterapia y/o psicoterapia; se aconseja valoración psiquiátrica.",
+    ca: "Ansietat greu (15–21). Es recomana tractament actiu amb farmacoteràpia i/o psicoteràpia; s'aconsella valoració psiquiàtrica.",
+  },
+
+  // Glasgow Coma Scale
+  GCS_MILD_RULES: {
+    en: "Mild TBI; apply local rules (Canadian CT Head, NEXUS-II) to decide on imaging and disposition.",
+    es: "TCE leve; aplique las reglas locales (Canadian CT Head, NEXUS-II) para decidir la neuroimagen y el destino del paciente.",
+    ca: "TCE lleu; apliqueu les regles locals (Canadian CT Head, NEXUS-II) per decidir la neuroimatge i la destinació del pacient.",
+  },
+  GCS_MODERATE_ADMIT: {
+    en: "Moderate TBI; admit for observation and obtain head CT.",
+    es: "TCE moderado; ingrese para observación y solicite TC craneal.",
+    ca: "TCE moderat; ingresseu per a observació i sol·liciteu TC cranial.",
+  },
+  GCS_SEVERE_AIRWAY: {
+    en: "Severe TBI; secure the airway (intubation is generally indicated) and proceed to emergent imaging.",
+    es: "TCE grave; asegure la vía aérea (en general está indicada la intubación) y realice neuroimagen urgente.",
+    ca: "TCE greu; assegureu la via aèria (en general està indicada la intubació) i feu neuroimatge urgent.",
+  },
+
+  // SAD PERSONS
+  SAD_PERSONS_LOW: {
+    en: "Low suicide risk (0–2). Discharge with outpatient psychiatric evaluation and crisis hotline safety planning.",
+    es: "Riesgo de suicidio bajo (0–2). Alta con valoración psiquiátrica ambulatoria y plan de seguridad que incluya una línea de crisis.",
+    ca: "Risc de suïcidi baix (0–2). Alta amb valoració psiquiàtrica ambulatòria i pla de seguretat que inclogui una línia de crisi.",
+  },
+  SAD_PERSONS_MODERATE: {
+    en: "Moderate suicide risk (3–4). Close outpatient psychiatric follow-up required; consider hospitalization if support system is lacking.",
+    es: "Riesgo de suicidio moderado (3–4). Requiere seguimiento psiquiátrico ambulatorio estrecho; considere el ingreso si falta red de apoyo.",
+    ca: "Risc de suïcidi moderat (3–4). Cal seguiment psiquiàtric ambulatori estret; considereu l'ingrés si manca xarxa de suport.",
+  },
+  SAD_PERSONS_HIGH: {
+    en: "High suicide risk (5–6). Strongly recommend psychiatric hospitalization or emergency psychiatric evaluation.",
+    es: "Riesgo de suicidio alto (5–6). Se recomienda firmemente el ingreso psiquiátrico o una valoración psiquiátrica urgente.",
+    ca: "Risc de suïcidi alt (5–6). Es recomana fermament l'ingrés psiquiàtric o una valoració psiquiàtrica urgent.",
+  },
+  SAD_PERSONS_VERY_HIGH: {
+    en: "Very high suicide risk (7–10). Immediate psychiatric hospitalization and 1:1 safety precautions mandatory.",
+    es: "Riesgo de suicidio muy alto (7–10). Ingreso psiquiátrico inmediato y vigilancia 1:1 obligatorios.",
+    ca: "Risc de suïcidi molt alt (7–10). Ingrés psiquiàtric immediat i vigilància 1:1 obligatoris.",
   },
 
 };

@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useUrlInputs } from "./useUrlInputs";
 import { centor } from "@medcalc/calculators";
+import { parseLang, translateRecommendation } from "@/lib/api-recommendations";
 import { ModeToggle, ResultPanel } from "./ResultPanel";
 import { BooleanList, FormActions, RadioGroup } from "./Field";
 
@@ -29,6 +30,7 @@ const ageBands = ["lt_15", "15_to_44", "gte_45"] as const;
 
 export function CentorForm() {
   const t = useTranslations();
+  const locale = useLocale();
   const [inputs, setInputs] = useState<CentorInput>(defaultInputs);
 
   const urlInputs = useUrlInputs();
@@ -95,7 +97,11 @@ export function CentorForm() {
           mode={mode}
           score={score}
           tier={result.tier}
-          recommendation={result.recommendation}
+          recommendation={translateRecommendation(
+            result.recommendationCode,
+            parseLang(locale),
+            result.recommendation,
+          )}
           evidenceGrade={result.evidenceGrade}
           annualRiskPercent={result.annualRiskPercent}
           riskLabelKey="centor.risk_label_gas"

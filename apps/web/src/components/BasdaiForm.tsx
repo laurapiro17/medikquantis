@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useUrlInputs } from "./useUrlInputs";
 import { basdai } from "@medcalc/calculators";
+import { parseLang, translateRecommendation } from "@/lib/api-recommendations";
 import { ModeToggle, ResultPanel } from "./ResultPanel";
 import { FormActions, NumberInput } from "./Field";
 
@@ -30,6 +31,7 @@ const fields: (keyof BasdaiInput)[] = [
 
 export function BasdaiForm() {
   const t = useTranslations();
+  const locale = useLocale();
   const [inputs, setInputs] = useState<BasdaiInput>(defaultInputs);
   const [mode, setMode] = useState<Mode>("clinician");
 
@@ -82,7 +84,11 @@ export function BasdaiForm() {
           mode={mode}
           score={score}
           tier={result.tier}
-          recommendation={result.recommendation}
+          recommendation={translateRecommendation(
+            result.recommendationCode,
+            parseLang(locale),
+            result.recommendation,
+          )}
           evidenceGrade={result.evidenceGrade}
           riskLabelKey="common.annual_risk"
           i18nNamespace="basdai"
