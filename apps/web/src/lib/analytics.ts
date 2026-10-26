@@ -49,19 +49,41 @@ declare global {
 }
 
 /**
+ * Umami events sent before the script (loaded `afterInteractive`) has defined
+ * `window.umami`. Load-time events — `calc_computed` from a shared `?p=` link,
+ * fired during hydration — land in that window and used to be dropped.
+ *
+ * Capped because a blocked script never loads: the queue then just stops
+ * growing. The earliest events are kept, since those are the load-time ones.
+ */
+const UMAMI_QUEUE_LIMIT = 20;
+const umamiQueue: [string, EventData | undefined][] = [];
+
+function sendToUmami(name: string, data?: EventData): void {
+  try {
+    window.umami?.track(name, data);
+  } catch {
+    // ignore — a failed beacon is never worth surfacing to the user
+  }
+}
+
+/** Send the queued events. Called by the Umami `<Script onLoad>`. */
+export function flushUmamiQueue(): void {
+  if (!window.umami) return;
+  for (const [name, data] of umamiQueue.splice(0)) sendToUmami(name, data);
+}
+
+/**
  * Send one custom event to every configured provider.
  *
- * Never throws: analytics must not be able to take down a calculator. If the
- * Umami script is blocked (ad blockers catch some of them) `window.umami` is
- * simply absent and that leg is skipped.
+ * Never throws: analytics must not be able to take down a calculator. Until
+ * the Umami script has loaded, its leg is queued (see `umamiQueue`); if the
+ * script is blocked (ad blockers catch some of them) it never loads and the
+ * queued events are simply never sent.
  */
 export function track(name: string, data?: EventData): void {
   vercelTrack(name, data);
-  if (typeof window !== "undefined") {
-    try {
-      window.umami?.track(name, data);
-    } catch {
-      // ignore — a failed beacon is never worth surfacing to the user
-    }
-  }
+  if (typeof window === "undefined") return;
+  if (window.umami) sendToUmami(name, data);
+  else if (umamiQueue.length < UMAMI_QUEUE_LIMIT) umamiQueue.push([name, data]);
 }
