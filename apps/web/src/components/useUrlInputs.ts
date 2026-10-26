@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { markCalcUsed } from "@/lib/calc-usage";
 
 /**
  * Read the ?p= URL parameter (base64url-encoded JSON) at mount and return its
@@ -31,6 +32,13 @@ export function useUrlInputs(): Record<string, unknown> | null {
       // Malformed payload — ignore, form stays at defaults.
     }
   }, []);
+
+  // A shared case counts as a use of the calculator (lib/calc-usage). Marked
+  // when the form receives it, not at decode time: StrictMode re-runs mount
+  // effects, and ShareActions would report while the defaults are on screen.
+  useEffect(() => {
+    if (data) markCalcUsed();
+  }, [data]);
 
   return data;
 }
