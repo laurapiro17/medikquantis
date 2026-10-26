@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { track } from "@/lib/analytics";
+import { reportCalcUse } from "@/lib/calc-usage";
 import { ClipboardCheck } from "lucide-react";
 
 interface ShareActionsProps {
@@ -74,19 +75,18 @@ export function ShareActions({
   const [copied, setCopied] = useState(false);
   const [resultCopied, setResultCopied] = useState(false);
 
-  // Fire once when this component first appears — i.e. when a result has
-  // just been rendered. Vercel auto-captures the path (so we already know
-  // which calculator), this event adds the engagement dimensions.
+  // `calc_computed`, once per calculator per tab, when the result first comes
+  // from the user (see lib/calc-usage). The path tells which calculator; this
+  // event adds the engagement dimensions. Runs after every render and does
+  // nothing once this page has reported.
   useEffect(() => {
-    track("calc_computed", {
+    reportCalcUse({
       tier: tier ?? "unknown",
       source: detectSource(),
       lang: detectLang(),
       mode: mode ?? "unknown",
     });
-    // Intentionally no deps — we only want to track one event per mount.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  });
 
   const handleCopy = useCallback(async () => {
     if (typeof window === "undefined") return;
