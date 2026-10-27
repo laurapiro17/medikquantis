@@ -35,7 +35,7 @@ export default async function BsaMostellerPage({
 
       <BsaMostellerForm />
 
-      <CalcContent id="bsaMosteller" locale={locale} />
+      <CalcContent id="bsa-mosteller" locale={locale} />
 
       <CalcByline locale={locale} />
 

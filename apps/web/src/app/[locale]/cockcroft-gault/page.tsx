@@ -35,7 +35,7 @@ export default async function CockcroftGaultPage({
 
       <CockcroftGaultForm />
 
-      <CalcContent id="cockcroftGault" locale={locale} />
+      <CalcContent id="cockcroft-gault" locale={locale} />
 
       <CalcByline locale={locale} />
 
