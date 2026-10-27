@@ -2829,10 +2829,27 @@
       ]
     },
     "content": {
-      "overview": "The Body Mass Index (BMI) categorizes weight status, while Body Surface Area (BSA via Mosteller and DuBois) and Ideal/Adjusted Body Weight (IBW/ABW via Devine) are widely used for chemotherapy, renal drug dosing, and clinical nutrition.",
-      "interpretation": "BMI <18.5 is underweight, 18.5–24.9 is normal weight, 25.0–29.9 is overweight, and ≥30.0 indicates obesity. BSA and IBW assist in accurate therapeutic dosing.",
-      "cautions": "BMI does not differentiate muscle mass from adipose tissue and may misclassify athletic individuals or elderly patients with sarcopenia.",
-      "faq": []
+      "overview": "This BMI, body surface area and ideal body weight calculator gathers the anthropometric values that are often needed together when preparing a treatment or setting up a ventilator. From height, weight and sex it calculates body mass index (BMI), body surface area (BSA) by Mosteller and by DuBois, ideal body weight by the Devine formula, and adjusted body weight. They are not interchangeable: BMI describes weight status; BSA underlies doses given in mg/m²; ideal body weight, the weight expected for a given height and sex, is the reference for drugs that distribute poorly into fat and for tidal volume in mechanical ventilation; and adjusted body weight is used with some drugs in patients with obesity.",
+      "interpretation": "The main result is BMI (kg/m²) to one decimal place, and the recommendation shown depends on BMI alone: underweight below 18.5, normal weight up to 24.9, overweight from 25.0 to 29.9, and class I, II or III obesity with cut-offs at 30, 35 and 40. Mosteller BSA is √(cm × kg / 3600) and DuBois BSA is 0.007184 × height (cm) raised to 0.725 × weight (kg) raised to 0.425. Example, a man of 170 cm and 90 kg: BMI 31.1 (class I obesity), BSA 2.06 m² (Mosteller) or 2.01 m² (DuBois), ideal body weight 65.9 kg and adjusted body weight 75.5 kg.",
+      "cautions": "Below 152.4 cm the Devine formula subtracts nothing and the calculator returns a flat 50 kg or 45.5 kg, so ideal body weight is meaningless in children and very short adults. If actual weight does not exceed ideal weight, adjusted weight equals actual weight. Which weight to use for each drug is set by the summary of product characteristics and the local protocol; in the Cockcroft-Gault equation, for example, that choice changes estimated clearance considerably in obesity. Height should be measured: a self-reported height shifts BMI, BSA and ideal weight at once.",
+      "faq": [
+        {
+          "q": "How is ideal body weight calculated with the Devine formula?",
+          "a": "Start at 50 kg for men or 45.5 kg for women and add 2.3 kg for every inch (2.54 cm) of height above 152.4 cm. At 170 cm this gives 65.9 kg for a man and 61.4 kg for a woman."
+        },
+        {
+          "q": "What is adjusted body weight?",
+          "a": "It is a weight between ideal and actual: ideal weight + 0.4 × (actual weight − ideal weight). For a woman of 160 cm and 110 kg (ideal weight 52.4 kg) the adjusted weight is 75.4 kg."
+        },
+        {
+          "q": "Which weight is used to set tidal volume in mechanical ventilation?",
+          "a": "Ideal or predicted body weight, derived from height and sex, rather than actual weight: lung size depends on height and does not increase with obesity, so using actual weight would give an obese patient excessive volumes."
+        },
+        {
+          "q": "Why do Mosteller and DuBois body surface area values differ?",
+          "a": "They are different equations: Mosteller takes the square root of height × weight, while DuBois raises each variable to its own exponent. At 170 cm and 70 kg they barely differ (1.82 and 1.81 m²), but at 160 cm and 110 kg they give 2.21 and 2.10 m²."
+        }
+      ]
     }
   },
   "freeWaterDeficit": {
@@ -2857,10 +2874,27 @@
       ]
     },
     "content": {
-      "overview": "Free water deficit estimates the volume of pure water required to lower elevated serum sodium back to a safe target level (typically 140 mEq/L) based on estimated total body water.",
-      "interpretation": "Serum sodium should be corrected slowly (no more than 8–10 mEq/L per 24 hours) to prevent cerebral edema and permanent neurological damage.",
-      "cautions": "Always account for ongoing fluid losses (fever, diarrhea, urine) in total fluid orders. Recheck serum electrolytes frequently during active rehydration.",
-      "faq": []
+      "overview": "The free water deficit is the volume of solute-free water needed to bring serum sodium down to a target value. This free water deficit calculator estimates total body water (TBW) as a fraction of body weight: 0.6 in adult men, 0.5 in adult women and in men aged 65 or over, and 0.45 in women of that age. It then applies: deficit (L) = TBW × (current Na / target Na − 1), with a default target of 140 mEq/L that can be set between 130 and 145. It cites the review by Adrogué and Madias (N Engl J Med, 2000), which defines hypernatraemia as a serum sodium above 145 mmol/L.",
+      "interpretation": "The result is litres of free water, not of a particular intravenous fluid. An adult man weighing 70 kg with a sodium of 160 mEq/L and a target of 140 has a TBW of 42 L and a deficit of 6 L. The page also reminds users not to lower sodium by more than 8–10 mEq/L in 24 hours (about 0.5 mEq/L per hour) to avoid cerebral oedema, so the deficit is replaced gradually over time rather than all at once. A deficit above 4 L appears in the high band, a threshold set by the calculator rather than the article.",
+      "cautions": "This is only a starting estimate. It leaves out ongoing losses (urine, gastrointestinal losses, fever, insensible losses), which must be added to the replacement plan. The TBW fractions are population averages and fit poorly in obesity, oedema or malnutrition. The formula assumes that what was lost is pure water and ignores the composition of the infusate: Adrogué and Madias also propose estimating how much each litre of the chosen fluid will lower serum sodium, a calculation this page does not perform. None of this replaces serial measurement of serum sodium during correction.",
+      "faq": [
+        {
+          "q": "How do you calculate the free water deficit?",
+          "a": "Multiply weight by 0.6 (adult man), 0.5 (adult woman, or man aged 65 or over) or 0.45 (woman aged 65 or over) to obtain total body water, then multiply that by (current sodium / target sodium − 1)."
+        },
+        {
+          "q": "How fast should hypernatraemia be corrected?",
+          "a": "The calculator reminds users not to lower serum sodium by more than 8–10 mEq/L in 24 hours, about 0.5 mEq/L per hour, because a rapid fall can cause cerebral oedema. That rate, not the size of the deficit, sets the pace of replacement, with frequent sodium checks."
+        },
+        {
+          "q": "What total body water fraction is used in older adults?",
+          "a": "The calculator uses 0.5 of body weight in men aged 65 or over and 0.45 in women of that age, compared with 0.6 and 0.5 in younger adults. Because total body water falls with age, the young-adult fraction would overestimate the deficit."
+        },
+        {
+          "q": "Does the free water deficit include ongoing losses?",
+          "a": "No. It only counts the water missing at the time of the blood test. Later losses (urine, stool, fever, insensible losses) must be added to the fluid plan; otherwise sodium will fall less than expected."
+        }
+      ]
     }
   },
   "homaIr": {
@@ -2880,10 +2914,27 @@
       ]
     },
     "content": {
-      "overview": "HOMA-IR (Homeostatic Model Assessment of Insulin Resistance) estimates insulin sensitivity based on fasting plasma glucose and fasting insulin levels.",
-      "interpretation": "Values <1.0 indicate optimal insulin sensitivity, 1.0–1.9 indicates mild insulin resistance, and ≥2.0 indicates significant insulin resistance.",
-      "cautions": "Results should be interpreted in the context of clinical history. Fasting must be strict (8–12 hours). Not applicable during acute illness or exogenous insulin therapy.",
-      "faq": []
+      "overview": "The HOMA-IR index estimates insulin resistance from a single pair of fasting values: plasma glucose and plasma insulin. Matthews and colleagues at the Radcliffe Infirmary in Oxford described it in Diabetologia in 1985, based on a mathematical model of the feedback loop between the liver and the pancreatic β-cell. The paper's approximation is HOMA-IR = glucose (mmol/L) × insulin (µU/mL) / 22.5; this calculator takes glucose in mg/dL and divides by 405 (22.5 × 18). The scale is calibrated so that healthy normal-weight adults under 35 years of age have an insulin resistance of 1. In the original study it correlated with the euglycaemic clamp (Rs = 0.88) and with fasting insulin (Rs = 0.81).",
+      "interpretation": "The 1985 paper sets no cut-offs: it treats HOMA-IR as a relative value, where 1 is a healthy young adult of normal weight. The bands on this page (<1.0 optimal sensitivity; 1.0–1.9 mild resistance; ≥2.0 significant resistance) do not come from the paper and are indicative only. In the study, the median was 1.21 in subjects without diabetes (aged 23 to 67, weighing 90% to 142% of ideal body weight) and 2.89 in patients with type 2 diabetes, so at least half of the healthy controls were above 1.0. The authors warn that its low precision limits clinical use from a single sample.",
+      "cautions": "The coefficient of variation was 31%, and the authors judged that one fasting sample drawn in clinic does not reliably reflect an individual's insulin resistance. They advised measuring insulin with the subject rested and noted that averaging three samples taken 5 minutes apart improves precision, because of pulsatile insulin secretion and the effect of stress. The result depends on the insulin immunoassay (including possible detection of proinsulin), so it is not directly comparable between laboratories. Exercise also alters it. The patients with diabetes in the study were on diet alone; with exogenous insulin the index cannot be interpreted.",
+      "faq": [
+        {
+          "q": "How do you calculate HOMA-IR?",
+          "a": "Multiply fasting glucose by fasting insulin (µU/mL) and divide by 22.5 if glucose is in mmol/L, or by 405 if it is in mg/dL. Example: 90 mg/dL and 4 µU/mL give 90 × 4 / 405 = 0.89."
+        },
+        {
+          "q": "What is a normal HOMA-IR value?",
+          "a": "The original paper sets no universal normal value or cut-off. It defines 1 as the resistance of a healthy normal-weight adult under 35, and in its sample the median in subjects without diabetes was 1.21. Cut-offs used in practice vary with the population and the insulin assay."
+        },
+        {
+          "q": "What is the difference between HOMA-IR and HOMA-β?",
+          "a": "Both come from the same model. HOMA-β estimates β-cell function as a percentage: 20 × insulin / (glucose in mmol/L − 3.5), where 100% corresponds to a healthy young adult of normal weight. This calculator reports HOMA-IR only."
+        },
+        {
+          "q": "Can HOMA-IR be used in patients who inject insulin?",
+          "a": "It is not advisable. The model reads fasting insulin as the patient's own β-cell response to glucose, and injected insulin breaks that relationship. The patients with diabetes in the original study were on diet alone, so there is no validation in people treated with insulin."
+        }
+      ]
     }
   },
   "apgar": {
@@ -2957,13 +3008,25 @@
       ]
     },
     "content": {
-      "overview": "Body Surface Area (BSA) calculated via the Mosteller formula (BSA = √(height × weight / 3600)) is widely recognized for its simplicity and clinical accuracy across both adult and pediatric populations.",
-      "interpretation": "Average adult BSA is approximately 1.7 to 1.9 m². BSA is standardly used for indexing physiological parameters (such as cardiac output and eGFR) and dosing narrow therapeutic index medications like chemotherapy.",
-      "cautions": "In extreme obesity or pediatric oncology, clinical guidelines may recommend ideal body weight capping or specific modified dosing rules.",
+      "overview": "This body surface area calculator applies the Mosteller formula, BSA (m²) = √(height in cm × weight in kg / 3600), and rounds the result to two decimal places. R. D. Mosteller published it in 1987 in a letter to the New England Journal of Medicine entitled 'Simplified calculation of body-surface area': height, weight and a square root are all it takes. BSA in m² is the body-size measure in which many cytotoxic doses are expressed (mg/m²); it is also used to derive cardiac index and to index glomerular filtration rate. The page accepts values from 10 cm and 0.5 kg up to 250 cm and 300 kg, including paediatric measurements.",
+      "interpretation": "The result is an area in m², which the page places in one of three bands: below 1.4 m², under the usual adult range, as in children and small adults; 1.4 to 2.2 m², the standard adult range; and above 2.2 m², as in tall people or those with obesity. The default values (170 cm, 70 kg) give 1.82 m²; a child of 110 cm and 18 kg has 0.74 m², and an adult of 190 cm and 110 kg has 2.41 m². Because height and weight sit under a square root, doubling the weight does not double the surface area.",
+      "cautions": "The formula needs height in centimetres and weight in kilograms; a weight entered in pounds usually falls within the limits the page accepts, so the error can go unnoticed. Marked oedema, ascites or an amputation can pull weight away from true body size. Mosteller is not the only equation (the DuBois and DuBois formula is still in use) and the methods do not agree exactly, so use whichever the protocol specifies. The calculator applies no cap to BSA; in obesity, whether a dose is capped is decided by each drug's protocol.",
       "faq": [
         {
-          "q": "Why use BSA instead of total body weight?",
-          "a": "BSA correlates better with metabolic rate, cardiac output, and physiological fluid distribution than body weight alone."
+          "q": "How do you calculate body surface area with the Mosteller formula?",
+          "a": "Multiply height in centimetres by weight in kilograms, divide by 3600 and take the square root. For 170 cm and 70 kg: 170 × 70 = 11,900; 11,900 / 3600 = 3.31; √3.31 = 1.82 m². Convert a height recorded in metres to centimetres first."
+        },
+        {
+          "q": "How is body surface area used in chemotherapy?",
+          "a": "Many cytotoxic drugs are prescribed in mg per m²: the patient's dose is the regimen's per-m² dose multiplied by their BSA. This page calculates only the BSA; the final dose and any cap are set by the protocol."
+        },
+        {
+          "q": "What is a normal body surface area for an adult?",
+          "a": "The page treats 1.4 to 2.2 m² as the standard adult range. There is no 'healthy' or 'unhealthy' BSA: it is a measure of size, useful for scaling doses or indexing other parameters, not for classifying the patient."
+        },
+        {
+          "q": "Should body surface area be recalculated if weight changes?",
+          "a": "Yes, because the formula uses current weight, although the square root dampens the effect: losing 10% of body weight lowers BSA by about 5% (at 170 cm, going from 70 to 63 kg takes it from 1.82 to 1.72 m²)."
         }
       ]
     }
@@ -2988,13 +3051,25 @@
       ]
     },
     "content": {
-      "overview": "The Cockcroft-Gault equation (1976) estimates creatinine clearance (CrCl in mL/min) from serum creatinine, age, body weight, and sex. Historically, most FDA drug labeling and renal dosage recommendations were established using this formula.",
-      "interpretation": "CrCl ≥90 mL/min is normal; 60–89 mL/min indicates mild reduction; 30–59 mL/min indicates moderate impairment requiring drug dose adjustments; 15–29 mL/min indicates severe impairment; and <15 mL/min indicates renal failure.",
-      "cautions": "In patients with acute kidney injury, severe muscle wasting, or extreme obesity, the Cockcroft-Gault estimate may overestimate or underestimate actual GFR.",
+      "overview": "The Cockcroft-Gault calculator estimates creatinine clearance (CrCl) in mL/min from a patient's age, weight, sex and serum creatinine, and is mainly used for drug dose adjustment in renal impairment. Cockcroft and Gault published the formula in Nephron in 1976: CrCl = (140 − age) × weight (kg) / (72 × serum creatinine in mg/dL), with a result 15% lower in women (factor 0.85). It was set out for adult men, based on the relationship between age and 24-hour urinary creatinine excretion per kg of body weight in 249 patients aged 18 to 92 years. Against the mean of two measured 24-hour clearances in 236 patients, the correlation coefficient between predicted and measured values was 0.83.",
+      "interpretation": "The result is an absolute clearance in mL/min, not indexed to 1.73 m² of body surface area, because weight is already in the formula. The page sorts the result into five bands: ≥90 mL/min, normal; 60–89, mild renal impairment; 30–59, moderate, where renally excreted drugs usually need a lower dose or a longer interval; 15–29, severe; and <15 mL/min, renal failure. These bands do not come from the 1976 paper: they mirror the glomerular filtration rate cut-offs used to stage chronic kidney disease. When prescribing, what counts is each drug's own threshold in its product information, not the label of the band.",
+      "cautions": "The formula assumes a stable serum creatinine: in acute kidney injury, while creatinine is changing, it does not reflect true function. It uses the weight entered without correction, so it may overestimate clearance in marked obesity, oedema or very low muscle mass (cachexia, amputation). For women the paper proposes a result 15% lower, and the abstract does not explain how that correction was obtained. The equation predates IDMS-traceable creatinine standardisation, so modern assays may give somewhat different values. The calculator accepts creatinine in mg/dL only (µmol/L ÷ 88.4) and ages from 18 years.",
       "faq": [
         {
-          "q": "How does Cockcroft-Gault differ from CKD-EPI 2021?",
-          "a": "Cockcroft-Gault estimates clearance in mL/min incorporating patient weight and is standard for pharmacological dosing, whereas CKD-EPI 2021 calculates eGFR normalized to 1.73 m² body surface area for kidney disease diagnosis and staging."
+          "q": "How do you calculate creatinine clearance with Cockcroft-Gault?",
+          "a": "Subtract age from 140, multiply by weight in kg, and divide by 72 times creatinine in mg/dL; in women, multiply the result by 0.85. A 70-year-old man weighing 70 kg with creatinine 1.0 mg/dL has 68.1 mL/min."
+        },
+        {
+          "q": "What is the difference between Cockcroft-Gault and CKD-EPI 2021?",
+          "a": "Cockcroft-Gault estimates creatinine clearance in mL/min and includes body weight. CKD-EPI 2021 estimates glomerular filtration rate normalised to a standard body surface area and is the equation laboratories usually report for staging chronic kidney disease. For drug dosing, follow the product information."
+        },
+        {
+          "q": "Which weight should be used in Cockcroft-Gault for obese patients?",
+          "a": "The calculator uses the weight you enter; the paper's abstract refers to weight in kg and does not mention ideal or adjusted body weight. In marked obesity, actual weight overestimates clearance, and many clinicians use ideal or adjusted weight instead."
+        },
+        {
+          "q": "Is Cockcroft-Gault used for drug dose adjustment in renal impairment?",
+          "a": "That is its main use: much of the renal dosing guidance in product information is expressed as creatinine clearance estimated with this formula. Before changing a dose, check the drug's own threshold and confirm that creatinine is stable."
         }
       ]
     }
@@ -3112,9 +3187,27 @@
       ]
     },
     "content": {
-      "overview": "The original adult Y-BOCS is a clinician-rated measure of obsessive-compulsive symptom severity. Ten items scored from 0 to 4 form two subtotals: obsessions (0-20) and compulsions (0-20). Their sum ranges from 0 to 40.",
-      "interpretation": "Conventional severity bands: 0-7 subclinical; 8-15 mild; 16-23 moderate; 24-31 severe; 32-40 extreme.",
-      "cautions": "Severity scoring does not establish or exclude a diagnosis. Use the original adult scale, not Y-BOCS-II (0-50) or the child version. The full instrument and translations are subject to the rights holder's licensing terms."
+      "overview": "The Y-BOCS (Yale-Brown Obsessive Compulsive Scale) measures the severity of obsessive-compulsive disorder (OCD) symptoms independently of the type of obsessions or compulsions. Goodman and colleagues published it in 1989; a clinician administers it as a semi-structured interview, usually preceded by a symptom checklist. It has 10 items scored from 0 (no symptoms) to 4 (extreme symptoms): five rate obsessions and five rate compulsions, covering aspects such as time occupied, interference, distress, resistance and degree of control. Each subtotal ranges from 0 to 20 and the total from 0 to 40. In the original study (four raters, 40 patients) interrater reliability was excellent.",
+      "interpretation": "This calculator applies conventional bands: 0–7 subclinical, 8–15 mild, 16–23 moderate, 24–31 severe and 32–40 extreme. They do not come from the original 1989 article, so they are a guide rather than diagnostic categories. Look at the subtotals too: intense obsessions with few compulsions are not the same as rituals that take up hours, even with the same total. The scale is more useful repeated with the same version over the course of treatment than as a single reading. Response criteria based on a percentage reduction come from later studies.",
+      "cautions": "The Y-BOCS measures severity: it neither establishes nor excludes a diagnosis of OCD, which rests on clinical assessment against current diagnostic criteria. A low score does not rule the disorder out. The subtotals must come from an interview by a trained clinician. The calculator is for the original adult Y-BOCS, not the Y-BOCS-II (range 0–50) or the children's version (CY-BOCS). The total does not describe the type of symptoms, the degree of insight or comorbidity such as depression or tics, which need separate assessment.",
+      "faq": [
+        {
+          "q": "How is the Y-BOCS score calculated?",
+          "a": "A clinician rates 10 items from 0 to 4 during the interview: five for obsessions and five for compulsions. Each subtotal ranges from 0 to 20, and their sum gives the total, from 0 to 40. Here you enter the two subtotals and the calculator returns the total and its severity band."
+        },
+        {
+          "q": "What does a Y-BOCS score of 20 mean?",
+          "a": "With this calculator's bands, 20 points corresponds to moderate severity (16–23). It describes severity, not a diagnosis: interpret it alongside the subtotals, interference with daily life and the trend compared with previous assessments."
+        },
+        {
+          "q": "Can the Y-BOCS be used to diagnose OCD?",
+          "a": "No. It was designed to measure symptom severity in people with OCD, whatever the type of obsessions or compulsions. The diagnosis is made in a clinical interview. A low score does not rule out OCD, and a high one does not confirm it if the symptoms have another explanation."
+        },
+        {
+          "q": "Can I take the Y-BOCS test myself online?",
+          "a": "The original Y-BOCS is an interview administered by a clinician, and its reliability was studied in that format. Self-report versions developed later are not interchangeable with the interview. Anyone troubled by obsessions or rituals should talk to their GP or to a mental health professional."
+        }
+      ]
     }
   },
   "gad7": {
@@ -3457,10 +3550,27 @@
       ]
     },
     "content": {
-      "overview": "The IPI gives one point to each of five adverse factors present before treatment: age over 60, serum LDH above normal, ECOG performance status of 2 or more, Ann Arbor stage III–IV and more than one extranodal site. The total ranges from 0 to 5.",
-      "interpretation": "0–1 low risk, 2 low-intermediate, 3 high-intermediate, 4–5 high. In the 1993 derivation cohort, treated with doxorubicin-based chemotherapy before rituximab, five-year overall survival was 73%, 51%, 43% and 26% respectively.",
-      "cautions": "The survival figures predate rituximab; outcomes with R-CHOP are better in every group, although the index still separates risk. It is assessed at diagnosis, before treatment, and was derived in aggressive lymphoma — it is not the score for follicular lymphoma (FLIPI) or Hodgkin lymphoma. For patients aged 60 or under, the age-adjusted IPI uses only stage, LDH and performance status.",
-      "faq": []
+      "overview": "The International Prognostic Index (IPI) estimates the outlook of aggressive non-Hodgkin lymphoma from five pretreatment features, and today it is used mainly in diffuse large B-cell lymphoma (DLBCL). It was published in 1993 from data on 2031 adults in the United States, Europe and Canada treated between 1982 and 1987 with doxorubicin-containing chemotherapy, to improve on the Ann Arbor classification, which on its own did not reliably separate prognosis. This IPI calculator adds one point for each adverse factor present at diagnosis: age > 60 years, serum LDH above the upper limit of normal, ECOG performance status ≥ 2, Ann Arbor stage III or IV, and more than one extranodal site. The score ranges from 0 to 5.",
+      "interpretation": "Each factor carries one point and all are weighted equally. A score of 0–1 is low risk, 2 low-intermediate, 3 high-intermediate and 4–5 high. In the original cohort, predicted five-year survival for these groups was 73%, 51%, 43% and 26%. Patients in the higher groups achieved fewer complete responses and, when they did respond completely, relapsed more often. The IPI predicted long-term survival significantly more accurately than Ann Arbor stage, and the authors proposed it for designing trials and choosing treatment. On this page, scores of 2 and 3 share the moderate-risk band, but the result text distinguishes low-intermediate from high-intermediate risk.",
+      "cautions": "The survival percentages predate rituximab. With current immunochemotherapy, outcomes are generally better, so the figures rank risk rather than forecast an individual patient's course. All five items should be recorded at diagnosis, before treatment starts. The index was derived in aggressive (intermediate- or high-grade) non-Hodgkin lymphoma, not in indolent lymphomas or Hodgkin lymphoma. This calculator applies the full IPI, not the age-adjusted index for patients aged 60 or under. Later versions such as the R-IPI and NCCN-IPI were developed in rituximab-treated cohorts and are not part of the original article.",
+      "faq": [
+        {
+          "q": "How is the IPI score calculated?",
+          "a": "Add one point for each factor present at diagnosis: age > 60 years, raised LDH, ECOG ≥ 2, stage III or IV, and more than one extranodal site. The total, from 0 to 5, is grouped as low (0–1), low-intermediate (2), high-intermediate (3) or high risk (4–5)."
+        },
+        {
+          "q": "What is the life expectancy with a high IPI score?",
+          "a": "In the 1993 cohort, the high-risk group (4–5 points) had a predicted five-year survival of 26%, against 73% in the low-risk group. These patients were treated without rituximab, so the figure does not reflect today's prognosis."
+        },
+        {
+          "q": "What is the age-adjusted IPI?",
+          "a": "It is the version the same study built in 1274 patients aged 60 or under, using only stage, LDH and performance status. It separates four groups, with predicted five-year survival of 83%, 69%, 46% and 32%. This calculator does not compute it."
+        },
+        {
+          "q": "Is the IPI still useful in diffuse large B-cell lymphoma?",
+          "a": "Its five factors are still used to classify risk at diagnosis, but the 1993 percentages no longer describe current survival. Later variants built in rituximab-treated patients, such as the R-IPI and NCCN-IPI, are not part of this calculation."
+        }
+      ]
     }
   },
   "rai": {
@@ -3482,10 +3592,27 @@
       ]
     },
     "content": {
-      "overview": "Rai staging assumes blood and bone marrow lymphocytosis and adds findings in order of progression: stage 0, lymphocytosis only; I, enlarged lymph nodes; II, splenomegaly and/or hepatomegaly; III, anaemia (Hb < 11 g/dL); IV, thrombocytopenia (platelets < 100 ×10⁹/L). The stage is that of the most advanced finding, whether or not those of lower stages are present.",
-      "interpretation": "The modified Rai system groups the stages into low risk (0), intermediate risk (I–II) and high risk (III–IV). Early stages are monitored without treatment unless the disease is active by iwCLL criteria; high-risk stages generally warrant treatment. In the original 1975 series, median survival was over 150 months in stage 0 and 19 months in stages III and IV.",
-      "cautions": "Applies only to an already-diagnosed chronic lymphocytic leukaemia. Anaemia or thrombocytopenia counts towards the stage only when it is due to marrow infiltration, not to autoimmune haemolysis, immune thrombocytopenia or another cause. The survival figures predate current treatments, and the stage alone does not decide treatment.",
-      "faq": []
+      "overview": "Rai staging, or the Rai classification, divides chronic lymphocytic leukaemia (CLL) into five clinical stages, 0 to IV. Rai and colleagues proposed it in 1975 on the premise that CLL is a progressive accumulation of non-functioning lymphocytes and that the outlook worsens as this accumulation advances. Every stage assumes lymphocytosis in blood and bone marrow. Stage 0 has nothing more; stage I adds enlarged lymph nodes; stage II, splenomegaly and/or hepatomegaly; stage III, anaemia (Hb < 11 g/dL); and stage IV, thrombocytopenia (platelets < 100 ×10⁹/L). The calculator assigns the stage of the most advanced finding even when lower-stage findings are absent, so thrombocytopenia without enlarged nodes or organomegaly is already stage IV.",
+      "interpretation": "In the original series of 125 patients, median survival was over 150 months in stage 0, 101 in stage I, 71 in stage II and 19 in stages III and IV. Stage kept its prognostic value after adjustment for age and sex, and it worked both at diagnosis and later in the disease. The calculator groups the stages with the modified Rai system: low risk (0), intermediate (I–II) and high (III–IV). Low risk is managed by watch and wait; intermediate risk is treated only if iwCLL active-disease criteria are met; in high risk, treatment is generally indicated once a marrow cause of the cytopenia is confirmed.",
+      "cautions": "It applies only to CLL that has already been diagnosed. Anaemia and thrombocytopenia raise the stage when they result from marrow infiltration; when they stem from autoimmune haemolytic anaemia, immune thrombocytopenia or another cause unrelated to the leukaemia, they should not count towards stage III or IV. The 1975 medians predate current treatments and should not be applied to an individual patient. The classification also leaves out biological markers that now shape prognosis, such as TP53 abnormalities or IGHV mutational status, and stage alone does not decide when to treat.",
+      "faq": [
+        {
+          "q": "What does Rai stage 0 mean?",
+          "a": "Only lymphocytosis in blood and bone marrow, with no enlarged nodes, organomegaly or cytopenias. It is the low-risk group of the modified system and, in the 1975 series, its median survival exceeded 150 months. Usual care is monitoring without treatment."
+        },
+        {
+          "q": "What is the life expectancy in Rai stage III or IV CLL?",
+          "a": "In the 1975 study, median survival was 19 months in both stages. That figure predates current treatments and is not a valid individual prognosis today, which also depends on how the disease responds to treatment."
+        },
+        {
+          "q": "When should chronic lymphocytic leukaemia be treated?",
+          "a": "According to iwCLL, when the disease is active: progressive marrow failure, massive or progressive splenomegaly or lymphadenopathy, a rapidly rising lymphocyte count, autoimmune cytopenias not responding to corticosteroids, symptomatic extranodal involvement or constitutional symptoms. A high lymphocyte count on its own is not a reason to treat."
+        },
+        {
+          "q": "What is the difference between Rai and Binet staging?",
+          "a": "Rai ranks five stages by the type of finding and defines anaemia as Hb < 11 g/dL. Binet uses three stages based on how many lymphoid areas are involved and an Hb threshold of < 10 g/dL. Both use platelets < 100 ×10⁹/L. Rai predominates in North America, Binet in Europe."
+        }
+      ]
     }
   },
   "plasmic": {
@@ -3510,10 +3637,27 @@
       ]
     },
     "content": {
-      "overview": "PLASMIC gives one point for each of seven criteria: platelets < 30 ×10⁹/L; haemolysis (reticulocytes > 2.5%, undetectable haptoglobin or indirect bilirubin > 2 mg/dL); no active cancer in the past year; no solid-organ or stem-cell transplant; MCV < 90 fL; INR < 1.5; and creatinine < 2.0 mg/dL. The total ranges from 0 to 7.",
-      "interpretation": "0–4 low, 5 intermediate and 6–7 high probability of severe ADAMTS13 deficiency (activity ≤ 10%). A high score supports starting plasma exchange while the ADAMTS13 result is pending; a low score points to another cause of thrombotic microangiopathy.",
-      "cautions": "Use it only in adults with thrombotic microangiopathy (microangiopathic haemolytic anaemia with thrombocytopenia). It estimates pretest probability and does not replace ADAMTS13 activity testing, which should be drawn before plasma is given. Treatment decisions are made with haematology.",
-      "faq": []
+      "overview": "The PLASMIC score estimates how likely an adult with thrombotic microangiopathy is to have severe ADAMTS13 deficiency (activity ≤ 10%), the defining feature of thrombotic thrombocytopenic purpura (TTP). It gives one point for each criterion: platelets < 30 ×10⁹/L; haemolysis (reticulocytes > 2.5%, undetectable haptoglobin or indirect bilirubin > 2 mg/dL); no active cancer in the past year; no solid-organ or stem-cell transplant; MCV < 90 fL; INR < 1.5; and creatinine < 2.0 mg/dL. It was derived in 214 patients seen between 2004 and 2015 at three Boston teaching hospitals and validated in an internal and an external cohort. It is meant to guide decisions while the ADAMTS13 result is delayed or unavailable.",
+      "interpretation": "The calculator groups the total into three bands: 0–4 points, low probability of severe ADAMTS13 deficiency; 5, intermediate; 6–7, high. With 6–7 points TTP becomes the leading diagnosis: send the sample for ADAMTS13 activity and discuss urgent plasma exchange with haematology. With 5 points the decision rests on the whole clinical picture. With 0–4 points, TTP is unlikely and another cause of thrombotic microangiopathy should be sought. Each missing criterion lowers the probability: active cancer or a previous transplant points to thrombotic microangiopathy of another origin, while an INR ≥ 1.5 or a creatinine ≥ 2.0 mg/dL fits TTP less well.",
+      "cautions": "Use it only in adults with thrombotic microangiopathy (microangiopathic haemolytic anaemia with thrombocytopenia); it was not studied in children. It gives a pretest probability and neither confirms nor excludes TTP, which is defined by ADAMTS13 activity. Draw that sample before any plasma is given, because plasma supplies the enzyme and can distort the result. The cancer and transplant criteria score when absent, so tick them only once you have checked. A low score does not rule out TTP when the clinical picture is highly suggestive, and treatment decisions are made with haematology.",
+      "faq": [
+        {
+          "q": "How do you calculate the PLASMIC score?",
+          "a": "Add one point for each of the seven criteria that is met, so the total runs from 0 to 7. The name is an acronym of the items: Platelets, Lysis, Active cancer, Stem-cell or solid-organ transplant, MCV, INR and Creatinine."
+        },
+        {
+          "q": "What PLASMIC score suggests TTP?",
+          "a": "No score confirms it. With 6 or 7 points the probability of severe ADAMTS13 deficiency (activity ≤ 10%) is high; with 5 it is intermediate, and with 0–4 it is low. The diagnosis rests on ADAMTS13 activity, not on the score."
+        },
+        {
+          "q": "Should plasma exchange wait for the ADAMTS13 result?",
+          "a": "Not necessarily. TTP needs urgent plasma exchange, and ADAMTS13 testing is often slow or unavailable; the score was designed to support the decision in the meantime. With a high probability, send the sample and agree with haematology to start exchange without waiting for the result."
+        },
+        {
+          "q": "How accurate is the PLASMIC score?",
+          "a": "In the derivation cohort the C statistic was 0.96 (95% CI 0.92–0.98), and it held up in internal (0.95) and external (0.91) validation. It outperformed standard clinical assessment (0.83). The authors advise using it together with clinical judgement."
+        }
+      ]
     }
   },
   "iss": {
@@ -3533,10 +3677,27 @@
       ]
     },
     "content": {
-      "overview": "The ISS combines two routine serum tests measured at diagnosis: β2-microglobulin (mg/L) and albumin (g/dL). Stage I: β2-microglobulin < 3.5 mg/L and albumin ≥ 3.5 g/dL. Stage III: β2-microglobulin ≥ 5.5 mg/L, whatever the albumin. Stage II: everything else.",
-      "interpretation": "In the 2005 derivation cohort of more than ten thousand patients, median survival was 62 months in stage I, 44 months in stage II and 29 months in stage III. Survival is longer with current treatments, but the stages still separate risk.",
-      "cautions": "Applies to symptomatic multiple myeloma at diagnosis, not to MGUS or smouldering myeloma. β2-microglobulin rises with renal impairment, so stage III may partly reflect kidney function. Enter albumin in g/dL: divide g/L by 10. The R-ISS refines this staging with cytogenetics and LDH.",
-      "faq": []
+      "overview": "The International Staging System (ISS) is the prognostic classification for multiple myeloma based on two blood tests taken at diagnosis: serum beta-2 microglobulin and serum albumin. It was published in 2005 from 10,750 previously untreated patients with symptomatic myeloma at 17 institutions in North America, Europe and Asia. Of the prognostic variables analysed (β2-microglobulin, albumin, platelet count, creatinine and age), the β2-microglobulin and albumin pair gave the simplest and most reproducible classification. Stage I: β2-microglobulin < 3.5 mg/L and albumin ≥ 3.5 g/dL. Stage III: β2-microglobulin ≥ 5.5 mg/L, whatever the albumin. Stage II: any other combination. The authors validated it in all three regions, across age groups and with both standard therapy and autologous transplantation.",
+      "interpretation": "ISS staging separates three prognostic groups: in the original series, median survival was 62 months in stage I, 44 months in stage II and 29 months in stage III. Albumin only counts when β2-microglobulin is < 3.5 mg/L; from that value upwards, the stage depends on β2-microglobulin alone. Stage II therefore holds two profiles: β2-microglobulin < 3.5 mg/L with albumin < 3.5 g/dL, or β2-microglobulin ≥ 3.5 and < 5.5 mg/L with any albumin. These medians come from patients treated before the novel agents arrived, so they compare stages rather than predict how long a particular patient will live today.",
+      "cautions": "ISS staging was derived in untreated symptomatic myeloma, so it is not intended for monoclonal gammopathy of undetermined significance (MGUS) or smouldering myeloma, and it is calculated from blood tests taken before first treatment. β2-microglobulin is cleared by the kidney and rises in renal impairment, so stage III may partly reflect kidney function rather than tumour burden alone. Check the units: β2-microglobulin in mg/L (1 µg/mL equals 1 mg/L) and albumin in g/dL (if your laboratory reports g/L, divide by 10). The ISS leaves out cytogenetics and LDH, which the R-ISS adds.",
+      "faq": [
+        {
+          "q": "How do you calculate the ISS stage in multiple myeloma?",
+          "a": "From serum β2-microglobulin (mg/L) and serum albumin (g/dL) at diagnosis. β2-microglobulin ≥ 5.5 mg/L: stage III. β2-microglobulin < 3.5 mg/L with albumin ≥ 3.5 g/dL: stage I. Any other combination: stage II. Age, creatinine and cytogenetics play no part in the calculation."
+        },
+        {
+          "q": "What is the life expectancy for ISS stage III myeloma?",
+          "a": "In the 2005 series, median survival in stage III was 29 months (44 in stage II and 62 in stage I). These patients were treated before 2005, so the figures compare stages and do not predict an individual's prognosis today."
+        },
+        {
+          "q": "Why can kidney failure raise the ISS stage?",
+          "a": "β2-microglobulin is filtered and broken down by the kidney, so it builds up when glomerular filtration falls and can push a patient into stage III not only because of tumour burden. Serum creatinine also predicted survival in the original analysis but was not kept in the final system."
+        },
+        {
+          "q": "What is the difference between ISS and R-ISS?",
+          "a": "The R-ISS (2015), for newly diagnosed myeloma, adds high-risk cytogenetics by FISH and LDH to the ISS. ISS I with either factor moves up to R-ISS II, and ISS III only becomes R-ISS III if it has at least one."
+        }
+      ]
     }
   },
   "rIss": {
@@ -3558,10 +3719,27 @@
       ]
     },
     "content": {
-      "overview": "The R-ISS combines the ISS stage with chromosomal abnormalities detected by interphase FISH and serum LDH. Stage I: ISS I, no high-risk cytogenetics [del(17p), t(4;14) or t(14;16)] and normal LDH. Stage III: ISS III with high-risk cytogenetics or high LDH. Stage II: all other combinations.",
-      "interpretation": "In the IMWG cohort of newly diagnosed patients, five-year overall survival was 82% in stage I, 62% in stage II and 40% in stage III; five-year progression-free survival was 55%, 36% and 24%.",
-      "cautions": "Validated in newly diagnosed myeloma, assessed before treatment. iFISH should be performed on purified (CD138-selected) plasma cells. Most patients fall into stage II, which is heterogeneous; the R2-ISS (2022) adds 1q gain to split it further.",
-      "faq": []
+      "overview": "The Revised International Staging System (R-ISS) is the prognostic staging for newly diagnosed multiple myeloma proposed by the International Myeloma Working Group (IMWG) in 2015. It combines the original ISS stage with high-risk cytogenetics by interphase FISH [del(17p), t(4;14) or t(14;16)] and serum LDH above the upper limit of normal. Stage I: ISS I with no high-risk cytogenetics and normal LDH. Stage III: ISS III with high-risk cytogenetics or high LDH. Stage II: every other combination. It was built from 3,060 patients with complete data from 11 international clinical trials run between 2005 and 2012; in those trials almost all patients received novel agents (proteasome inhibitors or immunomodulatory drugs) and 60% underwent autologous transplantation.",
+      "interpretation": "At a median follow-up of 46 months, five-year overall survival was 82% in stage I, 62% in stage II and 40% in stage III, and five-year progression-free survival was 55%, 36% and 24%. A single adverse factor (high-risk FISH or high LDH) moves ISS I up to R-ISS II, and ISS III with neither factor also lands in R-ISS II. The authors estimate that relying on only one of the three factors would have wrongly placed about 26% of patients in a good-prognosis group. Its prognostic value held in patients younger and older than 65 and with or without autologous transplantation.",
+      "cautions": "It was validated in newly diagnosed myeloma using pre-treatment data; the paper did not study it at relapse. Patients came from clinical trials and 65% were under 65, so it may represent older or frail patients less well, and it does not account for age, performance status or comorbidities. FISH was not standardised across laboratories, and LDH was judged against each centre's upper limit of normal. If FISH is not available, this calculator assumes there is no high-risk cytogenetics and may understage the patient; it is better to wait for the result.",
+      "faq": [
+        {
+          "q": "How is R-ISS staging calculated in myeloma?",
+          "a": "FISH showing del(17p), t(4;14) or t(14;16), or LDH above the upper limit of normal, counts as an adverse factor. ISS I with no adverse factor is R-ISS I; ISS III with at least one is R-ISS III; everything else is R-ISS II."
+        },
+        {
+          "q": "Which cytogenetic abnormalities are high risk in the R-ISS?",
+          "a": "Three, detected by interphase FISH: deletion 17p, t(4;14) and t(14;16); any one is enough. In the study, FISH was done on CD138-enriched plasma cells using each laboratory's positivity threshold. Chromosome 1 abnormalities were left out because they had not been collected in every trial."
+        },
+        {
+          "q": "What is the survival for each R-ISS stage?",
+          "a": "Median overall survival was not reached in stage I and was 83 months in stage II and 43 months in stage III; median progression-free survival was 66, 42 and 29 months. These are group figures from trial patients."
+        },
+        {
+          "q": "Why are most patients R-ISS stage II?",
+          "a": "Stage II takes every combination that does not meet the strict conditions for stage I or III; it held 62% of the original series, with a range of outcomes. The R2-ISS (2022), a later model, proposes splitting it using factors such as 1q gain; this calculator does not apply it."
+        }
+      ]
     }
   },
   "isthDic": {
@@ -3594,10 +3772,27 @@
       ]
     },
     "content": {
-      "overview": "The ISTH score quantifies overt DIC from four laboratory parameters: platelets, a fibrin-related marker, prothrombin time and fibrinogen.",
-      "interpretation": "A score of 0 means none of the four criteria is abnormal; overt DIC is not supported at this time. A score of 1–4 is not compatible with overt DIC but is suggestive of non-overt DIC; repeat the score in 1–2 days if the underlying disorder persists. A score of 5 or more is compatible with overt DIC and should be repeated daily.",
-      "cautions": "Applicable only when the patient has an underlying disorder known to be associated with DIC. It does not replace clinical judgement or treatment of the underlying cause.",
-      "faq": []
+      "overview": "The ISTH DIC score, proposed in 2001 by a subcommittee of the International Society on Thrombosis and Haemostasis, identifies overt disseminated intravascular coagulation (DIC) using basic coagulation tests. DIC is a widespread activation of coagulation within the vessels, consuming platelets and clotting factors, and it arises as a complication of another illness. The score is therefore applied only when an underlying disorder associated with DIC is present, such as sepsis, major trauma, cancer or an obstetric complication. It scores platelet count (0–2 points), a fibrin-related marker such as D-dimer or fibrin degradation products (0, 2 or 3), prothrombin time prolongation (0–2) and fibrinogen (0–1), for a total of 0 to 8.",
+      "interpretation": "A score of 5 or more is compatible with overt DIC: treat the underlying disorder and repeat the score daily. A score of 1–4 is not compatible with overt DIC but may suggest non-overt DIC; repeat it in 1–2 days if suspicion persists. A score of 0 means there is no laboratory evidence of DIC, but it should be recalculated if the underlying disorder remains active or the clinical picture changes. Because DIC is dynamic, the trend across serial measurements matters as much as any single value: a steadily falling platelet count or fibrinogen is significant even before it crosses a cut-off.",
+      "cautions": "Applied without an underlying disorder associated with DIC, it gives false positives, because each parameter can be abnormal for other reasons: advanced liver disease prolongs the prothrombin time and lowers platelets and fibrinogen, massive transfusion dilutes clotting factors and platelets, and chemotherapy or marrow infiltration cause thrombocytopenia without consumption. Fibrinogen is an acute-phase reactant and may remain within the normal range in DIC with marked inflammation. The fibrin marker also has no universal cut-offs: what counts as a moderate or strong increase depends on the assay and on each laboratory's reference range.",
+      "faq": [
+        {
+          "q": "How is the ISTH DIC score calculated?",
+          "a": "Platelets > 100 ×10⁹/L, 0 points; 50–100, 1; < 50, 2. Fibrin-related marker with no increase, 0; moderate increase, 2; strong increase, 3. Prothrombin time prolonged by < 3 s, 0; 3–6 s, 1; > 6 s, 2. Fibrinogen ≥ 1 g/L, 0; < 1 g/L, 1."
+        },
+        {
+          "q": "What does an ISTH DIC score of 5 or more mean?",
+          "a": "It means the laboratory pattern is compatible with overt DIC in a patient with a condition that can cause it. The cause must be treated and the score repeated daily. A score below 5 does not exclude DIC that is still evolving."
+        },
+        {
+          "q": "What D-dimer level counts as a moderate or strong increase?",
+          "a": "The score sets no single figure, because D-dimer assays are not standardised and each has its own units and reference range. Each laboratory defines moderate and strong increases for its own assay, and should use the same criterion for each patient's serial results."
+        },
+        {
+          "q": "What is the difference between overt and non-overt DIC?",
+          "a": "In overt DIC haemostasis is decompensated and routine tests already show consumption. In non-overt DIC haemostasis is stressed but still compensated; the ISTH proposed a separate system for it, based on changes in the parameters over time, which this calculator does not include."
+        }
+      ]
     }
   },
   "fourTsHit": {
@@ -3631,10 +3826,27 @@
       ]
     },
     "content": {
-      "overview": "The 4Ts score scores four criteria from 0 to 2 - thrombocytopenia, timing of the fall, thrombosis, and other causes - to estimate the pretest probability of HIT.",
-      "interpretation": "0–3 is low probability, 4–5 intermediate, 6–8 high. A low score has a high negative predictive value and avoids unnecessary testing and anticoagulant changes.",
-      "cautions": "This is a pretest probability, not a diagnosis: an intermediate or high score must be confirmed with an immunoassay plus a functional assay. The decision to stop heparin remains clinical.",
-      "faq": []
+      "overview": "The 4Ts score estimates the pretest clinical probability of heparin-induced thrombocytopenia (HIT) in a patient on heparin whose platelet count has fallen. It scores four criteria from 0 to 2: the degree of thrombocytopenia (percentage fall and nadir), the timing of the fall relative to heparin exposure, thrombosis or other sequelae and whether other causes of thrombocytopenia are present. This 4Ts calculator adds the four items for a total of 0 to 8. Lo and colleagues evaluated the score prospectively in 2006 in 100 consecutive patients referred for possible HIT at a hospital in Hamilton, Canada, and in 236 patients whose clinicians sent samples for HIT testing to Greifswald, Germany.",
+      "interpretation": "The calculator reports low (0–3 points), intermediate (4–5) or high (6–8) probability. In the original study a low score was rarely associated with clinically significant HIT antibodies: 1 of 64 patients (1.6%) in Hamilton and 0 of 55 in Greifswald. With an intermediate score, 28.6% and 7.9% tested positive in the two centres, and with a high score 100% (8 of 8) and 21.4%, respectively. The authors concluded that a low score seems suitable for ruling out HIT in most situations because of its high negative predictive value, whereas the implications of an intermediate or high score vary between clinical settings.",
+      "cautions": "This is a pretest probability, not a diagnosis, and its performance varies with the setting, as the gap between the two centres for high scores shows. Several items call for clinical judgement, especially other causes of thrombocytopenia and the timing of the fall when serial counts are missing, and in complex patients such as those in intensive care it is easy to over- or under-score. Laboratory testing (immunoassay and functional assay) and the decision to stop heparin lie outside the score and are tailored to the patient and to local protocols.",
+      "faq": [
+        {
+          "q": "How is the 4Ts score for HIT calculated?",
+          "a": "Each criterion scores 0, 1 or 2. Scoring 2: a fall > 50% with a nadir ≥ 20 ×10⁹/L; a clear onset between days 5 and 10, or within 1 day if heparin was given in the previous 30 days; new confirmed thrombosis, skin necrosis or a systemic reaction after a bolus; and no other apparent cause."
+        },
+        {
+          "q": "What does a low 4Ts score mean?",
+          "a": "A score of 0 to 3 means low probability: in the original study only 1 of the 119 low-score patients had clinically significant HIT antibodies. HIT is unlikely and another cause of the platelet fall should be sought; if a new thrombosis appears, recalculate the score."
+        },
+        {
+          "q": "Should heparin be stopped with an intermediate or high 4Ts score?",
+          "a": "The paper gave no treatment guidance. The calculator reflects usual practice: at intermediate probability, consider stopping heparin and sending tests; at high probability, stop it, start a non-heparin anticoagulant and request an immunoassay plus a functional assay."
+        },
+        {
+          "q": "Can the 4Ts score confirm HIT?",
+          "a": "No. An intermediate or high score only raises the probability: most patients with an intermediate score in the study did not have clinically significant antibodies. Diagnosis rests on laboratory testing interpreted alongside the clinical picture and the course of the platelet count."
+        }
+      ]
     }
   },
   "khorana": {
@@ -3660,10 +3872,27 @@
       ]
     },
     "content": {
-      "overview": "The Khorana score adds tumour site (0, 1 or 2 points by risk category) to four pretreatment variables - platelet count, haemoglobin or ESA use, leukocyte count and BMI - to estimate the risk of venous thromboembolism before starting chemotherapy.",
-      "interpretation": "A score of 0 is low risk, 1–2 intermediate, and 3 or above high risk. Guidelines recommend considering pharmacological thromboprophylaxis in high-risk patients without a contraindication from bleeding risk.",
-      "cautions": "This is a screening tool for ambulatory patients starting chemotherapy; it does not apply to inpatients or to managing an established VTE event. The final decision to start prophylaxis must weigh individual bleeding risk and the specific chemotherapy regimen.",
-      "faq": []
+      "overview": "The Khorana score estimates the risk of chemotherapy-associated venous thromboembolism (VTE) in cancer outpatients about to start a new chemotherapy regimen. Published in 2008, it was derived in 2701 patients from a prospective US registry and validated in a further 1365 from the same study. It adds five variables measured before the first cycle: tumour site (2 points for stomach or pancreas; 1 for lung, lymphoma, gynaecological, bladder or testicular cancer), platelet count ≥ 350 ×10⁹/L, haemoglobin < 10 g/dL or use of erythropoiesis-stimulating agents, leukocyte count > 11 ×10⁹/L and BMI ≥ 35 kg/m², each worth 1 point (total 0 to 6). It needs only the tumour site, the BMI and routine blood tests.",
+      "interpretation": "Risk is classed as low (0 points), intermediate (1–2) or high (≥ 3). In the original study, symptomatic VTE over a median of 2.5 months occurred in 0.8% and 0.3% of low-risk patients (derivation and validation cohorts), 1.8% and 2% of intermediate-risk patients and 7.1% and 6.7% of high-risk patients, with a C-statistic of 0.7 in both cohorts. Three quarters of events occurred during the first two cycles, which is why the score is worked out before treatment starts. For high-risk patients the calculator advises considering thromboprophylaxis if bleeding risk allows; that recommendation comes from later guidelines, not from the 2008 paper.",
+      "cautions": "It was developed in adult outpatients starting chemotherapy, using pretreatment blood tests; it was not studied in inpatients and does not guide treatment of an established thrombosis. Brain tumours, myeloma and renal cancer were poorly represented. The registry did not record central venous catheters, previous VTE or prior anticoagulation, so these need to be weighed separately. VTE was diagnosed by the treating clinician without independent adjudication, and validation was carried out within the same registry. The authors note that patients with cancer also bleed more readily, so any decision on prophylaxis requires an assessment of individual bleeding risk.",
+      "faq": [
+        {
+          "q": "What Khorana score indicates thromboprophylaxis?",
+          "a": "The original paper made no recommendation: it defined high risk as a score of 3 or more and called for trials on the safety of prophylaxis. Later guidelines, such as ASCO's, suggest offering it from a score of 2 when bleeding risk is not high."
+        },
+        {
+          "q": "Which cancers score points on the Khorana score?",
+          "a": "Stomach and pancreas score 2 points; lung, lymphoma, gynaecological, bladder and testicular cancers score 1; all other sites, such as breast, colorectal or prostate, score 0. The article text mentions genitourinary cancers excluding prostate, but the calculator follows the score table."
+        },
+        {
+          "q": "What is the VTE risk with a Khorana score of 1 or 2?",
+          "a": "In the original study this intermediate group included about 60% of patients and had a symptomatic VTE rate of 1.8% and 2% (derivation and validation cohorts). The authors judged it unlikely to benefit from prophylaxis."
+        },
+        {
+          "q": "Does a low Khorana score rule out thrombosis?",
+          "a": "No. At a cut-off of 3 the negative predictive value was 98.5%, but sensitivity was no higher than 40%: most thromboses occurred in patients scoring below 3. Symptoms of thrombosis must be investigated whatever the score."
+        }
+      ]
     }
   },
   "binet": {
@@ -3685,10 +3914,27 @@
       ]
     },
     "content": {
-      "overview": "Binet staging classifies chronic lymphocytic leukaemia by the number of involved lymphoid areas — cervical, axillary and inguinal nodes (each counted once whether unilateral or bilateral), spleen and liver, five areas in total — and by the presence of anaemia or thrombocytopenia.",
-      "interpretation": "Stage A: fewer than 3 involved areas, no anaemia or thrombocytopenia; watch and wait is the standard approach. Stage B: 3 or more involved areas, no anaemia or thrombocytopenia; treatment is given if active-disease criteria are met. Stage C: haemoglobin < 10 g/dL and/or platelets < 100 ×10⁹/L, regardless of the number of involved areas; treatment is generally indicated.",
-      "cautions": "Applies only to an already-diagnosed chronic lymphocytic leukaemia/small lymphocytic lymphoma; anaemia or thrombocytopenia must be confirmed as marrow-related (from infiltration) rather than autoimmune haemolysis or another peripheral cause, since that would misclassify the stage.",
-      "faq": []
+      "overview": "Binet staging, or the Binet classification, sorts chronic lymphocytic leukaemia (CLL) into three prognostic groups, A, B and C, using a physical examination and a full blood count. Binet and colleagues published it in 1981 after finding that the systems then in use (Rai, Binet and Rundles) agreed well but defined more stages than survival could tell apart. In a Cox multivariate analysis of a retrospective series of 99 patients and a prospective series of 196, anaemia and thrombocytopenia were the strongest risk factors; without cytopenias, prognosis depended on the number of involved lymphoid areas. The classification was confirmed in the series of Montserrat and Rozman, from the Hospital Clínic in Barcelona, with 146 patients.",
+      "interpretation": "Five areas are counted: cervical, axillary and inguinal nodes (each region once, whether unilateral or bilateral), spleen and liver. Stage A: fewer than three areas, no anaemia or thrombocytopenia; about 55% of patients, with survival that did not appear to differ from that of the French population of the same age and sex. Stage B: three or more areas without cytopenias; about 30%, median 7 years. Stage C: Hb < 10 g/dL and/or platelets < 100 ×10⁹/L, whatever the number of areas; about 15%, median 2 years. Stage A is managed by watch and wait, B is treated if the disease is active, and C generally needs treatment.",
+      "cautions": "It applies to CLL that has already been diagnosed and was built from data at diagnosis. Anaemia or thrombocytopenia places a patient in stage C only when it results from marrow infiltration: autoimmune haemolysis or immune thrombocytopenia can lower the counts despite a small tumour burden and lead to misclassification. Areas are assessed by physical examination, as in the original study. The medians come from 1981 series and do not reflect current treatments. Nor does the stage capture disease biology (for example TP53 abnormalities or unmutated IGHV), which is now assessed separately before treatment.",
+      "faq": [
+        {
+          "q": "How are lymphoid areas counted in Binet staging?",
+          "a": "There are five: cervical, axillary and inguinal nodes, spleen and liver. Each nodal region counts once even if both sides are involved, so bilateral axillary nodes add 1, not 2. With three or more areas and no cytopenias, the stage is B."
+        },
+        {
+          "q": "What does Binet stage A CLL mean?",
+          "a": "Fewer than three involved areas, with no Hb < 10 g/dL or platelets < 100 ×10⁹/L. It was the largest group (about 55%), and survival did not appear to differ from that of the general population. Follow-up without treatment is usually enough."
+        },
+        {
+          "q": "Does Binet stage C CLL always need treatment?",
+          "a": "Treatment is generally indicated when the anaemia or thrombocytopenia is caused by the leukaemia itself; in the 1981 series, median survival in stage C was 2 years. An autoimmune cause should be ruled out first, as it does not mean advanced disease."
+        },
+        {
+          "q": "Is Binet or Rai staging better?",
+          "a": "Neither is superior. Binet counts involved regions and defines anaemia as Hb < 10 g/dL; Rai orders findings by type and uses Hb < 11 g/dL. Binet aimed for three well-separated groups; Rai has five stages, which can be grouped into three risk levels."
+        }
+      ]
     }
   },
   "stopBang": {
@@ -3714,10 +3960,27 @@
       ]
     },
     "content": {
-      "overview": "STOP-BANG scores eight criteria - snoring, daytime tiredness, observed apnoeas, hypertension, BMI, age, neck circumference and sex - one point each.",
-      "interpretation": "0-2 is low risk, 3-4 intermediate risk, 5-8 high risk of obstructive sleep apnoea. Its strength is negative predictive value: a low score makes moderate-to-severe apnoea unlikely.",
-      "cautions": "This is a screening tool, not a diagnostic one. Diagnosis requires polysomnography or a home respiratory sleep study. A high score in a patient scheduled for surgery warrants consideration of perioperative precautions.",
-      "faq": []
+      "overview": "The STOP-Bang questionnaire is a screening test for obstructive sleep apnoea (OSA) made up of eight yes/no questions, each worth one point, for a total of 0 to 8. The first four form the STOP questionnaire: loud snoring, daytime tiredness or sleepiness, apnoeas observed by someone else, and high blood pressure. The remaining four (Bang) add BMI >35 kg/m², age >50 years, neck circumference >40 cm and male sex. Frances Chung and colleagues in Toronto published it in 2008 to screen surgical patients for sleep apnoea, because OSA is a major risk factor for perioperative adverse events. It was studied in adults attending preoperative clinics without a previous diagnosis of OSA.",
+      "interpretation": "The calculator grades OSA risk as low (0–2), intermediate (3–4) or high (5–8). These three bands come from later work, not from the 2008 paper. In that study, 177 of the patients screened completed validation against polysomnography. The four STOP questions alone had sensitivities of 65.6%, 74.3% and 79.5% for an apnoea-hypopnoea index (AHI) >5, >15 and >30; adding BMI, age, neck circumference and sex raised them to 83.6%, 92.9% and 100%. A low score therefore makes moderate or severe OSA unlikely. At 5 points or more, refer for a sleep study and, if surgery is planned, consider perioperative precautions.",
+      "cautions": "It is a screening test, not a diagnosis: OSA is confirmed by a sleep study, and a high score alone should not label the patient. Because it comes from preoperative clinics, it may perform differently in primary care or a sleep clinic. Of the 2,467 patients who answered the questionnaire, only 211 underwent polysomnography, and published sensitivity is lower for mild apnoea. The tiredness item is a single yes/no question; to quantify sleepiness, the Epworth Sleepiness Scale rates the chance of dozing in everyday situations, though it does not estimate apnoea risk.",
+      "faq": [
+        {
+          "q": "What does STOP-Bang stand for?",
+          "a": "Each letter is one item: Snoring loudly, Tired during the day, Observed apnoeas, high blood Pressure, BMI over 35 kg/m², Age over 50 years, Neck circumference over 40 cm and male Gender. Each yes scores one point."
+        },
+        {
+          "q": "What STOP-Bang score means high risk of sleep apnoea?",
+          "a": "A score of 5 to 8, which warrants referral for a sleep study. A score of 3 or 4 is intermediate risk, where the decision to investigate depends on symptoms and comorbidity; 0 to 2 is low risk."
+        },
+        {
+          "q": "Does a low STOP-Bang score rule out sleep apnoea?",
+          "a": "It makes moderate or severe apnoea unlikely but does not exclude it. In the original study the full questionnaire picked up 92.9% of patients with an AHI >15 and 100% of those with an AHI >30, compared with 83.6% with an AHI >5."
+        },
+        {
+          "q": "Why is STOP-Bang done before surgery?",
+          "a": "Undiagnosed obstructive sleep apnoea is a major risk factor for perioperative adverse events, and the questionnaire was built to screen for it in the pre-anaesthetic clinic. Identifying high-risk patients lets the team plan perioperative precautions or arrange a sleep study beforehand."
+        }
+      ]
     }
   },
   "epworth": {
@@ -3749,10 +4012,27 @@
       ]
     },
     "content": {
-      "overview": "The Epworth Sleepiness Scale scores eight everyday situations — reading, watching television, travelling in a car, resting in the afternoon, among others — by the likelihood of dozing off in each, from 0 (would never doze) to 3 (high chance of dozing). The sum of the eight items gives a score from 0 to 24.",
-      "interpretation": "0–10 normal daytime sleepiness; 11–14 mild excessive daytime sleepiness; 15–17 moderate; 18–24 severe. The higher the score, the more likely the sleepiness is pathological and warrants evaluation.",
-      "cautions": "This is a self-administered questionnaire reflecting the patient's subjective perception, not an objective measure of sleep; it does not replace polysomnography. A high score should prompt consideration of driving risk and other activities requiring vigilance.",
-      "faq": []
+      "overview": "The Epworth Sleepiness Scale (ESS) is a self-administered questionnaire that measures a person's general propensity to fall asleep during the day, in other words the degree of excessive daytime sleepiness. Murray Johns described it in 1991 at Epworth Hospital, Melbourne. The patient rates the chance of dozing in eight everyday situations from 0 (would never doze) to 3 (high chance of dozing), and the ratings add up to a total of 0 to 24. The questions ask about dozing off rather than feeling tired, and about the person's usual recent routine. In the original study of 180 adults, the total score separated healthy controls from patients with obstructive sleep apnoea, narcolepsy and idiopathic hypersomnia.",
+      "interpretation": "The calculator uses four bands: 0–10, normal daytime sleepiness; 11–14, mild excessive daytime sleepiness; 15–17, moderate; 18–24, severe. The upper limit of 10 rests on the original paper, in which the 30 healthy controls scored a mean of 5.9 ± 2.2 (range 2–10), with no difference between men and women; the mild, moderate and severe grading came later. Johns reported means of 17.5 in narcolepsy, 17.9 in idiopathic hypersomnia and 11.7 in obstructive sleep apnoea, while primary snorers (6.5) did not differ from controls. Scores of 16 or more occurred only in narcolepsy, idiopathic hypersomnia or at least moderate apnoea (respiratory disturbance index >15).",
+      "cautions": "It captures sleepiness as the patient perceives it, relying on their recall of when they have dozed off; it is not an objective measure like the multiple sleep latency test. Johns himself stressed that a high score does not diagnose any particular disorder; finding the cause needs other investigations such as overnight polysomnography. Nor does a normal score exclude apnoea: in the original series, patients with obstructive sleep apnoea scored anywhere from 4 to 23. The initial validation was small (30 controls and 150 patients from a single unit). A high score should prompt questions about falling asleep at the wheel.",
+      "faq": [
+        {
+          "q": "How do you fill in the Epworth Sleepiness Scale?",
+          "a": "For each situation, choose a number from 0 to 3 for how likely you are to doze off in your usual recent routine. If you have not been in one of the situations lately, estimate how it would affect you. It rates dozing, not tiredness."
+        },
+        {
+          "q": "What is a normal Epworth score?",
+          "a": "On this calculator, 0 to 10. In Johns's study, healthy adults who did not snore scored a mean of 5.9 and none scored above 10. Anything higher counts as excessive daytime sleepiness, graded here as mild, moderate or severe."
+        },
+        {
+          "q": "Does a high Epworth score mean sleep apnoea?",
+          "a": "Not necessarily. The scale measures how sleepy you are, not why: in the original paper the highest mean scores were in narcolepsy and idiopathic hypersomnia. Confirming or ruling out sleep apnoea requires a sleep study."
+        },
+        {
+          "q": "What is the difference between the Epworth scale and STOP-Bang?",
+          "a": "The Epworth scale quantifies daytime sleepiness whatever its cause. STOP-Bang estimates the risk of obstructive sleep apnoea from symptoms such as snoring and observed apnoeas plus BMI, age, neck circumference and sex. The two complement each other, since some people with apnoea have a normal Epworth score."
+        }
+      ]
     }
   },
   "snot22": {
@@ -3800,10 +4080,27 @@
       ]
     },
     "content": {
-      "overview": "SNOT-22 scores 22 sinonasal, otologic, sleep and emotional symptoms by their impact over the past 15 days, from 0 (no problem) to 5 (as bad as it can be). The sum of the 22 items gives a score from 0 to 110.",
-      "interpretation": "0–20 mild; 21–50 moderate; 51–110 severe (Toma and Hopkins, 2016). The absolute score indicates baseline severity, but the minimal clinically important difference is 8.9 points: a change of this magnitude between two administrations is what is considered clinically meaningful — for example after treatment or surgery — more so than any single absolute total.",
-      "cautions": "This is a self-administered questionnaire reflecting the patient's subjective perception over the preceding 15 days; it does not replace nasal endoscopy or imaging. The otologic and emotional items are not specific to sinonasal disease and may be influenced by comorbidities.",
-      "faq": []
+      "overview": "The SNOT-22 (22-item Sinonasal Outcome Test) is a patient-reported questionnaire that measures how chronic rhinosinusitis symptoms affect quality of life. Hopkins and colleagues validated it in 2009, as a modification of the SNOT-20, in 3128 adults undergoing sinonasal surgery in NHS hospitals. Patients rate each item from 0 (no problem) to 5 (as bad as it can be) according to how it has affected them over the past two weeks; the items cover nasal symptoms, ear symptoms and facial pain, sleep and fatigue, and emotional impact. The sum ranges from 0 to 110. It showed high reliability (Cronbach's alpha 0.91; test-retest 0.93) and discriminated patients from healthy controls.",
+      "interpretation": "This calculator places the total in one of three bands: mild (0–20), moderate (21–50) and severe (51–110), following Toma and Hopkins (2016), who studied 65 patients who rated their own symptoms (medians 12, 36 and 66). In that study the mild band starts at 8, because a lower score had previously been shown to be consistent with the normal population; here 0–7 is reported as mild. At follow-up, the change between two questionnaires matters more than any single total: the minimally important difference is 8.9 points. Three months after surgery, scores fell significantly, with an effect size of 0.81.",
+      "cautions": "SNOT-22 is a patient-reported outcome measure, not a diagnostic test: chronic rhinosinusitis is diagnosed from symptoms together with nasal endoscopy or sinus CT. The ear, dizziness, sleep, fatigue and emotional items are not specific and may be raised by other conditions, such as allergic rhinitis, obstructive sleep apnoea or depression. Perceived severity does not always reflect the extent of disease: Toma and Hopkins note that its correlation with the radiological Lund-Mackay score is poor. The bands come from a small sample and are a guide, not an indication for surgery on their own.",
+      "faq": [
+        {
+          "q": "How is the SNOT-22 score calculated?",
+          "a": "The answers to the 22 items are added up, each scored from 0 (no problem) to 5 (as bad as it can be) for the past two weeks. The result ranges from 0 to 110: the higher the score, the greater the impact on quality of life."
+        },
+        {
+          "q": "What is a normal SNOT-22 score?",
+          "a": "There is no single normal value. Toma and Hopkins note that a score below 8 had previously been shown to be consistent with the normal population. Even so, a low score does not rule out chronic rhinosinusitis."
+        },
+        {
+          "q": "How many points does SNOT-22 need to fall for a meaningful improvement?",
+          "a": "In the validation by Hopkins and colleagues, carried out in surgical patients, the minimally important difference was 8.9 points, the smallest change a patient can detect. A fall of that size or more between two questionnaires, for example before and after surgery, indicates a noticeable improvement."
+        },
+        {
+          "q": "Is there a validated Spanish version of SNOT-22?",
+          "a": "Yes. It has been translated into several languages, and a cross-culturally adapted, validated version exists for Spanish-speaking patients (de los Santos and colleagues, 2015). The item wording on this page summarises the content to make the calculation easier and does not replace the validated form."
+        }
+      ]
     }
   }
 }

@@ -2829,10 +2829,27 @@
       ]
     },
     "content": {
-      "overview": "El Índice de Masa Corporal (IMC) clasifica el estado ponderal, mientras que la Superficie Corporal (ASC) y el Peso Ideal/Ajustado se utilizan en quimioterapia, dosificación de fármacos renales y nutrición clínica.",
-      "interpretation": "Un IMC <18.5 indica bajo peso, 18.5–24.9 peso normal, 25.0–29.9 sobrepeso y ≥30.0 obesidad. La ASC y el Peso Ideal ayudan a ajustar dosis farmacológicas.",
-      "cautions": "El IMC no distingue entre masa muscular y tejido adiposo, y puede clasificar erróneamente a deportistas o ancianos con sarcopenia.",
-      "faq": []
+      "overview": "Esta calculadora de IMC, superficie corporal y peso ideal reúne los datos antropométricos que suelen pedirse juntos al preparar un tratamiento o programar un respirador. Con la talla, el peso y el sexo obtiene el índice de masa corporal (IMC), la superficie corporal (ASC) por Mosteller y por DuBois, el peso ideal según la fórmula de Devine y el peso ajustado. No son intercambiables: el IMC describe el estado ponderal; la ASC es la base de las dosis en mg/m²; el peso ideal es la referencia para fármacos que se distribuyen poco en la grasa y para el volumen corriente; y el peso ajustado se usa con algunos fármacos en la obesidad.",
+      "interpretation": "El resultado principal es el IMC (kg/m²) y la recomendación de la página depende solo de él: bajo peso por debajo de 18,5, normopeso hasta 24,9, sobrepeso de 25,0 a 29,9 y obesidad de grado I, II o III con cortes en 30, 35 y 40. La ASC de Mosteller es √(cm × kg / 3600) y la de DuBois, 0,007184 × talla (cm) elevada a 0,725 × peso (kg) elevado a 0,425. Ejemplo, varón de 170 cm y 90 kg: IMC 31,1 (obesidad grado I), ASC 2,06 m² (Mosteller) o 2,01 m² (DuBois), peso ideal 65,9 kg y peso ajustado 75,5 kg.",
+      "cautions": "Por debajo de 152,4 cm la fórmula de Devine no resta nada y la calculadora devuelve 50 kg o 45,5 kg, así que en niños y personas muy bajas el peso ideal carece de sentido. Si el peso real no supera el ideal, el peso ajustado coincide con el real. Qué peso usar con cada fármaco lo determinan la ficha técnica y el protocolo; en la fórmula de Cockcroft-Gault, esa elección cambia mucho el aclaramiento estimado en la obesidad. La talla debería medirse: una talla referida desplaza el IMC, la ASC y el peso ideal.",
+      "faq": [
+        {
+          "q": "¿Cómo se calcula el peso ideal con la fórmula de Devine?",
+          "a": "Se parte de 50 kg en varones o 45,5 kg en mujeres y se suman 2,3 kg por cada pulgada (2,54 cm) de talla por encima de 152,4 cm. Para 170 cm son 65,9 kg en un varón y 61,4 kg en una mujer."
+        },
+        {
+          "q": "¿Qué es el peso ajustado?",
+          "a": "Un peso intermedio entre el ideal y el real: peso ideal + 0,4 × (peso real − peso ideal). En una mujer de 160 cm y 110 kg (peso ideal 52,4 kg) es de 75,4 kg."
+        },
+        {
+          "q": "¿Qué peso se usa para el volumen corriente en ventilación mecánica?",
+          "a": "El peso ideal o predicho por talla y sexo, no el real: el tamaño pulmonar depende de la talla y no aumenta con la obesidad, de modo que con el peso real un paciente obeso recibiría volúmenes excesivos."
+        },
+        {
+          "q": "¿Por qué no coinciden la ASC de Mosteller y la de DuBois?",
+          "a": "Son ecuaciones distintas: Mosteller usa la raíz cuadrada de talla × peso y DuBois eleva cada variable a un exponente propio. Con 170 cm y 70 kg apenas difieren (1,82 y 1,81 m²), pero con 160 cm y 110 kg dan 2,21 y 2,10 m²."
+        }
+      ]
     }
   },
   "freeWaterDeficit": {
@@ -2857,10 +2874,27 @@
       ]
     },
     "content": {
-      "overview": "El déficit de agua libre estima el volumen de agua pura requerido para reducir el sodio sérico elevado hasta un nivel objetivo seguro (típicamente 140 mEq/L).",
-      "interpretation": "El sodio sérico debe corregirse lentamente (no más de 8–10 mEq/L en 24 horas) para prevenir edema cerebral y daño neurológico permanente.",
-      "cautions": "Incluya siempre las pérdidas continuas (fiebre, diarrea, diuresis) en la pauta de fluidoterapia total. Controle electrolitos periódicamente.",
-      "faq": []
+      "overview": "El déficit de agua libre es el volumen de agua sin solutos que falta para que el sodio sérico baje hasta el sodio objetivo. Esta calculadora de déficit de agua libre estima el agua corporal total (ACT) como fracción del peso: 0,6 en varones adultos, 0,5 en mujeres adultas y en varones de 65 años o más, y 0,45 en mujeres de esa edad. Después aplica: déficit (L) = ACT × (Na actual / Na objetivo − 1), con un objetivo de 140 mEq/L por defecto, ajustable entre 130 y 145. Cita la revisión de Adrogué y Madias (N Engl J Med, 2000), que define la hipernatremia como un sodio sérico superior a 145 mmol/L.",
+      "interpretation": "El resultado son litros de agua libre, no litros de un suero concreto. Un varón adulto de 70 kg con sodio de 160 mEq/L y objetivo de 140 tiene un ACT de 42 L y un déficit de 6 L. La página recuerda además no bajar el sodio más de 8–10 mEq/L en 24 horas (unos 0,5 mEq/L por hora) para evitar el edema cerebral, de modo que el déficit se repone repartido en el tiempo y no de una vez. Un déficit superior a 4 L aparece en la franja alta, umbral propio de la calculadora y no del artículo.",
+      "cautions": "Es una estimación de partida. No incluye las pérdidas que continúan (diuresis, pérdidas digestivas, fiebre, pérdidas insensibles), que hay que sumar. Las fracciones de agua corporal son medias poblacionales y se ajustan mal en obesidad, edemas o desnutrición. La fórmula supone que lo perdido es agua pura y no considera la composición del suero: la revisión de Adrogué y Madias propone además estimar cuánto bajará el sodio con cada litro del suero elegido, un cálculo que esta página no hace. Nada de esto sustituye al control seriado de la natremia durante la corrección.",
+      "faq": [
+        {
+          "q": "¿Cómo se calcula el déficit de agua libre?",
+          "a": "Se multiplica el peso por 0,6 (varón adulto), 0,5 (mujer adulta o varón de 65 años o más) o 0,45 (mujer de 65 años o más) para obtener el agua corporal total, y esta se multiplica por (sodio actual / sodio objetivo − 1)."
+        },
+        {
+          "q": "¿A qué velocidad se hace la corrección de la hipernatremia?",
+          "a": "La calculadora recuerda no reducir el sodio más de 8–10 mEq/L en 24 horas, unos 0,5 mEq/L por hora, porque un descenso rápido puede causar edema cerebral. Esa velocidad, y no el tamaño del déficit, marca el ritmo de reposición, con controles de natremia frecuentes."
+        },
+        {
+          "q": "¿Qué fracción de agua corporal total se usa en ancianos?",
+          "a": "La calculadora aplica 0,5 del peso en varones de 65 años o más y 0,45 en mujeres de esa edad, frente a 0,6 y 0,5 en adultos más jóvenes. Como el agua corporal total disminuye con la edad, la fracción del adulto joven sobrestimaría el déficit."
+        },
+        {
+          "q": "¿El déficit de agua libre incluye las pérdidas que continúan?",
+          "a": "No. Calcula solo el agua que falta en el momento de la analítica. Las pérdidas posteriores (orina, heces, fiebre, pérdidas insensibles) deben sumarse al plan de líquidos; si no, la natremia bajará menos de lo previsto."
+        }
+      ]
     }
   },
   "homaIr": {
@@ -2880,10 +2914,27 @@
       ]
     },
     "content": {
-      "overview": "El índice HOMA-IR evalúa la sensibilidad a la insulina a partir de los niveles plasmáticos de glucosa e insulina en ayunas.",
-      "interpretation": "Valores <1.0 indican sensibilidad a la insulina óptima, 1.0–1.9 resistencia leve, y ≥2.0 resistencia a la insulina significativa.",
-      "cautions": "Interprete el resultado dentro del contexto clínico del paciente. Requiere ayuno estricto (8–12 horas). No aplicable durante enfermedades agudas ni con insulina exógena.",
-      "faq": []
+      "overview": "El índice HOMA-IR estima la resistencia a la insulina con una sola pareja de valores en ayunas: glucosa e insulina plasmáticas. Lo describieron Matthews y colaboradores (Diabetologia, 1985) con un modelo matemático de la retroalimentación entre hígado y célula β. La aproximación del artículo es HOMA-IR = glucosa (mmol/L) × insulina (µU/mL) / 22,5; esta calculadora HOMA pide la glucosa en mg/dL y divide entre 405 (22,5 × 18). La escala está calibrada para que los adultos sanos de peso normal y menores de 35 años tengan una resistencia de 1. En el estudio original se correlacionó con el clamp euglucémico (Rs = 0,88) y con la insulina en ayunas (Rs = 0,81).",
+      "interpretation": "El artículo de 1985 no fija puntos de corte: trata el HOMA-IR como un valor relativo frente al adulto joven sano. Las franjas de esta página (<1,0 sensibilidad óptima; 1,0–1,9 resistencia leve; ≥2,0 resistencia significativa) no proceden del artículo y son orientativas. En el estudio, la mediana fue de 1,21 en los sujetos sin diabetes (de 23 a 67 años y del 90 % al 142 % del peso ideal) y de 2,89 en diabéticos tipo 2, así que al menos la mitad de los controles sanos superaba 1,0. Los autores advierten de que su imprecisión limita el uso clínico con una sola muestra.",
+      "cautions": "El coeficiente de variación fue del 31 %, y los autores consideran poco fiable una única muestra en ayunas extraída en consulta. Recomiendan medir la insulina en reposo y señalan que promediar tres muestras separadas 5 minutos mejora la precisión, por la secreción pulsátil de insulina y el efecto del estrés. El resultado depende del inmunoensayo de insulina (incluida la posible detección de proinsulina) y no es directamente comparable entre laboratorios. El ejercicio también lo altera. Los diabéticos del estudio seguían solo dieta; con insulina exógena el índice no es interpretable.",
+      "faq": [
+        {
+          "q": "¿Cómo se calcula el índice HOMA-IR?",
+          "a": "Se multiplica la glucosa por la insulina en ayunas (µU/mL) y se divide entre 22,5 si la glucosa está en mmol/L, o entre 405 si está en mg/dL. Ejemplo: 90 mg/dL y 4 µU/mL dan 90 × 4 / 405 = 0,89."
+        },
+        {
+          "q": "¿Cuáles son los valores normales del HOMA-IR?",
+          "a": "El artículo original no fija ningún valor normal ni punto de corte. Define 1 como la resistencia del adulto sano menor de 35 años y peso normal; en su muestra, la mediana sin diabetes fue de 1,21. Los cortes usados en la práctica varían con la población y el método de insulina."
+        },
+        {
+          "q": "¿Qué diferencia hay entre HOMA-IR y HOMA-β?",
+          "a": "Proceden del mismo modelo. El HOMA-β estima la función de la célula β en porcentaje: 20 × insulina / (glucosa en mmol/L − 3,5), donde el 100 % corresponde al adulto joven sano de peso normal. Esta calculadora solo da el HOMA-IR."
+        },
+        {
+          "q": "¿Se puede calcular el HOMA-IR si el paciente se pincha insulina?",
+          "a": "No es recomendable. El modelo interpreta la insulina en ayunas como respuesta de la propia célula β a la glucosa, y la insulina inyectada rompe esa relación. Los diabéticos del estudio original seguían solo dieta, así que no está validado en tratados con insulina."
+        }
+      ]
     }
   },
   "apgar": {
@@ -2957,13 +3008,25 @@
       ]
     },
     "content": {
-      "overview": "La fórmula de Mosteller (ASC = √(altura × peso / 3600)) calcula la superficie corporal en m² y es ampliamente utilizada en la práctica clínica pediátrica y de adultos por su simplicidad y precisión.",
-      "interpretation": "La ASC media en adultos es de 1.7 a 1.9 m². Se emplea para indexar parámetros fisiológicos (gasto cardíaco, filtrado glomerular) y para ajustar dosis de fármacos de estrecho margen terapéutico como la quimioterapia.",
-      "cautions": "En casos de obesidad extrema o en oncología pediátrica, las guías clínicas recomiendan límites de dosis basados en peso ideal o fórmulas modificadas.",
+      "overview": "Esta calculadora de superficie corporal aplica la fórmula de Mosteller, ASC (m²) = √(talla en cm × peso en kg / 3600), y redondea el resultado a dos decimales. R. D. Mosteller la publicó en 1987 en una carta al New England Journal of Medicine titulada «Simplified calculation of body-surface area»: bastan la talla, el peso y una raíz cuadrada. La superficie corporal en m² es la medida de tamaño con la que se expresan muchas dosis de citostáticos (mg/m²); también sirve para obtener el índice cardíaco y para indexar el filtrado glomerular. La página admite valores desde 10 cm y 0,5 kg hasta 250 cm y 300 kg, incluidas medidas pediátricas.",
+      "interpretation": "El resultado es un área en m² que la página sitúa en una de tres franjas: por debajo de 1,4 m², inferior al rango adulto habitual, lo propio de niños y adultos pequeños; de 1,4 a 2,2 m², rango adulto estándar; y por encima de 2,2 m², como en personas altas o con obesidad. Con los valores por defecto (170 cm y 70 kg) se obtienen 1,82 m²; un niño de 110 cm y 18 kg tiene 0,74 m², y un adulto de 190 cm y 110 kg, 2,41 m². Como talla y peso van bajo una raíz cuadrada, duplicar el peso no duplica la superficie.",
+      "cautions": "La fórmula exige talla en centímetros y peso en kilos; un peso en libras suele caer dentro de los límites que admite la página y el error pasa inadvertido. Los edemas importantes, la ascitis o una amputación alejan el peso del tamaño corporal real. Mosteller no es la única ecuación (la de DuBois y DuBois sigue en uso) y los métodos no coinciden exactamente: conviene usar la que indique el protocolo. La calculadora no limita la ASC; en obesidad, aplicar o no un tope a la dosis lo decide el protocolo de cada fármaco.",
       "faq": [
         {
-          "q": "¿Por qué se prefiere la ASC al peso corporal total?",
-          "a": "La ASC se correlaciona mejor que el peso corporal con el metabolismo basal, el gasto cardíaco y la distribución de líquidos corporales."
+          "q": "¿Cómo se calcula la superficie corporal con la fórmula de Mosteller?",
+          "a": "Se multiplica la talla en centímetros por el peso en kilos, se divide entre 3600 y se extrae la raíz cuadrada. Para 170 cm y 70 kg: 170 × 70 = 11 900; 11 900 / 3600 = 3,31; √3,31 = 1,82 m²."
+        },
+        {
+          "q": "¿Cómo se usa la superficie corporal para la quimioterapia?",
+          "a": "Muchos citostáticos se prescriben en mg por m²: la dosis del paciente es la dosis por m² del esquema multiplicada por su ASC. Esta página solo calcula la ASC; la dosis final y cualquier tope los fija el protocolo."
+        },
+        {
+          "q": "¿Cuál es la superficie corporal normal de un adulto?",
+          "a": "La página considera rango adulto estándar de 1,4 a 2,2 m². No existe una ASC «sana» o «enferma»: es una medida de tamaño, útil para ajustar dosis o indexar otros parámetros, no para clasificar al paciente."
+        },
+        {
+          "q": "¿Hay que recalcular la superficie corporal si cambia el peso?",
+          "a": "Sí, porque usa el peso actual, aunque la raíz cuadrada amortigua el efecto: perder un 10 % de peso reduce la ASC alrededor de un 5 % (con 170 cm, de 70 a 63 kg pasa de 1,82 a 1,72 m²)."
         }
       ]
     }
@@ -2988,13 +3051,25 @@
       ]
     },
     "content": {
-      "overview": "La ecuación de Cockcroft-Gault (1976) estima el aclaramiento de creatinina (CrCl en mL/min) a partir de la creatinina sérica, edad, peso corporal y sexo. Gran parte de la literatura farmacológica y fichas técnicas de medicamentos basan sus ajustes de dosis renal en esta fórmula.",
-      "interpretation": "CrCl ≥90 mL/min es normal; 60–89 mL/min levemente disminuido; 30–59 mL/min moderadamente disminuido (requiere ajuste de dosis); 15–29 mL/min severamente disminuido; y <15 mL/min indica fallo renal.",
-      "cautions": "En fracaso renal agudo, desnutrición severa u obesidad mórbida, esta fórmula puede sobreestimar o infravalorar la función renal real.",
+      "overview": "La calculadora Cockcroft-Gault estima el aclaramiento de creatinina (CrCl) en mL/min a partir de la edad, el peso, el sexo y la creatinina sérica, y se usa sobre todo para el ajuste de dosis en insuficiencia renal. La fórmula de Cockcroft-Gault (Nephron, 1976) es CrCl = (140 − edad) × peso (kg) / (72 × creatinina en mg/dL), con un resultado un 15 % inferior en mujeres (factor 0,85). Se planteó para varones adultos, a partir de la relación entre edad y excreción de creatinina en orina de 24 horas por kg en 249 pacientes de 18 a 92 años. Frente a la media de dos aclaramientos medidos en 236 pacientes, la correlación fue de 0,83.",
+      "interpretation": "El resultado es un aclaramiento absoluto en mL/min, no indexado a 1,73 m², porque el peso ya entra en la fórmula. La página lo clasifica en cinco franjas: ≥90 mL/min, normal; 60–89, insuficiencia renal leve; 30–59, moderada, en la que los fármacos de eliminación renal suelen requerir menos dosis o más intervalo; 15–29, grave; y <15 mL/min, fallo renal. Estas franjas no proceden del artículo de 1976: reproducen los cortes de filtrado glomerular con los que se estadifica la enfermedad renal crónica. Para prescribir, cuenta el umbral de cada fármaco en su ficha técnica más que la etiqueta de la franja.",
+      "cautions": "La fórmula presupone una creatinina estable: en el fracaso renal agudo, mientras la creatinina cambia, no refleja la función real. Usa el peso introducido sin corregirlo, así que puede sobrestimar el aclaramiento en obesidad importante, con edemas o con masa muscular muy baja (caquexia, amputaciones). Para las mujeres, el artículo propone restar un 15 %, y el resumen no explica cómo se obtuvo esa corrección. La fórmula es anterior a la estandarización de la creatinina trazable a IDMS, y con los métodos actuales puede dar valores algo distintos. Solo admite creatinina en mg/dL (µmol/L ÷ 88,4).",
       "faq": [
         {
-          "q": "¿En qué se diferencia Cockcroft-Gault de CKD-EPI 2021?",
-          "a": "Cockcroft-Gault calcula el aclaramiento en mL/min incorporando el peso del paciente y es el estándar de dosificación farmacológica, mientras que CKD-EPI 2021 estima el filtrado glomerular estandarizado por 1.73 m² para diagnóstico de enfermedad renal crónica."
+          "q": "¿Cómo se calcula el aclaramiento de creatinina con Cockcroft-Gault?",
+          "a": "Se resta la edad a 140, se multiplica por el peso en kg y se divide entre 72 por la creatinina en mg/dL; en mujeres, el resultado se multiplica por 0,85. Un varón de 70 años, 70 kg y creatinina de 1,0 mg/dL tiene 68,1 mL/min."
+        },
+        {
+          "q": "¿Qué diferencia hay entre Cockcroft-Gault y CKD-EPI 2021?",
+          "a": "Cockcroft-Gault estima el aclaramiento de creatinina en mL/min e incluye el peso. CKD-EPI 2021 estima el filtrado glomerular normalizado a una superficie corporal estándar y es la ecuación que suelen informar los laboratorios para estadificar la enfermedad renal crónica. Para dosificar, la referencia es la ficha técnica."
+        },
+        {
+          "q": "¿Qué peso se usa en Cockcroft-Gault si el paciente es obeso?",
+          "a": "La calculadora aplica el peso introducido; el resumen del artículo habla de peso en kg, sin mencionar peso ideal ni ajustado. En obesidad el peso real sobrestima el aclaramiento, y muchos clínicos usan el peso ideal o uno ajustado."
+        },
+        {
+          "q": "¿Sirve Cockcroft-Gault para el ajuste de dosis en insuficiencia renal?",
+          "a": "Es su uso principal: muchas fichas técnicas expresan el ajuste renal en aclaramiento de creatinina estimado con esta fórmula. Antes de modificar una dosis, conviene comprobar el umbral concreto del fármaco y que la creatinina esté estable."
         }
       ]
     }
@@ -3112,9 +3187,27 @@
       ]
     },
     "content": {
-      "overview": "La Y-BOCS original para adultos mide la gravedad de los síntomas obsesivo-compulsivos mediante una evaluación clínica. Diez ítems de 0 a 4 puntos forman dos subtotales: obsesiones (0-20) y compulsiones (0-20). Su suma va de 0 a 40.",
-      "interpretation": "Bandas convencionales de gravedad: 0-7 subclínica; 8-15 leve; 16-23 moderada; 24-31 grave; 32-40 extrema.",
-      "cautions": "La puntuación de gravedad no establece ni descarta un diagnóstico. Corresponde a la escala original para adultos, no a Y-BOCS-II (0-50) ni a la versión infantil. El instrumento completo y sus traducciones están sujetos a las condiciones de licencia de sus titulares."
+      "overview": "La escala Y-BOCS (escala de Yale-Brown para el trastorno obsesivo-compulsivo) mide la gravedad de los síntomas del TOC con independencia del tipo de obsesiones o compulsiones. La publicaron Goodman y colaboradores en 1989 y la aplica un profesional en una entrevista semiestructurada, que suele ir precedida de una lista de síntomas. Consta de 10 ítems puntuados de 0 (sin síntomas) a 4 (síntomas extremos): cinco valoran las obsesiones y cinco las compulsiones, en aspectos como el tiempo que ocupan, la interferencia, el malestar, la resistencia y el grado de control. Cada subtotal va de 0 a 20 y el total, de 0 a 40. En el estudio original (cuatro evaluadores, 40 pacientes) la fiabilidad entre evaluadores fue excelente.",
+      "interpretation": "La calculadora aplica bandas convencionales: 0–7, gravedad subclínica; 8–15, leve; 16–23, moderada; 24–31, grave, y 32–40, extrema. No proceden del artículo original de 1989, así que orientan pero no son categorías diagnósticas. Conviene mirar también los subtotales: obsesiones intensas con pocas compulsiones no equivalen a rituales que ocupan horas, aunque sumen lo mismo. La escala es más útil repetida con la misma versión a lo largo del tratamiento que como medición aislada. Los criterios de respuesta terapéutica basados en un porcentaje de reducción proceden de estudios posteriores.",
+      "cautions": "La Y-BOCS mide gravedad: no establece ni descarta el diagnóstico de TOC, que se basa en la valoración clínica con los criterios diagnósticos vigentes. Una puntuación baja no excluye el trastorno. Los subtotales deben proceder de una entrevista hecha por un profesional entrenado. La calculadora corresponde a la Y-BOCS original para adultos, no a la Y-BOCS-II (rango 0–50) ni a la versión infantil (CY-BOCS). El total no describe el tipo de síntomas, el grado de introspección ni la comorbilidad, como la depresión o los tics, que hay que valorar aparte.",
+      "faq": [
+        {
+          "q": "¿Cómo se calcula la puntuación de la escala Y-BOCS?",
+          "a": "El profesional puntúa 10 ítems de 0 a 4: cinco de obsesiones y cinco de compulsiones. Cada subtotal va de 0 a 20 y su suma da el total, de 0 a 40. Aquí se introducen los dos subtotales y la calculadora devuelve el total y su banda de gravedad."
+        },
+        {
+          "q": "¿Qué significa una puntuación de 20 en la escala Y-BOCS?",
+          "a": "Con las bandas de esta calculadora, 20 puntos corresponden a gravedad moderada (16–23). Es un dato de gravedad, no un diagnóstico: se interpreta junto con los subtotales, la interferencia en la vida diaria y la evolución respecto a mediciones previas."
+        },
+        {
+          "q": "¿Sirve la escala Y-BOCS como test de TOC para el diagnóstico?",
+          "a": "No. Se diseñó para medir la gravedad de los síntomas en personas con TOC, sea cual sea el tipo de obsesiones o compulsiones. El diagnóstico se hace en la entrevista clínica. Una puntuación baja no descarta el TOC, y una alta no lo confirma si los síntomas tienen otra explicación."
+        },
+        {
+          "q": "¿Se puede hacer el test Y-BOCS uno mismo por internet?",
+          "a": "La Y-BOCS original es una entrevista que administra un profesional, y en ese formato se estudió su fiabilidad. Las versiones autoaplicadas que se desarrollaron después no son intercambiables con ella. Ante obsesiones o rituales que preocupan, conviene consultar al médico."
+        }
+      ]
     }
   },
   "gad7": {
@@ -3457,10 +3550,27 @@
       ]
     },
     "content": {
-      "overview": "El IPI asigna un punto a cada uno de cinco factores adversos presentes antes del tratamiento: edad mayor de 60 años, LDH sérica elevada, estado funcional ECOG de 2 o más, estadio de Ann Arbor III–IV y más de una localización extraganglionar. La puntuación total va de 0 a 5.",
-      "interpretation": "0–1 riesgo bajo, 2 intermedio-bajo, 3 intermedio-alto, 4–5 alto. En la cohorte de derivación de 1993, tratada con quimioterapia basada en doxorrubicina antes de la era del rituximab, la supervivencia global a cinco años fue del 73%, 51%, 43% y 26%, respectivamente.",
-      "cautions": "Las cifras de supervivencia son anteriores al rituximab; con R-CHOP los resultados son mejores en todos los grupos, aunque el índice sigue separando el riesgo. Se calcula al diagnóstico, antes del tratamiento, y se derivó en linfomas agresivos: no es la escala del linfoma folicular (FLIPI) ni del linfoma de Hodgkin. En pacientes de 60 años o menos, el IPI ajustado por edad utiliza solo el estadio, la LDH y el estado funcional.",
-      "faq": []
+      "overview": "El índice pronóstico internacional (IPI) estima el pronóstico de un linfoma no hodgkiniano agresivo con cinco datos previos al tratamiento, y hoy se usa sobre todo en el linfoma B difuso de células grandes (LBDCG). Se publicó en 1993 con 2031 adultos tratados entre 1982 y 1987 con quimioterapia con doxorrubicina, para mejorar la clasificación de Ann Arbor, que sola no separaba bien el pronóstico. Esta calculadora del IPI suma un punto por cada factor adverso al diagnóstico: edad > 60 años, LDH sérica por encima del límite superior de la normalidad, ECOG ≥ 2, estadio de Ann Arbor III o IV y más de una localización extraganglionar. El total va de 0 a 5.",
+      "interpretation": "Con 0–1 puntos el riesgo es bajo; con 2, intermedio-bajo; con 3, intermedio-alto, y con 4–5, alto. En la cohorte original, la supervivencia estimada a cinco años de estos grupos fue del 73%, 51%, 43% y 26%. Los grupos altos lograban menos respuestas completas y recaían más tras alcanzarlas. El IPI predijo la supervivencia a largo plazo de forma significativamente más precisa que el estadio de Ann Arbor, y los autores lo propusieron para diseñar ensayos y para elegir el tratamiento. En la calculadora, 2 y 3 puntos aparecen como riesgo moderado, aunque el texto del resultado distingue intermedio-bajo de intermedio-alto.",
+      "cautions": "Los porcentajes son anteriores al rituximab; con la inmunoquimioterapia actual los resultados suelen ser mejores, así que sirven para ordenar el riesgo, no para predecir el curso de un paciente. Los datos deben ser del diagnóstico, antes de tratar. Se derivó en linfomas no hodgkinianos agresivos, no en linfomas indolentes ni en el de Hodgkin. La calculadora aplica el IPI completo, no el índice ajustado por edad para pacientes de 60 años o menos. Variantes posteriores como el R-IPI o el NCCN-IPI se desarrollaron en cohortes tratadas con rituximab y no proceden del artículo original.",
+      "faq": [
+        {
+          "q": "¿Cómo se calcula el IPI de un linfoma?",
+          "a": "Se suma un punto por cada factor presente al diagnóstico: edad > 60 años, LDH elevada, ECOG ≥ 2, estadio III o IV y más de una localización extraganglionar. El total se agrupa en riesgo bajo (0–1), intermedio-bajo (2), intermedio-alto (3) y alto (4–5)."
+        },
+        {
+          "q": "¿Qué esperanza de vida tiene un linfoma con IPI alto?",
+          "a": "En la cohorte de 1993, el riesgo alto (4–5 puntos) tuvo una supervivencia estimada a cinco años del 26%, frente al 73% del riesgo bajo. Eran pacientes tratados sin rituximab, así que la cifra no equivale al pronóstico actual."
+        },
+        {
+          "q": "¿Qué es el IPI ajustado por edad?",
+          "a": "Es la variante creada en 1274 pacientes de 60 años o menos, solo con el estadio, la LDH y el estado funcional. Separa cuatro grupos, con una supervivencia estimada a cinco años del 83%, 69%, 46% y 32%. Esta calculadora no lo computa."
+        },
+        {
+          "q": "¿Sigue siendo útil el IPI en el linfoma B difuso de célula grande?",
+          "a": "Sus cinco factores se siguen usando para clasificar el riesgo al diagnóstico, pero los porcentajes de 1993 no describen la supervivencia actual. Las variantes posteriores de la era del rituximab, como el R-IPI y el NCCN-IPI, no forman parte de este cálculo."
+        }
+      ]
     }
   },
   "rai": {
@@ -3482,10 +3592,27 @@
       ]
     },
     "content": {
-      "overview": "La estadificación de Rai parte de una linfocitosis en sangre y médula ósea y añade hallazgos por orden de progresión: estadio 0, solo linfocitosis; I, adenopatías; II, esplenomegalia y/o hepatomegalia; III, anemia (Hb < 11 g/dL); IV, trombocitopenia (plaquetas < 100 ×10⁹/L). El estadio es el del hallazgo más avanzado, estén o no presentes los de estadios inferiores.",
-      "interpretation": "El sistema de Rai modificado agrupa los estadios en riesgo bajo (0), intermedio (I–II) y alto (III–IV). En los estadios iniciales se hace seguimiento sin tratamiento salvo que haya enfermedad activa según los criterios del iwCLL; los estadios de alto riesgo suelen requerir tratamiento. En la serie original de 1975, la mediana de supervivencia superaba los 150 meses en el estadio 0 y era de 19 meses en los estadios III y IV.",
-      "cautions": "Solo es aplicable a una leucemia linfática crónica ya diagnosticada. La anemia o la trombocitopenia cuentan para el estadio solo si se deben a infiltración medular, no a hemólisis autoinmune, trombocitopenia inmune u otra causa. Las cifras de supervivencia son anteriores a los tratamientos actuales, y el estadio por sí solo no decide el tratamiento.",
-      "faq": []
+      "overview": "Los estadios de Rai, o clasificación de Rai, ordenan la leucemia linfática crónica (LLC) en cinco estadios clínicos, del 0 al IV. Rai y sus colaboradores los propusieron en 1975 partiendo de que la LLC es una acumulación progresiva de linfocitos no funcionales. Todos los estadios presuponen linfocitosis en sangre y médula ósea. El estadio 0 no añade nada más; el I suma adenopatías; el II, esplenomegalia y/o hepatomegalia; el III, anemia (Hb < 11 g/dL), y el IV, trombocitopenia (plaquetas < 100 ×10⁹/L). La calculadora asigna el estadio del hallazgo más avanzado aunque falten los de estadios inferiores: una trombocitopenia sin adenopatías ni visceromegalias ya es un estadio IV.",
+      "interpretation": "En la serie original de 125 pacientes, la mediana de supervivencia fue de más de 150 meses en el estadio 0, 101 en el I, 71 en el II y 19 en el III y el IV. El estadio mantuvo su valor pronóstico tras ajustar por edad y sexo, también al aplicarlo durante la evolución. La calculadora usa el sistema de Rai modificado: riesgo bajo (0), intermedio (I–II) y alto (III–IV). En el bajo se observa y se espera; en el intermedio se trata solo si hay criterios de enfermedad activa del iwCLL, y en el alto suele estar indicado tratar si la citopenia es de origen medular.",
+      "cautions": "Solo sirve para una LLC ya diagnosticada. La anemia y la trombocitopenia suben el estadio cuando las causa la infiltración medular; si se deben a una anemia hemolítica autoinmune, a una trombocitopenia inmune o a otra causa ajena a la leucemia, no deberían contar para el estadio III o IV. Las medianas de 1975 son anteriores a los tratamientos actuales y no valen para un paciente concreto. Tampoco incorpora marcadores biológicos que hoy pesan en el pronóstico, como TP53 o el estado mutacional de IGHV, y el estadio por sí solo no decide cuándo tratar.",
+      "faq": [
+        {
+          "q": "¿Qué significa estadio 0 de Rai?",
+          "a": "Solo hay linfocitosis en sangre y médula ósea, sin adenopatías, visceromegalias ni citopenias. Es el riesgo bajo del sistema modificado y, en la serie de 1975, su mediana de supervivencia superaba los 150 meses. Lo habitual es controlar sin tratar."
+        },
+        {
+          "q": "¿Cuál es la esperanza de vida en una LLC estadio III o IV de Rai?",
+          "a": "En el estudio de 1975, la mediana de supervivencia fue de 19 meses en ambos estadios. Es una cifra anterior a los tratamientos actuales y hoy no sirve como pronóstico individual, que depende también de la respuesta al tratamiento."
+        },
+        {
+          "q": "¿Cuándo hay que tratar una leucemia linfática crónica?",
+          "a": "Según el iwCLL, cuando hay enfermedad activa: insuficiencia medular progresiva, esplenomegalia o adenopatías masivas o progresivas, linfocitosis que aumenta rápido, citopenias autoinmunes que no responden a corticoides, afectación extraganglionar sintomática o síntomas generales. La linfocitosis, por sí sola, no basta."
+        },
+        {
+          "q": "¿Qué diferencia hay entre la clasificación de Rai y la de Binet?",
+          "a": "Rai jerarquiza cinco estadios según el tipo de hallazgo y define la anemia como Hb < 11 g/dL. Binet forma tres estadios según el número de áreas linfoides afectadas y usa Hb < 10 g/dL. Rai predomina en Norteamérica y Binet en Europa."
+        }
+      ]
     }
   },
   "plasmic": {
@@ -3510,10 +3637,27 @@
       ]
     },
     "content": {
-      "overview": "PLASMIC suma un punto por cada uno de siete criterios: plaquetas < 30 ×10⁹/L; hemólisis (reticulocitos > 2,5%, haptoglobina indetectable o bilirrubina indirecta > 2 mg/dL); ausencia de cáncer activo en el último año; ausencia de trasplante de órgano sólido o de progenitores hematopoyéticos; VCM < 90 fL; INR < 1,5, y creatinina < 2,0 mg/dL. La puntuación total va de 0 a 7.",
-      "interpretation": "0–4 probabilidad baja, 5 intermedia y 6–7 alta de déficit grave de ADAMTS13 (actividad ≤ 10%). Una puntuación alta apoya iniciar el recambio plasmático mientras se espera el resultado de ADAMTS13; una puntuación baja orienta hacia otra causa de microangiopatía trombótica.",
-      "cautions": "Úsala solo en adultos con microangiopatía trombótica (anemia hemolítica microangiopática con trombocitopenia). Estima la probabilidad pretest y no sustituye a la determinación de la actividad de ADAMTS13, que debe extraerse antes de administrar plasma. Las decisiones de tratamiento se toman con hematología.",
-      "faq": []
+      "overview": "La puntuación PLASMIC (PLASMIC score) estima la probabilidad de que un adulto con microangiopatía trombótica tenga un déficit grave de ADAMTS13 (actividad ≤ 10%), el rasgo que define la púrpura trombótica trombocitopénica (PTT). Suma un punto por cada criterio: plaquetas < 30 ×10⁹/L; hemólisis (reticulocitos > 2,5%, haptoglobina indetectable o bilirrubina indirecta > 2 mg/dL); ausencia de cáncer activo en el último año; ausencia de trasplante de órgano sólido o de progenitores hematopoyéticos; VCM < 90 fL; INR < 1,5, y creatinina < 2,0 mg/dL. Se derivó en 214 pacientes atendidos entre 2004 y 2015 en tres hospitales universitarios de Boston y se validó en una cohorte interna y otra externa. Sirve para orientar la decisión mientras la ADAMTS13 tarda o no está disponible.",
+      "interpretation": "La calculadora agrupa el total en tres niveles: 0–4 puntos, probabilidad baja; 5, intermedia; 6–7, alta. Con 6–7 puntos la PTT pasa a ser la sospecha principal: se extrae la muestra para ADAMTS13 y se valora con hematología el recambio plasmático urgente. Con 5 puntos la decisión depende del conjunto del cuadro. Con 0–4 la PTT es poco probable y conviene buscar otra causa de microangiopatía trombótica. Cada criterio que falta resta probabilidad: un cáncer activo o un trasplante previo orientan a microangiopatías de otro origen, y un INR ≥ 1,5 o una creatinina ≥ 2,0 mg/dL encajan peor con una PTT.",
+      "cautions": "Solo se aplica a adultos con microangiopatía trombótica (anemia hemolítica microangiopática con trombocitopenia); no se estudió en niños. Da una probabilidad pretest: no confirma ni descarta la PTT, que se define por la actividad de ADAMTS13. Esa muestra debe extraerse antes de transfundir plasma, porque el plasma aporta la enzima y puede falsear el resultado. Los criterios de cáncer y trasplante puntúan por su ausencia, así que solo deben marcarse si se ha comprobado. Una puntuación baja no excluye una PTT con clínica muy sugestiva, y las decisiones de tratamiento se toman con hematología.",
+      "faq": [
+        {
+          "q": "¿Cómo se calcula la puntuación PLASMIC?",
+          "a": "Se suma un punto por cada uno de los siete criterios que se cumple, de modo que el total va de 0 a 7. El nombre es un acrónimo inglés de los ítems: Platelets, Lysis, Active cancer, Stem-cell or solid-organ transplant, MCV, INR y Creatinine."
+        },
+        {
+          "q": "¿Qué puntuación PLASMIC indica una PTT?",
+          "a": "Ninguna la confirma. Con 6 o 7 puntos la probabilidad de déficit grave de ADAMTS13 (actividad ≤ 10%) es alta; con 5, intermedia, y con 0–4, baja. El diagnóstico se establece con la actividad de ADAMTS13, no con la escala."
+        },
+        {
+          "q": "¿Hay que esperar al resultado de ADAMTS13 para empezar el recambio plasmático?",
+          "a": "No necesariamente. La PTT requiere recambio plasmático urgente y la ADAMTS13 suele tardar o no estar disponible; la escala se diseñó para decidir mientras tanto. Con probabilidad alta, se extrae la muestra y se comenta con hematología iniciar el recambio sin esperar."
+        },
+        {
+          "q": "¿Qué fiabilidad tiene la escala PLASMIC?",
+          "a": "En la cohorte de derivación el estadístico C fue de 0,96 (IC del 95%: 0,92–0,98), y se mantuvo en la validación interna (0,95) y externa (0,91). Superó a la valoración clínica habitual (0,83). Los autores recomiendan usarla junto con el juicio clínico."
+        }
+      ]
     }
   },
   "iss": {
@@ -3533,10 +3677,27 @@
       ]
     },
     "content": {
-      "overview": "El ISS combina dos análisis séricos de rutina medidos al diagnóstico: la β2-microglobulina (mg/L) y la albúmina (g/dL). Estadio I: β2-microglobulina < 3,5 mg/L y albúmina ≥ 3,5 g/dL. Estadio III: β2-microglobulina ≥ 5,5 mg/L, sea cual sea la albúmina. Estadio II: el resto.",
-      "interpretation": "En la cohorte de derivación de 2005, con más de diez mil pacientes, la mediana de supervivencia fue de 62 meses en el estadio I, 44 meses en el II y 29 meses en el III. Con los tratamientos actuales la supervivencia es mayor, pero los estadios siguen separando el riesgo.",
-      "cautions": "Se aplica al mieloma múltiple sintomático al diagnóstico, no a la GMSI ni al mieloma quiescente. La β2-microglobulina aumenta con la insuficiencia renal, por lo que el estadio III puede reflejar en parte la función renal. Introduce la albúmina en g/dL: divide los g/L entre 10. El R-ISS afina esta estadificación con la citogenética y la LDH.",
-      "faq": []
+      "overview": "El ISS (Sistema Internacional de Estadificación) es la clasificación pronóstica del mieloma múltiple basada en dos análisis de sangre del diagnóstico: la beta-2 microglobulina y la albúmina séricas. Se publicó en 2005 a partir de 10.750 pacientes con mieloma sintomático no tratado de 17 instituciones de Norteamérica, Europa y Asia. Entre las variables pronósticas analizadas (β2-microglobulina, albúmina, plaquetas, creatinina y edad), la pareja β2-microglobulina y albúmina dio la clasificación más sencilla y reproducible. Estadio I: β2-microglobulina < 3,5 mg/L y albúmina ≥ 3,5 g/dL. Estadio III: β2-microglobulina ≥ 5,5 mg/L, sea cual sea la albúmina. Estadio II: cualquier otra combinación. Se validó por regiones, por grupos de edad y por tipo de tratamiento.",
+      "interpretation": "En la serie original, la mediana de supervivencia fue de 62 meses en el estadio I, 44 meses en el II y 29 meses en el III. La albúmina solo cuenta cuando la β2-microglobulina es < 3,5 mg/L; a partir de ese valor decide solo la β2-microglobulina. Así, el estadio II agrupa dos perfiles: β2-microglobulina < 3,5 mg/L con albúmina < 3,5 g/dL, o β2-microglobulina ≥ 3,5 y < 5,5 mg/L con cualquier albúmina. Estas medianas proceden de pacientes tratados antes de la llegada de los nuevos fármacos: sirven para comparar estadios, no para predecir la supervivencia actual de un paciente concreto.",
+      "cautions": "La estadificación ISS se derivó en mieloma sintomático no tratado: no está pensada para la gammapatía monoclonal de significado incierto ni para el mieloma quiescente, y se calcula con la analítica previa al tratamiento. La β2-microglobulina se elimina por el riñón y sube en la insuficiencia renal, de modo que un estadio III puede reflejar en parte la función renal. Unidades: β2-microglobulina en mg/L (1 µg/mL equivale a 1 mg/L) y albúmina en g/dL (si el laboratorio la da en g/L, se divide entre 10). El ISS no incluye la citogenética ni la LDH, que añade el R-ISS.",
+      "faq": [
+        {
+          "q": "¿Cómo se calcula el estadio ISS del mieloma múltiple?",
+          "a": "Con la β2-microglobulina (mg/L) y la albúmina (g/dL) del diagnóstico. β2-microglobulina ≥ 5,5 mg/L: estadio III. β2-microglobulina < 3,5 mg/L con albúmina ≥ 3,5 g/dL: estadio I. Cualquier otra combinación: estadio II. La edad y la creatinina no intervienen."
+        },
+        {
+          "q": "¿Qué esperanza de vida tiene un mieloma ISS III?",
+          "a": "En la serie de 2005, la mediana de supervivencia del estadio III fue de 29 meses (44 en el II y 62 en el I). Son pacientes tratados antes de 2005: las cifras comparan estadios, no predicen un pronóstico individual actual."
+        },
+        {
+          "q": "¿Por qué la insuficiencia renal puede subir el estadio ISS?",
+          "a": "La β2-microglobulina se filtra y se degrada en el riñón, así que se acumula cuando cae el filtrado glomerular y puede dar un estadio III no solo por la carga tumoral. La creatinina fue pronóstica en el análisis original, pero no entró en la clasificación."
+        },
+        {
+          "q": "¿Qué diferencia hay entre el ISS y el R-ISS?",
+          "a": "El R-ISS (2015), para el mieloma de nuevo diagnóstico, añade al ISS la citogenética de alto riesgo por FISH y la LDH. Un ISS I con alguno de esos factores pasa a R-ISS II, y un ISS III solo es R-ISS III si tiene alguno."
+        }
+      ]
     }
   },
   "rIss": {
@@ -3558,10 +3719,27 @@
       ]
     },
     "content": {
-      "overview": "El R-ISS combina el estadio ISS con las alteraciones cromosómicas detectadas por FISH en interfase y la LDH sérica. Estadio I: ISS I, sin citogenética de alto riesgo [del(17p), t(4;14) o t(14;16)] y LDH normal. Estadio III: ISS III con citogenética de alto riesgo o LDH elevada. Estadio II: todas las demás combinaciones.",
-      "interpretation": "En la cohorte del IMWG de pacientes de nuevo diagnóstico, la supervivencia global a cinco años fue del 82% en el estadio I, del 62% en el II y del 40% en el III; la supervivencia libre de progresión a cinco años fue del 55%, el 36% y el 24%.",
-      "cautions": "Validado en el mieloma de nuevo diagnóstico, valorado antes del tratamiento. La iFISH debe hacerse sobre células plasmáticas purificadas (selección CD138). La mayoría de los pacientes quedan en el estadio II, que es heterogéneo; el R2-ISS (2022) añade la ganancia de 1q para subdividirlo.",
-      "faq": []
+      "overview": "El R-ISS (ISS revisado) es la estadificación pronóstica del mieloma múltiple de nuevo diagnóstico que propuso el International Myeloma Working Group (IMWG) en 2015. Al estadio ISS le suma la citogenética de alto riesgo por FISH en interfase [del(17p), t(4;14) o t(14;16)] y la LDH sérica por encima del límite superior de la normalidad. Estadio I: ISS I sin citogenética de alto riesgo y con LDH normal. Estadio III: ISS III con citogenética de alto riesgo o LDH elevada. Estadio II: el resto. Se construyó con 3.060 pacientes con datos completos de 11 ensayos clínicos internacionales (2005–2012); en esos ensayos, casi todos recibieron fármacos nuevos (inhibidores del proteasoma o inmunomoduladores) y el 60%, autotrasplante.",
+      "interpretation": "Con una mediana de seguimiento de 46 meses, la supervivencia global a 5 años fue del 82% en el estadio I, del 62% en el II y del 40% en el III; la supervivencia libre de progresión a 5 años, del 55%, el 36% y el 24%. Un solo factor desfavorable (FISH de alto riesgo o LDH alta) lleva un ISS I a R-ISS II, y un ISS III sin ninguno también queda en R-ISS II. Según los autores, usar uno solo de los tres factores habría situado por error en un grupo de buen pronóstico a cerca del 26% de los pacientes.",
+      "cautions": "Se validó en mieloma de nuevo diagnóstico, con datos previos al tratamiento, no en la recaída. Los pacientes procedían de ensayos clínicos (el 65%, menores de 65 años), así que puede representar peor a los mayores o frágiles, y la escala no recoge la edad, el estado general ni las comorbilidades. La FISH no estaba estandarizada entre laboratorios y la LDH se juzgó con el límite superior de la normalidad de cada centro. Si falta la FISH, esta calculadora asume que no hay citogenética de alto riesgo y puede infraestimar el estadio.",
+      "faq": [
+        {
+          "q": "¿Cómo se calcula la estadificación R-ISS del mieloma?",
+          "a": "Si la FISH muestra del(17p), t(4;14) o t(14;16) o la LDH supera el límite superior de la normalidad, hay un factor desfavorable. Un ISS I sin factores es R-ISS I; un ISS III con alguno es R-ISS III; el resto, R-ISS II."
+        },
+        {
+          "q": "¿Qué alteraciones citogenéticas son de alto riesgo en el R-ISS?",
+          "a": "Tres, por FISH en interfase: deleción 17p, t(4;14) y t(14;16); basta con una. En el estudio se hizo sobre células plasmáticas enriquecidas con CD138, con el umbral de cada laboratorio. El cromosoma 1 quedó fuera porque no se recogió en todos los ensayos."
+        },
+        {
+          "q": "¿Qué supervivencia tiene cada estadio R-ISS?",
+          "a": "La mediana de supervivencia global no se alcanzó en el estadio I y fue de 83 meses en el II y 43 en el III; la libre de progresión, de 66, 42 y 29 meses. Son cifras de grupo, obtenidas en ensayos clínicos."
+        },
+        {
+          "q": "¿Por qué tantos pacientes quedan en R-ISS II?",
+          "a": "Porque recoge todas las combinaciones que no cumplen las condiciones estrictas de los estadios I y III: fue el 62% de la serie, con pronósticos variados. El R2-ISS (2022), un trabajo posterior, propone subdividirlo añadiendo, entre otros factores, la ganancia de 1q; esta calculadora no lo aplica."
+        }
+      ]
     }
   },
   "isthDic": {
@@ -3594,10 +3772,27 @@
       ]
     },
     "content": {
-      "overview": "La puntuación de la ISTH cuantifica la CID manifiesta con cuatro parámetros de laboratorio: plaquetas, un marcador de fibrina, el tiempo de protrombina y el fibrinógeno.",
-      "interpretation": "Una puntuación de 0 significa que ninguno de los cuatro criterios está alterado; no hay datos de CID manifiesta en este momento. Una puntuación de 1 a 4 no es compatible con CID manifiesta pero sugiere CID no manifiesta; repítela en 1–2 días si persiste la enfermedad de base. Una puntuación ≥ 5 es compatible con CID manifiesta y debe repetirse a diario.",
-      "cautions": "Solo es aplicable si el paciente tiene una enfermedad de base conocida por asociarse a CID. No sustituye al juicio clínico ni al tratamiento de la causa subyacente.",
-      "faq": []
+      "overview": "La puntuación ISTH de CID, propuesta en 2001 por la International Society on Thrombosis and Haemostasis, identifica la coagulación intravascular diseminada (CID) manifiesta con pruebas de coagulación básicas. La CID es una activación generalizada de la coagulación, con consumo de plaquetas y factores, secundaria a otra enfermedad. Solo se aplica si existe una enfermedad de base asociada a CID, como sepsis, traumatismo grave, cáncer o una complicación obstétrica. Puntúa las plaquetas (0–2 puntos), un marcador relacionado con la fibrina, como el dímero D o los productos de degradación del fibrinógeno (0, 2 o 3), el alargamiento del tiempo de protrombina (0–2) y el fibrinógeno (0–1), con un total de 0 a 8.",
+      "interpretation": "Una puntuación ≥ 5 es compatible con CID manifiesta: hay que tratar la enfermedad de base y repetir la puntuación cada día. De 1 a 4 no es compatible con CID manifiesta, aunque puede sugerir una CID no manifiesta; conviene repetirla en 1–2 días si persiste la sospecha. Con 0 puntos no hay datos analíticos de CID, pero hay que recalcularla si la enfermedad de base persiste o el cuadro cambia. Como la CID es dinámica, la tendencia en determinaciones seriadas importa tanto como un valor aislado: un descenso progresivo de plaquetas o fibrinógeno cuenta aunque no cruce un punto de corte.",
+      "cautions": "Sin una enfermedad de base asociada, la escala da falsos positivos, porque cada parámetro puede alterarse por otros motivos: la hepatopatía avanzada alarga el tiempo de protrombina y baja plaquetas y fibrinógeno, la transfusión masiva diluye factores y plaquetas, y la quimioterapia o la infiltración medular causan trombocitopenia sin consumo. El fibrinógeno es un reactante de fase aguda y puede mantenerse normal en una CID con inflamación intensa. El marcador de fibrina no tiene puntos de corte universales: «aumento moderado» e «intenso» dependen de la técnica y de los valores de referencia de cada laboratorio.",
+      "faq": [
+        {
+          "q": "¿Cómo se calculan los criterios ISTH de CID?",
+          "a": "Plaquetas > 100 ×10⁹/L, 0 puntos; 50–100, 1; < 50, 2. Marcador de fibrina sin aumento, 0; moderado, 2; intenso, 3. Tiempo de protrombina alargado < 3 s, 0; 3–6 s, 1; > 6 s, 2. Fibrinógeno ≥ 1 g/L, 0; < 1 g/L, 1."
+        },
+        {
+          "q": "¿Qué significa un score ISTH de 5 o más?",
+          "a": "Que el patrón analítico es compatible con CID manifiesta en un paciente con una enfermedad capaz de causarla. Obliga a tratar la causa y a repetir la puntuación a diario. Una puntuación menor de 5 no excluye una CID en evolución."
+        },
+        {
+          "q": "¿Qué valor de dímero D se considera aumento moderado o intenso?",
+          "a": "La escala no fija una cifra: las técnicas de dímero D no están estandarizadas y cada una tiene sus unidades y valores de referencia. Cada laboratorio define el aumento moderado e intenso para su técnica, y conviene mantener el mismo criterio en cada paciente."
+        },
+        {
+          "q": "¿Qué diferencia hay entre CID manifiesta y no manifiesta?",
+          "a": "En la manifiesta la hemostasia está descompensada y las pruebas básicas ya muestran consumo. En la no manifiesta está alterada pero aún compensada; la ISTH propuso para ella un sistema aparte, basado en la evolución de los parámetros, que esta calculadora no incluye."
+        }
+      ]
     }
   },
   "fourTsHit": {
@@ -3631,10 +3826,27 @@
       ]
     },
     "content": {
-      "overview": "La escala 4T puntúa de 0 a 2 cuatro criterios — trombocitopenia, momento del descenso, trombosis y otras causas — para estimar la probabilidad pretest de TIH.",
-      "interpretation": "0–3 probabilidad baja, 4–5 intermedia, 6–8 alta. Una puntuación baja tiene un valor predictivo negativo alto y permite evitar pruebas y cambios de anticoagulante innecesarios.",
-      "cautions": "Es una probabilidad pretest, no un diagnóstico: una puntuación intermedia o alta obliga a confirmarla con inmunoensayo y prueba funcional. La decisión de suspender la heparina es clínica.",
-      "faq": []
+      "overview": "La escala 4T (4Ts) estima la probabilidad clínica pretest de trombocitopenia inducida por heparina (TIH) en un paciente con heparina al que le bajan las plaquetas. Puntúa de 0 a 2 cuatro criterios: el grado de trombocitopenia (porcentaje de descenso y nadir), el momento del descenso respecto a la exposición a heparina, la trombosis u otras secuelas y la existencia de otras causas de trombocitopenia. Esta calculadora 4T suma los cuatro, con un total de 0 a 8. Lo y colaboradores la evaluaron de forma prospectiva en 2006 en 100 pacientes consecutivos con sospecha de TIH de un hospital de Hamilton (Canadá) y en 236 pacientes cuyos médicos enviaron muestras a Greifswald (Alemania).",
+      "interpretation": "La calculadora clasifica la probabilidad en baja (0–3 puntos), intermedia (4–5) y alta (6–8). En el estudio original, una puntuación baja casi nunca se asoció a anticuerpos de TIH clínicamente significativos: 1 de 64 pacientes (1,6 %) en Hamilton y 0 de 55 en Greifswald. Con puntuación intermedia fueron positivos el 28,6 % y el 7,9 %, y con alta el 100 % y el 21,4 %. Los autores concluyeron que una puntuación baja permite descartar la TIH en la mayoría de las situaciones por su alto valor predictivo negativo, y que el significado de una intermedia o alta varía según el entorno clínico.",
+      "cautions": "Es una probabilidad pretest, no un diagnóstico, y su rendimiento cambia según el entorno, como muestra la diferencia entre los dos centros con puntuación alta. Varios criterios exigen juicio clínico, sobre todo las otras causas de trombocitopenia y el momento del descenso cuando faltan recuentos seriados, y en pacientes complejos, como los de cuidados intensivos, es fácil puntuar de más o de menos. Las pruebas de laboratorio (inmunoensayo y prueba funcional) y la decisión de suspender la heparina quedan fuera de la escala y dependen de cada caso y del protocolo del centro.",
+      "faq": [
+        {
+          "q": "¿Cómo se calcula la escala 4T de trombocitopenia inducida por heparina?",
+          "a": "Cada criterio vale 0, 1 o 2 puntos. Puntúan 2: descenso > 50 % con nadir ≥ 20 ×10⁹/L; inicio claro entre los días 5 y 10, o en ≤ 1 día con heparina en los 30 días previos; trombosis nueva confirmada, necrosis cutánea o reacción sistémica tras un bolo, y ninguna otra causa aparente."
+        },
+        {
+          "q": "¿Qué significa una puntuación 4T baja?",
+          "a": "Una puntuación de 0 a 3 indica probabilidad baja: en el estudio original, solo 1 de los 119 pacientes con puntuación baja tuvo anticuerpos clínicamente significativos. La TIH es improbable y conviene buscar otra causa; si aparece una trombosis nueva, hay que recalcularla."
+        },
+        {
+          "q": "¿Hay que suspender la heparina con una puntuación 4T intermedia o alta?",
+          "a": "El artículo no daba pautas de tratamiento. La calculadora recoge la práctica habitual: con probabilidad intermedia, valorar suspender la heparina y pedir pruebas; con alta, suspenderla, iniciar un anticoagulante no heparínico y solicitar inmunoensayo y prueba funcional."
+        },
+        {
+          "q": "¿La escala 4T sirve para confirmar una TIH?",
+          "a": "No. Una puntuación intermedia o alta solo aumenta la probabilidad: con puntuación intermedia, la mayoría no tenía anticuerpos clínicamente significativos. El diagnóstico se apoya en las pruebas de laboratorio interpretadas junto con la evolución clínica."
+        }
+      ]
     }
   },
   "khorana": {
@@ -3660,10 +3872,27 @@
       ]
     },
     "content": {
-      "overview": "La escala de Khorana suma la localización del tumor (0, 1 o 2 puntos según el riesgo) a cuatro variables pretratamiento — plaquetas, hemoglobina o uso de ESA, leucocitos e IMC — para estimar el riesgo de tromboembolismo venoso antes de iniciar la quimioterapia.",
-      "interpretation": "0 puntos es riesgo bajo, 1–2 riesgo intermedio y ≥ 3 riesgo alto. En los pacientes de alto riesgo, las guías recomiendan valorar tromboprofilaxis farmacológica si no existe contraindicación por sangrado.",
-      "cautions": "Es una herramienta de cribado para pacientes ambulatorios que inician quimioterapia, no válida para pacientes ingresados ni para decidir sobre un episodio de TEV ya establecido. La decisión final de iniciar profilaxis debe tener en cuenta el riesgo hemorrágico individual y el tipo de quimioterapia.",
-      "faq": []
+      "overview": "La escala de Khorana (o score de Khorana) estima el riesgo de tromboembolismo venoso asociado a quimioterapia en pacientes oncológicos ambulatorios que van a iniciar un nuevo régimen. Se publicó en 2008: el modelo se derivó en 2701 pacientes de un registro prospectivo estadounidense y se validó en otros 1365 del mismo estudio. Suma cinco variables previas al primer ciclo: localización del tumor (2 puntos si es estómago o páncreas; 1 si es pulmón, linfoma, ginecológico, vejiga o testículo), plaquetas ≥ 350 ×10⁹/L, hemoglobina < 10 g/dL o uso de agentes estimulantes de la eritropoyesis, leucocitos > 11 ×10⁹/L e IMC ≥ 35 kg/m², a 1 punto cada una (total de 0 a 6).",
+      "interpretation": "Clasifica el riesgo en bajo (0 puntos), intermedio (1–2) y alto (≥ 3). En el artículo original, la incidencia de TEV sintomático en una mediana de 2,5 meses fue del 0,8 % y el 0,3 % en riesgo bajo (cohortes de derivación y validación), del 1,8 % y el 2 % en intermedio y del 7,1 % y el 6,7 % en alto, con un estadístico C de 0,7. Tres de cada cuatro episodios aparecieron en los dos primeros ciclos. En riesgo alto, la calculadora indica valorar tromboprofilaxis si no hay riesgo hemorrágico; esa recomendación procede de guías posteriores, no del estudio de 2008.",
+      "cautions": "Se desarrolló en adultos ambulatorios que empezaban quimioterapia, con analítica previa al tratamiento; no se estudió en pacientes ingresados ni sirve para tratar una trombosis ya diagnosticada. Los tumores cerebrales, el mieloma y el cáncer renal estaban poco representados. El registro no recogió catéter venoso central, antecedentes de TEV ni anticoagulación previa, que deben valorarse aparte. El TEV lo diagnosticaba el médico responsable, sin adjudicación independiente, y la validación se hizo dentro del mismo registro. Los autores recuerdan que el paciente oncológico también sangra más: cualquier decisión de profilaxis exige valorar el riesgo hemorrágico individual.",
+      "faq": [
+        {
+          "q": "¿A partir de qué puntuación de Khorana se pone tromboprofilaxis?",
+          "a": "El artículo original no daba recomendaciones: definió el riesgo alto como ≥ 3 y pidió ensayos sobre la seguridad de la profilaxis. Guías posteriores, como la de ASCO, proponen ofrecerla desde 2 puntos si el riesgo de sangrado no es alto."
+        },
+        {
+          "q": "¿Qué tumores puntúan en la escala de Khorana?",
+          "a": "Estómago y páncreas suman 2 puntos; pulmón, linfoma, tumores ginecológicos, vejiga y testículo, 1; el resto, como mama, colorrectal o próstata, 0. El texto del artículo habla de genitourinarios excepto próstata, pero la calculadora sigue la tabla del modelo."
+        },
+        {
+          "q": "¿Qué riesgo de trombosis tiene un paciente oncológico con 1 o 2 puntos?",
+          "a": "En el estudio original, este grupo intermedio reunía cerca del 60 % de los pacientes y tuvo un TEV sintomático del 1,8 % y el 2 % (derivación y validación). Los autores consideraron improbable que se beneficiara de la profilaxis."
+        },
+        {
+          "q": "¿Una puntuación baja en la escala de Khorana descarta la trombosis?",
+          "a": "No. Con el corte en 3, el valor predictivo negativo fue del 98,5 %, pero la sensibilidad no pasó del 40 %: la mayoría de los pacientes con trombosis tenían menos de 3 puntos. Los síntomas de trombosis deben estudiarse igualmente."
+        }
+      ]
     }
   },
   "binet": {
@@ -3685,10 +3914,27 @@
       ]
     },
     "content": {
-      "overview": "La estadificación de Binet clasifica la leucemia linfática crónica según el número de áreas linfoides afectadas —ganglios cervicales, axilares e inguinales (cada uno se cuenta una sola vez aunque sea bilateral), bazo e hígado, cinco áreas en total— y según la presencia de anemia o trombocitopenia.",
-      "interpretation": "Estadio A: menos de 3 áreas afectadas, sin anemia ni trombocitopenia; la actitud estándar es la observación (watch and wait). Estadio B: 3 o más áreas afectadas, sin anemia ni trombocitopenia; se trata si existen criterios de enfermedad activa. Estadio C: hemoglobina < 10 g/dL y/o plaquetas < 100 ×10⁹/L, independientemente del número de áreas afectadas; el tratamiento suele estar indicado.",
-      "cautions": "Solo es aplicable a la leucemia linfática crónica/linfoma linfocítico de células pequeñas ya diagnosticados; la anemia o la trombocitopenia deben confirmarse de origen medular (por infiltración) y no por hemólisis autoinmune u otra causa periférica, ya que eso alteraría la estadificación.",
-      "faq": []
+      "overview": "Los estadios de Binet, o clasificación de Binet, dividen la leucemia linfática crónica (LLC) en tres grupos pronósticos, A, B y C, con una exploración física y un hemograma. Binet y sus colaboradores la publicaron en 1981 al ver que los sistemas de la época (Rai, Binet y Rundles) concordaban, pero definían más estadios de los que la supervivencia distinguía. En un análisis de Cox de dos series (99 y 196 pacientes), la anemia y la trombocitopenia fueron los factores de riesgo más importantes; sin citopenias, el pronóstico dependía del número de áreas linfoides afectadas. Se confirmó en la serie de 146 pacientes de Montserrat y Rozman, del Hospital Clínic de Barcelona.",
+      "interpretation": "Se cuentan cinco áreas: ganglios cervicales, axilares e inguinales (cada territorio cuenta una vez), bazo e hígado. LLC estadio A: menos de tres áreas, sin anemia ni trombocitopenia; cerca del 55%, con una supervivencia que no parecía distinta de la de la población francesa de igual edad y sexo. Estadio B: tres o más áreas sin citopenias; alrededor del 30%, mediana de 7 años. Estadio C: Hb < 10 g/dL y/o plaquetas < 100 ×10⁹/L, con cualquier número de áreas; cerca del 15%, mediana de 2 años. Se observa en el A, se trata en el B si hay enfermedad activa y suele tratarse en el C.",
+      "cautions": "Se aplica a una LLC ya diagnosticada, con datos del diagnóstico. Una anemia o una trombocitopenia solo llevan al estadio C si se deben a la infiltración medular: una hemólisis autoinmune o una trombocitopenia inmune pueden bajar las cifras con poca masa tumoral y clasificar mal al paciente. Las áreas se valoran por exploración física, como en el estudio original. Las medianas proceden de series de 1981, sin los tratamientos actuales. Tampoco recoge la biología de la enfermedad (como TP53 o IGHV no mutado), que hoy se estudia aparte antes de tratar.",
+      "faq": [
+        {
+          "q": "¿Cómo se cuentan las áreas en la clasificación de Binet?",
+          "a": "Hay cinco: ganglios cervicales, axilares e inguinales, bazo e hígado. Cada territorio ganglionar cuenta una vez aunque esté afectado por ambos lados: unas adenopatías axilares bilaterales suman 1. Con tres o más áreas y sin citopenias, el estadio es B."
+        },
+        {
+          "q": "¿Qué significa tener una LLC en estadio A de Binet?",
+          "a": "Menos de tres áreas afectadas, sin Hb < 10 g/dL ni plaquetas < 100 ×10⁹/L. Era el grupo más numeroso (alrededor del 55%) y su supervivencia no parecía diferir de la de la población general. Suele bastar el seguimiento sin tratamiento."
+        },
+        {
+          "q": "¿Una LLC en estadio C de Binet siempre se trata?",
+          "a": "Suele estar indicado si la anemia o la trombocitopenia se deben a la propia leucemia; en la serie de 1981, la mediana de supervivencia del estadio C era de 2 años. Antes conviene descartar una causa autoinmune, que no indica enfermedad avanzada."
+        },
+        {
+          "q": "¿Es mejor la clasificación de Binet o la de Rai?",
+          "a": "Ninguna es superior. Binet cuenta territorios afectados y define la anemia como Hb < 10 g/dL; Rai ordena los hallazgos por tipo y usa Hb < 11 g/dL. Binet buscaba solo tres grupos; Rai tiene cinco estadios, agrupables en tres niveles de riesgo."
+        }
+      ]
     }
   },
   "stopBang": {
@@ -3714,10 +3960,27 @@
       ]
     },
     "content": {
-      "overview": "El STOP-BANG puntúa ocho criterios —ronquido, cansancio diurno, apneas observadas, hipertensión, IMC, edad, perímetro del cuello y sexo— con un punto cada uno.",
-      "interpretation": "0-2 riesgo bajo, 3-4 riesgo intermedio, 5-8 riesgo alto de apnea obstructiva del sueño. Su punto fuerte es el valor predictivo negativo: una puntuación baja hace poco probable una apnea moderada o grave.",
-      "cautions": "Es una herramienta de cribado, no diagnóstica. El diagnóstico requiere una polisomnografía o una poligrafía respiratoria. Una puntuación alta en un paciente que va a ser intervenido obliga a valorar precauciones perioperatorias.",
-      "faq": []
+      "overview": "El cuestionario STOP-Bang es una prueba de cribado de apnea obstructiva del sueño (AOS) con ocho preguntas de sí o no que suman un punto cada una (total 0–8). Las cuatro primeras forman el cuestionario STOP: ronquido fuerte, cansancio o somnolencia diurna, apneas observadas por otra persona e hipertensión arterial. Las otras cuatro (Bang) añaden IMC >35 kg/m², edad >50 años, perímetro del cuello >40 cm y sexo masculino. Lo publicaron Frances Chung y colaboradores en Toronto en 2008 para el cribado de apnea del sueño antes de la cirugía, porque la AOS es un factor de riesgo importante de complicaciones perioperatorias. Se estudió en adultos de la consulta preoperatoria sin diagnóstico previo de AOS.",
+      "interpretation": "La calculadora clasifica el riesgo de AOS en bajo (0–2), intermedio (3–4) y alto (5–8); estas bandas proceden de trabajos posteriores, no del artículo de 2008. En aquel estudio, 177 pacientes completaron la validación con polisomnografía. Las cuatro preguntas STOP tuvieron una sensibilidad del 65,6%, 74,3% y 79,5% para un índice de apnea-hipopnea (IAH) >5, >15 y >30, que subió al 83,6%, 92,9% y 100% al añadir IMC, edad, cuello y sexo. Por eso una puntuación baja hace poco probable una AOS moderada o grave. Con 5 o más puntos procede solicitar un estudio del sueño y, si hay cirugía programada, prever precauciones perioperatorias.",
+      "cautions": "Es un cribado, no un diagnóstico: la AOS se confirma con un estudio del sueño, y una puntuación alta no basta para etiquetar al paciente. Al proceder de consultas preoperatorias, puede rendir de otro modo en atención primaria o en una unidad de sueño. De los 2.467 pacientes que respondieron, solo 211 se sometieron a polisomnografía, y la sensibilidad publicada es menor para la apnea leve. El ítem del cansancio es una única pregunta de sí o no; para cuantificar la somnolencia está la escala de Epworth, que no estima el riesgo de apnea.",
+      "faq": [
+        {
+          "q": "¿Qué significan las siglas del test STOP-Bang?",
+          "a": "Son las iniciales en inglés de los ítems: Snoring (ronquido), Tired (cansancio), Observed (apneas observadas), Pressure (hipertensión), BMI (IMC >35 kg/m²), Age (edad >50 años), Neck (cuello >40 cm) y Gender (sexo masculino). Cada respuesta afirmativa suma un punto."
+        },
+        {
+          "q": "¿Qué puntuación del STOP-Bang indica riesgo alto de apnea del sueño?",
+          "a": "De 5 a 8 puntos, y en ese caso se recomienda un estudio del sueño. Con 3 o 4 el riesgo es intermedio y estudiar al paciente depende de los síntomas y las comorbilidades; con 0 a 2, el riesgo es bajo."
+        },
+        {
+          "q": "¿Un STOP-Bang bajo descarta la apnea del sueño?",
+          "a": "Hace poco probable una apnea moderada o grave, pero no la excluye. En el estudio original, la versión completa detectó el 92,9% de los pacientes con IAH >15 y el 100% con IAH >30, frente al 83,6% con IAH >5."
+        },
+        {
+          "q": "¿Por qué se hace el cuestionario STOP-Bang antes de una operación?",
+          "a": "Porque la apnea obstructiva del sueño sin diagnosticar es un factor de riesgo importante de complicaciones perioperatorias, y el cuestionario se creó para cribarla en la consulta de preanestesia. Detectar el riesgo alto permite prever precauciones o pedir antes un estudio del sueño."
+        }
+      ]
     }
   },
   "epworth": {
@@ -3749,10 +4012,27 @@
       ]
     },
     "content": {
-      "overview": "La escala de Epworth puntúa ocho situaciones cotidianas —leer, ver la televisión, viajar en coche, descansar por la tarde, entre otras— según la probabilidad de quedarse dormido en cada una, de 0 (nunca) a 3 (alta probabilidad). La suma de los ocho ítems da una puntuación de 0 a 24.",
-      "interpretation": "0–10 somnolencia diurna normal; 11–14 somnolencia diurna excesiva leve; 15–17 moderada; 18–24 grave. Cuanto mayor es la puntuación, más probable resulta una somnolencia patológica que requiere evaluación.",
-      "cautions": "Es un cuestionario autoadministrado que refleja la percepción subjetiva del paciente, no una medida objetiva del sueño; no sustituye a una polisomnografía. Una puntuación elevada obliga a valorar el riesgo al conducir y en otras actividades que requieren vigilancia.",
-      "faq": []
+      "overview": "La escala de somnolencia de Epworth (test de Epworth) es un cuestionario autoadministrado que mide la propensión general a dormirse durante el día, es decir, el grado de somnolencia diurna excesiva. La publicó Murray Johns en 1991, en el Hospital Epworth de Melbourne. El paciente puntúa de 0 (nunca se dormiría) a 3 (alta probabilidad) la posibilidad de dar una cabezada en ocho situaciones cotidianas, y la suma da un total de 0 a 24. Se pregunta por la probabilidad de dormirse, no por el cansancio, y por la vida habitual reciente. En el estudio original (180 adultos), la puntuación separó a los controles sanos de los pacientes con apnea obstructiva del sueño, narcolepsia e hipersomnia idiopática.",
+      "interpretation": "La calculadora usa cuatro tramos: 0–10, somnolencia diurna normal; 11–14, somnolencia diurna excesiva leve; 15–17, moderada; 18–24, grave. El límite de 10 se apoya en el artículo original, donde los 30 controles sanos puntuaron 5,9 ± 2,2 de media (rango 2–10); la división en leve, moderada y grave es posterior. Johns halló medias de 17,5 en narcolepsia, 17,9 en hipersomnia idiopática y 11,7 en apnea obstructiva, mientras que los roncadores simples (6,5) no se diferenciaron de los controles. Las puntuaciones de 16 o más solo aparecieron en narcolepsia, hipersomnia idiopática o apnea al menos moderada (índice de alteración respiratoria >15).",
+      "cautions": "Refleja la somnolencia percibida por el paciente, que debe recordar cuándo se ha dormido; no es una medida objetiva como el test de latencias múltiples del sueño. El propio Johns advierte que una puntuación alta no diagnostica ningún trastorno concreto: averiguar la causa exige otras pruebas, como la polisomnografía nocturna. Tampoco excluye una apnea, ya que en la serie original los pacientes con apnea obstructiva puntuaron entre 4 y 23. La validación inicial fue pequeña (30 controles y 150 pacientes de una sola unidad). Ante una puntuación elevada conviene preguntar por somnolencia al volante.",
+      "faq": [
+        {
+          "q": "¿Cómo se rellena el test de Epworth?",
+          "a": "En cada situación se elige un valor de 0 a 3 según la probabilidad de quedarse dormido en la vida habitual reciente. Si hace tiempo que no se ha estado en alguna, se estima cómo afectaría. Se puntúa la posibilidad de dormirse, no el cansancio."
+        },
+        {
+          "q": "¿Qué puntuación de la escala de Epworth es normal?",
+          "a": "En esta calculadora, de 0 a 10. En el estudio de Johns, los adultos sanos que no roncaban puntuaron 5,9 de media y ninguno pasó de 10. Por encima se habla de somnolencia diurna excesiva, graduada aquí en leve, moderada o grave."
+        },
+        {
+          "q": "¿Una puntuación alta en el test de Epworth indica apnea del sueño?",
+          "a": "No necesariamente. La escala mide cuánta somnolencia hay, no su causa: en el trabajo original, las medias más altas correspondieron a la narcolepsia y la hipersomnia idiopática. Confirmar o descartar una apnea requiere un estudio del sueño."
+        },
+        {
+          "q": "¿Qué diferencia hay entre la escala de Epworth y el STOP-Bang?",
+          "a": "Epworth cuantifica la somnolencia diurna, sea cual sea su origen. El STOP-Bang estima el riesgo de apnea obstructiva del sueño con síntomas (ronquido, apneas observadas) más IMC, edad, perímetro del cuello y sexo. Se complementan: hay pacientes con apnea y un Epworth normal."
+        }
+      ]
     }
   },
   "snot22": {
@@ -3800,10 +4080,27 @@
       ]
     },
     "content": {
-      "overview": "El SNOT-22 puntúa 22 síntomas nasosinusales, óticos, del sueño y emocionales según su impacto en los últimos 15 días, de 0 (ningún problema) a 5 (el peor problema posible). La suma de los 22 ítems da una puntuación de 0 a 110.",
-      "interpretation": "0–20 leve; 21–50 moderado; 51–110 grave (Toma y Hopkins, 2016). La puntuación absoluta orienta la gravedad basal, pero la diferencia mínima clínicamente importante es de 8,9 puntos: un cambio de esta magnitud entre dos administraciones es el que se considera clínicamente relevante, por ejemplo tras un tratamiento o una cirugía, más que la cifra aislada.",
-      "cautions": "Es un cuestionario autoadministrado que refleja la percepción subjetiva del paciente sobre los últimos 15 días; no sustituye a la exploración endoscópica ni a las pruebas de imagen. Los ítems óticos y emocionales no son específicos de patología sinonasal y pueden estar influidos por comorbilidades.",
-      "faq": []
+      "overview": "El cuestionario SNOT-22 (Sinonasal Outcome Test de 22 ítems) mide cómo afectan los síntomas de la rinosinusitis crónica a la calidad de vida. Hopkins y colaboradores lo validaron en 2009, como modificación del SNOT-20, en 3128 adultos sometidos a cirugía nasosinusal en hospitales del NHS. El paciente puntúa cada ítem de 0 (ningún problema) a 5 (el peor problema posible) según cómo le ha afectado en las dos últimas semanas; los ítems recogen síntomas nasales, de oídos y dolor facial, sueño y cansancio, y repercusión emocional. La suma va de 0 a 110. Mostró una fiabilidad alta (alfa de Cronbach 0,91; test-retest 0,93) y diferenció a los pacientes de los controles sanos.",
+      "interpretation": "Esta calculadora clasifica el total en leve (0–20), moderado (21–50) y grave (51–110) según Toma y Hopkins (2016), que estudiaron a 65 pacientes que clasificaron ellos mismos sus síntomas (medianas: 12, 36 y 66). En ese trabajo el tramo leve empieza en 8, porque una puntuación inferior se había descrito como compatible con la población normal; aquí el intervalo 0–7 se incluye en «leve». En el seguimiento cuenta más el cambio entre dos cuestionarios que la cifra aislada: la diferencia mínima clínicamente importante es de 8,9 puntos. A los tres meses de la cirugía, las puntuaciones bajaron de forma significativa (tamaño del efecto 0,81).",
+      "cautions": "Es un cuestionario de resultados percibidos por el paciente y no diagnostica la rinosinusitis crónica, que requiere la clínica junto con endoscopia nasal o TC de senos paranasales. Los ítems de oídos, mareo, sueño, cansancio y estado emocional no son específicos y pueden elevarse por otros problemas, como la rinitis alérgica, la apnea obstructiva del sueño o un trastorno depresivo. La gravedad percibida no siempre refleja la extensión de la enfermedad: Toma y Hopkins recuerdan que su correlación con la puntuación radiológica de Lund-Mackay es pobre. Las bandas proceden de una muestra pequeña y orientan, pero no indican la cirugía por sí solas.",
+      "faq": [
+        {
+          "q": "¿Cómo se calcula la puntuación del test SNOT-22?",
+          "a": "Se suman las respuestas a los 22 ítems, cada uno de 0 (ningún problema) a 5 (el peor problema posible), referidas a las dos últimas semanas. El resultado va de 0 a 110: cuanto más alto, mayor repercusión en la calidad de vida."
+        },
+        {
+          "q": "¿Qué puntuación del SNOT-22 se considera normal?",
+          "a": "No hay un valor normal único. Toma y Hopkins señalan que una puntuación inferior a 8 se había descrito como compatible con la población normal. Aun así, una puntuación baja no descarta la rinosinusitis crónica."
+        },
+        {
+          "q": "¿Cuántos puntos tiene que bajar el SNOT-22 para notar mejoría?",
+          "a": "En la validación de Hopkins y colaboradores, hecha en pacientes operados, la diferencia mínima clínicamente importante fue de 8,9 puntos, el menor cambio que el paciente percibe. Un descenso igual o mayor entre dos cuestionarios, por ejemplo antes y después de la cirugía, indica una mejoría perceptible."
+        },
+        {
+          "q": "¿Existe el SNOT-22 en español?",
+          "a": "Sí. Se ha traducido a varios idiomas y existe una adaptación transcultural validada para pacientes hispanohablantes (de los Santos y colaboradores, 2015). Los textos de los ítems que muestra esta página resumen su contenido para facilitar el cálculo y no sustituyen al formulario validado."
+        }
+      ]
     }
   }
 }
