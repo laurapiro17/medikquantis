@@ -41,6 +41,14 @@ describe("CHA2DS2-VASc formula", () => {
     expect(formula({ ...baseline, strokeOrTia: true })).toBe(2);
   });
 
+  it("prior systemic arterial embolism counts as S2 and contributes 2 points", () => {
+    // Lip 2010: S2 = stroke, TIA or thromboembolism. Systemic arterial
+    // embolism is entered through strokeOrTia; DVT/PE does not count.
+    const peripheralEmbolism: Cha2ds2vascInput = { ...baseline, strokeOrTia: true };
+    expect(formula(peripheralEmbolism)).toBe(2);
+    expect(interpret(2, peripheralEmbolism).tier).toBe("high");
+  });
+
   it("CHF + HTN + DM + Vascular each contribute 1 point", () => {
     const score = formula({
       ...baseline,

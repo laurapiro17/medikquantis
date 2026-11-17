@@ -71,7 +71,7 @@ export function interpret(
   }
 
   // Score = 1 in men, or = 2 in women, sits in the "consider" band
-  // (ESC Class IIa — anticoagulation should be considered).
+  // (2020 ESC Class IIa — anticoagulation should be considered).
   if (
     (inputs.sex === "male" && score === 1) ||
     (inputs.sex === "female" && score === 2)
@@ -126,9 +126,9 @@ export const calculator: CalcDefinition<typeof Cha2ds2vascInputs> = {
         "Lip GYH, Nieuwlaat R, Pisters R, Lane DA, Crijns HJGM. Refining clinical risk stratification for predicting stroke and thromboembolism in atrial fibrillation using a novel risk factor-based approach: the Euro Heart Survey on atrial fibrillation. Chest. 2010;137(2):263-272.",
     },
     {
-      pmid: "39210723",
+      pmid: "32860505",
       citation:
-        "Van Gelder IC, Rienstra M, Bunting KV, et al. 2024 ESC Guidelines for the management of atrial fibrillation. Eur Heart J. 2024;45(36):3314-3414.",
+        "Hindricks G, Potpara T, Dagres N, et al. 2020 ESC Guidelines for the diagnosis and management of atrial fibrillation developed in collaboration with the European Association for Cardio-Thoracic Surgery (EACTS). Eur Heart J. 2021;42(5):373-498.",
     },
   ],
 };
