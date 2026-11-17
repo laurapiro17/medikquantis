@@ -186,7 +186,7 @@
       "chf": "Congestive heart failure",
       "hypertension": "Hypertension",
       "diabetes": "Diabetes mellitus",
-      "strokeOrTia": "Prior stroke or TIA",
+      "strokeOrTia": "Prior stroke, TIA or systemic embolism (not DVT/PE)",
       "vascularDisease": "Vascular disease (prior MI, PAD, aortic plaque)"
     },
     "patient": {
@@ -230,7 +230,7 @@
       "chf": "Congestive heart failure",
       "hypertension": "Hypertension",
       "diabetes": "Diabetes mellitus",
-      "strokeOrTia": "Prior stroke or TIA",
+      "strokeOrTia": "Prior stroke, TIA or systemic embolism (not DVT/PE)",
       "vascularDisease": "Vascular disease (prior MI, PAD, aortic plaque)"
     },
     "patient": {
@@ -246,7 +246,7 @@
       ]
     },
     "content": {
-      "overview": "The CHA₂DS₂-VASc score estimates the annual risk of ischaemic stroke in patients with non-valvular atrial fibrillation and guides the decision to start oral anticoagulation. It adds points for congestive heart failure, hypertension, age, diabetes, prior stroke or TIA, vascular disease and female sex. It is the stroke risk score recommended by the 2024 ESC guidelines for the management of atrial fibrillation.",
+      "overview": "The CHA₂DS₂-VASc score estimates the annual risk of ischaemic stroke in patients with non-valvular atrial fibrillation and guides the decision to start oral anticoagulation. It adds points for congestive heart failure, hypertension, age, diabetes, prior stroke, TIA or systemic embolism, vascular disease and female sex. Its sex-specific treatment thresholds follow the 2020 ESC guidelines; the 2024 ESC guidelines replaced it with the sex-free CHA₂DS₂-VA.",
       "interpretation": "A score of 0 in men, or 1 in a woman whose only point comes from being female, indicates low risk and oral anticoagulation is not recommended. A score of 1 in men or 2 in women lies in an intermediate band where anticoagulation should be considered (ESC Class IIa). From 2 points in men or 3 in women upward, oral anticoagulation is recommended (Class I). The estimated annual stroke risk rises from roughly 0.2% at a score of 0 to around 10% or more at the highest scores.",
       "cautions": "CHA₂DS₂-VASc applies only to non-valvular atrial fibrillation. It should not be used in valvular AF (moderate-to-severe mitral stenosis or a mechanical heart valve), where anticoagulation is indicated regardless of the score. It estimates thrombotic risk only and does not assess bleeding risk, which is evaluated separately, for example with the HAS-BLED score. Female sex is a risk modifier rather than an independent indication: a woman with no other risk factors is managed like a man with a score of 0. The score informs but does not replace individualised clinical judgement.",
       "faq": [
